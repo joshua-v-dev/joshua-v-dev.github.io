@@ -3,7 +3,6 @@ import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation'
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import NavDropDown from '../components/NavDropDown'
-import Header from '../components/Header/Header'
 import Projects from '../components/Projects/Projects'
 import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
@@ -15,7 +14,6 @@ const Home = () => {
 		<Layout>
 			<Section grid>
 				<NavDropDown />
-				<Header />
 				<Hero />
 				<BgAnimation />
 			</Section>
