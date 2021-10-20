@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectsPage from '../ProjectsPage/ProjectsPage'
+import ProjectsPage from './ProjectsPage/ProjectsPage'
 
 import {
 	BlogCard,
