@@ -18,8 +18,8 @@ const Hero = (props) => (
 					I am a passionate <br />
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
-				{const router = useRouter()}
-				<Button onClick={() => router.push('/ProjectsPage')}>Learn More</Button>
+
+				<Button onClick={() => Router.push('/ProjectsPage')}>Learn More</Button>
 			</LeftSection>
 		</Section>
 	</>
