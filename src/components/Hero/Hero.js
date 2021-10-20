@@ -10,10 +10,12 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center>
           Welcome To <br />
-          My Personal Portfolio
+          Joshua Vaughn's <br />
+          Personal Portfolio
         </SectionTitle>
         <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        I am a passionate <br /> 
+        Full-Stack Web Developer & UI/UX Designer.
         </SectionText>
         <Button onClick={props.handleClick}>Learn More</Button>
       </LeftSection>
