@@ -11,7 +11,7 @@ export const projects = [
 	{
 		title: 'PLATFORMS',
 		description: 'SHOPIFY APPS, STORES & THEMES',
-		image: '/images/PLATFORMS.png',
+		image: '/images/shopify.png',
 		tags: ['React', 'Liquid', 'Next', 'Polaris', 'GraphQL'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
@@ -20,7 +20,7 @@ export const projects = [
 	{
 		title: 'UI/UX',
 		description: 'GOOGLE UX CERTIFICATION COURSE',
-		image: '/images/UI_UX_DESIGN.png',
+		image: '/images/googleux.png',
 		tags: ['Figma', 'Adobe Creative Cloud Products'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
@@ -29,7 +29,7 @@ export const projects = [
 	{
 		title: 'PASSION PROJECTS',
 		description: 'INDIE GAME DESIGN AND DEVELOPMENT',
-		image: '/images/PASSION_PROJECTS.png',
+		image: '/images/gamedev.png',
 		tags: ['Three.js', 'Unity', 'Blender'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
