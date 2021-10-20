@@ -14,6 +14,7 @@ const Home = () => {
 		<Layout>
 			<Section grid>
 				<NavDropDown />
+				<Header />
 				<Hero />
 				<BgAnimation />
 			</Section>
