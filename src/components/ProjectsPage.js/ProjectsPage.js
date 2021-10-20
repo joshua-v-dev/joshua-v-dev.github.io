@@ -1,5 +1,4 @@
 import React from 'react'
-import ProjectsPage from '../ProjectsPage.js/ProjectsPage'
 
 import {
 	BlogCard,
@@ -13,16 +12,14 @@ import {
 	TitleContent,
 	UtilityList,
 	Img,
-} from './ProjectsStyles'
+} from './ProjectsPageStyles'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
 
-const Projects = () => (
+const ProjectsPage = () => (
 	<Section nopadding id='projects'>
 		<SectionDivider />
-		<SectionTitle href={<ProjectsPage />} main>
-			Projects
-		</SectionTitle>
+		<SectionTitle main>Projects</SectionTitle>
 		<GridContainer>
 			{projects.map((p, i) => {
 				return (
@@ -56,4 +53,4 @@ const Projects = () => (
 	</Section>
 )
 
-export default Projects
+export default ProjectsPage
