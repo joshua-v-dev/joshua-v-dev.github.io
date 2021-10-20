@@ -29,7 +29,7 @@ export const projects = [
 	{
 		title: 'PASSION PROJECTS',
 		description: 'INDIE GAME DESIGN AND DEVELOPMENT',
-		image: '/images/gamedev.png',
+		image: '/images/indiegamedev (1).png',
 		tags: ['Three.js', 'Unity', 'Blender'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
