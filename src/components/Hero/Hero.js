@@ -5,6 +5,7 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
 
+const router = useRouter()
 const Hero = (props) => (
 	<>
 		<Section row nopadding>
@@ -19,7 +20,7 @@ const Hero = (props) => (
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
 
-				<Button onClick={() => Router.push('/ProjectsPage')}>Learn More</Button>
+				<Button onClick={() => router.push(<ProjectsPage />)}>Learn More</Button>
 			</LeftSection>
 		</Section>
 	</>
