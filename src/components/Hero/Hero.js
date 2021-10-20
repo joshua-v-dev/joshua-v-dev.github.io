@@ -1,4 +1,5 @@
 import React from 'react'
+import Router, { useRouter } from 'next/router'
 import ProjectsPage from '../ProjectsPage/ProjectsPage'
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
 import Button from '../../styles/GlobalComponents/Button'
@@ -17,9 +18,8 @@ const Hero = (props) => (
 					I am a passionate <br />
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
-				<Button href={<ProjectsPage />} onClick={props.handleClick}>
-					Learn More
-				</Button>
+				{const router = useRouter()}
+				<Button onClick={() => router.push('/ProjectsPage')}>Learn More</Button>
 			</LeftSection>
 		</Section>
 	</>
