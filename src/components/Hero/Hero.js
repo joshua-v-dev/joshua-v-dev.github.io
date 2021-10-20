@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ProjectsPage from '../ProjectsPage/ProjectsPage'
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
@@ -17,7 +17,9 @@ const Hero = (props) => (
 					I am a passionate <br />
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
-				<Button onClick={props.handleClick}>Learn More</Button>
+				<Button href={<ProjectsPage />} onClick={props.handleClick}>
+					Learn More
+				</Button>
 			</LeftSection>
 		</Section>
 	</>

@@ -20,9 +20,7 @@ import { projects } from '../../constants/constants'
 const Projects = () => (
 	<Section nopadding id='projects'>
 		<SectionDivider />
-		<SectionTitle a href={<ProjectsPage />} main>
-			Projects
-		</SectionTitle>
+		<SectionTitle main>Projects</SectionTitle>
 		<GridContainer>
 			{projects.map((p, i) => {
 				return (
