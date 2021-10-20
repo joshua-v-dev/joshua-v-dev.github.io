@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectsPage from '../ProjectsPage.js/ProjectsPage'
+import ProjectsPage from '../ProjectsPage/ProjectsPage'
 
 import {
 	BlogCard,
@@ -20,7 +20,7 @@ import { projects } from '../../constants/constants'
 const Projects = () => (
 	<Section nopadding id='projects'>
 		<SectionDivider />
-		<SectionTitle href={<ProjectsPage />} main>
+		<SectionTitle a href={<ProjectsPage />} main>
 			Projects
 		</SectionTitle>
 		<GridContainer>
