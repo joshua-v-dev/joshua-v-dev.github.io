@@ -2,7 +2,7 @@ export const projects = [
 	{
 		title: 'MERN STACK',
 		description: 'PROGRESSIVE WEB APPS',
-		image: '/images/mernstack(1).png',
+		image: '/images/mernstack (1).png',
 		tags: ['Mongo', 'Express', 'React', 'Node'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
