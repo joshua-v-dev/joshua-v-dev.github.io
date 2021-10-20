@@ -39,11 +39,7 @@ const NavDropDown = (props) => (
 			</DropDownIcon>
 			<DropDownTextContainer>
 				<DropDownItemTitle>Address</DropDownItemTitle>
-<<<<<<< HEAD
 				<DropDownItemDesc>Puerto Vallarta, Mexico</DropDownItemDesc>
-=======
-				<DropDownItemDesc>Knoxville, TN</DropDownItemDesc>
->>>>>>> f3bf7db68ee64a75e1bbf4e396f3721862297ea5
 			</DropDownTextContainer>
 		</DropDownItem>
 	</DropDownContainer>
