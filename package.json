@@ -2,11 +2,12 @@
 	"name": "portfolio_nextjs",
 	"version": "0.1.0",
 	"private": true,
-	"type": "module",
+	"type": "commonjs",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build && next export",
-		"start": "next start"
+		"start": "next start",
+		"eslint": "eslint"
 	},
 	"dependencies": {
 		"eslint": "^8.0.1",
