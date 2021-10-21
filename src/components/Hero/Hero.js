@@ -1,9 +1,8 @@
 import React from 'react'
-import Router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
-import ActiveLink from './ProjectsPageDemo'
 
 const router = useRouter()
 
@@ -21,7 +20,14 @@ const Hero = (props) => (
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
 
-				<Button onClick={() => router.push('/ProjectsPage')}>Learn More</Button>
+				<Button
+					onClick={() =>
+						router.push({
+							pathname: '/ProjectsPage',
+						})
+					}>
+					Learn More
+				</Button>
 			</LeftSection>
 		</Section>
 	</>
