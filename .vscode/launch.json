@@ -1,0 +1,10 @@
+{
+	"configurations": [
+		{
+			"type": "pwa-chrome",
+			"name": "https://reactjs.org/link/invalid-hook-call",
+			"request": "launch",
+			"url": "https://reactjs.org/link/invalid-hook-call"
+		}
+	]
+}
