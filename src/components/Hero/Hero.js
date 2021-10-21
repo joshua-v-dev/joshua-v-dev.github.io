@@ -22,7 +22,7 @@ const Hero = (props) => (
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
 
-				<Button onClick={() => router.push(href)}>Learn More</Button>
+				<Button onClick={() => router.push(link)}>Learn More</Button>
 			</LeftSection>
 		</Section>
 	</>
