@@ -6,8 +6,8 @@ import { LeftSection } from './HeroStyles'
 import ActiveLink from './ProjectsPageDemo'
 
 const router = useRouter()
-const href = <ActiveLink />
-const link = (href = { href })
+
+const link = ActiveLink
 const Hero = (props) => (
 	<>
 		<Section row nopadding>
