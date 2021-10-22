@@ -17,7 +17,7 @@ const Hero = (props) => (
 					I am a passionate <br />
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
-				<Link href='/ProjectsPage/ProjectsPage'>
+				<Link href='/ProjectsPage/index'>
 					<Button>Learn More</Button>
 				</Link>
 			</LeftSection>
