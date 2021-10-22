@@ -17,9 +17,9 @@ import React from 'react'
 import { projects } from '../../constants/constants'
 
 const ProjectsPage = () => projects.map()
-{
-	return projects.id
-}
+
+return projects.id
+
 // <Section nopadding id='projectspage'>
 // 	<SectionDivider />
 // 	<SectionTitle main>Projects</SectionTitle>
