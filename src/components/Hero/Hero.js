@@ -4,7 +4,7 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
 
-const router = useRouter()
+// const router = useRouter()
 
 const Hero = (props) => (
 	<>
