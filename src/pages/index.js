@@ -22,6 +22,7 @@ const Home = () => {
 			<Timeline />
 			<Acomplishments />
 			<Footer />
+			<ProjectsPage />
 		</Layout>
 	)
 }
