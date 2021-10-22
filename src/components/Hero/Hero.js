@@ -1,10 +1,8 @@
 import React from 'react'
-// import { useRouter } from 'next/router'
+
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
-
-// const router = useRouter()
 
 const Hero = (props) => (
 	<>
@@ -19,14 +17,9 @@ const Hero = (props) => (
 					I am a passionate <br />
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
-
-				{/* <Button
-					onClick={() =>
-						router.push({
-							pathname: '/ProjectsPage',
-						})
-					}> */}
-				<Button>Learn More</Button>
+				<Link href='/ProjectsPage/ProjectsPage'>
+					<Button>Learn More</Button>
+				</Link>
 			</LeftSection>
 		</Section>
 	</>
