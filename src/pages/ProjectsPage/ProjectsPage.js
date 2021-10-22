@@ -16,9 +16,10 @@ import React from 'react'
 // import { Section, SectionDivider, SectionTitle } from '../../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
 
-const ProjectsPage = () => projects.map()
-
-return projects.id
+const ProjectsPage = () =>
+	projects.map(() => {
+		return projects.id
+	})
 
 // <Section nopadding id='projectspage'>
 // 	<SectionDivider />
