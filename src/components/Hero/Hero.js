@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
@@ -20,14 +20,13 @@ const Hero = (props) => (
 					Full-Stack Web Developer & UI/UX Designer.
 				</SectionText>
 
-				<Button
+				{/* <Button
 					onClick={() =>
 						router.push({
 							pathname: '/ProjectsPage',
 						})
-					}>
-					Learn More
-				</Button>
+					}> */}
+				<Button>Learn More</Button>
 			</LeftSection>
 		</Section>
 	</>
