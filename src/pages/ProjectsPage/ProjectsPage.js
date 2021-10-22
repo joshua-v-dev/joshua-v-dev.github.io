@@ -1,18 +1,18 @@
 import React from 'react'
 
-import {
-	BlogCard,
-	CardInfo,
-	ExternalLinks,
-	GridContainer,
-	HeaderThree,
-	Hr,
-	Tag,
-	TagList,
-	TitleContent,
-	UtilityList,
-	Img,
-} from './ProjectsPageStyles'
+// import {
+// 	BlogCard,
+// 	CardInfo,
+// 	ExternalLinks,
+// 	GridContainer,
+// 	HeaderThree,
+// 	Hr,
+// 	Tag,
+// 	TagList,
+// 	TitleContent,
+// 	UtilityList,
+// 	Img,
+// } from './ProjectsPageStyles'
 // import { Section, SectionDivider, SectionTitle } from '../../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
 
