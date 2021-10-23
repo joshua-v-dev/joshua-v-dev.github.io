@@ -35,12 +35,7 @@ export default class MyDocument extends Document {
 						rel='stylesheet'
 					/>
 				</Head>
-				<CloudinaryContext cloudName='dpytkhyme'>
-					<div>
-						<Image publicId='e-commerce-from-scratch_mgh6ci' width='50' />
-					</div>
-					<Image publicId='e-commerce-from-scratch_mgh6ci' width='0.5' />
-				</CloudinaryContext>
+
 				<body>
 					<Main />
 					<NextScript />

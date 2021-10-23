@@ -1,5 +1,5 @@
-import { Spinner } from './Spinner'
-import { Video } from './Video'
+import { Spinner } from '../Spinner/Spinner'
+import { Video } from '../Video/Video'
 
 import { useState } from 'react'
 

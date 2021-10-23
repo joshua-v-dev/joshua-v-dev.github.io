@@ -10,6 +10,8 @@ import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
 import ProjectsPage from './ProjectsPage'
 import { Upload } from '../components/Upload/Upload'
+import { Video } from '../components/Video/Video'
+import { Spinner } from '../components/Spinner/Spinner'
 
 const Home = () => {
 	return (
@@ -26,6 +28,8 @@ const Home = () => {
 			<Footer />
 			<ProjectsPage />
 			<Upload />
+			<Video />
+			<Spinner />
 		</Layout>
 	)
 }
