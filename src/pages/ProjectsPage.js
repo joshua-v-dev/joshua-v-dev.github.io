@@ -1,49 +1,9 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
-
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjects } from '../constants/constants'
 
-const ProjectsPage = () => (
-	<Section nopadding id='SubProjects'>
-		<SectionDivider />
-		<SectionTitle main>Projects</SectionTitle>
-		<GridContainer>
-			{SubProjects.map((p, i) => {
-				return (
-					<BlogCard key={i}>
-						<div>
-							<ReactPlayer url='https://kapwi.ng/c/CYnE66zqZ9' controls />
-						</div>
-						<Img src={p.image} />
-						<TitleContent>
-							<HeaderThree title='true'>{p.title}</HeaderThree>
-							<Hr />
-						</TitleContent>
-						<CardInfo className='card-info'>{p.description}</CardInfo>
-						<div>
-							<TitleContent>
-								<br />
-								<br />
-								Stack
-							</TitleContent>
-							<TagList>
-								{p.tags.map((t, i) => {
-									return <Tag key={i}>{t}</Tag>
-								})}
-							</TagList>
-						</div>
-						<UtilityList>
-							<ExternalLinks href={p.visit}>Code</ExternalLinks>
-							<ExternalLinks href={p.source}>Source</ExternalLinks>
-						</UtilityList>
-					</BlogCard>
-				)
-			})}
-		</GridContainer>
-	</Section>
-)
 export const Img = styled.img`
 	width: 100%;
 	height: 100%;
@@ -147,4 +107,61 @@ export const Tag = styled.li`
 	color: #d8bfbf;
 	font-size: 1.5rem;
 `
+
+const ProjectsPage = () => (
+	<Section id='SubProjects'>
+		<SectionDivider />
+		<SectionTitle main>Projects</SectionTitle>
+		<GridContainer>
+			{SubProjects.map((p, i) => {
+				const [isPlaying, setIsPlaying] = useState(true)
+				const handleContextMenu = useCallback((event) => {
+					event.preventDefault()
+				}, [])
+				return (
+					<BlogCard key={i}>
+						<div>
+							<ReactPlayer
+								url='https://www.canva.com/design/DAEtYbXWNqg/GWcpfydVJvRoF4Zo2yzoMw/watch?utm_content=DAEtYbXWNqg&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'
+								onContextMenu={handleContextMenu}
+								controls
+								playing={isPlaying}
+								config={{
+									file: {
+										attributes: {
+											controlsList: 'nodownload',
+										},
+									},
+								}}
+							/>
+						</div>
+						<Img src={p.image} />
+						<TitleContent>
+							<HeaderThree title='true'>{p.title}</HeaderThree>
+							<Hr />
+						</TitleContent>
+						<CardInfo className='card-info'>{p.description}</CardInfo>
+						<div>
+							<TitleContent>
+								<br />
+								<br />
+								Stack
+							</TitleContent>
+							<TagList>
+								{p.tags.map((t, i) => {
+									return <Tag key={i}>{t}</Tag>
+								})}
+							</TagList>
+						</div>
+						<UtilityList>
+							<ExternalLinks href={p.visit}>Code</ExternalLinks>
+							<ExternalLinks href={p.source}>Source</ExternalLinks>
+						</UtilityList>
+					</BlogCard>
+				)
+			})}
+		</GridContainer>
+	</Section>
+)
+
 export default ProjectsPage

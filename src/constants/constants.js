@@ -41,7 +41,6 @@ export const SubProjects = [
 	{
 		title: 'E-COMMERCE FROM SCRATCH',
 		description: 'PWA E-COMMERCE TEMPLATE WITH PAYPAL API INTEGRATION',
-		video: 'videos/e-commerce-from-scratch.mp4',
 		tags: ['React, Redux, Express & MongoDB'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
