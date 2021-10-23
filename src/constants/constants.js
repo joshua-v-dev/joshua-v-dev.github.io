@@ -37,6 +37,18 @@ export const projects = [
 	},
 ]
 
+export const SubProjects = [
+	{
+		title: 'E-COMMERCE FROM SCRATCH',
+		description: 'PWA E-COMMERCE TEMPLATE WITH PAYPAL API INTEGRATION',
+		image: 'images/e-commerce-from-scratch.mp4',
+		tags: ['React, Redux, Express & MongoDB'],
+		source: 'https://google.com',
+		visit: 'https://google.com',
+		id: 4,
+	},
+]
+
 export const TimeLineData = [
 	{ year: 2018, text: 'January I began learning the basics of Web Development' },
 	{ year: 2019, text: 'Started Lambda School Bootcamp' },
