@@ -122,12 +122,12 @@ const ProjectsPage = () => (
 		<GridContainer>
 			{SubProjects.map((p, i) => {
 				const [isPlaying, setIsPlaying] = useState(true)
-				const handleContextMenu = useCallback((event) => {
-					event.preventDefault()
+				const handleContextMenu = useCallback((e) => {
+					e.preventDefault()
 				}, [])
 				return (
 					<BlogCard key={i}>
-						<div>
+						{/* <div>
 							<ReactPlayer
 								url='https://www.canva.com/design/DAEtYbXWNqg/GWcpfydVJvRoF4Zo2yzoMw/watch?utm_content=DAEtYbXWNqg&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'
 								onContextMenu={handleContextMenu}
@@ -141,7 +141,7 @@ const ProjectsPage = () => (
 									},
 								}}
 							/>
-						</div>
+						</div> */}
 						<Img src={p.image} />
 						<TitleContent>
 							<HeaderThree title='true'>{p.title}</HeaderThree>

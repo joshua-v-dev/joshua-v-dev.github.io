@@ -14,6 +14,6 @@ export function Video({ publicId }) {
 			autoPlay
 			controls
 			muted
-			src={`https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4/${videoPublicId}`}></video>
+			src={`${videoPublicId}`}></video>
 	)
 }
