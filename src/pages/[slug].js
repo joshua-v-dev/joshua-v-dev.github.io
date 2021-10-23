@@ -9,13 +9,6 @@ const Details = ({ slug }) => {
 	)
 }
 
-export const getStaticProps = async () => {
-	const res = await fetch('ProjectsPage')
-	const data = await res.json()
-
-	return props.ProjectsPage.data
-}
-
 export const getStaticPaths = async () => {
 	const files = fs.readdirSync('ProjectsPage')
 	console.log(files)
@@ -29,5 +22,9 @@ export const getStaticPaths = async () => {
 		paths,
 		fallback: false,
 	}
+}
+
+export const getStaticProps = async ({ params: { slug } }) => {
+	return { props: { slug } }
 }
 export default Details
