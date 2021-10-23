@@ -27,9 +27,9 @@ const Home = () => {
 			<Acomplishments />
 			<Footer />
 			<ProjectsPage />
+			<Spinner />
 			<Upload />
 			<Video />
-			<Spinner />
 		</Layout>
 	)
 }
