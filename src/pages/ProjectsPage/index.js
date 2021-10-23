@@ -7,9 +7,9 @@ export const getStaticProps = async () => {
 
 	return props.ProjectsPage.data
 }
-const ProjectsPage = ({ projects }) =>
-	projects.map((projects) => {
-		return projects.id
-	})
+const ProjectsPage = () => <Link href={'/[slug]'}></Link>
+projects.map((projects) => {
+	return projects.slug
+})
 
 export default ProjectsPage
