@@ -2,7 +2,7 @@ import React from 'react'
 import fs from 'fs'
 import path from 'path'
 import marked from 'marked'
-import ProjectsPage from './ProjectsPage/ProjectsPage'
+import ProjectsPage from './ProjectsPage'
 
 const Details = ({ htmlString }) => {
 	return (
@@ -16,7 +16,7 @@ const Details = ({ htmlString }) => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync(ProjectsPage, fs.PathLike)
+	const files = fs.readdirSync('ProjectsPage')
 
 	const paths = files.map((filename) => ({
 		params: {

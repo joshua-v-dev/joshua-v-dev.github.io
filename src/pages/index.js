@@ -8,7 +8,7 @@ import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
-import ProjectsPage from './ProjectsPage/ProjectsPage'
+import ProjectsPage from './ProjectsPage'
 
 const Home = () => {
 	return (
