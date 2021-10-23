@@ -9,6 +9,7 @@ import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
 import ProjectsPage from './ProjectsPage'
+import { Upload } from '../components/Upload/Upload'
 
 const Home = () => {
 	return (
@@ -24,6 +25,7 @@ const Home = () => {
 			<Acomplishments />
 			<Footer />
 			<ProjectsPage />
+			<Upload />
 		</Layout>
 	)
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import fs from 'fs'
 import path from 'path'
 import marked from 'marked'
-import ProjectsPage from './ProjectsPage'
 
 const Details = ({ htmlString }) => {
 	return (
