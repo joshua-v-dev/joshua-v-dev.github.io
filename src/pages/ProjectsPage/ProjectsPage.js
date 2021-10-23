@@ -1,9 +1,11 @@
 import Link from 'next/link'
-import { projects } from '../../constants/constants'
 
-const ProjectsPage = () =>
-	projects.map((projects) => {
-		return projects.slug
-	})
+const ProjectsPage = () => (
+	<Link href='slug'>
+		<a>
+			<h1>Hello</h1>
+		</a>
+	</Link>
+)
 
 export default ProjectsPage
