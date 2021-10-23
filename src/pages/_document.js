@@ -37,9 +37,9 @@ export default class MyDocument extends Document {
 				</Head>
 				<CloudinaryContext cloudName='dpytkhyme'>
 					<div>
-						<Image publicId='sample' width='50' />
+						<Image publicId='e-commerce-from-scratch_mgh6ci' width='50' />
 					</div>
-					<Image publicId='sample' width='0.5' />
+					<Image publicId='e-commerce-from-scratch_mgh6ci' width='0.5' />
 				</CloudinaryContext>
 				<body>
 					<Main />
