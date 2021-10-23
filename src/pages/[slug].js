@@ -1,15 +1,13 @@
 import React from 'react'
 import fs from 'fs'
 import path from 'path'
-import Head from 'next/head'
+import marked from 'marked'
+import ProjectsPage from './ProjectsPage/ProjectsPage'
 
-const Details = ({ projects, data }) => {
+const Details = ({ htmlString }) => {
 	return (
 		<>
-			<Head>
-				<title>{data.title}</title>
-			</Head>
-			<div>
+			<div dangerouslySetInnerHTML={{ __html: htmlString }}>
 				<h1>Projects Page</h1>
 				<pre>{projects}</pre>
 			</div>
@@ -18,7 +16,7 @@ const Details = ({ projects, data }) => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('ProjectsPage')
+	const files = fs.readdirSync(ProjectsPage, fs.PathLike)
 
 	const paths = files.map((filename) => ({
 		params: {
@@ -35,6 +33,9 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params: { slug } }) => {
 	const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
 	const parsedProjects = matter(projects)
-	return { props: { projects: parsedProjects.projects, data: parsedProjects.data } }
+
+	const htmlString = marked(parsedProjects.content)
+
+	return { props: { htmlString } }
 }
 export default Details

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const ProjectsPage = () => (
-	<Link href='slug'>
+	<Link href='/'>
 		<a>
 			<h1>Hello</h1>
 		</a>
