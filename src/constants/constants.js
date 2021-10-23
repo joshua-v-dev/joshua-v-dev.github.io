@@ -41,11 +41,11 @@ export const SubProjects = [
 	{
 		title: 'E-COMMERCE FROM SCRATCH',
 		description: 'PWA E-COMMERCE TEMPLATE WITH PAYPAL API INTEGRATION',
-		image: 'images/e-commerce-from-scratch.mp4',
+		video: 'videos/e-commerce-from-scratch.mp4',
 		tags: ['React, Redux, Express & MongoDB'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 4,
+		id: 0,
 	},
 ]
 

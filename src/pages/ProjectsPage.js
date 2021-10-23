@@ -119,14 +119,14 @@ export const Tag = styled.li`
 // 	Img,
 // } from './ProjectsPageStyles'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
-import { projects } from '../constants/constants'
+import { SubProjects } from '../constants/constants'
 
 const ProjectsPage = () => (
-	<Section nopadding id='projects'>
+	<Section nopadding id='SubProjects'>
 		<SectionDivider />
 		<SectionTitle main>Projects</SectionTitle>
 		<GridContainer>
-			{projects.map((p, i) => {
+			{SubProjects.map((p, i) => {
 				return (
 					<BlogCard key={i}>
 						<Img src={p.image} />
