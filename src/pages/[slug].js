@@ -1,23 +1,31 @@
 import React from 'react'
 import fs from 'fs'
+import path from 'path'
+import Head from 'next/head'
 
-const Details = ({ slug }) => {
+const Details = ({ projects, data }) => {
 	return (
-		<div>
-			<h1>Details Page{slug}</h1>
-		</div>
+		<>
+			<Head>
+				<title>{data.title}</title>
+			</Head>
+			<div>
+				<h1>Projects Page</h1>
+				<pre>{projects}</pre>
+			</div>
+		</>
 	)
 }
 
 export const getStaticPaths = async () => {
 	const files = fs.readdirSync('ProjectsPage')
-	console.log(files)
+
 	const paths = files.map((filename) => ({
 		params: {
 			slug: filename.replace('.js', ''),
 		},
 	}))
-	console.log('paths:', paths)
+
 	return {
 		paths,
 		fallback: false,
@@ -25,6 +33,8 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params: { slug } }) => {
-	return { props: { slug } }
+	const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
+	const parsedProjects = matter(projects)
+	return { props: { projects: parsedProjects.projects, data: parsedProjects.data } }
 }
 export default Details
