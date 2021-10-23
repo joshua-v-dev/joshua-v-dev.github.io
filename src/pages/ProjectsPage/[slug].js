@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('ProjectsPage')
+	const files = fs.readdirSync('/ProjectsPage')
 	console.log(files)
 	const paths = files.map((filename) => ({
 		params: {
