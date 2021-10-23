@@ -7,11 +7,11 @@ export function Upload() {
 	const [showSpinner, setShowSpinner] = useState(false)
 	const [showVideo, setShowVideo] = useState(false)
 	const [publicId, setPublicId] = useState('')
-	const onChange = async (event) => {
+	const onChange = async (e) => {
 		setShowSpinner(true)
-		event.preventDefault()
+		e.preventDefault()
 		const formData = new FormData()
-		const file = event.target.files[0]
+		const file = e.target.files[0]
 		formData.append('inputFile', file)
 
 		try {

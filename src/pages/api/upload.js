@@ -1,6 +1,6 @@
 import cloudinary from 'cloudinary-react'
 import { IncomingForm } from 'formidable'
-// 👇 CHANGE THESE TO REFLECT YOUR CLOUDINARY SETTINGS 👇
+
 cloudinary.config({
 	cloud_name: process.env.cloud_name,
 	api_key: process.env.api_key,
@@ -28,7 +28,8 @@ export default async (req, res) => {
 	try {
 		const response = await cloudinary.v2.uploader.upload(file, {
 			resource_type: 'video',
-			public_id: 'my_video',
+			public_id:
+				'https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4',
 		})
 		return res.json(response)
 	} catch (error) {
