@@ -27,6 +27,7 @@ export const getStaticPaths = async () => {
 			slug: filename.replace('.js', ''),
 		},
 	}))
+
 	return {
 		paths,
 		fallback: false,
