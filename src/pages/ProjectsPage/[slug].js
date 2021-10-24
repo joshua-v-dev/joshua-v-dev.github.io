@@ -13,15 +13,23 @@ const Details = ({ htmlString }) => {
 		</>
 	)
 }
-
 export const getStaticPaths = async () => {
 	const files = fs.readdirSync('ProjectsPage')
-
+	console.log(files)
 	const paths = files.map((filename) => ({
 		params: {
 			slug: filename.replace('.js', ''),
 		},
 	}))
+
+	export const getStaticProps = async ({ params: { slug } }) => {
+		const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
+		const parsedProjects = matter(projects)
+
+		const htmlString = marked(parsedProjects.content)
+
+		return { props: { htmlString } }
+	}
 
 	return {
 		paths,
@@ -29,12 +37,4 @@ export const getStaticPaths = async () => {
 	}
 }
 
-export const getStaticProps = async ({ params: { slug } }) => {
-	const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
-	const parsedProjects = matter(projects)
-
-	const htmlString = marked(parsedProjects.content)
-
-	return { props: { htmlString } }
-}
 export default Details
