@@ -1,6 +1,7 @@
 import React from 'react'
 import fs from 'fs'
 import path from 'path'
+import matter from 'gray-matter'
 import marked from 'marked'
 
 export const getStaticProps = async ({ params: { slug } }) => {
@@ -23,7 +24,7 @@ const Details = ({ htmlString }) => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('/ProjectsPage')
+	const files = fs.readdirSync('ProjectsPage')
 	console.log(files)
 	const paths = files.map((filename) => ({
 		params: {
