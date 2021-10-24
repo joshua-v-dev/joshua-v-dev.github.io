@@ -18,7 +18,7 @@ const Details = ({ htmlString }) => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('ProjectsPage')
+	const files = fs.readdirSync('ProjectPage')
 	console.log(files)
 	const paths = files.map((filename) => ({
 		params: {
