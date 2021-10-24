@@ -14,6 +14,6 @@ export function Video({ publicId }) {
 			autoPlay
 			controls
 			muted
-			src={`${videoPublicId}`}></video>
+			src={`${publicId}`}></video>
 	)
 }

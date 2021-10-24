@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjects } from '../constants/constants'
-import { CloudinaryContext, Image } from 'cloudinary-react'
+// import { CloudinaryContext, Image } from 'cloudinary-react'
 
 export const Img = styled.img`
 	width: 100%;
@@ -113,18 +113,18 @@ const ProjectsPage = () => (
 	<Section id='SubProjects'>
 		<SectionDivider />
 		<SectionTitle main>Projects</SectionTitle>{' '}
-		<CloudinaryContext cloudName='dpytkhyme'>
+		{/* <CloudinaryContext cloudName='dpytkhyme'>
 			<div>
 				<Image publicId='e-commerce-from-scratch_mgh6ci' width='50' />
 			</div>
 			<Image publicId='e-commerce-from-scratch_mgh6ci' width='0.5' />
-		</CloudinaryContext>
+		</CloudinaryContext> */}
 		<GridContainer>
 			{SubProjects.map((p, i) => {
-				const [isPlaying, setIsPlaying] = useState(true)
-				const handleContextMenu = useCallback((e) => {
-					e.preventDefault()
-				}, [])
+				// const [isPlaying, setIsPlaying] = useState(true)
+				// const handleContextMenu = useCallback((e) => {
+				// 	e.preventDefault()
+				// }, [])
 				return (
 					<BlogCard key={i}>
 						{/* <div>
