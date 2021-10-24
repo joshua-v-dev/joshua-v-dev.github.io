@@ -3,18 +3,88 @@ import styled from 'styled-components'
 import ReactPlayer from 'react-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjects } from '../constants/constants'
-// import { CloudinaryContext, Image } from 'cloudinary-react'
 
+const ProjectsPage = () => (
+	<Section id='SubProjects'>
+		<SectionDivider />
+		<SectionTitle main>Projects</SectionTitle>
+
+		<GridContainer>
+			{SubProjects.map((p, i) => {
+				const [isPlaying, setIsPlaying] = useState(true)
+				const handleContextMenu = useCallback((e) => {
+					e.preventDefault()
+				}, [])
+				return (
+					<BlogCard key={i}>
+						<div>
+							<ReactPlayer
+								className='ReactPlayer'
+								url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
+								onContextMenu={handleContextMenu}
+								controls
+								playing={isPlaying}
+								config={{
+									file: {
+										attributes: {
+											controlsList: 'nodownload',
+										},
+									},
+								}}
+							/>
+						</div>
+						<Img src={p.image} />
+						<TitleContent>
+							<HeaderThree title='true'>{p.title}</HeaderThree>
+							<Hr />
+						</TitleContent>
+						<CardInfo className='card-info'>{p.description}</CardInfo>
+						<div>
+							<TitleContent>
+								<br />
+								<br />
+								Stack
+							</TitleContent>
+							<TagList>
+								{p.tags.map((t, i) => {
+									return <Tag key={i}>{t}</Tag>
+								})}
+							</TagList>
+						</div>
+						<UtilityList>
+							<ExternalLinks href={p.visit}>Code</ExternalLinks>
+							<ExternalLinks href={p.source}>Source</ExternalLinks>
+						</UtilityList>
+					</BlogCard>
+				)
+			})}
+		</GridContainer>
+	</Section>
+)
 export const Img = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
 `
+// export const ReactPlayer = styled.div`
+// 	display: grid;
+// 	grid-template-columns: norepeat(auto-fill, minmax(600px, 1fr));
+// 	padding: 3rem;
+// 	place-items: center;
+// 	column-gap: 2rem;
+// 	row-gap: 3rem;
+// 	@media ${(props) => props.theme.breakpoints.sm} {
+// 		display: flex;
+// 		flex-direction: column;
+// 		padding: 2rem;
+// 		padding-bottom: 0;
+// 	}
+// `
 
 export const GridContainer = styled.section`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	// grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	padding: 3rem;
 	place-items: center;
 	column-gap: 2rem;
@@ -30,7 +100,7 @@ export const BlogCard = styled.div`
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	text-align: center;
-	width: 400px;
+	width: 640px;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}
@@ -108,73 +178,5 @@ export const Tag = styled.li`
 	color: #d8bfbf;
 	font-size: 1.5rem;
 `
-
-const ProjectsPage = () => (
-	<Section id='SubProjects'>
-		<SectionDivider />
-		<SectionTitle main>Projects</SectionTitle>
-		{/* <CloudinaryContext cloudName='dpytkhyme'>
-			<div>
-				<Image
-					publicId='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
-					width='50'
-				/>
-			</div>
-			<Image
-				publicId='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
-				width='0.5'
-			/>
-		</CloudinaryContext> */}
-		<GridContainer>
-			{SubProjects.map((p, i) => {
-				const [isPlaying, setIsPlaying] = useState(true)
-				const handleContextMenu = useCallback((e) => {
-					e.preventDefault()
-				}, [])
-				return (
-					<BlogCard key={i}>
-						<div>
-							<ReactPlayer
-								url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
-								onContextMenu={handleContextMenu}
-								controls
-								playing={isPlaying}
-								config={{
-									file: {
-										attributes: {
-											controlsList: 'nodownload',
-										},
-									},
-								}}
-							/>
-						</div>
-						<Img src={p.image} />
-						<TitleContent>
-							<HeaderThree title='true'>{p.title}</HeaderThree>
-							<Hr />
-						</TitleContent>
-						<CardInfo className='card-info'>{p.description}</CardInfo>
-						<div>
-							<TitleContent>
-								<br />
-								<br />
-								Stack
-							</TitleContent>
-							<TagList>
-								{p.tags.map((t, i) => {
-									return <Tag key={i}>{t}</Tag>
-								})}
-							</TagList>
-						</div>
-						<UtilityList>
-							<ExternalLinks href={p.visit}>Code</ExternalLinks>
-							<ExternalLinks href={p.source}>Source</ExternalLinks>
-						</UtilityList>
-					</BlogCard>
-				)
-			})}
-		</GridContainer>
-	</Section>
-)
 
 export default ProjectsPage
