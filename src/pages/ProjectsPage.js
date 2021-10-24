@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-// import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjects } from '../constants/constants'
 // import { CloudinaryContext, Image } from 'cloudinary-react'
@@ -112,24 +112,30 @@ export const Tag = styled.li`
 const ProjectsPage = () => (
 	<Section id='SubProjects'>
 		<SectionDivider />
-		<SectionTitle main>Projects</SectionTitle>{' '}
+		<SectionTitle main>Projects</SectionTitle>
 		{/* <CloudinaryContext cloudName='dpytkhyme'>
 			<div>
-				<Image publicId='e-commerce-from-scratch_mgh6ci' width='50' />
+				<Image
+					publicId='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
+					width='50'
+				/>
 			</div>
-			<Image publicId='e-commerce-from-scratch_mgh6ci' width='0.5' />
+			<Image
+				publicId='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
+				width='0.5'
+			/>
 		</CloudinaryContext> */}
 		<GridContainer>
 			{SubProjects.map((p, i) => {
-				// const [isPlaying, setIsPlaying] = useState(true)
-				// const handleContextMenu = useCallback((e) => {
-				// 	e.preventDefault()
-				// }, [])
+				const [isPlaying, setIsPlaying] = useState(true)
+				const handleContextMenu = useCallback((e) => {
+					e.preventDefault()
+				}, [])
 				return (
 					<BlogCard key={i}>
-						{/* <div>
+						<div>
 							<ReactPlayer
-								url='https://www.canva.com/design/DAEtYbXWNqg/GWcpfydVJvRoF4Zo2yzoMw/watch?utm_content=DAEtYbXWNqg&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'
+								url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
 								onContextMenu={handleContextMenu}
 								controls
 								playing={isPlaying}
@@ -141,7 +147,7 @@ const ProjectsPage = () => (
 									},
 								}}
 							/>
-						</div> */}
+						</div>
 						<Img src={p.image} />
 						<TitleContent>
 							<HeaderThree title='true'>{p.title}</HeaderThree>
