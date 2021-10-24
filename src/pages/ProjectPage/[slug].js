@@ -18,7 +18,7 @@ const Details = ({ htmlString }) => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('ProjectPage')
+	const files = fs.readdirSync('ProjectsPage')
 	console.log(files)
 	const paths = files.map((filename) => ({
 		params: {
@@ -32,7 +32,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params: { slug } }) => {
-	const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
+	const projects = fs.readFileSync(path.join('ProjectPage', slug + '.js')).toString()
 	const parsedProjects = matter(projects)
 
 	const htmlString = marked(parsedProjects.content)
