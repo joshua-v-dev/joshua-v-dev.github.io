@@ -3,12 +3,17 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
+import Head from 'next/head'
 
-const Details = ({ htmlString }) => {
+const Details = ({ htmlString, data }) => {
 	return (
 		<>
-			<h1>Projects Page</h1>
-			<pre>{projects}</pre>
+			{/* <h1>Projects Page</h1>
+			<pre>{projects}</pre> */}
+			<Head>
+				<title>{data.title}</title>
+				<meta title='description' content={data.description} />
+			</Head>
 
 			<div dangerouslySetInnerHTML={{ __html: htmlString }} />
 		</>
