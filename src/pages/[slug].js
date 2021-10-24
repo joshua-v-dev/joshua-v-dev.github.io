@@ -21,8 +21,7 @@ const Details = ({ htmlString, data }) => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('ProjectsPage')
-	console.log(files)
+	const files = fs.readdirSync('ProjectsPage').toString()
 	const paths = files.map((filename) => ({
 		params: {
 			slug: filename.replace('.js', ''),
