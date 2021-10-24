@@ -67,20 +67,6 @@ export const Img = styled.img`
 	object-fit: cover;
 	overflow: hidden;
 `
-// export const ReactPlayer = styled.div`
-// 	display: grid;
-// 	grid-template-columns: norepeat(auto-fill, minmax(600px, 1fr));
-// 	padding: 3rem;
-// 	place-items: center;
-// 	column-gap: 2rem;
-// 	row-gap: 3rem;
-// 	@media ${(props) => props.theme.breakpoints.sm} {
-// 		display: flex;
-// 		flex-direction: column;
-// 		padding: 2rem;
-// 		padding-bottom: 0;
-// 	}
-// `
 
 export const GridContainer = styled.section`
 	display: grid;
