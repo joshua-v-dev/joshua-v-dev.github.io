@@ -3,6 +3,14 @@ import fs from 'fs'
 import path from 'path'
 import marked from 'marked'
 
+export const getStaticProps = async ({ params: { slug } }) => {
+	const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
+	const parsedProjects = matter(projects)
+
+	const htmlString = marked(parsedProjects.content)
+
+	return { props: { htmlString } }
+}
 const Details = ({ htmlString }) => {
 	return (
 		<>
@@ -13,6 +21,7 @@ const Details = ({ htmlString }) => {
 		</>
 	)
 }
+
 export const getStaticPaths = async () => {
 	const files = fs.readdirSync('ProjectsPage')
 	console.log(files)
@@ -21,16 +30,6 @@ export const getStaticPaths = async () => {
 			slug: filename.replace('.js', ''),
 		},
 	}))
-
-	export const getStaticProps = async ({ params: { slug } }) => {
-		const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
-		const parsedProjects = matter(projects)
-
-		const htmlString = marked(parsedProjects.content)
-
-		return { props: { htmlString } }
-	}
-
 	return {
 		paths,
 		fallback: false,
