@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"test": "jest",
+		"prebuild": "jest",
 		"build": "next build && next export",
 		"start": "next start",
 		"eslint": "eslint"
