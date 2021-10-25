@@ -14,3 +14,4 @@ const Details = ({ htmlString, data }) => {
 		</>
 	)
 }
+export default Details
