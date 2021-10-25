@@ -29,12 +29,14 @@ export const getStaticProps = async ({ params: { slug } }) => {
 }
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync('ProjectsPages')
+	const files = fs.readdirSync('ProjectPages')
+	console.log('files: ', files)
 	const paths = files.map((filename) => ({
 		params: {
 			slug: filename.replace('.js', ''),
 		},
 	}))
+	console.log('paths: ', paths)
 
 	return {
 		paths,
