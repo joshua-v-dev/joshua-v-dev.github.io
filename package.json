@@ -4,13 +4,13 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build-yarn": "babel src -d lib",
 		"test": "jest",
 		"build": "next build && next export",
 		"start": "next start",
 		"eslint": "eslint"
 	},
 	"dependencies": {
+		"@netlify/plugin-nextjs": "^3.9.2",
 		"cloudinary-react": "^1.7.0",
 		"eslint": "^8.0.1",
 		"formidable": "1.2.2",

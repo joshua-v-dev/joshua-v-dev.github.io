@@ -20,7 +20,7 @@ const Details = ({ htmlString, data }) => {
 }
 
 export const getStaticProps = async ({ params: { slug } }) => {
-	const projects = fs.readFileSync(path.join('MernProject', slug + '.js')).toString()
+	const projects = fs.readFileSync(path.join('ProjectsPage', slug + '.js')).toString()
 	const parsedProjects = matter(projects)
 
 	const htmlString = marked(parsedProjects.content)
