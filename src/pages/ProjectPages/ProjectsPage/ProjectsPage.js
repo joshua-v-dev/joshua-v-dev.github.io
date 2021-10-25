@@ -1,4 +1,4 @@
-import MernProject from '../ProjectPages/MernProject'
+import MernProject from '../MernProject'
 
 const ProjectsPage = () => <MernProject />
 
