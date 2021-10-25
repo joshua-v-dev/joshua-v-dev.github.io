@@ -32,7 +32,7 @@ const Timeline = () => {
 				carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length),
 			)
 
-			scrollTo(carouselRef.current, scrollLeft)
+			scroll(carouselRef.current, scrollLeft)
 		}
 	}
 
