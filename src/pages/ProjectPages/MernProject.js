@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
-import { Section, SectionDivider, SectionTitle } from '../../../styles/GlobalComponents'
-import { SubProjects } from '../../../constants/constants'
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import { SubProjects } from '../../constants/constants'
 
 const MernProject = () => (
 	<Section id='SubProjects'>
