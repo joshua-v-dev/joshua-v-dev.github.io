@@ -14,8 +14,8 @@ const Details = ({ htmlString }) => {
 	)
 }
 
-export const getStaticProps = async ({ props: {} }) => {
-	const projects = fs.readFileSync(path.join(slug + '.js')).toString()
+export const getStaticProps = async ({ props: { filename } }) => {
+	const projects = fs.readFileSync(path.join(filename + '.js')).toString()
 	const parsedProjects = matter(projects)
 
 	const htmlString = marked(parsedProjects.content)
