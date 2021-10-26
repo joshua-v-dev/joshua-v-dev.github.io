@@ -5,13 +5,9 @@ import matter from 'gray-matter'
 import marked from 'marked'
 import Head from 'next/head'
 
-const Details = ({ htmlString, data }) => {
+const Details = ({ htmlString }) => {
 	return (
 		<>
-			<Head>
-				<title>{data.title}</title>
-				<meta title='description' content={data.description} />
-			</Head>
 			<h1>Projects Page</h1>
 			<pre>{projects}</pre>
 			<div dangerouslySetInnerHTML={{ __html: htmlString }} />
