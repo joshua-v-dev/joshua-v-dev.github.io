@@ -123,6 +123,7 @@ export const HeaderThree = styled.h3`
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.3rem;
+		font: 20px;
 	}
 `
 
