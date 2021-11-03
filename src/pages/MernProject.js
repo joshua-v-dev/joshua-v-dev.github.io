@@ -105,7 +105,7 @@ export const BlogCard = styled.div`
 	text-align: center;
 	width: 640px;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
+		width: 90%;
 	}
 `
 export const TitleContent = styled.div`
