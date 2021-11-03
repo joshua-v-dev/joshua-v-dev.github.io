@@ -26,6 +26,9 @@ export const BlogCard = styled.div`
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	text-align: center;
 	width: 400px;
+	@media ${(props) => props.theme.breakpoints.md} {
+		width: 100%;
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}

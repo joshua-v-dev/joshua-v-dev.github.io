@@ -37,10 +37,10 @@ export const SectionTitle = styled.h2`
 	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: ${(props) => (props.main ? '56px' : '48px')};
+		font-size: ${(props) => (props.main ? '40px' : '48px')};
 		line-height: ${(props) => (props.main ? '56px' : '48px')};
 		margin-bottom: 12px;
-		padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
+		padding: ${(props) => (props.main ? '30px 0 12px' : '0')};
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
