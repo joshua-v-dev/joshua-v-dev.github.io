@@ -24,7 +24,7 @@ const MernProject = () => (
 									<ReactPlayer
 										className='ReactPlayer'
 										url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
-										width='100%'
+										width='90%'
 										onContextMenu={handleContextMenu}
 										controls
 										playing={isPlaying}
