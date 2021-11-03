@@ -11,38 +11,40 @@ import {
 	DropDownTextContainer,
 } from './NavDropDown'
 
-const NavDropDown = (props) => (
-	<DropDownContainer active={props.isOpen}>
-		<DropDownItem href='#' target='_blank' rel='noreferrer'>
-			<DropDownIcon>
-				<AiFillPhone />
-			</DropDownIcon>
-			<DropDownTextContainer>
-				<DropDownItemTitle>Phone</DropDownItemTitle>
-				<DropDownItemDesc>Let's have a chat?'</DropDownItemDesc>
-			</DropDownTextContainer>
-		</DropDownItem>
-		<DropDownItem href='#' target='_blank' rel='noreferrer'>
-			<DropDownIcon>
-				<AiOutlineMail />
-			</DropDownIcon>
-			<DropDownTextContainer>
-				<DropDownItemTitle>Email</DropDownItemTitle>
-				<DropDownItemDesc>
-					If you want to talk just send a message and I'll get back to you
-				</DropDownItemDesc>
-			</DropDownTextContainer>
-		</DropDownItem>
-		<DropDownItem href='#' target='_blank' rel='noreferrer'>
-			<DropDownIcon>
-				<FaLocationArrow />
-			</DropDownIcon>
-			<DropDownTextContainer>
-				<DropDownItemTitle>Address</DropDownItemTitle>
-				<DropDownItemDesc>Puerto Vallarta, Mexico</DropDownItemDesc>
-			</DropDownTextContainer>
-		</DropDownItem>
-	</DropDownContainer>
-)
+const NavDropDown = (props) => {
+	return (
+		<DropDownContainer active={props.isOpen}>
+			<DropDownItem href='#' target='_blank' rel='noreferrer'>
+				<DropDownIcon>
+					<AiFillPhone />
+				</DropDownIcon>
+				<DropDownTextContainer>
+					<DropDownItemTitle>Phone</DropDownItemTitle>
+					<DropDownItemDesc>Let's have a chat?'</DropDownItemDesc>
+				</DropDownTextContainer>
+			</DropDownItem>
+			<DropDownItem href='#' target='_blank' rel='noreferrer'>
+				<DropDownIcon>
+					<AiOutlineMail />
+				</DropDownIcon>
+				<DropDownTextContainer>
+					<DropDownItemTitle>Email</DropDownItemTitle>
+					<DropDownItemDesc>
+						If you want to talk just send a message and I'll get back to you
+					</DropDownItemDesc>
+				</DropDownTextContainer>
+			</DropDownItem>
+			<DropDownItem href='#' target='_blank' rel='noreferrer'>
+				<DropDownIcon>
+					<FaLocationArrow />
+				</DropDownIcon>
+				<DropDownTextContainer>
+					<DropDownItemTitle>Address</DropDownItemTitle>
+					<DropDownItemDesc>Puerto Vallarta, Mexico</DropDownItemDesc>
+				</DropDownTextContainer>
+			</DropDownItem>
+		</DropDownContainer>
+	)
+}
 
 export default NavDropDown

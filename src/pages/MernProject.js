@@ -3,63 +3,68 @@ import styled from 'styled-components'
 import ReactPlayer from 'react-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjects } from '../constants/constants'
+import { Layout } from '../layout/Layout'
 
 const MernProject = () => (
-	<Section id='SubProjects'>
-		<SectionDivider />
-		<SectionTitle main>Projects</SectionTitle>
+	<Layout>
+		<Section id='SubProjects'>
+			<SectionDivider />
+			<SectionTitle main>Projects</SectionTitle>
 
-		<GridContainer>
-			{SubProjects.map((p, i) => {
-				const [isPlaying, setIsPlaying] = useState(true)
-				const handleContextMenu = useCallback((e) => {
-					e.preventDefault()
-				}, [])
-				return (
-					<BlogCard key={i}>
-						<div>
-							<ReactPlayer
-								className='ReactPlayer'
-								url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
-								onContextMenu={handleContextMenu}
-								controls
-								playing={isPlaying}
-								config={{
-									file: {
-										attributes: {
-											controlsList: 'nodownload',
-										},
-									},
-								}}
-							/>
-						</div>
-						<Img src={p.image} />
-						<TitleContent>
-							<HeaderThree title='true'>{p.title}</HeaderThree>
-							<Hr />
-						</TitleContent>
-						<CardInfo className='card-info'>{p.description}</CardInfo>
-						<div>
-							<TitleContent>
-								<br />
-								<br />
-								Stack
-							</TitleContent>
-							<TagList>
-								{p.tags.map((t, i) => {
-									return <Tag key={i}>{t}</Tag>
-								})}
-							</TagList>
-						</div>
-						<UtilityList>
-							<ExternalLinks href={p.visit}>Code</ExternalLinks>
-							<ExternalLinks href={p.source}>Source</ExternalLinks>
-						</UtilityList>
-					</BlogCard>
-				)
-			})}
-		</GridContainer>
-	</Section>
+			<GridContainer>
+				{SubProjects.map((p, i) => {
+					const [isPlaying, setIsPlaying] = useState(true)
+					const handleContextMenu = useCallback((e) => {
+						e.preventDefault()
+					}, [])
+					return (
+						<GridContainer>
+							<BlogCard key={i}>
+								<div>
+									<ReactPlayer
+										className='ReactPlayer'
+										url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
+										onContextMenu={handleContextMenu}
+										controls
+										playing={isPlaying}
+										config={{
+											file: {
+												attributes: {
+													controlsList: 'nodownload',
+												},
+											},
+										}}
+									/>
+								</div>
+								<Img src={p.image} />
+								<TitleContent>
+									<HeaderThree title='true'>{p.title}</HeaderThree>
+									<Hr />
+								</TitleContent>
+								<CardInfo className='card-info'>{p.description}</CardInfo>
+								<div>
+									<TitleContent>
+										<br />
+										<br />
+										Stack
+									</TitleContent>
+									<TagList>
+										{p.tags.map((t, i) => {
+											return <Tag key={i}>{t}</Tag>
+										})}
+									</TagList>
+								</div>
+								<UtilityList>
+									<ExternalLinks href={p.visit}>Code</ExternalLinks>
+									<ExternalLinks href={p.source}>Source</ExternalLinks>
+								</UtilityList>
+							</BlogCard>
+						</GridContainer>
+					)
+				})}
+			</GridContainer>
+		</Section>
+	</Layout>
 )
 
 export const Img = styled.img`
