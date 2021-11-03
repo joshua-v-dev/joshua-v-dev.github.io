@@ -71,6 +71,7 @@ const MernProject = () => (
 export const ReactPlayer = styled.video`
 	display: grid;
 	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 90%;
 		display: flex;
 		flex-direction: column;
 		padding: 2rem;
