@@ -24,6 +24,7 @@ const MernProject = () => (
 									<ReactPlayer
 										className='ReactPlayer'
 										url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
+										width='100%'
 										onContextMenu={handleContextMenu}
 										controls
 										playing={isPlaying}
@@ -67,6 +68,16 @@ const MernProject = () => (
 	</Layout>
 )
 
+export const ReactPlayer = styled.video`
+	display: grid;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem;
+		padding-bottom: 0;
+	}
+`
+
 export const Img = styled.img`
 	width: 100%;
 	height: 100%;
@@ -76,7 +87,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
-	// grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	padding: 3rem;
 	place-items: center;
 	column-gap: 2rem;
