@@ -22,7 +22,7 @@ const MernProject = () => (
 							<BlogCard key={i}>
 								<div>
 									<ReactPlayer
-										className='ReactPlayer'
+										className='Reactplayer'
 										url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
 										width='90%'
 										onContextMenu={handleContextMenu}
@@ -68,7 +68,7 @@ const MernProject = () => (
 	</Layout>
 )
 
-export const ReactPlayer = styled.video`
+export const Reactplayer = styled.video`
 	display: grid;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 90%;
