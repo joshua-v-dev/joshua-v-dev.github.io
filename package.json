@@ -15,7 +15,7 @@
 		"gray-matter": "^4.0.3",
 		"install-peers": "^1.0.3",
 		"jest": "^27.3.1",
-		"lodash": "4.0",
+		"lodash": "4.17",
 		"marked": "^3.0.7",
 		"next": "10.2.3",
 		"react": "17.0.2",
