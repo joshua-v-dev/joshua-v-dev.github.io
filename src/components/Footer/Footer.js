@@ -20,7 +20,7 @@ const Footer = () => {
 			<LinkList>
 				<LinkColumn>
 					<LinkTitle>Contact</LinkTitle>
-					<LinkItem href={NavDropDown}></LinkItem>
+					<LinkItem></LinkItem>
 				</LinkColumn>
 				<LinkColumn>
 					<LinkTitle>Email</LinkTitle>

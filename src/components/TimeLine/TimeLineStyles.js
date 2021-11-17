@@ -36,7 +36,7 @@ flex-direction: column;
 export const CarouselMobileScrollNode = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
-		// flex-direction: column;
+
 		min-width: ${({ final }) => (final ? `120%;` : `min-content`)};
 	}
 `
