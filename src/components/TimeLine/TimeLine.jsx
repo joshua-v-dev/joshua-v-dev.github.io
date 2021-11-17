@@ -60,7 +60,7 @@ const Timeline = () => {
 	return (
 		<Section id='about'>
 			<SectionTitle>About Me</SectionTitle>
-			<SectionText></SectionText>
+			<SectionText>I am a self-taught developer with plenty of zest</SectionText>
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
 				<>
 					{TimeLineData.map((item, index) => (
@@ -106,7 +106,7 @@ const Timeline = () => {
 				</>
 			</CarouselContainer>
 			<CarouselButtons>
-				{TimeLineData.map((item, index) => {
+				{TimeLineData.map((_item, index) => {
 					return (
 						<CarouselButton
 							key={index}
