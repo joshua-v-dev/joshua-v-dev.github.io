@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-
+import NavDropDown from '../NavDropDown/index'
 import { SocialIcons } from '../Header/HeaderStyles'
 import {
 	CompanyContainer,
@@ -20,7 +20,7 @@ const Footer = () => {
 			<LinkList>
 				<LinkColumn>
 					<LinkTitle>Contact</LinkTitle>
-					<LinkItem href=''></LinkItem>
+					<LinkItem href={NavDropDown}></LinkItem>
 				</LinkColumn>
 				<LinkColumn>
 					<LinkTitle>Email</LinkTitle>
