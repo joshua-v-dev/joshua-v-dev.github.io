@@ -5,9 +5,9 @@ export const CarouselContainer = styled.ul`
   max-height:1040px;
 	background: #0f1624;
 	padding: 0rem;
-	list-style: none;
+	list-style-type: space-counter;
 	justify-content: space-between;
-//  overflow-x: hidden;
+  overflow-x: scroll;
 
 	margin-left: 32px;
 	&:first-of-type {
@@ -24,7 +24,7 @@ s
 
 	@media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
-flex-direction: column;
+width:100vw;
 		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
 		scroll-snap-type: x mandatory;
@@ -54,9 +54,9 @@ export const CarouselItem = styled.div`
 		display: grid;
 		grid-auto-rows: minmax(100px, auto);
 		grid-template-columns: repeat(3, 1fr);
-		margin-left: 32px;
-		margin-bottom: 5rem;
-		min-width: 120px;
+		// margin-left: 32px;
+		// margin-bottom: 5rem;
+		min-width: 100vw;
 		background: #0e131f;
 		padding: 4px;
 		align-content: start;
@@ -65,6 +65,7 @@ export const CarouselItem = styled.div`
 		overflow: visible;
 		position: relative;
 		height: fit-content;
+		width: fit-content;
 
 		${(props) => (props.active === props.index ? `opacity: 1` : `opacity: 0.5`)};
 	}
@@ -110,6 +111,7 @@ export const CarouselItemImg = styled.svg`
 `
 
 export const CarouselItemText = styled.p`
+width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
