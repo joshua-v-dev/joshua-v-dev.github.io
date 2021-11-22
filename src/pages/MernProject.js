@@ -4,14 +4,6 @@ import ReactPlayer from 'react-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjectsData } from '../constants/constants'
 import { Layout } from '../layout/Layout'
-import {
-	ProjectContainer,
-	ProjectTitle,
-	ProjectDescription,
-	ProjectLink,
-	ProjectLinkText,
-	ProjectVideo,
-} from './MernProject.styles'
 
 const MernProject = () => (
 	<Layout>
@@ -19,41 +11,39 @@ const MernProject = () => (
 			<SectionDivider />
 			<SectionTitle main>Projects</SectionTitle>
 
-			<GridContainer>
-				{function SubProjects() {
-					const [isPlaying, setIsPlaying] = useState(true)
-					const handleContextMenu = useCallback((e) => {
-						e.preventDefault()
-					}, [])
-					SubProjectsData.map((p, i) => {
-						return (
-							<ProjectContainer key={i}>
-								<ProjectTitle>{p.title}</ProjectTitle>
-								<ProjectDescription>{p.description}</ProjectDescription>
-								<ProjectLink href={p.link} target='_blank' rel='noopener noreferrer'>
-									<ProjectLinkText>{p.linkText}</ProjectLinkText>
-								</ProjectLink>
-								<ProjectVideo>
-									<ReactPlayer
-										url={p.video}
-										onClickPreview={() => setIsPlaying(!isPlaying)}
-										playing={isPlaying}
-										controls={true}
-										onContextMenu={handleContextMenu}
-										width='100%'
-										height='100%'
-									/>
-								</ProjectVideo>
-							</ProjectContainer>
-						)
-					})
-				}}
-			</GridContainer>
+			{function SubProjects() {
+				const [isPlaying, setIsPlaying] = useState(true)
+				const handleContextMenu = useCallback((e) => {
+					e.preventDefault()
+				}, [])
+				SubProjectsData.map((p, i) => {
+					return (
+						<ProjectContainer key={i}>
+							<ProjectTitle>{p.title}</ProjectTitle>
+							<ProjectDescription>{p.description}</ProjectDescription>
+							<ProjectLink href={p.link} target='_blank' rel='noopener noreferrer'>
+								<ProjectLinkText>{p.linkText}</ProjectLinkText>
+							</ProjectLink>
+							<ProjectVideo>
+								<ReactPlayer
+									url={p.video}
+									onClickPreview={() => setIsPlaying(!isPlaying)}
+									playing={isPlaying}
+									controls={true}
+									onContextMenu={handleContextMenu}
+									width='100%'
+									height='100%'
+								/>
+							</ProjectVideo>
+						</ProjectContainer>
+					)
+				})
+			}}
 		</Section>
 	</Layout>
 )
 
-export const Reactplayer = styled.video`
+export const ProjectVideo = styled.video`
 	display: grid;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
@@ -64,7 +54,7 @@ export const Reactplayer = styled.video`
 	}
 `
 
-export const GridContainer = styled.section`
+export const ProjectContainer = styled.section`
 	display: grid;
 	// grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 	padding: 3rem;
@@ -78,7 +68,7 @@ export const GridContainer = styled.section`
 		padding-bottom: 0;
 	}
 `
-export const BlogCard = styled.div`
+export const ProjectDescription = styled.div`
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	text-align: center;
@@ -87,13 +77,13 @@ export const BlogCard = styled.div`
 		width: 100%;
 	}
 `
-export const TitleContent = styled.div`
+export const ProjectTitle = styled.div`
 	text-align: center;
 	z-index: 20;
 	width: 100%;
 `
 
-export const HeaderThree = styled.h3`
+export const ProjectLinkText = styled.h3`
 	font-weight: 500;
 	letter-spacing: 2px;
 	color: #9cc9e3;
@@ -103,14 +93,6 @@ export const HeaderThree = styled.h3`
 		padding: 0.3rem;
 		font: 20px;
 	}
-`
-
-export const Hr = styled.hr`
-	width: 50px;
-	height: 3px;
-	margin: 20px auto;
-	border: 0;
-	background: #d0bb57;
 `
 
 export const Intro = styled.div`
@@ -143,7 +125,7 @@ export const UtilityList = styled.ul`
 	margin: 2.5rem 0;
 `
 
-export const ExternalLinks = styled.a`
+export const ProjectLink = styled.a`
 	color: #d4c0c0;
 	font-size: 1.6rem;
 	padding: 1rem 1.5rem;
