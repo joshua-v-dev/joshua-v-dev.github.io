@@ -145,3 +145,4 @@ function TechnologiesPage() {
 		</div>
 	)
 }
+export default TechnologiesPage

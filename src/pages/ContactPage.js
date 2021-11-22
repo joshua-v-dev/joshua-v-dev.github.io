@@ -11,9 +11,9 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { useDispatch } from 'react-redux'
 
-import { useHistory } from 'react-router-dom'
+import * as useHistory from 'react-router-dom'
 // render contact form
-export const ContactPage = () => {
+const ContactPage = () => {
 	const dispatch = useDispatch()
 	const history = useHistory()
 	return (
@@ -69,3 +69,4 @@ export const ContactPage = () => {
 		</div>
 	)
 }
+export default ContactPage
