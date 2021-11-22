@@ -6,26 +6,11 @@ import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
-import  Navbar  from '../components/Navbar/Navbar'
-import { ReactComponent as NavItem } from '../components/Navbar/Navbar'
-import { ReactComponent as DropdownMenu } from '../components/Navbar/Navbar'
-import { ReactComponent as BellIcon } from '../components/Navbar/icons/bell.svg'
-import { ReactComponent as MessengerIcon } from '../components/Navbar/icons/messenger.svg'
-import { ReactComponent as CaretIcon } from '../components/Navbar/icons/caret.svg'
-import { ReactComponent as PlusIcon } from '../components/Navbar/icons/plus.svg'
-
+import DropdownMenu from '../components/DropdownMenu/DropdownMenu'
 const Home = () => {
 	return (
 		<Layout>
-			<Navbar>
-				<NavItem icon={<PlusIcon />} />
-				<NavItem icon={<BellIcon />} />
-				<NavItem icon={<MessengerIcon />} />
-
-				<NavItem icon={<CaretIcon />}>
-					<DropdownMenu></DropdownMenu>
-				</NavItem>
-			</Navbar>
+			<DropdownMenu />
 			<Section grid>
 				<Hero />
 				<BgAnimation />
