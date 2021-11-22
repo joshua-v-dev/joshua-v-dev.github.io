@@ -8,9 +8,16 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 const Header = () => (
 	<Container>
 		<Div1>
-			<Link href='/'>
-				<a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-					<DiCssdeck className='DiCssdeck_mobile' size='3rem' /> <DropdownNav />
+			<Link href='/' passHref>
+				<a
+					style={{
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'space-around',
+						color: 'white',
+					}}>
+					<DiCssdeck className='DiCssdeck_mobile' />
+					<DropdownNav />
 					<span>Joshua&apos;s Stories</span>
 				</a>
 			</Link>

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
-import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
+import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents/index'
 import { SubProjectsData } from '../constants/constants'
 import { Layout } from '../layout/Layout'
 
