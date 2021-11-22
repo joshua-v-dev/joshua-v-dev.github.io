@@ -95,7 +95,7 @@ function TechnologiesPage() {
 										executes JavaScript code outside of a web browser. Node.js lets developers use
 										JavaScript to write command-line tools and for server-side scripting. Node.js
 										uses an event-driven, non-blocking I/O model that makes it lightweight and
-										efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open
+										efficient. Node.js package ecosystem, npm, is the largest ecosystem of open
 										source JavaScript projects.
 									</p>
 								</div>

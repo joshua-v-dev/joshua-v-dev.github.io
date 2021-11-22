@@ -1,5 +1,6 @@
 // next.js component for the About page of the app (see AboutPage.js)
 // grid layout of the page
+import Link from 'next/link'
 import React from 'react'
 function AboutPage(props) {
 	return (
@@ -9,10 +10,9 @@ function AboutPage(props) {
 					<h1>About</h1>
 					<p>
 						This is a simple React app that uses the{' '}
-						<a href='/' target='_blank' rel='noopener noreferrer'>
-							next.js
-						</a>{' '}
-						framework.
+						<Link href='/' target='_blank' rel='noopener noreferrer'>
+							<a>next.js</a> framework.
+						</Link>
 					</p>
 				</div>
 			</div>
