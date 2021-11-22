@@ -2,7 +2,7 @@
 // grid layout of the page
 import Link from 'next/link'
 import React from 'react'
-function AboutPage(props) {
+const AboutPage = () => {
 	return (
 		<div className='container'>
 			<div className='row'>
