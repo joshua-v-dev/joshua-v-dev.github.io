@@ -3,14 +3,17 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
+import { IdProvider } from '@radix-ui/react-id'
 
 const Details = ({ htmlString }) => {
 	return (
-		<>
-			<h1>Projects Page</h1>
-			<pre>{projects}</pre>
-			<div dangerouslySetInnerHTML={{ __html: htmlString }} />
-		</>
+		<IdProvider>
+			<>
+				<h1>Projects Page</h1>
+				<pre>{projects}</pre>
+				<div dangerouslySetInnerHTML={{ __html: htmlString }} />
+			</>
+		</IdProvider>
 	)
 }
 
