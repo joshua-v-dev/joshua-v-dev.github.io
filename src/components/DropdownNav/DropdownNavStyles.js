@@ -2,21 +2,28 @@ import styled from 'styled-components'
 
 export const DropdownNavStyles = styled.div`
 	.trigger {
-		background-color: background2;
-		color: button;
+		background: ${({ alt }) =>
+			alt
+				? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
+				: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
+	transition: 0.4s ease;
+	border-radius: .75rem;
+	align-items: center;
+	justify-content: center;
+	
 	}
 	.content {
 		background-color: background1;
 		color: primary1;
-		border-radius: 0 0 4px 4px;
-		box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+		
 	}
 	.item {
 		padding: 1rem 3rem;
-		line-height: 2rem;
+	
 	}
 	.item:focus {
 		background-color: button;
-		padding: 1rem 3rem;
-		line-height: 2rem;
+		
+		
 `

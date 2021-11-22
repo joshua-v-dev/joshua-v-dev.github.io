@@ -7,11 +7,11 @@ export default function DropdownNav() {
 	return (
 		<div>
 			<DropdownNavStyles>
-				<DropdownMenu.Root>
+				<DropdownMenu.Root modal={false}>
 					<DropdownMenu.Trigger className='trigger'>
 						<HamburgerMenuIcon />
 					</DropdownMenu.Trigger>
-					<DropdownMenu.Content className='content'>
+					<DropdownMenu.Content loop className='content'>
 						<DropdownMenu.Item>Projects</DropdownMenu.Item>
 						<DropdownMenu.Item className='item'>Technologies</DropdownMenu.Item>
 						<DropdownMenu.Item className='item'>About</DropdownMenu.Item>
