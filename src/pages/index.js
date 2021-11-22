@@ -6,10 +6,20 @@ import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
+import { Navbar, NavItem, DropdownMenu } from '../components/Navbar'
 
 const Home = () => {
 	return (
 		<Layout>
+			<Navbar>
+				<NavItem icon={<PlusIcon />} />
+				<NavItem icon={<BellIcon />} />
+				<NavItem icon={<MessengerIcon />} />
+
+				<NavItem icon={<CaretIcon />}>
+					<DropdownMenu></DropdownMenu>
+				</NavItem>
+			</Navbar>
 			<Section grid>
 				<Hero />
 				<BgAnimation />
