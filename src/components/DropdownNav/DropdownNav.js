@@ -1,34 +1,33 @@
+import React from 'react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+import { DropdownNavStyles } from './DropdownNavStyles'
+import { HamburgerMenuIcon } from '@modulz/radix-icons'
+
 export default function DropdownNav() {
 	return (
 		<div>
-			<DropdownMenu.Root>
-				<DropdownMenu.Trigger />
-				<DropdownMenu.Content>
-					<DropdownMenu.Label />
+			<DropdownNavStyles>
+				<DropdownMenu.Root>
+					<DropdownMenu.Trigger className='trigger'>
+						<HamburgerMenuIcon />
+					</DropdownMenu.Trigger>
+					<DropdownMenu.Content className='content'>
+						<DropdownMenu.Item>Projects</DropdownMenu.Item>
+						<DropdownMenu.Item className='item'>Technologies</DropdownMenu.Item>
+						<DropdownMenu.Item className='item'>About</DropdownMenu.Item>
+						<DropdownMenu.Item className='item'>Contact</DropdownMenu.Item>
 
-					<DropdownMenu.Item />
-					<DropdownMenu.Group>
-						<DropdownMenu.Item />
-					</DropdownMenu.Group>
-					<DropdownMenu.CheckboxItem>
-						<DropdownMenu.ItemIndicator />
-					</DropdownMenu.CheckboxItem>
-					<DropdownMenu.RadioGroup>
-						<DropdownMenu.RadioItem>
-							<DropdownMenu.ItemIndicator />
-						</DropdownMenu.RadioItem>
-					</DropdownMenu.RadioGroup>
-					<DropdownMenu.Root>
-						<DropdownMenu.TriggerItem />
+						<DropdownMenu.Root>
+							<DropdownMenu.TriggerItem />
 
-						<DropdownMenu.Content />
-					</DropdownMenu.Root>
-					<DropdownMenu.Separator />
+							<DropdownMenu.Content />
+						</DropdownMenu.Root>
+						<DropdownMenu.Separator />
 
-					<DropdownMenu.Arrow />
-				</DropdownMenu.Content>
-			</DropdownMenu.Root>
+						<DropdownMenu.Arrow />
+					</DropdownMenu.Content>
+				</DropdownMenu.Root>
+			</DropdownNavStyles>
 		</div>
 	)
 }

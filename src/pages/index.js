@@ -6,13 +6,11 @@ import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
-import DropdownNav from '../components/DropdownNav/DropdownNav'
 import { IdProvider } from '@radix-ui/react-id'
 const Home = () => {
 	return (
 		<IdProvider>
 			<Layout>
-				<DropdownNav />
 				<Section grid>
 					<Hero />
 					<BgAnimation />
