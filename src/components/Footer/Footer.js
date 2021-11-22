@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import NavDropDown from '../NavDropDown/index'
+
 import { SocialIcons } from '../Header/HeaderStyles'
 import {
 	CompanyContainer,
