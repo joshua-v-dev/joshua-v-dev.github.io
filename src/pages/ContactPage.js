@@ -10,7 +10,7 @@ import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { useDispatch } from 'react-redux'
-import { contact } from '../redux/actions'
+
 import { useHistory } from 'react-router-dom'
 // render contact form
 export const ContactPage = () => {
