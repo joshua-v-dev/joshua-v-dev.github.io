@@ -10,8 +10,8 @@ const Header = () => (
 		<Div1>
 			<Link href='/'>
 				<a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-					<DiCssdeck size='3rem' /> <DropdownNav />
-					<span>Portfolio</span>
+					<DiCssdeck className='DiCssdeck_mobile' size='3rem' /> <DropdownNav />
+					<span>Joshua's Stories</span>
 				</a>
 			</Link>
 		</Div1>
