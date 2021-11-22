@@ -1,4 +1,4 @@
-import './NavbarStyles.css'
+import '../../styles/GlobalComponents/NavbarStyles.js'
 import { ReactComponent as BellIcon } from './icons/bell.svg'
 import { ReactComponent as MessengerIcon } from './icons/messenger.svg'
 import { ReactComponent as CaretIcon } from './icons/caret.svg'

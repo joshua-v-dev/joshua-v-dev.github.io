@@ -1,3 +1,5 @@
+import { createGlobalStyle } from 'styled-components'
+const NavbarStyles = createGlobalStyle`
 body {
 	margin: 0;
 	background: #151616;
@@ -156,3 +158,4 @@ a {
 	transform: translateX(110%);
 	transition: all var(--speed) ease;
 }
+`
