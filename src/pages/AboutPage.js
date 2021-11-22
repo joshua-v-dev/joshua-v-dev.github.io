@@ -1,7 +1,8 @@
 // next.js component for the About page of the app (see AboutPage.js)
 // grid layout of the page
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
+
 const AboutPage = () => {
 	return (
 		<div className='container'>

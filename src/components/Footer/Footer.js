@@ -17,7 +17,7 @@ import {
 const Footer = () => {
 	return (
 		<FooterWrapper>
-			<LinkList>
+			{/* <LinkList>
 				<LinkColumn>
 					<LinkTitle>Contact</LinkTitle>
 					<LinkItem></LinkItem>
@@ -26,7 +26,7 @@ const Footer = () => {
 					<LinkTitle>Email</LinkTitle>
 					<LinkItem href='mailto:joshua.v.dev@gmail.com'>joshua.v.dev@gmail.com</LinkItem>
 				</LinkColumn>
-			</LinkList>
+			</LinkList> */}
 			<SocialIconsContainer>
 				<CompanyContainer>
 					<Slogan>Innovating one project at a time</Slogan>
