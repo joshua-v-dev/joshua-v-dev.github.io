@@ -774,7 +774,7 @@
     "@radix-ui/react-primitive" "0.1.1"
     "@radix-ui/react-use-callback-ref" "0.1.0"
 
-"@radix-ui/react-id@0.1.1":
+"@radix-ui/react-id@^0.1.1", "@radix-ui/react-id@0.1.1":
   "integrity" "sha512-Vlg5me65+NUgxPBuA0Lk6FerNe+Mq4EuJ8xzpskGxS2t8p1puI3IkyLZ2wWtDSb1KXazoaHn8adBypagt+1P0g=="
   "resolved" "https://registry.npmjs.org/@radix-ui/react-id/-/react-id-0.1.1.tgz"
   "version" "0.1.1"
