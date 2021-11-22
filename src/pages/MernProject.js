@@ -2,8 +2,16 @@ import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
-import { SubProjects } from '../constants/constants'
+import { SubProjectsData } from '../constants/constants'
 import { Layout } from '../layout/Layout'
+import {
+	ProjectContainer,
+	ProjectTitle,
+	ProjectDescription,
+	ProjectLink,
+	ProjectLinkText,
+	ProjectVideo,
+} from './MernProject.styles'
 
 const MernProject = () => (
 	<Layout>
@@ -12,57 +20,34 @@ const MernProject = () => (
 			<SectionTitle main>Projects</SectionTitle>
 
 			<GridContainer>
-				{SubProjects.map((p, i) => {
+				{function SubProjects() {
 					const [isPlaying, setIsPlaying] = useState(true)
 					const handleContextMenu = useCallback((e) => {
 						e.preventDefault()
 					}, [])
-					return (
-						<GridContainer>
-							<BlogCard key={i}>
-								<div>
+					SubProjectsData.map((p, i) => {
+						return (
+							<ProjectContainer key={i}>
+								<ProjectTitle>{p.title}</ProjectTitle>
+								<ProjectDescription>{p.description}</ProjectDescription>
+								<ProjectLink href={p.link} target='_blank' rel='noopener noreferrer'>
+									<ProjectLinkText>{p.linkText}</ProjectLinkText>
+								</ProjectLink>
+								<ProjectVideo>
 									<ReactPlayer
-										className='Reactplayer'
-										url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4'
-										width='100%'
-										onContextMenu={handleContextMenu}
-										controls
+										url={p.video}
+										onClickPreview={() => setIsPlaying(!isPlaying)}
 										playing={isPlaying}
-										config={{
-											file: {
-												attributes: {
-													controlsList: 'nodownload',
-												},
-											},
-										}}
+										controls={true}
+										onContextMenu={handleContextMenu}
+										width='100%'
+										height='100%'
 									/>
-								</div>
-								<Img src={p.image} />
-								<TitleContent>
-									<HeaderThree title='true'>{p.title}</HeaderThree>
-									<Hr />
-								</TitleContent>
-								<CardInfo className='card-info'>{p.description}</CardInfo>
-								<div>
-									<TitleContent>
-										<br />
-										<br />
-										Stack
-									</TitleContent>
-									<TagList>
-										{p.tags.map((t, i) => {
-											return <Tag key={i}>{t}</Tag>
-										})}
-									</TagList>
-								</div>
-								<UtilityList>
-									<ExternalLinks href={p.visit}>Code</ExternalLinks>
-									<ExternalLinks href={p.source}>Source</ExternalLinks>
-								</UtilityList>
-							</BlogCard>
-						</GridContainer>
-					)
-				})}
+								</ProjectVideo>
+							</ProjectContainer>
+						)
+					})
+				}}
 			</GridContainer>
 		</Section>
 	</Layout>
@@ -77,13 +62,6 @@ export const Reactplayer = styled.video`
 		padding: 2rem;
 		padding-bottom: 0;
 	}
-`
-
-export const Img = styled.img`
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	overflow: hidden;
 `
 
 export const GridContainer = styled.section`

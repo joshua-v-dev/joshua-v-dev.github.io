@@ -11,23 +11,23 @@ const Header = () => (
 			<Link href='/'>
 				<a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
 					<DiCssdeck className='DiCssdeck_mobile' size='3rem' /> <DropdownNav />
-					<span>Joshua's Stories</span>
+					<span>Joshua&apos;s Stories</span>
 				</a>
 			</Link>
 		</Div1>
 		<Div2>
 			<li>
-				<Link href='#projects'>
+				<Link passHref='#projects'>
 					<NavLink>Projects</NavLink>
 				</Link>
 			</li>
 			<li>
-				<Link href='#tech'>
+				<Link passHref='#tech'>
 					<NavLink>Technologies</NavLink>
 				</Link>
 			</li>
 			<li>
-				<Link href='#about'>
+				<Link passHref='#about'>
 					<NavLink>About</NavLink>
 				</Link>
 			</li>

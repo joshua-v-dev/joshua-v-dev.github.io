@@ -37,7 +37,7 @@ export const projects = [
 	},
 ]
 
-export const SubProjects = [
+export const SubProjectsData = [
 	{
 		title: 'E-COMMERCE FROM SCRATCH',
 		description: 'PWA E-COMMERCE TEMPLATE WITH PAYPAL API INTEGRATION',
