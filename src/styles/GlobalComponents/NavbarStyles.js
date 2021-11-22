@@ -159,3 +159,4 @@ a {
 	transition: all var(--speed) ease;
 }
 `
+export default NavbarStyles
