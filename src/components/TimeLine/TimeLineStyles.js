@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
+display: flex;
+flex-direction: column;
 	max-width: 1040px;
   max-height:1040px;
 	background: #0f1624;
@@ -34,6 +36,11 @@ width:100vw;
 	}
 `
 export const CarouselMobileScrollNode = styled.div`
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 
@@ -52,8 +59,8 @@ export const CarouselItem = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
-		grid-auto-rows: minmax(100px, auto);
-		grid-template-columns: repeat(3, 1fr);
+		// grid-auto-rows: minmax(100px, auto);
+		// grid-template-columns: repeat(3, 1fr);
 		// margin-left: 32px;
 		// margin-bottom: 5rem;
 		min-width: 100vw;
@@ -67,7 +74,7 @@ export const CarouselItem = styled.div`
 		height: fit-content;
 		width: fit-content;
 
-		${(props) => (props.active === props.index ? `opacity: 1` : `opacity: 0.5`)};
+		${(props) => (props.active === props.index ? `opacity: 1` : `opacity: 0.99`)};
 	}
 `
 
@@ -76,7 +83,10 @@ export const CarouselItemTitle = styled.h4`
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0.02em;
-	display: flex;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	// align-content: center;
 	/* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
 	background: linear-gradient(121.57deg, #ffffff 10%, rgba(255, 255, 255, 0.66) 30.15%);
 	-webkit-background-clip: text;
@@ -99,25 +109,27 @@ export const CarouselItemTitle = styled.h4`
 export const CarouselItemImg = styled.svg`
 	margin-left: 21px;
 	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-	width: 100%;
+	 width: 50vw;
   margin bottom: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		-webkit-mask-image: none;
 		margin-left: 16px;
-		overflow: visible;
+		overflow: hidden;
     margin bottom: 2rem;
 	}
 `
 
 export const CarouselItemText = styled.p`
-width: 100vw;
+ width: 50vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	font-size: 14px;
-	line-height: 22px;
+	margin-bottom: 11rem;
+	font-size: 2.5rem;
+	line-height: 3rem;
 	letter-spacing: 0.02em;
+	line-spacing: 1.5rem;
 	color: rgba(255, 255, 255, 0.75);
 	padding-right: 2rem;
 

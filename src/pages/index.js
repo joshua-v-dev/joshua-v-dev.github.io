@@ -7,6 +7,7 @@ import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
 import { IdProvider } from '@radix-ui/react-id'
+// import TechnologiesPage from './TechnologiesPage'
 const Home = () => {
 	return (
 		<IdProvider>
@@ -17,6 +18,7 @@ const Home = () => {
 				</Section>
 				<Projects />
 				<Technologies />
+				{/* <TechnologiesPage /> */}
 				<Timeline />
 				<Acomplishments />
 			</Layout>

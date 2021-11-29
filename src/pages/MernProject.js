@@ -13,7 +13,7 @@ function MernProject() {
 	return (
 		<Layout>
 			<Section id='SubProjects'>
-				<SectionDivider />
+				<SectionDivider divider />
 				<SectionTitle main>Projects</SectionTitle>
 				{SubProjectsData.map((p, i) => {
 					return (
@@ -91,7 +91,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+	// grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 	padding: 3rem;
 	place-items: center;
 	column-gap: 2rem;
