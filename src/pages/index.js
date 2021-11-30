@@ -14,7 +14,7 @@ const Home = () => {
 			<Layout>
 				<Section grid>
 					<Hero />
-					<BackgroundgAnimation className='BgAnimation__svg' />
+					<BackgroundgAnimation />
 				</Section>
 				<Projects />
 				<Technologies />
