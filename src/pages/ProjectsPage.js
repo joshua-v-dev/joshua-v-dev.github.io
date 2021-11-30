@@ -4,8 +4,7 @@ import { IdProvider } from '@radix-ui/react-id'
 
 const ProjectsPage = () => (
 	<IdProvider>
-		{' '}
-		<MernProject />{' '}
+		<MernProject />
 	</IdProvider>
 )
 
