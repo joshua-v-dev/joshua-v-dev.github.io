@@ -1,14 +1,9 @@
 import styled from 'styled-components'
 
 export const DropdownNavStyles = styled.div`
-	.trigger,
-	.content,
-	.item {
-		display: none;
-	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		.trigger {
-			display: block;
+			display: flex;
 			background: ${({ alt }) =>
 				alt
 					? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
