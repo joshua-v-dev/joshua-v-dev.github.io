@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
 export const DropdownNavStyles = styled.div`
+	.trigger {
+		display: flex;
+		background-color: transparent;
+	}
+
 	@media ${(props) => props.theme.breakpoints.sm} {
 		.trigger {
 			display: flex;
@@ -15,7 +20,7 @@ export const DropdownNavStyles = styled.div`
 			justify-content: center;
 		}
 		.content {
-			background-color: background1;
+			background-color: transparent;
 			color: primary1;
 		}
 		.item {

@@ -18,6 +18,6 @@ export default {
 		sm: 'screen and (min-width: 340px) (max-width: 370px)',
 		md: 'screen and ( max-width: 770px)',
 		lg: 'screen and (max-width: 1024px)',
-		xl: 'screen and (max-width: 1280px)',
+		xl: 'screen and (max-width: 4000px)',
 	},
 }

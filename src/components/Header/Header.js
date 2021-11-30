@@ -9,20 +9,15 @@ const Header = () => (
 	<Container>
 		<Div1>
 			<Link href='/' passHref>
-				<a
-					style={{
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'space-around',
-						color: 'white',
-					}}>
+				<a>
 					<DiCssdeck className='DiCssdeck_mobile' />
-					<DropdownNav />
+
 					<span>Joshua&apos;s Stories</span>
 				</a>
 			</Link>
 		</Div1>
 		<Div2>
+			<DropdownNav />
 			<li>
 				<Link href='#projects' passHref>
 					<NavLink>Projects</NavLink>

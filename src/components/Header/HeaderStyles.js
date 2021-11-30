@@ -20,7 +20,7 @@ export const Div1 = styled.div`
 	grid-area: 1 / 1 / 2 / 2;
 	align-items: center;
 	justify-content: center;
-	line-height: 5rem;
+	line-height: 4rem;
 	padding: 2rem 4rem;
 	font-size: 2.5rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -51,10 +51,9 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-	display: grid;
-	grid-area: 2 / 3 / 2 / 3;
+	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	margin: auto;
 	font-size: 2rem;
 	line-height: 4rem;
@@ -67,7 +66,6 @@ export const NavLink = styled.a`
 		underline: primary1;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		display: none;
 		padding: 0.5rem;
 	}
 `
@@ -106,6 +104,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 	margin-left: 8px;
 	display: grid;
 	align-self: center;
+
 	transition: 0.3s ease;
 	opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
 	transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
