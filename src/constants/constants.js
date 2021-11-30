@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		title: 'MERN STACK',
-		description: 'PROGRESSIVE WEB APPS',
+		description: 'PROGRESSIVE WEB APP TEMPLATES',
 		image: '/images/mernstack (1).png',
 		tags: ['Mongo', 'Express', 'React', 'Node'],
 		source: 'https://google.com',
@@ -34,6 +34,24 @@ export const projects = [
 		source: 'https://google.com',
 		visit: 'https://google.com',
 		id: 3,
+	},
+	{
+		title: 'PORTFOLIO PROJECT',
+		description: 'THIS PORTFOLIO PROJECT',
+		image: '/Portfolio.png',
+		tags: ['Next.js', 'React.js', 'Radix UI'],
+		source: 'https://google.com',
+		visit: 'https://google.com',
+		id: 4,
+	},
+	{
+		title: 'FREELANCE CLIENTS',
+		description: 'THESE ARE SOME SMALL BUSINESS WEB APPS',
+		image: '/freelance.png',
+		tags: ['Next.js', 'TypeScript', 'Tailwind.css'],
+		source: 'https://google.com',
+		visit: 'https://google.com',
+		id: 4,
 	},
 ]
 
