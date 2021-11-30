@@ -1,4 +1,4 @@
-/* eslint-disable import/no-anonymous-default-export */
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
 	// Temp fonts
 	fonts: {
