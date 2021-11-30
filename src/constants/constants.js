@@ -38,7 +38,7 @@ export const projects = [
 	{
 		title: 'PORTFOLIO PROJECT',
 		description: 'THIS PORTFOLIO PROJECT',
-		image: '/Portfolio.png',
+		image: '/images/Portfolio.png',
 		tags: ['Next.js', 'React.js', 'Radix UI'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
@@ -47,7 +47,7 @@ export const projects = [
 	{
 		title: 'FREELANCE CLIENTS',
 		description: 'THESE ARE SOME SMALL BUSINESS WEB APPS',
-		image: '/freelance.png',
+		image: '/images/freelance.png',
 		tags: ['Next.js', 'TypeScript', 'Tailwind.css'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
