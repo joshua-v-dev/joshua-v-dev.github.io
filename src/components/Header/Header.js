@@ -7,17 +7,16 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 
 const Header = () => (
 	<Container>
+		<DropdownNav />
 		<Div1>
 			<Link href='/' passHref>
 				<a>
 					<DiCssdeck className='DiCssdeck_mobile' />
-
 					<span>Joshua&apos;s Stories</span>
 				</a>
 			</Link>
 		</Div1>
 		<Div2>
-			<DropdownNav />
 			<li>
 				<Link href='#projects' passHref>
 					<NavLink>Projects</NavLink>
