@@ -16,6 +16,7 @@
 		"@radix-ui/react-id": "^0.1.1",
 		"@stitches/react": "^1.2.5",
 		"cloudinary-react": "^1.7.0",
+		"embla-carousel-autoplay": "^6.0.2",
 		"embla-carousel-react": "^6.0.2",
 		"formidable": "1.2.2",
 		"formik": "^2.2.9",

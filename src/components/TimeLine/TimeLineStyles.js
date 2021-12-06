@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
-display: flex;
-flex-direction: column;
+	display: flex;
 	max-width: 1040px;
-  max-height:1040px;
+    max-height:1040px;
 	background: #0f1624;
 	padding: 0rem;
 	list-style-type: space-counter;
 	justify-content: space-between;
-  overflow-x: scroll;
+    overflow-x: scroll;
 
 	margin-left: 32px;
 	&:first-of-type {
@@ -26,7 +25,7 @@ s
 
 	@media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
-width:100vw;
+// width:100vw;
 		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
 		scroll-snap-type: x mandatory;
@@ -37,9 +36,8 @@ width:100vw;
 `
 export const CarouselMobileScrollNode = styled.div`
 	display: flex;
-	flex-direction: column;
-
-	justify-content: center;
+	// flex-direction: column;
+	justify-content: space-between;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
@@ -58,12 +56,13 @@ export const CarouselItem = styled.div`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		display: grid;
+		// display: grid;
 		// grid-auto-rows: minmax(100px, auto);
 		// grid-template-columns: repeat(3, 1fr);
 		// margin-left: 32px;
 		// margin-bottom: 5rem;
-		min-width: 100vw;
+		// min-width: 100vw;
+		display: flex;
 		background: #0e131f;
 		padding: 4px;
 		align-content: start;
@@ -83,10 +82,10 @@ export const CarouselItemTitle = styled.h4`
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0.02em;
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
-	// align-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
 	/* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
 	background: linear-gradient(121.57deg, #ffffff 10%, rgba(255, 255, 255, 0.66) 30.15%);
 	-webkit-background-clip: text;
@@ -121,7 +120,7 @@ export const CarouselItemImg = styled.svg`
 `
 
 export const CarouselItemText = styled.p`
- width: 50vw;
+//  width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -141,7 +140,7 @@ export const CarouselItemText = styled.p`
     margin bottom: 10rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100vw;
+		// width: 100vw;
 		font-size: 15px;
 		line-height: 16px;
     line-spacing: 2rem;
@@ -153,7 +152,6 @@ export const CarouselItemText = styled.p`
 `
 export const CarouselButtons = styled.div`
 	width: 288px;
-
 	display: none;
 	visibility: hidden;
 
@@ -185,4 +183,20 @@ export const CarouselButtonDot = styled.div`
 	margin: auto;
 	width: 3px;
 	height: 3px;
+`
+
+export const embla = styled.div`
+	 {
+		overflow: hidden;
+	}
+`
+export const embla__container = styled.div`
+	 {
+		display: flex;
+	}
+`
+export const embla__slide = styled.div`{ {
+		position: relative;
+		flex: 0 0 100%;
+	}
 `
