@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+
 import {
 	CarouselButton,
 	CarouselButtonDot,
@@ -124,26 +123,3 @@ const Timeline = () => {
 	)
 }
 export default Timeline
-// export const EmblaCarousel = () => {
-// 	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()])
-//
-// 	useEffect(() => {
-// 		if (emblaApi) {
-// 			// Embla API is ready
-// 		}
-// 	}, [emblaApi])
-//
-// 	return (
-// 		console.log(emblaApi),
-// 		(
-// 			<div className='embla' ref={emblaRef}>
-// 				<div className='embla__container'>
-// 					<div className='embla__slide'>Slide 1</div>
-// 					<div className='embla__slide'>Slide 2</div>
-// 					<div className='embla__slide'>Slide 3</div>
-// 				</div>
-// 			</div>
-// 		)
-// 	)
-// }
-// export default EmblaCarousel

@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
 	display: flex;
-	max-width: 1040px;
-    max-height:1040px;
+	// max-width: 1040px;
+    // max-height:1040px;
 	background: #0f1624;
 	padding: 0rem;
 	list-style-type: space-counter;
@@ -56,12 +56,12 @@ export const CarouselItem = styled.div`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		// display: grid;
-		// grid-auto-rows: minmax(100px, auto);
-		// grid-template-columns: repeat(3, 1fr);
-		// margin-left: 32px;
-		// margin-bottom: 5rem;
-		// min-width: 100vw;
+		display: grid;
+		grid-auto-rows: minmax(100px, auto);
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: 32px;
+		margin-bottom: 5rem;
+		min-width: 100vw;
 		display: flex;
 		background: #0e131f;
 		padding: 4px;
@@ -183,20 +183,4 @@ export const CarouselButtonDot = styled.div`
 	margin: auto;
 	width: 3px;
 	height: 3px;
-`
-
-export const embla = styled.div`
-	 {
-		overflow: hidden;
-	}
-`
-export const embla__container = styled.div`
-	 {
-		display: flex;
-	}
-`
-export const embla__slide = styled.div`{ {
-		position: relative;
-		flex: 0 0 100%;
-	}
 `
