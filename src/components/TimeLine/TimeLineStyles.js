@@ -25,7 +25,7 @@ s
 
 	@media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
-// width:100vw;
+ width:100vw;
 		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
 		scroll-snap-type: x mandatory;
@@ -105,19 +105,19 @@ export const CarouselItemTitle = styled.h4`
 		margin-bottom: 3rem;
 	}
 `
-export const CarouselItemImg = styled.svg`
-	margin-left: 21px;
-	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-	 width: 50vw;
-  margin bottom: 2rem;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		-webkit-mask-image: none;
-		margin-left: 16px;
-		overflow: hidden;
-    margin bottom: 2rem;
-	}
-`
+// export const CarouselItemImg = styled.svg`
+// 	margin-left: 21px;
+// 	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+// 	 width: 50vw;
+//   margin bottom: 2rem;
+//
+// 	@media ${(props) => props.theme.breakpoints.sm} {
+// 		-webkit-mask-image: none;
+// 		margin-left: 16px;
+// 		overflow: hidden;
+//     margin bottom: 2rem;
+// 	}
+// `
 
 export const CarouselItemText = styled.p`
 //  width: 100vw;

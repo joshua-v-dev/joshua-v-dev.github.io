@@ -64,14 +64,37 @@ const Timeline = () => {
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
 				<>
 					{TimeLineData.map((item, index) => (
-						<CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT}>
+						<CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
+							<CarouselItemTitle>{item.year}</CarouselItemTitle>
 							<CarouselItem
 								index={index}
 								id={`carousel__item-${index}`}
 								active={activeItem}
 								onClick={(e) => handleClick(e, index)}>
-								<CarouselItemTitle>
-									{/* <CarouselItemImg
+								<CarouselItemText>{item.text}</CarouselItemText>
+							</CarouselItem>
+						</CarouselMobileScrollNode>
+					))}
+				</>
+			</CarouselContainer>
+			<CarouselButtons>
+				{TimeLineData.map((item, index) => (
+					<CarouselButton
+						key={index}
+						index={index}
+						active={activeItem}
+						onClick={(e) => handleClick(e, index)}
+						type='button'>
+						<CarouselButtonDot index={index} active={activeItem} />
+					</CarouselButton>
+				))}
+			</CarouselButtons>
+			<SectionDivider divider />
+		</Section>
+	)
+}
+{
+	/* <CarouselItemImg
 										width='208'
 										height='6'
 										viewBox='0 0 208 6'
@@ -96,29 +119,7 @@ const Timeline = () => {
 												<stop offset='0.79478' stopColor='white' stopOpacity='0' />
 											</linearGradient>
 										</defs>
-									</CarouselItemImg> */}
-									{item.year}
-								</CarouselItemTitle>
-								<CarouselItemText>{item.text}</CarouselItemText>
-							</CarouselItem>
-						</CarouselMobileScrollNode>
-					))}
-				</>
-			</CarouselContainer>
-			<CarouselButtons>
-				{TimeLineData.map((item, index) => (
-					<CarouselButton
-						key={item}
-						index={index}
-						active={activeItem}
-						onClick={(e) => handleClick(e, index)}
-						type='button'>
-						<CarouselButtonDot active={activeItem} />
-					</CarouselButton>
-				))}
-			</CarouselButtons>
-			<SectionDivider divider />
-		</Section>
-	)
+									</CarouselItemImg> */
 }
+
 export default Timeline
