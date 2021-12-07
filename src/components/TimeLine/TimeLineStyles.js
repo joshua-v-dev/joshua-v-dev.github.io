@@ -64,7 +64,7 @@ export const CarouselItem = styled.div`
 		min-width: 100vw;
 		background: #0e131f;
 		padding: 4px;
-		align-content: start;
+		align-content: center;
 		scroll-snap-align: start;
 		border-radius: 3px;
 		overflow: visible;
@@ -120,7 +120,7 @@ export const CarouselItemTitle = styled.h4`
 export const CarouselItemText = styled.p`
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	margin-bottom: 1rem;
 	font-size: 2.5rem;
 	line-height: 3rem;
@@ -146,7 +146,7 @@ export const CarouselItemText = styled.p`
 		// margin-bottom: 8rem;
 		// margin-right: 2rem;
 		// padding-bottom: 3rem;
-		padding-left: 2rem;
+		padding-left: 3rem;
 		padding-right: 2rem;
 	}
 `
