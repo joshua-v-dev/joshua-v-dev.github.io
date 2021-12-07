@@ -24,8 +24,8 @@ s
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-    display: flex;
- width:100vw;
+        display: flex;
+        width:100vw;
 		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
 		scroll-snap-type: x mandatory;
@@ -41,7 +41,7 @@ export const CarouselMobileScrollNode = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
-
+		max-width: ${({ final }) => (final ? `120%;` : `max-content`)};
 		min-width: ${({ final }) => (final ? `120%;` : `min-content`)};
 	}
 `
@@ -58,11 +58,10 @@ export const CarouselItem = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
 		grid-auto-rows: minmax(100px, auto);
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		margin-left: 32px;
-		margin-bottom: 5rem;
+		// margin-bottom: 5rem;
 		min-width: 100vw;
-		display: flex;
 		background: #0e131f;
 		padding: 4px;
 		align-content: start;
@@ -72,8 +71,7 @@ export const CarouselItem = styled.div`
 		position: relative;
 		height: fit-content;
 		width: fit-content;
-
-		${(props) => (props.active === props.index ? `opacity: 1` : `opacity: 0.99`)};
+		opacity: ${(props) => (props.active === props.index ? `opacity: 1` : `opacity: 0.99`)};
 	}
 `
 
@@ -120,34 +118,36 @@ export const CarouselItemTitle = styled.h4`
 // `
 
 export const CarouselItemText = styled.p`
-//  width: 100vw;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-	margin-bottom: 11rem;
+	justify-content: center;
+	margin-bottom: 1rem;
 	font-size: 2.5rem;
 	line-height: 3rem;
 	letter-spacing: 0.02em;
 	line-spacing: 1.5rem;
 	color: rgba(255, 255, 255, 0.75);
-	padding-right: 2rem;
+	// padding-right: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100vw;
 		font-size: 20px;
 		line-height: 18px;
 		padding-right: 0;
-    margin bottom: 10rem;
+		margin-bottom: 10rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		// width: 100vw;
-		font-size: 15px;
-		line-height: 16px;
-    line-spacing: 2rem;
-    margin bottom: 8rem;
-    margin-right:2rem;
-    padding-bottom: 5rem;
-    padding-right:5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		line-height: 4rem;
+		line-spacing: 2rem;
+		// margin-bottom: 8rem;
+		// margin-right: 2rem;
+		// padding-bottom: 3rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 `
 export const CarouselButtons = styled.div`

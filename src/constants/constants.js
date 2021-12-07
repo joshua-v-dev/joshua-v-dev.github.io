@@ -67,17 +67,15 @@ export const SubProjectsData = [
 ]
 
 export const TimeLineData = [
-	{ year: 2018, text: 'January I began learning the basics of Web Development', id: 0 },
-	{ year: 2019, text: 'Started Lambda School Bootcamp', id: 1 },
+	{ year: 2018, text: 'January I began learning the basics of Web Development' },
+	{ year: 2019, text: 'Started Lambda School Bootcamp' },
 	{
 		year: 2020,
 		text: 'Improved my skills in React, Apollo, Next, Three.js & Node.js & Started Learning React Native with & without EXPO',
-		id: 2,
 	},
-	{ year: 2021, text: 'Learned Shopify Liquid, Polaris, GraphQL & UI/UX DESIGN', id: 3 },
+	{ year: 2021, text: 'Learned Shopify Liquid, Polaris, GraphQL & UI/UX DESIGN' },
 	{
 		year: 2022,
 		text: 'I hope to further my skills & learn Python to code my first neural network',
-		id: 4,
 	},
 ]
