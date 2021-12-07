@@ -5,11 +5,12 @@ export const Section = styled.section`
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => props.nopadding};
 	margin: 0 auto;
-	max-width: 4000px;
+	// max-width: 4000px;
 	box-sizing: content-box;
 	position: relative;
 	overflow: hidden;
-	grid-template-columns: 1fr 1fr;
+	// grid-area: 2 / 1 / span 2 / span 3;
+	// grid-template-columns: 2fr 1fr;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};

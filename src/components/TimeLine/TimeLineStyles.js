@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
 	display: flex;
-	// max-width: 1040px;
+	 max-width: 3000px;
 	background: #0f1624;
 	padding: 0rem;
 	list-style-type: space-counter;
@@ -35,9 +35,11 @@ s
 	}
 `
 export const CarouselMobileScrollNode = styled.div`
-	display: flex;
+	display: grid;
+	grid-area: 1 / 1 / span 4 / span 3;
 	flex-direction: column;
 	justify-content: space-between;
+	grid-column-gap: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
@@ -45,7 +47,11 @@ export const CarouselMobileScrollNode = styled.div`
 		min-width: ${({ final }) => (final ? `120%;` : `min-content`)};
 	}
 `
-
+// export const CarouselMobileScrollNode = styled.div`
+// 	@media ${(props) => props.theme.breakpoints.sm} {
+// 		display: flex;
+// 		min-width: ${({ final }) => (final ? `120%;` : `min-content`)};
+// 	}
 export const CarouselItem = styled.div`
 	background: #0f1624;
 	border-radius: 3px;
