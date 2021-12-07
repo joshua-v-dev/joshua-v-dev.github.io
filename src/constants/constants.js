@@ -71,7 +71,7 @@ export const TimeLineData = [
 	{ year: 2019, text: 'Started Lambda School Bootcamp' },
 	{
 		year: 2020,
-		text: 'Improved my skills in React, Apollo, Next, Three.js & Node.js & Started Learning React Native with &    without EXPO',
+		text: 'Improved my skills in React, Apollo, Next, Three.js & Node.js & Started Learning React Native with & without EXPO',
 	},
 	{ year: 2021, text: 'Learned Shopify Liquid, Polaris, GraphQL & UI/UX DESIGN' },
 	{

@@ -51,7 +51,7 @@ const Timeline = () => {
 	// avoids a bug where content is covered up if coming from smaller screen
 	useEffect(() => {
 		const handleResize = () => {
-			scrollTo(carouselRef.current, 0)
+			scroll(carouselRef.current, 0)
 		}
 
 		window.addEventListener('resize', handleResize)
@@ -64,14 +64,14 @@ const Timeline = () => {
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
 				<>
 					{TimeLineData.map((item, index) => (
-						<CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
+						<CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT}>
 							<CarouselItem
 								index={index}
 								id={`carousel__item-${index}`}
 								active={activeItem}
 								onClick={(e) => handleClick(e, index)}>
 								<CarouselItemTitle>
-									<CarouselItemImg
+									{/* <CarouselItemImg
 										width='208'
 										height='6'
 										viewBox='0 0 208 6'
@@ -96,9 +96,8 @@ const Timeline = () => {
 												<stop offset='0.79478' stopColor='white' stopOpacity='0' />
 											</linearGradient>
 										</defs>
-									</CarouselItemImg>
+									</CarouselItemImg> */}
 									{item.year}
-									<br />
 								</CarouselItemTitle>
 								<CarouselItemText>{item.text}</CarouselItemText>
 							</CarouselItem>
@@ -109,7 +108,7 @@ const Timeline = () => {
 			<CarouselButtons>
 				{TimeLineData.map((item, index) => (
 					<CarouselButton
-						key={index}
+						key={item}
 						index={index}
 						active={activeItem}
 						onClick={(e) => handleClick(e, index)}
