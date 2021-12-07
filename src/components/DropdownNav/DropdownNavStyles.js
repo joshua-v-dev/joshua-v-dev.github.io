@@ -4,10 +4,12 @@ export const DropdownNavStyles = styled.div`
 	.trigger {
 		display: flex;
 		background-color: transparent;
+		visibility: hidden;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		.trigger {
+			visibility: visible;
 			display: flex;
 			background: ${({ alt }) =>
 				alt
