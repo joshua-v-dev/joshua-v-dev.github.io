@@ -107,3 +107,21 @@ export const Tag = styled.li`
 	color: #d8bfbf;
 	font-size: 1.5rem;
 `
+export const ProjectsBackground = styled.svg`
+	width: 100%;
+	position: absolute;
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+
+		margin: 0 auto;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+`

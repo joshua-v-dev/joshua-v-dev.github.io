@@ -16,10 +16,13 @@ import {
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
 import FullBackgroundAnimation from '../FullBackgroundAnimation/FullBackgroundAnimation'
+import { ProjectsRightSection } from '../FullBackgroundAnimation/FullBackgroundAnimationStyles'
 
 const Projects = () => (
 	<Section nopadding id='projects'>
-		<FullBackgroundAnimation />
+		<ProjectsRightSection>
+			<FullBackgroundAnimation />
+		</ProjectsRightSection>
 		<SectionDivider divider />
 		<SectionTitle main>Projects</SectionTitle>
 		<GridContainer>
