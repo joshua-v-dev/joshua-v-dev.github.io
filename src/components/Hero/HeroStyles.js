@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const HeroSection = styled.div`
 	width: 100vw;
 	height: 80vh;
-	margin: 0;
-	padding: 0;
+	margin: auto;
+	padding: auto;
 	position: relative;
 
 	@media ${(props) => props.theme.breakpoints.sm} {

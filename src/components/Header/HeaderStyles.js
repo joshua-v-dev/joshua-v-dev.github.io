@@ -58,6 +58,7 @@ export const NavLink = styled.a`
 	// justify-content: space-around;
 	font-size: 4rem;
 	line-height: 3rem;
+	text-decoration: italic;
 	color: rgba(255, 255, 255, 0.75);
 	transition: 0.4s ease;
 	&:hover {
