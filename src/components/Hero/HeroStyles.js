@@ -4,7 +4,7 @@ export const HeroSection = styled.div`
 	width: 100vw;
 	height: 80vh;
 	margin: auto;
-	padding: auto;
+	padding: 0;
 	position: relative;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
