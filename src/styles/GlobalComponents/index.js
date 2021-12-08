@@ -5,7 +5,7 @@ export const Section = styled.section`
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => props.nopadding};
 	margin: 0 auto;
-	// max-width: 4000px;
+	max-width: 100vw;
 	box-sizing: content-box;
 	position: relative;
 	overflow: hidden;
@@ -27,8 +27,8 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
 	font-weight: 800;
-	font-size: ${(props) => (props.main ? '65px' : '56px')};
-	line-height: ${(props) => (props.main ? '72px' : '56px')};
+	font-size: ${(props) => (props.main ? '10rem' : '5rem')};
+	line-height: ${(props) => (props.main ? '12rem' : '5rem')};
 	width: max-content;
 	max-width: 100%;
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
