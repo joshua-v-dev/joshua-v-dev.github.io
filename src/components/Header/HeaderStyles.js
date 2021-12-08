@@ -3,12 +3,10 @@ import styled from 'styled-components'
 import '../../themes/default'
 
 export const Container = styled.div`
-	// display: grid;
+	display: grid;
 	// grid-template-columns: repeat(5, 1fr);
 	// grid-template-rows: 1fr;
 	// grid-column-gap: 2rem;
-	padding: 1rem;
-	padding-top: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		// display: grid;
@@ -19,31 +17,33 @@ export const Container = styled.div`
 	}
 `
 export const Div1 = styled.div`
-	grid-area: 1 / 1 / 2 / 2;
+	// grid-area: 1 / 1 / 2 / 2;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	justify-content: center;
-	line-height: 4rem;
-	padding: 2rem 4rem;
-	font-size: 2.5rem;
+	line-height: 7rem;
+	margin-top: 1rem;
+	font-size: 5rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 1 / 1 / 2 / 3;
 	}
 `
 export const Div2 = styled.div`
-	grid-area: 1 / 2 / 2 / 4;
+	// grid-area: 1 / 2 / 2 / 4;
 	display: flex;
-	justify-content: space-around;
+	padding: 3rem 2rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	justify-content: space-evenly;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 2 / 2 / 3 / 5;
 	}
 `
 export const Div3 = styled.div`
-	grid-area: 1 / 5 / 2 / 6;
+	// grid-area: 1 / 5 / 2 / 6;
 	display: flex;
-	padding: 2rem 4rem;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		align-items: center;
@@ -53,11 +53,11 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-	// display: flex;
+	display: flex;
 	// align-items: center;
 	// justify-content: space-around;
-	font-size: 2rem;
-	line-height: 4rem;
+	font-size: 4rem;
+	line-height: 3rem;
 	color: rgba(255, 255, 255, 0.75);
 	transition: 0.4s ease;
 	&:hover {
@@ -102,9 +102,11 @@ export const ContactDropDown = styled.button`
 `
 
 export const NavProductsIcon = styled(IoIosArrowDropdown)`
+	size: 5rem;
 	margin-left: 8px;
 	display: grid;
 	align-self: center;
+	justify-self: center;
 
 	transition: 0.3s ease;
 	opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};

@@ -8,6 +8,14 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 const Header = () => (
 	<Container>
 		<DropdownNav />
+		<Div3>
+			<SocialIcons href='https://github.com/joshua-v-dev'>
+				<AiFillGithub size='3rem' />
+			</SocialIcons>
+			<SocialIcons href='https://www.linkedin.com/in/joshua-vaughn/'>
+				<AiFillLinkedin size='3rem' />
+			</SocialIcons>
+		</Div3>
 		<Div1>
 			<Link href='/' passHref>
 				<a>
@@ -16,6 +24,7 @@ const Header = () => (
 				</a>
 			</Link>
 		</Div1>
+
 		<Div2>
 			<li>
 				<Link href='#projects' passHref>
@@ -33,14 +42,6 @@ const Header = () => (
 				</Link>
 			</li>
 		</Div2>
-		<Div3>
-			<SocialIcons href='https://github.com/joshua-v-dev'>
-				<AiFillGithub size='3rem' />
-			</SocialIcons>
-			<SocialIcons href='https://www.linkedin.com/in/joshua-vaughn/'>
-				<AiFillLinkedin size='3rem' />
-			</SocialIcons>
-		</Div3>
 	</Container>
 )
 
