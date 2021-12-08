@@ -110,10 +110,11 @@ export const Tag = styled.li`
 	font-size: 1.5rem;
 `
 export const ProjectsBackground = styled.svg`
-	width: 100%;
+	width: 100vw;
+
 	position: absolute;
 	z-index: -1;
-	opacity: 0.85;
+	opacity: 0.8;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 80%;
 		display: flex;
