@@ -13,17 +13,32 @@ import {
 	UtilityList,
 	Img,
 } from './ProjectsStyles'
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import {
+	Section,
+	SectionDivider,
+	SectionDividerContainer,
+	SectionTitle,
+} from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
 import FullBackgroundAnimation from '../FullBackgroundAnimation/FullBackgroundAnimation'
-import { ProjectsRightSection } from '../FullBackgroundAnimation/FullBackgroundAnimationStyles'
+import {
+	ProjectsRightSection,
+	DividerAnimation,
+} from '../FullBackgroundAnimation/FullBackgroundAnimationStyles'
+import DividerBackgroundAnimation from '../DividerBackgroundAnimation/DividerBackgroundAnimation'
 
 const Projects = () => (
 	<Section nopadding id='projects'>
 		<ProjectsRightSection>
 			<FullBackgroundAnimation />
 		</ProjectsRightSection>
-		<SectionDivider divider />
+
+		<SectionDividerContainer>
+			<DividerAnimation>
+				<SectionDivider divider />
+			</DividerAnimation>
+		</SectionDividerContainer>
+
 		<SectionTitle main>Projects</SectionTitle>
 		<GridContainer>
 			{projects.map((p, i) => {

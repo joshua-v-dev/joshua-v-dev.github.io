@@ -1,16 +1,15 @@
 import React from 'react'
-import Hero from '../Hero/Hero'
 import { Section } from '../../styles/GlobalComponents/index'
-import { LeftSection, RightSection, HeroSection } from '../Hero/HeroStyles'
+import { DividerRightSection, DividerAnimation } from './DividerBackgroundAnimationStyles'
 
-const BackgroundAnimation = () => (
+const DividerBackgroundAnimation = () => (
 	<Section>
-		<HeroSection>
-			<RightSection>
+		<DividerAnimation>
+			<DividerRightSection>
 				<div>
 					<svg
 						className='BgAnimation__svg'
-						viewBox='3 3 602 602'
+						viewBox='10 10 60 60'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'>
 						<g opacity='0.15'>
@@ -290,12 +289,9 @@ const BackgroundAnimation = () => (
 						</defs>
 					</svg>
 				</div>
-			</RightSection>
-			<LeftSection>
-				<Hero />
-			</LeftSection>
-		</HeroSection>
+			</DividerRightSection>
+		</DividerAnimation>
 	</Section>
 )
 
-export default BackgroundAnimation
+export default DividerBackgroundAnimation

@@ -35,7 +35,7 @@ export const SectionTitle = styled.h2`
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 16px;
-	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
+	padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: ${(props) => (props.main ? '40px' : '48px')};
@@ -76,7 +76,20 @@ export const SectionText = styled.p`
 		padding-bottom: 16px;
 	}
 `
+export const SectionDividerContainer = styled.div`
+	margin: auto;
+	width: 100vw;
+	height: 100%;
+	@media ${(props) => props.theme.breakpoints.md} {
+		width: 48px;
+		height: 4px;
+	}
 
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 32px;
+		height: 2px;
+	}
+`
 export const SectionDivider = styled.div`
 	margin: auto;
 	width: 64px;
@@ -100,6 +113,7 @@ export const SectionDivider = styled.div`
 		height: 2px;
 	}
 `
+
 export const SectionSubText = styled.p`
 	max-width: 800px;
 	font-weight: 300;
