@@ -14,6 +14,8 @@ export const GridContainer = styled.section`
 	place-items: center;
 	column-gap: 2rem;
 	row-gap: 3rem;
+	object-fit: cover;
+	overflow: hidden;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
@@ -110,7 +112,8 @@ export const Tag = styled.li`
 export const ProjectsBackground = styled.svg`
 	width: 100%;
 	position: absolute;
-
+	z-index: -1;
+	opacity: 0.85;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 80%;
 		display: flex;

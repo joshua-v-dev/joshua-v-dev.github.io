@@ -4,7 +4,6 @@ export const DividerRightSection = styled.div`
 	display: grid;
 	width: 100%;
 	min-height: 10vh;
-	opacity: 1;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 80%;

@@ -10,7 +10,7 @@ const BackgroundAnimation = () => (
 				<div>
 					<svg
 						className='BgAnimation__svg'
-						viewBox='3 3 602 602'
+						viewBox='5 0 652 502'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'>
 						<g opacity='0.15'>

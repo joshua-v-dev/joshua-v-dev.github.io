@@ -8,7 +8,7 @@ const FullBackgroundAnimation = () => (
 			<div>
 				<svg
 					className='BgAnimation__svg'
-					viewBox='127 42 602 602'
+					viewBox='0 0 702 702'
 					fill='none'
 					xmlns='http://www.w3.org/2000/svg'>
 					<g opacity='0.15'>
