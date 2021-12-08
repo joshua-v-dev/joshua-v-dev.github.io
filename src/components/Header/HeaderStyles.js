@@ -54,7 +54,7 @@ export const NavLink = styled.a`
 	align-items: center;
 	justify-content: space-around;
 	font-size: 2.5rem;
-	padding: 0.3rem 0.5rem;
+	padding: 0.3rem 0.6rem;
 	background-flow: row-reverse;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 	color: rgba(255, 255, 255, 0.75);
