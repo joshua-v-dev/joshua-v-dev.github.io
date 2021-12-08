@@ -136,9 +136,9 @@ export const SecondaryBtn = styled.button`
 	border: 1px solid rgba(255, 255, 255, 0.33);
 	box-sizing: border-box;
 	border-radius: 999px;
-	padding: 16px 24px;
+	padding: 1rem 2rem;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 1.3rem;
 	line-height: 16px;
 	width: fit-content;
 	margin-top: 32px;
@@ -231,7 +231,7 @@ export const ButtonFront = styled.button`
 			: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
 	transition: 0.4s ease;
-	font-size: ${({ alt }) => (alt ? '20px' : '24px')};
+	font-size: ${({ alt }) => (alt ? '1.2rem' : '2rem')};
 	font-weight: 600;
 	align-items: center;
 	justify-content: center;
@@ -268,7 +268,7 @@ export const ButtonFront = styled.button`
 `
 
 export const LinkContainer = styled.div`
-	margin-left: ${({ large }) => (large ? '24px' : '16px')};
+	margin-left: ${({ large }) => (large ? '2rem' : '1rem')};
 	transition: 0.3s ease;
 	justify-content: center;
 	border-radius: 50px;

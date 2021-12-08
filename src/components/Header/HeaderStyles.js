@@ -23,6 +23,7 @@ export const Div1 = styled.div`
 	align-content: center;
 	justify-content: center;
 	font-size: 4rem;
+	margin-bottom: 0.5rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 1 / 1 / 2 / 3;
 	}
@@ -54,6 +55,8 @@ export const NavLink = styled.a`
 	align-items: center;
 	justify-content: space-around;
 	font-size: 2.5rem;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
 	padding: 0.3rem 0.6rem;
 	background-flow: row-reverse;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
