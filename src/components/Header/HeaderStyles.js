@@ -22,9 +22,8 @@ export const Div1 = styled.div`
 	flex-direction: row;
 	align-content: center;
 	justify-content: center;
-	line-height: 6rem;
-
-	font-size: 5rem;
+	line-height: 3rem;
+	font-size: 4rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 1 / 1 / 2 / 3;
 	}
@@ -32,8 +31,8 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
 	// grid-area: 1 / 2 / 2 / 4;
 	display: flex;
-	padding: 3rem 2rem;
-	margin-top: 2.5rem;
+	padding: 2rem 2rem;
+	margin-top: 3rem;
 	margin-bottom: 2.5rem;
 	justify-content: space-evenly;
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -54,12 +53,17 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
 	display: flex;
-	// align-items: center;
-	// justify-content: space-around;
-	font-size: 4rem;
-	line-height: 3rem;
-
+	align-items: center;
+	justify-content: space-around;
+	font-size: 3rem;
+	padding: 0.3rem 0.5rem;
+	font-weight: bold;
+	background-flow: row-reverse;
+	line-height: 4rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 	color: rgba(255, 255, 255, 0.75);
+	background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
+	border-radius: 1rem;
 	transition: 0.4s ease;
 	&:hover {
 		color: #fff;
