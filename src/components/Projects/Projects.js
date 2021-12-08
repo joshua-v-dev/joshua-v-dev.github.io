@@ -28,15 +28,15 @@ import {
 
 const Projects = () => (
 	<>
-		{/* <ProjectsRightSection>
+		<ProjectsRightSection>
 			<FullBackgroundAnimation />
-		</ProjectsRightSection> */}
-		{/* <SectionDividerContainer> */}
-		<DividerAnimation>
-			<SectionDivider divider />
-		</DividerAnimation>
-		<SectionTitle main>Projects</SectionTitle>
-		{/* </SectionDividerContainer> */}
+		</ProjectsRightSection>
+		<SectionDividerContainer>
+			<DividerAnimation>
+				<SectionDivider divider />
+			</DividerAnimation>
+			<SectionTitle main>Projects</SectionTitle>
+		</SectionDividerContainer>
 
 		<Section nopadding id='projects'>
 			<GridContainer>
