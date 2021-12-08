@@ -31,7 +31,7 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
 	// grid-area: 1 / 2 / 2 / 4;
 	display: flex;
-	padding: 2rem 2rem;
+
 	margin-top: 3rem;
 	margin-bottom: 2.5rem;
 	justify-content: space-evenly;
