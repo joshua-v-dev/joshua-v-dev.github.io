@@ -1,8 +1,8 @@
 import React from 'react'
 import { Section } from '../../styles/GlobalComponents/index'
-import { FullAnimation } from './BackgroundAnimationFullStyles'
+import { FullAnimation } from './FullBackgroundAnimationStyles'
 
-const BackgroundAnimationFull = () => (
+const FullBackgroundAnimation = () => (
 	<Section>
 		<FullAnimation>
 			<div>
@@ -292,4 +292,4 @@ const BackgroundAnimationFull = () => (
 	</Section>
 )
 
-export default BackgroundAnimationFull
+export default FullBackgroundAnimation

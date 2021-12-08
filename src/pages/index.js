@@ -1,7 +1,6 @@
-import Acomplishments from '../components/Acomplishments/Acomplishments'
-
-import BackgroundgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation'
+import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation'
 import Projects from '../components/Projects/Projects'
+import Acomplishments from '../components/Acomplishments/Acomplishments'
 import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
@@ -11,7 +10,7 @@ const Home = () => {
 	return (
 		<IdProvider>
 			<Layout>
-				<BackgroundgAnimation />
+				<BackgroundAnimation />
 				<Projects />
 				<Technologies />
 				<Timeline />
