@@ -6,7 +6,7 @@ export const FullAnimation = styled.div`
 	// margin: 0;
 	// padding: 0;
 	// position: absolute;
-	// z-index: 2;
+	// z-index: 1;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 80%;

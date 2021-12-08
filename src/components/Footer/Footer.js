@@ -5,10 +5,6 @@ import { SocialIcons } from '../Header/HeaderStyles'
 import {
 	CompanyContainer,
 	FooterWrapper,
-	LinkColumn,
-	LinkItem,
-	LinkList,
-	LinkTitle,
 	Slogan,
 	SocialContainer,
 	SocialIconsContainer,
@@ -17,16 +13,6 @@ import {
 const Footer = () => {
 	return (
 		<FooterWrapper>
-			{/* <LinkList>
-				<LinkColumn>
-					<LinkTitle>Contact</LinkTitle>
-					<LinkItem></LinkItem>
-				</LinkColumn>
-				<LinkColumn>
-					<LinkTitle>Email</LinkTitle>
-					<LinkItem href='mailto:joshua.v.dev@gmail.com'>joshua.v.dev@gmail.com</LinkItem>
-				</LinkColumn>
-			</LinkList> */}
 			<SocialIconsContainer>
 				<CompanyContainer>
 					<Slogan>Innovating one project at a time</Slogan>
