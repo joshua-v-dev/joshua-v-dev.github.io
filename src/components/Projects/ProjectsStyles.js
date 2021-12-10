@@ -1,6 +1,13 @@
 import styled from 'styled-components'
 
+export const Overlay = styled.div`
+	position: absolute;
+	z-index: -1;
+	opacity: 0.85;
+`
+
 export const Img = styled.img`
+	display: grid;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -9,6 +16,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
+	width: 100%;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	padding: 3rem;
 	place-items: center;
@@ -16,6 +24,7 @@ export const GridContainer = styled.section`
 	row-gap: 3rem;
 	object-fit: cover;
 	overflow: hidden;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
@@ -24,10 +33,14 @@ export const GridContainer = styled.section`
 	}
 `
 export const BlogCard = styled.div`
+	display: grid;
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+	justify-self: center;
+	justify-content: space-evenly;
 	text-align: center;
 	margin-bottom: 3rem;
+	opacity: 1;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
@@ -38,7 +51,6 @@ export const BlogCard = styled.div`
 `
 export const TitleContent = styled.div`
 	text-align: center;
-	z-index: 20;
 	width: 100%;
 `
 
@@ -73,8 +85,14 @@ export const CardInfo = styled.p`
 	padding: 0 50px;
 	color: #e4e6e7;
 	font-style: 2rem;
-	line-height: 24px;
-	text-align: justify;
+	line-height: 2rem;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	text-align: start;
+	justify-content: center;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.3rem;
 	}
@@ -84,6 +102,7 @@ export const UtilityList = styled.ul`
 	list-style-type: none;
 	padding: 0;
 	display: flex;
+	flex: 1;
 	justify-content: space-around;
 	margin: 2.5rem 0;
 `
@@ -95,6 +114,7 @@ export const ExternalLinks = styled.a`
 	background: #6b3030;
 	border-radius: 15px;
 	transition: 0.5s;
+
 	&:hover {
 		background: #801414;
 	}
@@ -102,29 +122,11 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
 	display: flex;
+	flex: 1;
 	justify-content: space-around;
 	padding: 2rem;
 `
 export const Tag = styled.li`
 	color: #d8bfbf;
 	font-size: 1.5rem;
-`
-export const ProjectsBackground = styled.svg`
-	width: 100vw;
-
-	position: absolute;
-	z-index: -1;
-	opacity: 0.8;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
-	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
 `

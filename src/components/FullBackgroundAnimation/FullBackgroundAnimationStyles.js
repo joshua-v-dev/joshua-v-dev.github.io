@@ -1,51 +1,12 @@
 import styled from 'styled-components'
 
 export const FullAnimation = styled.div`
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
+	display: grid;
 	position: relative;
-	z-index: 1;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
-	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
-`
-export const ProjectsRightSection = styled.div`
-	width: 100vw;
-	max-height: 100vh;
-	position: absolute;
-	opacity: 0.85;
-	z-index: -1;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-
-		margin: 0 auto;
-	}
-	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
-`
-export const DividerAnimation = styled.div`
 	width: 100vw;
 	margin: 0;
 	padding: 0;
+	opacity: 0.85;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 80%;

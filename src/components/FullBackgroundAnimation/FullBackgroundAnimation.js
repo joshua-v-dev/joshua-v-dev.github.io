@@ -11,7 +11,7 @@ const FullBackgroundAnimation = () => (
 					viewBox='0 0 702 702'
 					fill='none'
 					xmlns='http://www.w3.org/2000/svg'>
-					<g opacity='0.15'>
+					<g opacity='0.04'>
 						<path
 							fillRule='evenodd'
 							clipRule='evenodd'
@@ -37,7 +37,7 @@ const FullBackgroundAnimation = () => (
 						rx='1.07306'
 						ry='1.07433'
 						fill='#945DD6'>
-						<animateMotion dur='10s' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='12s' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_2' />
 						</animateMotion>
 					</ellipse>
@@ -45,7 +45,7 @@ const FullBackgroundAnimation = () => (
 						d='M294.685 193.474L268.932 219.258'
 						transform='translate(-294.685 -193.474) rotate(45 294.685 193.474)'
 						stroke='url(#paint3_linear)'>
-						<animateMotion dur='10s' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='12s' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_2' />
 						</animateMotion>
 					</path>
@@ -56,7 +56,7 @@ const FullBackgroundAnimation = () => (
 						rx='1.07306'
 						ry='1.07433'
 						fill='#46737'>
-						<animateMotion dur='5s' begin='1' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='12s' begin='1' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_2' />
 						</animateMotion>
 					</ellipse>
@@ -64,7 +64,7 @@ const FullBackgroundAnimation = () => (
 						d='M294.685 193.474L268.932 219.258'
 						transform='translate(-294.685 -193.474) rotate(45 294.685 193.474)'
 						stroke='url(#paint7_linear)'>
-						<animateMotion dur='5s' begin='1' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='10s' begin='1' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_2' />
 						</animateMotion>
 					</path>
@@ -75,7 +75,7 @@ const FullBackgroundAnimation = () => (
 						ry='1.07306'
 						transform='translate(-476.525 -363.313) rotate(90 476.525 363.313)'
 						fill='#945DD6'>
-						<animateMotion dur='10s' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='12s' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_0' />
 						</animateMotion>
 					</ellipse>
@@ -83,7 +83,7 @@ const FullBackgroundAnimation = () => (
 						d='M476.171 362.952L450.417 337.168'
 						transform='translate(-476.525 -363.313) rotate(-45 476.171 362.952)'
 						stroke='url(#paint4_linear)'>
-						<animateMotion dur='10s' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='13s' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_0' />
 						</animateMotion>
 					</path>
@@ -113,7 +113,7 @@ const FullBackgroundAnimation = () => (
 						ry='1.07433'
 						transform='translate(-333.324 -382.691) rotate(-180 333.324 382.691)'
 						fill='#F46737'>
-						<animateMotion dur='5s' begin='0' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='10s' begin='0' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_1' />
 						</animateMotion>
 					</ellipse>
@@ -121,7 +121,7 @@ const FullBackgroundAnimation = () => (
 						d='M333.667 382.335L359.42 356.551'
 						transform='scale(-1 1) translate(-333.667 -382.335) rotate(45 333.667 382.335)'
 						stroke='url(#paint6_linear)'>
-						<animateMotion dur='5s' begin='0' repeatCount='indefinite' rotate='auto'>
+						<animateMotion dur='10s' begin='0' repeatCount='indefinite' rotate='auto'>
 							<mpath xlinkHref='#path_1' />
 						</animateMotion>
 					</path>

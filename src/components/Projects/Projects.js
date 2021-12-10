@@ -21,20 +21,12 @@ import {
 } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
 import FullBackgroundAnimation from '../FullBackgroundAnimation/FullBackgroundAnimation'
-import {
-	ProjectsRightSection,
-	DividerAnimation,
-} from '../FullBackgroundAnimation/FullBackgroundAnimationStyles'
+import { Overlay } from './ProjectsStyles'
 
 const Projects = () => (
 	<>
-		<ProjectsRightSection>
-			<FullBackgroundAnimation />
-		</ProjectsRightSection>
 		<SectionDividerContainer>
-			<DividerAnimation>
-				<SectionDivider divider />
-			</DividerAnimation>
+			<SectionDivider divider />
 			<SectionTitle main>Projects</SectionTitle>
 		</SectionDividerContainer>
 
@@ -69,7 +61,13 @@ const Projects = () => (
 					)
 				})}
 			</GridContainer>
+			<Overlay>
+				<FullBackgroundAnimation />
+			</Overlay>
 		</Section>
+		<Overlay>
+			<FullBackgroundAnimation />
+		</Overlay>
 	</>
 )
 
