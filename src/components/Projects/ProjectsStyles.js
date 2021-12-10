@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const Overlay = styled.div`
+	width: 100%;
 	position: absolute;
+	overflow: hidden;
 	z-index: -1;
 	opacity: 0.85;
 `
@@ -35,6 +37,7 @@ export const GridContainer = styled.section`
 `
 export const BlogCard = styled.div`
 	display: grid;
+	width: 100%;
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	justify-self: center;

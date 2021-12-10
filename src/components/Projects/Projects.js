@@ -64,10 +64,8 @@ const Projects = () => (
 			<Overlay>
 				<FullBackgroundAnimation />
 			</Overlay>
-		</Section>
-		<Overlay>
 			<FullBackgroundAnimation />
-		</Overlay>
+		</Section>
 	</>
 )
 

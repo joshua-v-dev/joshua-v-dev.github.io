@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const FullAnimation = styled.div`
 	display: grid;
-	position: relative;
-	width: 100vw;
+
+	overflow: hidden;
 	margin: 0;
 	padding: 0;
 	opacity: 0.85;
