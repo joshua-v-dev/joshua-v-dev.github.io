@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import '../../themes/default'
 
 export const Container = styled.div`
+	// margin: 0 auto;
+	padding: 0;
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-column-gap: 2rem;
@@ -29,8 +31,8 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
 	// grid-area: 1 / 2 / 2 / 4;
 	display: flex;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
+	// margin-top: 1rem;
+	// margin-bottom: 2rem;
 	justify-content: space-evenly;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 2 / 2 / 3 / 5;
