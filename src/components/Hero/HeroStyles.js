@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeroSection = styled.div`
-	width: 90vw;
+	width: 100vw;
 	padding: 0;
 	position: relative;
 
