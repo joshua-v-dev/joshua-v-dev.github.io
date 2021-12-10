@@ -11,7 +11,7 @@ const FullBackgroundAnimation = () => (
 					viewBox='0 0 702 702'
 					fill='none'
 					xmlns='http://www.w3.org/2000/svg'>
-					<g opacity='0.04'>
+					<g opacity='0.05'>
 						<path
 							fillRule='evenodd'
 							clipRule='evenodd'
