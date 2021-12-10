@@ -4,9 +4,8 @@ import '../../themes/default'
 
 export const Container = styled.div`
 	display: grid;
-	// grid-template-columns: repeat(5, 1fr);
-	// grid-template-rows: 1fr;
-	// grid-column-gap: 2rem;
+	grid-template-rows: 1fr;
+	grid-column-gap: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		// display: grid;
@@ -17,13 +16,12 @@ export const Container = styled.div`
 	}
 `
 export const Div1 = styled.div`
-	// grid-area: 1 / 1 / 2 / 2;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	justify-content: center;
 	font-size: 4rem;
-	margin-bottom: 0.5rem;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 1 / 1 / 2 / 3;
 	}
@@ -31,15 +29,14 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
 	// grid-area: 1 / 2 / 2 / 4;
 	display: flex;
-	margin-top: 3rem;
-	margin-bottom: 2.5rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 	justify-content: space-evenly;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 2 / 2 / 3 / 5;
 	}
 `
 export const Div3 = styled.div`
-	// grid-area: 1 / 5 / 2 / 6;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -56,7 +53,7 @@ export const NavLink = styled.a`
 	justify-content: space-around;
 	font-size: 2.5rem;
 	margin-top: 1rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	padding: 0.3rem 0.6rem;
 	background-flow: row-reverse;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
@@ -129,6 +126,8 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 // Social Icons
 
 export const SocialIcons = styled.a`
+	display: flex;
+	align-items: flex-end;
 	transition: 0.3s ease;
 	color: white;
 	border-radius: 50px;
