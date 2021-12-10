@@ -26,7 +26,7 @@ export const Section = styled.section`
 export const SectionTitle = styled.h2`
 	// font-weight: 600;
 	font-size: ${(props) => (props.main ? '8rem' : '5rem')};
-	line-height: ${(props) => (props.main ? '12rem' : '6rem')};
+	line-height: ${(props) => (props.main ? '10rem' : '6rem')};
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
