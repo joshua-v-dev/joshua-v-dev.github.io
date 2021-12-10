@@ -21,6 +21,7 @@ export const HeroSection = styled.div`
 
 export const LeftSection = styled.div`
 	width: 100%;
+	height: 100%;
 	position: relative;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -38,6 +39,7 @@ export const LeftSection = styled.div`
 `
 export const RightSection = styled.div`
 	width: 100%;
+	height: 100%;
 	position: absolute;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
