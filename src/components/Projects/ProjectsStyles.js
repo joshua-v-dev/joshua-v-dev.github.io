@@ -16,6 +16,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
+	grid-areas: 'BlogCard' 'Overlay';
 	width: 100%;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	padding: 3rem;
