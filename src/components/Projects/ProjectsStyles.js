@@ -20,14 +20,14 @@ export const GridContainer = styled.section`
 	display: grid;
 	grid-areas: 'BlogCard' 'Overlay';
 	width: 100%;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 	padding: 3rem;
 	place-items: center;
-	column-gap: 2rem;
+	column-gap: 3rem;
 	row-gap: 3rem;
 	object-fit: cover;
 	overflow: hidden;
-
+	margin-top: 3rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
@@ -37,6 +37,7 @@ export const GridContainer = styled.section`
 `
 export const BlogCard = styled.div`
 	display: grid;
+
 	width: 100%;
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
@@ -44,6 +45,7 @@ export const BlogCard = styled.div`
 	justify-content: space-evenly;
 	text-align: center;
 	margin-bottom: 3rem;
+	margin-right: 3rem;
 	opacity: 1;
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -81,7 +83,7 @@ export const Intro = styled.div`
 	font-family: 'Droid Serif', serif;
 	font-size: 13px;
 	font-style: italic;
-	line-height: 18px;
+	// line-height: 18px;
 `
 
 export const CardInfo = styled.p`
@@ -89,7 +91,7 @@ export const CardInfo = styled.p`
 	padding: 0 50px;
 	color: #e4e6e7;
 	font-style: 2rem;
-	line-height: 2rem;
+	// line-height: 2rem;
 	display: flex;
 	flex: 1;
 	flex-direction: column;
