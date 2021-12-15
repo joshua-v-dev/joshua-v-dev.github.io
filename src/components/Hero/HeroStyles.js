@@ -39,7 +39,8 @@ export const LeftSection = styled.div`
 	}
 `
 export const RightSection = styled.div`
-	width: 100%;
+	margin-left: 2rem;
+	width: 95%;
 	height: 90%;
 	position: absolute;
 

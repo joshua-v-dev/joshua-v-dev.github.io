@@ -55,7 +55,8 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
 	max-width: 800px;
-	font-size: 2rem;
+	font-size: 3rem;
+	margin-top: 3rem;
 	line-height: 4rem;
 	font-weight: 300;
 	padding-bottom: 3.6rem;
@@ -190,7 +191,9 @@ export const ButtonBack = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
-	color: #fff;
+	// color: #fff;
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 	background: ${({ alt }) =>
 		alt
 			? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
@@ -218,7 +221,9 @@ export const ButtonBack = styled.div`
 export const ButtonFront = styled.button`
 	border: none;
 	border-radius: 2rem;
-	color: #fff;
+	// color: #fff;
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 	display: flex;
 	position: absolute;
 	top: 0;

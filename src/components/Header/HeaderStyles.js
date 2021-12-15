@@ -68,7 +68,7 @@ export const NavLink = styled.a`
 	border-left: 1px solid rgba(255, 255, 255, 0.75);
 	color: accent1;
 	background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	transition: 0.4s ease;
 	&:hover {
 		color: #fff;
