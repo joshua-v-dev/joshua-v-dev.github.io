@@ -10,6 +10,7 @@ export const Overlay = styled.div`
 
 export const Img = styled.img`
 	display: grid;
+	border-radius: 2rem 2rem 0.2rem 0.2rem;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -19,6 +20,8 @@ export const Img = styled.img`
 export const GridContainer = styled.section`
 	display: grid;
 	grid-areas: 'BlogCard' 'Overlay';
+	justify-items: center;
+	justify-content: center;
 	width: 100%;
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	padding: 3rem;
@@ -37,16 +40,29 @@ export const GridContainer = styled.section`
 `
 export const BlogCard = styled.div`
 	display: grid;
-
-	width: 100%;
-	border-radius: 10px;
+	grid-auto-flow: row dense;
+	grid-auto-flow: initial;
+	width: 90%;
+	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+	// transform: rotate(45deg);
 	justify-self: center;
 	justify-content: space-evenly;
 	text-align: center;
 	margin-bottom: 3rem;
 	margin-right: 3rem;
 	opacity: 1;
+
+	// :before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: -50%;
+	// 	left: -50%;
+	// 	width: 200%;
+	// 	height: 200%;
+	// 	transform: rotate(-45deg);
+	// 	background-size: cover;
+	// }
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
@@ -58,10 +74,12 @@ export const BlogCard = styled.div`
 export const TitleContent = styled.div`
 	text-align: center;
 	width: 100%;
+	margin-top: 1rem;
 `
 
 export const HeaderThree = styled.h3`
 	font-weight: 500;
+	margin-top: 1rem;
 	letter-spacing: 2px;
 	color: #9cc9e3;
 	padding: 0.5rem 0;
@@ -71,19 +89,20 @@ export const HeaderThree = styled.h3`
 export const Hr = styled.hr`
 	width: 50px;
 	height: 3px;
-	margin: 20px auto;
+	margin: 2rem auto;
 	border: 0;
 	background: #d0bb57;
 `
 
 export const Intro = styled.div`
-	width: 170px;
+	width: 100%;
 	margin: 0 auto;
 	color: #dce3e7;
+	margin-top: 1rem;
 	font-family: 'Droid Serif', serif;
-	font-size: 13px;
+	font-size: 1.5rem;
 	font-style: italic;
-	// line-height: 18px;
+	line-height: 2rem;
 `
 
 export const CardInfo = styled.p`
@@ -91,13 +110,14 @@ export const CardInfo = styled.p`
 	padding: 0 50px;
 	color: #e4e6e7;
 	font-style: 2rem;
-	// line-height: 2rem;
+	line-height: 2rem;
 	display: flex;
 	flex: 1;
 	flex-direction: column;
 	align-items: center;
 	text-align: start;
 	justify-content: center;
+	margin-top: 1rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.3rem;
@@ -131,6 +151,7 @@ export const TagList = styled.ul`
 	flex: 1;
 	justify-content: space-around;
 	padding: 2rem;
+	margin-top: 1rem;
 `
 export const Tag = styled.li`
 	color: #d8bfbf;

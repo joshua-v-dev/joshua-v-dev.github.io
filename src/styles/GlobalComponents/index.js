@@ -4,6 +4,8 @@ export const Section = styled.section`
 	display: ${(props) => (props.grid ? 'grid' : 'flex')};
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => props.nopadding};
+	justify-content: ${(props) => (props.center ? 'center' : 'flex-start')};
+	align-items: ${(props) => (props.center ? 'center' : 'flex-start')};
 	margin: 0 auto;
 	max-width: 100vw;
 	box-sizing: content-box;
