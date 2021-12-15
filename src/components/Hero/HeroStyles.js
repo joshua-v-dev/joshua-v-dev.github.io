@@ -40,7 +40,7 @@ export const LeftSection = styled.div`
 `
 export const RightSection = styled.div`
 	width: 100%;
-	height: 100%;
+	height: 90%;
 	position: absolute;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
