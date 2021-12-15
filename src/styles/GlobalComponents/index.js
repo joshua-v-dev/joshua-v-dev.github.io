@@ -88,8 +88,8 @@ export const SectionDividerContainer = styled.div`
 `
 export const SectionDivider = styled.div`
 	margin: auto;
-	width: 64px;
-	height: 6px;
+	width: 6.4rem;
+	height: 0.06rem;
 	border-radius: 10px;
 	background-color: #fff;
 	background: ${(props) =>
