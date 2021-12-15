@@ -10,7 +10,9 @@ export const Navigation = styled.nav`
 `
 
 export const Container = styled.div`
+	width: 100%;
 	padding: 0;
+	display: flex;
 	// display: grid;
 	// grid-template-rows: 1fr;
 	// grid-column-gap: 3rem;
@@ -35,8 +37,8 @@ export const Div1 = styled.div`
 `
 export const Div2 = styled.div`
 	display: flex;
-	width: 50%;
-	justify-content: space-between;
+	width: 100%;
+	justify-content: flex-end;
 	align-items: center;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 2 / 2 / 3 / 5;
@@ -44,9 +46,8 @@ export const Div2 = styled.div`
 `
 export const Div3 = styled.div`
 	display: flex;
-	width: 20%;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		align-items: center;
 		grid-area: 1 / 4 / 2 / 6;
@@ -56,9 +57,8 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
 	display: flex;
-	align-items: flex-end;
-	font-size: 2.5rem;
-	// margin-right: 6rem;
+	font-size: 2rem;
+	margin-right: 6rem;
 	padding: 0.3rem 0.6rem;
 	background-flow: row-reverse;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
@@ -109,6 +109,23 @@ export const ContactDropDown = styled.button`
 	}
 `
 
+// Social Icons
+
+export const SocialIcons = styled.a`
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0.3rem 0.6rem;
+	transition: 0.4s ease;
+	color: white;
+	border-radius: 4rem;
+	padding: 1rem;
+	&:hover {
+		background-color: #212d45;
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+`
 // export const NavProductsIcon = styled(IoIosArrowDropdown)`
 // 	size: 5rem;
 // 	margin-left: 8px;
@@ -129,21 +146,3 @@ export const ContactDropDown = styled.button`
 // 		width: 15px;
 // 	}
 // `
-
-// Social Icons
-
-export const SocialIcons = styled.a`
-	// display: flex;
-	// align-items: center;
-	// justify-content: flex-start;
-	padding: 0.3rem 0.6rem;
-	transition: 0.3s ease;
-	color: white;
-	border-radius: 50px;
-	padding: 8px;
-	&:hover {
-		background-color: #212d45;
-		transform: scale(1.2);
-		cursor: pointer;
-	}
-`
