@@ -20,7 +20,7 @@ export const HeroSection = styled.div`
 `
 
 export const LeftSection = styled.div`
-	width: 60%;
+	width: 80%;
 	// height: 100%;
 	position: relative;
 
