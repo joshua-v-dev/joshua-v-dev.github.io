@@ -179,10 +179,10 @@ export const SectionSubText = styled.p`
 // `
 
 export const ButtonBack = styled.div`
-	width: ${({ alt }) => (alt ? '10rem' : '18rem')};
-	height: ${({ alt }) => (alt ? '5.2rem' : '6.4rem')};
+	width: ${({ alt }) => (alt ? '8rem' : '16rem')};
+	height: ${({ alt }) => (alt ? '3rem' : '6rem')};
 	border-radius: 5rem;
-	font-size: ${({ alt }) => (alt ? '2rem' : '2.4rem')};
+	font-size: ${({ alt }) => (alt ? '2rem' : '2.5rem')};
 	font-weight: 700;
 	display: flex;
 	align-items: center;
@@ -194,7 +194,7 @@ export const ButtonBack = styled.div`
 			? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
 			: 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
 	cursor: pointer;
-	transition: 0.5s ease;
+	transition: 1.5s ease;
 	position: relative;
 	overflow: hidden;
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};

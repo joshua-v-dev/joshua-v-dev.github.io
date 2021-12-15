@@ -64,8 +64,8 @@ export const NavLink = styled.a`
 	background-flow: row-reverse;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 	border-top: 1px solid rgba(255, 255, 255, 0.75);
-	// border-right: 1px solid rgba(255, 255, 255, 0.75);
-	// border-left: 1px solid rgba(255, 255, 255, 0.75);
+	border-right: 1px solid rgba(255, 255, 255, 0.75);
+	border-left: 1px solid rgba(255, 255, 255, 0.75);
 	color: accent1;
 	background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
 	border-radius: 1rem;
