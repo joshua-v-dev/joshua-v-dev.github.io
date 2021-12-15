@@ -58,6 +58,7 @@ export const Div3 = styled.div`
 export const NavLink = styled.a`
 	display: flex;
 	font-size: 2rem;
+	font-weight: bold;
 	margin-right: 6rem;
 	padding: 0.3rem 0.6rem;
 	background-flow: row-reverse;
@@ -65,8 +66,8 @@ export const NavLink = styled.a`
 	border-top: 1px solid rgba(255, 255, 255, 0.75);
 	// border-right: 1px solid rgba(255, 255, 255, 0.75);
 	// border-left: 1px solid rgba(255, 255, 255, 0.75);
-	color: rgba(255, 255, 255, 0.75);
-	// background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
+	color: accent1;
+	background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
 	border-radius: 1rem;
 	transition: 0.4s ease;
 	&:hover {

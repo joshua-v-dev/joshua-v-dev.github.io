@@ -179,15 +179,15 @@ export const SecondaryBtn = styled.button`
 `
 
 export const ButtonBack = styled.div`
-	width: ${({ alt }) => (alt ? '150px' : '262px')};
-	height: ${({ alt }) => (alt ? '52px' : '64px')};
-	border-radius: 50px;
-	font-size: ${({ alt }) => (alt ? '20px' : '24px')};
+	width: ${({ alt }) => (alt ? '15rem' : '26.2rem')};
+	height: ${({ alt }) => (alt ? '5.2rem' : '6.4rem')};
+	border-radius: 5rem;
+	font-size: ${({ alt }) => (alt ? '2rem' : '2.4rem')};
 	font-weight: 600;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 80px')};
+	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 8rem')};
 	color: #fff;
 	background: ${({ alt }) =>
 		alt
@@ -215,7 +215,7 @@ export const ButtonBack = styled.div`
 
 export const ButtonFront = styled.button`
 	border: none;
-	border-radius: 50px;
+	border-radius: 2rem;
 	color: #fff;
 	display: flex;
 	position: absolute;
@@ -229,8 +229,8 @@ export const ButtonFront = styled.button`
 			: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
 	transition: 0.4s ease;
-	font-size: ${({ alt }) => (alt ? '1.2rem' : '2rem')};
-	font-weight: 600;
+	font-size: ${({ alt }) => (alt ? '1.5rem' : '2rem')};
+	font-weight: 700;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
