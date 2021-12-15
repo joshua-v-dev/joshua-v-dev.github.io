@@ -3,18 +3,17 @@ import styled from 'styled-components'
 import '../../themes/default'
 
 export const Navigation = styled.nav`
-	// width: 100%;
-	display: grid;
-	margin: 3rem 0;
-	// justify-content: flex-start;
-	// align-items: space-evenly;
+	width: 100%;
+	display: flex;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
 `
 
 export const Container = styled.div`
 	padding: 0;
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-column-gap: 3rem;
+	// display: grid;
+	// grid-template-rows: 1fr;
+	// grid-column-gap: 3rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		// display: grid;
@@ -35,17 +34,19 @@ export const Div1 = styled.div`
 	}
 `
 export const Div2 = styled.div`
-	// grid-area: 1 / 2 / 2 / 4;
 	display: flex;
+	width: 50%;
+	justify-content: space-between;
 	align-items: center;
-	align-items: space-evenly;
-	justify-content: space-evenly;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 2 / 2 / 3 / 5;
 	}
 `
 export const Div3 = styled.div`
 	display: flex;
+	width: 20%;
+	align-items: center;
+	justify-content: center;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		align-items: center;
 		grid-area: 1 / 4 / 2 / 6;
@@ -57,12 +58,15 @@ export const NavLink = styled.a`
 	display: flex;
 	align-items: flex-end;
 	font-size: 2.5rem;
-	margin-right: 6rem;
+	// margin-right: 6rem;
 	padding: 0.3rem 0.6rem;
 	background-flow: row-reverse;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+	border-top: 1px solid rgba(255, 255, 255, 0.75);
+	// border-right: 1px solid rgba(255, 255, 255, 0.75);
+	// border-left: 1px solid rgba(255, 255, 255, 0.75);
 	color: rgba(255, 255, 255, 0.75);
-	background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
+	// background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
 	border-radius: 1rem;
 	transition: 0.4s ease;
 	&:hover {
@@ -132,6 +136,7 @@ export const SocialIcons = styled.a`
 	// display: flex;
 	// align-items: center;
 	// justify-content: flex-start;
+	padding: 0.3rem 0.6rem;
 	transition: 0.3s ease;
 	color: white;
 	border-radius: 50px;

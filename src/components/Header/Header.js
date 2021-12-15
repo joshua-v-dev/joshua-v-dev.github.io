@@ -7,8 +7,17 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Navigation } from '.
 
 const Header = () => (
 	<Container>
+		<DropdownNav />
 		<Navigation>
-			<DropdownNav />
+			<Div1>
+				<Link href='/' passHref>
+					<a>
+						<DiCssdeck className='DiCssdeck_mobile' />
+						<span>Joshua&apos;s Stories</span>
+					</a>
+				</Link>
+			</Div1>
+
 			<Div3>
 				<SocialIcons href='https://github.com/joshua-v-dev'>
 					<AiFillGithub size='3rem' />
@@ -17,7 +26,6 @@ const Header = () => (
 					<AiFillLinkedin size='3rem' />
 				</SocialIcons>
 			</Div3>
-
 			<Div2>
 				<li>
 					<Link href='#projects' passHref>
@@ -36,14 +44,6 @@ const Header = () => (
 				</li>
 			</Div2>
 		</Navigation>
-		<Div1>
-			<Link href='/' passHref>
-				<a>
-					<DiCssdeck className='DiCssdeck_mobile' />
-					<span>Joshua&apos;s Stories</span>
-				</a>
-			</Link>
-		</Div1>
 	</Container>
 )
 
