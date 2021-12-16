@@ -30,7 +30,7 @@ export const GridContainer = styled.section`
 	justify-items: center;
 	justify-content: center;
 	width: 100%;
-	grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
 	padding: 3rem;
 	place-items: center;
 	column-gap: 3rem;
@@ -51,7 +51,7 @@ export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
 	grid-auto-flow: initial;
-	width: 90%;
+	width: 80%;
 	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	justify-self: center;
@@ -80,7 +80,7 @@ export const HeaderThree = styled.h3`
 	font-weight: 500;
 	margin-top: 1rem;
 	letter-spacing: 2px;
-	color: #9cc9e3;
+	color: ${(props) => props.theme.colors.accent3};
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
 `
@@ -90,13 +90,13 @@ export const Hr = styled.hr`
 	height: 0.4rem;
 	margin: 3rem auto;
 	border: 0;
-	background: #d0bb57;
+	background: ${(props) => props.theme.colors.accent4};
 `
 
 export const Intro = styled.div`
 	width: 100%;
 	margin: 0 auto;
-	color: #dce3e7;
+	color: ${(props) => props.theme.colors.accent2};
 	margin-top: 1rem;
 	font-family: 'Droid Serif', serif;
 	font-size: 1.5rem;
@@ -104,10 +104,11 @@ export const Intro = styled.div`
 	line-height: 2rem;
 `
 
+// make variables for the colors
 export const CardInfo = styled.p`
 	width: 100%;
 	padding: 0 50px;
-	color: #e4e6e7;
+	color: ${(props) => props.theme.colors.background3};
 	font-style: 2rem;
 	line-height: 2rem;
 	display: flex;
@@ -117,7 +118,6 @@ export const CardInfo = styled.p`
 	text-align: center;
 	justify-content: center;
 	margin-top: 1rem;
-
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.3rem;
 	}
@@ -133,15 +133,15 @@ export const UtilityList = styled.ul`
 `
 
 export const ExternalLinks = styled.a`
-	color: #d4c0c0;
+	color: ${(props) => props.theme.colors.button};
 	font-size: 1.6rem;
 	padding: 1rem 1.5rem;
-	background: #6b3030;
+	background: ${(props) => props.theme.colors.background3};
 	border-radius: 15px;
 	transition: 0.5s;
 
 	&:hover {
-		background: #801414;
+		background: ${(props) => props.theme.colors.accent1};
 	}
 `
 
@@ -160,7 +160,8 @@ export const TagList = styled.ul`
 		justify-content: space-evenly;
 	}
 `
+
 export const Tag = styled.li`
-	color: #d8bfbf;
+	color: ${(props) => props.theme.colors.accent5};
 	font-size: 1.5rem;
 `
