@@ -79,7 +79,7 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.h3`
 	font-weight: 500;
 	margin-top: 1rem;
-	letter-spacing: 2px;
+	letter-spacing: 0.15em;
 	color: ${(props) => props.theme.colors.accent3};
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
@@ -106,7 +106,7 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 5rem;
 	color: ${(props) => props.theme.colors.background3};
 	font-style: 2rem;
 	line-height: 2rem;
@@ -136,7 +136,7 @@ export const ExternalLinks = styled.a`
 	font-size: 1.6rem;
 	padding: 1rem 1.5rem;
 	background: ${(props) => props.theme.colors.background3};
-	border-radius: 15px;
+	border-radius: 1.5rem;
 	transition: 0.5s;
 
 	&:hover {
