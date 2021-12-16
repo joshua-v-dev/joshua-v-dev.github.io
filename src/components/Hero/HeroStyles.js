@@ -62,3 +62,10 @@ export const RightSection = styled.div`
 		padding-bottom: 3rem;
 	}
 `
+export const ButtonContainer = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3rem 0;
+`
