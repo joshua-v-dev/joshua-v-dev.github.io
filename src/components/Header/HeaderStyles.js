@@ -12,23 +12,22 @@ export const Navigation = styled.nav`
 export const Container = styled.div`
 	width: 100%;
 	padding: 0;
-	display: flex;
-	// display: grid;
-	// grid-template-rows: 1fr;
-	// grid-column-gap: 3rem;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-column-gap: 3rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		// display: grid;
-		// grid-template-columns: repeat(5, 1fr);
-		// grid-template-rows: repeat(2, 60px);
+		display: grid;
+		height: 100%;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(2, 60px);
 		grid-column-gap: 0.5rem;
-		grid-row-gap: 0.5rem;
 	}
 `
 export const Div1 = styled.div`
 	visibility: hidden;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
+		display: grid;
 		flex-direction: row;
 		justify-content: center;
 		font-size: 4rem;
