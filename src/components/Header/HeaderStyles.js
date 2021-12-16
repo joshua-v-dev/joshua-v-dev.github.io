@@ -19,7 +19,7 @@ export const Container = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(2, 60px);
+		grid-template-rows: repeat(2, 6rem);
 		grid-column-gap: 0.5rem;
 	}
 `
@@ -88,7 +88,7 @@ export const ContactDropDown = styled.button`
 	position: relative;
 	background: none;
 	font-size: 1.7rem;
-	line-height: 32px;
+	line-height: 3.2rem;
 	color: ${(props) => props.theme.colors.accent7};
 	cursor: pointer;
 	transition: 0.3s ease;
@@ -127,7 +127,7 @@ export const SocialIcons = styled.a`
 `
 export const NavProductsIcon = styled(IoIosArrowDropdown)`
 	size: 5rem;
-	margin-left: 8px;
+	margin-left: 0.8rem;
 	display: grid;
 	align-self: center;
 	justify-self: center;
@@ -141,7 +141,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		margin: 2px 0 0 2px;
-		width: 15px;
+		margin: 0.2rem 0 0 0.2rem;
+		width: 1.5rem;
 	}
 `
