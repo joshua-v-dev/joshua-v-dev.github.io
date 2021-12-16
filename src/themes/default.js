@@ -28,7 +28,8 @@ export default {
 		button3: 'hsl(205.1,100%,36.1%)',
 		background2: '#E1FCFD',
 		background3: 'hsl(232.7,27.3%,23.7%)',
-		background3: '#9CF6FB',
+		background4: '#9CF6FB',
+		background5: 'rgba(255, 255, 255, 0.75)',
 	},
 	//breakpoints
 	breakpoints: {

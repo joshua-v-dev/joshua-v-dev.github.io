@@ -11,7 +11,7 @@ export const ImageContainer = styled.div`
 	padding: 5rem;
 	margin-top: 5rem;
 	display: flex;
-	// flex-direction: column;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
@@ -55,7 +55,7 @@ export const List = styled.ul`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		// margin: 3.2rem 0;
+		margin: 3.2rem 0;
 	}
 `
 
@@ -78,7 +78,7 @@ export const ListTitle = styled.h4`
 	font-size: 4rem;
 	line-height: 3.2rem;
 	letter-spacing: 0.02em;
-	color: #ffffff;
+	color: ${(props) => props.theme.colors.accent7};
 	margin: 2rem 0;
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -97,8 +97,7 @@ export const ListTitle = styled.h4`
 export const ListParagraph = styled.p`
 	font-size: 1.8rem;
 	line-height: 3rem;
-	color: 'accent1';
-	// rgba(255, 255, 255, 0.75)
+	color: ${(props) => props.theme.colors.accent6};
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 16px;
 		line-height: 28px;
@@ -134,7 +133,7 @@ export const ListIcon = styled.img`
 	display: block;
 	width: 7rem;
 	height: 7rem;
-	// margin: auto;
+	margin: auto;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 40px;

@@ -23,13 +23,13 @@ export const DropdownNavStyles = styled.div`
 		}
 		.content {
 			background-color: transparent;
-			color: primary1;
+			color: ${(props) => props.theme.colors.primary1};
 		}
 		.item {
 			padding: 1rem 3rem;
 		}
 		.item:focus {
-			background-color: button;
+			background-color: ${(props) => props.theme.colors.button2};
 		}
 	}
 `

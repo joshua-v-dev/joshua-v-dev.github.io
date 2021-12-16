@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Overlay = styled.div`
-	// display: grid;
+	display: grid;
 	position: absolute;
 	overflow: hidden;
 	z-index: 1;
@@ -104,7 +104,6 @@ export const Intro = styled.div`
 	line-height: 2rem;
 `
 
-// make variables for the colors
 export const CardInfo = styled.p`
 	width: 100%;
 	padding: 0 50px;
