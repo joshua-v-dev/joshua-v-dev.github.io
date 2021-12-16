@@ -51,7 +51,7 @@ export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
 	grid-auto-flow: initial;
-	width: 100%;
+	width: 90%;
 	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	justify-self: center;
@@ -63,7 +63,7 @@ export const BlogCard = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
-		height: 100%;
+		height: 50%;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
@@ -86,9 +86,9 @@ export const HeaderThree = styled.h3`
 `
 
 export const Hr = styled.hr`
-	width: 50px;
-	height: 3px;
-	margin: 2rem auto;
+	width: 5.5rem;
+	height: 0.4rem;
+	margin: 3rem auto;
 	border: 0;
 	background: #d0bb57;
 `
