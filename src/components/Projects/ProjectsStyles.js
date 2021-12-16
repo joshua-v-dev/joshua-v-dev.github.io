@@ -42,7 +42,7 @@ export const GridContainer = styled.section`
 export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
-	// grid-auto-flow: initial;
+	grid-auto-flow: initial;
 	width: 90%;
 	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
