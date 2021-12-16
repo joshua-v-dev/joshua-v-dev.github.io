@@ -1,46 +1,46 @@
 import styled from 'styled-components'
 
 export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
+	width: calc(100vw - 9.6rem);
 	max-width: 1040px;
-	padding: 2rem 48px 40px;
+	padding: 2rem 4.8rem 4rem;
 	margin: 1rem auto;
 	box-sizing: content-box;
 	@media ${(props) => props.theme.breakpoints.md} {
-		padding: 0 16px;
-		width: calc(100vw - 32px);
+		padding: 0 1.6rem;
+		width: calc(100vw - 3.2rem);
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: 0 16px 48px;
-		width: calc(100vw - 32px);
+		padding: 0 1.6rem 4.8rem;
+		width: calc(100vw - 3.2rem);
 	}
 `
 
 export const LinkItem = styled.a`
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 1.8rem;
+	line-height: 3rem;
 	color: ${(props) => props.theme.colors.background2};
-	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
 	transition: 0.3s ease;
 	position: relative;
 	left: 0;
 
 	&:hover {
 		color: ${(props) => props.theme.colors.accent3};
-		left: 6px;
+		left: 0.6rem;
 	}
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 16px;
-		line-height: 35px;
+		font-size: 1.6rem;
+		line-height: 3.5rem;
 		display: flex;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 8px;
-		line-height: 14px;
-		margin-bottom: 8px;
+		font-size: 0.8rem;
+		line-height: 1.4rem;
+		margin-bottom: 0.8rem;
 		display: flex;
 		align-items: center;
 	}
@@ -77,28 +77,28 @@ export const CompanyContainer = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		margin: 0 0 32px;
+		margin: 0 0 3.2rem;
 		align-items: center;
 	}
 `
 
 export const Slogan = styled.p`
 	color: ${(props) => props.theme.colors.primary1};
-	min-width: 280px;
+	min-width: 28rem;
 	letter-spacing: 0.02em;
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 1.8rem;
+	line-height: 3rem;
 	padding: 1rem;
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 16px;
-		line-height: 28px;
+		font-size: 1.6rem;
+		line-height: 2.8rem;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		line-height: 22px;
-		font-size: 14px;
-		min-width: 100px;
+		line-height: 2.2rem;
+		font-size: 1.4rem;
+		min-width: 10rem;
 	}
 `
 
@@ -108,7 +108,7 @@ export const SocialContainer = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		justify-content: center;
-		padding-right: 16px;
+		padding-right: 1.6rem;
 		flex-wrap: wrap;
 	}
 `
@@ -116,44 +116,44 @@ export const SocialContainer = styled.div`
 export const LinkList = styled.ul`
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	display: grid;
-	grid-template-columns: repeat(3, minmax(85px, 220px));
-	gap: 40px;
-	padding: 40px 0 28px;
+	grid-template-columns: repeat(3, minmax(8.5rem, 22rem));
+	gap: 4rem;
+	padding: 4rem 0 2.8rem;
 
 	@media ${(props) => props.theme.breakpoints.lg} {
-		padding: 32px 0 16px;
+		padding: 3.2rem 0 1.6rem;
 	}
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
-		padding: 32px 0 16px;
-		gap: 16px;
+		padding: 3.2rem 0 1.6rem;
+		gap: 1.6rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
-		padding: 32px 4px 16px;
-		gap: 5px;
+		padding: 3.2rem 0.4rem 1.6rem;
+		gap: 0.5rem;
 	}
 `
 
 export const LinkColumn = styled.div`
 	display: flex;
 	flex-direction: column;
-	max-width: 220px;
+	max-width: 22rem;
 	width: 100%;
 `
 export const LinkTitle = styled.h4`
 	font-style: normal;
 	font-weight: 600;
-	font-size: 12px;
-	line-height: 24px;
+	font-size: 1.2rem;
+	line-height: 2.4rem;
 	text-transform: uppercase;
 	color: ${(props) => props.theme.colors.accent5};
-	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 10px;
-		line-height: 12px;
-		margin-bottom: 8px;
+		font-size: 1rem;
+		line-height: 1.2rem;
+		margin-bottom: 0.8rem;
 	}
 `
