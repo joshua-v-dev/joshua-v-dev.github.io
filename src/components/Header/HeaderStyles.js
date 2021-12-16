@@ -18,7 +18,6 @@ export const Container = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
-		height: 100%;
 		grid-template-columns: repeat(5, 1fr);
 		grid-template-rows: repeat(2, 60px);
 		grid-column-gap: 0.5rem;

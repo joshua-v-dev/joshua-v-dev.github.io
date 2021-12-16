@@ -15,6 +15,13 @@ export const Img = styled.img`
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		display: grid;
+		border-radius: 2rem 2rem 0.2rem 0.2rem;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 `
 
 export const GridContainer = styled.section`
@@ -35,7 +42,8 @@ export const GridContainer = styled.section`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		// padding: 2rem;
+		width: 100%;
+		padding: 2rem;
 		padding-bottom: 0;
 	}
 `
@@ -43,7 +51,7 @@ export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
 	grid-auto-flow: initial;
-	width: 90%;
+	width: 100%;
 	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	justify-self: center;
@@ -55,9 +63,11 @@ export const BlogCard = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
+		height: 100%;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
+		height: 100%;
 	}
 `
 export const TitleContent = styled.div`
