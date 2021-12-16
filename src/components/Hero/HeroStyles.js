@@ -2,21 +2,21 @@ import styled from 'styled-components'
 
 export const HeroSection = styled.div`
 	width: 100vw;
-	height: 90vh;
-	// padding: 0;
+	height: 100%;
+	padding: 0;
 	position: relative;
 	margin: 0 auto;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100vw;
-		height: 90vh;
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
-		height: 90vh;
+		width: 100vw;
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
@@ -29,21 +29,21 @@ export const LeftSection = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
-
+		position: relative;
 		display: flex;
 		margin: 0 auto;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		margin: 0 auto;
 	}
 `
 export const RightSection = styled.div`
 	margin-left: 2rem;
-	width: 95%;
-	height: 90%;
+	width: 100%;
 	position: absolute;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -51,11 +51,15 @@ export const RightSection = styled.div`
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
+		position: absolute;
+		padding-bottom: 3rem;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
+		position: absolute;
+		padding-bottom: 3rem;
 	}
 `

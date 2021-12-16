@@ -21,7 +21,7 @@ export const projects = [
 		title: 'UI/UX',
 		description: 'GOOGLE UX CERTIFICATION COURSE',
 		image: '/images/googleux.png',
-		tags: ['Figma', 'Adobe Creative Cloud Products'],
+		tags: ['Adobe Creative Cloud Products'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
 		id: 2,

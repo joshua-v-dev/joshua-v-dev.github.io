@@ -44,7 +44,7 @@ const Technologies = () => (
 					<ListTitle>UI/UX</ListTitle>
 					<ListParagraph>
 						Experience with <br />
-						tools like Figma
+						tools for the Think, Design, and Build process
 					</ListParagraph>
 				</ListContainer>
 			</ListItem>

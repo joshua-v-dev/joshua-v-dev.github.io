@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const Overlay = styled.div`
-	width: 100%;
+	// display: grid;
 	position: absolute;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 1;
 	opacity: 0.85;
 `
 
@@ -23,7 +23,7 @@ export const GridContainer = styled.section`
 	justify-items: center;
 	justify-content: center;
 	width: 100%;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 	padding: 3rem;
 	place-items: center;
 	column-gap: 3rem;
@@ -31,38 +31,27 @@ export const GridContainer = styled.section`
 	object-fit: cover;
 	overflow: hidden;
 	margin-top: 3rem;
+	position: relative;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
+		// padding: 2rem;
 		padding-bottom: 0;
 	}
 `
 export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
-	grid-auto-flow: initial;
+	// grid-auto-flow: initial;
 	width: 90%;
 	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
-	// transform: rotate(45deg);
 	justify-self: center;
 	justify-content: space-evenly;
 	text-align: center;
 	margin-bottom: 3rem;
-	margin-right: 3rem;
+	margin-top: 3rem;
 	opacity: 1;
-
-	// :before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: -50%;
-	// 	left: -50%;
-	// 	width: 200%;
-	// 	height: 200%;
-	// 	transform: rotate(-45deg);
-	// 	background-size: cover;
-	// }
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
@@ -115,7 +104,7 @@ export const CardInfo = styled.p`
 	flex: 1;
 	flex-direction: column;
 	align-items: center;
-	text-align: start;
+	text-align: center;
 	justify-content: center;
 	margin-top: 1rem;
 
@@ -149,9 +138,17 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
 	display: flex;
 	flex: 1;
+	align-items: space-evenly;
 	justify-content: space-around;
 	padding: 2rem;
 	margin-top: 1rem;
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		padding: 0.3rem;
+		display: flex;
+		align-items: space-evenly;
+		justify-content: space-evenly;
+	}
 `
 export const Tag = styled.li`
 	color: #d8bfbf;

@@ -31,6 +31,10 @@ const Projects = () => (
 		</SectionDividerContainer>
 
 		<Section nopadding id='projects'>
+			<Overlay>
+				<FullBackgroundAnimation />
+			</Overlay>
+			<FullBackgroundAnimation />
 			<GridContainer>
 				{projects.map((p, i) => {
 					return (
@@ -61,10 +65,6 @@ const Projects = () => (
 					)
 				})}
 			</GridContainer>
-			<Overlay>
-				<FullBackgroundAnimation />
-			</Overlay>
-			<FullBackgroundAnimation />
 		</Section>
 	</>
 )
