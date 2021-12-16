@@ -25,11 +25,11 @@ export const GridContainer = styled.section`
 	justify-items: center;
 	justify-content: center;
 	width: 100%;
-	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
-	padding: 3rem;
+	grid-template-columns: repeat(auto-fill, minmax(44rem, 1fr));
+	padding: 3rem 3rem;
 	place-items: center;
-	column-gap: 3rem;
-	row-gap: 3rem;
+	column-gap: 5rem;
+	row-gap: 5rem;
 	object-fit: cover;
 	overflow: hidden;
 	position: relative;
@@ -43,15 +43,12 @@ export const GridContainer = styled.section`
 export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
-	grid-auto-flow: initial;
-	width: 90%;
+	width: 85%;
 	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	justify-self: center;
 	justify-content: space-evenly;
 	text-align: center;
-	// margin-bottom: 3rem;
-	// margin-top: 3rem;
 	opacity: 1;
 
 	@media ${(props) => props.theme.breakpoints.md} {
