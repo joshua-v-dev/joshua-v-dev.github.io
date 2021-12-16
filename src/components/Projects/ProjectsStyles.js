@@ -2,24 +2,19 @@ import styled from 'styled-components'
 
 export const Overlay = styled.div`
 	display: grid;
-	position: absolute;
 	overflow: hidden;
-	z-index: 1;
-	opacity: 0.85;
 `
 
 export const Img = styled.img`
 	display: grid;
 	border-radius: 2rem 2rem 0.2rem 0.2rem;
 	width: 100%;
-	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
 		border-radius: 2rem 2rem 0.2rem 0.2rem;
 		width: 100%;
-		height: 100%;
 		object-fit: cover;
 	}
 `
@@ -37,7 +32,6 @@ export const GridContainer = styled.section`
 	row-gap: 3rem;
 	object-fit: cover;
 	overflow: hidden;
-	margin-top: 3rem;
 	position: relative;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
@@ -51,29 +45,27 @@ export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
 	grid-auto-flow: initial;
-	width: 80%;
+	width: 90%;
 	border-radius: 2rem;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	justify-self: center;
 	justify-content: space-evenly;
 	text-align: center;
-	margin-bottom: 3rem;
-	margin-top: 3rem;
+	// margin-bottom: 3rem;
+	// margin-top: 3rem;
 	opacity: 1;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
-		height: 50%;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
-		height: 50%;
 	}
 `
 export const TitleContent = styled.div`
 	text-align: center;
 	width: 100%;
-	margin-top: 1rem;
+	// margin-top: 1rem;
 `
 
 export const HeaderThree = styled.h3`
@@ -87,17 +79,15 @@ export const HeaderThree = styled.h3`
 
 export const Hr = styled.hr`
 	width: 5.5rem;
-	height: 0.4rem;
-	margin: 3rem auto;
+	height: 0.5rem;
+	margin: 2rem auto;
 	border: 0;
 	background: ${(props) => props.theme.colors.accent4};
 `
 
 export const Intro = styled.div`
 	width: 100%;
-	margin: 0 auto;
 	color: ${(props) => props.theme.colors.accent2};
-	margin-top: 1rem;
 	font-family: 'Droid Serif', serif;
 	font-size: 1.5rem;
 	font-style: italic;
@@ -116,9 +106,9 @@ export const CardInfo = styled.p`
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	margin-top: 1rem;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: 0.3rem;
+		padding: 0.5rem;
 	}
 `
 
@@ -150,7 +140,6 @@ export const TagList = styled.ul`
 	align-items: space-evenly;
 	justify-content: space-around;
 	padding: 2rem;
-	margin-top: 1rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.3rem;
