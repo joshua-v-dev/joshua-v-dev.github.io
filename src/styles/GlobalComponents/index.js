@@ -35,16 +35,16 @@ export const SectionTitle = styled.h2`
 	// padding: ${(props) => (props.nopadding ? '0' : '1rem 1rem 0')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: ${(props) => (props.main ? '40px' : '48px')};
-		line-height: ${(props) => (props.main ? '56px' : '48px')};
-		margin-bottom: 12px;
-		// padding: ${(props) => (props.main ? '30px 0 12px' : '0')};
+		font-size: ${(props) => (props.main ? '4rem' : '4.8rem')};
+		line-height: ${(props) => (props.main ? '5.6rem' : '4.8rem')};
+		margin-bottom: 1.2rem;
+		// padding: ${(props) => (props.main ? '3rem 0 1.2rem' : '0')};
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		font-size: ${(props) => (props.main ? '3rem' : '3.5rem')};
 		line-height: ${(props) => (props.main ? '4rem' : '4.5rem')};
-		margin-bottom: 8px;
+		margin-bottom: 0.8rem;
 		padding: ${(props) => (props.main ? '1rem 0 1rem' : '0')};
 		// max-width: 100vw;
 	}
@@ -76,8 +76,8 @@ export const SectionDividerContainer = styled.div`
 	width: 100vw;
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 48px;
-		height: 4px;
+		width: 4.8rem;
+		height: 0.4rem;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -90,7 +90,7 @@ export const SectionDivider = styled.div`
 	margin: auto;
 	width: 6.4rem;
 	height: 0.06rem;
-	border-radius: 10px;
+	border-radius: 1rem;
 	background-color: ${(props) => props.theme.colors.fff};
 	background: ${(props) =>
 		props.colorAlt
@@ -100,8 +100,8 @@ export const SectionDivider = styled.div`
 	margin: ${(props) => (props.divider ? '5rem 0' : '')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 48px;
-		height: 4px;
+		width: 4.8rem;
+		height: 0.4rem;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -119,8 +119,8 @@ export const SectionSubText = styled.p`
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 672px;
-		font-size: 16px;
-		line-height: 25px;
+		font-size: 1.6rem;
+		line-height: 2.5rem;
 		margin-bottom: 1.6rem;
 	}
 
@@ -151,7 +151,7 @@ export const ButtonBack = styled.div`
 	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
 	// color: rgba(255, 255, 255, 1);
 	color: ${(props) => props.theme.colors.accent1};
-	box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+	box-shadow: 0 0.5rem 1.5rem rgba(145, 92, 182, 0.4);
 	background: ${({ alt }) =>
 		alt
 			? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
@@ -163,17 +163,17 @@ export const ButtonBack = styled.div`
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: ${({ alt }) => (alt ? '150px' : '184px')};
-		height: ${({ alt }) => (alt ? '52px' : '48px')};
-		font-size: ${({ alt }) => (alt ? '20px' : '16px')};
-		margin-bottom: ${({ alt }) => (alt ? '0' : '64px')};
+		width: ${({ alt }) => (alt ? '15rem' : '18.4rem')};
+		height: ${({ alt }) => (alt ? '5.2rem' : '4.8rem')};
+		font-size: ${({ alt }) => (alt ? '2rem' : '1.6rem')};
+		margin-bottom: ${({ alt }) => (alt ? '0' : '6.4rem')};
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: ${({ alt }) => (alt ? '5rem' : '10rem')};
 		height: ${({ alt }) => (alt ? '1.5rem' : '3rem')};
 		font-size: 1.5rem;
-		margin-bottom: ${({ alt }) => (alt ? '0' : '32px')};
+		margin-bottom: ${({ alt }) => (alt ? '0' : '3.2rem')};
 	}
 `
 
@@ -183,7 +183,7 @@ export const ButtonFront = styled.button`
 	// color: #fff;
 	// color: rgba(255, 255, 255, 1);
 	color: ${(props) => props.theme.colors.accent3};
-	box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+	box-shadow: 0 0.5rem 1.5rem rgba(145, 92, 182, 0.4);
 	display: flex;
 	position: absolute;
 	top: 0;
@@ -203,7 +203,7 @@ export const ButtonFront = styled.button`
 	cursor: pointer;
 	box-shadow: ${({ disabled }) =>
 		disabled
-			? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)'
+			? 'inset 0 0.2rem 0.1rem rgba(46, 49, 55, 0.15), inset 0 0 0.4rem rgba(20, 20, 55, 0.3)'
 			: 'none'};
 
 	&:hover {
@@ -214,21 +214,21 @@ export const ButtonFront = styled.button`
 	}
 	&:active {
 		opacity: 1;
-		box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+		box-shadow: inset 0 0.2rem 0.1rem rgba(46, 49, 55, 0.15), inset 0 0 0.4rem rgba(20, 20, 55, 0.3);
 	}
 
 	&:disabled {
 		background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
 		opacity: 0.5;
-		box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+		box-shadow: inset 0 0.2rem 0.1rem rgba(46, 49, 55, 0.15), inset 0 0 0.4rem rgba(20, 20, 55, 0.3);
 	}
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: ${({ alt }) => (alt ? '20px' : '16px')};
+		font-size: ${({ alt }) => (alt ? '2rem' : '1.6rem')};
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 14px;
+		font-size: 1.4rem;
 	}
 `
 
@@ -236,8 +236,8 @@ export const LinkContainer = styled.div`
 	margin-left: ${({ large }) => (large ? '2rem' : '1rem')};
 	transition: 0.3s ease;
 	justify-content: center;
-	border-radius: 50px;
-	padding: 8px;
+	border-radius: 5rem;
+	padding: 0.8rem;
 
 	&:hover {
 		// background-color: #212d45;
@@ -247,22 +247,22 @@ export const LinkContainer = styled.div`
 	}
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		margin-left: ${({ large }) => (large ? '16px' : '8px')};
+		margin-left: ${({ large }) => (large ? '1.6rem' : '0.8rem')};
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		margin-left: ${({ large }) => (large ? '0' : '8px')};
+		margin-left: ${({ large }) => (large ? '0' : '0.8rem')};
 	}
 `
 
 export const LinkIconImg = styled.div`
 	display: flex;
-	height: ${({ large }) => (large ? '32px' : '24px')};
+	height: ${({ large }) => (large ? '3.2rem' : '2.4rem')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		height: ${({ nav }) => (nav ? '16px' : '24px')};
+		height: ${({ nav }) => (nav ? '1.6rem' : '2.4rem')};
 	}
 
 	${(props) => props.theme.breakpoints.sm} {
-		height: ${({ large }) => (large ? '32px' : '16px')};
+		height: ${({ large }) => (large ? '3.2rem' : '1.6rem')};
 	}
 `
