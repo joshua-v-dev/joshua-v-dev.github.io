@@ -95,8 +95,8 @@ export const ListTitle = styled.h4`
 `
 
 export const ListParagraph = styled.p`
-	font-size: 1.8rem;
-	line-height: 3rem;
+	font-size: 3rem;
+	line-height: 3.5rem;
 	color: ${(props) => props.theme.colors.accent6};
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 1.6rem;
