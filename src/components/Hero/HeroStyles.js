@@ -10,6 +10,8 @@ export const HeroSection = styled.div`
 		width: 100vw;
 		position: relative;
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-direction: column;
 		margin: 0 auto;
 	}
@@ -68,4 +70,11 @@ export const ButtonContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin: 3rem 0;
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
 `

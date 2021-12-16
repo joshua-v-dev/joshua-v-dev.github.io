@@ -168,6 +168,10 @@ export const ButtonBack = styled.div`
 		height: ${({ alt }) => (alt ? '1.5rem' : '3rem')};
 		font-size: 1.5rem;
 		margin-bottom: ${({ alt }) => (alt ? '0' : '3.2rem')};
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 `
 
@@ -218,10 +222,21 @@ export const ButtonFront = styled.button`
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: ${({ alt }) => (alt ? '2rem' : '1.6rem')};
+		width: ${({ alt }) => (alt ? '5rem' : '10rem')};
+		height: ${({ alt }) => (alt ? '1.5rem' : '3rem')};
+		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
+		width: ${({ alt }) => (alt ? '5rem' : '10rem')};
+		height: ${({ alt }) => (alt ? '1.5rem' : '3rem')};
 		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 `
 

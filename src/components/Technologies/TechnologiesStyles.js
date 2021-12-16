@@ -37,11 +37,12 @@ export const MainImage = styled.img`
 `
 
 export const List = styled.ul`
+	width: 100%;
 	list-style-type: none;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 4rem;
-	margin: 3rem 0;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+	// margin: 3rem 0;
 
 	@media ${(props) => props.theme.breakpoints.lg} {
 		margin: 6.4rem 0;
@@ -63,7 +64,10 @@ export const ListContainer = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: space-around;
+	align-items: space-evenly;
+	justify-content: center;
+	align-self: space-around;
+	// padding: 1rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
@@ -97,7 +101,7 @@ export const ListTitle = styled.h4`
 export const ListParagraph = styled.p`
 	font-size: 3rem;
 	line-height: 3.5rem;
-	color: ${(props) => props.theme.colors.accent6};
+	color: ${(props) => props.theme.colors.accent2};
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 1.6rem;
 		line-height: 2.8rem;
@@ -113,7 +117,7 @@ export const ListItem = styled.li`
 	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
-	align-items: space-between;
+	align-items: space-evenly;
 	justify-content: center;
 
 	@media ${(props) => props.theme.breakpoints.md} {
