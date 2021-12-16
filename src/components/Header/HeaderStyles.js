@@ -64,12 +64,12 @@ export const NavLink = styled.a`
 	border-top: 1px solid rgba(255, 255, 255, 0.75);
 	border-right: 1px solid rgba(255, 255, 255, 0.75);
 	border-left: 1px solid rgba(255, 255, 255, 0.75);
-	color: accent1;
+	color: ${(props) => props.theme.colors.accent1};
 	background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
 	border-radius: 0.5rem;
 	transition: 0.4s ease;
 	&:hover {
-		color: #fff;
+		color: ${(props) => props.theme.colors.primary2};
 		opacity: 1;
 		cursor: pointer;
 		underline: white;
@@ -89,7 +89,7 @@ export const ContactDropDown = styled.button`
 	background: none;
 	font-size: 1.7rem;
 	line-height: 32px;
-	color: rgba(255, 255, 255, 0.75);
+	color: ${(props) => props.theme.colors.accent7};
 	cursor: pointer;
 	transition: 0.3s ease;
 
@@ -97,7 +97,7 @@ export const ContactDropDown = styled.button`
 		outline: none;
 	}
 	&:hover {
-		color: #fff;
+		color: ${(props) => props.theme.colors.button3};
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -116,32 +116,32 @@ export const SocialIcons = styled.a`
 	justify-content: flex-start;
 	padding: 0.3rem 0.6rem;
 	transition: 0.4s ease;
-	color: white;
+	color: ${(props) => props.theme.colors.accent7};
 	border-radius: 4rem;
 	padding: 1rem;
 	&:hover {
-		background-color: #212d45;
+		background-color: ${(props) => props.theme.colors.background4};
 		transform: scale(1.2);
 		cursor: pointer;
 	}
 `
-// export const NavProductsIcon = styled(IoIosArrowDropdown)`
-// 	size: 5rem;
-// 	margin-left: 8px;
-// 	display: grid;
-// 	align-self: center;
-// 	justify-self: center;
-//
-// 	transition: 0.3s ease;
-// 	opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-// 	transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
-//
-// 	&:hover {
-// 		opacity: 1;
-// 	}
-//
-// 	@media ${(props) => props.theme.breakpoints.sm} {
-// 		margin: 2px 0 0 2px;
-// 		width: 15px;
-// 	}
-// `
+export const NavProductsIcon = styled(IoIosArrowDropdown)`
+	size: 5rem;
+	margin-left: 8px;
+	display: grid;
+	align-self: center;
+	justify-self: center;
+
+	transition: 0.3s ease;
+	opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
+	transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
+
+	&:hover {
+		opacity: 1;
+	}
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin: 2px 0 0 2px;
+		width: 15px;
+	}
+`

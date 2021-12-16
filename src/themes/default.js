@@ -30,6 +30,8 @@ export default {
 		background3: 'hsl(232.7,27.3%,23.7%)',
 		background4: '#9CF6FB',
 		background5: 'rgba(255, 255, 255, 0.75)',
+		white: 'white',
+		fff: '#fff',
 	},
 	//breakpoints
 	breakpoints: {

@@ -138,7 +138,7 @@ export const CarouselItemText = styled.p`
 	line-height: 3rem;
 	letter-spacing: 0.02em;
 	line-spacing: 1.5rem;
-	color: rgba(255, 255, 255, 0.75);
+	color: ${(props) => props.theme.colors.accent8};
 	// padding-right: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -190,7 +190,7 @@ export const CarouselButton = styled.button`
 `
 
 export const CarouselButtonDot = styled.div`
-	background-color: white;
+	background-color: ${(props) => props.theme.colors.white};
 	border-radius: 10px;
 	margin: auto;
 	width: 3px;

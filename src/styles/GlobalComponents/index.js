@@ -56,7 +56,7 @@ export const SectionText = styled.p`
 	line-height: 4rem;
 	font-weight: 300;
 	padding-bottom: 4rem;
-	color: rgba(255, 255, 255, 0.5);
+	color: ${(props) => props.theme.colors.accent4};
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 670px;
@@ -91,7 +91,7 @@ export const SectionDivider = styled.div`
 	width: 6.4rem;
 	height: 0.06rem;
 	border-radius: 10px;
-	background-color: #fff;
+	background-color: ${(props) => props.theme.colors.fff};
 	background: ${(props) =>
 		props.colorAlt
 			? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
@@ -115,7 +115,7 @@ export const SectionSubText = styled.p`
 	font-weight: 300;
 	font-size: 1.8rem;
 	line-height: 3.2rem;
-	color: rgba(255, 255, 255, 0.75);
+	color: ${(props) => props.theme.colors.accent5};
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 672px;
@@ -149,8 +149,8 @@ export const ButtonBack = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
-	// color: #fff;
-	color: rgba(255, 255, 255, 1);
+	// color: rgba(255, 255, 255, 1);
+	color: ${(props) => props.theme.colors.accent1};
 	box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 	background: ${({ alt }) =>
 		alt
@@ -181,7 +181,8 @@ export const ButtonFront = styled.button`
 	border: none;
 	border-radius: 2rem;
 	// color: #fff;
-	color: rgba(255, 255, 255, 1);
+	// color: rgba(255, 255, 255, 1);
+	color: ${(props) => props.theme.colors.accent3};
 	box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 	display: flex;
 	position: absolute;
@@ -239,7 +240,8 @@ export const LinkContainer = styled.div`
 	padding: 8px;
 
 	&:hover {
-		background-color: #212d45;
+		// background-color: #212d45;
+		background-color: ${(props) => props.theme.colors.accent9};
 		transform: scale(1.2);
 		cursor: pointer;
 	}
@@ -264,52 +266,3 @@ export const LinkIconImg = styled.div`
 		height: ${({ large }) => (large ? '32px' : '16px')};
 	}
 `
-// export const SecondaryBtn = styled.button`
-// 	color: #fff;
-// 	background: none;
-// 	border: 1px solid rgba(255, 255, 255, 0.33);
-// 	box-sizing: border-box;
-// 	border-radius: 999px;
-// 	padding: 1rem 2rem;
-// 	font-weight: 600;
-// 	font-size: 1.3rem;
-// 	line-height: 16px;
-// 	width: fit-content;
-// 	margin-top: 32px;
-// 	margin-bottom: 80px;
-// 	cursor: pointer;
-// 	transition: 0.4s ease;
-// 	&:focus {
-// 		outline: none;
-// 	}
-//
-// 	&:hover {
-// 		color: #0f1624;
-// 		background: #fff;
-// 		border: 1px solid #fff;
-// 	}
-//
-// 	&:active {
-// 		background: #e0e4eb;
-// 		border: 1px solid #304169;
-// 		box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
-// 	}
-//
-// 	@media ${(props) => props.theme.breakpoints.md} {
-// 		margin-top: 24px;
-// 		margin-bottom: 64px;
-// 		padding: 16px 24px;
-// 		width: fit-content;
-// 		font-size: 20px;
-// 		line-height: 20px;
-// 	}
-//
-// 	@media ${(props) => props.theme.breakpoints.sm} {
-// 		margin-top: 16px;
-// 		margin-bottom: 40px;
-// 		padding: 8px 16px;
-// 		width: 100%;
-// 		font-size: 14px;
-// 		line-height: 16px;
-// 	}
-// `
