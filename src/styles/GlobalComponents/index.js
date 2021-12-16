@@ -16,10 +16,10 @@ export const Section = styled.section`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		margin: 0;
+		// margin: 0;
 		// width: 100vw;
 		// padding: ${(props) => (props.nopadding ? '0' : '1.6rem 1.6rem 0')};
-		flex-direction: column;
+		// flex-direction: column;
 	}
 `
 
@@ -72,7 +72,6 @@ export const SectionText = styled.p`
 	}
 `
 export const SectionDividerContainer = styled.div`
-	margin: auto;
 	width: 100vw;
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -87,9 +86,8 @@ export const SectionDividerContainer = styled.div`
 	}
 `
 export const SectionDivider = styled.div`
-	margin: auto;
 	width: 6.4rem;
-	height: 0.06rem;
+	height: 0.2rem;
 	border-radius: 1rem;
 	background-color: ${(props) => props.theme.colors.fff};
 	background: ${(props) =>

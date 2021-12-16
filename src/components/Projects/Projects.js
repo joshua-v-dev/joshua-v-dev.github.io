@@ -27,14 +27,13 @@ const Projects = () => (
 	<>
 		<SectionDividerContainer>
 			<SectionDivider divider />
-			<SectionTitle main>Projects</SectionTitle>
 		</SectionDividerContainer>
-
+		<SectionTitle main>Projects</SectionTitle>
 		<Section nopadding id='projects'>
 			<Overlay>
 				<FullBackgroundAnimation />
 			</Overlay>
-			<FullBackgroundAnimation />
+			{/* <FullBackgroundAnimation /> */}
 			<GridContainer>
 				{projects.map((p, i) => {
 					return (

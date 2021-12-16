@@ -38,7 +38,6 @@ export const GridContainer = styled.section`
 		flex-direction: column;
 		width: 100%;
 		padding: 2rem;
-		padding-bottom: 0;
 	}
 `
 export const BlogCard = styled.div`
