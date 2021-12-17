@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Section = styled.section`
+	width: 100vw;
 	display: ${(props) => (props.grid ? 'grid' : 'flex')};
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => props.nopadding};
@@ -41,7 +42,7 @@ export const SectionTitle = styled.h2`
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: center;
 		font-size: ${(props) => (props.main ? '3rem' : '3.5rem')};
 		line-height: ${(props) => (props.main ? '4rem' : '4.5rem')};
@@ -51,12 +52,13 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-	font-size: 4rem;
-	line-height: 5rem;
+	font-size: 3rem;
+	line-height: 4rem;
+	width: 100%;
 	padding: ${(props) => (props.main ? '2rem 2rem 2rem' : '0')};
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	// align-items: center;
 	color: ${(props) => props.theme.colors.accent4};
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -76,6 +78,8 @@ export const SectionText = styled.p`
 export const SectionDividerContainer = styled.div`
 	width: 100%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
@@ -83,14 +87,14 @@ export const SectionDividerContainer = styled.div`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		// margin: auto;
+		margin: auto;
 		width: 100%;
 		height: 0.4rem;
 	}
 `
 export const SectionDivider = styled.div`
-	width: 6.4rem;
-	height: 0.2rem;
+	width: 100%;
+	height: 0.3rem;
 	border-radius: 1rem;
 	background-color: ${(props) => props.theme.colors.fff};
 	background: ${(props) =>
@@ -98,7 +102,7 @@ export const SectionDivider = styled.div`
 			? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
 			: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
-	margin: ${(props) => (props.divider ? '5rem 0' : '')};
+	margin: ${(props) => (props.divider ? '10rem 10rem' : '')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 4.8rem;

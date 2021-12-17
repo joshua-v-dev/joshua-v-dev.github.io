@@ -9,12 +9,11 @@ const Hero = () => (
 		<Section row nopadding>
 			<LeftSection>
 				<SectionTitle main center>
-					Welcome To Joshua Vaughn&apos;s Personal Portfolio
+					Joshua
+					<br />
+					Vaughn
 				</SectionTitle>
-				<SectionText>
-					I am a passionate <br />
-					Full-Stack Web Developer & UI/UX Designer.
-				</SectionText>
+				<SectionText>Full-Stack Web Developer</SectionText>
 
 				<ButtonContainer>
 					<Link href={'/ProjectsPage'}>
