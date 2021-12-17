@@ -49,18 +49,14 @@ export const LeftSection = styled.div`
 	}
 `
 export const RightSection = styled.div`
-	// margin-left: 2rem;
-	// min-height: 60vh;
-	width: 100%;
+	width: 100vw;
 	position: absolute;
+	transform: translateX(-35%);
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
+		width: 100vw;
+		transform: translateX(5%);
 		position: absolute;
-		padding-bottom: 3rem;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;

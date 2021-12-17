@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Section = styled.section`
-	width: 100vw;
 	display: ${(props) => (props.grid ? 'grid' : 'flex')};
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => props.nopadding};
@@ -28,7 +27,7 @@ export const SectionTitle = styled.h2`
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	padding: ${(props) => (props.main ? '2rem 2rem 2rem' : '0')};
+	padding: ${(props) => (props.main ? '1rem 1rem 1rem' : '0')};
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -53,12 +52,11 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
 	font-size: 3rem;
-	line-height: 4rem;
-	width: 100%;
+	line-height: 3.5rem;
 	padding: ${(props) => (props.main ? '2rem 2rem 2rem' : '0')};
 	display: flex;
 	justify-content: center;
-	// align-items: center;
+
 	color: ${(props) => props.theme.colors.accent4};
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -69,26 +67,22 @@ export const SectionText = styled.p`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
+		// width: 100%;
 		font-size: 2rem;
 		line-height: 3rem;
 		padding-bottom: 2rem;
 	}
 `
 export const SectionDividerContainer = styled.div`
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
 		height: 0.4rem;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		margin: auto;
-		width: 100%;
 		height: 0.4rem;
 	}
 `
@@ -102,7 +96,7 @@ export const SectionDivider = styled.div`
 			? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
 			: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
-	margin: ${(props) => (props.divider ? '10rem 10rem' : '')};
+	margin: ${(props) => (props.divider ? '0 10rem 10rem ' : '')};
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 4.8rem;
@@ -110,7 +104,6 @@ export const SectionDivider = styled.div`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 3.2rem;
 		height: 0.2rem;
 	}
 `

@@ -36,16 +36,19 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
 	display: flex;
 	width: 100%;
-	justify-content: flex-end;
-	align-items: center;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: flex-end;
+	margin: 1rem 0;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 2 / 2 / 3 / 5;
 	}
 `
 export const Div3 = styled.div`
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		align-items: center;
 		grid-area: 1 / 4 / 2 / 6;
@@ -57,16 +60,18 @@ export const NavLink = styled.a`
 	display: flex;
 	font-size: 2rem;
 	font-weight: bold;
-	margin-right: 6rem;
+	margin-right: 5rem;
 	padding: 0.3rem 0.6rem;
 	background-flow: row-reverse;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
-	border-top: 1px solid rgba(255, 255, 255, 0.75);
-	border-right: 1px solid rgba(255, 255, 255, 0.75);
-	border-left: 1px solid rgba(255, 255, 255, 0.75);
-	color: ${(props) => props.theme.colors.accent1};
-	background: linear-gradient(420deg, #13adc7 15%, #945dd6 100%);
-	border-radius: 0.5rem;
+	border: 0.5rem solid rgba(255, 255, 255, 0.75);
+	color: ${(props) => props.theme.colors.accent4};
+	background: transparent;
+	box-shadow: 0 1rem 3.5rem 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(0.02px);
+	-webkit-backdrop-filter: blur(0.02px);
+	border-radius: 2rem;
+	border: 0.5rem solid rgba(255, 255, 255, 0.18);
+	border-radius: 0.4rem;
 	transition: 0.4s ease;
 	&:hover {
 		color: ${(props) => props.theme.colors.primary2};
@@ -116,7 +121,7 @@ export const SocialIcons = styled.a`
 	justify-content: flex-start;
 	padding: 0.3rem 0.6rem;
 	transition: 0.4s ease;
-	color: ${(props) => props.theme.colors.accent7};
+	color: ${(props) => props.theme.colors.fff};
 	border-radius: 4rem;
 	padding: 1rem;
 	&:hover {
