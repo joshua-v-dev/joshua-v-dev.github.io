@@ -4,10 +4,9 @@ export const HeroSection = styled.div`
 	display: grid;
 	grid-auto-flow: column;
 	width: 100vw;
-	height: 100%;
 	padding: 0;
 	position: relative;
-	// margin: 0 auto;
+	margin: 0 auto;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100vw;
@@ -29,7 +28,11 @@ export const HeroSection = styled.div`
 
 export const LeftSection = styled.div`
 	width: 100%;
+	display: grid;
+	grid-auto-flow: row;
+	justify-content: center;
 	position: relative;
+	margin: 0 auto;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
@@ -46,8 +49,9 @@ export const LeftSection = styled.div`
 	}
 `
 export const RightSection = styled.div`
-	margin-left: 2rem;
+	// margin-left: 2rem;
 	width: 100%;
+	min-height: 60vh;
 	position: absolute;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -72,7 +76,7 @@ export const ButtonContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 3rem 0;
+	margin: 3rem 0 9rem 0;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
