@@ -45,7 +45,7 @@ export const SectionTitle = styled.h2`
 		align-items: center;
 		font-size: ${(props) => (props.main ? '3rem' : '3.5rem')};
 		line-height: ${(props) => (props.main ? '4rem' : '4.5rem')};
-		// margin-bottom: 0.8rem;
+		margin-bottom: 0.8rem;
 		padding: ${(props) => (props.main ? '0 0 1rem' : '0')};
 	}
 `
@@ -55,7 +55,7 @@ export const SectionText = styled.p`
 	line-height: 5rem;
 	padding: ${(props) => (props.main ? '2rem 2rem 2rem' : '0')};
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	color: ${(props) => props.theme.colors.accent4};
 
@@ -136,16 +136,17 @@ export const SectionSubText = styled.p`
 export const ButtonBack = styled.div`
 	width: ${({ alt }) => (alt ? '7.5rem' : '15rem')};
 	height: ${({ alt }) => (alt ? '2.5rem' : '5rem')};
-	border-radius: 4rem;
+	border-radius: 5rem;
+	border: none;
 	font-size: ${({ alt }) => (alt ? '2rem' : '2.2rem')};
 	font-weight: 1000;
 	display: flex;
 	// flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	// margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
+	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
 	color: ${(props) => props.theme.colors.accent2};
-	box-shadow: 0 0.85rem 0.85rem #4b9fe1;
+	box-shadow: 0.01rem 0.4rem 0.4rem 0.5rem #4b9fe1;
 	background: ${({ alt }) =>
 		alt
 			? 'linear-gradient(270deg, #DF3062  0%, #4BAC3F 100%)'
@@ -180,22 +181,24 @@ export const ButtonFront = styled.button`
 	align-items: center;
 	justify-content: center;
 	border: none;
-	border-radius: 3rem;
+	border-radius: 5rem;
+	overflow: hidden;
 	color: ${(props) => props.theme.colors.accent3};
-	box-shadow: 0 0.85rem 0.85rem #150734;
+	box-shadow: 0 0.5rem 0.5rem 0 #150734;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: ${({ alt }) => (alt ? '7.5rem' : '15rem')};
+	height: ${({ alt }) => (alt ? '2.5rem' : '5rem')};
+	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
 	background: ${({ alt }) =>
 		alt
 			? 'linear-gradient(270deg, #BCFD4C 0%, #3778C2 100%)'
 			: 'linear-gradient(270deg, #C1436D 0%, #3778C2 100%)'};
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
-	transition: 0.6s ease;
+	transition: 1.5s ease;
 	font-size: ${({ alt }) => (alt ? '2rem' : '2.2rem')};
-	font-weight: 900;
+	font-weight: 1000;
 	cursor: pointer;
 	box-shadow: ${({ disabled }) =>
 		disabled
