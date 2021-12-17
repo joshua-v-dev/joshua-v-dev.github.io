@@ -138,18 +138,18 @@ export const ButtonBack = styled.div`
 	height: ${({ alt }) => (alt ? '2.5rem' : '5rem')};
 	border-radius: 4rem;
 	font-size: ${({ alt }) => (alt ? '2rem' : '2.2rem')};
-	font-weight: 600;
+	font-weight: 1000;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
-	color: ${(props) => props.theme.colors.accent1};
-	box-shadow: 0 0.85rem 0.85rem rgba(145, 92, 182, 0.4);
+	color: ${(props) => props.theme.colors.accent2};
+	box-shadow: 0 0.85rem 0.85rem #4b9fe1;
 	background: ${({ alt }) =>
 		alt
-			? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
-			: 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
+			? 'linear-gradient(270deg, #DF3062  0%, #4BAC3F 100%)'
+			: 'linear-gradient(270deg, #F5B935 0%, #11ABC1 100%)'};
 	cursor: pointer;
 	transition: 1.5s ease;
 	position: relative;
@@ -183,7 +183,7 @@ export const ButtonFront = styled.button`
 	border: none;
 	border-radius: 3rem;
 	color: ${(props) => props.theme.colors.accent3};
-	box-shadow: 0 0.85rem 0.85rem rgba(145, 92, 182, 0.4);
+	box-shadow: 0 0.85rem 0.85rem #150734;
 	position: absolute;
 	// top: 0;
 	// left: 0;
@@ -191,12 +191,12 @@ export const ButtonFront = styled.button`
 	height: 100%;
 	background: ${({ alt }) =>
 		alt
-			? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
-			: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+			? 'linear-gradient(270deg, #BCFD4C 0%, #3778C2 100%)'
+			: 'linear-gradient(270deg, #C1436D 0%, #3778C2 100%)'};
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
 	transition: 0.6s ease;
 	font-size: ${({ alt }) => (alt ? '2rem' : '2.2rem')};
-	font-weight: 800;
+	font-weight: 900;
 	cursor: pointer;
 	box-shadow: ${({ disabled }) =>
 		disabled

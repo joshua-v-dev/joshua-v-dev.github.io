@@ -43,13 +43,18 @@ export const GridContainer = styled.section`
 export const BlogCard = styled.div`
 	display: grid;
 	grid-auto-flow: row dense;
-	width: 85%;
-	border-radius: 2rem;
-	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+	width: 75%;
 	justify-self: center;
 	justify-content: space-evenly;
 	text-align: center;
-	opacity: 1;
+	position: relative;
+	overflow: hidden;
+	background: ${(props) => props.theme.colors.background4};
+	box-shadow: 0 1rem 3.5rem 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border-radius: 2rem;
+	border: 0.5rem solid rgba(255, 255, 255, 0.18);
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
@@ -93,7 +98,7 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
 	width: 100%;
 	padding: 0 5rem;
-	color: ${(props) => props.theme.colors.background3};
+	color: ${(props) => props.theme.colors.primary3};
 	font-style: 2rem;
 	line-height: 2rem;
 	display: flex;
@@ -118,10 +123,10 @@ export const UtilityList = styled.ul`
 `
 
 export const ExternalLinks = styled.a`
-	color: ${(props) => props.theme.colors.button};
+	color: ${(props) => props.theme.colors.button4};
 	font-size: 1.6rem;
 	padding: 1rem 1.5rem;
-	background: ${(props) => props.theme.colors.background3};
+	background: ${(props) => props.theme.colors.accent4};
 	border-radius: 1.5rem;
 	transition: 0.5s;
 
