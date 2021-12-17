@@ -35,7 +35,6 @@ const Projects = () => (
 				<FullBackgroundAnimation />
 			</Overlay>
 
-			{/* <FullBackgroundAnimation /> */}
 			<CardContainer>
 				<GridContainer>
 					{projects.map((p, i) => {
