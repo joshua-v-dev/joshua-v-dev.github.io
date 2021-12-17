@@ -29,7 +29,7 @@ export const SectionTitle = styled.h2`
 	-webkit-text-fill-color: transparent;
 	padding: ${(props) => (props.main ? '2rem 2rem 2rem' : '0')};
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -51,8 +51,8 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-	font-size: 3rem;
-	line-height: 4rem;
+	font-size: 4rem;
+	line-height: 5rem;
 	padding: ${(props) => (props.main ? '2rem 2rem 2rem' : '0')};
 	display: flex;
 	justify-content: space-around;
@@ -140,10 +140,10 @@ export const ButtonBack = styled.div`
 	font-size: ${({ alt }) => (alt ? '2rem' : '2.2rem')};
 	font-weight: 1000;
 	display: flex;
-	flex-direction: column;
+	// flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
+	// margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 4rem')};
 	color: ${(props) => props.theme.colors.accent2};
 	box-shadow: 0 0.85rem 0.85rem #4b9fe1;
 	background: ${({ alt }) =>
@@ -177,7 +177,6 @@ export const ButtonBack = styled.div`
 
 export const ButtonFront = styled.button`
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	border: none;
@@ -185,8 +184,8 @@ export const ButtonFront = styled.button`
 	color: ${(props) => props.theme.colors.accent3};
 	box-shadow: 0 0.85rem 0.85rem #150734;
 	position: absolute;
-	// top: 0;
-	// left: 0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	background: ${({ alt }) =>

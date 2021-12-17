@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 export const HeroSection = styled.div`
+	display: grid;
+	grid-auto-flow: column;
 	width: 100vw;
+	height: 100%;
 	padding: 0;
 	position: relative;
 	// margin: 0 auto;
@@ -13,7 +16,7 @@ export const HeroSection = styled.div`
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin: 0 auto;
+		// margin: 0 auto;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100vw;

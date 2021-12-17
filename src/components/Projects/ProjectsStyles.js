@@ -33,12 +33,11 @@ export const GridContainer = styled.section`
 	object-fit: cover;
 	overflow: hidden;
 	position: relative;
-	backdrop-filter: blur(2px);
-	-webkit-backdrop-filter: blur(2px);
+
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		// width: 100%;
 		padding: 2rem;
 	}
 `
@@ -53,8 +52,8 @@ export const BlogCard = styled.div`
 	overflow: hidden;
 	background: ${(props) => props.theme.colors.accent6};
 	box-shadow: 0 1rem 3.5rem 0 rgba(31, 38, 135, 0.37);
-	// backdrop-filter: blur(2px);
-	// -webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(0.02px);
+	-webkit-backdrop-filter: blur(0.02px);
 	border-radius: 2rem;
 	border: 0.5rem solid rgba(255, 255, 255, 0.18);
 
