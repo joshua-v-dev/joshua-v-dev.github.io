@@ -2,6 +2,7 @@ import React from 'react'
 
 import {
 	BlogCard,
+	CardContainer,
 	CardInfo,
 	ExternalLinks,
 	GridContainer,
@@ -34,36 +35,38 @@ const Projects = () => (
 				<FullBackgroundAnimation />
 			</Overlay>
 			{/* <FullBackgroundAnimation /> */}
-			<GridContainer>
-				{projects.map((p, i) => {
-					return (
-						<BlogCard key={i}>
-							<Img src={p.image} />
-							<TitleContent>
-								<HeaderThree title='true'>{p.title}</HeaderThree>
-								<Hr />
-							</TitleContent>
-							<CardInfo className='card-info'>{p.description}</CardInfo>
-							<div>
+			<CardContainer>
+				<GridContainer>
+					{projects.map((p, i) => {
+						return (
+							<BlogCard key={i}>
+								<Img src={p.image} />
 								<TitleContent>
-									<br />
-									<br />
-									Stack
+									<HeaderThree title='true'>{p.title}</HeaderThree>
+									<Hr />
 								</TitleContent>
-								<TagList>
-									{p.tags.map((t, i) => {
-										return <Tag key={i}>{t}</Tag>
-									})}
-								</TagList>
-							</div>
-							<UtilityList>
-								<ExternalLinks href={p.visit}>Code</ExternalLinks>
-								<ExternalLinks href={p.source}>Source</ExternalLinks>
-							</UtilityList>
-						</BlogCard>
-					)
-				})}
-			</GridContainer>
+								<CardInfo className='card-info'>{p.description}</CardInfo>
+								<div>
+									<TitleContent>
+										<br />
+										<br />
+										Stack
+									</TitleContent>
+									<TagList>
+										{p.tags.map((t, i) => {
+											return <Tag key={i}>{t}</Tag>
+										})}
+									</TagList>
+								</div>
+								<UtilityList>
+									<ExternalLinks href={p.visit}>Code</ExternalLinks>
+									<ExternalLinks href={p.source}>Source</ExternalLinks>
+								</UtilityList>
+							</BlogCard>
+						)
+					})}
+				</GridContainer>
+			</CardContainer>
 		</Section>
 	</>
 )

@@ -40,7 +40,7 @@ export default {
 
 		accent13: '#4B9FE1',
 
-		accent14: '#28559A',
+		accent14: ' rgba(255, 255, 255, 0.5)',
 
 		button: '#4A5FC1',
 

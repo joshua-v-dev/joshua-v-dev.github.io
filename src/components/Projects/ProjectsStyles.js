@@ -41,21 +41,27 @@ export const GridContainer = styled.section`
 		padding: 2rem;
 	}
 `
+export const CardContainer = styled.div`
+	width: 100%;
+`
+
 export const BlogCard = styled.div`
 	display: grid;
-	grid-auto-flow: row dense;
-	width: 75%;
-	justify-self: center;
-	justify-content: space-evenly;
+	grid-auto-flow: row;
+	grid-template-columns: 1fr;
+	grid-template-gap: 1rem;
+	padding: 1rem;
+	width: 80%;
+	height: 100%;
 	text-align: center;
 	position: relative;
+	z-index: 100;
 	overflow: hidden;
 	background: ${(props) => props.theme.colors.accent14};
-	box-shadow: 0 1rem 3.5rem 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(0.02px);
-	-webkit-backdrop-filter: blur(0.02px);
-	border-radius: 2rem;
-	border: 0.5rem solid rgba(255, 255, 255, 0.18);
+	box-shadow: 2rem 4rem 5rem 2rem rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(7px);
+	border-radius: 3rem;
+	border: 1rem solid rgba(255, 255, 255, 0.5);
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
