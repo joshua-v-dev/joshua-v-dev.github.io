@@ -4,7 +4,7 @@ export const HeroSection = styled.div`
 	width: 100vw;
 	padding: 0;
 	position: relative;
-	margin: 0 auto;
+	// margin: 0 auto;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100vw;
@@ -20,7 +20,7 @@ export const HeroSection = styled.div`
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		margin: 0 auto;
+		// margin: 0 auto;
 	}
 `
 
@@ -32,7 +32,7 @@ export const LeftSection = styled.div`
 		width: 100%;
 		position: relative;
 		display: flex;
-		margin: 0 auto;
+		// margin: 0 auto;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
