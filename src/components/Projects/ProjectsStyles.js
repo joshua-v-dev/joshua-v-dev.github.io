@@ -7,7 +7,7 @@ export const Overlay = styled.div`
 
 export const Img = styled.img`
 	display: grid;
-	border-radius: 2rem 2rem 0.2rem 0.2rem;
+	border-radius: 2rem 2rem 1rem 1rem;
 	width: 100%;
 	object-fit: cover;
 	overflow: hidden;
@@ -50,7 +50,7 @@ export const BlogCard = styled.div`
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	background: ${(props) => props.theme.colors.accent6};
+	background: ${(props) => props.theme.colors.accent14};
 	box-shadow: 0 1rem 3.5rem 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(0.02px);
 	-webkit-backdrop-filter: blur(0.02px);
@@ -65,16 +65,17 @@ export const BlogCard = styled.div`
 	}
 `
 export const TitleContent = styled.div`
+	font-size: 2.5rem;
 	text-align: center;
 	width: 100%;
-	// margin-top: 1rem;
+	margin-bottom: 1rem;
 `
 
 export const HeaderThree = styled.h3`
 	font-weight: 500;
 	margin-top: 1rem;
 	letter-spacing: 0.15em;
-	color: ${(props) => props.theme.colors.accent3};
+	color: ${(props) => props.theme.colors.accent6};
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
 `
@@ -84,7 +85,7 @@ export const Hr = styled.hr`
 	height: 0.5rem;
 	margin: 2rem auto;
 	border: 0;
-	background: ${(props) => props.theme.colors.accent4};
+	background: ${(props) => props.theme.colors.background3};
 `
 
 export const Intro = styled.div`
@@ -99,9 +100,10 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
 	width: 100%;
 	padding: 0 5rem;
-	color: ${(props) => props.theme.colors.primary3};
+	color: ${(props) => props.theme.colors.primary4};
 	font-style: 2rem;
-	line-height: 2rem;
+	font-size: 2rem;
+	line-height: 3rem;
 	display: flex;
 	flex: 1;
 	flex-direction: column;
@@ -124,8 +126,9 @@ export const UtilityList = styled.ul`
 `
 
 export const ExternalLinks = styled.a`
-	color: ${(props) => props.theme.colors.button4};
-	font-size: 1.6rem;
+	color: ${(props) => props.theme.colors.background1};
+	font-size: 1.7rem;
+	font-weight: 500;
 	padding: 1rem 1.5rem;
 	background: ${(props) => props.theme.colors.accent4};
 	border-radius: 1.5rem;
@@ -147,11 +150,15 @@ export const TagList = styled.ul`
 		padding: 0.3rem;
 		display: flex;
 		align-items: space-evenly;
-		justify-content: space-evenly;
+		justify-content: space-around;
 	}
 `
 
 export const Tag = styled.li`
-	color: ${(props) => props.theme.colors.accent5};
-	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: ${(props) => props.theme.colors.background3};
+	font-weight: 500;
+	font-size: 2rem;
 `

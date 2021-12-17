@@ -36,6 +36,12 @@ export default {
 
 		accent11: '#4BAC3F',
 
+		accent12: '#182978',
+
+		accent13: '#4B9FE1',
+
+		accent14: '#28559A',
+
 		button: '#4A5FC1',
 
 		button2: '#7D3780',
