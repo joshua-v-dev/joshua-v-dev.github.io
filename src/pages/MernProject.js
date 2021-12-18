@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjectsData } from '../constants/constants'
 import { Layout } from '../layout/Layout'
-import { lastIndexOf } from 'lodash'
 
 function MernProject() {
 	const [isPlaying, setIsPlaying] = useState(true)

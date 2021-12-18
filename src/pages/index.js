@@ -3,9 +3,9 @@ import Projects from '../components/Projects/Projects'
 import Acomplishments from '../components/Acomplishments/Acomplishments'
 import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
-import Slider from '../components/Slider/Slider'
 import { Layout } from '../layout/Layout'
 import { IdProvider } from '@radix-ui/react-id'
+import ImageCarousel from '../components/Slider/ImageCarousel'
 
 const Home = () => {
 	return (
@@ -13,7 +13,7 @@ const Home = () => {
 			<Layout>
 				<BackgroundAnimation />
 				<Projects />
-				<Slider />
+				<ImageCarousel />
 				<Technologies />
 				<Timeline />
 				<Acomplishments />
