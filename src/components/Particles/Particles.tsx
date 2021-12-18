@@ -7,7 +7,7 @@ const ParticleAnimation = () => {
 			options={{
 				fullScreen: {
 					enable: true,
-					zIndex: 0,
+					zIndex: -1,
 				},
 				particles: {
 					number: {
@@ -37,7 +37,7 @@ const ParticleAnimation = () => {
 						},
 					},
 					opacity: {
-						value: 0.5,
+						value: 0.6,
 						random: true,
 						anim: {
 							enable: true,
@@ -60,7 +60,7 @@ const ParticleAnimation = () => {
 						enable: true,
 						distance: 100,
 						color: '#ffffff',
-						opacity: 1,
+						opacity: 0.4,
 						width: 1,
 					},
 					move: {
@@ -137,7 +137,8 @@ const ParticleAnimation = () => {
 				retina_detect: true,
 				fps_limit: 60,
 				background: {
-					image: "url('https://particles.js.org/images/background3.jpg')",
+					image:
+						"url('https://res.cloudinary.com/dpytkhyme/image/upload/v1639834991/palm-tree-purple-background_eoblvn.png')",
 				},
 			}}
 		/>

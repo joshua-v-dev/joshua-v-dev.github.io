@@ -13,7 +13,7 @@ const BackgroundAnimation = () => (
 						viewBox='5 0 652 502'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'>
-						<g opacity='0.15'>
+						<g opacity='0.25'>
 							<path
 								fillRule='evenodd'
 								clipRule='evenodd'
