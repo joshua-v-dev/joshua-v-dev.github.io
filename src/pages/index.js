@@ -3,7 +3,7 @@ import Projects from '../components/Projects/Projects'
 import Acomplishments from '../components/Acomplishments/Acomplishments'
 import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
-import Swipers from '../components/Swipers/Swipers'
+import Slider from '../components/Slider/Slider'
 import { Layout } from '../layout/Layout'
 import { IdProvider } from '@radix-ui/react-id'
 
@@ -13,7 +13,7 @@ const Home = () => {
 			<Layout>
 				<BackgroundAnimation />
 				<Projects />
-				<Swipers />
+				<Slider />
 				<Technologies />
 				<Timeline />
 				<Acomplishments />
