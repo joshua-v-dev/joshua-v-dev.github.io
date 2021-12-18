@@ -77,6 +77,7 @@ export const SectionDividerContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 100;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		height: 0.4rem;
@@ -97,7 +98,7 @@ export const SectionDivider = styled.div`
 			: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
 	margin: ${(props) => (props.divider ? '0 10rem 10rem ' : '')};
-
+	z-index: 100;
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 4.8rem;
 		height: 0.4rem;

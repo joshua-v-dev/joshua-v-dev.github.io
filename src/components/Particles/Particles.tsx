@@ -7,7 +7,7 @@ const ParticleAnimation = () => {
 			options={{
 				fullScreen: {
 					enable: true,
-					zIndex: -1,
+					zIndex: 0,
 				},
 				particles: {
 					number: {
@@ -37,12 +37,12 @@ const ParticleAnimation = () => {
 						},
 					},
 					opacity: {
-						value: 0.6,
+						value: 0.1,
 						random: true,
 						anim: {
 							enable: true,
 							speed: 1,
-							opacity_min: 0.5,
+							opacity_min: 0.2,
 							sync: false,
 						},
 					},
@@ -60,7 +60,7 @@ const ParticleAnimation = () => {
 						enable: true,
 						distance: 100,
 						color: '#ffffff',
-						opacity: 0.4,
+						opacity: 0.2,
 						width: 1,
 					},
 					move: {
@@ -123,7 +123,7 @@ const ParticleAnimation = () => {
 				backgroundMask: {
 					enable: true,
 					cover: {
-						opacity: 0.5,
+						opacity: 0.3,
 
 						color: {
 							value: {

@@ -3,12 +3,21 @@ import { ButtonNext, ButtonBack } from 'pure-react-carousel'
 import { rgba } from 'polished'
 
 export const PageContainer = styled.div`
-	margin-top: 2rem;
-	background: ${(props) => props.theme.colors.accent12};
-	height: 75vh;
+	margin: 0 auto;
+	background: transparent;
+	width: 80vw;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin: 0 auto;
+		display: flex;
+		flex: 1;
+		max-width: 100vw;
+		max-height: 100vh;
+	}
 `
 export const SliderImage = styled.div`
 	background: url(${(p) => p.image});
@@ -25,6 +34,14 @@ export const Nav = styled.nav`
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		position: relative;
+		transform: translateY(-50%);
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		// background: transparent;
+	}
 `
 
 export const sharedStyles = css`
@@ -54,8 +71,15 @@ export const SliderWrapper = styled.div`
 	overflow: hidden;
 	position: relative;
 	width: 70%;
+	// height: 60%;
 	background: white;
 	background: ${(props) => props.theme.colors.background1};
+	z-index: 100;
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 90vw;
+		max-height: 100vh;
+	}
 `
 export const Img = styled.img`
 	display: grid;
@@ -68,31 +92,35 @@ export const Img = styled.img`
 		border-radius: 2rem 2rem 0.2rem 0.2rem;
 		width: 100%;
 		object-fit: cover;
+		// z-index: 1000;
 	}
 `
 export const CarouselCard = styled.div`
 	display: flex;
-	width: 50rem;
-	height: 65rem;
+	max-width: 40rem;
 	flex-direction: column;
 	padding: 1rem;
 	justify-content: center;
 	align-content: center;
-	margin: 10rem auto;
+	margin: 3rem auto;
 	text-align: center;
 	position: relative;
-	overflow: hidden;
-	background: ${(props) => props.theme.colors.accent14};
+	overflow: visible;
+	background: ${(props) => props.theme.colors.accent4};
 	box-shadow: 2rem 4rem 5rem 2rem rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(7px);
 	border-radius: 3rem;
+	broder-bottom: 1rem solid ${(props) => props.theme.colors.accent14};
 	border: 1rem solid rgba(255, 255, 255, 0.5);
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
+		display: flex;
+		object-fit: cover;
+
+		// z-index: 100;
 	}
 `
 export const CarouselTitle = styled.h2`
@@ -107,7 +135,7 @@ export const CarouselTitle = styled.h2`
 	align-items: center;
 	position: absolute;
 	z-index: 1000;
-
+	margin-top: 10rem;
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: ${(props) => (props.main ? '4rem' : '4.8rem')};
 		line-height: ${(props) => (props.main ? '5.6rem' : '4.8rem')};
@@ -123,5 +151,7 @@ export const CarouselTitle = styled.h2`
 		line-height: ${(props) => (props.main ? '4rem' : '4.5rem')};
 		margin-bottom: 0.8rem;
 		padding: ${(props) => (props.main ? '0 0 1rem' : '0')};
+		position: absolute;
+		z-index: 1000;
 	}
 `

@@ -68,6 +68,10 @@ export const TitleContent = styled.div`
 	text-align: center;
 	width: 100%;
 	margin-bottom: 1rem;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		display: flex;
+		z-index: 1000;
+	}
 `
 
 export const HeaderThree = styled.h3`
@@ -77,6 +81,10 @@ export const HeaderThree = styled.h3`
 	color: ${(props) => props.theme.colors.accent6};
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
+	@media ${(props) => props.theme.breakpoints.sm} {
+		display: flex;
+		z-index: 1000;
+	}
 `
 
 export const Hr = styled.hr`

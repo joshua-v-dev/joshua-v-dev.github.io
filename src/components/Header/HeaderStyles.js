@@ -7,6 +7,10 @@ export const Navigation = styled.nav`
 	display: flex;
 	margin-bottom: 2rem;
 	margin-top: 1rem;
+	z-index: 3;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		z-index: 200;
+	}
 `
 
 export const Container = styled.div`
