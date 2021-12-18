@@ -6,6 +6,7 @@ import Timeline from '../components/TimeLine/TimeLine'
 import { Layout } from '../layout/Layout'
 import { IdProvider } from '@radix-ui/react-id'
 import ImageCarousel from '../components/Slider/ImageCarousel'
+// import ParticlesAnimation from '../../src/components/ParticlesAnimation/ParticlesAnimation'
 
 const Home = () => {
 	return (
@@ -13,6 +14,7 @@ const Home = () => {
 			<Layout>
 				<BackgroundAnimation />
 				<ImageCarousel />
+				{/* <ParticlesAnimation /> */}
 				<Projects />
 				<Technologies />
 				<Timeline />
