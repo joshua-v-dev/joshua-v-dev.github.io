@@ -1,10 +1,5 @@
 import styled from 'styled-components'
 
-export const Overlay = styled.div`
-	display: grid;
-	overflow: hidden;
-`
-
 export const Img = styled.img`
 	display: grid;
 	border-radius: 2rem 2rem 1rem 1rem;
@@ -21,8 +16,6 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
-	grid-areas: 'BlogCard' 'Overlay';
-	justify-items: center;
 	justify-content: center;
 	width: 100%;
 	grid-template-columns: repeat(auto-fill, minmax(44rem, 1fr));

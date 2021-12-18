@@ -12,8 +12,8 @@ const Home = () => {
 		<IdProvider>
 			<Layout>
 				<BackgroundAnimation />
-				<Projects />
 				<ImageCarousel />
+				<Projects />
 				<Technologies />
 				<Timeline />
 				<Acomplishments />

@@ -6,7 +6,7 @@ export const projects = [
 		tags: ['Mongo', 'Express', 'React', 'Node'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 0,
+		i: 0,
 	},
 	{
 		title: 'PLATFORMS',
@@ -15,7 +15,7 @@ export const projects = [
 		tags: ['React', 'Liquid', 'Next', 'Polaris', 'GraphQL'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 1,
+		i: 1,
 	},
 	{
 		title: 'UI/UX',
@@ -24,7 +24,7 @@ export const projects = [
 		tags: ['Adobe Creative Cloud Products'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 2,
+		i: 2,
 	},
 	{
 		title: 'PASSION PROJECTS',
@@ -33,7 +33,7 @@ export const projects = [
 		tags: ['Three.js', 'Unity', 'Blender'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 3,
+		i: 3,
 	},
 	{
 		title: 'PORTFOLIO PROJECT',
@@ -42,7 +42,7 @@ export const projects = [
 		tags: ['Next.js', 'React.js', 'Radix UI'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 4,
+		i: 4,
 	},
 	{
 		title: 'FREELANCE CLIENTS',
@@ -51,7 +51,7 @@ export const projects = [
 		tags: ['Next.js', 'TypeScript', 'Tailwind.css'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 5,
+		i: 5,
 	},
 ]
 

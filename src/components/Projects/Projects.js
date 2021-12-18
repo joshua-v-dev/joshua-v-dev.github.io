@@ -21,8 +21,6 @@ import {
 	SectionTitle,
 } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
-import FullBackgroundAnimation from '../FullBackgroundAnimation/FullBackgroundAnimation'
-import { Overlay } from './ProjectsStyles'
 
 const Projects = () => (
 	<>
@@ -31,10 +29,6 @@ const Projects = () => (
 		</SectionDividerContainer>
 		<SectionTitle main>Projects</SectionTitle>
 		<Section nopadding id='projects'>
-			<Overlay>
-				<FullBackgroundAnimation />
-			</Overlay>
-
 			<CardContainer>
 				<GridContainer>
 					{projects.map((p, i) => {

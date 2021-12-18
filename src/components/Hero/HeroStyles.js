@@ -4,9 +4,10 @@ export const HeroSection = styled.div`
 	display: grid;
 	grid-auto-flow: column;
 	max-width: 100vw;
+	height: 85vh;
 	padding: 0;
 	position: relative;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		max-width: 100vw;
