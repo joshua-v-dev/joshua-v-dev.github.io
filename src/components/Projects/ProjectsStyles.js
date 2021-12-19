@@ -74,29 +74,6 @@ export const BlogCard = styled.div`
 		overflow: hidden;
 	}
 `
-export const TitleContent = styled.div`
-	font-size: 2.5rem;
-	text-align: center;
-	width: 100%;
-	margin-bottom: 1rem;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		z-index: 1000;
-	}
-`
-
-export const HeaderThree = styled.h3`
-	font-weight: 500;
-	margin-top: 1rem;
-	letter-spacing: 0.15em;
-	color: ${(props) => props.theme.colors.accent6};
-	padding: 0.5rem 0;
-	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		z-index: 1000;
-	}
-`
 
 export const Hr = styled.hr`
 	width: 5.5rem;

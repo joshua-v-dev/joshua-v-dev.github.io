@@ -8,6 +8,7 @@ import { Layout } from '../layout/Layout'
 import { IdProvider } from '@radix-ui/react-id'
 import ImageCarousel from '../components/Slider/ImageCarousel'
 import Particles from '../components/Particles/Particles'
+import GlassCard from '../components/GlassCard/GlassCard'
 
 const Home = () => {
 	return (
@@ -15,6 +16,7 @@ const Home = () => {
 			<Layout>
 				<Hero />
 				<BackgroundAnimation />
+				<GlassCard />
 				<ImageCarousel />
 				<Particles />
 				<Projects />
