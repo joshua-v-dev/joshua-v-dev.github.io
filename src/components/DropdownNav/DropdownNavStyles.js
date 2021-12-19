@@ -3,18 +3,20 @@ import styled from 'styled-components'
 export const DropdownNavStyles = styled.div`
 	.trigger {
 		display: flex;
+
+		// max-height: 30vh;
 		background-color: transparent;
+		color: ${(props) => props.theme.colors.accent4};
+		text-color: ${(props) => props.theme.colors.background2};
 		visibility: hidden;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		.trigger {
 			visibility: visible;
-			margin: auto;
-			padding: auto;
 			position: absolute;
 			z-index: 2000;
-			display: flex;
+
 			background: ${({ alt }) =>
 				alt
 					? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
@@ -26,8 +28,7 @@ export const DropdownNavStyles = styled.div`
 			justify-content: center;
 		}
 		.content {
-			background-color: transparent;
-			color: ${(props) => props.theme.colors.primary1};
+			color: ${(props) => props.theme.colors.accent4};
 		}
 		.item {
 			padding: 1rem 3rem;
