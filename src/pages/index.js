@@ -1,4 +1,5 @@
 import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation'
+import Hero from '../components/Hero/Hero'
 import Projects from '../components/Projects/Projects'
 import Acomplishments from '../components/Acomplishments/Acomplishments'
 import Technologies from '../components/Technologies/Technologies'
@@ -12,6 +13,7 @@ const Home = () => {
 	return (
 		<IdProvider>
 			<Layout>
+				<Hero />
 				<BackgroundAnimation />
 				<ImageCarousel />
 				<Particles />
