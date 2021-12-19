@@ -42,7 +42,7 @@ export const LeftSection = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
-		position: relative;
+		position: absolute;
 		display: flex;
 		margin: 0 auto;
 		z-index: 1000;
