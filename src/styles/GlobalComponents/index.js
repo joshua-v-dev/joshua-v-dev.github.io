@@ -43,6 +43,7 @@ export const SectionTitle = styled.h2`
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		height: ${(props) => (props.main ? '8rem' : '5rem')};
 		font-size: ${(props) => (props.main ? '3rem' : '3.5rem')};
 		line-height: ${(props) => (props.main ? '4rem' : '4.5rem')};
 		margin-bottom: 0.8rem;

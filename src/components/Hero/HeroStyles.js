@@ -14,6 +14,9 @@ export const HeroSection = styled.div`
 		max-width: 100vw;
 		position: relative;
 		display: flex;
+		left: 0;
+		top: 0;
+		max-height: 50vh;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
