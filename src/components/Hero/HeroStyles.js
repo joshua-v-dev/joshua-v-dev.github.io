@@ -45,7 +45,8 @@ export const LeftSection = styled.div`
 		position: relative;
 		display: flex;
 		margin: 0 auto;
-		z-index: 100;
+		z-index: 1000;
+		overflow: visible;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 100%;
