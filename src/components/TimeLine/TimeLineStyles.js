@@ -79,7 +79,7 @@ export const CarouselItem = styled.div`
 		align-content: center;
 		scroll-snap-align: start;
 		border-radius: 0.3rem;
-		overflow: visible;
+		overflow: hidden;
 		position: relative;
 		height: fit-content;
 		width: fit-content;

@@ -105,7 +105,7 @@ export const CarouselCard = styled.div`
 	margin: 3rem auto;
 	text-align: center;
 	position: relative;
-	overflow: visible;
+	overflow: hidden;
 	background: ${(props) => props.theme.colors.accent4};
 	box-shadow: 2rem 4rem 5rem 2rem rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(7px);
