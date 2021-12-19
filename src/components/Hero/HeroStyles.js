@@ -59,6 +59,7 @@ export const RightSection = styled.div`
 	width: 100vw;
 	position: absolute;
 	transform: translateX(-35%);
+	z-index: 0;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100vw;

@@ -7,7 +7,7 @@ export const Navigation = styled.nav`
 	display: flex;
 	margin-bottom: 2rem;
 	margin-top: 1rem;
-	z-index: 3;
+	z-index: 1000;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		z-index: 200;
 	}
