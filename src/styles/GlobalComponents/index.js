@@ -26,12 +26,14 @@ export const SectionTitle = styled.h2`
 	line-height: ${(props) => (props.main ? '15rem' : '10rem')};
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #ffffff;}
+	// -webkit-text-fill-color: transparent;
 	padding: ${(props) => (props.main ? '2.5rem 5rem 2.5rem 5rem' : '0')};
 	display: flex;
 	font-weight: 10000;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	z-index: 1000;
 	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.02);
 
