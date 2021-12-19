@@ -10,6 +10,9 @@ export const DropdownNavStyles = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		.trigger {
 			visibility: visible;
+			margin: auto;
+			padding: auto;
+			position: absolute;
 			z-index: 2000;
 			display: flex;
 			background: ${({ alt }) =>
