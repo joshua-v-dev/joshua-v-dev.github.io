@@ -22,8 +22,8 @@ export const Section = styled.section`
 `
 
 export const SectionTitle = styled.h2`
-	font-size: ${(props) => (props.main ? '7rem' : '4rem')};
-	line-height: ${(props) => (props.main ? '8rem' : '5rem')};
+	font-size: ${(props) => (props.main ? '10rem' : '5rem')};
+	line-height: ${(props) => (props.main ? '9rem' : '3rem')};
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -43,15 +43,16 @@ export const SectionTitle = styled.h2`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: ${(props) => (props.main ? '8rem' : '5rem')};
-		font-size: ${(props) => (props.main ? '3rem' : '3.5rem')};
-		line-height: ${(props) => (props.main ? '4rem' : '4.5rem')};
+		height: ${(props) => (props.main ? '15rem' : '5rem')};
+		font-size: ${(props) => (props.main ? '6rem' : '3.5rem')};
+		line-height: ${(props) => (props.main ? '7rem' : '4.5rem')};
 		margin-bottom: 0.8rem;
-		padding: ${(props) => (props.main ? '0 0 1rem' : '0')};
+		padding: ${(props) => (props.main ? '1rem 1rem 1rem' : '0')};
 	}
 `
 
 export const SectionText = styled.p`
+	margin-top: 1rem;
 	font-size: 3rem;
 	line-height: 3.5rem;
 	padding: ${(props) => (props.main ? '2rem 2rem 2rem' : '0')};

@@ -2,23 +2,25 @@ import styled from 'styled-components'
 
 export const Img = styled.img`
 	display: grid;
-	border-radius: 2rem 2rem 1rem 1rem;
+	border-radius: 2rem 2rem 4rem 4rem;
 	width: 100%;
 	object-fit: cover;
 	overflow: hidden;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		display: grid;
-		border-radius: 2rem 2rem 0.2rem 0.2rem;
-		width: 100%;
-		object-fit: cover;
+		display: flex;
+		justify-content: flex-start;
+
+		border-radius: 3rem 0 3rem 3rem;
+		overflow: hidden;
 	}
 `
 
 export const GridContainer = styled.section`
 	display: grid;
 	justify-content: center;
-	width: 100%;
-	grid-template-columns: repeat(auto-fill, minmax(44rem, 1fr));
+	max-width: 100%;
+	max-height: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
 	padding: 3rem 3rem;
 	place-items: center;
 	column-gap: 5rem;
@@ -30,12 +32,20 @@ export const GridContainer = styled.section`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
+
 		// width: 100%;
-		padding: 2rem;
+		// padding: 2rem;
 	}
 `
 export const CardContainer = styled.div`
 	width: 100%;
+	display: grid;
+	grid-auto-flow: row;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
 `
 
 export const BlogCard = styled.div`
@@ -49,7 +59,7 @@ export const BlogCard = styled.div`
 	text-align: center;
 	position: relative;
 	z-index: 100;
-	overflow: hidden;
+
 	background: ${(props) => props.theme.colors.accent14};
 	box-shadow: 2rem 4rem 5rem 2rem rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(7px);
@@ -61,6 +71,7 @@ export const BlogCard = styled.div`
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
+		overflow: hidden;
 	}
 `
 export const TitleContent = styled.div`
