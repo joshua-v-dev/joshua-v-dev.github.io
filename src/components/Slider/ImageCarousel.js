@@ -13,16 +13,8 @@ import {
 } from './ImageCarouselStyles.js'
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import {
-	CardInfo,
-	ExternalLinks,
-	HeaderThree,
-	Hr,
-	Tag,
-	TagList,
-	TitleContent,
-	UtilityList,
-} from '../Projects/ProjectsStyles'
+import { CardInfo, ExternalLinks, Hr, Tag, TagList, UtilityList } from '../Projects/ProjectsStyles'
+import { TitleContent, HeaderThree } from '../../../src/pages/MernProject'
 import { SectionDivider, SectionDividerContainer } from '../../styles/GlobalComponents'
 
 const ImageCarousel = () => {

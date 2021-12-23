@@ -6,11 +6,9 @@ import {
 	CardInfo,
 	ExternalLinks,
 	GridContainer,
-	HeaderThree,
 	Hr,
 	Tag,
 	TagList,
-	TitleContent,
 	UtilityList,
 	Img,
 } from './ProjectsStyles'
@@ -20,6 +18,7 @@ import {
 	SectionDividerContainer,
 	SectionTitle,
 } from '../../styles/GlobalComponents'
+import { TitleContent, HeaderThree } from '../../../src/pages/MernProject'
 import { projects } from '../../constants/constants'
 
 const Projects = () => (
@@ -35,23 +34,26 @@ const Projects = () => (
 						return (
 							<BlogCard key={i}>
 								<Img src={p.image} />
-								<TitleContent>
-									<HeaderThree title='true'>{p.title}</HeaderThree>
-									<Hr />
-								</TitleContent>
-								<CardInfo className='card-info'>{p.description}</CardInfo>
-								<div>
+								<>
 									<TitleContent>
-										<br />
-										<br />
-										Stack
+										<HeaderThree title='true'>{p.title}</HeaderThree>
+										<Hr />
 									</TitleContent>
-									<TagList>
-										{p.tags.map((t, i) => {
-											return <Tag key={i}>{t}</Tag>
-										})}
-									</TagList>
-								</div>
+								</>
+								<CardInfo className='card-info'>{p.description}</CardInfo>
+
+								<TitleContent>
+									<br />
+									<br />
+									Stack
+								</TitleContent>
+
+								<TagList>
+									{p.tags.map((t, i) => {
+										return <Tag key={i}>{t}</Tag>
+									})}
+								</TagList>
+
 								<UtilityList>
 									<ExternalLinks href={p.visit}>Code</ExternalLinks>
 									<ExternalLinks href={p.source}>Source</ExternalLinks>
