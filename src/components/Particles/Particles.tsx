@@ -137,7 +137,7 @@ export default function ParticleAnimation() {
 				fps_limit: 60,
 				background: {
 					image:
-						"url('https://res.cloudinary.com/dpytkhyme/image/upload/v1639878404/rainbow-pillar-wallpaper_s7gldw.png')",
+						"url('https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png')",
 				},
 			}}
 		/>
