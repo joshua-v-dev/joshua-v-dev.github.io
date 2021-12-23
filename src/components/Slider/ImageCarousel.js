@@ -25,7 +25,7 @@ import {
 } from '../Projects/ProjectsStyles'
 import { SectionDivider, SectionDividerContainer } from '../../styles/GlobalComponents'
 
-export const ImageCarousel = () => {
+const ImageCarousel = () => {
 	return (
 		<>
 			<SectionDividerContainer>
@@ -52,7 +52,7 @@ export const ImageCarousel = () => {
 												<HeaderThree title='true'>{p.title}</HeaderThree>
 												<Hr />
 											</TitleContent>
-											<CardInfo className='card-info'>{p.description}</CardInfo>
+											<CardInfo className='cardInfo'>{p.description}</CardInfo>
 
 											<TitleContent>Stack</TitleContent>
 											<TagList>
@@ -80,3 +80,4 @@ export const ImageCarousel = () => {
 		</>
 	)
 }
+export default ImageCarousel

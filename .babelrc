@@ -1,6 +1,4 @@
 {
 	"presets": ["next/babel"],
-	"plugins": [["styled-components", { "ssr": true }]],
-	"module": ["loaders"],
-	"test": [["/css$/", { "loader": "style-loader!css-loader" }]]
+	"plugins": [["styled-components", { "ssr": true }]]
 }
