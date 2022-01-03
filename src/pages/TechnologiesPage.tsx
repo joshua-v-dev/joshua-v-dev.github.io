@@ -1,3 +1,5 @@
+// Used Github Co-Pilot for this comoponent to show low-code approach
+
 // component lists items and links to their detail page.
 // renders the technologies page.
 // functional component.
