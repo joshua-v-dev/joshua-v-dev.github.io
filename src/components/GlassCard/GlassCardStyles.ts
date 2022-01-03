@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Card = styled.div` {
+export const Card = styled.div`
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
@@ -9,118 +9,97 @@ export const Card = styled.div` {
 	@media ${(props) => props.theme.breakpoints.md} {
 		height: auto;
 		border-radius: 3px;
-		hover:none;
+		hover: none;
 		background-color: #fff;
 		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-}`
-
-export const cardSide = styled.div`
-	 {
-		height: 52rem;
-		transition: all 0.8s ease;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		border-radius: 3px;
-		overflow: hidden;
-		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-		@media ${(props) => props.theme.breakpoints.md} {
-			height: auto;
-			position: relative;
-			box-shadow: none;
-		}
 	}
 `
 
-export const cardSideFront = styled.div` {
+export const cardSide = styled.div`
+	height: 52rem;
+	transition: all 0.8s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+	@media ${(props) => props.theme.breakpoints.md} {
+		height: auto;
+		position: relative;
+		box-shadow: none;
+	}
+`
+
+export const cardSideFront = styled.div` 
 	background-color: #fff;
 
 	&:hover {transform: rotateY(-180deg);
-}`
+`
 
 export const cardSideBack = styled.div`
-	 {
-		transform: rotateY(180deg);
+	transform: rotateY(180deg);
 
-		&:hover {
-			transform: rotateY(0deg);
-		}
+	&:hover {
+		transform: rotateY(0deg);
+	}
 
-		@media ${(props) => props.theme.breakpoints.md} {
-			transform: rotateY(0);
-			clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-		}
+	@media ${(props) => props.theme.breakpoints.md} {
+		transform: rotateY(0);
+		clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 	}
 `
 export const cardSideBack1 = styled.div`
-	 {
-		background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
-	}
+	background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 `
 export const cardSideBack2 = styled.div`
-	 {
-		background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-	}
+	background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 `
 export const cardSideBack3 = styled.div`
-	 {
-		background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
-	}
+	background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 `
 
 //////////////////////////////////////////////////////////////////////
 
 export const CardPicture = styled.div`
-	 {
-		background-size: cover;
-		height: 23rem;
-		background-blend-mode: screen;
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-		border-top-left-radius: 3px;
-		border-top-right-radius: 3px;
-	}
+	background-size: cover;
+	height: 23rem;
+	background-blend-mode: screen;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 `
 export const cardPicture1 = styled.div`
-	 {
-		background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-			url(https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png);
-	}
+	background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+		url(https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png);
 `
 export const cardPicture2 = styled.div`
-	 {
-		background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-			url(https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png);
-	}
+	background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+		url(https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png);
 `
 export const cardPicture3 = styled.div`
-	 {
-		background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-			url(https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png);
-	}
+	background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+		url(https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png);
 `
 export const cardHeading = styled.h4`
-	 {
-		font-size: 2.8rem;
-		font-weight: 300;
-		text-transform: uppercase;
-		text-align: right;
-		color: #fff;
-		position: absolute;
-		top: 12rem;
-		right: 2rem;
-		width: 75%;
-	}
+	font-size: 2.8rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: right;
+	color: #fff;
+	position: absolute;
+	top: 12rem;
+	right: 2rem;
+	width: 75%;
 `
 export const cardHeadingSpan = styled.span`
-	 {
-		padding: 1rem 1.5rem;
-		-webkit-box-decoration-break: clone;
-		box-decoration-break: clone;
-	}
+	padding: 1rem 1.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
 `
 export const cardHeadingSpan1 = styled.span`
 	 {
