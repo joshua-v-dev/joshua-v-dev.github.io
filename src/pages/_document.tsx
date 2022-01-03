@@ -1,17 +1,17 @@
-import AppContext from 'next/app'
-import Document, { Head, Html, Main, NextScript } from 'next/document'
+// import AppContext from 'next/app'
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
-export default class MyDocument extends Document {
-	static async getInitialProps(ctx: { renderPage: () => any }) {
+class MyDocument extends Document {
+	static async getInitialProps(ctx: { DocumentContext: () => any }) {
 		const sheet = new ServerStyleSheet()
-		const originalRenderPage = ctx.renderPage
+		const originalRenderPage = ctx.DocumentContext
 
 		try {
-			ctx.renderPage = () =>
+			ctx.DocumentContext = () =>
 				originalRenderPage()({
 					enhanceApp: (_App: JSX.IntrinsicAttributes) => (props: JSX.IntrinsicAttributes) =>
-						sheet.collectStyles(<AppContext {...props} />),
+						sheet.collectStyles(<DocumentContext {...props} />),
 				})
 
 			const initialProps = await Document.getInitialProps(ctx)
@@ -46,3 +46,4 @@ export default class MyDocument extends Document {
 		)
 	}
 }
+export default MyDocument
