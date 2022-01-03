@@ -4,10 +4,8 @@ import '../pages/_app.css'
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<>
-			<Theme>
-				<Component {...pageProps} />
-			</Theme>
-		</>
+		<Theme>
+			<Component {...pageProps} />
+		</Theme>
 	)
 }
