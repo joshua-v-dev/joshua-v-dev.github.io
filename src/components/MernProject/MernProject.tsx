@@ -7,7 +7,7 @@ import Layout from '../../layout/Layout'
 import dynamic from 'next/dynamic' //add
 
 //add
-const NativeVideo = dynamic(() => import('../NativeVideoPlayer'), { ssr: false })
+const NativeVideo = dynamic(() => import('../NativeVideoPlayer/NativeVideoPlayer'), { ssr: true })
 
 function MernProject() {
 	return (
