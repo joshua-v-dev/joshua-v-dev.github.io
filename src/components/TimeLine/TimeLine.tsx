@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 
 import {
 	CarouselButton,
@@ -13,23 +13,24 @@ import {
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents'
 import { TimeLineData } from '../../constants/constants'
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length
-
 const Timeline = () => {
-	const [activeItem, setActiveItem] = useState(0)
 	const carouselRef = useRef()
 
-	const scroll = (node, left) => {
-		return node.scroll({ left, behavior: 'smooth' })
+	const scroll = (
+		node: { scrollTo: (arg0: { left: any; behavior: string }) => any },
+		left: number,
+	) => {
+		return node.scrollTo({ left, behavior: 'smooth' })
 	}
 
-	const handleClick = (e, i) => {
+	const handleClick = (
+		e: React.MouseEvent<HTMLElement, MouseEvent> | React.MouseEvent<HTMLButtonElement, MouseEvent>,
+		i: number,
+	) => {
 		e.preventDefault()
 
 		if (carouselRef.current) {
-			const scrollLeft = Math.floor(
-				carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length - 1),
-			)
+			const scrollLeft = Math.floor(carouselRef.current * 0.7 * (i / TimeLineData.length - 1))
 
 			scrollTo(carouselRef.current, scrollLeft)
 		}
@@ -38,8 +39,7 @@ const Timeline = () => {
 	const handleScroll = () => {
 		if (carouselRef.current) {
 			const index = Math.round(
-				(carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) *
-					TimeLineData.length,
+				(carouselRef.current / (carouselRef.current * 0.7)) * TimeLineData.length,
 			)
 
 			setActiveItem(index)
@@ -63,13 +63,9 @@ const Timeline = () => {
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
 				<>
 					{TimeLineData.map((item, index) => (
-						<CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
+						<CarouselMobileScrollNode key={index}>
 							<CarouselItemTitle>{item.year}</CarouselItemTitle>
-							<CarouselItem
-								index={index}
-								id={`carousel__item-${index}`}
-								active={activeItem}
-								onClick={(e) => handleClick(e, index)}>
+							<CarouselItem id={`carousel__item-${index}`} onClick={(e) => handleClick(e, index)}>
 								<CarouselItemText>{item.text}</CarouselItemText>
 							</CarouselItem>
 						</CarouselMobileScrollNode>
@@ -78,19 +74,17 @@ const Timeline = () => {
 			</CarouselContainer>
 			<CarouselButtons>
 				{TimeLineData.map((item, index) => (
-					<CarouselButton
-						key={index}
-						index={index}
-						active={activeItem}
-						onClick={(e) => handleClick(e, index)}
-						type='button'>
-						<CarouselButtonDot index={index} active={activeItem} />
+					<CarouselButton key={index} onClick={(e) => handleClick(e, index)} type='button'>
+						<CarouselButtonDot />
 					</CarouselButton>
 				))}
 			</CarouselButtons>
-			<SectionDivider divider />
+			<SectionDivider />
 		</Section>
 	)
 }
 
 export default Timeline
+function setActiveItem(index: number) {
+	throw new Error('Function not implemented.')
+}

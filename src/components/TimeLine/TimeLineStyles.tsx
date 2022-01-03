@@ -51,8 +51,6 @@ export const CarouselMobileScrollNode = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		max-width: ${({ final }) => (final ? `100%;` : `max-content`)};
-		min-width: ${({ final }) => (final ? `100%;` : `min-content`)};
 	}
 `
 
@@ -83,7 +81,6 @@ export const CarouselItem = styled.div`
 		position: relative;
 		height: fit-content;
 		width: fit-content;
-		opacity: ${(props) => (props.active === props.index ? `opacity: 1` : `opacity: 0.99`)};
 	}
 `
 
@@ -168,8 +165,6 @@ export const CarouselButton = styled.button`
 	border: none;
 	cursor: pointer;
 	margin-right: 0.4rem;
-	opacity: ${(props) => (props.active === props.index ? `1` : `.33`)};
-	transform: ${(props) => (props.active === props.index ? `scale(1.6)` : `scale(1)`)};
 
 	&:focus {
 		outline: none;

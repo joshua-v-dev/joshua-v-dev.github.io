@@ -18,16 +18,16 @@ import {
 	SectionDividerContainer,
 	SectionTitle,
 } from '../../styles/GlobalComponents'
-import { TitleContent, HeaderThree } from '../../../src/pages/MernProject'
+import { TitleContent, HeaderThree } from '../../pages/MernProject'
 import { projects } from '../../constants/constants'
 
 const Projects = () => (
 	<>
 		<SectionDividerContainer>
-			<SectionDivider divider />
+			<SectionDivider />
 		</SectionDividerContainer>
-		<SectionTitle main>Projects</SectionTitle>
-		<Section nopadding id='projects'>
+		<SectionTitle>Projects</SectionTitle>
+		<Section id='projects'>
 			<CardContainer>
 				<GridContainer>
 					{projects.map((p, i) => {

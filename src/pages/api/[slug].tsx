@@ -2,7 +2,7 @@ import React from 'react'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
+import { marked } from 'marked'
 import { IdProvider } from '@radix-ui/react-id'
 import { projects } from '../../constants/constants'
 
@@ -22,7 +22,7 @@ export const getStaticProps = async ({ props: { slug } }) => {
 	const projects = fs.readFileSync(path.join(slug + '.js')).toString()
 	const parsedProjects = matter(projects)
 
-	const htmlString = marked(parsedProjects.content)
+	const htmlString = `${marked(parsedProjects.content)}`
 
 	return { props: { htmlString } }
 }

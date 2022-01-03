@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardContainer } from '../../../src/components/Projects/ProjectsStyles'
+import { CardContainer } from '../Projects/ProjectsStyles'
 
 const GlassCard = () => {
 	return (
@@ -8,7 +8,7 @@ const GlassCard = () => {
 				<div className='card'>
 					<div className='cardSide cardSideFront'>
 						<div className='' />
-						<div clasName='cardPicture cardPicture--1'> &nbsp; </div>
+						<div className='cardPicture cardPicture--1'> &nbsp; </div>
 						<h4 className='cardHeading'>
 							<span className='cardHeadingSpan cardHeadingSpan--1'>The Sea Explorer</span>
 						</h4>

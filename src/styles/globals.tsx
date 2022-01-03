@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'styled-normalize'
-import Defaults from '../themes/default'
 
 const GlobalStyles = createGlobalStyle`
   ${normalize};
@@ -20,16 +19,11 @@ const GlobalStyles = createGlobalStyle`
 
   }
   body {
-    font-family: ${(props) => props.theme.fonts.main};
-    font-size: 1.5rem;
-    background: ${(props) => props.theme.colors.background1};
-    // color: ${(props) => props.theme.colors.primary1};
+
     cursor: default;
 
   }
-  h1,h2,h3,h4,h5,h6,button {
-    font-family: ${(props) => props.theme.fonts.title};
-  }
+  
   a {
     text-decoration: none;
   }

@@ -34,7 +34,10 @@ function MernProject() {
 										</Video>
 									</CloudinaryContext>
 								</div>
-								<Img src={p.image} />
+								<Img src='{p.image}' />
+
+								{/* CHECK TO FIX THIS IMAGE RENDER */}
+
 								<TitleContent>
 									<HeaderThree title='true'>{p.title}</HeaderThree>
 									<Hr />
