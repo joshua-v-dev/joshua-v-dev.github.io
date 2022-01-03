@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
 		try {
 			ctx.renderPage = () =>
 				originalRenderPage()({
-					enhanceApp: (App: JSX.IntrinsicAttributes) => (props: JSX.IntrinsicAttributes) =>
+					enhanceApp: (_App: JSX.IntrinsicAttributes) => (props: JSX.IntrinsicAttributes) =>
 						sheet.collectStyles(<AppContext {...props} />),
 				})
 

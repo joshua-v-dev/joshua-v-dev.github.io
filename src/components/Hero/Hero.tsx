@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import React from 'react'
 import Link from 'next/link'
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
@@ -18,7 +19,15 @@ const Hero = () => (
 				<ButtonContainer>
 					<Link href={'/ProjectsPage'}>
 						<a>
-							<Button>Learn More</Button>
+							<Button
+								alt={undefined}
+								form={undefined}
+								disabled={false}
+								onClick={function (): void {
+									throw new Error('Function not implemented.')
+								}}>
+								Learn More
+							</Button>
 						</a>
 					</Link>
 				</ButtonContainer>
