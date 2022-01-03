@@ -4,12 +4,14 @@ import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import { Container } from './LayoutStyles'
 
-export const Layout = ({children}) => {
-  return (
-    <Container>
-     <Header/>
-     <main>{children}</main> 
-     <Footer/>
-    </Container>
-  )
+export default function Layout({ props, children }): JSX.Element {
+	return (
+		<Container>
+			<Header />
+			<Container {...children}>
+				<main>{props.children}</main>
+			</Container>
+			<Footer />
+		</Container>
+	)
 }

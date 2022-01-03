@@ -5,7 +5,7 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 
 const Technologies = () => (
 	<Section id='tech'>
-		<SectionDivider divider />
+		<SectionDivider />
 		<SectionTitle>Technologies</SectionTitle>
 		<SectionText>
 			I have worked with a range a technologies in the web development world. From Back-end To
@@ -49,7 +49,7 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 		</List>
-		<SectionDivider divider colorAlt />
+		<SectionDivider />
 	</Section>
 )
 

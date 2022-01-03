@@ -9,10 +9,10 @@ import {
 	DropDownItemDesc,
 	DropDownItemTitle,
 	DropDownTextContainer,
-} from './NavDropDown'
+} from './NavDropDownStyles'
 
-const NavDropDown = (props) => (
-	<DropDownContainer active={props.isOpen}>
+const NavDropDown = (props: { isOpen: any }) => (
+	<DropDownContainer>
 		<DropDownItem href='#' target='_blank' rel='noreferrer'>
 			<DropDownIcon>
 				<AiFillPhone />

@@ -6,9 +6,9 @@ import { LeftSection, ButtonContainer } from './HeroStyles'
 
 const Hero = () => (
 	<>
-		<Section row nopadding>
+		<Section>
 			<LeftSection>
-				<SectionTitle main center>
+				<SectionTitle>
 					Joshua
 					<br />
 					Vaughn

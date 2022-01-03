@@ -20,7 +20,6 @@ export const PageContainer = styled.div`
 	}
 `
 export const SliderImage = styled.div`
-	background: url(${(p) => p.image});
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -124,12 +123,10 @@ export const CarouselCard = styled.div`
 	}
 `
 export const CarouselTitle = styled.h2`
-	font-size: ${(props) => (props.main ? '7rem' : '4rem')};
-	line-height: ${(props) => (props.main ? '8rem' : '5rem')};
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	padding: ${(props) => (props.main ? '1rem 1rem 1rem' : '0')};
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -137,20 +134,16 @@ export const CarouselTitle = styled.h2`
 	z-index: 1000;
 	margin-top: 10rem;
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: ${(props) => (props.main ? '4rem' : '4.8rem')};
-		line-height: ${(props) => (props.main ? '5.6rem' : '4.8rem')};
 		margin-bottom: 1.2rem;
-		padding: ${(props) => (props.main ? '3rem 0 1.2rem' : '0')};
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: ${(props) => (props.main ? '3rem' : '3.5rem')};
-		line-height: ${(props) => (props.main ? '4rem' : '4.5rem')};
+
 		margin-bottom: 0.8rem;
-		padding: ${(props) => (props.main ? '0 0 1rem' : '0')};
+
 		position: absolute;
 		z-index: 1000;
 	}

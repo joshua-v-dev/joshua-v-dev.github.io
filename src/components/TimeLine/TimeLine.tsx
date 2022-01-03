@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react'
-
 import {
 	CarouselButton,
 	CarouselButtonDot,
@@ -14,17 +13,18 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { TimeLineData } from '../../constants/constants'
 
 const Timeline = () => {
-	const carouselRef = useRef()
-
+	const [currentIndex, setCurrentIndex] = React.useState(0)
 	const scroll = (
-		node: { scrollTo: (arg0: { left: any; behavior: string }) => any },
+		node: { scroll: (arg0: { left: any; behavior: string }) => any },
 		left: number,
 	) => {
-		return node.scrollTo({ left, behavior: 'smooth' })
+		return node.scroll({ left, behavior: 'smooth' })
 	}
-
+	const carouselRef = useRef(0)
 	const handleClick = (
-		e: React.MouseEvent<HTMLElement, MouseEvent> | React.MouseEvent<HTMLButtonElement, MouseEvent>,
+		e:
+			| React.MouseEvent<HTMLDivElement, MouseEvent>
+			| React.MouseEvent<HTMLButtonElement, MouseEvent>,
 		i: number,
 	) => {
 		e.preventDefault()
@@ -42,15 +42,16 @@ const Timeline = () => {
 				(carouselRef.current / (carouselRef.current * 0.7)) * TimeLineData.length,
 			)
 
-			setActiveItem(index)
+			setCurrentIndex(index)
 		}
 	}
 
 	// snap back to beginning of scroll when window is resized
 	// avoids a bug where content is covered up if coming from smaller screen
+
 	useEffect(() => {
 		const handleResize = () => {
-			scroll(carouselRef.current, 0)
+			scrollTo(carouselRef.current, 0)
 		}
 
 		window.addEventListener('resize', handleResize)
@@ -60,7 +61,7 @@ const Timeline = () => {
 		<Section id='about'>
 			<SectionTitle>About Me</SectionTitle>
 			<SectionText>I am a self-taught developer with plenty of zest</SectionText>
-			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+			<CarouselContainer onScroll={handleScroll}>
 				<>
 					{TimeLineData.map((item, index) => (
 						<CarouselMobileScrollNode key={index}>
@@ -73,7 +74,7 @@ const Timeline = () => {
 				</>
 			</CarouselContainer>
 			<CarouselButtons>
-				{TimeLineData.map((item, index) => (
+				{TimeLineData.map((_item, index) => (
 					<CarouselButton key={index} onClick={(e) => handleClick(e, index)} type='button'>
 						<CarouselButtonDot />
 					</CarouselButton>
@@ -85,6 +86,3 @@ const Timeline = () => {
 }
 
 export default Timeline
-function setActiveItem(index: number) {
-	throw new Error('Function not implemented.')
-}

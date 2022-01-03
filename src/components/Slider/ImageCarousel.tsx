@@ -10,7 +10,7 @@ import {
 	Img,
 	CarouselCard,
 	CarouselTitle,
-} from './ImageCarouselStyles.js'
+} from './ImageCarouselStyles'
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import { CardInfo, ExternalLinks, Hr, Tag, TagList, UtilityList } from '../Projects/ProjectsStyles'
@@ -35,7 +35,7 @@ const ImageCarousel = () => {
 						<Slider>
 							{projects.map((p, i) => {
 								return (
-									<Slide key={i} index={undefined}>
+									<Slide key={i} index={i}>
 										<CarouselCard>
 											<SliderImage>
 												<Img src={p.image} />
