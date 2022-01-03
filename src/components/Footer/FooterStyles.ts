@@ -81,15 +81,10 @@ export const CompanyContainer = styled.div`
 		align-items: center;
 	}
 `
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
 export const Slogan = styled.p`
 	color: ${(props) => props.theme.colors.primary1};
-	min-width: 28rem;
-	letter-spacing: 0.02em;
-	font-size: 1.8rem;
-	line-height: 3rem;
-	padding: 1rem;
-
+	display: none;
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 1.6rem;
 		line-height: 2.8rem;
@@ -101,6 +96,8 @@ export const Slogan = styled.p`
 		min-width: 10rem;
 	}
 `
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export const SocialContainer = styled.div`
 	display: flex;

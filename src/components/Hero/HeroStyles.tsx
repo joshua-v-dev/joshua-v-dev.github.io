@@ -3,15 +3,13 @@ import styled from 'styled-components'
 export const HeroSection = styled.div`
 	display: grid;
 	grid-auto-flow: column;
-	max-width: 100vw;
-	height: 85vh;
+
 	padding: 0;
 	position: relative;
 	margin: 0 auto 0 auto;
 	z-index: 100;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		max-width: 100vw;
 		position: relative;
 		display: flex;
 		left: 0;
@@ -24,7 +22,6 @@ export const HeroSection = styled.div`
 		z-index: 100;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100vw;
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -33,7 +30,6 @@ export const HeroSection = styled.div`
 `
 
 export const LeftSection = styled.div`
-	width: 100%;
 	display: grid;
 	grid-auto-flow: row;
 	justify-content: center;
@@ -41,14 +37,12 @@ export const LeftSection = styled.div`
 	margin: 0 auto;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
 		display: flex;
 		flex: 1;
 		z-index: 1000;
 		overflow: hidden;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
 		display: flex;
 		position: relative;
 		flex-direction: column;

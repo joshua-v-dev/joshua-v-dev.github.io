@@ -16,7 +16,7 @@ const Details = ({ htmlString }: { htmlString: any }) => {
 }
 
 export const getStaticProps = async ({ slug }: { slug: any }) => {
-	const projects = fs.readFileSync(path.join(slug + '.js')).toString()
+	const projects = fs.readFileSync(path.join(slug + '.tsx')).toString()
 	const parsedProjects = matter(projects)
 
 	const htmlString = `${marked(parsedProjects.content)}`
@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
 	console.log('files: ', files)
 	const paths = files.map((filename) => ({
 		params: {
-			slug: filename.replace('.js', ''),
+			slug: filename.replace('.tsx', ''),
 		},
 	}))
 	console.log('paths: ', paths)

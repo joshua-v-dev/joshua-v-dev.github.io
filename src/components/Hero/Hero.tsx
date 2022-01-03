@@ -1,4 +1,3 @@
-/* eslint-disable react/no-children-prop */
 import React from 'react'
 import Link from 'next/link'
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
