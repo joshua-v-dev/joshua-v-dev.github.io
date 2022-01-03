@@ -1,16 +1,16 @@
 import React from 'react'
 import { CardContainer } from '../Projects/ProjectsStyles'
+import './GlassCardStyles.ts'
 
 const GlassCard = () => {
 	return (
 		<>
 			<CardContainer>
-				<div className='card'>
-					<div className='cardSide cardSideFront'>
-						<div className='' />
-						<div className='cardPicture cardPicture--1'> &nbsp; </div>
+				<div className='Card'>
+					<div className='cardSideFront'>
+						<div className='cardPicture cardPicture1'> &nbsp; </div>
 						<h4 className='cardHeading'>
-							<span className='cardHeadingSpan cardHeadingSpan--1'>The Sea Explorer</span>
+							<span className='cardHeadingSpan cardHeadingSpan1'>The Sea Explorer</span>
 						</h4>
 						<div className='cardDetails'>
 							<ul>
@@ -22,13 +22,13 @@ const GlassCard = () => {
 							</ul>
 						</div>
 					</div>
-					<div className='cardSide cardSide--back cardSide--back-1'>
+					<div className='cardSideBack cardSideBack1'>
 						<div className='cardCta'>
 							<div className='cardPriceBox'>
 								<p className='cardPriceOnly'>Only</p>
 								<p className='cardPriceValue'>$297</p>
 							</div>
-							<a href='#popup' className='btn btnWhite'>
+							<a href='#popup' className='Btn BtnWhite'>
 								Book now!
 							</a>
 						</div>
@@ -36,13 +36,13 @@ const GlassCard = () => {
 				</div>
 			</CardContainer>
 			<CardContainer>
-				<div className='card'>
-					<div className='cardSide cardSide--front'>
-						<div className='cardPicture cardPicture--2'> &nbsp; </div>
+				<div className='Card'>
+					<div className='cardSide cardSideFront'>
+						<div className='cardPicture cardPicture2'> &nbsp; </div>
 						<h4 className='cardHeading'>
-							<span className='cardHeadingSpan cardHeadingSpan--2'>The Forest Hiker</span>
+							<span className='cardHeadingSpan cardHeadingSpan2'>The Forest Hiker</span>
 						</h4>
-						<div className='card__details'>
+						<div className='cardDetails'>
 							<ul>
 								<li>7 day tours</li>
 								<li>Up to 40 people</li>
@@ -52,13 +52,13 @@ const GlassCard = () => {
 							</ul>
 						</div>
 					</div>
-					<div className='cardSide cardSide--back cardSide--back-2'>
+					<div className='cardSide cardSideBack cardSideBack2'>
 						<div className='cardCta'>
 							<div className='cardPriceBox'>
 								<p className='cardPriceOnly'>Only</p>
 								<p className='cardPriceValue'>$497</p>
 							</div>
-							<a href='#popup' className='btn btn--white'>
+							<a href='#popup' className='Btn BtnWhite'>
 								Book now!
 							</a>
 						</div>
@@ -66,11 +66,11 @@ const GlassCard = () => {
 				</div>
 			</CardContainer>
 			<CardContainer>
-				<div className='card'>
-					<div className='cardSide cardSide--front'>
-						<div className='cardPicture cardPicture--3'> &nbsp; </div>
+				<div className='Card'>
+					<div className='cardSide cardSideFront'>
+						<div className='cardPicture cardPicture3'> &nbsp; </div>
 						<h4 className='cardHeading'>
-							<span className='cardHeading-span cardHeadingSpan--3'>The Snow Adventurer</span>
+							<span className='cardHeadingSpan cardHeadingSpan3'>The Snow Adventurer</span>
 						</h4>
 						<div className='cardDetails'>
 							<ul>
@@ -82,13 +82,13 @@ const GlassCard = () => {
 							</ul>
 						</div>
 					</div>
-					<div className='cardSide cardSide--back cardSide--back-3'>
+					<div className='cardSide cardSideBack cardSideBack3'>
 						<div className='cardCta'>
 							<div className='cardPriceBox'>
 								<p className='cardPriceOnly'>Only</p>
 								<p className='cardPriceValue'>$897</p>
 							</div>
-							<a href='#popup' className='btn btn--white'>
+							<a href='#popup' className='Btn btnWhite'>
 								Book now!
 							</a>
 						</div>

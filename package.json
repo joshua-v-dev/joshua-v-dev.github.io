@@ -81,10 +81,7 @@
 		"browser": "./build/browser.js",
 		"executableFiles": [
 			"./dist/shim.js"
-		],
-		"main": "./build/index.js",
-		"module": "./build/index.mjs",
-		"registry": "https://npm.pkg.github.com"
+		]
 	},
 	"installConfig": {
 		"hoistingLimits": "none",

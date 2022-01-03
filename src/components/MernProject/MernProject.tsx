@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 // import { CloudinaryContext, Transformation, Video } from 'cloudinary-video-player'
-import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
-import { SubProjectsData } from '../constants/constants'
-import Layout from '../layout/Layout'
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import { SubProjectsData } from '../../constants/constants'
+import Layout from '../../layout/Layout'
 import dynamic from 'next/dynamic' //add
 
 //add
-const NativeVideo = dynamic(() => import('../components/NativeVideoPlayer'), { ssr: false })
+const NativeVideo = dynamic(() => import('../NativeVideoPlayer'), { ssr: false })
 
 function MernProject() {
 	return (
