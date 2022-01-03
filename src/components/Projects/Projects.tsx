@@ -18,7 +18,7 @@ import {
 	SectionDividerContainer,
 	SectionTitle,
 } from '../../styles/GlobalComponents'
-import { TitleContent, HeaderThree } from '../../pages/MernProject/MernProject'
+import { TitleContent, HeaderThree } from '../../pages/MernProject'
 import { projects } from '../../constants/constants'
 
 const Projects = () => (
