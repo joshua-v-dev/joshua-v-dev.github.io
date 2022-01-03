@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
@@ -19,9 +18,18 @@
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
 		"baseUrl": "/",
-		"paths": { "cloudinary": ["."], "@/components/*": ["components/*"] }
+		"paths": {
+			"cloudinary": ["."],
+			"@/components/*": ["components/*"]
+		},
+		"target": "es5"
 	},
-
-	"include": ["next-env.d.ts", "additional.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": [
+		"package.json, next-env.d.ts",
+		"additional.d.ts",
+		"**/*.ts",
+		"**/*.tsx, **/*.js",
+		"**/*.jsx"
+	],
 	"exclude": ["node_modules"]
 }
