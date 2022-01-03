@@ -19,8 +19,7 @@
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
 		"baseUrl": ".",
-		"paths": { "cloudinary": ["."] },
-		"@/components/*": ["components/*"]
+		"paths": { "cloudinary": ["."], "@/components/*": ["components/*"] }
 	},
 
 	"include": ["next-env.d.ts", "additional.d.ts", "**/*.ts", "**/*.tsx"],

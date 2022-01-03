@@ -1,5 +1,7 @@
 import { Transform } from 'stream'
 
+declare module 'cloudinary-video-player/dist/cld-video-player.min.js'
+
 declare module 'tsparticles'
 // Type definitions for react-tsparticles
 // Project: https://github.com/matteobruni/tsparticles

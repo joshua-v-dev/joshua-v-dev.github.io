@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { CloudinaryContext, Transformation, Video } from 'cloudinary-react'
+// import { CloudinaryContext, Transformation, Video } from 'cloudinary-video-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjectsData } from '../constants/constants'
-import { Layout } from '../layout/Layout'
+import Layout from '../layout/Layout'
+import dynamic from 'next/dynamic' //add
+
+//add
+const NativeVideo = dynamic(() => import('../components/NativeVideoPlayer'), { ssr: false })
 
 function MernProject() {
 	return (
@@ -16,26 +20,8 @@ function MernProject() {
 						<GridContainer key={i}>
 							<SectionTitle>Projects</SectionTitle>
 							<BlogCard key={i}>
-								<div>
-									{/* url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4' */}
-									<CloudinaryContext>
-										<Video cloudName='dpytkhyme'>
-											<Transformation width='200' crop='scale' angle='10' />
-											{/* config=
-											{{
-												file: {
-													attributes: {
-														controlsList: 'nodownload',
-														samesite: 'Lax',
-														secure: 'true',
-													},
-												},
-											}} */}
-										</Video>
-									</CloudinaryContext>
-								</div>
-								<Img src='{p.image}' />
-
+								<NativeVideo />
+								<Img src={`/${p.id}`} />
 								{/* CHECK TO FIX THIS IMAGE RENDER */}
 
 								<TitleContent>
@@ -66,6 +52,30 @@ function MernProject() {
 			</Section>
 		</Layout>
 	)
+}
+
+{
+	/* url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4' */
+}
+// <CloudinaryContext>
+// 	<Video cloudName='dpytkhyme'>
+// 		<Transformation width='200' crop='scale' angle='10' />
+{
+	/* config=
+											{{
+												file: {
+													attributes: {
+														controlsList: 'nodownload',
+														samesite: 'Lax',
+														secure: 'true',
+													},
+												},
+											}} */
+}
+{
+	/* </Video>
+									</CloudinaryContext>
+								</div> */
 }
 
 // export const Reactplayer = styled.video`
