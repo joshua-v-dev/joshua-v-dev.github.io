@@ -1,11 +1,6 @@
 import React from 'react'
 import MernProject from '../MernProject/MernProject'
-import { IdProvider } from '@radix-ui/react-id'
 
-const ProjectsPage = () => (
-	<IdProvider>
-		<MernProject />
-	</IdProvider>
-)
+const ProjectsPage = () => <MernProject />
 
 export default ProjectsPage

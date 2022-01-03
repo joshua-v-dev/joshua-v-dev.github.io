@@ -3,7 +3,6 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
-import { IdProvider } from '@radix-ui/react-id'
 import { projects } from '../../constants/constants'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { ParsedUrlQuery } from 'querystring'
@@ -14,13 +13,11 @@ interface IParams extends ParsedUrlQuery {
 
 const Details = ({ htmlString }: { htmlString: any }) => {
 	return (
-		<IdProvider>
-			<>
-				<h1>Projects Page</h1>
-				<pre>{projects}</pre>
-				<div dangerouslySetInnerHTML={{ __html: htmlString }} />
-			</>
-		</IdProvider>
+		<>
+			<h1>Projects Page</h1>
+			<pre>{projects}</pre>
+			<div dangerouslySetInnerHTML={{ __html: htmlString }} />
+		</>
 	)
 }
 export const getStaticPaths: GetStaticPaths = async () => {
