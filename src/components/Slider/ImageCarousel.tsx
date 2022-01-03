@@ -14,15 +14,15 @@ import {
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import { CardInfo, ExternalLinks, Hr, Tag, TagList, UtilityList } from '../Projects/ProjectsStyles'
-import { TitleContent, HeaderThree } from '../../../src/pages/MernProject'
+import { TitleContent, HeaderThree } from '../../pages/MernProject'
 import { SectionDivider, SectionDividerContainer } from '../../styles/GlobalComponents'
 
 const ImageCarousel = () => {
 	return (
 		<>
 			<SectionDividerContainer>
-				<SectionDivider divider />
-				<CarouselTitle main>Projects</CarouselTitle>
+				<SectionDivider />
+				<CarouselTitle>Projects</CarouselTitle>
 			</SectionDividerContainer>
 
 			<CarouselProvider
@@ -35,7 +35,7 @@ const ImageCarousel = () => {
 						<Slider>
 							{projects.map((p, i) => {
 								return (
-									<Slide key={i}>
+									<Slide key={i} index={undefined}>
 										<CarouselCard>
 											<SliderImage>
 												<Img src={p.image} />
