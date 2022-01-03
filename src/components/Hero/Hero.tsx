@@ -20,8 +20,8 @@ const Hero = () => (
 					<Link href={'/ProjectsPage'}>
 						<a>
 							<Button
-								alt={undefined}
-								form={undefined}
+								alt={null}
+								form={null}
 								disabled={false}
 								onClick={function (): void {
 									throw new Error('Function not implemented.')
