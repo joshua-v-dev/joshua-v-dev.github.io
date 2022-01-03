@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from '../Hero/Hero'
+
 import { Section } from '../../styles/GlobalComponents/index'
-import { LeftSection, RightSection, HeroSection } from '../Hero/HeroStyles'
+import { RightSection } from '../Hero/HeroStyles'
 
 const BackgroundAnimation = () => (
 	<Section>

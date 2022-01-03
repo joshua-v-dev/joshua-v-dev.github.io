@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import '../../themes/default'
 
 export const Navigation = styled.nav`
-	width: 100%;
 	display: flex;
 	margin-bottom: 2rem;
 	margin-top: 1rem;
 	z-index: 1000;
+	opacity: 1;
+	background-color: black;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		z-index: 200;
 	}

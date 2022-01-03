@@ -8,9 +8,9 @@ const GlassCard = () => {
 			<CardContainer>
 				<div className='Card'>
 					<div className='cardSideFront'>
-						<div className='cardPicture cardPicture1'> &nbsp; </div>
+						<div className='cardPictureCardPicture1'> &nbsp; </div>
 						<h4 className='cardHeading'>
-							<span className='cardHeadingSpan cardHeadingSpan1'>The Sea Explorer</span>
+							<span className='cardHeadingSpanCardHeadingSpan1'>The Sea Explorer</span>
 						</h4>
 						<div className='cardDetails'>
 							<ul>
@@ -22,7 +22,7 @@ const GlassCard = () => {
 							</ul>
 						</div>
 					</div>
-					<div className='cardSideBack cardSideBack1'>
+					<div className='cardSideBackCardSideBack1'>
 						<div className='cardCta'>
 							<div className='cardPriceBox'>
 								<p className='cardPriceOnly'>Only</p>
@@ -52,7 +52,7 @@ const GlassCard = () => {
 							</ul>
 						</div>
 					</div>
-					<div className='cardSide cardSideBack cardSideBack2'>
+					<div className='cardSideCardSideBack cardSideBack2'>
 						<div className='cardCta'>
 							<div className='cardPriceBox'>
 								<p className='cardPriceOnly'>Only</p>
@@ -82,7 +82,7 @@ const GlassCard = () => {
 							</ul>
 						</div>
 					</div>
-					<div className='cardSide cardSideBack cardSideBack3'>
+					<div className='cardSideCardSideBackCardSideBack3'>
 						<div className='cardCta'>
 							<div className='cardPriceBox'>
 								<p className='cardPriceOnly'>Only</p>

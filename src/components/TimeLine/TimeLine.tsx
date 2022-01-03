@@ -14,7 +14,7 @@ import { TimeLineData } from '../../constants/constants'
 
 const Timeline = () => {
 	const [currentIndex, setCurrentIndex] = React.useState(0)
-	const scroll = (
+	const scrollTo = (
 		node: { scroll: (arg0: { left: any; behavior: string }) => any },
 		left: number,
 	) => {
@@ -32,7 +32,7 @@ const Timeline = () => {
 		if (carouselRef.current) {
 			const scrollLeft = Math.floor(carouselRef.current * 0.7 * (i / TimeLineData.length - 1))
 
-			scrollTo(carouselRef.current, scrollLeft)
+			scroll(carouselRef.current, scrollLeft)
 		}
 	}
 
@@ -51,7 +51,7 @@ const Timeline = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			scrollTo(carouselRef.current, 0)
+			scroll(carouselRef.current, 0)
 		}
 
 		window.addEventListener('resize', handleResize)
