@@ -19,6 +19,7 @@
 		"cloudinary-video-player": "^1.5.9",
 		"css-loader": "^4.27.0 || ^5.0.0",
 		"gray-matter": "^4.0.3",
+		"install-peers": "^1.0.3",
 		"marked": "^4.0.8",
 		"next": "^12.0.4",
 		"nth-check": "2.0.1",
@@ -44,6 +45,7 @@
 		"@types/styled-components": "^5.1.15",
 		"eslint": "7.32.0",
 		"eslint-config-next": "12.0.4",
+		"pac-resolver": ">=5.0.0",
 		"style-loader": "^3.3.1",
 		"ts-node": "^10.4.0",
 		"typescript": "^4.5.4"

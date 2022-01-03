@@ -18,7 +18,7 @@
 		"noImplicitThis": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
-		"baseUrl": ".",
+		"baseUrl": "/",
 		"paths": { "cloudinary": ["."], "@/components/*": ["components/*"] }
 	},
 
