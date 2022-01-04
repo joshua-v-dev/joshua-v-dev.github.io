@@ -29,7 +29,8 @@
 		"additional.d.ts",
 		"**/*.ts",
 		"**/*.tsx, **/*.js",
-		"**/*.jsx"
+		"**/*.jsx",
+		"src/components/Footer/FooterStyles.tsx"
 	],
 	"exclude": ["node_modules"]
 }
