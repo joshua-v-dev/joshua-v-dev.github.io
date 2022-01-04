@@ -4789,7 +4789,7 @@
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
 
-"react-dom@^16.8 || ^17.0", "react-dom@^17.0.2", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>= 16.8.0", "react-dom@>=16.6.0", "react-dom@>=16.8", "react-dom@15.x || 16.x || 17.x":
+"react-dom@*", "react-dom@^16.8 || ^17.0", "react-dom@^17.0.2", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>= 16.8.0", "react-dom@>=16.6.0", "react-dom@>=16.8", "react-dom@15.x || 16.x || 17.x":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -6193,13 +6193,13 @@
   "resolved" "file:workspace-a"
   "version" "1.0.0"
   dependencies:
-    "cross-env" "5.0.5"
+    "cross-env" "5.2.1"
 
 "workspace-b@file:C:\\Users\\joshu\\Apps\\joshua-v-dev.github.io\\workspace-b":
   "resolved" "file:workspace-b"
   "version" "1.0.0"
   dependencies:
-    "cross-env" "5.0.5"
+    "cross-env" "5.2.1"
     "workspace-a" "1.0.0"
 
 "wrappy@1":
