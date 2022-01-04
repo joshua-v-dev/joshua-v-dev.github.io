@@ -1,3 +1,4 @@
+// import Particles from '../components/Particles/index.tsx';
 import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation.js'
 import Hero from '../components/Hero/Hero'
 import Projects from '../components/Projects/Projects'
@@ -11,6 +12,7 @@ import GlassCard from '../components/GlassCard/GlassCard'
 const Home = () => {
 	return (
 		<Layout>
+			{/* <Particles /> */}
 			<BackgroundAnimation />
 			<Hero />
 			<GlassCard />

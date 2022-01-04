@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Section } from '../../styles/GlobalComponents/index'
 import { RightSection } from '../Hero/HeroStyles'
 
