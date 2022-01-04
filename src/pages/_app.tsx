@@ -1,4 +1,4 @@
-import 'react-devtools'
+// import 'react-devtools'
 import React from 'react'
 import Theme from '../styles/theme'
 import type { AppProps } from 'next/app'
