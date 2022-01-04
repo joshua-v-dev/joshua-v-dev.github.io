@@ -1,3 +1,4 @@
+import 'react-devtools'
 import React from 'react'
 
 import Particles from '../components/Particles/index'
