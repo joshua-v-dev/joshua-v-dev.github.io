@@ -7,7 +7,6 @@ export const HeroSection = styled.div`
 	padding: 0;
 	position: relative;
 	margin: 0 auto 0 auto;
-	z-index: 100;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		position: relative;
@@ -19,7 +18,6 @@ export const HeroSection = styled.div`
 		align-items: center;
 		flex-direction: column;
 		margin: 0 auto;
-		z-index: 100;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		position: relative;
@@ -39,7 +37,7 @@ export const LeftSection = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex: 1;
-		z-index: 1000;
+
 		overflow: hidden;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -55,7 +53,6 @@ export const RightSection = styled.div`
 	flex: 0;
 	position: absolute;
 	transform: translateX(-35%);
-	z-index: 0;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100vw;

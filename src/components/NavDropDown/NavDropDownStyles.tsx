@@ -9,7 +9,7 @@ export const DropDownContainer = styled.div`
 	width: 280px;
 	background-color: #fff;
 	border-radius: 8px;
-	z-index: 100;
+
 	padding: 4px 0;
 	cursor: default;
 	overflow: hidden;

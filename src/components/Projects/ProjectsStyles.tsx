@@ -58,7 +58,7 @@ export const BlogCard = styled.div`
 	height: 100%;
 	text-align: center;
 	position: relative;
-	z-index: 100;
+
 	background: ${(props) => props.theme.colors.accent14};
 	box-shadow: 2rem 4rem 5rem 2rem rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(7px);

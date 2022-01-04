@@ -34,7 +34,7 @@ export const SectionTitle = styled.h2`
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	z-index: 1000;
+
 	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.02);
 
 	@media ${(props) => props.theme.breakpoints.md} {
@@ -48,8 +48,6 @@ export const SectionTitle = styled.h2`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		z-index: 1000;
-		// height: ${(props) => (props ? '15rem' : '5rem')};
 		font-size: ${(props) => (props ? '6rem' : '3.5rem')};
 		line-height: ${(props) => (props ? '7rem' : '4.5rem')};
 		margin-bottom: 0.8rem;
@@ -61,12 +59,9 @@ export const SectionText = styled.p`
 	font-size: 6rem;
 	line-height: 7rem;
 	font-weight: 700;
-
-	// padding: ${(props) => (props ? '0 0 0 10rem' : '0')};
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1000;
 
 	color: ${(props) => props.theme.colors.accent4};
 
@@ -80,17 +75,14 @@ export const SectionText = styled.p`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		font-size: 2.5rem;
 		line-height: 5rem;
-		// padding: 3.5rem 10rem;
 		width: 100%;
 		postion: relative;
-		z-index: 1000;
 	}
 `
 export const SectionDividerContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 100;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		height: 0.4rem;
@@ -114,7 +106,7 @@ export const SectionDivider = styled.div`
 			: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
 	margin: ${(props) => (props ? '0 10rem 10rem ' : '')};
-	z-index: 100;
+
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 4.8rem;
 		height: 0.4rem;

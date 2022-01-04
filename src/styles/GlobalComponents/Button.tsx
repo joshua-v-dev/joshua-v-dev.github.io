@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ButtonBack, ButtonFront } from './index'
+import { ButtonBack, ButtonFront } from '../GlobalComponents/index'
 
 const Button = (props: {
 	alt: any

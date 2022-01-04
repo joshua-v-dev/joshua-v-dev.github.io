@@ -70,10 +70,8 @@ export const SliderWrapper = styled.div`
 	overflow: hidden;
 	position: relative;
 	width: 70%;
-	// height: 60%;
 	background: white;
 	background: ${(props) => props.theme.colors.background1};
-	z-index: 100;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 90vw;
@@ -83,20 +81,19 @@ export const SliderWrapper = styled.div`
 export const Img = styled.img`
 	display: grid;
 	border-radius: 2rem 2rem 1rem 1rem;
-	width: 100%;
+
 	object-fit: scale-down;
 	overflow: hidden;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
 		border-radius: 2rem 2rem 0.2rem 0.2rem;
-		width: 100%;
+
 		object-fit: cover;
-		// z-index: 1000;
 	}
 `
 export const CarouselCard = styled.div`
 	display: flex;
-	max-width: 40rem;
+	object-fit: cover;
 	flex-direction: column;
 	padding: 1rem;
 	justify-content: center;
@@ -113,13 +110,12 @@ export const CarouselCard = styled.div`
 	border: 1rem solid rgba(255, 255, 255, 0.5);
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
+		display: flex;
+		object-fit: cover;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		object-fit: cover;
-
-		// z-index: 100;
 	}
 `
 export const CarouselTitle = styled.h2`
@@ -131,7 +127,7 @@ export const CarouselTitle = styled.h2`
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	z-index: 1000;
+
 	margin-top: 10rem;
 	@media ${(props) => props.theme.breakpoints.md} {
 		margin-bottom: 1.2rem;
@@ -145,6 +141,5 @@ export const CarouselTitle = styled.h2`
 		margin-bottom: 0.8rem;
 
 		position: absolute;
-		z-index: 1000;
 	}
 `

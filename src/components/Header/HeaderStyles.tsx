@@ -4,13 +4,16 @@ import '../../themes/default'
 
 export const Navigation = styled.nav`
 	display: flex;
-	margin-bottom: 2rem;
-	margin-top: 1rem;
-	z-index: 1000;
-	opacity: 1;
 	background-color: black;
+	overflow: hidden;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		z-index: 200;
+		display: grid;
+
+		align-items: grid-end;
+		position: absolute;
+		grid-auto-flow: row;
+
+		object-fit: cover;
 	}
 `
 

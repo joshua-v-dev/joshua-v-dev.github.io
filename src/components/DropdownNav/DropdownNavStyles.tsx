@@ -13,7 +13,6 @@ export const DropdownNavStyles = styled.div`
 		.trigger {
 			visibility: visible;
 			position: absolute;
-			z-index: 2000;
 
 			background: ${({ key }) =>
 				key === 'home'

@@ -6,12 +6,15 @@ import { Container } from '../components/Header/HeaderStyles'
 
 export default function Layout({ children }: { children: any }, { ...props }): JSX.Element {
 	return (
-		<Container>
-			<Header />
-			<Container {...children}>
-				<main>{props.children}</main>
+		<>
+			<Container>
+				<Header />
+				<Container>
+					{children}
+					<main>{props.children}</main>
+				</Container>
+				<Footer />
 			</Container>
-			<Footer />
-		</Container>
+		</>
 	)
 }
