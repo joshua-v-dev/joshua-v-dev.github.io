@@ -1,5 +1,7 @@
+import React from 'react'
+
 // import Particles from '../components/Particles/index.tsx';
-import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation.js'
+import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation'
 import Hero from '../components/Hero/Hero'
 import Projects from '../components/Projects/Projects'
 import Acomplishments from '../components/Acomplishments/Acomplishments'
