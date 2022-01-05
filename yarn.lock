@@ -1040,15 +1040,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:^1.2.6":
-  version: 1.2.6
-  resolution: "@stitches/react@npm:1.2.6"
-  peerDependencies:
-    react: ">= 16.3.0"
-  checksum: 416088cdde17a22d6cdb04cf1cf756c6e5fc291dd7e41f82ce422bb95432ad32b6d990e7264d996d367c40bbc674d61be087e4e1f7b23eea7f81ef6266373a9c
-  languageName: node
-  linkType: hard
-
 "@szmarczak/http-timer@npm:^1.1.2":
   version: 1.1.2
   resolution: "@szmarczak/http-timer@npm:1.1.2"
@@ -7226,7 +7217,6 @@ __metadata:
     "@radix-ui/react-dropdown-menu": ^0.1.4
     "@radix-ui/react-icons": ^1.0.3
     "@radix-ui/react-id": ^0.1.4
-    "@stitches/react": ^1.2.6
     "@types/marked": ^4.0.1
     "@types/node": ^17.0.7
     "@types/react": ^17.0.38
