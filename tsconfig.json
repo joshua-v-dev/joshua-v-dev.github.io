@@ -30,7 +30,11 @@
 		"**/*.ts",
 		"**/*.tsx, **/*.js",
 		"**/*.jsx",
-		"src/components/Footer/FooterStyles.tsx"
+		"src/components/Footer/FooterStyles.tsx",
+		"src/themes/default.tsx",
+		"src/styles/GlobalComponents/index.tsx",
+		"src/components/Technologies/TechnologiesStyles.tsx",
+		"src/components/GlassCard/GlassCardStyles.tsx"
 	],
 	"exclude": ["node_modules"]
 }
