@@ -6,13 +6,6 @@ export const Img = styled.img`
 	width: 100%;
 	object-fit: cover;
 	overflow: hidden;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		justify-content: flex-start;
-
-		border-radius: 3rem 0 3rem 3rem;
-		overflow: hidden;
-	}
 `
 
 export const GridContainer = styled.section`
@@ -28,24 +21,11 @@ export const GridContainer = styled.section`
 	object-fit: cover;
 	overflow: hidden;
 	position: relative;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		flex-direction: column;
-
-		// width: 100%;
-		// padding: 2rem;
-	}
 `
 export const CardContainer = styled.div`
 	width: 100%;
 	display: grid;
 	grid-auto-flow: row;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
 `
 
 export const BlogCard = styled.div`
@@ -58,20 +38,11 @@ export const BlogCard = styled.div`
 	height: 100%;
 	text-align: center;
 	position: relative;
-
-	background: ${(props) => props.theme.colors.accent14};
+	background: blue;
 	box-shadow: 2rem 4rem 5rem 2rem rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(7px);
 	border-radius: 3rem;
 	border: 1rem solid rgba(255, 255, 255, 0.5);
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100%;
-	}
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
-		overflow: hidden;
-	}
 `
 
 export const Hr = styled.hr`
@@ -79,12 +50,12 @@ export const Hr = styled.hr`
 	height: 0.5rem;
 	margin: 2rem auto;
 	border: 0;
-	background: ${(props) => props.theme.colors.background3};
+	background: blue;
 `
 
 export const Intro = styled.div`
-	width: 100%;
-	color: ${(props) => props.theme.colors.accent2};
+	object-fit: cover;
+	color: red;
 	font-family: 'Droid Serif', serif;
 	font-size: 1.5rem;
 	font-style: italic;
@@ -92,9 +63,9 @@ export const Intro = styled.div`
 `
 
 export const CardInfo = styled.p`
-	width: 100%;
+	object-fit: cover;
 	padding: 0 5rem;
-	color: ${(props) => props.theme.colors.primary4};
+	color: blue;
 	font-style: 2rem;
 	font-size: 2rem;
 	line-height: 3rem;
@@ -104,10 +75,6 @@ export const CardInfo = styled.p`
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: 0.5rem;
-	}
 `
 
 export const UtilityList = styled.ul`
@@ -120,16 +87,16 @@ export const UtilityList = styled.ul`
 `
 
 export const ExternalLinks = styled.a`
-	color: ${(props) => props.theme.colors.background1};
+	color: red;
 	font-size: 1.7rem;
 	font-weight: 500;
 	padding: 1rem 1.5rem;
-	background: ${(props) => props.theme.colors.accent4};
+	background: blue;
 	border-radius: 1.5rem;
 	transition: 0.5s;
 
 	&:hover {
-		background: ${(props) => props.theme.colors.accent1};
+		background: red;
 	}
 `
 
@@ -139,20 +106,13 @@ export const TagList = styled.ul`
 	align-items: space-evenly;
 	justify-content: space-around;
 	padding: 2rem;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: 0.3rem;
-		display: flex;
-		align-items: space-evenly;
-		justify-content: space-around;
-	}
 `
 
 export const Tag = styled.li`
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	color: ${(props) => props.theme.colors.background3};
+	color: green;
 	font-weight: 500;
 	font-size: 2rem;
 `

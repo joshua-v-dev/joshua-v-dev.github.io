@@ -4,12 +4,12 @@ export const DropdownNavStyles = styled.div`
 	.trigger {
 		display: flex;
 		background-color: transparent;
-		color: ${(props) => props.theme.colors.accent4};
-		text-color: ${(props) => props.theme.colors.background2};
+		color: blue;
+		text-color: red;
 		visibility: hidden;
 	}
 
-	@media ${(props) => props.theme.breakpoints.sm} {
+
 		.trigger {
 			visibility: visible;
 			position: absolute;
@@ -25,13 +25,13 @@ export const DropdownNavStyles = styled.div`
 			justify-content: center;
 		}
 		.content {
-			color: ${(props) => props.theme.colors.accent4};
+			color: blue;
 		}
 		.item {
 			padding: 1rem 3rem;
 		}
 		.item:focus {
-			background-color: ${(props) => props.theme.colors.button2};
+			background-color:red;
 		}
 	}
 `

@@ -7,20 +7,6 @@ export const Boxes = styled.div`
 	gap: 2.4rem;
 	margin: 2.4rem 0 4rem;
 	padding: 3rem 3rem;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		gap: 1.6rem;
-		margin: 2rem 0 3.2rem;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
-		max-width: 500px;
-		margin: 2.4rem auto;
-	}
 `
 
 export const Box = styled.div`
@@ -28,23 +14,6 @@ export const Box = styled.div`
 	border-radius: 1.2rem;
 	height: 14.4rem;
 	padding: 2.4rem;
-	@media ${(props) => props.theme.breakpoints.lg} {
-		height: 21rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		height: 13.5rem;
-		padding: 1.6rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		height: 11rem;
-		padding: 1.2rem;
-
-		&:nth-child(2n) {
-			grid-row: 2;
-		}
-	}
 `
 export const BoxNum = styled.h5`
 	font-style: normal;
@@ -52,17 +21,8 @@ export const BoxNum = styled.h5`
 	font-size: 3.6rem;
 	line-height: 4rem;
 	letter-spacing: 0.01em;
-	color: ${(props) => props.theme.colors.accent9};
+	color: red;
 	margin-bottom: 0.8rem;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 2.8rem;
-		line-height: 3.2rem;
-	}
-	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 2.4rem;
-		line-height: 2.6rem;
-	}
 `
 
 export const BoxText = styled.p`
@@ -71,17 +31,7 @@ export const BoxText = styled.p`
 	font-size: 1.8rem;
 	line-height: 2.4rem;
 	letter-spacing: 0.02em;
-	color: ${(props) => props.theme.colors.accent4};
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 1.6rem;
-		line-height: 2rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 1rem;
-		line-height: 1.4rem;
-	}
+	color: red;
 `
 
 export const Join = styled.div`
@@ -90,19 +40,6 @@ export const Join = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 8rem;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		display: flex;
-		justify-content: center;
-		padding-bottom: 6.4rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-bottom: 3.2rem;
-	}
 `
 
 export const JoinText = styled.h5`
@@ -110,7 +47,7 @@ export const JoinText = styled.h5`
 	font-size: 2.4rem;
 	line-height: 4rem;
 	letter-spacing: 0.02em;
-	color: ${(props) => props.theme.colors.accent1};
+	color: red;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		line-height: 3.2rem;

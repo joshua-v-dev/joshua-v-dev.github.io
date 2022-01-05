@@ -15,13 +15,6 @@ export const DropDownContainer = styled.div`
 	overflow: hidden;
 	transition: 0.3s ease;
 	transform-origin: top;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		top: 32px;
-	}
-	@media ${(props) => props.theme.breakpoints.sm} {
-		top: 24px;
-	}
 `
 export const DropDownItem = styled.a`
 	width: 100%;

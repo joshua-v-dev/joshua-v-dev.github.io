@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import { ButtonNext, ButtonBack } from 'pure-react-carousel'
 import { rgba } from 'polished'
+import { getEnvironmentData } from 'worker_threads'
 
 export const PageContainer = styled.div`
 	margin: 0 auto;
@@ -10,14 +11,6 @@ export const PageContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		margin: 0 auto;
-		display: flex;
-		flex: 1;
-		max-width: 100vw;
-		max-height: 100vh;
-	}
 `
 export const SliderImage = styled.div`
 	background-position: center;
@@ -33,14 +26,6 @@ export const Nav = styled.nav`
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		position: relative;
-		transform: translateY(-50%);
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		// background: transparent;
-	}
 `
 
 export const sharedStyles = css`
@@ -71,12 +56,7 @@ export const SliderWrapper = styled.div`
 	position: relative;
 	width: 70%;
 	background: white;
-	background: ${(props) => props.theme.colors.background1};
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 90vw;
-		max-height: 100vh;
-	}
+	background: blue;
 `
 export const Img = styled.img`
 	display: grid;
@@ -84,12 +64,6 @@ export const Img = styled.img`
 
 	object-fit: scale-down;
 	overflow: hidden;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: grid;
-		border-radius: 2rem 2rem 0.2rem 0.2rem;
-
-		object-fit: cover;
-	}
 `
 export const CarouselCard = styled.div`
 	display: flex;
@@ -102,44 +76,18 @@ export const CarouselCard = styled.div`
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	background: ${(props) => props.theme.colors.accent4};
+	background: blue;
 	box-shadow: 2rem 4rem 5rem 2rem rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(7px);
 	border-radius: 3rem;
-	broder-bottom: 1rem solid ${(props) => props.theme.colors.accent14};
-	border: 1rem solid rgba(255, 255, 255, 0.5);
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		display: flex;
-		object-fit: cover;
-	}
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		object-fit: cover;
-	}
 `
 export const CarouselTitle = styled.h2`
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-
 	margin-top: 10rem;
-	@media ${(props) => props.theme.breakpoints.md} {
-		margin-bottom: 1.2rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		margin-bottom: 0.8rem;
-
-		position: absolute;
-	}
 `

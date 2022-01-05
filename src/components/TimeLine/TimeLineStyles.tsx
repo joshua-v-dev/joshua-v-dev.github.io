@@ -27,17 +27,7 @@ s
 		display: none;
 	}
 
-	@media ${(props) => props.theme.breakpoints.sm} {
-        display: flex;
-		flex-wrap:nowrap;
-        width:90vw;
-		overflow-x: scroll;
-		-webkit-overflow-scrolling: touch;
-		scroll-snap-type: x mandatory;
-		touch-action: pan-x;
-		justify-content: initial;
-		margin-bottom: 0.8rem;
-	}
+
 `
 export const CarouselMobileScrollNode = styled.div`
 	display: grid;
@@ -46,12 +36,6 @@ export const CarouselMobileScrollNode = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	grid-column-gap: 5rem;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
 `
 
 export const CarouselItem = styled.div`
@@ -61,27 +45,6 @@ export const CarouselItem = styled.div`
 	max-width: 55rem;
 	grid-auto-rows: minmax(25rem, auto);
 	grid-template-columns: repeat(5, 1fr);
-	@media ${(props) => props.theme.breakpoints.md} {
-		max-width: 12.4rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: grid;
-		grid-auto-rows: minmax(10rem, auto);
-		grid-template-columns: repeat(4, 1fr);
-		margin-left: 3.2rem;
-		// margin-bottom: 5rem;
-		min-width: 90vw;
-		background: #0e131f;
-		padding: 0.4rem;
-		align-content: center;
-		scroll-snap-align: start;
-		border-radius: 0.3rem;
-		overflow: hidden;
-		position: relative;
-		height: fit-content;
-		width: fit-content;
-	}
 `
 
 export const CarouselItemTitle = styled.h4`
@@ -99,18 +62,6 @@ export const CarouselItemTitle = styled.h4`
 	-webkit-text-fill-color: transparent;
 	margin-top: 4rem;
 	margin-bottom: 0.8rem;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 2rem;
-		line-height: 3rem;
-		margin-bottom: 0.4rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 3rem;
-		line-height: 3.5rem;
-		// margin-bottom: 3rem;
-	}
 `
 
 export const CarouselItemText = styled.p`
@@ -122,40 +73,12 @@ export const CarouselItemText = styled.p`
 	line-height: 3rem;
 	letter-spacing: 0.02em;
 	line-spacing: 1.5rem;
-	color: ${(props) => props.theme.colors.accent8};
-	// padding-right: 2rem;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		width: 100vw;
-		font-size: 2rem;
-		line-height: 1.8rem;
-		padding-right: 0;
-		margin-bottom: 10rem;
-	}
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 2rem;
-		line-height: 4rem;
-		line-spacing: 2rem;
-		// margin-bottom: 8rem;
-		// margin-right: 2rem;
-		// padding-bottom: 3rem;
-		padding-left: 3rem;
-		padding-right: 2rem;
-	}
+	color: red;
 `
 export const CarouselButtons = styled.div`
 	width: 28.8rem;
 	display: none;
 	visibility: hidden;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		visibility: visible;
-		margin-bottom: 4.8rem;
-	}
 `
 
 export const CarouselButton = styled.button`
@@ -172,7 +95,7 @@ export const CarouselButton = styled.button`
 `
 
 export const CarouselButtonDot = styled.div`
-	background-color: ${(props) => props.theme.colors.white};
+	background-color: white;
 	border-radius: 1rem;
 	margin: auto;
 	width: 0.3rem;

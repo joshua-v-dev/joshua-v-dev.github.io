@@ -7,7 +7,7 @@ import Layout from '../layout/Layout'
 import dynamic from 'next/dynamic' //add
 
 //add
-const NativeVideo = dynamic(() => import('../components/NativeVideoPlayer/NativeVideoPlayer.js'), {
+const NativeVideo = dynamic(() => import('../components/NativeVideoPlayer/NativeVideoPlayer'), {
 	ssr: true,
 })
 
@@ -104,26 +104,16 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
-	// grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 	padding: 3rem;
 	place-items: center;
 	column-gap: 2rem;
 	row-gap: 3rem;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		flex-direction: column;
-		padding: 2rem;
-		padding-bottom: 0;
-	}
 `
 export const BlogCard = styled.div`
 	border-radius: 10px;
 	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 	text-align: center;
 	width: 650px;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 100%;
-	}
 `
 export const TitleContent = styled.div`
 	text-align: center;
@@ -135,10 +125,6 @@ export const HeaderThree = styled.h3`
 	color: #9cc9e3;
 	padding: 0.5rem 0;
 	font-size: ${(props) => (props.title ? '3rem' : '2rem')};
-	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: 0.3rem;
-		font: 20px;
-	}
 `
 
 export const Hr = styled.hr`
@@ -166,9 +152,6 @@ export const CardInfo = styled.p`
 	font-style: 2rem;
 	line-height: 24px;
 	text-align: justify;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: 0.3rem;
-	}
 `
 
 export const UtilityList = styled.ul`
