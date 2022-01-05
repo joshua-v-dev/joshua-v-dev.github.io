@@ -1,4 +1,3 @@
-import 'react-devtools'
 import React, { useRef, useEffect } from 'react'
 import {
 	CarouselButton,
@@ -62,19 +61,17 @@ const Timeline = () => {
 			<SectionTitle>About Me</SectionTitle>
 			<SectionText>I am a self-taught developer with plenty of zest</SectionText>
 			<CarouselContainer onScroll={handleScroll}>
-				<>
-					{TimeLineData.map((item, index) => (
-						<CarouselMobileScrollNode key={index}>
-							<CarouselItemTitle>{item.year}</CarouselItemTitle>
-							<CarouselItem id={`carousel__item-${index}`} onClick={(e) => handleClick(e, index)}>
-								<CarouselItemText>{item.text}</CarouselItemText>
-							</CarouselItem>
-						</CarouselMobileScrollNode>
-					))}
-				</>
+				{TimeLineData.map((item, index) => (
+					<CarouselMobileScrollNode key={index}>
+						<CarouselItemTitle>{item.year}</CarouselItemTitle>
+						<CarouselItem id={`carousel__item-${index}`} onClick={(e) => handleClick(e, index)}>
+							<CarouselItemText>{item.text}</CarouselItemText>
+						</CarouselItem>
+					</CarouselMobileScrollNode>
+				))}
 			</CarouselContainer>
 
-			{TimeLineData.map((_item, index) => (
+			{TimeLineData.map((item, index) => (
 				<CarouselButton key={index} onClick={(e) => handleClick(e, index)} type='button'>
 					<CarouselButtonDot />
 				</CarouselButton>

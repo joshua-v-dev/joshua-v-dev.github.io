@@ -5,6 +5,7 @@ const NativeVideoPlayer = () => {
 	const cld = new Cloudinary({ cloud_name: 'dpytkhyme' })
 	useEffect(() => {
 		const videoPlayer = cld.videoPlayer('video-player', {
+			autoplay: true,
 			muted: true,
 			controls: true,
 		})

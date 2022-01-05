@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const HeroSection = styled.div`
 	display: grid;
 	grid-auto-flow: column;
-
 	padding: 0;
 	position: relative;
 	margin: 0 auto 0 auto;
@@ -15,6 +14,7 @@ export const LeftSection = styled.div`
 	justify-content: center;
 	position: relative;
 	margin: 0 auto;
+	color: #fff;
 `
 
 export const ButtonContainer = styled.div`
