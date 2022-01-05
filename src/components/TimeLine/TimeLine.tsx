@@ -1,8 +1,8 @@
+import 'react-devtools'
 import React, { useRef, useEffect } from 'react'
 import {
 	CarouselButton,
 	CarouselButtonDot,
-	CarouselButtons,
 	CarouselContainer,
 	CarouselItem,
 	CarouselItemText,
@@ -14,7 +14,7 @@ import { TimeLineData } from '../../constants/constants'
 
 const Timeline = () => {
 	const [currentIndex, setCurrentIndex] = React.useState(0)
-	const scrollTo = (
+	const scroll = (
 		node: { scroll: (arg0: { left: any; behavior: string }) => any },
 		left: number,
 	) => {
@@ -32,7 +32,7 @@ const Timeline = () => {
 		if (carouselRef.current) {
 			const scrollLeft = Math.floor(carouselRef.current * 0.7 * (i / TimeLineData.length - 1))
 
-			scroll(carouselRef.current, scrollLeft)
+			scrollTo(carouselRef.current, scrollLeft)
 		}
 	}
 
@@ -51,7 +51,7 @@ const Timeline = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			scroll(carouselRef.current, 0)
+			scrollTo(carouselRef.current, 0)
 		}
 
 		window.addEventListener('resize', handleResize)
