@@ -4,12 +4,8 @@ export const DropDownContainer = styled.div`
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	right: -25%;
-	top: 40px;
-	width: 280px;
 	background-color: #fff;
 	border-radius: 8px;
-
 	padding: 4px 0;
 	cursor: default;
 	overflow: hidden;
@@ -17,7 +13,7 @@ export const DropDownContainer = styled.div`
 	transform-origin: top;
 `
 export const DropDownItem = styled.a`
-	width: 100%;
+	object-fit: cover;
 	display: flex;
 	align-items: flex-start;
 	cursor: pointer;
@@ -56,7 +52,7 @@ export const DropDownItemTitle = styled.h2`
 
 export const DropDownItemDesc = styled.p`
 	color: #0f1624;
-	opacity: 0.5;
+
 	font-size: 14px;
 	line-height: 22px;
 	text-align: start;

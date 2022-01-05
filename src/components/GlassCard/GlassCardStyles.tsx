@@ -1,14 +1,11 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-	perspective: 150rem;
-	-moz-perspective: 150rem;
 	position: relative;
 	height: 52rem;
 `
 
 export const cardSide = styled.div`
-	height: 52rem;
 	transition: all 0.8s ease;
 	position: absolute;
 	top: 0;
@@ -131,10 +128,6 @@ export const cardDetailsUlLi = styled.li`
 
 export const cardCta = styled.div`
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 90%;
 	text-align: center;
 `
 export const cardPriceBox = styled.div`

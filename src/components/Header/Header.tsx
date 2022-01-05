@@ -3,20 +3,19 @@ import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { DiCssdeck } from 'react-icons/di'
 import DropdownNav from '../DropdownNav/DropdownNav'
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Navigation } from './HeaderStyles'
+import { Container, Div2, Div3, NavLink, SocialIcons, Navigation } from './HeaderStyles'
 
 const Header = () => (
 	<Container>
 		<DropdownNav />
 		<Navigation>
-			<Div1>
-				<Link href='/' passHref>
-					<a>
-						<DiCssdeck className='DiCssdeck_mobile' />
-						<span>Joshua&apos;s Stories</span>
-					</a>
-				</Link>
-			</Div1>
+			<Link href='/' passHref>
+				<a>
+					<DiCssdeck className='DiCssdeck_mobile' />
+					<span>Joshua&apos;s Stories</span>
+				</a>
+			</Link>
+
 			<Div2>
 				<li>
 					<Link href='#projects' passHref>

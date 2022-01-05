@@ -11,23 +11,16 @@ export const Navigation = styled.nav`
 `
 
 export const Container = styled.div`
-	width: 100%;
+	object-fit: cover;
 	padding: 0;
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-column-gap: 3rem;
-
-
-	}
 `
-export const Div1 = styled.div`
-	visibility: hidden;
 
-	}
-`
 export const Div2 = styled.div`
 	display: flex;
-	width: 100%;
+	object-fit: cover;
 	justify-content: flex-start;
 	align-content: center;
 	align-items: flex-end;

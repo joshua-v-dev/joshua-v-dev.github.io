@@ -16,15 +16,9 @@ export const LeftSection = styled.div`
 	position: relative;
 	margin: 0 auto;
 `
-export const RightSection = styled.div`
-	width: 100vw;
-	display: flex;
-	flex: 0;
-	position: absolute;
-	transform: translateX(-35%);
-`
+
 export const ButtonContainer = styled.div`
-	width: 100%;
+	object-fit: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
