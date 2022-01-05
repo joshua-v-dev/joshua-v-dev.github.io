@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 // import { CloudinaryContext, Transformation, Video } from 'cloudinary-video-player'
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
 import { SubProjectsData } from '../constants/constants'
@@ -40,11 +39,7 @@ function MernProject() {
 
 								<CardInfo className='card-info'>{p.description}</CardInfo>
 								<div>
-									<SectionTitle>
-										<br />
-										<br />
-										Stack
-									</SectionTitle>
+									<SectionTitle>Stack</SectionTitle>
 									<TagList>
 										{p.tags.map((p, i) => {
 											return <Tag key={i}>{p}</Tag>
@@ -89,10 +84,3 @@ export default MernProject
 									</CloudinaryContext>
 								</div> */
 }
-
-// export const Reactplayer = styled.video`
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	controls: true;
-// `

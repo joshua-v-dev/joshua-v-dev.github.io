@@ -8,11 +8,7 @@ const Hero = () => (
 	<>
 		<Section>
 			<LeftSection>
-				<SectionTitle>
-					Joshua
-					<br />
-					Vaughn
-				</SectionTitle>
+				<SectionTitle>Joshua Vaughn</SectionTitle>
 				<SectionText>Full-Stack Web Developer</SectionText>
 
 				<ButtonContainer>

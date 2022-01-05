@@ -18,10 +18,7 @@ const Technologies = () => (
 				</picture>
 				<ListContainer>
 					<ListTitle>Front-End</ListTitle>
-					<ListParagraph>
-						Experiece with <br />
-						React.js
-					</ListParagraph>
+					<ListParagraph>Experiece with React.js</ListParagraph>
 				</ListContainer>
 			</ListItem>
 			<ListItem>
@@ -30,10 +27,7 @@ const Technologies = () => (
 				</picture>
 				<ListContainer>
 					<ListTitle>Back-End</ListTitle>
-					<ListParagraph>
-						Experience with <br />
-						Node and Databases
-					</ListParagraph>
+					<ListParagraph>Experience with Node and Databases</ListParagraph>
 				</ListContainer>
 			</ListItem>
 			<ListItem>
@@ -43,8 +37,7 @@ const Technologies = () => (
 				<ListContainer>
 					<ListTitle>UI/UX</ListTitle>
 					<ListParagraph>
-						Experience with <br />
-						tools for the Think, Design, and Build process
+						Experience with tools for the Think, Design, and Build process
 					</ListParagraph>
 				</ListContainer>
 			</ListItem>

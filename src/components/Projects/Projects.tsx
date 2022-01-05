@@ -6,7 +6,6 @@ import {
 	CardInfo,
 	ExternalLinks,
 	GridContainer,
-	Hr,
 	Tag,
 	TagList,
 	UtilityList,
@@ -38,11 +37,7 @@ const Projects = () => (
 								</>
 								<CardInfo className='card-info'>{p.description}</CardInfo>
 
-								<SectionTitle>
-									<br />
-									<br />
-									Stack
-								</SectionTitle>
+								<SectionTitle>Stack</SectionTitle>
 
 								<TagList>
 									{p.tags.map((t, i) => {
