@@ -73,13 +73,13 @@ const Timeline = () => {
 					))}
 				</>
 			</CarouselContainer>
-			<CarouselButtons>
-				{TimeLineData.map((_item, index) => (
-					<CarouselButton key={index} onClick={(e) => handleClick(e, index)} type='button'>
-						<CarouselButtonDot />
-					</CarouselButton>
-				))}
-			</CarouselButtons>
+
+			{TimeLineData.map((_item, index) => (
+				<CarouselButton key={index} onClick={(e) => handleClick(e, index)} type='button'>
+					<CarouselButtonDot />
+				</CarouselButton>
+			))}
+
 			<SectionDivider />
 		</Section>
 	)

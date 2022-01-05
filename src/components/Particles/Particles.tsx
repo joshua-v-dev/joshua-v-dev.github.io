@@ -7,7 +7,7 @@ export default function ParticleAnimation() {
 			options={{
 				fullScreen: {
 					enable: true,
-					zIndex: 99,
+					zIndex: 100,
 				},
 				particles: {
 					number: {

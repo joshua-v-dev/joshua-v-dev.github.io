@@ -24,7 +24,7 @@ export const CarouselMobileScrollNode = styled.div`
 export const CarouselItem = styled.div`
 	background: #0f1624;
 	border-radius: 0.3rem;
-	max-width: 55rem;
+	object-fit: cover;
 	grid-auto-rows: minmax(25rem, auto);
 	grid-template-columns: repeat(5, 1fr);
 `

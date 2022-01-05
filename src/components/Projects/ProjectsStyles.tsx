@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Img = styled.img`
 	display: grid;
 	border-radius: 2rem 2rem 4rem 4rem;
-	width: 100%;
+
 	object-fit: cover;
 	overflow: hidden;
 `
@@ -11,8 +11,7 @@ export const Img = styled.img`
 export const GridContainer = styled.section`
 	display: grid;
 	justify-content: center;
-	max-width: 100%;
-	max-height: 100%;
+	object-fit: cover;
 	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
 	padding: 3rem 3rem;
 	place-items: center;
@@ -23,7 +22,7 @@ export const GridContainer = styled.section`
 	position: relative;
 `
 export const CardContainer = styled.div`
-	width: 100%;
+	object-fit: cover;
 	display: grid;
 	grid-auto-flow: row;
 `
@@ -34,8 +33,7 @@ export const BlogCard = styled.div`
 	grid-template-columns: 1fr;
 	grid-template-gap: 1rem;
 	padding: 1rem;
-	width: 80%;
-	height: 100%;
+	object-fit: cover;
 	text-align: center;
 	position: relative;
 	background: blue;
@@ -46,8 +44,7 @@ export const BlogCard = styled.div`
 `
 
 export const Hr = styled.hr`
-	width: 5.5rem;
-	height: 0.5rem;
+	object-fit: cover;
 	margin: 2rem auto;
 	border: 0;
 	background: blue;

@@ -49,7 +49,7 @@ export const ListParagraph = styled.p`
 `
 
 export const ListItem = styled.li`
-	max-width: 100vw;
+	object-fit: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: space-evenly;

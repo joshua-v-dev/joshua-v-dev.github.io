@@ -32,9 +32,9 @@ const Projects = () => (
 						return (
 							<BlogCard key={i}>
 								<Img src={p.image} />
-								<>
-									<SectionTitle title='true'>{p.title}</SectionTitle>
-								</>
+
+								<SectionTitle title='true'>{p.title}</SectionTitle>
+
 								<CardInfo className='card-info'>{p.description}</CardInfo>
 
 								<SectionTitle>Stack</SectionTitle>

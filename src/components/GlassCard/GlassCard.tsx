@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardContainer } from '../Projects/ProjectsStyles'
-import './GlassCardStyles.tsx'
+import './GlassCardStyles'
 
 const GlassCard = () => {
 	return (

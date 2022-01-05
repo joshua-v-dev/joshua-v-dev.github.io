@@ -130,48 +130,23 @@ export const cardDetailsUlLi = styled.li`
 `
 
 export const cardCta = styled.div`
-	 
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 90%;
-		text-align: center;
-
-		@media ${(props) => props.theme.breakpoints.md} {
-			position: relative;
-			top: 0%;
-			left: 0;
-			transform: translate(0);
-			width: 100%;
-			padding: 7rem 4rem 4rem 4rem;
-		}
-	}
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	text-align: center;
 `
 export const cardPriceBox = styled.div`
-	 {
-		text-align: center;
-		color: #fff;
-		margin-bottom: 8rem;
-
-		@media ${(props) => props.theme.breakpoints.md} {
-			margin-bottom: 3rem;
-		}
-	}
+	text-align: center;
+	color: #fff;
+	margin-bottom: 8rem;
 `
 export const cardPriceOnly = styled.p`
-	 {
-		font-size: 1.4rem;
-		text-transform: uppercase;
-	}
+	font-size: 1.4rem;
+	text-transform: uppercase;
 `
 export const cardPriceValue = styled.p`
-	 {
-		font-size: 6rem;
-		font-weight: 100;
-
-		@media ${(props) => props.theme.breakpoints.md} {
-			font-size: 4rem;
-		}
-	}
+	font-size: 6rem;
+	font-weight: 100;
 `

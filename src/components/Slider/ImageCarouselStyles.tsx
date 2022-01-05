@@ -1,13 +1,11 @@
 import styled, { css } from 'styled-components'
 import { ButtonNext, ButtonBack } from 'pure-react-carousel'
 import { rgba } from 'polished'
-import { getEnvironmentData } from 'worker_threads'
 
 export const PageContainer = styled.div`
 	margin: 0 auto;
 	background: transparent;
 	object-fit: cover;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -23,14 +21,12 @@ export const Nav = styled.nav`
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
-	object-fit: cover;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 `
 
 export const sharedStyles = css`
-	// width: 50px;
-	// height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -54,14 +50,14 @@ export const BackButton = styled(ButtonBack)`
 export const SliderWrapper = styled.div`
 	overflow: hidden;
 	position: relative;
-	object-fit: cover;
+	width: 70%;
 	background: white;
 	background: blue;
 `
 export const Img = styled.img`
 	display: grid;
 	border-radius: 2rem 2rem 1rem 1rem;
-	object-fit:cover
+	object-fit: scale-down;
 	overflow: hidden;
 `
 export const CarouselCard = styled.div`
