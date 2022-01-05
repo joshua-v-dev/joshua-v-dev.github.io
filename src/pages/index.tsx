@@ -1,7 +1,7 @@
 // import 'react-devtools'
 import React from 'react'
 
-import Particles from '../components/Particles/index'
+// import Particles from '../components/Particles/index'
 import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation'
 import Hero from '../components/Hero/Hero'
 import Projects from '../components/Projects/Projects'
@@ -15,7 +15,7 @@ import GlassCard from '../components/GlassCard/GlassCard'
 const Home = () => {
 	return (
 		<Layout>
-			<Particles />
+			{/* <Particles /> */}
 			<BackgroundAnimation />
 			<Hero />
 			<GlassCard />

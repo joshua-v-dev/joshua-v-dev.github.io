@@ -5,14 +5,6 @@ export const Card = styled.div`
 	-moz-perspective: 150rem;
 	position: relative;
 	height: 52rem;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		height: auto;
-		border-radius: 3px;
-		hover: none;
-		background-color: #fff;
-		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-	}
 `
 
 export const cardSide = styled.div`
@@ -21,17 +13,12 @@ export const cardSide = styled.div`
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	object-fit: cover;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	border-radius: 3px;
 	overflow: hidden;
 	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-	@media ${(props) => props.theme.breakpoints.md} {
-		height: auto;
-		position: relative;
-		box-shadow: none;
-	}
 `
 
 export const cardSideFront = styled.div` 
@@ -45,11 +32,6 @@ export const cardSideBack = styled.div`
 
 	&:hover {
 		transform: rotateY(0deg);
-	}
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		transform: rotateY(0);
-		clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 	}
 `
 export const cardSideBack1 = styled.div`
@@ -94,7 +76,7 @@ export const cardHeading = styled.h4`
 	position: absolute;
 	top: 12rem;
 	right: 2rem;
-	width: 75%;
+	object-fit: scale-down;
 `
 export const cardHeadingSpan = styled.span`
 	padding: 1rem 1.5rem;
@@ -129,32 +111,26 @@ export const cardHeadingSpan3 = styled.span`
 	}
 `
 export const cardDetails = styled.div`
-	 {
-		padding: 3rem;
-
-		@media ${(props) => props.theme.breakpoints.md} {
-			padding: 1rem 3rem;
-		}
-	}
+	padding: 3rem;
 `
 export const cardDetailsUl = styled.ul`
 	 {
 		list-style: none;
-		width: 80%;
+		object-fit: cover;
 		margin: 0 auto;
 	}
 `
-export const cardDetailsUlLi = styled.li` {
+export const cardDetailsUlLi = styled.li` 
 	text-align: center;
 	font-size: 1.5rem;
 	padding: 1rem;
 
 	&:not(:last-child) {
 	border-bottom: 1px solid #eee;
-}`
+`
 
 export const cardCta = styled.div`
-	 {
+	 
 		position: absolute;
 		top: 50%;
 		left: 50%;

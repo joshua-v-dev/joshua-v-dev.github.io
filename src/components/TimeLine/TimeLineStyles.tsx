@@ -1,45 +1,27 @@
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
-margin: 0;
-    width: 100%;
-	height: 100%;
+	margin: 0;
+	object-fit: cover;
 	display: flex;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	background: #0f1624;
 	padding: 0;
 	list-style-type: space-counter;
 	justify-content: space-around;
 	align-items: space-around;
-    overflow-x: scroll;
-	/* overflow-x: hidden; */
-
-	// margin-left: 5rem;
-	// &:first-of-type {
-	// 	margin-left: 0;
-	// }
-
+	overflow-x: scroll;
 	margin-bottom: 8rem;
-s
-	//remove scrollbar
-	scrollbar-width: none;
-	&::-webkit-scrollbar {
-		display: none;
-	}
-
-
 `
 export const CarouselMobileScrollNode = styled.div`
 	display: grid;
 	grid-area: 1 / 1 / span 4 / span 3;
-	// flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 	grid-column-gap: 5rem;
 `
 
 export const CarouselItem = styled.div`
-	// border: 1px solid #e4e6e7;
 	background: #0f1624;
 	border-radius: 0.3rem;
 	max-width: 55rem;
@@ -74,11 +56,6 @@ export const CarouselItemText = styled.p`
 	letter-spacing: 0.02em;
 	line-spacing: 1.5rem;
 	color: red;
-`
-export const CarouselButtons = styled.div`
-	width: 28.8rem;
-	display: none;
-	visibility: hidden;
 `
 
 export const CarouselButton = styled.button`

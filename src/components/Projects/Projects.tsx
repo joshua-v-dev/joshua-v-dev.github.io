@@ -18,7 +18,6 @@ import {
 	SectionDividerContainer,
 	SectionTitle,
 } from '../../styles/GlobalComponents'
-import { TitleContent, HeaderThree } from '../../pages/MernProject'
 import { projects } from '../../constants/constants'
 
 const Projects = () => (
@@ -35,18 +34,15 @@ const Projects = () => (
 							<BlogCard key={i}>
 								<Img src={p.image} />
 								<>
-									<TitleContent>
-										<HeaderThree title='true'>{p.title}</HeaderThree>
-										<Hr />
-									</TitleContent>
+									<SectionTitle title='true'>{p.title}</SectionTitle>
 								</>
 								<CardInfo className='card-info'>{p.description}</CardInfo>
 
-								<TitleContent>
+								<SectionTitle>
 									<br />
 									<br />
 									Stack
-								</TitleContent>
+								</SectionTitle>
 
 								<TagList>
 									{p.tags.map((t, i) => {

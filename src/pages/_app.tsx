@@ -1,17 +1,5 @@
 // import 'react-devtools'
-// import Theme from '../styles/theme'
-// import type { AppProps } from 'next/app'
-//
-// function MyApp({ Component, pageProps }: AppProps) {
-// 	return (
-// 		<Theme>
-// 			<Component {...pageProps} />
-// 		</Theme>
-// 	)
-// }
-// export default MyApp
 
-// import App from "next/app";
 import type { AppProps /*, AppContext */ } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {

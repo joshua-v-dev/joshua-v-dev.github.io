@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Boxes = styled.div`
-	width: 100%;
+	object-fit: cover;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 2.4rem;
@@ -36,7 +36,7 @@ export const BoxText = styled.p`
 
 export const Join = styled.div`
 	display: flex;
-	max-width: 1040px;
+	object-fit: cover;
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 8rem;
@@ -48,24 +48,8 @@ export const JoinText = styled.h5`
 	line-height: 4rem;
 	letter-spacing: 0.02em;
 	color: red;
-
-	@media ${(props) => props.theme.breakpoints.md} {
-		line-height: 3.2rem;
-		font-size: 2rem;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 1.6rem;
-		line-height: 2.4rem;
-		margin: 0 0 1.6rem;
-	}
 `
 
 export const IconContainer = styled.div`
 	display: flex;
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 1.6rem;
-		justify-content: space-between;
-	}
 `
