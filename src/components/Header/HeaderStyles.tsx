@@ -65,28 +65,6 @@ export const NavLink = styled.a`
 	}
 `
 
-/// DropDown Contact
-export const ContactDropDown = styled.button`
-	border: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	background: none;
-	font-size: 1.7rem;
-	line-height: 3.2rem;
-	color: red;
-	cursor: pointer;
-	transition: 0.3s ease;
-
-	&:focus {
-		outline: none;
-	}
-	&:hover {
-		color: red;
-	}
-`
-
 // Social Icons
 
 export const SocialIcons = styled.a`

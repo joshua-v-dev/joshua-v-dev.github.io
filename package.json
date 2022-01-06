@@ -9,11 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@modulz/radix-icons": "^4.0.0",
 		"@netlify/plugin-nextjs": "^4.1.1",
-		"@radix-ui/react-dropdown-menu": "^0.1.4",
-		"@radix-ui/react-icons": "^1.0.3",
-		"@radix-ui/react-id": "^0.1.4",
 		"@yarnpkg/pnpify": "^3.1.1-rc.10",
 		"cloudinary-core": "^2.12.2",
 		"cloudinary-video-player": "^1.7.0",

@@ -2,12 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { DiCssdeck } from 'react-icons/di'
-import DropdownNav from '../DropdownNav/DropdownNav'
 import { Container, Div2, Div3, NavLink, SocialIcons, Navigation } from './HeaderStyles'
 
 const Header = () => (
 	<Container>
-		<DropdownNav />
 		<Navigation>
 			<Link href='/' passHref>
 				<a>
