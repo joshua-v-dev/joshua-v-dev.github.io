@@ -13,7 +13,6 @@
 		"@cloudinary/react": "^1.0.1",
 		"@cloudinary/url-gen": "^1.4.2",
 		"@netlify/plugin-nextjs": "^4.1.1",
-		"@types/estree": "^0.0.50",
 		"gray-matter": "^4.0.3",
 		"lodash": "^4.17.21",
 		"marked": "^4.0.9",
@@ -64,6 +63,6 @@
 	},
 	"engines": {
 		"node": ">= 14.0.0",
-		"npm": ">= 7.0.0"
+		"npm": ">= 6.0.0"
 	}
 }
