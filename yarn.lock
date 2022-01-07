@@ -949,7 +949,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^17.0.8":
+"@types/node@npm:*, @types/node@npm:^17.0.2":
   version: 17.0.8
   resolution: "@types/node@npm:17.0.8"
   checksum: f4cadeb9e602027520abc88c77142697e33cf6ac98bb02f8b595a398603cbd33df1f94d01c055c9f13cde0c8eaafc5e396ca72645458d42b4318b845bc7f1d0f
@@ -984,7 +984,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.11":
+"@types/react-dom@npm:^17.0.2":
   version: 17.0.11
   resolution: "@types/react-dom@npm:17.0.11"
   dependencies:
@@ -1005,7 +1005,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.38":
+"@types/react@npm:*, @types/react@npm:^17.0.2":
   version: 17.0.38
   resolution: "@types/react@npm:17.0.38"
   dependencies:
@@ -7440,9 +7440,9 @@ __metadata:
     "@npmcli/arborist": ^4.2.0
     "@types/marked": ^4.0.1
     "@types/minimatch": ^3.0.5
-    "@types/node": ^17.0.8
-    "@types/react": ^17.0.38
-    "@types/react-dom": ^17.0.11
+    "@types/node": ^17.0.2
+    "@types/react": ^17.0.2
+    "@types/react-dom": ^17.0.2
     "@types/styled-components": ^5.1.19
     "@yarnpkg/pnpify": ^3.1.1-rc.10
     autoprefixer: ^10.4.1
