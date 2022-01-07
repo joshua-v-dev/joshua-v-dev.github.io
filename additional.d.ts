@@ -1,8 +1,6 @@
 import { Transform } from 'stream'
 declare module 'react-devtools'
-declare module 'minimatch'
 declare module 'tsparticles'
-declare module '@next/bundle-analyzer'
 
 // Type definitions for react-tsparticles
 // Project: https://github.com/matteobruni/tsparticles
