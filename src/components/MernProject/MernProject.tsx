@@ -1,8 +1,8 @@
 import React from 'react'
 // import { CloudinaryContext, Transformation, Video } from 'cloudinary-video-player'
-import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents'
-import { SubProjectsData } from '../constants/constants'
-import Layout from '../layout/Layout'
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import { SubProjectsData } from '../../constants/constants'
+import Layout from '../../layout/Layout'
 import dynamic from 'next/dynamic' //add
 import {
 	CardInfo,
@@ -13,10 +13,10 @@ import {
 	ExternalLinks,
 	TagList,
 	Tag,
-} from '../components/Projects/ProjectsStyles'
+} from '../Projects/ProjectsStyles'
 
 //add
-const NativeVideo = dynamic(() => import('../components/NativeVideoPlayer/NativeVideoPlayer'), {
+const NativeVideo = dynamic(() => import('../NativeVideoPlayer/NativeVideoPlayer'), {
 	ssr: true,
 })
 
