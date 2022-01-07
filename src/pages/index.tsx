@@ -11,20 +11,26 @@ import Timeline from '../components/TimeLine/TimeLine'
 import Layout from '../layout/Layout'
 import ImageCarousel from '../components/Slider/ImageCarousel'
 import GlassCard from '../components/GlassCard/GlassCard'
+import ContactPage from './ContactPage'
+import AboutPage from './AboutPage'
 
 const Home = () => {
 	return (
-		<Layout>
-			<Particles />
-			<BackgroundAnimation />
-			<Hero />
-			<GlassCard />
-			<ImageCarousel />
-			<Projects />
-			<Technologies />
-			<Timeline />
-			<Acomplishments />
-		</Layout>
+		<React.StrictMode>
+			<Layout>
+				<Particles />
+				<BackgroundAnimation />
+				<Hero />
+				<GlassCard />
+				<ImageCarousel />
+				<Projects />
+				<Technologies />
+				<Timeline />
+				<Acomplishments />
+				<ContactPage />
+				<AboutPage />
+			</Layout>
+		</React.StrictMode>
 	)
 }
 

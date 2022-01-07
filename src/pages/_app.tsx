@@ -1,9 +1,22 @@
 // import 'react-devtools'
 
-import type { AppProps /*, AppContext */ } from 'next/app'
+import Head from 'next/head'
+import type { AppProps } from 'next/app'
+import 'twin.macro'
+import React, { Component } from 'react'
 
-function MyApp({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+	return (
+		<React.StrictMode>
+			<>
+				<Head>
+					<meta name='viewport' content='width=device-width, initial-scale=1' />
+				</Head>
+
+				<Component {...pageProps} />
+			</>
+		</React.StrictMode>
+	)
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -13,9 +26,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 // MyApp.getInitialProps = async (appContext: AppContext) => {
 // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
+// 	const appProps = await MyApp.getInitialProps(appContext)
 //
-//   return { ...appProps }
+// 	return (
+// 		<React.StrictMode>
+// 			<Component {...appProps} />
+// 		</React.StrictMode>
+// 	)
 // }
 
 export default MyApp

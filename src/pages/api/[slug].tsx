@@ -7,11 +7,13 @@ import { projects } from '../../constants/constants'
 
 const Details = ({ htmlString }: { htmlString: any }) => {
 	return (
-		<>
-			<h1>Projects Page</h1>
-			<pre>{projects}</pre>
-			<div dangerouslySetInnerHTML={{ __html: htmlString }} />
-		</>
+		<React.StrictMode>
+			<>
+				<h1>Projects Page</h1>
+				<pre>{projects}</pre>
+				<div dangerouslySetInnerHTML={{ __html: htmlString }} />
+			</>
+		</React.StrictMode>
 	)
 }
 

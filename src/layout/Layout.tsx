@@ -6,13 +6,15 @@ import { Container } from '../components/Header/HeaderStyles'
 
 export default function Layout({ children }: { children: any }, { ...props }): JSX.Element {
 	return (
-		<Container>
-			<Header />
+		<React.StrictMode>
 			<Container>
-				{children}
-				<main>{props.children}</main>
+				<Header />
+				<Container>
+					{children}
+					<main>{props.children}</main>
+				</Container>
+				<Footer />
 			</Container>
-			<Footer />
-		</Container>
+		</React.StrictMode>
 	)
 }

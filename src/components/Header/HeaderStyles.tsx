@@ -1,11 +1,11 @@
 import { IoIosArrowDropdown } from 'react-icons/io'
 import styled from 'styled-components'
-import '../../themes/default'
 
 export const Navigation = styled.nav`
 	display: flex;
 	background-color: black;
 	overflow: hidden;
+	z-index: 101;
 
 	}
 `

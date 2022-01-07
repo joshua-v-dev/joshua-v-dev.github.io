@@ -1,5 +1,6 @@
 import { Transform } from 'stream'
 declare module 'react-devtools'
+declare module 'minimatch'
 declare module 'cloudinary-video-player/dist/cld-video-player.min.js'
 declare module 'cloudinary-video-player/dist/cld-video-player.min.css'
 
