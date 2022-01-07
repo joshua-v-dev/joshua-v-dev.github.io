@@ -4163,6 +4163,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cross-env@npm:5.2.1":
+  version: 5.2.1
+  resolution: "cross-env@npm:5.2.1"
+  dependencies:
+    cross-spawn: ^6.0.5
+  bin:
+    cross-env: dist/bin/cross-env.js
+    cross-env-shell: dist/bin/cross-env-shell.js
+  checksum: 364f72482f0d6b65c6d560b942ce9da7e71ea66ec2eaa8226f7127b49094355277aadd23e6ff922c1d154a6ab1ad828ebc4ec8af9b44a39936d9013fb23ae4df
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:7.0.3, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -4185,7 +4197,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^6.0.0":
+"cross-spawn@npm:^6.0.0, cross-spawn@npm:^6.0.5":
   version: 6.0.5
   resolution: "cross-spawn@npm:6.0.5"
   dependencies:
@@ -13532,6 +13544,30 @@ __metadata:
   checksum: 2a44b2788165d0a3de71fd517d4880a8e20ea3a82c080ce46e294f0b68b69a2e49cff5f99c600e275c698a90d12c5ea32aff06c311f0db2eb3f1201f3e7b2a04
   languageName: node
   linkType: hard
+
+"workspace-a@npm:1.0.0":
+  version: 1.0.0
+  resolution: "workspace-a@npm:1.0.0"
+  checksum: c0b38bc75df332f908d45c42f70cae3453b8fc42e64bb7bdb5c64eb28c3e652f66d81c4bb2da642a008a2ae0f9ea7a833e607b9c54f617ee432244a0df489065
+  languageName: node
+  linkType: hard
+
+"workspace-a@workspace:packages/workspace-a":
+  version: 0.0.0-use.local
+  resolution: "workspace-a@workspace:packages/workspace-a"
+  dependencies:
+    cross-env: 5.2.1
+  languageName: unknown
+  linkType: soft
+
+"workspace-b@workspace:packages/workspace-b":
+  version: 0.0.0-use.local
+  resolution: "workspace-b@workspace:packages/workspace-b"
+  dependencies:
+    cross-env: 5.2.1
+    workspace-a: 1.0.0
+  languageName: unknown
+  linkType: soft
 
 "wrap-ansi@npm:^7.0.0":
   version: 7.0.0
