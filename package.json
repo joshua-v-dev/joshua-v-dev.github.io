@@ -56,14 +56,17 @@
 		"babel-plugin-twin": "^1.0.2",
 		"eslint": "^7.32.0",
 		"eslint-config-next": "^12.0.7",
+		"install": "^0.13.0",
 		"lerna": "^4.0.0",
+		"npm": "^8.3.0",
 		"pac-resolver": "^5.0.0",
 		"postcss": "^8.4.5",
 		"react-devtools": "^4.22.1",
 		"style-loader": "^3.3.1",
 		"tailwindcss": "^3.0.11",
 		"ts-node": "^10.4.0",
-		"typescript": "^4.5.4"
+		"typescript": "^4.5.4",
+		"videojs-contextmenu-ui": "^6.0.0"
 	},
 	"peerDependencies": {
 		"react": "*",

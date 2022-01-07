@@ -1,9 +1,9 @@
 // import 'react-devtools'
 
 import Head from 'next/head'
-import type { AppProps } from 'next/app'
+import type AppProps from 'next/app'
 import 'twin.macro'
-import React, { Component } from 'react'
+import React from 'react'
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	return (
