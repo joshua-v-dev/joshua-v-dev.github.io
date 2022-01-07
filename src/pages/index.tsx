@@ -11,8 +11,6 @@ import Timeline from '../components/TimeLine/TimeLine'
 import Layout from '../layout/Layout'
 import ImageCarousel from '../components/Slider/ImageCarousel'
 import GlassCard from '../components/GlassCard/GlassCard'
-import ContactPage from './ContactPage'
-import AboutPage from './AboutPage'
 
 const Home = () => {
 	return (
@@ -26,8 +24,6 @@ const Home = () => {
 			<Technologies />
 			<Timeline />
 			<Acomplishments />
-			<ContactPage />
-			<AboutPage />
 		</>
 	)
 }
