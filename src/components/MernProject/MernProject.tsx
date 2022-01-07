@@ -1,5 +1,4 @@
 import React from 'react'
-// import { CloudinaryContext, Transformation, Video } from 'cloudinary-video-player'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
 import { SubProjectsData } from '../../constants/constants'
 import Layout from '../../layout/Layout'
@@ -60,27 +59,3 @@ function MernProject() {
 }
 
 export default MernProject
-
-{
-	/* url='https://res.cloudinary.com/dpytkhyme/video/upload/v1634987340/e-commerce-from-scratch_mgh6ci.mp4' */
-}
-// <CloudinaryContext>
-// 	<Video cloudName='dpytkhyme'>
-// 		<Transformation width='200' crop='scale' angle='10' />
-{
-	/* config=
-											{{
-												file: {
-													attributes: {
-														controlsList: 'nodownload',
-														samesite: 'Lax',
-														secure: 'true',
-													},
-												},
-											}} */
-}
-{
-	/* </Video>
-									</CloudinaryContext>
-								</div> */
-}
