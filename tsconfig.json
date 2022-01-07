@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "removeComments": true,
     "alwaysStrict": true,
     "lib": [
       "dom",
@@ -10,10 +9,8 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -27,7 +24,7 @@
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "/",
+    "baseUrl": ".",
     "paths": {
       "cloudinary": [
         "."
@@ -36,7 +33,9 @@
         "components/*"
       ]
     },
-    "target": "es5"
+    "target": "es5",
+    "strict": false,
+    "incremental": true
   },
   "include": [
     "package.json, next-env.d.ts",
