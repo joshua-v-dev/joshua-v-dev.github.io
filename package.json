@@ -3,6 +3,7 @@
 		"./tsconfig.json"
 	],
 	"name": "portfolio_nextjs",
+	"types": "next-env.d.ts, additional.d.ts",
 	"version": "0.1.0",
 	"private": true,
 	"workspaces": [

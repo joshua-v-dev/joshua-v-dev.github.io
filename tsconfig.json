@@ -1,5 +1,8 @@
 {
 	"compilerOptions": {
+		"sourceMap": true,
+		"removeComments": true,
+		"alwaysStrict": true,
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
@@ -12,17 +15,20 @@
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
-		"jsx": "preserve",
+		"jsx": "react-jsx",
 		"noImplicitAny": true,
 		"noImplicitThis": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
+		"noUnusedLocals": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
 		"baseUrl": "/",
 		"paths": {
 			"cloudinary": ["."],
 			"@/components/*": ["components/*"]
 		},
-		"target": "es6"
+		"target": "es2015"
 	},
 	"include": [
 		"package.json, next-env.d.ts",
@@ -30,18 +36,9 @@
 		"**/*.ts",
 		"**/*.tsx, **/*.js",
 		"**/*.jsx",
-		"src/pages/_app.tsx",
-		"src/pages/_document.tsx",
-		"src/pages/api/[slug].tsx",
-		"src/components/Footer/FooterStyles.tsx",
-		"src/themes/default.tsx",
-		"src/components/Header/HeaderStyles.tsx",
-		"src/components/Slider/ImageCarouselStyles.tsx",
-		"src/components/Hero/HeroStyles.tsx",
-		"src/components/Projects/ProjectsStyles.tsx",
-		"src/styles/GlobalComponents/index.tsx",
-		"src/components/Technologies/TechnologiesStyles.tsx",
-		"src/components/GlassCard/GlassCardStyles.tsx"
+		"**/*.json",
+		"**/*.d.ts",
+		"**/*.css"
 	],
 	"exclude": ["node_modules"]
 }

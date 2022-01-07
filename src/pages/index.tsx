@@ -16,21 +16,19 @@ import AboutPage from './AboutPage'
 
 const Home = () => {
 	return (
-		<React.StrictMode>
-			<Layout>
-				<Particles />
-				<BackgroundAnimation />
-				<Hero />
-				<GlassCard />
-				<ImageCarousel />
-				<Projects />
-				<Technologies />
-				<Timeline />
-				<Acomplishments />
-				<ContactPage />
-				<AboutPage />
-			</Layout>
-		</React.StrictMode>
+		<>
+			<Particles />
+			<BackgroundAnimation />
+			<Hero />
+			<GlassCard />
+			<ImageCarousel />
+			<Projects />
+			<Technologies />
+			<Timeline />
+			<Acomplishments />
+			<ContactPage />
+			<AboutPage />
+		</>
 	)
 }
 

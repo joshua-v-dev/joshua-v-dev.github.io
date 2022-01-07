@@ -1,21 +1,18 @@
 // import 'react-devtools'
 
 import Head from 'next/head'
-import type AppProps from 'next/app'
 import 'twin.macro'
 import React from 'react'
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function MyApp({ Component, pageProps }): React.ReactElement {
 	return (
-		<React.StrictMode>
-			<>
-				<Head>
-					<meta name='viewport' content='width=device-width, initial-scale=1' />
-				</Head>
+		<>
+			<Head>
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
+			</Head>
 
-				<Component {...pageProps} />
-			</>
-		</React.StrictMode>
+			<Component {...pageProps} />
+		</>
 	)
 }
 
