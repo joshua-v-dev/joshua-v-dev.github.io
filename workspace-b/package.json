@@ -4,5 +4,8 @@
 	"dependencies": {
 		"cross-env": "5.2.1",
 		"workspace-a": "1.0.0"
-	}
+	},
+	"presets": [
+		"next/babel"
+	]
 }
