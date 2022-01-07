@@ -3,8 +3,5 @@
 	"version": "3.0.0",
 	"dependencies": {
 		"cross-env": "5.2.1"
-	},
-	"presets": [
-		"next/babel"
-	]
+	}
 }
