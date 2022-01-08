@@ -8,24 +8,13 @@
 		"forceConsistentCasingInFileNames": true,
 		"noEmit": true,
 		"incremental": true,
+		"esModuleInterop": true,
 		"module": "esnext",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
-		"jsx": "preserve",
-		"esModuleInterop": true
+		"jsx": "preserve"
 	},
-	"typeAcquisition": {
-		"enable": true
-	},
-	"include": [
-		"next-env.d.ts",
-		"additional.d.ts",
-		"**/*.ts",
-		"**/*.tsx",
-		"**/*.d.ts",
-		"**/*.js",
-		"**/*.jsx"
-	],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "_app.tsx", "_document.tsx", "[slug].tsx"],
 	"exclude": ["node_modules"]
 }

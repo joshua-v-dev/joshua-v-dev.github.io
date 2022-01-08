@@ -1,8 +1,7 @@
 import React from 'react'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
 import { SubProjectsData } from '../../constants/constants'
-import Layout from '../../layout/Layout'
-import dynamic from 'next/dynamic' //add
+
 import {
 	CardInfo,
 	Img,
@@ -14,14 +13,9 @@ import {
 	Tag,
 } from '../Projects/ProjectsStyles'
 
-//add
-const NativeVideo = dynamic(() => import('../NativeVideoPlayer/NativeVideoPlayer'), {
-	ssr: true,
-})
-
 function MernProject() {
 	return (
-		<Layout>
+		<>
 			<Section id='SubProjects'>
 				<SectionDivider />
 
@@ -30,9 +24,7 @@ function MernProject() {
 						<GridContainer key={i}>
 							<SectionTitle>Projects</SectionTitle>
 							<BlogCard key={i}>
-								<NativeVideo />
 								<Img src={`/${p.id}`} />
-								{/* CHECK TO FIX THIS IMAGE RENDER */}
 
 								<SectionTitle title='true'>{p.title}</SectionTitle>
 
@@ -54,7 +46,7 @@ function MernProject() {
 					)
 				})}
 			</Section>
-		</Layout>
+		</>
 	)
 }
 
