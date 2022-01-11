@@ -10,8 +10,10 @@
 		"@babel/preset-typescript"
 	],
 	"plugins": [
+		"macros",
 		["babel-plugin-twin", { "debug": true }],
 		"babel-plugin-macros",
+
 		["babel-plugin-styled-components", { "ssr": true }]
 	]
 }
