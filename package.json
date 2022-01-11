@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@cloudinary/react": "^1.0.1",
 		"@cloudinary/url-gen": "^1.4.2",
+		"@typescript-eslint/eslint-plugin": "^5.9.1",
 		"gray-matter": "^4.0.3",
 		"lodash": "^4.17.21",
 		"marked": "^4.0.9",
