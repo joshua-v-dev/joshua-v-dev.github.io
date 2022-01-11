@@ -60,14 +60,8 @@
 	},
 	"babelMacros": {
 		"twin": {
-			"preset": "styled-components",
-			"autoCssProp": false,
 			"styled": {
 				"import": "default",
-				"from": "styled-components"
-			},
-			"css": {
-				"import": "css",
 				"from": "styled-components"
 			}
 		}
