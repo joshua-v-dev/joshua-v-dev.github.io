@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Particles from '../components/Particles/index'
 import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation'
 import Hero from '../components/Hero/Hero'
@@ -10,7 +10,9 @@ import ImageCarousel from '../components/Slider/ImageCarousel'
 import GlassCard from '../components/GlassCard/GlassCard'
 import Layout from '../layout/Layout'
 
-const Home = () => {
+type HomeComponent = FC & { layout: typeof Layout }
+
+const Home: HomeComponent = () => {
 	return (
 		<Layout>
 			<Particles />
@@ -25,5 +27,7 @@ const Home = () => {
 		</Layout>
 	)
 }
+
+Home.layout = Layout
 
 export default Home

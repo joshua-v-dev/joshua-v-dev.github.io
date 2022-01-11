@@ -1,21 +1,18 @@
-// import App from "next/app";
-import type { AppProps /*, AppContext */ } from 'next/app'
-import 'tailwindcss/tailwind.css'
+import type { ReactElement, ReactNode } from 'react'
+import type { NextPage } from 'next'
+import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />
+type NextPageWithLayout = NextPage & {
+	getLayout?: (page: ReactElement) => ReactNode
 }
 
-// Only uncomment this method if you have blocking data requirements for
-// every single page in your application. This disables the ability to
-// perform automatic static optimization, causing every page in your app to
-// be server-side rendered.
-//
-// MyApp.getInitialProps = async (appContext: AppContext) => {
-//   // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
+type AppPropsWithLayout = AppProps & {
+	Component: NextPageWithLayout
+}
 
-//   return { ...appProps }
-// }
+export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+	// Use the layout defined at the page level, if available
+	const getLayout = Component.getLayout ?? ((page) => page)
 
-export default MyApp
+	return getLayout(<Component {...pageProps} />)
+}

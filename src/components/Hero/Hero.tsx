@@ -5,14 +5,13 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import { LeftSection } from './HeroStyles' // {ButtonContainer}
 
 const Hero = () => (
-	<React.StrictMode>
-		<>
-			<Section>
-				<LeftSection>
-					<SectionTitle>Joshua Vaughn</SectionTitle>
-					<SectionText>Full-Stack Web Developer</SectionText>
+	<>
+		<Section>
+			<LeftSection>
+				<SectionTitle>Joshua Vaughn</SectionTitle>
+				<SectionText>Full-Stack Web Developer</SectionText>
 
-					{/* <ButtonContainer>
+				{/* <ButtonContainer>
 						<Link href={'/ProjectsPage'}>
 							<a>
 								<Button
@@ -27,10 +26,9 @@ const Hero = () => (
 							</a>
 						</Link>
 					</ButtonContainer> */}
-				</LeftSection>
-			</Section>
-		</>
-	</React.StrictMode>
+			</LeftSection>
+		</Section>
+	</>
 )
 
 export default Hero
