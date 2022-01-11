@@ -59,10 +59,7 @@
 	},
 	"babelMacros": {
 		"twin": {
-			"styled": {
-				"import": "default",
-				"from": "styled-components"
-			}
+			"preset": "styled-components"
 		}
 	},
 	"engines": {
