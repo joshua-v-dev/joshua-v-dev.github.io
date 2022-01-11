@@ -1,14 +1,5 @@
 {
-	"presets": [
-		["next/babel"],
-		[
-			"@babel/preset-react",
-			{
-				"runtime": "automatic"
-			}
-		],
-		"@babel/preset-typescript"
-	],
+	"presets": ["next/babel"],
 	"plugins": [
 		["babel-plugin-twin", { "debug": false }],
 		"babel-plugin-macros",
