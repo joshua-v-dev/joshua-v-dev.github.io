@@ -13,7 +13,7 @@ import {
 } from './ImageCarouselStyles'
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import { CardInfo, ExternalLinks, Hr, Tag, TagList, UtilityList } from '../Projects/ProjectsStyles'
+import { CardInfo, ExternalLinks, Tag, TagList, UtilityList } from '../Projects/ProjectsStyles'
 
 import {
 	SectionDivider,
