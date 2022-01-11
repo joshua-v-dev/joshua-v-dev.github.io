@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'styled-normalize'
+import tw, { GlobalStyles as BaseStyles } from 'twin.macro' //{theme} //
 
-const GlobalStyles = createGlobalStyle`
+const CustomStyles = createGlobalStyle`
   ${normalize};
 
   * {
@@ -21,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   body {
 
     cursor: default;
-
+    ${tw`antialiased`}
   }
   
   a {
@@ -32,5 +33,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
 `
+const GlobalStyles = () => (
+	<>
+		<BaseStyles />
+		<CustomStyles />
+	</>
+)
 
 export default GlobalStyles

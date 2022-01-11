@@ -1,5 +1,6 @@
 import PageWithLayoutType from '../layout/PageWithLayout'
 import React, { PropsWithChildren } from 'react'
+import GlobalStyles from '../styles/globals'
 
 type AppLayoutProps = {
 	Component: PageWithLayoutType
@@ -9,9 +10,12 @@ type AppLayoutProps = {
 function MyApp({ Component, pageProps }: AppLayoutProps) {
 	const Layout = Component.layout || ((children) => <>{children}</>)
 	return (
-		<Layout>
-			<Component {...pageProps} />
-		</Layout>
+		<>
+			<GlobalStyles />
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</>
 	)
 }
 
