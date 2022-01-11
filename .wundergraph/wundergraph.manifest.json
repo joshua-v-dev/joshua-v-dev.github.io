@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "wundergraph/spacex",
+    "wundergraph/countries"
+  ]
+}
