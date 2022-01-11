@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
-import Button from '../../styles/GlobalComponents/Button'
-import { LeftSection, ButtonContainer } from './HeroStyles'
+// import Button from '../../styles/GlobalComponents/Button'
+import { LeftSection } from './HeroStyles' // {ButtonContainer}
 
 const Hero = () => (
 	<React.StrictMode>
@@ -12,7 +12,7 @@ const Hero = () => (
 					<SectionTitle>Joshua Vaughn</SectionTitle>
 					<SectionText>Full-Stack Web Developer</SectionText>
 
-					<ButtonContainer>
+					{/* <ButtonContainer>
 						<Link href={'/ProjectsPage'}>
 							<a>
 								<Button
@@ -26,7 +26,7 @@ const Hero = () => (
 								</Button>
 							</a>
 						</Link>
-					</ButtonContainer>
+					</ButtonContainer> */}
 				</LeftSection>
 			</Section>
 		</>

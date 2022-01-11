@@ -1,22 +1,4 @@
 import styled from 'styled-components'
-import tw from 'twin.macro'
-
-export const Tailwindsbutton = tw.button`
-  text-white
-  bg-blue-500
-  py-2
-  px-4
-  rounded
-  font-bold
-  text-sm
-  mr-2
-  transition-colors duration-200
-  hover:bg-blue-600
-  focus:outline-none
-  focus:shadow-outline
-  focus:bg-blue-600
-  
-`
 
 export const HeroSection = styled.div`
 	display: grid;

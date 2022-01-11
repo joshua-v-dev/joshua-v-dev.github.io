@@ -87,7 +87,13 @@ const Timeline = () => {
 				{TimeLineData.map((i, index) => (
 					<CarouselMobileScrollNode key={index}>
 						<CarouselItemTitle>{i.year}</CarouselItemTitle>
-						<CarouselItem id={`carousel__item-${index}`} onClick={(e) => handleClick(e, index)}>
+						<CarouselItem
+							id={`carousel__item-${index}`}
+							onClick={(
+								e:
+									| React.MouseEvent<HTMLDivElement, MouseEvent>
+									| React.MouseEvent<HTMLButtonElement, MouseEvent>,
+							) => handleClick(e, index)}>
 							<CarouselItemText>{i.text}</CarouselItemText>
 						</CarouselItem>
 					</CarouselMobileScrollNode>
@@ -95,7 +101,14 @@ const Timeline = () => {
 			</CarouselContainer>
 
 			{TimeLineData.map((i, index) => (
-				<CarouselButton key={index} onClick={(e) => handleClick(e, index)} type='button'>
+				<CarouselButton
+					key={index}
+					onClick={(
+						e:
+							| React.MouseEvent<HTMLDivElement, MouseEvent>
+							| React.MouseEvent<HTMLButtonElement, MouseEvent>,
+					) => handleClick(e, index)}
+					type='button'>
 					<CarouselButtonDot />
 					<CarouselItemText>{i.text}</CarouselItemText>
 				</CarouselButton>
