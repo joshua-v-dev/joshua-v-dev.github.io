@@ -1,9 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
 import tw, { GlobalStyles as BaseStyles } from 'twin.macro' //{theme} //
 
 const CustomStyles = createGlobalStyle`
-  ${normalize};
 
   * {
     box-sizing: border-box;
