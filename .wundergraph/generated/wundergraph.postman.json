@@ -2,9 +2,9 @@
   "item": [
     {
       "_": {
-        "postman_id": "6ac7b0aa-2b48-40ab-ba34-24efcdb038f5"
+        "postman_id": "eeec80e1-125c-4a47-a2f4-d683a861731a"
       },
-      "id": "6ac7b0aa-2b48-40ab-ba34-24efcdb038f5",
+      "id": "eeec80e1-125c-4a47-a2f4-d683a861731a",
       "name": "Queries",
       "description": {
         "content": "All your query operations",
@@ -12,7 +12,7 @@
       },
       "item": [
         {
-          "id": "7a5ad094-55f9-4149-b27d-eea310173331",
+          "id": "94917393-3b42-42cf-87cd-085d71101313",
           "name": "Dragons",
           "request": {
             "url": {
@@ -40,7 +40,7 @@
           "event": []
         },
         {
-          "id": "eae16342-b21c-47b3-a685-c94b5bd22340",
+          "id": "13e89cf3-57bd-4863-b91f-2b52132b3a53",
           "name": "Missions",
           "request": {
             "url": {
@@ -109,9 +109,9 @@
     },
     {
       "_": {
-        "postman_id": "8a3778f6-ee9a-434f-9967-bae867890991"
+        "postman_id": "0942f651-b601-437a-811e-6ab29450c803"
       },
-      "id": "8a3778f6-ee9a-434f-9967-bae867890991",
+      "id": "0942f651-b601-437a-811e-6ab29450c803",
       "name": "Mutations",
       "description": {
         "content": "All your mutation operations",
@@ -130,7 +130,7 @@
     }
   ],
   "info": {
-    "_postman_id": "44e7164b-a0fa-46bd-adae-e53940a14af9",
+    "_postman_id": "98ad57f8-7285-4131-ab08-32cb9a3f0228",
     "name": "Wundergraph",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
