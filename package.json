@@ -10,7 +10,6 @@
 		"export": "next export"
 	},
 	"dependencies": {
-		"@babel/plugin-proposal-do-expressions": "^7.16.7",
 		"@cloudinary/react": "^1.0.1",
 		"@cloudinary/url-gen": "^1.4.2",
 		"@netlify/plugin-nextjs": "^4.1.1",
