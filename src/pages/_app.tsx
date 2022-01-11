@@ -2,9 +2,19 @@
 
 import Head from 'next/head'
 import 'twin.macro'
-import React from 'react'
+import React, { ComponentState } from 'react'
 
-function MyApp({ Component, pageProps }): React.ReactElement {
+// type ComponentProps = {
+// 	Component: React.FC<any>
+// 	pageProps: React.ReactElement
+// }
+function MyApp({
+	Component,
+	pageProps,
+}: {
+	Component: ComponentState
+	pageProps: JSX.IntrinsicAttributes
+}): React.ReactElement {
 	return (
 		<>
 			<Head>
