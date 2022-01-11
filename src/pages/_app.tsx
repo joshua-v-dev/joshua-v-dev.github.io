@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import 'twin.macro'
-import React, { ComponentState } from 'react'
+import React from 'react'
 
 // type ComponentProps = {
 // 	Component: React.FC<any>
@@ -10,8 +10,8 @@ function MyApp({
 	Component,
 	pageProps,
 }: {
-	Component: ComponentState
-	pageProps: JSX.IntrinsicAttributes
+	Component: React.ComponentState
+	pageProps: React.ReactElement
 }): React.ReactElement {
 	return (
 		<>
