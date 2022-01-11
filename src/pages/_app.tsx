@@ -1,5 +1,3 @@
-// import 'react-devtools'
-
 import Head from 'next/head'
 import 'twin.macro'
 import React, { ComponentState } from 'react'
