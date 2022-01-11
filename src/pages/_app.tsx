@@ -1,9 +1,9 @@
-import PageWithLayoutType from '../../src/layout/PageWithLayout'
-import React from 'react'
+import PageWithLayoutType from '../layout/PageWithLayout'
+import React, { PropsWithChildren } from 'react'
 
 type AppLayoutProps = {
 	Component: PageWithLayoutType
-	pageProps: any
+	pageProps: PropsWithChildren<{}> //  <-- this is the important part , not sure if this is right
 }
 
 function MyApp({ Component, pageProps }: AppLayoutProps) {
