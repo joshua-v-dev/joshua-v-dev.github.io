@@ -27,6 +27,6 @@ const Home: React.FC = () => {
 	)
 }
 
-;(Home as PageWithLayoutType).layout = Layout
+Home as PageWithLayoutType['layout']
 
 export default Home
