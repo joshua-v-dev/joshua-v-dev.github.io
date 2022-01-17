@@ -5,19 +5,17 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import { projects } from '../../constants/constants'
 
-const Details = ({ htmlString }: { htmlString: any }) => {
+const Details = ({ htmlString }: { htmlString: string }) => {
 	return (
-		<React.StrictMode>
-			<>
-				<h1>Projects Page</h1>
-				<pre>{projects}</pre>
-				<div dangerouslySetInnerHTML={{ __html: htmlString }} />
-			</>
-		</React.StrictMode>
+		<>
+			<h1>Projects Page</h1>
+			<pre>{projects}</pre>
+			<div dangerouslySetInnerHTML={{ __html: htmlString }} />
+		</>
 	)
 }
 
-export const getStaticProps = async ({ slug }: { slug: any }) => {
+export const getStaticProps = async ({ slug }: { slug: unknown }) => {
 	const projects = fs.readFileSync(path.join(slug + '.tsx')).toString()
 	const parsedProjects = matter(projects)
 
