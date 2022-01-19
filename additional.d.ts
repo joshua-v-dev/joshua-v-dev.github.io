@@ -321,11 +321,11 @@ declare module 'cloudinary-react' {
 		quality?: number | string
 		delay?: number | string
 
-		[futureKey: string]: any
+		[futureKey: string]
 	}
 
 	export interface ImageTransformationOptions extends CommonTransformationOptions {
-		underlay?: string | Object
+		underlay?: string
 		color?: string
 		color_space?: ColorSpace
 		opacity?: number | string
@@ -338,13 +338,13 @@ declare module 'cloudinary-react' {
 		page?: number | string
 		flags?: ImageFlags | string
 
-		[futureKey: string]: any
+		[futureKey: string]
 	}
 
 	interface VideoTransformationOptions extends CommonTransformationOptions {
 		audio_codec?: AudioCodec
 		audio_frequency?: AudioFrequency
-		video_codec?: string | Object
+		video_codec?: string
 		bit_rate?: number | string
 		fps?: string | Array<number | string>
 		keyframe_interval?: string
@@ -359,7 +359,7 @@ declare module 'cloudinary-react' {
 		effect?: string | Array<number | string> | VideoEffect
 		flags?: VideoFlags
 
-		[futureKey: string]: any
+		[futureKey: string]
 	}
 
 	interface TextStyleOptions {
@@ -397,7 +397,7 @@ declare module 'cloudinary-react' {
 		provisioning_api_secret?: string
 		oauth_token?: string
 
-		[futureKey: string]: any
+		[futureKey: string]
 	}
 
 	export interface ResourceOptions {
@@ -410,7 +410,7 @@ declare module 'cloudinary-react' {
 		format?: string
 		url_suffix?: string
 
-		[futureKey: string]: any
+		[futureKey: string]
 	}
 
 	export interface ImageTagOptions {
@@ -423,7 +423,7 @@ declare module 'cloudinary-react' {
 		hidpi?: boolean
 		responsive_placeholder?: boolean
 
-		[futureKey: string]: any
+		[futureKey: string]
 	}
 
 	export interface VideoTagOptions {
@@ -434,7 +434,7 @@ declare module 'cloudinary-react' {
 		controls?: boolean
 		preload?: string
 
-		[futureKey: string]: any
+		[futureKey: string]
 	}
 
 	/****************************** Admin API Options *************************************/
@@ -594,7 +594,6 @@ declare module 'cloudinary-react' {
 		| string[]
 		| VideoTransformationOptions
 		| ImageTransformationOptions
-		| Object
 		| Array<ImageTransformationOptions>
 		| Array<VideoTransformationOptions>
 
