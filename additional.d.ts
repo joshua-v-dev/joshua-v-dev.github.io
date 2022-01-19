@@ -186,7 +186,7 @@ declare module 'cloudinary-react' {
 	type ImageFlags =
 		| string
 		| Array<string>
-		| 'any_format'
+		| 'unknown_format'
 		| 'attachment'
 		| 'apng'
 		| 'awebp'
@@ -443,7 +443,7 @@ declare module 'cloudinary-react' {
 		content_type?: string
 		oauth_token?: string
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface ArchiveApiOptions {
@@ -468,7 +468,7 @@ declare module 'cloudinary-react' {
 		type?: DeliveryType
 		use_original_filename?: boolean
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface UpdateApiOptions extends ResourceOptions {
@@ -490,14 +490,14 @@ declare module 'cloudinary-react' {
 		unsafe_update?: object
 		allowed_for_strict?: boolean
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface PublishApiOptions extends ResourceOptions {
 		invalidate?: boolean
 		overwrite?: boolean
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface ResourceApiOptions extends ResourceOptions {
@@ -526,7 +526,7 @@ declare module 'cloudinary-react' {
 		cinemagraph_analysis?: boolean
 		accessibility_analysis?: boolean
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface UploadApiOptions {
@@ -566,7 +566,7 @@ declare module 'cloudinary-react' {
 		disable_promises?: boolean
 		oauth_token?: string
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface ProvisioningApiOptions {
@@ -576,7 +576,7 @@ declare module 'cloudinary-react' {
 		agent?: object
 		content_type?: string
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface AuthTokenApiOptions {
@@ -621,7 +621,7 @@ declare module 'cloudinary-react' {
 	type TargetArchiveFormat = string | 'zip' | 'tgz'
 
 	// err is kept for backwards compatibility, it currently will always be undefined
-	type ResponseCallback = (err?: any, callResult?: any) => any
+	type ResponseCallback = (err?: unknown, callResult?: unknown) => unknown
 
 	type UploadResponseCallback = (
 		err?: UploadApiErrorResponse,
@@ -652,7 +652,7 @@ declare module 'cloudinary-react' {
 		context: object
 		metadata: object
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface UploadApiErrorResponse {
@@ -660,7 +660,7 @@ declare module 'cloudinary-react' {
 		name: string
 		http_code: number
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	class UploadStream extends Transform {}
@@ -679,7 +679,7 @@ declare module 'cloudinary-react' {
 		validation?: object
 		datasource?: object
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface MetadataFieldApiResponse {
@@ -691,7 +691,7 @@ declare module 'cloudinary-react' {
 		validation: object
 		datasource: object
 
-		[futureKey: string]: any
+		[futureKey: string]: unknown
 	}
 
 	export interface MetadataFieldsApiResponse {
@@ -736,7 +736,7 @@ declare module 'cloudinary-react' {
 				access_control: Array<string>
 				pages: number
 
-				[futureKey: string]: any
+				[futureKey: string]: unknown
 			},
 		]
 	}
@@ -788,7 +788,7 @@ declare module 'cloudinary-react' {
 			function sign_request(
 				params_to_sign: object,
 				options?: ConfigAndUrlOptions,
-			): { signature: string; api_key: string; [key: string]: any }
+			): { signature: string; api_key: string; [key: string]: unknown }
 
 			function api_sign_request(params_to_sign: object, api_secret: string): string
 
@@ -809,7 +809,7 @@ declare module 'cloudinary-react' {
 				options?: VideoTransformationOptions | ConfigAndUrlOptions,
 			): string
 
-			function archive_params(options?: ArchiveApiOptions): Promise<any>
+			function archive_params(options?: ArchiveApiOptions): Promise<unknown>
 
 			function download_archive_url(options?: ArchiveApiOptions | ConfigAndUrlOptions): string
 
@@ -840,185 +840,191 @@ declare module 'cloudinary-react' {
 					| AdminApiOptions
 					| { display_name?: string; representations: TransformationOptions },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function create_transformation(
 				name: string,
 				transformation: TransformationOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function create_transformation(
 				name: string,
 				transformation: TransformationOptions,
 				options?: AdminApiOptions | { allowed_for_strict?: boolean },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function create_upload_mapping(
 				folder: string,
 				options: AdminApiOptions | { template: string },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function create_upload_preset(
 				options?:
 					| AdminApiOptions
 					| { name?: string; unsigned?: boolean; disallow_public_id?: boolean },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_all_resources(
 				value?: AdminAndResourceOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_derived_by_transformation(
 				public_ids: string[],
 				transformations: TransformationOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_derived_by_transformation(
 				public_ids: string[],
 				transformations: TransformationOptions,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_derived_resources(
 				public_ids: string[],
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_derived_resources(
 				public_ids: string[],
 				options?: AdminAndResourceOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function delete_resources(value: string[], callback?: ResponseCallback): Promise<any>
+			function delete_resources(value: string[], callback?: ResponseCallback): Promise<unknown>
 
 			function delete_resources(
 				value: string[],
 				options?: AdminAndResourceOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_resources_by_prefix(
 				prefix: string,
 				options?: AdminAndResourceOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function delete_resources_by_prefix(prefix: string, callback?: ResponseCallback): Promise<any>
+			function delete_resources_by_prefix(
+				prefix: string,
+				callback?: ResponseCallback,
+			): Promise<unknown>
 
 			function delete_resources_by_tag(
 				tag: string,
 				options?: AdminAndResourceOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function delete_resources_by_tag(tag: string, callback?: ResponseCallback): Promise<any>
+			function delete_resources_by_tag(tag: string, callback?: ResponseCallback): Promise<unknown>
 
 			function delete_streaming_profile(
 				name: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function delete_streaming_profile(name: string, callback?: ResponseCallback): Promise<any>
+			function delete_streaming_profile(name: string, callback?: ResponseCallback): Promise<unknown>
 
 			function delete_transformation(
 				transformationName: TransformationOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_transformation(
 				transformationName: TransformationOptions,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function delete_upload_mapping(folder: string, callback?: ResponseCallback): Promise<any>
+			function delete_upload_mapping(folder: string, callback?: ResponseCallback): Promise<unknown>
 
 			function delete_upload_mapping(
 				folder: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function delete_upload_preset(name: string, callback?: ResponseCallback): Promise<any>
+			function delete_upload_preset(name: string, callback?: ResponseCallback): Promise<unknown>
 
 			function delete_upload_preset(
 				name: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function get_streaming_profile(
 				name: string | ResponseCallback,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function get_streaming_profile(
 				name: string | ResponseCallback,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function list_streaming_profiles(callback?: ResponseCallback): Promise<any>
+			function list_streaming_profiles(callback?: ResponseCallback): Promise<unknown>
 
 			function list_streaming_profiles(
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function ping(options?: AdminApiOptions, callback?: ResponseCallback): Promise<any>
+			function ping(options?: AdminApiOptions, callback?: ResponseCallback): Promise<unknown>
 
-			function ping(callback?: ResponseCallback): Promise<any>
+			function ping(callback?: ResponseCallback): Promise<unknown>
 
 			function publish_by_ids(
 				public_ids: string[],
 				options?: AdminAndPublishOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function publish_by_ids(public_ids: string[], callback?: ResponseCallback): Promise<any>
+			function publish_by_ids(public_ids: string[], callback?: ResponseCallback): Promise<unknown>
 
 			function publish_by_prefix(
 				prefix: string[] | string,
 				options?: AdminAndPublishOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function publish_by_prefix(
 				prefix: string[] | string,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function publish_by_tag(
 				tag: string,
 				options?: AdminAndPublishOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function publish_by_tag(tag: string, callback?: ResponseCallback): Promise<any>
+			function publish_by_tag(tag: string, callback?: ResponseCallback): Promise<unknown>
 
 			function resource(
 				public_id: string,
 				options?: AdminAndResourceOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function resource(public_id: string, callback?: ResponseCallback): Promise<any>
+			function resource(public_id: string, callback?: ResponseCallback): Promise<unknown>
 
-			function resource_types(options?: AdminApiOptions, callback?: ResponseCallback): Promise<any>
+			function resource_types(
+				options?: AdminApiOptions,
+				callback?: ResponseCallback,
+			): Promise<unknown>
 
 			function resources(
 				options?: AdminAndResourceOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function resources_by_context(
 				key: string,
@@ -1082,97 +1088,100 @@ declare module 'cloudinary-react' {
 				public_ids: string[],
 				options?: AdminApiOptions | { resource_type: ResourceType; type: DeliveryType },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function restore(public_ids: string[], callback?: ResponseCallback): Promise<any>
+			function restore(public_ids: string[], callback?: ResponseCallback): Promise<unknown>
 
-			function root_folders(callback?: ResponseCallback, options?: AdminApiOptions): Promise<any>
+			function root_folders(
+				callback?: ResponseCallback,
+				options?: AdminApiOptions,
+			): Promise<unknown>
 
 			function search(
 				params: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function search(params: string, callback?: ResponseCallback): Promise<any>
+			function search(params: string, callback?: ResponseCallback): Promise<unknown>
 
 			function sub_folders(
 				root_folder: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function sub_folders(root_folder: string, callback?: ResponseCallback): Promise<any>
+			function sub_folders(root_folder: string, callback?: ResponseCallback): Promise<unknown>
 
 			function tags(
 				callback?: ResponseCallback,
 				options?: AdminApiOptions | { max_results?: number; next_cursor?: string; prefix?: string },
-			): Promise<any>
+			): Promise<unknown>
 
 			function transformation(
 				transformation: TransformationOptions,
 				options?: AdminApiOptions | { max_results?: number; next_cursor?: string; named?: boolean },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function transformation(
 				transformation: TransformationOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function transformations(
 				options?: AdminApiOptions | { max_results?: number; next_cursor?: string; named?: boolean },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function transformations(callback?: ResponseCallback): Promise<any>
+			function transformations(callback?: ResponseCallback): Promise<unknown>
 
 			function update(
 				public_id: string,
 				options?: AdminAndUpdateApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function update(public_id: string, callback?: ResponseCallback): Promise<any>
+			function update(public_id: string, callback?: ResponseCallback): Promise<unknown>
 
 			function update_resources_access_mode_by_ids(
 				access_mode: AccessMode,
 				ids: string[],
 				options?: AdminAndUpdateApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_resources_access_mode_by_ids(
 				access_mode: AccessMode,
 				ids: string[],
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_resources_access_mode_by_prefix(
 				access_mode: AccessMode,
 				prefix: string,
 				options?: AdminAndUpdateApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_resources_access_mode_by_prefix(
 				access_mode: AccessMode,
 				prefix: string,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_resources_access_mode_by_tag(
 				access_mode: AccessMode,
 				tag: string,
 				options?: AdminAndUpdateApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_resources_access_mode_by_tag(
 				access_mode: AccessMode,
 				tag: string,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_streaming_profile(
 				name: string,
@@ -1181,76 +1190,76 @@ declare module 'cloudinary-react' {
 					representations: Array<{ transformation?: VideoTransformationOptions }>
 				},
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_transformation(
 				transformation_name: TransformationOptions,
 				updates?: TransformationOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_transformation(
 				transformation_name: TransformationOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_upload_mapping(
 				name: string,
 				options: AdminApiOptions | { template: string },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function update_upload_preset(
 				name?: string,
 				options?: AdminApiOptions | { unsigned?: boolean; disallow_public_id?: boolean },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function update_upload_preset(name?: string, callback?: ResponseCallback): Promise<any>
+			function update_upload_preset(name?: string, callback?: ResponseCallback): Promise<unknown>
 
 			function upload_mapping(
 				name?: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function upload_mapping(name?: string, callback?: ResponseCallback): Promise<any>
+			function upload_mapping(name?: string, callback?: ResponseCallback): Promise<unknown>
 
 			function upload_mappings(
 				options?: AdminApiOptions | { max_results?: number; next_cursor?: string },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function upload_mappings(callback?: ResponseCallback): Promise<any>
+			function upload_mappings(callback?: ResponseCallback): Promise<unknown>
 
 			function upload_preset(
 				name?: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function upload_preset(name?: string, callback?: ResponseCallback): Promise<any>
+			function upload_preset(name?: string, callback?: ResponseCallback): Promise<unknown>
 
 			function upload_presets(
 				options?: AdminApiOptions | { max_results?: number; next_cursor?: string },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function usage(callback?: ResponseCallback, options?: AdminApiOptions): Promise<any>
+			function usage(callback?: ResponseCallback, options?: AdminApiOptions): Promise<unknown>
 
-			function usage(options?: AdminApiOptions): Promise<any>
+			function usage(options?: AdminApiOptions): Promise<unknown>
 
 			function create_folder(
 				path: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function delete_folder(
 				path: string,
 				options?: AdminApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			/****************************** Structured Metadata API V2 Methods *************************************/
 
@@ -1355,46 +1364,53 @@ declare module 'cloudinary-react' {
 				public_ids: string[],
 				options?: { type?: DeliveryType; resource_type?: ResourceType },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function add_context(
 				context: string,
 				public_ids: string[],
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function add_tag(
 				tag: string,
 				public_ids: string[],
 				options?: { type?: DeliveryType; resource_type?: ResourceType },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function add_tag(tag: string, public_ids: string[], callback?: ResponseCallback): Promise<any>
+			function add_tag(
+				tag: string,
+				public_ids: string[],
+				callback?: ResponseCallback,
+			): Promise<unknown>
 
 			function create_archive(
 				options?: ArchiveApiOptions,
 				target_format?: TargetArchiveFormat,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function create_zip(options?: ArchiveApiOptions, callback?: ResponseCallback): Promise<any>
+			function create_zip(
+				options?: ArchiveApiOptions,
+				callback?: ResponseCallback,
+			): Promise<unknown>
 
 			function destroy(
 				public_id: string,
 				options?: { resource_type?: ResourceType; type?: DeliveryType; invalidate?: boolean },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function destroy(public_id: string, callback?: ResponseCallback): Promise<any>
+			function destroy(public_id: string, callback?: ResponseCallback): Promise<unknown>
 
 			function explicit(
 				public_id: string,
 				options?: UploadApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function explicit(public_id: string, callback?: ResponseCallback): Promise<any>
+			function explicit(public_id: string, callback?: ResponseCallback): Promise<unknown>
 
 			function explode(
 				public_id: string,
@@ -1406,9 +1422,9 @@ declare module 'cloudinary-react' {
 					transformations?: TransformationOptions
 				},
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function explode(public_id: string, callback?: ResponseCallback): Promise<any>
+			function explode(public_id: string, callback?: ResponseCallback): Promise<unknown>
 
 			function generate_sprite(
 				tag: string,
@@ -1419,11 +1435,11 @@ declare module 'cloudinary-react' {
 					async?: boolean
 				},
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function generate_sprite(tag: string, callback?: ResponseCallback): Promise<any>
+			function generate_sprite(tag: string, callback?: ResponseCallback): Promise<unknown>
 
-			function image_upload_tag(field?: string, options?: UploadApiOptions): Promise<any>
+			function image_upload_tag(field?: string, options?: UploadApiOptions): Promise<unknown>
 
 			function multi(
 				tag: string,
@@ -1434,38 +1450,41 @@ declare module 'cloudinary-react' {
 					notification_url?: string
 				},
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function multi(tag: string, callback?: ResponseCallback): Promise<any>
+			function multi(tag: string, callback?: ResponseCallback): Promise<unknown>
 
 			function remove_all_context(
 				public_ids: string[],
 				options?: { context?: string; resource_type?: ResourceType; type?: DeliveryType },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function remove_all_context(public_ids: string[], callback?: ResponseCallback): Promise<any>
+			function remove_all_context(
+				public_ids: string[],
+				callback?: ResponseCallback,
+			): Promise<unknown>
 
 			function remove_all_tags(
 				public_ids: string[],
 				options?: { tag?: string; resource_type?: ResourceType; type?: DeliveryType },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function remove_all_tags(public_ids: string[], callback?: ResponseCallback): Promise<any>
+			function remove_all_tags(public_ids: string[], callback?: ResponseCallback): Promise<unknown>
 
 			function remove_tag(
 				tag: string,
 				public_ids: string[],
 				options?: { tag?: string; resource_type?: ResourceType; type?: DeliveryType },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function remove_tag(
 				tag: string,
 				public_ids: string[],
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function rename(
 				from_public_id: string,
@@ -1478,53 +1497,53 @@ declare module 'cloudinary-react' {
 					invalidate?: boolean
 				},
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function rename(
 				from_public_id: string,
 				to_public_id: string,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function replace_tag(
 				tag: string,
 				public_ids: string[],
 				options?: { resource_type?: ResourceType; type?: DeliveryType },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function replace_tag(
 				tag: string,
 				public_ids: string[],
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function text(
 				text: string,
 				options?: TextStyleOptions | { public_id?: string },
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function text(text: string, callback?: ResponseCallback): Promise<any>
+			function text(text: string, callback?: ResponseCallback): Promise<unknown>
 
 			function unsigned_image_upload_tag(
 				field: string,
 				upload_preset: string,
 				options?: UploadApiOptions,
-			): Promise<any>
+			): Promise<unknown>
 
 			function unsigned_upload(
 				file: string,
 				upload_preset: string,
 				options?: UploadApiOptions,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function unsigned_upload(
 				file: string,
 				upload_preset: string,
 				callback?: ResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			function unsigned_upload_stream(
 				upload_preset: string,
@@ -1582,17 +1601,17 @@ declare module 'cloudinary-react' {
 			function upload_tag_params(
 				options?: UploadApiOptions,
 				callback?: UploadResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
-			function upload_url(options?: ConfigOptions): Promise<any>
+			function upload_url(options?: ConfigOptions): Promise<unknown>
 
 			function create_slideshow(
 				options?: ConfigOptions & {
 					manifest_transformation?: TransformationOptions
-					manifest_json?: Record<string, any>
+					manifest_json?: Record<string, unknown>
 				},
 				callback?: UploadResponseCallback,
-			): Promise<any>
+			): Promise<unknown>
 
 			/****************************** Structured Metadata API V2 Methods *************************************/
 
@@ -1615,7 +1634,7 @@ declare module 'cloudinary-react' {
 		class search {
 			aggregate(value?: string): search
 
-			execute(): Promise<any>
+			execute(): Promise<unknown>
 
 			expression(value?: string): search
 
@@ -1654,13 +1673,13 @@ declare module 'cloudinary-react' {
 					prefix?: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function sub_account(
 					subAccountId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function create_sub_account(
 					name: string,
@@ -1670,13 +1689,13 @@ declare module 'cloudinary-react' {
 					baseAccount?: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function delete_sub_account(
 					subAccountId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function update_sub_account(
 					subAccountId: string,
@@ -1686,13 +1705,13 @@ declare module 'cloudinary-react' {
 					enabled?: boolean,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function user(
 					userId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function users(
 					pending: boolean,
@@ -1701,7 +1720,7 @@ declare module 'cloudinary-react' {
 					subAccountId?: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function create_user(
 					name: string,
@@ -1710,7 +1729,7 @@ declare module 'cloudinary-react' {
 					subAccountIds?: string[],
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function update_user(
 					userId: string,
@@ -1720,63 +1739,63 @@ declare module 'cloudinary-react' {
 					subAccountIds?: string[],
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function delete_user(
 					userId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function create_user_group(
 					name: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function update_user_group(
 					groupId: string,
 					name: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function delete_user_group(
 					groupId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function add_user_to_group(
 					groupId: string,
 					userId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function remove_user_from_group(
 					groupId: string,
 					userId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function user_group(
 					groupId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function user_groups(
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 
 				function user_group_users(
 					groupId: string,
 					options?: ProvisioningApiOptions,
 					callback?: ResponseCallback,
-				): Promise<any>
+				): Promise<unknown>
 			}
 		}
 	}

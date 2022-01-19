@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css'
 
 type AppLayoutProps = {
 	Component: PageWithLayoutType
-	pageProps: PropsWithChildren<PageWithLayoutType> //  <-- this is the important part , not sure if this is right
+	pageProps?: PropsWithChildren<PageWithLayoutType> //  <-- this is the important part , not sure if this is right
 }
 
 function MyApp({ Component, pageProps }: AppLayoutProps) {
