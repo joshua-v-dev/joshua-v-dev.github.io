@@ -1,3 +1,7 @@
+// snap back to beginning of scroll when window is resized
+// avoids a bug where content is covered up if coming from smaller screen
+// Timeline.tsx uses useEffect hook to run on window resize
+
 import React, { useState, useRef, useEffect } from 'react'
 import {
 	CarouselButton,
@@ -12,44 +16,20 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { TimeLineData } from '../../constants/constants'
 
 const Timeline = () => {
-	const [currentIndex, setCurrentIndex] = useState(0)
-	const carouselRef = useRef(0)
-
-	useEffect(() => {
-		const scroll = (
-			node: { scrollTo: (scrolls: { left: number; behavior: string }) => void },
-			left: number,
-		) => {
-			return node.scrollTo({ left, behavior: 'smooth' })
-		}
-		const handleResize = () => {
-			//handle resize for useEffect to re-render the carousel on mobile devices when the window is resized to a smaller width than the initial width of the carousel container
-			// 		if (window.innerWidth < carouselRef.current.offsetWidth) {
-			// 			scroll(carouselRef.current, 0)
-			// 		}
-			// 	}
-			// 	window.addEventListener('resize', handleResize)
-			// 	return () => {
-			// 		window.removeEventListener('resize', handleResize)
-			// 	}
-			// }, [])
-
-			scroll({ scrollTo() {} }, 0)
-		}
-
-		window.addEventListener('resize', handleResize)
-	}, [currentIndex])
-
-	const handleScroll = () => {
-		if (carouselRef.current) {
-			const index = Math.round(
-				(carouselRef.current / (carouselRef.current * 0.7)) * TimeLineData.length,
-			)
-
-			setCurrentIndex(index)
-		}
+	const [currentIndex, setCurrentIndex] = useState<number>(0)
+	const carouselRef = useRef<number>(0)
+	// scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+	const scroll = (ref: number) => {
+		carouselRef.current = ref // set current index
+		window.scrollTo(0, ref * window.innerHeight) // scroll to index * window height
 	}
 
+	// const scroll = (node:  number, left: number) => {
+	// 	return () => {
+	// 		node.scrollTo({ left, behavior: 'smooth' })
+	// 	}
+	// }
+	// need to fix this to modulate left, right with same top mixed with behavior with types from lib.dom.d.ts ScrollIntoViewOptions
 	const handleClick = (
 		e:
 			| React.MouseEvent<HTMLDivElement, MouseEvent>
@@ -61,23 +41,31 @@ const Timeline = () => {
 		if (carouselRef.current) {
 			const scrollLeft = Math.floor(carouselRef.current * 0.7 * (i / TimeLineData.length - 1))
 
-			scroll(carouselRef.current, scrollLeft)
+			scroll(carouselRef.current + scrollLeft)
 		}
 	}
 
-	// snap back to beginning of scroll when window is resized
-	// avoids a bug where content is covered up if coming from smaller screen
+	const handleScroll = () => {
+		if (carouselRef.current) {
+			const index = Math.round(
+				(carouselRef.current / (carouselRef.current * 0.7)) * TimeLineData.length,
+			)
 
-	// Timeline.tsx uses useEffect hook to run on window resize
-	// https://reactjs.org/docs/hooks-effect.html
-	// https://reactjs.org/docs/hooks-reference.html#useeffect
-	// https://reactjs.org/docs/hooks-faq.html#how-do-i-detect-a-browser-resize
-	// https://reactjs.org/docs/hooks-faq.html#how-do-i-detect-a-window-scroll
-	// https://reactjs.org/docs/hooks-faq.html#how-do-i-detect-a-window-resize
-	// https://reactjs.org/docs/hooks-faq.html#how-do-i-detect-a-window-orientation-change
-	// https://reactjs.org/docs/hooks-faq.html#how-do-i-detect-a-window-focus-or-blur
-	// https://reactjs.org/docs/hooks-faq.html#how-do-i-detect-a-window-visibility-change
-	// https://reactjs.org/docs/hooks-faq.html#how-do-i-detect-a-window-page-hide-or-show
+			setCurrentIndex(index)
+		}
+	}
+
+	useEffect(() => {
+		const handleResize = () => {
+			//handle resize for useEffect to re-render the carousel on mobile devices when the window is resized to a smaller width than the initial width of the carousel container
+
+			scrollTo(carouselRef.current, 0)
+		}
+		window.addEventListener('resize', handleResize)
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [currentIndex, carouselRef])
 
 	return (
 		<Section id='about'>
