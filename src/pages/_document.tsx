@@ -1,4 +1,5 @@
 import Document, { DocumentContext } from 'next/document'
+// import { extractCritical } from '@emotion/server'
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
