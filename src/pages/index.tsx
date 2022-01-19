@@ -9,7 +9,6 @@ import Timeline from '../components/TimeLine/TimeLine'
 import ImageCarousel from '../components/Slider/ImageCarousel'
 import GlassCard from '../components/GlassCard/GlassCard'
 import Layout from '../layout/Layout'
-import PageWithLayoutType from '../layout/PageWithLayout'
 
 const Home: React.FC = () => {
 	return (
@@ -26,7 +25,5 @@ const Home: React.FC = () => {
 		</Layout>
 	)
 }
-
-Home as PageWithLayoutType['layout']
 
 export default Home
