@@ -1,23 +1,20 @@
-import Document, { DocumentContext } from 'next/document'
-// import { extractCritical } from '@emotion/server'
+// import App from "next/app";
+import type { AppProps /*, AppContext */ } from 'next/app'
 
-class MyDocument extends Document {
-	static async getInitialProps(ctx: DocumentContext) {
-		const originalRenderPage = ctx.renderPage
-
-		ctx.renderPage = () =>
-			originalRenderPage({
-				// useful for wrapping the whole react tree
-				enhanceApp: (App) => App,
-				// useful for wrapping in a per-page basis
-				enhanceComponent: (Component) => Component,
-			})
-
-		// Run the parent `getInitialProps`, it now includes the custom `renderPage`
-		const initialProps = await Document.getInitialProps(ctx)
-
-		return initialProps
-	}
+function MyApp({ Component, pageProps }: AppProps) {
+	return <Component {...pageProps} />
 }
 
-export default MyDocument
+// Only uncomment this method if you have blocking data requirements for
+// every single page in your application. This disables the ability to
+// perform automatic static optimization, causing every page in your app to
+// be server-side rendered.
+//
+// MyApp.getInitialProps = async (appContext: AppContext) => {
+//   // calls page's `getInitialProps` and fills `appProps.pageProps`
+//   const appProps = await App.getInitialProps(appContext);
+
+//   return { ...appProps }
+// }
+
+export default MyApp
