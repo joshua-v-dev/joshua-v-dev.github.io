@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
-import tw, { GlobalStyles as BaseStyles } from 'twin.macro' //{theme} //
+import tw, { GlobalStyles as BaseStyles } from 'twin.macro'
+//{theme} //
 
-const CustomStyles = createGlobalStyle`
+export const CustomStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
@@ -31,11 +32,9 @@ const CustomStyles = createGlobalStyle`
   }
 
 `
-const GlobalStyles = () => (
+export const GlobalStyles = () => (
 	<>
 		<BaseStyles />
 		<CustomStyles />
 	</>
 )
-
-export default GlobalStyles
