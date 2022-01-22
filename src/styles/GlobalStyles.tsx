@@ -32,9 +32,10 @@ export const CustomStyles = createGlobalStyle`
   }
 
 `
-export const GlobalStyles = () => (
+const GlobalStyles = () => (
 	<>
 		<BaseStyles />
 		<CustomStyles />
 	</>
 )
+export default GlobalStyles
