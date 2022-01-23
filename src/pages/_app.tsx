@@ -1,3 +1,4 @@
+import React from 'react'
 import { AppProps } from 'next/app'
 import 'tailwindcss/tailwind.css'
 import GlobalStyles from '../styles/GlobalStyles'
