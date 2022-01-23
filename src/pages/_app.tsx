@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppProps } from 'next/app'
 import 'tailwindcss/tailwind.css'
-import GlobalStyles from '../styles/globalStyles'
+import GlobalStyles from '../components/globalStyles'
 
 function App({ Component, pageProps }: AppProps) {
 	return (
