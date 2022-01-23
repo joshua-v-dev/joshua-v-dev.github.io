@@ -1,7 +1,5 @@
-const path = require('path')
+import { resolve } from 'path'
 
-module.exports = {
-	twin: {
-		config: path.resolve(__dirname, '../../', 'tailwind.config.js'),
-	},
+export const twin = {
+	config: resolve(__dirname, '../../', 'tailwind.config.js'),
 }

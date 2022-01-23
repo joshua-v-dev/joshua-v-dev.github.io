@@ -5,6 +5,9 @@ module.exports = {
 			config.resolve.fallback = {
 				fs: false,
 				process: 'process/browser',
+				util: 'util/',
+				path: 'path-browserify',
+				querystring: 'querystring-es3',
 			}
 		}
 
