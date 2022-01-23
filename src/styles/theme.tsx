@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import theme from '../themes/default'
 
-const Theme = ({ children }: { children: any }) => (
+const Theme = ({ children }: { children: React.ComponentState }) => (
 	<ThemeProvider theme={theme}>{...children}</ThemeProvider>
 )
 
