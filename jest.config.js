@@ -1,7 +1,9 @@
-// jest.config.js
+// // jest.config.js
 module.exports = {
 	collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
 	moduleNameMapper: {
+		'^@/components/(.*)$': '<rootDir>/components/$1',
+
 		// Handle CSS imports (with CSS modules)
 		// https://jestjs.io/docs/webpack#mocking-css-modules
 		'^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
@@ -29,8 +31,8 @@ module.exports = {
 	testEnvironment: 'jest-environment-jsdom',
 }
 
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
-module.exports = {
-	preset: 'ts-jest',
-	testEnvironment: 'node',
-}
+// /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+// module.exports = {
+// 	preset: 'ts-jest',
+// 	testEnvironment: 'node',
+// }
