@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom/extend-expect'
-
 // jest.config.js
 module.exports = {
 	collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
@@ -19,6 +17,7 @@ module.exports = {
 		'^@/components/(.*)$': '<rootDir>/components/$1',
 	},
 	setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+
 	testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
 	testEnvironment: 'jsdom',
 	transform: {
