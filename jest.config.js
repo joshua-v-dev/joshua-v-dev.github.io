@@ -1,8 +1,5 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
-module.exports = {
-	preset: 'ts-jest',
-	testEnvironment: 'node',
-}
+import '@testing-library/jest-dom/extend-expect'
+
 // jest.config.js
 module.exports = {
 	collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
@@ -31,4 +28,10 @@ module.exports = {
 	},
 	transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
 	testEnvironment: 'jest-environment-jsdom',
+}
+
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+module.exports = {
+	preset: 'ts-jest',
+	testEnvironment: 'node',
 }
