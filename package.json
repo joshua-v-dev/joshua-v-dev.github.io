@@ -7,7 +7,8 @@
 		"build": "next build ",
 		"start": "next start",
 		"lint": "next lint",
-		"export": "next export"
+		"export": "next export",
+		"test": "jest --watch"
 	},
 	"dependencies": {
 		"@cloudinary/react": "^1.0.1",
@@ -44,6 +45,7 @@
 		"@emotion/babel-plugin": "^11.7.2",
 		"@netlify/plugin-nextjs": "^4.2.0",
 		"@tsconfig/next": "^1.0.1",
+		"@types/jest": "^27.4.0",
 		"@types/marked": "^4.0.1",
 		"@types/node": "^17.0.8",
 		"@types/react": "^17.0.38",
@@ -56,10 +58,12 @@
 		"babel-plugin-twin": "^1.0.2",
 		"eslint": "^8.6.0",
 		"eslint-config-next": "^12.0.8",
+		"jest": "^27.4.7",
 		"postcss": "^8.4.5",
 		"postcss-import": "^14.0.2",
 		"prettier": "^2.5.1",
 		"tailwindcss": "^3.0.15",
+		"ts-jest": "^27.1.3",
 		"ts-node": "^10.4.0",
 		"twin.macro": "^2.8.2",
 		"typescript": "^4.5.4"
