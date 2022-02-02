@@ -1,16 +1,14 @@
 {
 	"compilerOptions": {
+		"target": "es5",
 		"baseUrl": ".",
 		"paths": {
-			"@/styles/*": ["src/styles/*"],
-			"@/presentation/*": ["src/presentation/*"],
-			"@/app/*": ["src/app/*"]
+			"@/components/*": ["components/*"]
 		},
-		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
-		"strict": false,
+		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noEmit": true,
 		"esModuleInterop": true,
@@ -21,6 +19,6 @@
 		"jsx": "preserve",
 		"incremental": true
 	},
-	"exclude": ["node_modules", "dist", "out"],
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.config.js"],
+	"exclude": ["node_modules"]
 }
