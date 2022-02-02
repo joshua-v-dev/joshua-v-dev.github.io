@@ -3,6 +3,7 @@
 	"plugins": [
 		"babel-plugin-macros",
 		["styled-components", { "ssr": true }],
-		["babel-plugin-twin", { "debug": false }]
+		["babel-plugin-twin", { "debug": false }],
+		["transform-remove-console", { "exclude": ["error", "warn"] }]
 	]
 }
