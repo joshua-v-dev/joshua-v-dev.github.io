@@ -28,8 +28,6 @@ const TwinInputs = ({ tapColor }: ContainerProps) => (
 	<input
 		css={[
 			tw`text-blue-500 border-2`,
-			tw`block`,
-			`-webkit-tap-highlight-color: ${tapColor};`,
 			css({
 				WebkitTapHighlightColor: 'transparent', // css properties are camelCased
 				backgroundColor: theme`colors.red.500`, // values don’t require interpolation
