@@ -13,10 +13,11 @@ import Layout from '../layout/Layout'
 const Home: React.FC = () => {
 	return (
 		<Layout>
-			<Particles />
 			<BackgroundAnimation />
+			<Particles />
 			<Hero />
-			<GlassCard />
+
+			{/* <GlassCard /> */}
 			<ImageCarousel />
 			<Projects />
 			<Technologies />

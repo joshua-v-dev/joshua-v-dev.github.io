@@ -15,12 +15,10 @@ export const SectionTitle = styled.h2`
 	font-size: ${(props) => (props ? '9rem' : '7rem')};
 	line-height: ${(props) => (props ? '10rem' : '8rem')};
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
-	-webkit-background-clip: text;
 	color: #ffffff;}
-	 -webkit-text-fill-color: transparent;
 	padding: ${(props) => (props ? '2.5rem 5rem 2.5rem 5rem' : '0')};
 	display: flex;
-	font-weight: 10000;
+	font-weight: 700;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -28,9 +26,9 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-	font-size: 6rem;
-	line-height: 7rem;
-	font-weight: 700;
+	font-size: 4rem;
+	line-height: 5rem;
+	font-weight: 600;
 	display: flex;
 	justify-content: center;
 	align-items: center;

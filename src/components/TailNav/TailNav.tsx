@@ -1,22 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-// import Image from 'next/image'
 
 const navigation = [
-	{ name: 'Dashboard', href: '#', current: true },
-	{ name: 'Team', href: '#', current: false },
+	{ name: 'About', href: '#', current: true },
+	{ name: 'Technologies', href: '#', current: false },
 	{ name: 'Projects', href: '#', current: false },
-	{ name: 'Calendar', href: '#', current: false },
+	{ name: 'Contact', href: '#', current: false },
 ]
 
 function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function TailNav() {
 	return (
 		<Disclosure as='nav' className='bg-gray-800'>
 			{({ open }) => (
@@ -44,7 +42,7 @@ export default function Example() {
 
 									<img
 										className='hidden lg:block h-8 w-auto'
-										src='https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg'
+										src='https://res.cloudinary.com/dpytkhyme/image/upload/v1643879107/Green_Purple_Computing_Technology_Logo_t9rm0q.svg'
 										alt='Workflow'
 									/>
 								</div>
@@ -82,7 +80,7 @@ export default function Example() {
 											<span className='sr-only'>Open user menu</span>
 											<img
 												className='h-8 w-8 rounded-full'
-												src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+												src='https://res.cloudinary.com/dpytkhyme/image/upload/v1643879649/Scale_Up_Tech_IT_Company_Logo_z0knsl.svg'
 												alt=''
 											/>
 										</Menu.Button>
