@@ -1,6 +1,5 @@
-import { IoIosArrowDropdown } from 'react-icons/io'
 import styled from 'styled-components'
-
+// import { IoIosArrowDropdown } from 'react-icons/io'
 export const Navigation = styled.nav`
 	display: flex;
 	background-color: black;
@@ -36,8 +35,7 @@ export const Div3 = styled.div`
 
 	}
 `
-
-// Navigation Links
+// // Navigation Links
 export const NavLink = styled.a`
 	display: flex;
 	font-size: 2rem;
@@ -60,9 +58,7 @@ export const NavLink = styled.a`
 		opacity: 1;
 		cursor: pointer;
 		underline: white;
-	}
-
-	}
+	}}
 `
 
 // Social Icons
@@ -80,21 +76,5 @@ export const SocialIcons = styled.a`
 		background-color: red;
 		transform: scale(1.2);
 		cursor: pointer;
-	}
-`
-export const NavProductsIcon = styled(IoIosArrowDropdown)`
-	size: 5rem;
-	margin-left: 0.8rem;
-	display: grid;
-	align-self: center;
-	justify-self: center;
-
-	transition: 0.3s ease;
-
-	&:hover {
-		opacity: 1;
-	}
-
-
 	}
 `

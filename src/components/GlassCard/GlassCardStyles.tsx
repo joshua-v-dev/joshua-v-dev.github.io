@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Card = styled.div`
 	position: relative;
-	height: 52rem;
 `
 
 export const cardSide = styled.div`
@@ -45,7 +44,6 @@ export const cardSideBack3 = styled.div`
 
 export const CardPicture = styled.div`
 	background-size: cover;
-	height: 23rem;
 	background-blend-mode: screen;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);

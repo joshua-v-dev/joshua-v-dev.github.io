@@ -12,22 +12,19 @@ export const Section = styled.section`
 `
 
 export const SectionTitle = styled.h2`
-	font-size: ${(props) => (props ? '14rem' : '9rem')};
-	line-height: ${(props) => (props ? '15rem' : '10rem')};
+	font-size: ${(props) => (props ? '9rem' : '7rem')};
+	line-height: ${(props) => (props ? '10rem' : '8rem')};
 	background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
 	-webkit-background-clip: text;
 	color: #ffffff;}
-	// -webkit-text-fill-color: transparent;
+	 -webkit-text-fill-color: transparent;
 	padding: ${(props) => (props ? '2.5rem 5rem 2.5rem 5rem' : '0')};
 	display: flex;
 	font-weight: 10000;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-
 	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.02);
-
-
 `
 
 export const SectionText = styled.p`

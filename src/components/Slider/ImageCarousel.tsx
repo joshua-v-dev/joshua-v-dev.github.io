@@ -9,26 +9,16 @@ import {
 	NextButton,
 	Img,
 	CarouselCard,
-	CarouselTitle,
 } from './ImageCarouselStyles'
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import { CardInfo, ExternalLinks, Tag, TagList, UtilityList } from '../Projects/ProjectsStyles'
 
-import {
-	SectionDivider,
-	SectionDividerContainer,
-	SectionTitle,
-} from '../../styles/GlobalComponents'
+import { SectionTitle } from '../../styles/GlobalComponents/index'
 
 const ImageCarousel = () => {
 	return (
 		<>
-			<SectionDividerContainer>
-				<SectionDivider />
-				<CarouselTitle>Projects</CarouselTitle>
-			</SectionDividerContainer>
-
 			<CarouselProvider
 				naturalSlideWidth={60}
 				naturalSlideHeight={40}

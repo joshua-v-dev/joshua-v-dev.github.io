@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents/index'
 import { SubProjectsData } from '../../constants/constants'
 
 import {

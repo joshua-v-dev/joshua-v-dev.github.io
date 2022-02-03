@@ -12,7 +12,12 @@ import {
 	CarouselItemTitle,
 	CarouselMobileScrollNode,
 } from './TimeLineStyles'
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents'
+import {
+	Section,
+	SectionDivider,
+	SectionText,
+	SectionTitle,
+} from '../../styles/GlobalComponents/index'
 import { TimeLineData } from '../../constants/constants'
 
 const Timeline = () => {
