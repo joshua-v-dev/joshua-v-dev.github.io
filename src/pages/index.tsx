@@ -4,8 +4,8 @@ import BackgroundAnimation from '../components/BackgroundAnimation'
 import Projects from '../components/Projects'
 import Acomplishments from '../components/Acomplishments'
 import Technologies from '../components/Technologies'
-import Timeline from '../components/TimeLine/TimeLine'
-import ImageCarousel from '../components/Slider/ImageCarousel'
+import Timeline from '../components/TimeLine'
+import ImageCarousel from '../components/ImageCarousel'
 import Layout from './layout/Layout'
 
 const Home: React.FC = () => {
