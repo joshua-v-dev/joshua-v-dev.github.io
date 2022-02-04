@@ -29,6 +29,7 @@ const TwinInputs = () => (
 			tw`text-blue-500 border-2`,
 			css({
 				WebkitTapHighlightColor: 'transparent', // css properties are camelCased
+				objectFit: 'cover',
 				backgroundColor: theme`colors.purple.500`, // values don’t require interpolation
 				'&::selection': tw`text-purple-500`, // single line tailwind selector styling
 			}),
@@ -57,7 +58,7 @@ const TwinComponent = ({ hasBg }: ContainerProps) => (
 		<TwinSection></TwinSection>
 		<TwinColumn></TwinColumn>
 		<TwinColumn></TwinColumn>
-		<TwinInputs></TwinInputs>
+		{/* <TwinInputs></TwinInputs> */}
 	</TwinContainer>
 )
 const CustomStyles = createGlobalStyle`
