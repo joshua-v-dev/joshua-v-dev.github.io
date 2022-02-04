@@ -17,25 +17,52 @@
 */
 const callouts = [
 	{
-		name: 'Desk and Office',
-		description: 'Work from home accessories',
-		imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+		name: 'Portfolio',
+		description: 'Built with React, Tailwind CSS, and Next.js',
+		imageSrc:
+			'https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg',
+
 		imageAlt:
 			'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
 		href: '#',
 	},
 	{
-		name: 'Self-Improvement',
-		description: 'Journals and note-taking',
-		imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
+		name: 'MERN STACK',
+		description: 'Built with React, MongoDB, Express, Node, and React Hooks',
+		imageSrc:
+			'https://res.cloudinary.com/dpytkhyme/image/upload/v1643976423/mernstack_1_cpteis.png',
 		imageAlt:
 			'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
 		href: '#',
 	},
 	{
-		name: 'Travel',
-		description: 'Daily commute essentials',
-		imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+		name: 'SHOPIFY',
+		description: 'Built with React,Liquid,Next,Polaris,GraphQL',
+		imageSrc: 'https://res.cloudinary.com/dpytkhyme/image/upload/v1643976704/shopify_lvz0ui.png',
+		imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+		href: '#',
+	},
+	{
+		name: 'UX Design',
+		description: 'Google Certification Course',
+		imageSrc: 'https://res.cloudinary.com/dpytkhyme/image/upload/v1643977258/googleux_t7xakq.png',
+
+		imageAlt:
+			'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+		href: '#',
+	},
+	{
+		name: 'Indie Game Dev',
+		description: 'React Native, Babylon.js, Unity, Blender',
+		imageSrc: 'https://res.cloudinary.com/dpytkhyme/image/upload/v1643977162/gamedev_tsn54s.png',
+		imageAlt:
+			'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+		href: '#',
+	},
+	{
+		name: 'FREELANCE CLIENTS',
+		description: 'Built with React,Liquid,Next,Polaris,GraphQL',
+		imageSrc: 'https://res.cloudinary.com/dpytkhyme/image/upload/v1643977144/freelance_wr4fsa.png',
 		imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
 		href: '#',
 	},
@@ -43,10 +70,10 @@ const callouts = [
 
 export default function ProjectsPage() {
 	return (
-		<div className='bg-gray-100'>
+		<div className='bg-transparent'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none'>
-					<h2 className='text-2xl font-extrabold text-gray-900'>Collections</h2>
+					<h2 className='text-2xl font-extrabold text-white'>Collections</h2>
 
 					<div className='mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6'>
 						{callouts.map((callout) => (
@@ -58,13 +85,13 @@ export default function ProjectsPage() {
 										className='w-full h-full object-center object-cover'
 									/>
 								</div>
-								<h3 className='mt-6 text-sm text-gray-500'>
+								<h3 className='mt-6 text-sm text-white'>
 									<a href={callout.href}>
 										<span className='absolute inset-0' />
 										{callout.name}
 									</a>
 								</h3>
-								<p className='text-base font-semibold text-gray-900'>{callout.description}</p>
+								<p className='text-base font-semibold text-white'>{callout.description}</p>
 							</div>
 						))}
 					</div>

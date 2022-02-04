@@ -7,6 +7,7 @@ import Technologies from '../components/Technologies'
 import Timeline from '../components/TimeLine'
 import ImageCarousel from '../components/ImageCarousel'
 import Layout from './layout/Layout'
+import ProjectsPage from 'src/components/ProjectsPage'
 
 const Home: React.FC = () => {
 	return (
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
 			<BackgroundAnimation />
 			<Particles />
 			<ImageCarousel />
+			<ProjectsPage />
 			<Projects />
 			<Technologies />
 			<Timeline />

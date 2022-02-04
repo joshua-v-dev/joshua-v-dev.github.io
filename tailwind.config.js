@@ -7,9 +7,11 @@ module.exports = {
 		'./src/components/**/*.{html,js,ts,tsx}',
 		'./src/layouts/**/*.{html,js,ts,tsx}',
 		'./src/index.html',
+		'./src/**/*.{html,js}',
+		'./node_modules/tw-elements/dist/js/**/*.js',
 	],
 	theme: {
 		extend: {},
 	},
-	plugins: [require('@tailwindcss/aspect-ratio')],
+	plugins: [require('@tailwindcss/aspect-ratio'), require('tw-elements/dist/plugin')],
 }

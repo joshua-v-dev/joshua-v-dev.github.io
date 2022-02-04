@@ -10,23 +10,12 @@ const Projects = () => (
 					return (
 						<BlogCard key={i}>
 							<Img src={p.image} />
-
-							{/* <SectionTitle title='true'>{p.title}</SectionTitle> */}
-
 							<CardInfo className='card-info'>{p.description}</CardInfo>
-
-							{/* <SectionTitle>Stack</SectionTitle> */}
-
 							<TagList>
 								{p.tags.map((t, i) => {
 									return <Tag key={i}>{t}</Tag>
 								})}
 							</TagList>
-
-							<UtilityList>
-								<ExternalLinks href={p.visit}>Code</ExternalLinks>
-								<ExternalLinks href={p.source}>Source</ExternalLinks>
-							</UtilityList>
 						</BlogCard>
 					)
 				})}
@@ -40,7 +29,6 @@ export default Projects
 export const Img = styled.img`
 	display: grid;
 	border-radius: 2rem 2rem 4rem 4rem;
-
 	object-fit: cover;
 	overflow: hidden;
 `
@@ -104,29 +92,6 @@ export const CardInfo = styled.p`
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-`
-
-export const UtilityList = styled.ul`
-	list-style-type: none;
-	padding: 0;
-	display: flex;
-	flex: 1;
-	justify-content: space-around;
-	margin: 2.5rem 0;
-`
-
-export const ExternalLinks = styled.a`
-	color: red;
-	font-size: 1.7rem;
-	font-weight: 500;
-	padding: 1rem 1.5rem;
-	background: blue;
-	border-radius: 1.5rem;
-	transition: 0.5s;
-
-	&:hover {
-		background: red;
-	}
 `
 
 export const TagList = styled.ul`
