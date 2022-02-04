@@ -11,11 +11,11 @@ export default function ParticleAnimation() {
 				},
 				particles: {
 					number: {
-						value: 200,
-						limit: 300,
+						value: 50,
+						limit: 100,
 						density: {
 							enable: true,
-							value_area: 800,
+							value_area: 700,
 						},
 					},
 					color: {
