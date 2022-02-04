@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-// tailwind carousel
 import React from 'react'
-import 'tw-elements'
 
 const ImageCarousel = () => {
 	return (
@@ -10,7 +8,7 @@ const ImageCarousel = () => {
 			className='carousel slide carousel-fade carousel-dark relative'
 			data-bs-ride='carousel'>
 			{/* <!-- Indicators --> */}
-			<div className='carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4'>
+			<div className='carousel-indicators absolute right-0 bottom-0 left-0  flex justify-center p-0 mb-4 object-contain'>
 				<button
 					data-bs-target='#carouselDarkVariant'
 					data-bs-slide-to='0'
