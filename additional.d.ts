@@ -1,6 +1,8 @@
 import { Transform } from 'stream'
 declare module 'tsparticles'
 declare module 'tw-elements'
+declare module '@tailwindcss/aspect-ratio'
+declare module 'tw-elements/dist/plugin'
 // Type definitions for react-tsparticles
 // Project: https://github.com/matteobruni/tsparticles
 // Definitions by: Matteo Bruni <https://github.com/matteobruni>
