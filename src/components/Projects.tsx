@@ -1,4 +1,41 @@
+import React from 'react'
+import { projects } from '../constants/constants'
 import styled from 'styled-components'
+
+const Projects = () => (
+	<>
+		<CardContainer>
+			<GridContainer>
+				{projects.map((p, i) => {
+					return (
+						<BlogCard key={i}>
+							<Img src={p.image} />
+
+							{/* <SectionTitle title='true'>{p.title}</SectionTitle> */}
+
+							<CardInfo className='card-info'>{p.description}</CardInfo>
+
+							{/* <SectionTitle>Stack</SectionTitle> */}
+
+							<TagList>
+								{p.tags.map((t, i) => {
+									return <Tag key={i}>{t}</Tag>
+								})}
+							</TagList>
+
+							<UtilityList>
+								<ExternalLinks href={p.visit}>Code</ExternalLinks>
+								<ExternalLinks href={p.source}>Source</ExternalLinks>
+							</UtilityList>
+						</BlogCard>
+					)
+				})}
+			</GridContainer>
+		</CardContainer>
+	</>
+)
+
+export default Projects
 
 export const Img = styled.img`
 	display: grid;
