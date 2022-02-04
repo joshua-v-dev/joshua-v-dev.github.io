@@ -11,7 +11,7 @@ import {
 	ExternalLinks,
 	TagList,
 	Tag,
-} from './Projects/ProjectsStyles'
+} from './Projects'
 
 function MernProject() {
 	return (
