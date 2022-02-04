@@ -1,4 +1,41 @@
+import React from 'react'
+import { projects } from '../database/database'
 import styled from 'styled-components'
+
+const Projects = () => (
+	<>
+		<CardContainer>
+			<GridContainer>
+				{projects.map((p, i) => {
+					return (
+						<BlogCard key={i}>
+							<Img src={p.image} />
+
+							{/* <SectionTitle title='true'>{p.title}</SectionTitle> */}
+
+							<CardInfo className='card-info'>{p.description}</CardInfo>
+
+							{/* <SectionTitle>Stack</SectionTitle> */}
+
+							<TagList>
+								{p.tags.map((t, i) => {
+									return <Tag key={i}>{t}</Tag>
+								})}
+							</TagList>
+
+							<UtilityList>
+								<ExternalLinks href={p.visit}>Code</ExternalLinks>
+								<ExternalLinks href={p.source}>Source</ExternalLinks>
+							</UtilityList>
+						</BlogCard>
+					)
+				})}
+			</GridContainer>
+		</CardContainer>
+	</>
+)
+
+export default Projects
 
 export const Img = styled.img`
 	display: grid;
@@ -10,16 +47,11 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(41rem, 1fr));
+	grid-gap: 2rem;
+	object-fit: auto;
 	justify-content: center;
-	object-fit: cover;
-	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
-	padding: 3rem 3rem;
-	place-items: center;
-	column-gap: 5rem;
-	row-gap: 5rem;
-	object-fit: cover;
 	overflow: hidden;
-	position: relative;
 `
 export const CardContainer = styled.div`
 	object-fit: cover;
@@ -54,7 +86,7 @@ export const Intro = styled.div`
 	object-fit: cover;
 	color: red;
 	font-family: 'Droid Serif', serif;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-style: italic;
 	line-height: 2rem;
 `
