@@ -36,7 +36,7 @@ export default function TailNav() {
 								<div className='flex-shrink-0 flex items-center'>
 									<img
 										className='block lg:hidden h-8 w-auto'
-										src='https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg'
+										src='https://res.cloudinary.com/dpytkhyme/image/upload/v1643879107/Green_Purple_Computing_Technology_Logo_t9rm0q.svg'
 										alt='Workflow'
 									/>
 
@@ -77,7 +77,7 @@ export default function TailNav() {
 								<Menu as='div' className='ml-3 relative'>
 									<div>
 										<Menu.Button className='bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
-											<span className='sr-only'>Open user menu</span>
+											<span className='sr-only'>Blog</span>
 											<img
 												className='h-8 w-8 rounded-full'
 												src='https://res.cloudinary.com/dpytkhyme/image/upload/v1643879649/Scale_Up_Tech_IT_Company_Logo_z0knsl.svg'
@@ -102,7 +102,7 @@ export default function TailNav() {
 															active ? 'bg-gray-100' : '',
 															'block px-4 py-2 text-sm text-gray-700',
 														)}>
-														Your Profile
+														Newsletter
 													</a>
 												)}
 											</Menu.Item>
@@ -114,7 +114,7 @@ export default function TailNav() {
 															active ? 'bg-gray-100' : '',
 															'block px-4 py-2 text-sm text-gray-700',
 														)}>
-														Settings
+														Hire Me
 													</a>
 												)}
 											</Menu.Item>
@@ -126,7 +126,19 @@ export default function TailNav() {
 															active ? 'bg-gray-100' : '',
 															'block px-4 py-2 text-sm text-gray-700',
 														)}>
-														Sign out
+														Services
+													</a>
+												)}
+											</Menu.Item>
+											<Menu.Item>
+												{({ active }) => (
+													<a
+														href='#'
+														className={classNames(
+															active ? 'bg-gray-100' : '',
+															'block px-4 py-2 text-sm text-gray-700',
+														)}>
+														All Projects
 													</a>
 												)}
 											</Menu.Item>

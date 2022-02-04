@@ -16,7 +16,6 @@ const Home: React.FC = () => {
 			<BackgroundAnimation />
 			<Particles />
 			<Hero />
-
 			{/* <GlassCard /> */}
 			<ImageCarousel />
 			<Projects />
