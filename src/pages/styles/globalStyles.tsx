@@ -58,7 +58,7 @@ const TwinComponent = ({ hasBg }: ContainerProps) => (
 		<TwinSection></TwinSection>
 		<TwinColumn></TwinColumn>
 		<TwinColumn></TwinColumn>
-		{/* <TwinInputs></TwinInputs> */}
+		<TwinInputs></TwinInputs>
 	</TwinContainer>
 )
 const CustomStyles = createGlobalStyle`
