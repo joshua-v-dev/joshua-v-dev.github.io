@@ -1,6 +1,6 @@
 import { Transform } from 'stream'
 declare module 'tsparticles'
-
+declare module 'tw-elements'
 // Type definitions for react-tsparticles
 // Project: https://github.com/matteobruni/tsparticles
 // Definitions by: Matteo Bruni <https://github.com/matteobruni>
