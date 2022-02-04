@@ -4,7 +4,7 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components'
-import { TimeLineData } from '../constants/constants'
+import { TimeLineData } from '../database/database'
 
 const Timeline = () => {
 	const [currentIndex, setCurrentIndex] = useState<number>(0)

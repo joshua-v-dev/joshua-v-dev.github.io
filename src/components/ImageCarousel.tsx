@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '../constants/constants'
+import { projects } from '../database/database'
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import { CardInfo, ExternalLinks, Tag, TagList, UtilityList } from './Projects'

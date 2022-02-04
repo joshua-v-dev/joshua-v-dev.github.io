@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '../constants/constants'
+import { projects } from '../database/database'
 import styled from 'styled-components'
 
 const Projects = () => (

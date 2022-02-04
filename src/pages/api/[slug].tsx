@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
-import { projects } from '../../constants/constants'
+import { projects } from '../../database/database'
 
 const Details = ({ htmlString }: { htmlString: string }) => {
 	return (

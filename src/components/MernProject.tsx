@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SubProjectsData } from '../constants/constants'
+import { SubProjectsData } from '../database/database'
 
 import {
 	CardInfo,
