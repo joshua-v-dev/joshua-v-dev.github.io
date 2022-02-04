@@ -12,12 +12,7 @@ import {
 	CarouselItemTitle,
 	CarouselMobileScrollNode,
 } from './TimeLineStyles'
-import {
-	Section,
-	SectionDivider,
-	SectionText,
-	SectionTitle,
-} from '../../styles/GlobalComponents/index'
+
 import { TimeLineData } from '../../constants/constants'
 
 const Timeline = () => {
@@ -73,9 +68,11 @@ const Timeline = () => {
 	}, [currentIndex, carouselRef])
 
 	return (
-		<Section id='about'>
-			<SectionTitle>About Me</SectionTitle>
-			<SectionText>I am a self-taught developer with plenty of zest</SectionText>
+		// <Section id='about'>
+		// 	<SectionTitle>About Me</SectionTitle>
+		// 	<SectionText>I am a self-taught developer with plenty of zest</SectionText>
+
+		<>
 			<CarouselContainer onScroll={handleScroll}>
 				{TimeLineData.map((i, index) => (
 					<CarouselMobileScrollNode key={index}>
@@ -106,9 +103,9 @@ const Timeline = () => {
 					<CarouselItemText>{i.text}</CarouselItemText>
 				</CarouselButton>
 			))}
+		</>
 
-			<SectionDivider />
-		</Section>
+		// </Section>
 	)
 }
 

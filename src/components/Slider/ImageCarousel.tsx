@@ -14,8 +14,6 @@ import { CarouselProvider, Slider, Slide } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import { CardInfo, ExternalLinks, Tag, TagList, UtilityList } from '../Projects/ProjectsStyles'
 
-import { SectionTitle } from '../../styles/GlobalComponents/index'
-
 const ImageCarousel = () => {
 	return (
 		<>
@@ -35,11 +33,11 @@ const ImageCarousel = () => {
 												<Img src={p.image} />
 											</SliderImage>
 
-											<SectionTitle title='true'>{p.title}</SectionTitle>
+											{/* <SectionTitle title='true'>{p.title}</SectionTitle> */}
 
 											<CardInfo className='cardInfo'>{p.description}</CardInfo>
 
-											<SectionTitle>Stack</SectionTitle>
+											{/* <SectionTitle>Stack</SectionTitle> */}
 											<TagList>
 												{p.tags.map((t, i) => {
 													return <Tag key={i}>{t}</Tag>

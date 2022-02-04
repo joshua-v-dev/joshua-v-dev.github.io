@@ -24,18 +24,18 @@ const TwinContainer = styled.div(({ hasBg }: ContainerProps) => [
 
 const TwinColumn = tw.div`w-1/2`
 
-const TwinInputs = () => (
-	<input
-		css={[
-			tw`text-blue-500 border-2`,
-			css({
-				WebkitTapHighlightColor: 'transparent', // css properties are camelCased
-				backgroundColor: theme`colors.purple.500`, // values don’t require interpolation
-				'&::selection': tw`text-purple-500`, // single line tailwind selector styling
-			}),
-		]}
-	/>
-)
+// const TwinInputs = () => (
+// 	<input
+// 		css={[
+// 			tw`text-blue-500 border-2`,
+// 			css({
+// 				WebkitTapHighlightColor: 'transparent', // css properties are camelCased
+// 				backgroundColor: theme`colors.purple.500`, // values don’t require interpolation
+// 				'&::selection': tw`text-purple-500`, // single line tailwind selector styling
+// 			}),
+// 		]}
+// 	/>
+// )
 const TwinSection = ({ variant }: ContainerProps) => (
 	<section css={styles.container({ variant })}>
 		<div css={styles.column} />
@@ -55,7 +55,7 @@ const styles = {
 
 const TwinComponent = ({ hasBg }: ContainerProps) => (
 	<TwinContainer {...{ hasBg }}>
-		<TwinInputs></TwinInputs>
+		{/* <TwinInputs></TwinInputs> */}
 		<TwinSection></TwinSection>
 		<TwinColumn></TwinColumn>
 		<TwinColumn></TwinColumn>

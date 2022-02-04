@@ -1,7 +1,6 @@
 import React from 'react'
 import Particles from '../components/Particles/index'
-import BackgroundAnimation from '../components/BackgroundAnimation/BackgroundAnimation'
-import Hero from '../components/Hero/Hero'
+import BackgroundAnimation from '../components/BackgroundAnimation'
 import Projects from '../components/Projects/Projects'
 import Acomplishments from '../components/Acomplishments/Acomplishments'
 import Technologies from '../components/Technologies/Technologies'
@@ -15,8 +14,7 @@ const Home: React.FC = () => {
 		<Layout>
 			<BackgroundAnimation />
 			<Particles />
-			<Hero />
-			{/* <GlassCard /> */}
+			<GlassCard />
 			<ImageCarousel />
 			<Projects />
 			<Technologies />

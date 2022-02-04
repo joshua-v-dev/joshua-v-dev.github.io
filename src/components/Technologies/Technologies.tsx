@@ -1,21 +1,17 @@
 import React from 'react'
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di'
-import {
-	Section,
-	SectionDivider,
-	SectionText,
-	SectionTitle,
-} from '../../styles/GlobalComponents/index'
+
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles'
 
 const Technologies = () => (
-	<Section id='tech'>
-		<SectionDivider />
-		<SectionTitle>Technologies</SectionTitle>
-		<SectionText>
-			I have worked with a range a technologies in the web development space. From Back-end To
-			Design
-		</SectionText>
+	// <Section id='tech'>
+	// 	<SectionDivider />
+	// 	<SectionTitle>Technologies</SectionTitle>
+	// 	<SectionText>
+	// 		I have worked with a range a technologies in the web development space. From Back-end To
+	// 		Design
+	// 	</SectionText>
+	<>
 		<List>
 			<ListItem>
 				<picture>
@@ -47,8 +43,8 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 		</List>
-		<SectionDivider />
-	</Section>
+	</>
+	// </Section>
 )
 
 export default Technologies
