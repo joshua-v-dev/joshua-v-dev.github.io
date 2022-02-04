@@ -7,7 +7,7 @@ import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
 import ImageCarousel from '../components/Slider/ImageCarousel'
 import GlassCard from '../components/GlassCard/GlassCard'
-import Layout from '../layout/Layout'
+import Layout from './layout/Layout'
 
 const Home: React.FC = () => {
 	return (

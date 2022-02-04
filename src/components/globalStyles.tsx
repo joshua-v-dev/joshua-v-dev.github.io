@@ -1,4 +1,3 @@
-import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import tw, { GlobalStyles as BaseStyles, css, theme, styled, TwStyle } from 'twin.macro'
 

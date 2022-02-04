@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents/index'
+
 import { SubProjectsData } from '../../constants/constants'
 
 import {
@@ -16,36 +16,32 @@ import {
 function MernProject() {
 	return (
 		<>
-			<Section id='SubProjects'>
-				<SectionDivider />
+			{SubProjectsData.map((p, i) => {
+				return (
+					<GridContainer key={i}>
+						{/* <SectionTitle>Projects</SectionTitle> */}
+						<BlogCard key={i}>
+							<Img src={`/${p.id}`} />
 
-				{SubProjectsData.map((p, i) => {
-					return (
-						<GridContainer key={i}>
-							<SectionTitle>Projects</SectionTitle>
-							<BlogCard key={i}>
-								<Img src={`/${p.id}`} />
+							{/* <SectionTitle title='true'>{p.title}</SectionTitle> */}
 
-								<SectionTitle title='true'>{p.title}</SectionTitle>
-
-								<CardInfo className='card-info'>{p.description}</CardInfo>
-								<div>
-									<SectionTitle>Stack</SectionTitle>
-									<TagList>
-										{p.tags.map((p, i) => {
-											return <Tag key={i}>{p}</Tag>
-										})}
-									</TagList>
-								</div>
-								<UtilityList>
-									<ExternalLinks href={p.visit}>Code</ExternalLinks>
-									<ExternalLinks href={p.source}>Source</ExternalLinks>
-								</UtilityList>
-							</BlogCard>
-						</GridContainer>
-					)
-				})}
-			</Section>
+							<CardInfo className='card-info'>{p.description}</CardInfo>
+							<div>
+								{/* <SectionTitle>Stack</SectionTitle> */}
+								<TagList>
+									{p.tags.map((p, i) => {
+										return <Tag key={i}>{p}</Tag>
+									})}
+								</TagList>
+							</div>
+							<UtilityList>
+								<ExternalLinks href={p.visit}>Code</ExternalLinks>
+								<ExternalLinks href={p.source}>Source</ExternalLinks>
+							</UtilityList>
+						</BlogCard>
+					</GridContainer>
+				)
+			})}
 		</>
 	)
 }
