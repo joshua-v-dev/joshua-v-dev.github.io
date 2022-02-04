@@ -1,19 +1,19 @@
-import React from 'react'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
+import React from 'react';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 type LayoutProps = {
-	children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
-	return (
-		<>
-			<Header isMain={true} />
-			{children}
-			<Footer />
-		</>
-	)
-}
+  return (
+    <>
+      <Header isMain={true} />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

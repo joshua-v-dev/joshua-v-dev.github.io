@@ -1,43 +1,43 @@
-import React from 'react'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { marked } from 'marked'
-import { projects } from '../../database/database'
+import React from 'react';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { marked } from 'marked';
+import { projects } from '../../database/database';
 
 const Details = ({ htmlString }: { htmlString: string }) => {
-	return (
-		<>
-			<h1>Projects Page</h1>
-			<pre>{projects}</pre>
-			<div dangerouslySetInnerHTML={{ __html: htmlString }} />
-		</>
-	)
-}
+  return (
+    <>
+      <h1>Projects Page</h1>
+      <pre>{projects}</pre>
+      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+    </>
+  );
+};
 
 export const getStaticProps = async ({ slug }: { slug: unknown }) => {
-	const projects = fs.readFileSync(path.join(slug + '.tsx')).toString()
-	const parsedProjects = matter(projects)
+  const projects = fs.readFileSync(path.join(slug + '.tsx')).toString();
+  const parsedProjects = matter(projects);
 
-	const htmlString = `${marked(parsedProjects.content)}`
+  const htmlString = `${marked(parsedProjects.content)}`;
 
-	return { props: { htmlString } }
-}
+  return { props: { htmlString } };
+};
 
 export const getStaticPaths = async () => {
-	const files = fs.readdirSync(__dirname)
-	console.log('files: ', files)
-	const paths = files.map((__filename) => ({
-		params: {
-			slug: __filename.replace('.tsx', ''),
-		},
-	}))
-	console.log('paths: ', paths)
+  const files = fs.readdirSync(__dirname);
+  console.log('files: ', files);
+  const paths = files.map((__filename) => ({
+    params: {
+      slug: __filename.replace('.tsx', ''),
+    },
+  }));
+  console.log('paths: ', paths);
 
-	return {
-		paths,
-		fallback: false,
-	}
-}
+  return {
+    paths,
+    fallback: false,
+  };
+};
 
-export default Details
+export default Details;
