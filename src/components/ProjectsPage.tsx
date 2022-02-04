@@ -15,7 +15,6 @@
   }
   ```
 */
-// import 'tw-elements'
 const callouts = [
 	{
 		name: 'Portfolio',
