@@ -1,5 +1,5 @@
 import React from 'react'
-import TailNav from '../TailNav/TailNav'
+import TailNav from '../components/TailNav'
 
 type HeaderProps = {
 	isMain: boolean
