@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SubProjectsData } from '../../constants/constants'
+import { SubProjectsData } from '../constants/constants'
 
 import {
 	CardInfo,
@@ -11,7 +11,7 @@ import {
 	ExternalLinks,
 	TagList,
 	Tag,
-} from '../Projects/ProjectsStyles'
+} from './Projects/ProjectsStyles'
 
 function MernProject() {
 	return (

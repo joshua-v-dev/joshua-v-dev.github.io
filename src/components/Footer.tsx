@@ -1,4 +1,19 @@
+import React from 'react'
 import styled from 'styled-components'
+
+const Footer = () => {
+	return (
+		<FooterWrapper>
+			<SocialIconsContainer>
+				<CompanyContainer>
+					<Slogan>Innovating one project at a time</Slogan>
+				</CompanyContainer>
+			</SocialIconsContainer>
+		</FooterWrapper>
+	)
+}
+
+export default Footer
 
 export const FooterWrapper = styled.section`
 	object-fit: cover;
@@ -34,12 +49,10 @@ export const CompanyContainer = styled.div`
 	flex-wrap: wrap;
 	margin-right: auto;
 `
-//////////////////////////////////////////////////////////////////////////////////////////////////
+
 export const Slogan = styled.p`
 	color: red;
 `
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export const SocialContainer = styled.div`
 	display: flex;
