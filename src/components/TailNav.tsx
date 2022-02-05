@@ -1,13 +1,11 @@
-// /* eslint-disable @next/next/no-img-element */
-
 export default function TailNav() {
   return (
-    <section className="-z-1 bg-gray-800 py-8 px-4 lg:px-10">
+    <section className=" bg-transparent py-8 px-4 lg:px-10">
       <nav className="relative flex items-center justify-between">
         <a className="text-2xl font-bold text-white" href="#">
           <img
-            className="z-1 h-7"
-            src="https://res.cloudinary.com/dpytkhyme/video/upload/v1644079843/V_eytot6.mp4"
+            className=" h-7"
+            src="public\images\JV-BLK-RD-Logo.png"
             alt=""
             width="auto"
           ></img>
