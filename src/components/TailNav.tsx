@@ -1,11 +1,11 @@
 export default function TailNav() {
   return (
-    <section className=" bg-gray-800 py-8 px-4 lg:px-10">
+    <section className=" max-h-7 bg-transparent py-8 px-4 lg:px-10">
       <nav className="relative flex items-center justify-between">
         <a className="text-2xl font-bold text-white" href="#">
           <img
-            className=" h-7"
-            src="public\images\JV-BLK-RD-Logo.png"
+            className="h-24"
+            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
             alt=""
             width="auto"
           ></img>
@@ -36,7 +36,23 @@ export default function TailNav() {
           <ul className="flex items-center space-x-10 text-white">
             <li>
               <a className="text-lg font-bold text-white" href="#">
-                Product
+                Projects
+              </a>
+            </li>
+            <span>
+              <svg
+                width="5"
+                height="5"
+                viewBox="0 0 5 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li>
+              <a className="text-lg font-bold text-white" href="#">
+                Services
               </a>
             </li>
             <span>
@@ -68,22 +84,6 @@ export default function TailNav() {
             </span>
             <li>
               <a className="text-lg font-bold text-white" href="#">
-                Features
-              </a>
-            </li>
-            <span>
-              <svg
-                width="5"
-                height="5"
-                viewBox="0 0 5 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
-              </svg>
-            </span>
-            <li>
-              <a className="text-lg font-bold text-white" href="#">
                 Contact
               </a>
             </li>
@@ -94,7 +94,7 @@ export default function TailNav() {
             className="inline-block rounded-full border border-gray-200 px-12 py-4 font-bold text-white hover:border-white"
             href="#"
           >
-            Sign Up
+            Want To Play A Game?
           </a>
         </div>
       </nav>

@@ -5,13 +5,6 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
-// const navigation = [
-// 	{ name: 'Product', href: '#' },
-// 	{ name: 'Features', href: '#' },
-// 	{ name: 'Marketplace', href: '#' },
-// 	{ name: 'Company', href: '#' },
-// ]
-
 export default function TailHero() {
   return (
     <div className="relative overflow-hidden bg-transparent">
@@ -33,13 +26,6 @@ export default function TailHero() {
               >
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                   <div className="flex w-full items-center justify-between md:w-auto">
-                    {/* <a href='#'>
-											<span className='sr-only'>Workflow</span>
-											<img
-												className='h-8 w-auto sm:h-10'
-												src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-											/>
-										</a> */}
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Tooling</span>
@@ -48,19 +34,7 @@ export default function TailHero() {
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
-                  {/* {navigation.map((item) => (
-										<a
-											key={item.name}
-											href={item.href}
-											className='font-medium text-gray-500 hover:text-gray-900'>
-											{item.name}
-										</a>
-									))} */}
-                  {/* <a href='#' className='font-medium text-indigo-600 hover:text-indigo-500'>
-										Architecture
-									</a> */}
-                </div>
+                <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4"></div>
               </nav>
             </div>
 
@@ -93,16 +67,7 @@ export default function TailHero() {
                       </Popover.Button>
                     </div>
                   </div>
-                  <div className="space-y-1 px-2 pt-2 pb-3">
-                    {/* {navigation.map((item) => (
-											<a
-												key={item.name}
-												href={item.href}
-												className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'>
-												{item.name}
-											</a>
-										))} */}
-                  </div>
+                  <div className="space-y-1 px-2 pt-2 pb-3"></div>
                   <a
                     href="#"
                     className="block w-full bg-transparent px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
@@ -123,7 +88,7 @@ export default function TailHero() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                Innovation one project at a time
+                Innovation one idea at a time
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -139,7 +104,7 @@ export default function TailHero() {
                     href="#"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg"
                   >
-                    Learn More
+                    LinkedIn
                   </a>
                 </div>
               </div>

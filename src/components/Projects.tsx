@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 //tailwind card with image and ripple effect
 const Projects = () => (
-  <div className="flex justify-center">
+  <div className=" flex justify-center">
     <div className="max-w-sm rounded-lg bg-black shadow-lg">
       <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
         <img
