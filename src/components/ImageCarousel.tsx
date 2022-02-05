@@ -9,7 +9,7 @@ const ImageCarousel = () => {
       data-bs-ride="carousel"
     >
       {/* <!-- Indicators --> */}
-      <div className=" carousel-indicators absolute right-0 bottom-0  left-0 mb-4 flex justify-center p-2">
+      <div className=" carousel-indicators mx-auto max-w-screen-lg pb-10">
         <button
           data-bs-target="#carouselDarkVariant"
           data-bs-slide-to="0"
@@ -32,10 +32,10 @@ const ImageCarousel = () => {
       {/* <!-- Inner --> */}
       <div className="carousel-inner relative right-4 m-10 flex w-full overflow-hidden p-10  ">
         {/* <!-- Single item --> */}
-        <div className=" carousel-item active relative float-left    ">
+        <div className=" hero container mx-auto max-w-screen-lg pb-10 ">
           <img
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
-            className="block w-full"
+            className="mx-auto"
             alt="game"
           />
           <div className="carousel-caption absolute hidden text-center md:block">
@@ -80,7 +80,7 @@ const ImageCarousel = () => {
         data-bs-slide="prev"
       >
         <span
-          className="carousel-control-prev-icon inline-block bg-no-repeat"
+          className="carousel-control-prev-icon inline-block items-center bg-no-repeat"
           aria-hidden="true"
         ></span>
         <span className="visually-hidden">Previous</span>

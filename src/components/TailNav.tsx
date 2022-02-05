@@ -1,182 +1,175 @@
-/* eslint-disable @next/next/no-img-element */
-import { Fragment } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+// /* eslint-disable @next/next/no-img-element */
 
-const navigation = [
-  { name: 'About', href: '#', current: true },
-  { name: 'Technologies', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ');
-}
 export default function TailNav() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
-      {({ open }) => (
-        <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643879107/Green_Purple_Computing_Technology_Logo_t9rm0q.svg"
-                    alt="Workflow"
-                  />
-
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643879107/Green_Purple_Computing_Technology_Logo_t9rm0q.svg"
-                    alt="Workflow"
-                  />
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-
-                {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
-                  <div>
-                    <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                      <span className="sr-only">Blog</span>
-                      <img
-                        className="h-8 w-8 rounded-full"
-                        src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643879649/Scale_Up_Tech_IT_Company_Logo_z0knsl.svg"
-                        alt=""
-                      />
-                    </Menu.Button>
-                  </div>
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-100"
-                    enterFrom="transform opacity-0 scale-95"
-                    enterTo="transform opacity-100 scale-100"
-                    leave="transition ease-in duration-75"
-                    leaveFrom="transform opacity-100 scale-100"
-                    leaveTo="transform opacity-0 scale-95"
-                  >
-                    <Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            Newsletter
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            Hire Me
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            Services
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            All Projects
-                          </a>
-                        )}
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Transition>
-                </Menu>
-              </div>
-            </div>
+    <section className="-z-1 bg-gray-800 py-8 px-4 lg:px-10">
+      <nav className="relative flex items-center justify-between">
+        <a className="text-2xl font-bold text-white" href="#">
+          <img
+            className="z-1 h-7"
+            src="https://res.cloudinary.com/dpytkhyme/video/upload/v1644079843/V_eytot6.mp4"
+            alt=""
+            width="auto"
+          ></img>
+        </a>
+        <div className="lg:hidden">
+          <button className="navbar-burger p-2">
+            <svg
+              className="h-3 w-10"
+              width="39"
+              height="13"
+              viewBox="0 0 39 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="39" height="2" rx="1" fill="#C4C4C4"></rect>
+              <rect
+                x="19"
+                y="11"
+                width="20"
+                height="2"
+                rx="1"
+                fill="#C4C4C4"
+              ></rect>
+            </svg>
+          </button>
+        </div>
+        <div className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform lg:block">
+          <ul className="flex items-center space-x-10 text-white">
+            <li>
+              <a className="text-lg font-bold text-white" href="#">
+                Product
+              </a>
+            </li>
+            <span>
+              <svg
+                width="5"
+                height="5"
+                viewBox="0 0 5 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li>
+              <a className="text-lg font-bold text-white" href="#">
+                Story
+              </a>
+            </li>
+            <span>
+              <svg
+                width="5"
+                height="5"
+                viewBox="0 0 5 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li>
+              <a className="text-lg font-bold text-white" href="#">
+                Features
+              </a>
+            </li>
+            <span>
+              <svg
+                width="5"
+                height="5"
+                viewBox="0 0 5 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li>
+              <a className="text-lg font-bold text-white" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="hidden lg:block">
+          <a
+            className="inline-block rounded-full border border-gray-200 px-12 py-4 font-bold text-white hover:border-white"
+            href="#"
+          >
+            Sign Up
+          </a>
+        </div>
+      </nav>
+      <div className="navbar-menu fixed top-0 left-0 bottom-0 z-50 hidden w-5/6 max-w-sm">
+        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+        <nav className="relative flex h-full w-full flex-col overflow-y-auto bg-white py-8">
+          <div className="mb-16 flex items-center pr-6">
+            <a className="ml-10 text-2xl font-bold text-gray-800" href="#">
+              <img
+                className="h-7"
+                src="zospace-assets/logos/zospace-dark-logo.svg"
+                alt=""
+                width="auto"
+              ></img>
+            </a>
           </div>
-
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+          <div>
+            <ul>
+              <li className="mb-1 px-10">
+                <a
+                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  href="#"
                 >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+                  Product
+                </a>
+              </li>
+              <li className="mb-1 px-10">
+                <a
+                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  href="#"
+                >
+                  Story
+                </a>
+              </li>
+              <li className="mb-1 px-10">
+                <a
+                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  href="#"
+                >
+                  Features
+                </a>
+              </li>
+              <li className="mb-1 px-10">
+                <a
+                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  href="#"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="mt-auto px-10">
+            <div className="pt-6">
+              <a
+                className="mb-4 block rounded-full border border-gray-50 py-4 px-12 text-center font-bold text-gray-800 hover:border-gray-100"
+                href="#"
+              >
+                Sign in
+              </a>
+              <a
+                className="block rounded-full bg-blue-500 py-4 px-12 text-center font-bold text-white transition duration-200 hover:bg-blue-600"
+                href="#"
+              >
+                Sign up
+              </a>
             </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+            <p className="mt-6 mb-4 text-center text-lg">
+              <span>2021 &copy; Zospace. All rights reserved.</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </section>
   );
 }

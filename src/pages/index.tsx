@@ -12,8 +12,8 @@ import ProjectsPage from 'src/components/ProjectsPage';
 const Home: React.FC = () => {
   return (
     <Layout>
-      <BackgroundAnimation />
-      <Particles />
+      {/* <BackgroundAnimation /> */}
+      {/* <Particles /> */}
       <ImageCarousel />
       <ProjectsPage />
       <Projects />
