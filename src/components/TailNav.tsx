@@ -1,6 +1,6 @@
 export default function TailNav() {
   return (
-    <section className=" bg-transparent py-8 px-4 lg:px-10">
+    <section className=" bg-gray-800 py-8 px-4 lg:px-10">
       <nav className="relative flex items-center justify-between">
         <a className="text-2xl font-bold text-white" href="#">
           <img
