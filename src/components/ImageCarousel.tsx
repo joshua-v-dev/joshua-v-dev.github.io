@@ -5,7 +5,7 @@ const ImageCarousel = () => {
   return (
     <div
       id="carouselDarkVariant"
-      className="slide carousel carousel-dark carousel-fade relative -mb-80"
+      className="slide grid-center carousel carousel-dark carousel-fade relative -mb-80 grid"
       data-bs-ride="carousel"
     >
       {/* <!-- Indicators --> */}

@@ -37,7 +37,7 @@ const features = [
 
 export default function Technologies() {
   return (
-    <div className="bg-transparent py-12">
+    <div className="-mt-80 bg-transparent py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-base font-semibold uppercase tracking-wide text-indigo-600">

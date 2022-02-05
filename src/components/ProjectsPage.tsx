@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import BackgroundAnimation from './BackgroundAnimation';
+import ImageCarousel from './ImageCarousel';
+
 const callouts = [
   {
     name: 'Portfolio',
@@ -61,7 +63,6 @@ const callouts = [
 export default function ProjectsPage() {
   return (
     <>
-      <BackgroundAnimation />
       <div className="bg-transparent">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
@@ -92,6 +93,8 @@ export default function ProjectsPage() {
           </div>
         </div>
       </div>
+      <ImageCarousel />
+      <BackgroundAnimation />
     </>
   );
 }
