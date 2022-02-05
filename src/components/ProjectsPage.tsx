@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import BackgroundAnimation from './BackgroundAnimation';
 import ImageCarousel from './ImageCarousel';
 
 const callouts = [
@@ -93,8 +92,8 @@ export default function ProjectsPage() {
           </div>
         </div>
       </div>
+
       <ImageCarousel />
-      <BackgroundAnimation />
     </>
   );
 }

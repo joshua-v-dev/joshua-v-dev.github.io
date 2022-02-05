@@ -11,11 +11,11 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <Projects />
-      <Particles />
       <ProjectsPage />
       <Technologies />
       <Timeline />
       <Acomplishments />
+      <Particles />
     </Layout>
   );
 };
