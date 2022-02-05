@@ -9,7 +9,7 @@ const ImageCarousel = () => {
       data-bs-ride="carousel"
     >
       {/* <!-- Indicators --> */}
-      <div className="carousel-indicators absolute right-0 bottom-0 left-0  mb-4 flex justify-center object-contain p-0">
+      <div className=" carousel-indicators absolute right-0 bottom-0  left-0 mb-4 flex justify-center p-2">
         <button
           data-bs-target="#carouselDarkVariant"
           data-bs-slide-to="0"
@@ -30,13 +30,13 @@ const ImageCarousel = () => {
       </div>
 
       {/* <!-- Inner --> */}
-      <div className="carousel-inner relative w-full overflow-hidden">
+      <div className="carousel-inner relative m-10 w-full overflow-hidden p-10  ">
         {/* <!-- Single item --> */}
-        <div className="carousel-item active relative float-left w-full">
+        <div className=" carousel-item active relative float-left w-full   ">
           <img
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
             className="block w-full"
-            alt="Motorbike Smoke"
+            alt="game"
           />
           <div className="carousel-caption absolute hidden text-center md:block">
             <h5 className="text-xl">New Game Coming Soon!</h5>
@@ -86,7 +86,7 @@ const ImageCarousel = () => {
         <span className="visually-hidden">Previous</span>
       </button>
       <button
-        className="carousel-control-next absolute top-0 bottom-0 right-0 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none"
+        className="carousel-control-next absolute top-0 bottom-0 right-4 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none"
         type="button"
         data-bs-target="#carouselDarkVariant"
         data-bs-slide="next"
