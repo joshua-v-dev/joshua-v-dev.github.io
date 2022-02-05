@@ -30,9 +30,9 @@ const ImageCarousel = () => {
       </div>
 
       {/* <!-- Inner --> */}
-      <div className="carousel-inner relative m-10 w-full overflow-hidden p-10  ">
+      <div className="carousel-inner relative right-4 m-10 flex w-full overflow-hidden p-10  ">
         {/* <!-- Single item --> */}
-        <div className=" carousel-item active relative float-left w-full   ">
+        <div className=" carousel-item active relative float-left    ">
           <img
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
             className="block w-full"
