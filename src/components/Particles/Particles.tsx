@@ -14,24 +14,24 @@ export default function ParticleAnimation() {
           },
           particles: {
             number: {
-              value: 50,
-              limit: 100,
+              value: 250,
+              limit: 500,
               density: {
                 enable: true,
-                value_area: 700,
+                value_area: 900,
               },
             },
             color: {
               value: '#ffffff',
             },
             shape: {
-              type: 'circle',
+              type: 'dodecahedron',
               stroke: {
-                width: 0,
+                width: 1.4,
                 color: '#000000',
               },
               polygon: {
-                nb_sides: 5,
+                nb_sides: 20,
               },
               image: {
                 src: 'public/images/JV-BLK-RD-Logo.png',
@@ -40,35 +40,35 @@ export default function ParticleAnimation() {
               },
             },
             opacity: {
-              value: 0.5,
+              value: 0.7,
               random: true,
               anim: {
                 enable: true,
-                speed: 1,
+                speed: 1.45,
                 opacity_min: 0.5,
                 sync: false,
               },
             },
             size: {
-              value: 30,
+              value: 125,
               random: true,
               anim: {
                 enable: true,
-                speed: 3,
-                size_min: 10,
+                speed: 5,
+                size_min: 75,
                 sync: false,
               },
             },
             line_linked: {
               enable: true,
-              distance: 100,
+              distance: 125,
               color: '#ffffff',
               opacity: 1,
               width: 1,
             },
             move: {
               enable: true,
-              speed: 0.57,
+              speed: 0.75,
               direction: 'none',
               random: false,
               straight: false,
@@ -76,8 +76,8 @@ export default function ParticleAnimation() {
               bounce: false,
               attract: {
                 enable: false,
-                rotateX: 600,
-                rotateY: 1200,
+                rotateX: 575,
+                rotateY: 575,
               },
             },
           },
@@ -86,11 +86,11 @@ export default function ParticleAnimation() {
             events: {
               onHover: {
                 enable: true,
-                mode: 'bubble',
+                mode: 'connect',
                 parallax: {
-                  enable: false,
-                  force: 20,
-                  smooth: 40,
+                  enable: true,
+                  force: 10,
+                  smooth: 1000,
                 },
               },
               onClick: {
@@ -103,35 +103,35 @@ export default function ParticleAnimation() {
               grab: {
                 distance: 200,
                 lineLinked: {
-                  opacity: 0.8,
+                  opacity: 1,
                 },
               },
               bubble: {
-                distance: 300,
-                size: 40,
-                duration: 2,
-                opacity: 0.4,
+                distance: 20,
+                size: 20,
+                duration: 0.1,
+                opacity: 1,
               },
               repulse: {
-                distance: 190,
+                distance: 15,
               },
               push: {
-                particles_nb: 4,
+                particles_nb: 15,
               },
               remove: {
-                particles_nb: 2,
+                particles_nb: 15,
               },
             },
           },
           backgroundMask: {
             enable: true,
             cover: {
-              opacity: 2.75,
+              opacity: 1,
               color: {
                 value: {
-                  r: 0,
-                  g: 0,
-                  b: 0,
+                  r: 27,
+                  g: 18,
+                  b: 27,
                 },
               },
             },
