@@ -14,24 +14,24 @@ export default function ParticleAnimation() {
           },
           particles: {
             number: {
-              value: 250,
-              limit: 500,
+              value: 120,
+              limit: 4800,
               density: {
                 enable: true,
-                value_area: 900,
+                value_area: 800,
               },
             },
             color: {
-              value: '#ffffff',
+              value: 'rgb(52, 211, 153)',
             },
             shape: {
-              type: 'dodecahedron',
+              type: 'centagon',
               stroke: {
-                width: 1.4,
-                color: '#000000',
+                width: 1.5,
+                color: 'rgb(126, 34, 206)',
               },
               polygon: {
-                nb_sides: 20,
+                nb_sides: 200,
               },
               image: {
                 src: 'public/images/JV-BLK-RD-Logo.png',
@@ -40,35 +40,36 @@ export default function ParticleAnimation() {
               },
             },
             opacity: {
-              value: 0.7,
+              value: 0.6,
               random: true,
               anim: {
                 enable: true,
-                speed: 1.45,
+                speed: 1.2,
                 opacity_min: 0.5,
                 sync: false,
               },
             },
             size: {
-              value: 125,
+              value: 60,
               random: true,
               anim: {
                 enable: true,
                 speed: 5,
-                size_min: 75,
+                size_min: 20,
                 sync: false,
               },
             },
             line_linked: {
               enable: true,
-              distance: 125,
-              color: '#ffffff',
+              distance: 160,
+
+              color: 'rgb(167, 243, 208)',
               opacity: 1,
-              width: 1,
+              width: 1.2,
             },
             move: {
               enable: true,
-              speed: 0.75,
+              speed: 1,
               direction: 'none',
               random: false,
               straight: false,
@@ -76,8 +77,8 @@ export default function ParticleAnimation() {
               bounce: false,
               attract: {
                 enable: false,
-                rotateX: 575,
-                rotateY: 575,
+                rotateX: 2160,
+                rotateY: 2160,
               },
             },
           },
@@ -89,8 +90,8 @@ export default function ParticleAnimation() {
                 mode: 'connect',
                 parallax: {
                   enable: true,
-                  force: 10,
-                  smooth: 1000,
+                  force: 200,
+                  smooth: 400,
                 },
               },
               onClick: {
@@ -101,25 +102,25 @@ export default function ParticleAnimation() {
             },
             modes: {
               grab: {
-                distance: 200,
+                distance: 120,
                 lineLinked: {
                   opacity: 1,
                 },
               },
               bubble: {
-                distance: 20,
+                distance: 24,
                 size: 20,
-                duration: 0.1,
+                duration: 0.2,
                 opacity: 1,
               },
               repulse: {
-                distance: 15,
+                distance: 3,
               },
               push: {
-                particles_nb: 15,
+                particles_nb: 3,
               },
               remove: {
-                particles_nb: 15,
+                particles_nb: 3,
               },
             },
           },
@@ -130,7 +131,7 @@ export default function ParticleAnimation() {
               color: {
                 value: {
                   r: 27,
-                  g: 18,
+                  g: 17,
                   b: 27,
                 },
               },

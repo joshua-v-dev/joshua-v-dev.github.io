@@ -105,7 +105,7 @@ export default function TailNav() {
             <a className="ml-10 text-2xl font-bold text-gray-800" href="#">
               <img
                 className="h-7"
-                src="zospace-assets/logos/zospace-dark-logo.svg"
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
                 alt=""
                 width="auto"
               ></img>
