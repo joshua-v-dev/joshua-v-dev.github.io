@@ -1,15 +1,7 @@
 module.exports = {
-  mode: 'jit',
   content: [
-    './components/**/*.{html,js,ts,tsx}',
-    './pages/**/*.{html,js,ts,tsx}',
-    '.public/index.html',
-    './src/pages/**/*.{html,js,ts,tsx}',
-    './src/components/**/*.{html,js,ts,tsx}',
-    './src/layouts/**/*.{html,js,ts,tsx}',
-    './src/index.html',
-    './src/**/*.{html,js}',
-    './node_modules/tw-elements/dist/js/**/*.js',
+    './src/pages//*.{js,jsx,ts,tsx}',
+    './src/components//*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {},
