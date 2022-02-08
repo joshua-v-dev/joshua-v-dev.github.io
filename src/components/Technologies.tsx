@@ -39,14 +39,14 @@ export default function Technologies() {
   return (
     <div className=" bg-transparent py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2 className="text-base font-semibold uppercase tracking-wide text-indigo-600">
+        <div className=" lg:text-center">
+          <h1 className=" text-4xl font-extrabold  uppercase tracking-wide text-indigo-700 brightness-125">
             Technologies
-          </h2>
-          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-white sm:text-4xl">
+          </h1>
+          <p className="mt-6 text-3xl font-extrabold leading-8 tracking-tight text-gray-50 sm:text-4xl">
             A better way to Full Stack
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-white lg:mx-auto">
+          <p className="mt-4 max-w-2xl text-xl text-gray-50 lg:mx-auto">
             Cross platform, cross browser, cross device. No more headaches. Just
             focus on building your app.
           </p>
@@ -57,10 +57,10 @@ export default function Technologies() {
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-600 text-gray-50">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-16 text-lg font-medium leading-6 text-white">
+                  <p className="ml-16 text-lg font-medium leading-6 text-gray-50">
                     {feature.name}
                   </p>
                 </dt>

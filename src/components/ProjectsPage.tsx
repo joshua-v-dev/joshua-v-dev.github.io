@@ -64,11 +64,11 @@ export default function ProjectsPage() {
       <div className=" bg-transparent">
         <div className="mx-auto  my-auto max-w-7xl px-4 sm:px-7 lg:px-7 ">
           <div className=" max-w-2xl space-x-1 sm:py-24 lg:max-w-none lg:py-12">
-            <h2 className="m-6 text-5xl font-extrabold text-white">
+            <h2 className="mt-11 text-4xl font-extrabold tracking-tight text-white">
               Collections
             </h2>
 
-            <div className="lg:grid lg:grid-cols-4  ">
+            <div className="mt-7 lg:grid lg:grid-cols-4  ">
               {callouts.map((callout) => (
                 <>
                   <div key={callout.name} className="border-2 lg:space-y-1 ">

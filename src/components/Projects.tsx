@@ -4,7 +4,10 @@ import React from 'react';
 import ImageCarousel from './ImageCarousel';
 const Projects = () => (
   <>
-    <div className=" mt-40 flex items-center justify-evenly p-4">
+    <h2 className="mt-36 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
+      Top Picks
+    </h2>
+    <div className=" mt-12 flex items-center justify-evenly p-4">
       <div className="max-w-sm rounded-lg bg-black shadow-lg">
         <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
           <img

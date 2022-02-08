@@ -3,6 +3,7 @@
 
 import React from 'react';
 import Technologies from './Technologies';
+import Acomplishments from './Acomplishments';
 
 const features = [
   {
@@ -28,12 +29,12 @@ export default function Timeline() {
   return (
     <>
       <div className="grid bg-transparent">
-        <div className=" mx-auto grid max-w-2xl grid-cols-1 items-center  gap-y-20 gap-x-20 py-10 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+        <div className="mx-auto mt-20 grid max-w-2xl grid-cols-2 items-center gap-y-20 gap-x-20 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
-            <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-7xl font-extrabold tracking-tight text-white sm:text-4xl">
               Roadmap
             </h2>
-            <p className="mt-4 text-3xl text-white">
+            <p className="mt-8 text-2xl text-white">
               Technologies I have used so far to build my projects & a little
               bit about my future.
             </p>
@@ -77,6 +78,7 @@ export default function Timeline() {
         </div>
       </div>
       <Technologies />
+      <Acomplishments />
     </>
   );
 }
