@@ -80,7 +80,7 @@ const ImageCarousel = () => {
         ></span>
       </button>
       {/* <!-- Indicators --> */}
-      <div className="carousel-indicators  mx-auto max-w-screen-lg rounded-full bg-stone-200">
+      <div className="carousel-indicators  mx-auto max-w-screen-lg rounded-full bg-stone-200 px-2">
         <button
           data-bs-target="#carouselDarkVariant"
           data-bs-slide-to="0"
