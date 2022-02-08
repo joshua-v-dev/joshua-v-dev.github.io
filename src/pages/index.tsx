@@ -9,9 +9,9 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <Projects />
+      <Particles />
       <Timeline />
       <ProjectsPage />
-      <Particles />
     </Layout>
   );
 };

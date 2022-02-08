@@ -3,6 +3,7 @@ import React from 'react';
 
 const callouts = [
   {
+    id: 1,
     name: 'PORTFOLIO',
     description: 'React, Tailwind CSS, and Next.js',
     imageSrc:
@@ -13,6 +14,7 @@ const callouts = [
     href: '#',
   },
   {
+    id: 2,
     name: 'MERN STACK',
     description: 'React, MongoDB, Express, Node.js',
     imageSrc:
@@ -22,6 +24,7 @@ const callouts = [
     href: '#',
   },
   {
+    id: 3,
     name: 'SHOPIFY',
     description: 'Hydrogen, Liquid, Next.js, Tailwind CSS, GraphQL',
     imageSrc:
@@ -30,6 +33,7 @@ const callouts = [
     href: '#',
   },
   {
+    id: 4,
     name: 'UX DESIGN',
     description: 'Google Certification Course',
     imageSrc:
@@ -40,6 +44,7 @@ const callouts = [
     href: '#',
   },
   {
+    id: 5,
     name: 'INDIE GAME DEVELOPMENT',
     description: 'React Native, Babylon.js, Blender',
     imageSrc:
@@ -49,6 +54,7 @@ const callouts = [
     href: '#',
   },
   {
+    id: 6,
     name: 'FREELANCE CLIENTS',
     description: 'Hydrogen, Liquid, Next.js, Tailwind CSS, GraphQL',
     imageSrc:
@@ -60,43 +66,41 @@ const callouts = [
 
 export default function ProjectsPage() {
   return (
-    <>
-      <div className=" bg-transparent">
-        <div className="mx-auto  my-auto max-w-7xl px-4 sm:px-7 lg:px-7 ">
-          <div className=" max-w-2xl space-x-1 sm:py-24 lg:max-w-none lg:py-12">
-            <h2 className="mt-11 text-4xl font-extrabold tracking-tight text-white">
-              Collections
-            </h2>
+    <div className=" bg-transparent">
+      <div className="mx-auto  my-auto max-w-7xl px-4 sm:px-7 lg:px-7 ">
+        <div className=" max-w-2xl space-x-1 sm:py-24 lg:max-w-none lg:py-12">
+          <h2 className="mt-11 text-4xl font-extrabold tracking-tight text-white">
+            Collections
+          </h2>
 
-            <div className="mt-7 lg:grid lg:grid-cols-4  ">
-              {callouts.map((callout) => (
-                <>
-                  <div key={callout.name} className="border-2 lg:space-y-1 ">
-                    <div className="relative w-full overflow-hidden rounded-lg  group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-                      <img
-                        src={callout.imageSrc}
-                        alt={callout.imageAlt}
-                        className="h-auto w-auto object-contain "
-                      />
-                    </div>
+          {callouts.map((callouts) => (
+            <>
+              <div className="mt-7 lg:grid lg:grid-cols-4  ">
+                <div className="border-2 lg:space-y-1 ">
+                  <div className="relative w-full overflow-hidden rounded-lg  group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                    <img
+                      src={callouts.imageSrc}
+                      alt={callouts.imageAlt}
+                      className="h-auto w-auto object-contain "
+                    />
                   </div>
-                  <div className="relative mr-2 border-2 ">
-                    <h3 className="text-5x1 m-20 text-center text-white underline">
-                      <a href={callout.href}>
-                        <span className="absolute inset-0" />
-                        {callout.name}
-                      </a>
-                    </h3>
-                    <p className="text-3x1 text-center font-semibold text-white">
-                      {callout.description}
-                    </p>
-                  </div>
-                </>
-              ))}
-            </div>
-          </div>
+                </div>
+                <div className="relative mr-2 border-2 ">
+                  <h3 className="text-5x1 m-20 text-center text-white underline">
+                    <a href={callouts.href}>
+                      <span className="absolute inset-0" />
+                      {callouts.name}
+                    </a>
+                  </h3>
+                  <p className="text-3x1 text-center font-semibold text-white">
+                    {callouts.description}
+                  </p>
+                </div>
+              </div>
+            </>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

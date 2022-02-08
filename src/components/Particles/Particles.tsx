@@ -12,8 +12,8 @@ export default function ParticleAnimation() {
           },
           particles: {
             number: {
-              value: 120,
-              limit: 4800,
+              value: 80,
+              limit: 100,
               density: {
                 enable: true,
                 value_area: 800,
@@ -23,13 +23,13 @@ export default function ParticleAnimation() {
               value: 'rgb(52, 211, 153)',
             },
             shape: {
-              type: 'centagon',
+              type: 'dyson-spiral',
               stroke: {
                 width: 1.5,
                 color: 'rgb(126, 34, 206)',
               },
               polygon: {
-                nb_sides: 200,
+                nb_sides: 40,
               },
               image: {
                 src: 'public/images/JV-BLK-RD-Logo.png',
@@ -42,13 +42,13 @@ export default function ParticleAnimation() {
               random: true,
               anim: {
                 enable: true,
-                speed: 1.2,
+                speed: 1.5,
                 opacity_min: 0.5,
                 sync: false,
               },
             },
             size: {
-              value: 60,
+              value: 80,
               random: true,
               anim: {
                 enable: true,
@@ -59,7 +59,7 @@ export default function ParticleAnimation() {
             },
             line_linked: {
               enable: true,
-              distance: 160,
+              distance: 240,
 
               color: 'rgb(167, 243, 208)',
               opacity: 1,
@@ -75,8 +75,8 @@ export default function ParticleAnimation() {
               bounce: false,
               attract: {
                 enable: false,
-                rotateX: 2160,
-                rotateY: 2160,
+                rotateX: 1080,
+                rotateY: 1080,
               },
             },
           },
@@ -100,7 +100,7 @@ export default function ParticleAnimation() {
             },
             modes: {
               grab: {
-                distance: 120,
+                distance: 320,
                 lineLinked: {
                   opacity: 1,
                 },
