@@ -28,26 +28,26 @@ export default function Timeline() {
   return (
     <>
       <div className="grid bg-transparent">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+        <div className=" mx-auto grid max-w-2xl grid-cols-1 items-center  gap-y-20 gap-x-20 py-10 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-4xl">
               Roadmap
             </h2>
-            <p className="mt-4 text-white">
+            <p className="mt-4 text-3xl text-white">
               Technologies I have used so far to build my projects & a little
               bit about my future.
             </p>
 
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+            <dl className="mt-20 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               {features.map((feature) => (
                 <div key={feature.year} className="border-t border-white pt-4">
-                  <dt className="font-large text-white">{feature.year}</dt>
-                  <dd className="text-m mt-2 text-white">{feature.text}</dd>
+                  <dt className="  text-white">{feature.year}</dt>
+                  <dd className=" mt-2 text-white">{feature.text}</dd>
                 </div>
               ))}
             </dl>
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+          <div className="mt-28 grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png"
               alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
@@ -65,6 +65,11 @@ export default function Timeline() {
             />
             <img
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982762/Kayla_s_Playground_fwistb.png"
+              alt="Walnut card tray filled with cards and card angled in dedicated groove."
+              className="rounded-lg bg-gray-100"
+            />
+            <img
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978160/Simple_Lined_Black_Onboarding_Page_Wireframe_Website_UI_Prototype_maycmm.svg"
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
               className="rounded-lg bg-gray-100"
             />

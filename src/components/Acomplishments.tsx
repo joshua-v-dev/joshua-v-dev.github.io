@@ -1,7 +1,7 @@
 export default function Acomplishments() {
   return (
     <>
-      <section className="py-20">
+      <section className="my-32 py-20">
         <div className="container mx-auto px-4">
           <div className="-mx-4 -mb-16 flex flex-wrap">
             <div className="mb-16 w-full px-4 md:w-1/2 lg:w-1/3">
