@@ -8,8 +8,8 @@ import ProjectsPage from 'src/components/ProjectsPage';
 const Home: React.FC = () => {
   return (
     <Layout>
-      <Projects />
       <Particles />
+      <Projects />
       <Timeline />
       <ProjectsPage />
     </Layout>

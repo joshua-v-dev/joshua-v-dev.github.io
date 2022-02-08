@@ -12,18 +12,18 @@ export default function ParticleAnimation() {
           },
           particles: {
             number: {
-              value: 80,
-              limit: 100,
+              value: 40,
+              limit: 80,
               density: {
                 enable: true,
-                value_area: 800,
+                value_area: 400,
               },
             },
             color: {
               value: 'rgb(52, 211, 153)',
             },
             shape: {
-              type: 'dyson-spiral',
+              type: 'dyrect',
               stroke: {
                 width: 1.5,
                 color: 'rgb(126, 34, 206)',
@@ -44,7 +44,7 @@ export default function ParticleAnimation() {
                 enable: true,
                 speed: 1.5,
                 opacity_min: 0.5,
-                sync: false,
+                sync: true,
               },
             },
             size: {
@@ -53,8 +53,8 @@ export default function ParticleAnimation() {
               anim: {
                 enable: true,
                 speed: 5,
-                size_min: 20,
-                sync: false,
+                size_min: 10,
+                sync: true,
               },
             },
             line_linked: {
@@ -69,7 +69,7 @@ export default function ParticleAnimation() {
               enable: true,
               speed: 1,
               direction: 'none',
-              random: false,
+              random: true,
               straight: false,
               out_mode: 'out',
               bounce: false,
