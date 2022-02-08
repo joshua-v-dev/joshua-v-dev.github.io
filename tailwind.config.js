@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'production',
   content: [
     './src/pages//*.{js,jsx,ts,tsx}',
     './src/components//*.{js,jsx,ts,tsx}',
@@ -6,8 +7,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-    require('tw-elements/dist/plugin'),
-  ],
+  plugins: ['@tailwindcss/aspect-ratio', 'tw-elements/dist/plugin'],
 };

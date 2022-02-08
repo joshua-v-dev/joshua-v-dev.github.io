@@ -72,12 +72,11 @@ export default function ProjectsPage() {
           <h2 className="mt-11 text-4xl font-extrabold tracking-tight text-white">
             Collections
           </h2>
-
-          {callouts.map((callouts) => (
-            <>
-              <div className="mt-7 lg:grid lg:grid-cols-4  ">
+          <>
+            {callouts.map((callouts) => (
+              <div key={callouts.id} className="mt-7 lg:grid lg:grid-cols-4  ">
                 <div className="border-2 lg:space-y-1 ">
-                  <div className="relative w-full overflow-hidden rounded-lg  group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                  <div className="sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1 lg:aspect-h-1  relative w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:h-64">
                     <img
                       src={callouts.imageSrc}
                       alt={callouts.imageAlt}
@@ -85,20 +84,23 @@ export default function ProjectsPage() {
                     />
                   </div>
                 </div>
-                <div className="relative mr-2 border-2 ">
+                <div key={callouts.id} className="relative mr-2 border-2 ">
                   <h3 className="text-5x1 m-20 text-center text-white underline">
                     <a href={callouts.href}>
-                      <span className="absolute inset-0" />
+                      <span key={callouts.id} className="absolute inset-0" />
                       {callouts.name}
                     </a>
                   </h3>
-                  <p className="text-3x1 text-center font-semibold text-white">
+                  <p
+                    key={callouts.id}
+                    className="text-3x1 text-center font-semibold text-white"
+                  >
                     {callouts.description}
                   </p>
                 </div>
               </div>
-            </>
-          ))}
+            ))}
+          </>
         </div>
       </div>
     </div>

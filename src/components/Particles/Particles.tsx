@@ -29,7 +29,7 @@ export default function ParticleAnimation() {
                 color: 'rgb(126, 34, 206)',
               },
               polygon: {
-                nb_sides: 40,
+                nb_sides: 10,
               },
               image: {
                 src: 'public/images/JV-BLK-RD-Logo.png',
