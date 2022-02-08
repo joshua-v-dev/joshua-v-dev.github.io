@@ -30,10 +30,7 @@ export default function Timeline() {
             Technical Specifications
           </h2>
           <p className="mt-4 text-white">
-            The walnut wood card tray is precision milled to perfectly fit a
-            stack of Focus cards. The powder coated steel divider separates
-            active cards from new ones, or can be used to archive important task
-            lists.
+            Technologies I have used so far to build my projects.
           </p>
 
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">

@@ -1,11 +1,9 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
-import BackgroundAnimation from '../BackgroundAnimation';
 
 export default function ParticleAnimation() {
   return (
     <>
-      <BackgroundAnimation />
       <Particles
         options={{
           fullScreen: {
