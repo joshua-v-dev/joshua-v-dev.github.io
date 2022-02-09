@@ -13,7 +13,7 @@ export default function ParticleAnimation() {
           particles: {
             number: {
               value: 40,
-              limit: 80,
+              limit: 160,
               density: {
                 enable: true,
                 value_area: 400,
