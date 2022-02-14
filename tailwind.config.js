@@ -1,11 +1,5 @@
 module.exports = {
-  mode: 'production',
-  content: [
-    './src/pages//*.{js,jsx,ts,tsx}',
-    './src/components//*.{js,jsx,ts,tsx}',
-    './src/database//*.{js,jsx,ts,tsx}',
-    './src/public//*.{js,jsx,ts,tsx}',
-  ],
+  content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
     extend: {},
   },
