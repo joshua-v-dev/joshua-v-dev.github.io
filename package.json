@@ -39,7 +39,7 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@emotion/babel-plugin": "^11.7.2",
-    "@netlify/plugin-nextjs": "^4.2.5",
+    "@netlify/plugin-nextjs": "^4.2.6",
     "@testing-library/jest-dom": "^5.16.1",
     "@tsconfig/next": "^1.0.1",
     "@types/babel-plugin-macros": "^2.8.5",
