@@ -10,11 +10,14 @@ const Projects = () => (
     <div className=" mt-12 flex items-center justify-evenly p-4">
       <div className="max-w-sm rounded-lg bg-black shadow-lg">
         <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <Image
-            className="rounded-t-lg"
-            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644258292/something_backblk_f3wveb.svg"
-            alt=""
-          />
+          <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+            <Image
+              className="rounded-t-lg"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644258292/something_backblk_f3wveb.svg"
+              alt=""
+              layout="fill"
+            />
+          </div>
         </a>
         <div className="p-6">
           <h5 className="mb-4 text-xl font-medium text-white">
@@ -33,11 +36,14 @@ const Projects = () => (
       </div>
       <div className="flex max-w-sm flex-col justify-end rounded-lg bg-black shadow-lg">
         <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <Image
-            className="rounded-t-lg"
-            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg"
-            alt=""
-          />
+          <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+            <Image
+              className="rounded-t-lg"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg"
+              alt=""
+              layout="fill"
+            />
+          </div>
         </a>
         <div className="p-6">
           <h5 className="mb-2 text-xl font-medium text-white">
@@ -58,11 +64,16 @@ const Projects = () => (
       <div className="  flex justify-around p-2">
         <div className="max-w-sm rounded-lg bg-black shadow-lg">
           <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <Image
-              className="rounded-t-lg"
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643976704/shopify_lvz0ui.png"
-              alt=""
-            />
+            <div
+              style={{ position: 'relative', width: '100%', height: '100%' }}
+            >
+              <Image
+                className="rounded-t-lg"
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643976704/shopify_lvz0ui.png"
+                alt=""
+                layout="fill"
+              />
+            </div>
           </a>
           <div className="p-6">
             <h5 className="mb-4 text-xl font-medium text-white">
