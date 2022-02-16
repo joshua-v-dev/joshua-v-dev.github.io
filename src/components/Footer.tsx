@@ -11,12 +11,16 @@ const Footer = () => {
             className="mx-auto inline-block text-2xl leading-none text-white"
             href="#"
           >
-            <Image
-              className="h-auto w-auto"
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
-              alt=""
-              layout="fill"
-            ></Image>
+            <div
+              style={{ position: 'relative', width: '100%', height: '100%' }}
+            >
+              <Image
+                className="h-auto w-auto"
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
+                alt=""
+                layout="fill"
+              ></Image>
+            </div>
           </a>
           <ul className="my-6 flex flex-wrap items-center justify-center space-x-8">
             <li className="mb-2 md:mb-0">
