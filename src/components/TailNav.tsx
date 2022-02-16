@@ -113,10 +113,9 @@ export default function TailNav() {
               href="#"
             >
               <Image
-                className="h-7"
+                className="h-7 w-7"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
                 alt=""
-                layout="fill"
               ></Image>
             </a>
           </div>

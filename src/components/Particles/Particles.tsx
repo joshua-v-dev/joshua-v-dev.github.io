@@ -32,7 +32,7 @@ export default function ParticleAnimation() {
                 nb_sides: 10,
               },
               image: {
-                src: 'public/images/JV-BLK-RD-Logo.png',
+                src: 'https://res.cloudinary.com/dpytkhyme/image/upload/v1644349608/JV-BLK-RD-Logo_lzzpsd.png',
                 width: 100,
                 height: 100,
               },
