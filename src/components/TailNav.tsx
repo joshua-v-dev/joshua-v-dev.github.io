@@ -10,7 +10,7 @@ export default function TailNav() {
             className="h-24"
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
             alt=""
-            width="auto"
+            layout="fill"
           ></Image>
         </a>
         <div className="lg:hidden">
@@ -110,7 +110,7 @@ export default function TailNav() {
                 className="h-7"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
                 alt=""
-                width="auto"
+                layout="fill"
               ></Image>
             </a>
           </div>

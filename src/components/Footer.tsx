@@ -15,7 +15,7 @@ const Footer = () => {
               className="h-auto w-auto"
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
               alt=""
-              width="auto"
+              layout="fill"
             ></Image>
           </a>
           <ul className="my-6 flex flex-wrap items-center justify-center space-x-8">
@@ -71,12 +71,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        {/* <div className="mt-12 mb-8 border-b border-gray-50"></div> */}
-        {/* <div className="container mx-auto px-4">
-          <p className="text-center text-sm text-white">
-            All rights reserved &copy; Wireframes Corporation 2020
-          </p>
-        </div> */}
       </footer>
     </>
   );
