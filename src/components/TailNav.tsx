@@ -3,11 +3,14 @@ import Image from 'next/image';
 
 export default function TailNav() {
   return (
-    <section className=" max-h-7 bg-transparent py-8 px-4 lg:px-10">
-      <nav className="relative flex items-center justify-between">
-        <a className="text-2xl font-bold text-white" href="#">
+    <section className="max-h-7 bg-transparent py-8 px-4 lg:px-10">
+      <nav className="flex items-center justify-between">
+        <a
+          className="relative h-28 w-28 text-2xl font-bold text-white"
+          href="#"
+        >
           <Image
-            className="relative h-24"
+            className="h-24"
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
             alt=""
             layout="fill"
@@ -105,7 +108,10 @@ export default function TailNav() {
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
         <nav className="relative flex h-full w-full flex-col overflow-y-auto bg-white py-8">
           <div className="mb-16 flex items-center pr-6">
-            <a className="ml-10 text-2xl font-bold text-gray-800" href="#">
+            <a
+              className="relative ml-10 h-8 w-8 text-2xl font-bold text-gray-800"
+              href="#"
+            >
               <Image
                 className="h-7"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
