@@ -1,6 +1,22 @@
 import { createGlobalStyle } from 'styled-components';
-import tw, { GlobalStyles as BaseStyles, TwStyle } from 'twin.macro';
+import tw from 'twin.macro';
 
+const CustomStyles = createGlobalStyle`
+  body {
+
+    ${tw`antialiased`}
+  }
+`;
+const GlobalStyles = () => (
+  <>
+    <CustomStyles />
+  </>
+);
+export default GlobalStyles;
+
+
+
+// import GlobalStyles as BaseStyles
 // Use the `TwStyle` import to type tw blocks
 // type WrapperVariant = 'light' | 'dark' | 'crazy';
 // interface ContainerProps {
@@ -15,20 +31,6 @@ import tw, { GlobalStyles as BaseStyles, TwStyle } from 'twin.macro';
 //   dark: tw`bg-black text-white`,
 //   crazy: tw`bg-yellow-500 text-red-500`,
 // };
-
-const CustomStyles = createGlobalStyle`
-  body {
-
-    ${tw`antialiased`}
-  }
-`;
-const GlobalStyles = () => (
-  <>
-    <BaseStyles />
-    <CustomStyles />
-  </>
-);
-export default GlobalStyles;
 
 // <TwinComponent />
 // const TwinContainer = styled.div(({ hasBg }: ContainerProps) => [
