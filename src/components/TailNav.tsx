@@ -7,7 +7,7 @@ export default function TailNav() {
       <nav className="relative flex items-center justify-between">
         <a className="text-2xl font-bold text-white" href="#">
           <Image
-            className="h-24"
+            className="relative h-24"
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
             alt=""
             layout="fill"
@@ -118,7 +118,7 @@ export default function TailNav() {
             <ul>
               <li className="mb-1 px-10">
                 <a
-                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
                   href="#"
                 >
                   Product
@@ -126,7 +126,7 @@ export default function TailNav() {
               </li>
               <li className="mb-1 px-10">
                 <a
-                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
                   href="#"
                 >
                   Story
@@ -134,7 +134,7 @@ export default function TailNav() {
               </li>
               <li className="mb-1 px-10">
                 <a
-                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
                   href="#"
                 >
                   Features
@@ -142,7 +142,7 @@ export default function TailNav() {
               </li>
               <li className="mb-1 px-10">
                 <a
-                  className="hover:bg-blueGray-50 block rounded-xl py-4 pl-8 text-xl text-gray-800"
+                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
                   href="#"
                 >
                   Contact

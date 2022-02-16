@@ -67,7 +67,13 @@
   },
   "babelMacros": {
     "twin": {
-      "preset": "styled-components"
+      "preset": "styled-components",
+      "hasSuggestions": true,
+      "dataTwProp": "all",
+      "debugPlugins": true,
+      "debug": true,
+      "includeClassNames": true,
+      "sassyPseudo": true
     }
   },
   "engines": {
