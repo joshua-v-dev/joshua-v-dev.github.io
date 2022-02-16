@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 //tailwind card with image and ripple effect
-import React from 'react';
-import ImageCarousel from './ImageCarousel';
+import React from 'react'
+import ImageCarousel from './ImageCarousel'
+import Image from 'next/image'
 const Projects = () => (
   <>
     <h2 className="mt-36 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
@@ -10,7 +10,7 @@ const Projects = () => (
     <div className=" mt-12 flex items-center justify-evenly p-4">
       <div className="max-w-sm rounded-lg bg-black shadow-lg">
         <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <img
+          <Image
             className="rounded-t-lg"
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644258292/something_backblk_f3wveb.svg"
             alt=""
@@ -33,7 +33,7 @@ const Projects = () => (
       </div>
       <div className="flex max-w-sm flex-col justify-end rounded-lg bg-black shadow-lg">
         <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <img
+          <Image
             className="rounded-t-lg"
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg"
             alt=""
@@ -58,7 +58,7 @@ const Projects = () => (
       <div className="  flex justify-around p-2">
         <div className="max-w-sm rounded-lg bg-black shadow-lg">
           <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-            <img
+            <Image
               className="rounded-t-lg"
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643976704/shopify_lvz0ui.png"
               alt=""
@@ -83,5 +83,5 @@ const Projects = () => (
     </div>
     <ImageCarousel />
   </>
-);
-export default Projects;
+)
+export default Projects

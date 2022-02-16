@@ -15,10 +15,10 @@ const ImageCarousel = () => {
         {/* <!-- Inner --> */}
         <div className="carousel-inner relative right-4 flex w-full overflow-hidden p-12 ">
           {/* <!-- Single item --> */}
-          <div className="container mx-auto mb-12 max-w-screen-lg border-zinc-900 bg-stone-200 p-10">
+          <div className="container mx-auto mb-12 max-w-screen-lg border-gray-900 bg-gray-200 p-10">
             <img
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
-              className="mx-auto border-zinc-900   "
+              className="mx-auto border-gray-900   "
               alt="game"
             />
           </div>
@@ -78,7 +78,7 @@ const ImageCarousel = () => {
           ></span>
         </button>
         {/* <!-- Indicators --> */}
-        <div className="carousel-indicators mx-auto my-auto flex w-32  max-w-screen-lg items-center justify-center rounded-full bg-stone-200 px-2">
+        <div className="carousel-indicators mx-auto my-auto flex w-32  max-w-screen-lg items-center justify-center rounded-full bg-gray-200 px-2">
           <button
             data-bs-target="#carouselDarkVariant"
             data-bs-slide-to="0"
@@ -97,8 +97,8 @@ const ImageCarousel = () => {
             aria-label="Slide 1"
           ></button>
           <div className="carousel-caption absolute  hidden items-center justify-center text-center md:block">
-            <h5 className=" text-3xl text-sky-400">New Game Coming Soon!</h5>
-            <p className=" text-2xl text-sky-400">
+            <h5 className=" text-3xl text-blue-400">New Game Coming Soon!</h5>
+            <p className=" text-2xl text-blue-400">
               We definitely have something that you are going to love
             </p>
           </div>

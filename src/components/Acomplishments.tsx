@@ -22,7 +22,7 @@ export default function Acomplishments() {
                 ></path>
                 <circle cx="24" cy="24" r="23.5" stroke="#C2C9D2"></circle>
               </svg>
-              <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+              <h3 className=" mb-2 text-2xl font-bold text-white">
                 P.W.A.&apos;s
               </h3>
               <p className="text-lg text-gray-300">Progressive Web Apps</p>
@@ -42,7 +42,7 @@ export default function Acomplishments() {
                 ></path>
                 <circle cx="24" cy="24" r="23.5" stroke="#C2C9D2"></circle>
               </svg>
-              <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+              <h3 className=" mb-2 text-2xl font-bold text-white">
                 Custom Game Development
               </h3>
               <p className="text-lg text-gray-300">
@@ -64,7 +64,7 @@ export default function Acomplishments() {
                 ></path>
                 <circle cx="24" cy="24" r="23.5" stroke="#C2C9D2"></circle>
               </svg>
-              <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+              <h3 className=" mb-2 text-2xl font-bold text-white">
                 E-Commerce
               </h3>
               <p className="text-lg text-gray-300">
@@ -86,7 +86,7 @@ export default function Acomplishments() {
                 ></path>
                 <circle cx="24" cy="24" r="23.5" stroke="#C2C9D2"></circle>
               </svg>
-              <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+              <h3 className=" mb-2 text-2xl font-bold text-white">
                 Recruiting & Hiring Me
               </h3>
               <p className="text-lg text-gray-300">
@@ -120,7 +120,7 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+                  <h3 className=" mb-2 text-2xl font-bold text-white">
                     MERN to Modern MERN
                   </h3>
                   <p className="text-lg leading-loose text-gray-300">
@@ -152,7 +152,7 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+                  <h3 className=" mb-2 text-2xl font-bold text-white">
                     Security & Testing
                   </h3>
                   <p className="text-lg leading-loose text-gray-300">
@@ -182,7 +182,7 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+                  <h3 className=" mb-2 text-2xl font-bold text-white">
                     Game Development
                   </h3>
                   <p className="text-lg leading-loose text-gray-300">
@@ -214,7 +214,7 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+                  <h3 className=" mb-2 text-2xl font-bold text-white">
                     Weekly email updates
                   </h3>
                   <p className="text-lg leading-loose text-gray-300">
@@ -245,7 +245,7 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+                  <h3 className=" mb-2 text-2xl font-bold text-white">
                     Future Projects
                   </h3>
                   <p className="text-lg leading-loose text-gray-300">
@@ -274,7 +274,7 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="font-heading mb-2 text-2xl font-bold text-white">
+                  <h3 className=" mb-2 text-2xl font-bold text-white">
                     Social Media Aspirations
                   </h3>
                   <p className="text-lg leading-loose text-gray-300">

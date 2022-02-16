@@ -96,7 +96,7 @@ export default function ProjectsPage() {
                 </h3>
                 <p
                   key={callouts.id}
-                  className="text-3x1 text-center font-semibold text-white"
+                  className="te4xl text-center font-semibold text-white"
                 >
                   {callouts.description}
                 </p>
