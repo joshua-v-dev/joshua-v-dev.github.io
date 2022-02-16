@@ -1,24 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
-import tw, {
-  GlobalStyles as BaseStyles,
-  // styled,
-  TwStyle,
-} from 'twin.macro';
+import tw, { GlobalStyles as BaseStyles, TwStyle } from 'twin.macro';
 
 // Use the `TwStyle` import to type tw blocks
-type WrapperVariant = 'light' | 'dark' | 'crazy';
-interface ContainerProps {
-  variant?: WrapperVariant;
-  tapColor?: string;
-  hasBg?: boolean;
-}
-
-const containerVariants: Record<WrapperVariant, TwStyle> = {
-  // Named class sets
-  light: tw`bg-white text-black`,
-  dark: tw`bg-black text-white`,
-  crazy: tw`bg-yellow-500 text-red-500`,
-};
+// type WrapperVariant = 'light' | 'dark' | 'crazy';
+// interface ContainerProps {
+//   variant?: WrapperVariant;
+//   tapColor?: string;
+//   hasBg?: boolean;
+// }
+//
+// const containerVariants: Record<WrapperVariant, TwStyle> = {
+//   // Named class sets
+//   light: tw`bg-white text-black`,
+//   dark: tw`bg-black text-white`,
+//   crazy: tw`bg-yellow-500 text-red-500`,
+// };
 
 const CustomStyles = createGlobalStyle`
   body {

@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <>
-      <footer className="relative py-20">
+      <footer className="py-20">
         <div className="container  mx-auto px-4 text-center">
           <a
             className="mx-auto inline-block text-2xl leading-none text-white"

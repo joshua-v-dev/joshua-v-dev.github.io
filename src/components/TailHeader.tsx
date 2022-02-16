@@ -6,12 +6,14 @@ export default function Tailheader() {
     <div className="container mx-auto px-4">
       <nav className="flex items-center justify-between py-8">
         <a className="text-2xl leading-none text-gray-600" href="#">
-          <Image
-            className="h-8"
-            src="plain-assets/logos/plain-light.svg"
-            alt=""
-            width="auto"
-          ></Image>
+          <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+            <Image
+              className="h-8"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644085059/V_2_d5qwjw.svg"
+              alt=""
+              width="auto"
+            ></Image>
+          </div>
         </a>
         <div className="lg:hidden">
           <button className="navbar-burger block text-indigo-50 hover:text-indigo-200 focus:outline-none">
@@ -105,7 +107,7 @@ export default function Tailheader() {
         <div className="relative mx-auto max-w-3xl">
           <Image
             className="absolute top-0 left-0 mx-auto h-64 w-full rounded-xl object-cover lg:h-96"
-            src="plain-assets/images/indigo-600-horizontal.png"
+            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644084374/V_ortjg1.svg"
             alt=""
           ></Image>
         </div>
@@ -118,7 +120,7 @@ export default function Tailheader() {
           <a className="mr-auto text-2xl font-semibold leading-none" href="#">
             <Image
               className="h-8"
-              src="plain-assets/logos/plain-indigo.svg"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644084763/V_1_eoklqw.svg"
               alt=""
               width="auto"
             ></Image>
@@ -175,11 +177,6 @@ export default function Tailheader() {
               </a>
             </li>
           </ul>
-        </div>
-        <div className="mt-auto">
-          <p className="mt-6 mb-4 text-center text-sm text-gray-500">
-            <span>© 2022 All rights reserved.</span>
-          </p>
         </div>
       </nav>
     </div>

@@ -105,7 +105,7 @@ export default function TailNav() {
       </nav>
       <div className="navbar-menu fixed top-0 left-0 bottom-0 z-50 hidden w-5/6 max-w-sm">
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-        <nav className="relative flex h-full w-full flex-col overflow-y-auto bg-white py-8">
+        <nav className="flex h-full w-full flex-col overflow-y-auto bg-white py-8">
           <div className="mb-16 flex items-center pr-6">
             <a
               className=" ml-10 h-8 w-8 text-2xl font-bold text-gray-800"
