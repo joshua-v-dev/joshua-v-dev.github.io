@@ -165,9 +165,6 @@ export default function TailNav() {
                 Sign up
               </a>
             </div>
-            <p className="mt-6 mb-4 text-center text-lg">
-              <span>2021 &copy; Zospace. All rights reserved.</span>
-            </p>
           </div>
         </nav>
       </div>
