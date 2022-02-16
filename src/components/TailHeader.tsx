@@ -1,16 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Tailheader() {
   <section className="bg-indigo-500">
     <div className="container mx-auto px-4">
       <nav className="flex items-center justify-between py-8">
         <a className="text-2xl leading-none text-gray-600" href="#">
-          <img
+          <Image
             className="h-8"
             src="plain-assets/logos/plain-light.svg"
             alt=""
             width="auto"
-          ></img>
+          ></Image>
         </a>
         <div className="lg:hidden">
           <button className="navbar-burger block text-indigo-50 hover:text-indigo-200 focus:outline-none">
@@ -68,9 +69,9 @@ export default function Tailheader() {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             ></path>
           </svg>
@@ -102,11 +103,11 @@ export default function Tailheader() {
           </div>
         </div>
         <div className="relative mx-auto max-w-3xl">
-          <img
+          <Image
             className="absolute top-0 left-0 mx-auto h-64 w-full rounded-xl object-cover lg:h-96"
             src="plain-assets/images/indigo-600-horizontal.png"
             alt=""
-          ></img>
+          ></Image>
         </div>
       </div>
     </div>
@@ -115,12 +116,12 @@ export default function Tailheader() {
       <nav className="relative flex h-full w-full flex-col overflow-y-auto border-r bg-white py-6 px-6">
         <div className="mb-12 flex items-center">
           <a className="mr-auto text-2xl font-semibold leading-none" href="#">
-            <img
+            <Image
               className="h-8"
               src="plain-assets/logos/plain-indigo.svg"
               alt=""
               width="auto"
-            ></img>
+            ></Image>
           </a>
           <button className="navbar-close">
             <svg
@@ -131,9 +132,9 @@ export default function Tailheader() {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               ></path>
             </svg>

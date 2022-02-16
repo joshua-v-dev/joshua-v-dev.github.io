@@ -1,14 +1,17 @@
+import React from 'react';
+import Image from 'next/image';
+
 export default function TailNav() {
   return (
     <section className=" max-h-7 bg-transparent py-8 px-4 lg:px-10">
       <nav className="relative flex items-center justify-between">
         <a className="text-2xl font-bold text-white" href="#">
-          <img
+          <Image
             className="h-24"
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
             alt=""
             width="auto"
-          ></img>
+          ></Image>
         </a>
         <div className="lg:hidden">
           <button className="navbar-burger p-2">
@@ -103,12 +106,12 @@ export default function TailNav() {
         <nav className="relative flex h-full w-full flex-col overflow-y-auto bg-white py-8">
           <div className="mb-16 flex items-center pr-6">
             <a className="ml-10 text-2xl font-bold text-gray-800" href="#">
-              <img
+              <Image
                 className="h-7"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
                 alt=""
                 width="auto"
-              ></img>
+              ></Image>
             </a>
           </div>
           <div>

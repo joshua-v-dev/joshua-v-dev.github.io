@@ -1,3 +1,6 @@
+import React from 'react';
+import Image from 'next/image';
+
 //tailwind footer
 const Footer = () => {
   return (
@@ -8,12 +11,12 @@ const Footer = () => {
             className="mx-auto inline-block text-2xl leading-none text-white"
             href="#"
           >
-            <img
+            <Image
               className="h-auto w-auto"
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
               alt=""
               width="auto"
-            ></img>
+            ></Image>
           </a>
           <ul className="my-6 flex flex-wrap items-center justify-center space-x-8">
             <li className="mb-2 md:mb-0">

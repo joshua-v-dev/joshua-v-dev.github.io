@@ -278,8 +278,8 @@ export default function Acomplishments() {
                     Social Media Aspirations
                   </h3>
                   <p className="text-lg leading-loose text-gray-300">
-                    YouTube, self hosted digital platform, API's, mobile games &
-                    apps, social media marketing campaigns, neural nets,
+                    YouTube, self hosted digital platform, API&apos;s, mobile
+                    games & apps, social media marketing campaigns, neural nets,
                     Blockchain development, and more.
                   </p>
                 </div>
