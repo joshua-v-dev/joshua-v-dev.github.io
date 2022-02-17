@@ -1,4 +1,5 @@
 // stitches.config.ts
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { createStitches, CSS as StitchesCSS } from "@stitches/react"
 export type { CSS } from "@stitches/react/types/css-util"
 

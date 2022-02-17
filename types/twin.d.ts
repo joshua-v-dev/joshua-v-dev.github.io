@@ -4,6 +4,7 @@ import { css as cssImport } from "@stitches/react"
 import styledImport from "@stitches/react"
 
 // Support a css prop when used with twins styled.div({}) syntax
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 type CSSProp<T = AnyIfEmpty<DefaultTheme>> = string | CSSObject
 
 declare module "react" {
@@ -13,6 +14,7 @@ declare module "react" {
     tw?: string
   }
   // The inline svg css prop
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   interface SVGProps<T> extends SVGProps<SVGSVGElement> {
     css?: CSSProp
     tw?: string
