@@ -11,7 +11,8 @@ const customStyles = {
 
 const styles = () => {
   globalCss(customStyles)()
-  globalCss(globalStyles as Record<never, never>)()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  globalCss(globalStyles as Record<any, any>)()
 }
 
 export default styles
