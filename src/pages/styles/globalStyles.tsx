@@ -1,5 +1,5 @@
 // styles/globalStyles.tsx
-import tw, { theme, globalStyles } from "twin.macro";
+import tw, { theme, globalStyles as GlobalStyles } from "twin.macro";
 import { globalCss } from "../../../stitches.config";
 
 const customStyles = {
@@ -9,9 +9,10 @@ const customStyles = {
   },
 };
 
-const styles = () => {
+const globalStyles = () => {
   globalCss(customStyles)();
-  globalCss(globalStyles as Record<never, never>)();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  globalCss(GlobalStyles as Record<any, any>)();
 };
 
-export default styles;
+export default globalStyles;
