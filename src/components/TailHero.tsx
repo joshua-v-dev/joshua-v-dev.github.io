@@ -83,7 +83,7 @@ export default function TailHero() {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-6xl font-extrabold tracking-tight text-indigo-500 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">
-                  &#123; joshuaVaughn &#125;{" "}
+                  &#123; joshuaVaughn &#125; <br />
                 </span>{" "}
                 <span className="block text-purple-700 xl:inline">
                   Full Stack Web Developer
