@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 
-import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 export default function TailHero() {
   return (
@@ -81,8 +81,10 @@ export default function TailHero() {
 
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl font-extrabold tracking-tight text-indigo-500 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">REAL MAGIC = CODE </span>{' '}
+              <h1 className="text-6xl font-extrabold tracking-tight text-indigo-500 sm:text-5xl md:text-6xl">
+                <span className="block xl:inline">
+                  &#123; joshuaVaughn &#125;{" "}
+                </span>{" "}
                 <span className="block text-purple-700 xl:inline">
                   Full Stack Web Developer
                 </span>

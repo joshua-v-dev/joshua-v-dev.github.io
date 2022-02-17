@@ -11,7 +11,7 @@ const customStyles = {
 
 const styles = () => {
   globalCss(customStyles)();
-  globalCss(globalStyles as Record<any, any>)();
+  globalCss(globalStyles as Record<never, never>)();
 };
 
 export default styles;
