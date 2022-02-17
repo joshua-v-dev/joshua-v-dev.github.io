@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
 
 export default function TailNav() {
   return (
-    <section className="max-h-7 bg-transparent py-8 px-4 lg:px-10">
-      <nav className=" flex  items-center justify-between">
+    <section className="bg-transparent py-8 px-4 lg:px-10">
+      <nav className="relative flex  items-center justify-between">
         <a className="text-2xl font-bold text-white" href="#">
           <div style={{ position: 'relative', width: '100%', height: '100%' }}>
             <Image
@@ -178,5 +178,5 @@ export default function TailNav() {
         </nav>
       </div>
     </section>
-  );
+  )
 }

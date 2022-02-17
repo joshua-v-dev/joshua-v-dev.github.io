@@ -14,6 +14,7 @@
     "@cloudinary/url-gen": "^1.4.2",
     "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
+    "@stitches/react": "^1.2.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "babel-jest": "^27.4.6",
     "gray-matter": "^4.0.3",
@@ -67,13 +68,7 @@
   },
   "babelMacros": {
     "twin": {
-      "preset": "styled-components",
-      "hasSuggestions": true,
-      "dataTwProp": "all",
-      "debugPlugins": true,
-      "debug": true,
-      "includeClassNames": true,
-      "sassyPseudo": true
+      "preset": "stitches"
     }
   },
   "engines": {

@@ -1,4 +1,5 @@
 {
+  "types": ["types"],
   "compilerOptions": {
     "target": "es5",
     "baseUrl": ".",
@@ -19,13 +20,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "additional-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.json",
-    "**/*.js"
-  ],
+  "include": ["next-env.d.ts", "additional-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
