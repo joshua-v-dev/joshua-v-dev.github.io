@@ -1,6 +1,6 @@
 // styles/globalStyles.tsx
 import tw, { theme, globalStyles as GlobalStyles } from "twin.macro";
-import { globalCss } from "../../../stitches.config";
+import { globalCss } from "../../stitches.config";
 
 const customStyles = {
   body: {
