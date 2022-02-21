@@ -36,7 +36,6 @@
       "@/public/*": ["./public/*"]
     }
   },
-  "references": [{ "path": "../src" }],
-  "exclude": ["./out/**/*", "./node_modules/**/*"],
+  "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
