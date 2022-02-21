@@ -1,5 +1,5 @@
-import React from 'react';
-import Particles from 'react-tsparticles';
+import React from "react";
+import Particles from "react-tsparticles";
 
 export default function ParticleAnimation() {
   return (
@@ -20,19 +20,19 @@ export default function ParticleAnimation() {
               },
             },
             color: {
-              value: 'rgb(52, 211, 153)',
+              value: "rgb(52, 211, 153)",
             },
             shape: {
-              type: 'dyrect',
+              type: "dyrect",
               stroke: {
                 width: 1.5,
-                color: 'rgb(126, 34, 206)',
+                color: "rgb(126, 34, 206)",
               },
               polygon: {
                 nb_sides: 10,
               },
               image: {
-                src: 'https://res.cloudinary.com/dpytkhyme/image/upload/v1644349608/JV-BLK-RD-Logo_lzzpsd.png',
+                src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1644349608/JV-BLK-RD-Logo_lzzpsd.png",
                 width: 100,
                 height: 100,
               },
@@ -61,17 +61,17 @@ export default function ParticleAnimation() {
               enable: true,
               distance: 240,
 
-              color: 'rgb(167, 243, 208)',
+              color: "rgb(167, 243, 208)",
               opacity: 1,
               width: 1.2,
             },
             move: {
               enable: true,
               speed: 1,
-              direction: 'none',
+              direction: "none",
               random: true,
               straight: false,
-              out_mode: 'out',
+              out_mode: "out",
               bounce: false,
               attract: {
                 enable: false,
@@ -81,11 +81,11 @@ export default function ParticleAnimation() {
             },
           },
           interactivity: {
-            detect_on: 'window',
+            detect_on: "window",
             events: {
               onHover: {
                 enable: true,
-                mode: 'connect',
+                mode: "connect",
                 parallax: {
                   enable: true,
                   force: 200,
@@ -94,7 +94,7 @@ export default function ParticleAnimation() {
               },
               onClick: {
                 enable: true,
-                mode: 'push',
+                mode: "push",
               },
               resize: true,
             },

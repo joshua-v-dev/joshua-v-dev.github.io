@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@netlify/plugin-nextjs": "^4.2.6",
+    "@netlify/plugin-nextjs": "^4.2.7",
     "@testing-library/jest-dom": "^5.16.1",
     "@tsconfig/next": "^1.0.1",
     "@types/babel-plugin-macros": "^2.8.5",
