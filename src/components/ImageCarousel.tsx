@@ -1,35 +1,44 @@
-/* eslint-disable @next/next/no-img-element */
-import React from 'react';
-
+import React from "react";
+import Image from "next/image";
 const ImageCarousel = () => {
   return (
     <>
-      <h2 className="mt-32 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
+      <h2 className="my-10  grid items-center justify-center text-6xl font-extrabold tracking-tight text-white">
         Featured
       </h2>
-      <div
-        id="carouselDarkVariant"
-        className=" carousel carousel-dark carousel-fade relative  my-auto grid content-center items-center bg-transparent "
-        data-bs-ride="carousel"
-      >
-        {/* <!-- Inner --> */}
-        <div className="carousel-inner relative right-4 flex w-full overflow-hidden p-12 ">
-          {/* <!-- Single item --> */}
-          <div className="container mx-auto mb-12 max-w-screen-lg border-gray-900 bg-gray-200 p-10">
-            <img
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
-              className="mx-auto border-gray-900   "
-              alt="game"
-            />
+      <div className="relative h-full w-full">
+        <div
+          id="carouselDarkVariant"
+          className=" carousel carousel-dark carousel-fade relative  my-auto grid content-center items-center bg-transparent "
+          data-bs-ride="carousel"
+        >
+          {/* <!-- Inner --> */}
+
+          <div className="carousel-inner relative right-4 flex w-full overflow-hidden p-12 ">
+            {/* <!-- Single item --> */}
+
+            <div className="container mx-auto my-20 max-w-screen-lg border-gray-900  p-10">
+              <Image
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
+                className="mx-auto   "
+                layout="fill"
+                alt="game"
+              ></Image>
+            </div>
           </div>
 
           {/* <!-- Single item --> */}
           <div className="carousel-item relative float-left w-full">
-            <img
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978160/Simple_Lined_Black_Onboarding_Page_Wireframe_Website_UI_Prototype_maycmm.svg"
-              className="block w-full"
-              alt="Mountaintop"
-            />
+            <div
+              style={{ position: "relative", width: "100%", height: "100%" }}
+            >
+              <Image
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978160/Simple_Lined_Black_Onboarding_Page_Wireframe_Website_UI_Prototype_maycmm.svg"
+                className="block w-full"
+                layout="fill"
+                alt="Mountaintop"
+              ></Image>
+            </div>
             <div className="carousel-caption absolute hidden text-center md:block">
               <h5 className="text-xl">UI Themes </h5>
               <p>Soon I will have themes available for download</p>
@@ -38,11 +47,16 @@ const ImageCarousel = () => {
 
           {/* <!-- Single item --> */}
           <div className="carousel-item relative float-left w-full">
-            <img
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978847/online-shopping-poster_zsnuxd.svg"
-              className="block w-full"
-              alt="Woman Reading a Book"
-            />
+            <div
+              style={{ position: "relative", width: "100%", height: "100%" }}
+            >
+              <Image
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978847/online-shopping-poster_zsnuxd.svg"
+                className="block w-full"
+                alt="Woman Reading a Book"
+                layout="fill"
+              ></Image>
+            </div>
             <div className="carousel-caption absolute hidden text-center md:block">
               <h5 className="text-xl">E-Commerce Solutions</h5>
               <p>Stores, Apps, Templates</p>
@@ -96,7 +110,7 @@ const ImageCarousel = () => {
             data-bs-slide-to="2"
             aria-label="Slide 1"
           ></button>
-          <div className="carousel-caption absolute  hidden items-center justify-center text-center md:block">
+          <div className=" absolute mt-16  hidden items-center justify-center text-center md:block">
             <h5 className=" text-3xl text-blue-400">New Game Coming Soon!</h5>
             <p className=" text-2xl text-blue-400">
               We definitely have something that you are going to love
