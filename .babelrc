@@ -2,7 +2,8 @@
   "presets": [["next/babel", { "preset-react": { "runtime": "automatic" } }]],
   "plugins": [
     ["babel-plugin-twin", { "debug": true }],
-    ["macros"],
-    ["styled-components", { "ssr": true }]
+    ["macros", { "debug": true }],
+    ["styled-components", { "ssr": true }],
+    "babel-plugin-styled-components"
   ]
 }
