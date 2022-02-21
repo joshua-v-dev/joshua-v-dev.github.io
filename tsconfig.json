@@ -5,7 +5,10 @@
     "baseUrl": ".",
     "paths": {
       "@/pages/*": ["pages/*"],
-      "@/components/*": ["components/*"]
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"],
+      "@/layout/*": ["layout/*"],
+      "@/database/*": ["database/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

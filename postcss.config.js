@@ -1,10 +1,4 @@
 // postcss.config.js
 module.exports = {
-  plugins: [
-    "postcss-import",
-    "tailwindcss",
-    "autoprefixer",
-    "twin.macro",
-    "stitches-css",
-  ],
+  plugins: ["postcss-import", "tailwindcss", "autoprefixer", "twin.macro"],
 };
