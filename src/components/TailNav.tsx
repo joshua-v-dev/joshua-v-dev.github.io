@@ -1,12 +1,12 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 export default function TailNav() {
   return (
     <section className="bg-transparent py-8 px-4 lg:px-10">
       <nav className="relative flex  items-center justify-between">
         <a className="text-2xl font-bold text-white" href="#">
-          <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <div style={{ position: "relative", width: "100%", height: "100%" }}>
             <Image
               className="h-24"
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
@@ -103,80 +103,6 @@ export default function TailNav() {
           </a>
         </div>
       </nav>
-      <div className="navbar-menu fixed top-0 left-0 bottom-0 z-50 hidden w-5/6 max-w-sm">
-        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-        <nav className="flex h-full w-full flex-col overflow-y-auto bg-white py-8">
-          <div className="mb-16 flex items-center pr-6">
-            <a
-              className=" ml-10 h-8 w-8 text-2xl font-bold text-gray-800"
-              href="#"
-            >
-              <div
-                style={{ position: 'relative', width: '100%', height: '100%' }}
-              >
-                <Image
-                  className="h-7"
-                  src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
-                  alt=""
-                  layout="fill"
-                ></Image>
-              </div>
-            </a>
-          </div>
-          <div>
-            <ul>
-              <li className="mb-1 px-10">
-                <a
-                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
-                  href="#"
-                >
-                  Product
-                </a>
-              </li>
-              <li className="mb-1 px-10">
-                <a
-                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
-                  href="#"
-                >
-                  Story
-                </a>
-              </li>
-              <li className="mb-1 px-10">
-                <a
-                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
-                  href="#"
-                >
-                  Features
-                </a>
-              </li>
-              <li className="mb-1 px-10">
-                <a
-                  className="block rounded-xl py-4 pl-8 text-xl text-gray-800 hover:bg-gray-50"
-                  href="#"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="mt-auto px-10">
-            <div className="pt-6">
-              <a
-                className="mb-4 block rounded-full border border-gray-50 py-4 px-12 text-center font-bold text-gray-800 hover:border-gray-100"
-                href="#"
-              >
-                Sign in
-              </a>
-              <a
-                className="block rounded-full bg-blue-500 py-4 px-12 text-center font-bold text-white transition duration-200 hover:bg-blue-600"
-                href="#"
-              >
-                Sign up
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
     </section>
-  )
+  );
 }
