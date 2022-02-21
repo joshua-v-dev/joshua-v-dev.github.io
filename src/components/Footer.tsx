@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 //tailwind footer
 const Footer = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
             href="#"
           >
             <div
-              style={{ position: 'relative', width: '100%', height: '100%' }}
+              style={{ position: "relative", width: "100%", height: "100%" }}
             >
               <Image
-                className="h-auto w-auto"
+                className=" h-auto w-auto"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
                 alt=""
                 layout="fill"

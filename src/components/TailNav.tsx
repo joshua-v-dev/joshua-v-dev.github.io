@@ -1,20 +1,20 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function TailNav() {
   return (
     <section className="bg-transparent py-8 px-4 lg:px-10">
       <nav className="items-evenly relative  flex">
-        <a className="text-2xl font-bold text-white" href="#">
-          <div w-full="true" h-full="true">
+        {/* <a className="text-2xl font-bold text-white" href="#">
+          <div w-full h-full>
             <Image
-              className="mx-auto flex h-auto w-full items-start justify-between"
+              className=" items-between h-auto w-auto justify-evenly"
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
               alt=""
               layout="fill"
             ></Image>
           </div>
-        </a>
+        </a> */}
         <div className="lg:hidden">
           <button className="navbar-burger p-2">
             <svg
