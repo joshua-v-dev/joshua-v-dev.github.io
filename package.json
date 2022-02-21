@@ -71,9 +71,6 @@
   "babelMacros": {
     "twin": {
       "preset": "stitches"
-    },
-    "styledComponents": {
-      "pure": true
     }
   },
   "engines": {

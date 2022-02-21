@@ -1,27 +1,13 @@
 // stitches.config.ts
-// import type * as Stitches from "@stitches/react";
-import { createStitches } from "@stitches/react";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { createStitches, CSS as StitchesCSS } from "@stitches/react";
+export type { CSS } from "@stitches/react/types/css-util";
 
-export const {
-  styled,
-  css,
-  globalCss,
-  keyframes,
-  getCssText,
-  theme,
-  createTheme,
-  config,
-} = createStitches({
-  theme: {
-    colors: {
-      gray400: "gainsboro",
-      gray500: "lightgray",
-    },
-  },
-  media: {
-    bp1: "(min-width: 480px)",
-  },
-  utils: {
-    marginX: (value: unknown) => ({ marginLeft: value, marginRight: value }),
-  },
+export const stitches = createStitches({
+  prefix: "",
+  theme: {},
+  utils: {},
 });
+
+export const { css, styled, globalCss, theme, keyframes, getCssText } =
+  stitches;
