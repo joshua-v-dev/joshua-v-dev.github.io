@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function TailNav() {
   return (
     <section className="bg-transparent py-8 px-4 lg:px-10">
-      <nav className="relative flex  items-center justify-between">
+      <nav className="items-evenly relative  flex">
         <a className="text-2xl font-bold text-white" href="#">
-          <div style={{ position: "relative", width: "100%", height: "100%" }}>
+          <div w-full="true" h-full="true">
             <Image
-              className="h-24"
+              className="mx-auto flex h-auto w-full items-start justify-between"
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
               alt=""
               layout="fill"
