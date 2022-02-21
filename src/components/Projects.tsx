@@ -57,12 +57,14 @@ const Projects = () => (
         >
           <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
             <div className="relative h-full w-full">
-              <Image
-                className="rounded-t-lg"
-                src={topCallouts.imageSrc}
-                alt=""
-                layout="fill"
-              ></Image>
+              <>
+                <Image
+                  className="rounded-t-lg"
+                  src={topCallouts.imageSrc}
+                  alt=""
+                  layout="fill"
+                ></Image>
+              </>
             </div>
           </a>
           <div className="p-6">

@@ -17,6 +17,7 @@
     "@stitches/react": "^1.2.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "babel-jest": "^27.4.6",
+    "cloudinary-build-url": "^0.2.4",
     "cosmiconfig": "^7.0.1",
     "gray-matter": "^4.0.3",
     "identity-obj-proxy": "^3.0.0",
@@ -41,7 +42,9 @@
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@cld-apis/types": "^0.1.6",
     "@netlify/plugin-nextjs": "^4.2.7",
+    "@rollup/plugin-virtual": "^2.0.3",
     "@testing-library/jest-dom": "^5.16.1",
     "@tsconfig/next": "^1.0.1",
     "@types/babel-plugin-macros": "^2.8.5",
