@@ -1,5 +1,3 @@
-// stitches.config.ts
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { createStitches } from "@stitches/react";
 export type { CSS } from "@stitches/react/types/css-util";
 import type * as Stitches from "@stitches/react";
@@ -138,8 +136,6 @@ export const stitches = createStitches({
     }),
   },
 });
-
-// export type CSS = Stitches.CSS;
 
 export const { css, styled, globalCss, theme, keyframes, getCssText } =
   stitches;
