@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 export default function Cta() {
   return (
     <div className="bg-gray-200 ">
