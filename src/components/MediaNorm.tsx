@@ -1,52 +1,48 @@
 // import { useEffect, useState } from "react";
 // import Image from "next/image";
 // import { buildUrl } from "cloudinary-build-url";
-// import globalStyles from "../styles/globalStyles";
+// import {stitches} from '../../stitches.config'
 //
-// export default function Home() {
-//   const url = buildUrl("galaxy_ne5p8f", {
-//     cloud: {
-//       cloudName: "fay",
-//     },
-//     transformations: {
-//       effect: {
-//         name: "pixelate",
-//         value: 40,
+// export default function MediaNorm() {
+//   const url = buildUrl(
+//     "https://res.cloudinary.com/dpytkhyme/image/upload/v1645573359/deep_space_bg_multi_right_a1opj9.png",
+//     {
+//       cloud: {
+//         cloudName: "fay",
 //       },
-//     },
-//   });
+//       transformations: {
+//         effect: {
+//           name: "sepia",
+//           value: 40,
+//         },
+//       },
+//     }
+//   );
 //
-//   const urlBlurred = buildUrl("galaxy_ne5p8f", {
-//     cloud: {
-//       cloudName: "fay",
-//     },
-//     transformations: {
-//       quality: 1,
-//     },
-//   });
+//
 //
 //   const [image, setImage] = useState();
 //
-//   // useEffect(() => {
-//   //   setTimeout(() => {
-//   //     setImage(url);
-//   //   }, 2000);
-//   // }, [url]);
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setImage(url);
+//     }, 2000);
+//   }, [url]);
 //
 //   return (
-//     <div className={globalStyles.container}>
-//       <main className={globalStyles.main}>
-//         <h1 className={globalStyles.title}>Out of this world!</h1>
+//     <div className={stitches.container}>
+//       <main className={stitches.main}>
+//         <h1 className={stitches.title}>Out of this world!</h1>
 //
-//         <div className={globalStyles.grid}>
-//           <div className={globalStyles.card}>
+//         <div className={stitches.grid}>
+//           <div className={stitches.card}>
 //             <Image src="/galaxy.jpg" alt="Galaxy" width={1000} height={750} />
 //             <h3>Local Image</h3>
 //           </div>
 //
-//           <div className={globalStyles.card}>
+//           <div className={stitches.card}>
 //             <Image
-//               src="https://res.cloudinary.com/fay/image/upload/v1617047570/galaxy_ne5p8f.jpg"
+//               src=""
 //               alt="Galaxy"
 //               width={1000}
 //               height={750}
@@ -54,18 +50,18 @@
 //             <h3>Cloudinary - Static</h3>
 //           </div>
 //
-//           <div className={globalStyles.card}>
+//           <div className={stitches.card}>
 //             <Image src={url} alt="Galaxy" width={1000} height={750} />
 //             <h3>Cloudinary - Dynamic</h3>
 //           </div>
 //
-//           <div className={globalStyles.card}>
+//           <div className={stitches.card}>
 //             <div
 //               style={{
 //                 position: "relative",
 //                 height: 0,
 //                 paddingTop: `${(750 / 1000) * 100}%`,
-//                 backgroundImage: `url(${urlBlurred})`,
+//                 backgroundImage: `url(${url})`,
 //                 backgroundPosition: "center center",
 //                 backgroundSize: `100%`,
 //               }}
@@ -87,7 +83,7 @@
 //         </div>
 //       </main>
 //
-//       <footer className={globalStyles.footer}>
+//       <footer className={stitches.footer}>
 //         <a
 //           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
 //           target="_blank"
@@ -97,11 +93,12 @@
 //           <Image
 //             src="/vercel.svg"
 //             alt="Vercel Logo"
-//             className={globalStyles.logo}
+//             className={stitches.logo}
 //           />
 //         </a>
 //       </footer>
 //     </div>
 //   );
 // }
+//
 export {};

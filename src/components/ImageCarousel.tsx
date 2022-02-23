@@ -17,13 +17,16 @@ const ImageCarousel = () => {
           <div className="carousel-inner relative right-4 flex w-full overflow-hidden p-12 ">
             {/* <!-- Single item --> */}
 
-            <div className="container mx-auto my-20 max-w-screen-lg border-gray-900  p-10">
-              <Image
-                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
-                className="mx-auto   "
-                layout="fill"
-                alt="game"
-              ></Image>
+            <div className="container  mx-auto my-20  max-w-screen-lg border-gray-900  p-10">
+              <div className="relative h-auto w-auto">
+                <Image
+                  src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
+                  className="mx-auto   "
+                  layout="fill"
+                  alt="game"
+                  priority
+                ></Image>
+              </div>
             </div>
           </div>
 

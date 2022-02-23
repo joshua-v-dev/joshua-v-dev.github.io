@@ -53,13 +53,13 @@ export default function TailHero() {
               >
                 <div className="overflow-hidden rounded-lg bg-transparent shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
-                    <div>
+                    {/* <div>
                       <img
                         className="h-8 w-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                         alt=""
                       />
-                    </div>
+                    </div> */}
                     <div className="-mr-2">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Close main menu</span>
@@ -79,7 +79,7 @@ export default function TailHero() {
             </Transition>
           </Popover>
 
-          <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <main className="mx-auto  max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 ">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-6xl font-extrabold tracking-tight text-indigo-500 sm:text-5xl md:text-6xl">
                 <span className="block text-7xl xl:inline">Joshua Vaughn</span>{" "}
@@ -90,7 +90,7 @@ export default function TailHero() {
               <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:text-2xl">
                 Innovation one idea at a time
               </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div className=" sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href="#"
