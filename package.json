@@ -7,7 +7,8 @@
     "build": "next build ",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "test": "jest"
   },
   "dependencies": {
     "@cloudinary/react": "^1.0.1",
@@ -45,7 +46,6 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@cld-apis/types": "^0.1.6",
-    "@netlify/plugin-nextjs": "^4.2.7",
     "@rollup/plugin-virtual": "^2.0.3",
     "@testing-library/jest-dom": "^5.16.1",
     "@tsconfig/next": "^1.0.1",
