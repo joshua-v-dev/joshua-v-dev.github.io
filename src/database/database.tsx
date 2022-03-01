@@ -2,55 +2,55 @@ export const projects = [
   {
     title: "MERN STACK",
     description: "PROGRESSIVE WEB APP TEMPLATES",
-    image: "/images/mernstack (1).png",
+    imageSrc:
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Mongo", "Express", "React", "Node"],
-    source: "https://google.com",
-    visit: "https://google.com",
+
     i: 0,
   },
   {
     title: "PLATFORMS",
     description: "SHOPIFY APPS, STORES & THEMES",
-    image: "/images/shopify.png",
+    imageSrc:
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["React", "Liquid", "Next", "Polaris", "GraphQL"],
-    source: "https://google.com",
-    visit: "https://google.com",
+
     i: 1,
   },
   {
     title: "UI/UX",
     description: "GOOGLE UX CERTIFICATION COURSE",
-    image: "/images/googleux.png",
+    imageSrc:
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Adobe Creative Cloud Products"],
-    source: "https://google.com",
-    visit: "https://google.com",
+
     i: 2,
   },
   {
     title: "PASSION PROJECTS",
     description: "INDIE GAME DESIGN AND DEVELOPMENT",
-    image: "/images/indiegamedev (1).png",
+    imageSrc:
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1644349589/gamedev_tt1isx.png",
     tags: ["Three.js", "Unity", "Blender"],
-    source: "https://google.com",
-    visit: "https://google.com",
+
     i: 3,
   },
   {
     title: "PORTFOLIO PROJECT",
     description: "THIS PORTFOLIO PROJECT",
-    image: "/images/Portfolio.png",
+    imageSrc:
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Next.js", "React.js", "Radix UI"],
-    source: "https://google.com",
-    visit: "https://google.com",
+
     i: 4,
   },
   {
     title: "FREELANCE CLIENTS",
     description: "THESE ARE SOME SMALL BUSINESS WEB APPS",
-    image: "/images/freelance.png",
+    imageSrc:
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Next.js", "TypeScript", "Tailwind.css"],
-    source: "https://google.com",
-    visit: "https://google.com",
+
     i: 5,
   },
 ];
