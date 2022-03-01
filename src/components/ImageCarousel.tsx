@@ -1,98 +1,78 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 import Image from "next/image";
-// import { projects } from "../database/database";
-const ImageCarousel = () => {
+
+const featuredProducts = [
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
+];
+
+let slideInterval: NodeJS.Timer;
+export default function Slider() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    slideInterval = setInterval(() => {
+      setCurrentIndex((currentIndex) => {
+        if (currentIndex === featuredProducts.length - 1) {
+          return 0;
+        }
+        return currentIndex + 1;
+      });
+    }, 4000);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, []);
+
   return (
-    <div
-      id="carouselExampleCaptions"
-      className="carousel slide relative"
-      data-bs-ride="carousel"
-    >
-      <div className="carousel-indicators absolute right-0 bottom-0 left-0 mb-4 flex justify-center p-0">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          className="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div className="carousel-inner relative w-full overflow-hidden">
-        <div className="carousel-item active relative float-left w-full">
-          <Image
-            layout="fill"
-            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
-            className="block w-full"
-            alt="..."
-          />
-          <div className="carousel-caption absolute hidden text-center md:block">
-            <h5 className="text-xl">First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+    <div className="slider">
+      <div className="slider__container">
+        <div className="slider__container__left">
+          <div className="slider__container__left__arrow">
+            <AiOutlineVerticalLeft
+              className="slider__container__left__arrow__icon"
+              onClick={() => {
+                setCurrentIndex((currentIndex) => {
+                  if (currentIndex === 0) {
+                    return featuredProducts.length - 1;
+                  }
+                  return currentIndex - 1;
+                });
+              }}
+            />
           </div>
         </div>
-        <div className="carousel-item relative float-left w-full">
-          <Image
-            layout="fill"
-            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
-            className="block w-full"
-            alt="..."
-          />
-          <div className="carousel-caption absolute hidden text-center md:block">
-            <h5 className="text-xl">Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+        <div className="slider__container__center">
+          <div className="slider__container__center__slide">
+            <Image
+              src={featuredProducts[currentIndex]}
+              width={300}
+              height={300}
+              alt="featured product"
+            />
           </div>
         </div>
-        <div className="carousel-item relative float-left w-full">
-          <Image
-            layout="fill"
-            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg"
-            className="block w-full"
-            alt="..."
-          />
-          <div className="carousel-caption absolute hidden text-center md:block">
-            <h5 className="text-xl">Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+        <div className="slider__container__right">
+          <div className="slider__container__right__arrow">
+            <AiOutlineVerticalRight
+              className="slider__container__right__arrow__icon"
+              onClick={() => {
+                setCurrentIndex((currentIndex) => {
+                  if (currentIndex === featuredProducts.length - 1) {
+                    return 0;
+                  }
+                  return currentIndex + 1;
+                });
+              }}
+            />
           </div>
         </div>
       </div>
-      <button
-        className="carousel-control-prev absolute top-0 bottom-0 left-0 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span
-          className="carousel-control-prev-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next absolute top-0 bottom-0 right-0 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span
-          className="carousel-control-next-icon inline-block bg-no-repeat"
-          aria-hidden="true"
-        ></span>
-        <span className="visually-hidden">Next</span>
-      </button>
     </div>
   );
-};
-export default ImageCarousel;
+}

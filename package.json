@@ -43,6 +43,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@cld-apis/types": "^0.1.6",
     "@rollup/plugin-virtual": "^2.0.3",
+    "@svgr/webpack": "^6.2.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tsconfig/next": "^1.0.1",
     "@types/babel-plugin-macros": "^2.8.5",
