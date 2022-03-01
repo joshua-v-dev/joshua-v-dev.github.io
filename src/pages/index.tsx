@@ -5,11 +5,13 @@ import Timeline from "../components/TimeLine";
 import Layout from "../layout/Layout";
 import ProjectsPage from "../components/ProjectsPage";
 import ImageCarousel from "../components/ImageCarousel";
+import Header from "../components/Header";
 
 const Home: React.FC = () => {
   return (
     <Layout>
       <Particles />
+      <Header />
       <Projects />
       <ImageCarousel />
       <Timeline />

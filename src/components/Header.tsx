@@ -1,16 +1,14 @@
-import React from 'react';
-import TailNav from '../components/TailNav';
-import TailHero from '../components/TailHero';
-import Cta from '../components/Cta';
+import React from "react";
+import TailHero from "../components/TailHero";
+import Cta from "../components/Cta";
 
 type HeaderProps = {
-  isMain: boolean;
+  isMain?: boolean;
 };
 
 const Header: React.FC<HeaderProps> = () => {
   return (
     <>
-      <TailNav />
       <TailHero />
       <Cta />
     </>
