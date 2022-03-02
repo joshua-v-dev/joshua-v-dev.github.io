@@ -11,23 +11,26 @@ import { topPicks } from "../database/database";
 export default function Projects() {
   return (
     <>
-      <div className=" bg-transparent">
+      <div className=" h-auto w-auto space-x-44 space-y-4 bg-transparent">
         <h2 className=" my-12 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
           Top Picks
         </h2>
 
-        <div className="auto-rows-3  justify-items-cover grid grid-flow-row-dense  grid-cols-3 justify-center   object-cover pl-44">
+        <div className="auto-rows-4  justify-items-fit grid h-auto w-auto grid-flow-row-dense  grid-cols-3 justify-center ">
           {topPicks.map(
             (topPicks, i): JSX.Element => (
-              <div key={i} className="max-w-sm rounded-lg bg-black shadow-lg">
+              <div
+                key={i}
+                className="max-h-md grid max-w-md items-center justify-center bg-black shadow-lg"
+              >
                 <a
                   href={topPicks.href}
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light "
                 >
-                  <div className="relative h-full w-full">
+                  <div className="relative h-72 w-72">
                     <Image
-                      className=" rounded-t-lg"
+                      className=" object-contain"
                       src={topPicks.imageSrc}
                       alt={topPicks.imageAlt}
                       layout="fill"
@@ -35,16 +38,16 @@ export default function Projects() {
                     />
                   </div>
                 </a>
-                <h5 className="mb-4 text-xl font-medium text-white">
+                <h5 className="flex justify-center space-y-4 p-1 text-xl font-medium text-white">
                   {topPicks.name}
                 </h5>
-                <p className="mb-8 text-base text-white">
+                <p className="flex justify-center text-base text-white">
                   {topPicks.description}
                 </p>
-                <div className=" p-6">
+                <div className="flex items-center justify-center p-6">
                   <button
                     type="button"
-                    className=" inline-block rounded bg-indigo-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+                    className=" rounded bg-indigo-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
                   >
                     Learn More
                   </button>

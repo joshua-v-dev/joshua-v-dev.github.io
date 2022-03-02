@@ -9,42 +9,47 @@ import { TimeLineData } from "../database/database";
 export default function Timeline() {
   return (
     <>
-      <div className="grid bg-transparent">
-        <div className="mx-auto mt-20 grid max-w-2xl grid-cols-2 items-center gap-y-20 gap-x-20 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-          <div className="mx-auto my-auto grid">
-            <h2 className="text-7xl font-extrabold tracking-tight text-white sm:text-4xl">
+      <div className="grid w-full bg-transparent">
+        <div className="mx-auto  grid max-w-2xl grid-cols-2 items-center gap-y-20 gap-x-20 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+          <div className=" grid space-y-4">
+            <h2 className=" text-9xl font-extrabold uppercase tracking-tight  text-indigo-700 brightness-125 sm:text-4xl">
               Roadmap
             </h2>
-            <p className="mt-8  text-2xl text-white">
+            <p className="  text-4xl text-white brightness-125">
               Technologies I have used so far to build my projects & a little
               bit about my future.
             </p>
 
-            <dl className="mt-20 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+            <dl className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               {TimeLineData.map(
                 (TimeLineData, i): JSX.Element => (
                   <div key={i} className="grid-col grid">
                     <div
                       key={TimeLineData.year}
-                      className="border-t border-white pt-4"
+                      className="space-y-5 border-t border-white p-5"
                     >
-                      <dt className="  text-white">{TimeLineData.year}</dt>
-                      <dd className=" mt-2 text-white">{TimeLineData.text}</dd>
+                      <dt className="text-2xl text-white underline">
+                        {TimeLineData.year}
+                      </dt>
+                      <dd className="space-y-5 text-xl text-white">
+                        {TimeLineData.text}
+                      </dd>
                     </div>
                   </div>
                 )
               )}
             </dl>
           </div>
-          <div className=" relative mt-28 grid h-full w-full grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-            <Image
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png"
-              alt="string"
-              className="rounded-lg bg-gray-100"
-              layout="fill"
-              priority
-            />
-
+          <div className=" relative grid h-full w-full grid-cols-2 grid-rows-2 gap-3 sm:gap-6 lg:gap-8">
+            <div className="relative h-full w-full">
+              <Image
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png"
+                alt="string"
+                className="rounded-lg bg-gray-100"
+                layout="fill"
+                priority
+              />
+            </div>
             <div className="relative h-full w-full">
               <Image
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982446/portfolio_project_thumbnails_kv7dld.svg"
