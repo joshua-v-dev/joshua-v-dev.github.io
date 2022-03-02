@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { callouts } from "../database/database";
+import Image from "next/image";
 
 export default function ProjectsPage() {
   return (
@@ -12,29 +12,31 @@ export default function ProjectsPage() {
           </h2>
 
           {callouts.map((callouts) => (
-            <div key={callouts.id} className=" lg:grid lg:grid-cols-3">
+            <div key={callouts.id} className=" lg:grid lg:grid-cols-2">
               <div className="border-2">
-                <div className="relative top-2 w-full overflow-hidden rounded-full group-hover:opacity-75 sm:h-64">
-                  <img
+                <div className="relative  w-full overflow-hidden  group-hover:opacity-75 sm:h-64">
+                  <Image
                     src={callouts.imageSrc}
                     alt={callouts.imageAlt}
-                    className=" h-auto w-auto object-scale-down p-5"
+                    className=" object-fit h-auto w-auto p-1"
+                    layout="fill"
+                    priority
                   />
                 </div>
               </div>
               <div
                 key={callouts.id}
-                className="relative mr-2 items-center border-2"
+                className="text-3x1 relative mr-2 items-center border-2"
               >
                 <h3 className=" items-center py-5 text-center text-white underline">
                   <a href={callouts.href}>
-                    <span key={callouts.id} className="absolute inset-0" />
+                    <span key={callouts.id} className=" absolute inset-0" />
                     {callouts.name}
                   </a>
                 </h3>
                 <p
                   key={callouts.id}
-                  className="te4xl text-center font-semibold text-white"
+                  className="text-center text-2xl font-semibold text-white"
                 >
                   {callouts.description}
                 </p>
