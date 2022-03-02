@@ -1944,8 +1944,14 @@ declare module "cloudinary-react" {
 }
 export * from "cloudinary-react";
 
+//////////////
+
 import * as React from "react";
 declare function ArrowRightIcon(
   props: React.ComponentProps<"svg">
 ): JSX.Element;
 export default ArrowRightIcon;
+
+import * as React from "react";
+declare function ArrowLeftIcon(props: React.ComponentProps<"svg">): JSX.Element;
+export default ArrowLeftIcon;

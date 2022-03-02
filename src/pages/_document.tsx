@@ -1,12 +1,12 @@
 // pages/_document.tsx
-import NextDocument, { Html, Head, Main, NextScript } from "next/document"
-import { getCssText } from "../../stitches.config"
+import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import { getCssText } from "../../stitches.config";
 
 export default class Document extends NextDocument {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   static async getInitialProps(ctx: any) {
     try {
-      const initialProps = await NextDocument.getInitialProps(ctx)
+      const initialProps = await NextDocument.getInitialProps(ctx);
 
       return {
         ...initialProps,
@@ -20,7 +20,7 @@ export default class Document extends NextDocument {
             />
           </>
         ),
-      }
+      };
     } finally {
     }
   }
@@ -34,6 +34,6 @@ export default class Document extends NextDocument {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
