@@ -157,6 +157,13 @@ export const TimeLineData = [
   {
     year: 2018,
     text: "January I began learning the basics of Web Development",
+    id: 0,
+    name: "Learning the basics",
+    description: "Self Taught",
+    src:
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png",
+    alt: "January I began learning the basics of Web Development",
+    href: "#",
   },
   { year: 2019, text: "Started Lambda School Bootcamp" },
   {
