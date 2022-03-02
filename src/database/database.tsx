@@ -166,3 +166,9 @@ export const TimeLineData = [
     text: "I hope to further my skills & learn Python to code my first neural network",
   },
 ];
+
+export const featuredProducts = [
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643976423/mernstack_1_cpteis.png",
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
+];

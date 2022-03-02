@@ -12,8 +12,8 @@ const Home: React.FC = () => {
     <Layout>
       <Particles />
       <Header />
-      <TopPicks />
       <ImageCarousel />
+      <TopPicks />
       <Timeline />
       <ProjectsPage />
     </Layout>

@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
+import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/outline";
 import Image from "next/image";
-
-const featuredProducts = [
-  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
-  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
-  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
-];
+import { featuredProducts } from "../database/database";
 
 let slideInterval: NodeJS.Timer;
 export default function Slider() {
@@ -34,8 +29,8 @@ export default function Slider() {
       <div className="slider__container">
         <div className="slider__container__left">
           <div className="slider__container__left__arrow">
-            <AiOutlineVerticalLeft
-              className="slider__container__left__arrow__icon"
+            <ArrowLeftIcon
+              className="slider__container__left__arrow__icon "
               onClick={() => {
                 setCurrentIndex((currentIndex) => {
                   if (currentIndex === 0) {
@@ -50,16 +45,17 @@ export default function Slider() {
         <div className="slider__container__center">
           <div className="slider__container__center__slide">
             <Image
-              src={featuredProducts[currentIndex]}
+              src={featuredProducts[currentIndex]?.toString()}
               width={300}
               height={300}
               alt="featured product"
+              priority
             />
           </div>
         </div>
         <div className="slider__container__right">
           <div className="slider__container__right__arrow">
-            <AiOutlineVerticalRight
+            <ArrowRightIcon
               className="slider__container__right__arrow__icon"
               onClick={() => {
                 setCurrentIndex((currentIndex) => {
