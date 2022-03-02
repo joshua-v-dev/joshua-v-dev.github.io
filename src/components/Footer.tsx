@@ -5,24 +5,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="py-20">
-        <div className="container  mx-auto px-4 text-center">
-          <a
-            className="mx-auto inline-block text-2xl leading-none text-white"
-            href="#"
-          >
-            <div
-              style={{ position: "relative", width: "100%", height: "100%" }}
-            >
-              <Image
-                className=" h-auto w-auto"
-                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
-                alt=""
-                layout="fill"
-              ></Image>
-            </div>
-          </a>
-          <ul className="my-6 flex flex-wrap items-center justify-center space-x-8">
+      <footer className="py-12">
+        <div className="container relative mx-auto px-4 text-center">
+          <ul className=" flex flex-wrap items-center justify-center space-x-8">
             <li className="mb-2 md:mb-0">
               <a className="text-sm text-white hover:text-white" href="#">
                 Story
@@ -74,6 +59,17 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+          <a
+            className="mx-auto inline-block text-2xl leading-none text-white"
+            href="#"
+          >
+            <Image
+              className=" h-auto w-auto"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
+              alt=""
+              layout="fill"
+            />
+          </a>
         </div>
       </footer>
     </>
