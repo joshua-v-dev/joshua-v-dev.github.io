@@ -12,9 +12,11 @@
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
+    "@next/eslint-plugin-next": "^12.1.0",
     "@stitches/css": "^9.0.0-alpha.8",
     "@stitches/react": "^1.2.7",
     "@stitches/tailwind": "^9.0.0-alpha.8",
+    "eslint-plugin-tailwindcss": "^3.5.0",
     "gray-matter": "^4.0.3",
     "marked": "^4.0.10",
     "next": "^12.1.0",
@@ -38,7 +40,7 @@
     "babel-plugin-twin": "^1.0.2",
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.0",
-    "postcss": "^8.4.7",
+    "postcss": "^8.4.8",
     "tailwindcss": "^3.0.15",
     "twin.macro": "^2.8.2",
     "typescript": "^4.6.2"

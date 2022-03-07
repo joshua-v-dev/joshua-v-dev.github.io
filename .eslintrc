@@ -5,10 +5,8 @@
     "es2021": true
   },
   "extends": [
-    "plugin:tailwind/recommended",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "next/core-web-vitals",
     "next"
   ],
