@@ -13,7 +13,7 @@ export default class Document extends NextDocument {
         styles: (
           <>
             {initialProps.styles}
-            {/* Stitches CSS for SSR */}
+
             <style
               id="stitches"
               dangerouslySetInnerHTML={{ __html: getCssText() }}
@@ -21,6 +21,7 @@ export default class Document extends NextDocument {
           </>
         ),
       };
+      // eslint-disable-next-line no-empty
     } finally {
     }
   }

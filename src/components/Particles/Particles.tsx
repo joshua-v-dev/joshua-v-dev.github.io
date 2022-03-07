@@ -33,6 +33,7 @@ export default function ParticleAnimation() {
               },
               image: {
                 src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1644349608/JV-BLK-RD-Logo_lzzpsd.png",
+                position: "relative",
                 width: 100,
                 height: 100,
               },

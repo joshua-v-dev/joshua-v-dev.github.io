@@ -70,11 +70,11 @@ const Footer = () => {
 
           <div className="flex h-80 w-80 ">
             <a
-              className="mx-auto grid text-2xl leading-none text-white"
+              className="relative mx-auto grid text-2xl leading-none text-white"
               href="#"
             >
               <Image
-                className="h-72 w-72 space-y-8"
+                className="relative h-72 w-72 space-y-8"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
                 alt=""
                 layout="fill"
