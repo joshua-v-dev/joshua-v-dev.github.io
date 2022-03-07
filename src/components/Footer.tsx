@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 //tailwind footer
 const Footer = () => {
@@ -68,19 +68,19 @@ const Footer = () => {
             </li>
           </ul>
 
-          <div className="flex h-80 w-80 ">
+          {/* <div className="relative flex h-80 w-80 ">
             <a
               className="relative mx-auto grid text-2xl leading-none text-white"
               href="#"
             >
               <Image
-                className="relative h-72 w-72 space-y-8"
+                className="absolute h-72 w-72 space-y-8"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
                 alt=""
                 layout="fill"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
