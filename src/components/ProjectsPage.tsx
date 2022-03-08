@@ -5,12 +5,12 @@ import Image from "next/image";
 export default function ProjectsPage() {
   return (
     <>
-      <div className="py-auto px-auto container my-auto mx-auto flex items-center justify-center  ">
-        <h2 className="mt-36  text-7xl font-extrabold tracking-tight text-white">
+      <div className="py-auto px-auto container  mx-auto flex items-center justify-center  ">
+        <h2 className="text-7xl font-extrabold tracking-tight text-white">
           Collections
         </h2>
       </div>
-      <div className="container my-auto mx-auto grid grid-flow-col grid-rows-2 gap-12  sm:py-24 lg:max-h-max lg:max-w-max ">
+      <div className="container  mx-auto grid grid-flow-col grid-rows-2 gap-12  sm:py-24 lg:max-h-max lg:max-w-max ">
         {callouts.map((callouts) => (
           <div
             key={callouts.id}
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
               </h3>
               <p
                 key={callouts.id}
-                className="mt-2 mb-2 p-1 text-lg font-bold text-gray-50 "
+                className="p-1 text-lg font-bold text-gray-50 "
               >
                 {callouts.description}
               </p>

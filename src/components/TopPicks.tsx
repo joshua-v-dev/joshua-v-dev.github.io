@@ -5,22 +5,22 @@ import { topPicks } from "../database/database";
 export default function Projects() {
   return (
     <>
-      <div className=" grid items-center justify-center space-y-24 p-24 ">
+      <div className=" grid  items-center justify-center space-y-24 p-16">
         <div className="container grid grid-flow-col grid-cols-3 justify-center gap-x-24 gap-y-12  bg-transparent lg:max-w-none ">
           {topPicks.map(
             (topPicks, i): JSX.Element => (
               <div
                 key={i}
-                className="grid max-w-lg items-center justify-center gap-2 bg-black px-4 shadow-lg"
+                className="grid max-w-lg items-center justify-center gap-2 border-2 bg-black px-4 shadow-xl"
               >
                 <a
                   href={topPicks.href}
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light "
                 >
-                  <div className="relative lg:h-96 lg:w-72">
+                  <div className="relative  lg:h-96 lg:w-96">
                     <Image
-                      className=" h- object-contain"
+                      className=" object-contain"
                       src={topPicks.imageSrc}
                       alt={topPicks.imageAlt}
                       layout="fill"

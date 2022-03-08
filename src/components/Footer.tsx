@@ -17,22 +17,22 @@ const Footer = () => {
         </div>
         <div className=" relative space-y-8 ">
           <ul className=" flex flex-wrap items-center justify-center space-x-12">
-            <li className=" md:mb-0">
+            <li className=" relative">
               <a className="text-lg text-white hover:text-white" href="#">
                 Story
               </a>
             </li>
-            <li className=" md:mb-0">
+            <li className=" relative">
               <a className="text-lg text-white hover:text-white" href="#">
                 Services
               </a>
             </li>
-            <li className=" md:mb-0">
+            <li className=" relative">
               <a className="text-lg text-white hover:text-white" href="#">
                 Contact
               </a>
             </li>
-            <li className=" md:mb-0">
+            <li className=" relative">
               <a className="text-lg text-white hover:text-white" href="#">
                 Newsletter
               </a>

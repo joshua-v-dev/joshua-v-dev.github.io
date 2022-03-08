@@ -24,7 +24,7 @@ export default function TailHero() {
               >
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                   <div className="flex w-full items-center justify-between md:w-auto">
-                    <div className="-mr-2 flex items-center md:hidden">
+                    <div className="flex items-center md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Tooling</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
@@ -32,7 +32,7 @@ export default function TailHero() {
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4"></div>
+                <div className="hidden md:block md:space-x-8 md:pr-4"></div>
               </nav>
             </div>
 
@@ -51,7 +51,7 @@ export default function TailHero() {
               >
                 <div className="overflow-hidden rounded-lg bg-transparent shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
-                    <div className="-mr-2">
+                    <div className="relative">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Close main menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
@@ -71,7 +71,7 @@ export default function TailHero() {
           </Popover>
           <div className="flex items-center justify-center">
             <a className="text-2xl font-bold text-white" href="#">
-              <div className="relative m-0 h-32 w-32">
+              <div className="relative h-32 w-32">
                 <Image
                   className="relative  object-contain"
                   src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
@@ -92,10 +92,10 @@ export default function TailHero() {
                 Full Stack Web Developer
               </span>
 
-              <p className="text-base font-bold text-gray-500 brightness-125 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none">
+              <p className="text-base font-bold text-gray-500 brightness-125 sm:mx-auto  sm:max-w-xl sm:text-lg  md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none">
                 Innovation one idea at a time
               </p>
-              <div className=" sm:mt-8 sm:flex sm:justify-center ">
+              <div className="  sm:flex sm:justify-center ">
                 <div className="rounded-lg shadow">
                   <a
                     href="https://github.com/joshua-v-dev"
@@ -104,7 +104,7 @@ export default function TailHero() {
                     Github
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3 md:mt-0 lg:mt-0">
+                <div className="relative">
                   <a
                     href="https://www.linkedin.com/in/joshuavaughn"
                     className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-200 px-8 py-3 text-lg font-medium text-indigo-700 outline-double hover:bg-indigo-400 md:py-3 md:px-6 md:text-lg"

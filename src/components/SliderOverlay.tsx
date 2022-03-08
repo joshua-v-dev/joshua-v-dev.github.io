@@ -1,6 +1,6 @@
-import { Fragment, useState } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
-import { XIcon } from '@heroicons/react/outline';
+import { Fragment, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { XIcon } from "@heroicons/react/outline";
 
 export default function Example() {
   const [open, setOpen] = useState(true);
@@ -44,7 +44,7 @@ export default function Example() {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <div className="absolute top-0 left-0 -ml-8 flex pt-4 pr-2 sm:-ml-10 sm:pr-4">
+                  <div className="absolute top-0 left-0 flex pt-4 pr-2 sm:pr-4">
                     <button
                       type="button"
                       className="rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
@@ -61,7 +61,7 @@ export default function Example() {
                       Panel title
                     </Dialog.Title>
                   </div>
-                  <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                  <div className="relative flex-1 px-4 sm:px-6">
                     {/* Replace with your content */}
                     <div className="absolute inset-0 px-4 sm:px-6">
                       <div

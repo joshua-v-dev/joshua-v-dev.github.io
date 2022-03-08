@@ -7,7 +7,7 @@ export default function Timeline() {
   return (
     <>
       <Acomplishments />
-      <div className="mx-16 grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-max lg:grid-cols-2 lg:px-1">
+      <div className=" grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-max lg:grid-cols-2 lg:px-1">
         <div className=" grid space-y-5 space-x-5">
           <h1 className="text-9xl font-extrabold uppercase tracking-tight  text-indigo-700 brightness-125 sm:text-4xl lg:pl-4">
             Roadmap

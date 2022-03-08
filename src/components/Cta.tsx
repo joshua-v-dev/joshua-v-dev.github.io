@@ -3,7 +3,7 @@ import TopPicks from "../components/TopPicks";
 export default function Cta() {
   return (
     <>
-      <div className="container mx-auto my-auto grid items-center justify-center space-y-10">
+      <div className="container mx-auto  grid items-center justify-center space-y-10">
         <h2 className="  text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
           First, What brings you here?
         </h2>
@@ -119,7 +119,7 @@ export default function Cta() {
                   Activate Demo
                 </a>
               </div>
-              <div className="ml-3 inline-flex rounded-md shadow">
+              <div className="inline-flex rounded-md shadow">
                 <a
                   href="#"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
