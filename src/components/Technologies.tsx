@@ -1,36 +1,36 @@
 //tailwind 2x2 column grid
 
-import React from 'react';
+import React from "react";
 import {
   AnnotationIcon,
   GlobeAltIcon,
   LightningBoltIcon,
   ScaleIcon,
-} from '@heroicons/react/outline';
+} from "@heroicons/react/outline";
 
 const features = [
   {
-    name: 'Microservices',
+    name: "Microservices",
     description:
-      'Headless services that can be deployed to any cloud provider. No need to worry about infrastructure, just deploy your services and let them do the rest.',
+      "Headless services that can be deployed to any cloud provider. No need to worry about infrastructure, just deploy your services and let them do the rest.",
     icon: GlobeAltIcon,
   },
   {
-    name: 'Next.js with TypeScript and Tailwindcss Production Build',
+    name: "Next.js with TypeScript and Tailwindcss Production Build",
     description:
-      'Secure, Scalable, and Fast. Built with Next.js, TypeScript, and Tailwindcss. Production ready for production deployment.',
+      "Secure, Scalable, and Fast. Built with Next.js, TypeScript, and Tailwindcss. Production ready for production deployment.",
     icon: ScaleIcon,
   },
   {
-    name: 'Design Tools',
+    name: "Design Tools",
     description:
-      'Built with Sketch, Figma, and Adobe XD. No need to worry about design. Just focus on building your app.',
+      "Built with Sketch, Figma, and Adobe XD. No need to worry about design. Just focus on building your app.",
     icon: LightningBoltIcon,
   },
   {
-    name: 'Modern UX Principles and Architecture',
+    name: "Modern UX Principles and Architecture",
     description:
-      'Built with React Hooks, Context, and Redux. No need to worry about the details. Just focus on building your app.',
+      "Built with React Hooks, Context, and Redux. No need to worry about the details. Just focus on building your app.",
     icon: AnnotationIcon,
   },
 ];
@@ -40,7 +40,7 @@ export default function Technologies() {
     <div className=" bg-transparent py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className=" lg:text-center">
-          <h1 className=" text-4xl font-extrabold  uppercase tracking-wide text-indigo-700 brightness-125">
+          <h1 className=" text-6xl font-extrabold  uppercase tracking-wide text-indigo-700 brightness-125">
             Technologies
           </h1>
           <p className="mt-6 text-3xl font-extrabold leading-8 tracking-tight text-gray-50 sm:text-4xl">

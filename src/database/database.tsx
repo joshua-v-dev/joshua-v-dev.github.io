@@ -109,7 +109,7 @@ export const callouts = [
   {
     id: 3,
     name: "SHOPIFY",
-    description: "Hydrogen, Liquid, Next.js, Tailwind CSS, GraphQL",
+    description: "Hydrogen, Liquid, Next.js, TailwindCSS",
     imageSrc:
       "https://res.cloudinary.com/dpytkhyme/image/upload/v1643976704/shopify_lvz0ui.png",
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
@@ -139,7 +139,7 @@ export const callouts = [
   {
     id: 6,
     name: "FREELANCE CLIENTS",
-    description: "Hydrogen, Liquid, Next.js, Tailwind CSS, GraphQL",
+    description: "Hydrogen, Liquid, Next.js, TailwindCSS",
     imageSrc:
       "https://res.cloudinary.com/dpytkhyme/image/upload/v1643977144/freelance_wr4fsa.png",
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
@@ -160,8 +160,7 @@ export const TimeLineData = [
     id: 0,
     name: "Learning the basics",
     description: "Self Taught",
-    src:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png",
     alt: "January I began learning the basics of Web Development",
     href: "#",
   },

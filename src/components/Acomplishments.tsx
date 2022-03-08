@@ -1,7 +1,7 @@
 export default function Acomplishments() {
   return (
     <>
-      <h2 className="mt-32 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
+      <h2 className="mt-32 flex items-center justify-center text-7xl font-extrabold tracking-tight text-white">
         Services
       </h2>
       <section className="my-10 py-20">
@@ -96,7 +96,7 @@ export default function Acomplishments() {
           </div>
         </div>
       </section>
-      <h2 className="mt-36 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
+      <h2 className="mt-36 flex items-center justify-center text-7xl font-extrabold tracking-tight text-white">
         Highlights
       </h2>
       <section className="my-10 py-20">

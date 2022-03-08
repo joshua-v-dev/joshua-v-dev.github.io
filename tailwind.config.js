@@ -131,5 +131,6 @@ module.exports = {
     "@tailwindcss/aspect-ratio",
     "tw-elements/dist/plugin",
     "tailwindcss-gradients",
+    "prettier-plugin-tailwindcss",
   ],
 };
