@@ -3,13 +3,15 @@ import TopPicks from "../components/TopPicks";
 export default function Cta() {
   return (
     <>
-      <h2 className="container mx-auto my-auto grid items-center justify-center text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
-        First, What brings you here?
-      </h2>
-      <p className="my-16 flex items-center justify-center space-y-5 space-x-5 text-3xl text-white brightness-200">
-        Depending on who you are I&apos;ll show you the content accordingly in
-        order to increase your user experience while browsing my portfolio.
-      </p>
+      <div className="container mx-auto my-auto grid items-center justify-center space-y-10">
+        <h2 className="  text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+          First, What brings you here?
+        </h2>
+        <p className=" text-semibold grid items-center  justify-center text-3xl text-white brightness-200">
+          Depending on who you are I&apos;ll show you the content accordingly in
+          order to increase your user experience while browsing my portfolio.
+        </p>
+      </div>
       <TopPicks />
       <section className="grid grid-flow-col grid-cols-1">
         <div className="container mx-auto my-auto ">
