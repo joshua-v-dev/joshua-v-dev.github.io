@@ -1,6 +1,6 @@
 export default function Cta() {
   return (
-    <div className="bg-gray-200 ">
+    <div className=" max-w-screen-4xl overflow-hidden rounded-md bg-gray-200">
       <div className="mx-auto max-w-6xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           <span className="block">Ready to dive in?</span>
@@ -8,7 +8,7 @@ export default function Cta() {
             Let&apos;s solve your technology needs
           </span>
         </h2>
-        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <div className="flex  lg:flex-shrink-0">
           <div className="inline-flex rounded-md shadow">
             <a
               href="#"

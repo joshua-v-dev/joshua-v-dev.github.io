@@ -80,19 +80,19 @@ export default function TailHero() {
                   Full Stack Web Developer
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:text-2xl">
+              <p className="text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:text-2xl">
                 Innovation one idea at a time
               </p>
               <div className=" sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
+                <div className="rounded-full shadow">
                   <a
                     href="https://github.com/joshua-v-dev"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
+                    className="flex items-center justify-center rounded-lg border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
                   >
                     Github
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                <div className="mt-3 sm:mt-0 sm:ml-3 md:mt-0 lg:mt-0">
                   <a
                     href="https://www.linkedin.com/in/joshuavaughn"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg"
@@ -105,7 +105,7 @@ export default function TailHero() {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"></div>
+      {/* <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"></div> */}
     </div>
   );
 }
