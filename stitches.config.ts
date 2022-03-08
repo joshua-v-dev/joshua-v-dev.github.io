@@ -23,7 +23,7 @@ export const stitches = createStitches({
     },
     // container
     container: {
-      center: false,
+      center: true,
     },
     // colors
     colors: {
@@ -326,7 +326,7 @@ export const stitches = createStitches({
     margin: {
       auto: "auto",
       ...spacing,
-      // ...negativeSpacing,
+      //  ...negativeSpacing,
     },
     // maxHeight
     maxHeight: {

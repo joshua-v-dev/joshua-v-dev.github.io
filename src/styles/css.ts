@@ -18,7 +18,7 @@ const config = createTailwindConfig({
   theme: {
     ...theme,
     container: {
-      center: false,
+      center: true,
     },
   },
   utils: utils,

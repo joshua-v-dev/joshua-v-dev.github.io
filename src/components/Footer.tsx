@@ -1,20 +1,11 @@
 import React from "react";
-import Image from "next/image";
+
 
 const Footer = () => {
   return (
     <>
       <footer className="container relative flex flex-wrap items-center justify-center p-6 ">
-        <div className="container relative flex h-80 w-80 justify-center ">
-          <a className=" text-2xl leading-none text-white" href="#">
-            <Image
-              className="absolute h-72 w-72 space-y-8"
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643878561/JV-BLK-RD-Logo_mnvl0e.svg"
-              alt=""
-              layout="fill"
-            />
-          </a>
-        </div>
+    
         <div className=" relative space-y-8 ">
           <ul className=" flex flex-wrap items-center justify-center space-x-12">
             <li className=" relative">

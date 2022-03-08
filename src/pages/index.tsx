@@ -7,9 +7,9 @@ import Cta from "../components/Cta";
 const Home: React.FC = () => {
   return (
     <Layout>
+      <ProjectsPage />
       <Cta />
       {/* <ImageCarousel /> */}
-      <ProjectsPage />
     </Layout>
   );
 };

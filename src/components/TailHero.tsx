@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function TailHero() {
   return (
-    <div className="relative h-screen bg-transparent sm:mx-auto ">
-      <div className=" sm:container lg:mx-auto lg:flex lg:items-center lg:justify-center ">
-        <div className="relative z-10 bg-transparent pb-6 sm:pb-8 md:pb-16 lg:max-w-4xl  xl:pb-28">
+    <div className="relative h-screen bg-transparent sm:mx-auto lg:space-y-16 ">
+      <div className="sm:container lg:mx-auto lg:flex lg:items-center lg:justify-center lg:space-y-16 ">
+        <div className="g-16 relative z-10 bg-transparent pb-6 sm:pb-8 md:pb-16  lg:max-w-4xl xl:pb-28">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="currentColor"
@@ -81,8 +81,8 @@ export default function TailHero() {
               </div>
             </a>
           </div>
-          <main className=" max-w-8xl flex justify-center sm:px-6 lg:p-7 ">
-            <div className=" p-3 text-center">
+          <main className=" max-w-8xl flex justify-center sm:px-6 lg:space-y-16 lg:p-7">
+            <div className=" p-3 text-center lg:space-y-8">
               <h1 className="text-7xl font-extrabold tracking-tight text-indigo-700 shadow-indigo-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
                 <span className="block text-8xl xl:inline xl:max-w-none">
                   Joshua Vaughn
@@ -95,24 +95,7 @@ export default function TailHero() {
               <p className="block space-y-6 text-base font-bold text-gray-500 brightness-125 sm:mx-auto  sm:max-w-xl sm:text-lg  md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none">
                 Innovation one idea at a time
               </p>
-              <div className="flex space-x-2 sm:justify-center ">
-                <div className="rounded-lg shadow">
-                  <a
-                    href="https://github.com/joshua-v-dev"
-                    className="inline-block rounded-xl border-2 border-transparent bg-indigo-600 py-2 px-4 text-lg font-medium text-gray-50 outline-double  transition  duration-200 hover:bg-indigo-700 md:px-6 md:text-lg"
-                  >
-                    Github
-                  </a>
-                </div>
-                <div className="rounded-lg shadow">
-                  <a
-                    href="https://www.linkedin.com/in/joshuavaughn"
-                    className="inline-block rounded-xl border-2 border-transparent bg-indigo-500 py-2 px-4 text-lg font-medium text-gray-50 outline-double transition  duration-200 hover:bg-indigo-600 md:px-6 md:text-lg "
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
+             
             </div>
           </main>
         </div>

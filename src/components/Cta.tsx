@@ -1,19 +1,7 @@
-import TopPicks from "../components/TopPicks";
-
 export default function Cta() {
   return (
     <>
-      <div className="container mx-auto  grid items-center justify-center space-y-10">
-        <h2 className="  text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
-          First, What brings you here?
-        </h2>
-        <p className=" text-semibold grid items-center  justify-center text-3xl text-white brightness-200">
-          Depending on who you are I&apos;ll show you the content accordingly in
-          order to increase your user experience while browsing my portfolio.
-        </p>
-      </div>
-      <TopPicks />
-      <section className=" grid grid-flow-col grid-cols-1 items-center justify-center p-36 align-middle">
+      <section className=" grid grid-flow-col grid-cols-1 items-center justify-center p-36 align-middle lg:space-y-24">
         <div className="container ">
           <div className=" flex flex-wrap items-center">
             <div className="text-center md:w-1/2 lg:w-1/4">
@@ -101,7 +89,7 @@ export default function Cta() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center">
+      <section className="flex justify-center lg:space-y-24">
         <div className="max-w-screen-3xl container overflow-hidden rounded-2xl bg-gray-200">
           <div className="mx-auto max-w-5xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -110,8 +98,8 @@ export default function Cta() {
                 Let&apos;s solve your technology needs
               </span>
             </h2>
-            <div className="flex  lg:flex-shrink-0">
-              <div className="inline-flex rounded-md shadow">
+            <div className="flex lg:flex-shrink-0 lg:space-x-4">
+              <div className="inline-flex rounded-md shadow lg:space-x-4">
                 <a
                   href="#"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
