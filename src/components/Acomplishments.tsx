@@ -1,6 +1,11 @@
+import Technologies from "./Technologies";
+import Timeline from "./TimeLine";
+
 export default function Acomplishments() {
   return (
     <>
+      <Technologies />
+      <Timeline />
       <h2 className="m-24 flex items-center justify-center space-y-16 p-1 text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
         Highlights
       </h2>

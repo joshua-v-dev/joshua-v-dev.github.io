@@ -1,6 +1,4 @@
 import React from "react";
-import Technologies from "./Technologies";
-
 import Image from "next/image";
 import { TimeLineData } from "../database/database";
 import Acomplishments from "./Acomplishments";
@@ -87,7 +85,6 @@ export default function Timeline() {
           </div>
         </div>
       </div>
-      <Technologies />
     </>
   );
 }

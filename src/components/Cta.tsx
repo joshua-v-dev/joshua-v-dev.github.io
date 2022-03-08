@@ -101,34 +101,36 @@ export default function Cta() {
           </div>
         </div>
       </section>
-      <div className="max-w-screen-4xl my-16 overflow-hidden rounded-2xl bg-gray-200">
-        <div className="mx-auto max-w-6xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="block">Ready to dive in?</span>
-            <span className="block text-indigo-600">
-              Let&apos;s solve your technology needs
-            </span>
-          </h2>
-          <div className="flex  lg:flex-shrink-0">
-            <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
-              >
-                Activate Demo
-              </a>
-            </div>
-            <div className="ml-3 inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
-              >
-                Learn more
-              </a>
+      <section className="flex justify-center">
+        <div className="max-w-screen-3xl container overflow-hidden rounded-2xl bg-gray-200">
+          <div className="mx-auto max-w-5xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <span className="block">Ready to dive in?</span>
+              <span className="block text-indigo-600">
+                Let&apos;s solve your technology needs
+              </span>
+            </h2>
+            <div className="flex  lg:flex-shrink-0">
+              <div className="inline-flex rounded-md shadow">
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                >
+                  Activate Demo
+                </a>
+              </div>
+              <div className="ml-3 inline-flex rounded-md shadow">
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
+                >
+                  Learn more
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
