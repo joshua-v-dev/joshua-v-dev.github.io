@@ -1,6 +1,6 @@
 import React from "react";
 import TailHero from "../components/TailHero";
-import Cta from "../components/Cta";
+import Acomplishments from "../components/Acomplishments";
 
 type HeaderProps = {
   isMain?: boolean;
@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <TailHero />
-      <Cta />
+      <Acomplishments />
     </>
   );
 };

@@ -1,10 +1,12 @@
 import React from "react";
+import Cta from "../components/Cta";
 // import Image from "next/image";
 
 //tailwind footer
 const Footer = () => {
   return (
     <>
+      <Cta />
       <footer className="py-12">
         <div className="t container relative mx-auto space-y-12 px-4">
           <div className=" flex justify-center space-x-5 ">

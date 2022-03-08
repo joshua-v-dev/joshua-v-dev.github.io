@@ -16,7 +16,7 @@ export default function Projects() {
           Top Picks
         </h2>
 
-        <div className="auto-rows-4 justify-items-fit grid h-auto w-auto grid-flow-row-dense grid-cols-3 justify-center ">
+        <div className="auto-rows-4 justify-items-fit grid h-auto w-auto grid-flow-row-dense grid-cols-3 justify-center lg:max-w-none ">
           {topPicks.map(
             (topPicks, i): JSX.Element => (
               <div

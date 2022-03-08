@@ -1,8 +1,6 @@
-//tailwind ui idea for timeline
-
 import React from "react";
 import Technologies from "./Technologies";
-import Acomplishments from "./Acomplishments";
+
 import Image from "next/image";
 import { TimeLineData } from "../database/database";
 
@@ -87,9 +85,7 @@ export default function Timeline() {
           </div>
         </div>
       </div>
-
       <Technologies />
-      <Acomplishments />
     </>
   );
 }
