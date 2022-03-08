@@ -5,11 +5,8 @@ import { topPicks } from "../database/database";
 export default function Projects() {
   return (
     <>
-      <h1 className="m-24 flex items-center justify-center p-1 text-6xl font-extrabold tracking-tight text-indigo-600 brightness-125">
-        Top Picks
-      </h1>
-      <div className="m-20  block ">
-        <div className=" grid  grid-cols-3 justify-center bg-transparent lg:max-w-none ">
+      <div className=" grid items-center justify-center space-y-24 p-24 ">
+        <div className="container grid grid-flow-col grid-cols-3 justify-center gap-x-24 gap-y-12  bg-transparent lg:max-w-none ">
           {topPicks.map(
             (topPicks, i): JSX.Element => (
               <div

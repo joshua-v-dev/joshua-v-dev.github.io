@@ -13,9 +13,9 @@ export default function Cta() {
         </p>
       </div>
       <TopPicks />
-      <section className="grid grid-flow-col grid-cols-1">
-        <div className="container mx-auto my-auto ">
-          <div className="my-10 flex flex-wrap items-center">
+      <section className=" grid grid-flow-col grid-cols-1 items-center justify-center p-36 align-middle">
+        <div className="container ">
+          <div className=" flex flex-wrap items-center">
             <div className="text-center md:w-1/2 lg:w-1/4">
               <svg
                 className="mx-auto "

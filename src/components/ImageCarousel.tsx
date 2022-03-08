@@ -26,6 +26,9 @@
 //   }, []);
 //
 //   return (
+//  <h1 className="container grid grid-cols-3 p-1 text-center text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+//      Top Picks
+//     </h1>
 //     <div className="slider">
 //       <div className="slider__container">
 //         <div className="slider__container__left">
