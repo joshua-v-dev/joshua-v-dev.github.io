@@ -72,7 +72,7 @@ export default function TailHero() {
             </Transition>
           </Popover>
 
-          <main className="mx-auto  max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 ">
+          <main className="mx-auto my-auto max-w-7xl px-4 sm:px-6 ">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-6xl font-extrabold tracking-tight text-indigo-500 sm:text-5xl md:text-6xl">
                 <span className="block text-7xl xl:inline">Joshua Vaughn</span>{" "}
