@@ -1,42 +1,10 @@
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function TailNav() {
   return (
-    <section className="bg-transparent py-8 px-4 lg:px-8">
+    <section className="bg-transparent py-8 px-4 sm:w-screen lg:px-8">
       <nav className="items-evenly relative flex">
-        {/* <a className="text-2xl font-bold text-white" href="#">
-          <div w-full h-full>
-            <Image
-              className=" items-between h-auto w-auto justify-evenly"
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
-              alt=""
-              layout="fill"
-            ></Image>
-          </div>
-        </a> */}
-        <div className="lg:hidden">
-          <button className="navbar-burger p-2">
-            <svg
-              className="h-3 w-10"
-              width="39"
-              height="13"
-              viewBox="0 0 39 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="39" height="2" rx="1" fill="#C4C4C4"></rect>
-              <rect
-                x="19"
-                y="11"
-                width="20"
-                height="2"
-                rx="1"
-                fill="#C4C4C4"
-              ></rect>
-            </svg>
-          </button>
-        </div>
         <div className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform lg:block">
           <ul className="flex items-center space-x-10 text-white">
             <li>
@@ -103,6 +71,18 @@ export default function TailNav() {
           </a>
         </div>
       </nav>
+      <div className="flex items-center justify-center">
+        <a className="text-2xl font-bold text-white" href="#">
+          <div className="relative m-0 h-20 w-20">
+            <Image
+              className="relative  object-contain"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
+              alt=""
+              layout="fill"
+            ></Image>
+          </div>
+        </a>
+      </div>
     </section>
   );
 }

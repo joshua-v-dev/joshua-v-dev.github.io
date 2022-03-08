@@ -4,9 +4,9 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 export default function TailHero() {
   return (
-    <div className="h-screen overflow-hidden bg-transparent">
+    <div className="h-screen overflow-hidden bg-transparent sm:w-screen">
       <div className="mx-auto flex max-w-7xl items-center justify-center ">
-        <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:w-full lg:max-w-3xl  xl:pb-32">
+        <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:max-w-3xl  xl:pb-32">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="currentColor"
@@ -16,7 +16,7 @@ export default function TailHero() {
           ></svg>
 
           <Popover>
-            <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
+            <div className="relative px-4 pt-1 sm:px-6 lg:px-8">
               <nav
                 className="relative flex items-center justify-between sm:h-10 lg:justify-start"
                 aria-label="Global"
@@ -70,7 +70,7 @@ export default function TailHero() {
           </Popover>
 
           <main className=" flex max-w-7xl justify-center p-7 sm:px-6 ">
-            <div className="mx-auto my-auto p-3 text-center">
+            <div className=" p-3 text-center">
               <h1 className="text-7xl font-extrabold tracking-tight text-indigo-700 shadow-indigo-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
                 <span className="block text-8xl xl:inline xl:max-w-none">
                   Joshua Vaughn

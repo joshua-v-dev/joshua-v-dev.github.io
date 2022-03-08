@@ -7,7 +7,7 @@ export default function Acomplishments() {
       <section className=" p-4">
         <div className="container mx-auto ">
           <div className="  flex flex-wrap">
-            <div className=" w-full  md:w-1/2 lg:w-1/3">
+            <div className="  md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -39,7 +39,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className=" w-full  md:w-1/2 lg:w-1/3">
+            <div className="   md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -69,7 +69,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className=" w-full md:w-1/2 lg:w-1/3">
+            <div className=" md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -101,7 +101,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className=" w-full  md:w-1/2 lg:w-1/3">
+            <div className="  md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -132,7 +132,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className=" w-full  md:w-1/2 lg:w-1/3">
+            <div className="   md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -161,7 +161,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className=" w-full  md:w-1/2 lg:w-1/3">
+            <div className="   md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg

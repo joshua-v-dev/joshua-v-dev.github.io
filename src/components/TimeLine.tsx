@@ -40,7 +40,7 @@ export default function Timeline() {
           </dl>
         </div>
         <div className="relative grid grid-cols-2 grid-rows-2 gap-3 sm:gap-6 lg:max-w-none lg:gap-8">
-          <div className="relative ">
+          <div className="relative h-full w-full ">
             <Image
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png"
               alt="string"
