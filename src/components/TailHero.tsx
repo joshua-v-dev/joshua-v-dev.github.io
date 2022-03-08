@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 export default function TailHero() {
   return (
-    <div className="relative h-screen overflow-hidden bg-transparent">
+    <div className="h-screen overflow-hidden bg-transparent">
       <div className="mx-auto flex max-w-7xl items-center justify-center ">
         <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:w-full lg:max-w-3xl  xl:pb-32">
           <svg
@@ -95,7 +95,7 @@ export default function TailHero() {
                 <div className="mt-3 sm:mt-0 sm:ml-3 md:mt-0 lg:mt-0">
                   <a
                     href="https://www.linkedin.com/in/joshuavaughn"
-                    className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-100 px-8 py-3 text-lg font-medium text-indigo-700 outline-double hover:bg-indigo-200 md:py-3 md:px-6 md:text-lg"
+                    className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-200 px-8 py-3 text-lg font-medium text-indigo-700 outline-double hover:bg-indigo-400 md:py-3 md:px-6 md:text-lg"
                   >
                     LinkedIn
                   </a>

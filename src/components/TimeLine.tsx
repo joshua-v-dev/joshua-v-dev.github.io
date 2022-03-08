@@ -9,12 +9,12 @@ export default function Timeline() {
   return (
     <>
       <Acomplishments />
-      <div className="mx-auto grid gap-y-20 gap-x-20 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-1">
+      <div className="mx-16 grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-max lg:grid-cols-2 lg:px-1">
         <div className=" grid space-y-5 space-x-5">
-          <h1 className="text-7xl font-extrabold uppercase tracking-tight  text-indigo-700 brightness-125 sm:text-4xl lg:pl-4">
+          <h1 className="text-9xl font-extrabold uppercase tracking-tight  text-indigo-700 brightness-125 sm:text-4xl lg:pl-4">
             Roadmap
           </h1>
-          <p className="text-3xl text-white brightness-125">
+          <p className="text-2xl font-semibold text-white brightness-125">
             Technologies I have used so far to build my projects & a little bit
             about my future.
           </p>
@@ -39,8 +39,8 @@ export default function Timeline() {
             )}
           </dl>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-3 sm:gap-6 lg:max-w-none lg:gap-8">
-          <div className="relative h-full w-full">
+        <div className="relative grid grid-cols-2 grid-rows-2 gap-3 sm:gap-6 lg:max-w-none lg:gap-8">
+          <div className="relative ">
             <Image
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png"
               alt="string"

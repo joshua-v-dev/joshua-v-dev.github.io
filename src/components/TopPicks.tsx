@@ -1,9 +1,3 @@
-//tailwind card with image and ripple effect
-
-// YOU NEED TO REARANGE AND RENAME ABSTRACTIONS OF UX PIECES FOR DIFFERENT PROJECT MAPPING //
-// THAT IS WHY YOU ARE GETTING MULTIPLE RERENDERS, DONT FORGET
-// SEARCH IMAGES URL LOCATIONS WITH SEARCH AND USE THAT TO STITCH IT ALL TOGETHER
-
 import React from "react";
 import Image from "next/image";
 import { topPicks } from "../database/database";
@@ -11,25 +5,25 @@ import { topPicks } from "../database/database";
 export default function Projects() {
   return (
     <>
-      <h2 className=" my-10 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
+      <h1 className="m-24 flex items-center justify-center p-1 text-6xl font-extrabold tracking-tight text-indigo-600 brightness-125">
         Top Picks
-      </h2>
-      <div className="container bg-transparent">
-        <div className="auto-rows-4 justify-items-fit grid grid-flow-row-dense grid-cols-3 justify-center lg:max-w-none ">
+      </h1>
+      <div className="m-20  block w-full">
+        <div className=" grid  grid-cols-3 justify-center bg-transparent lg:max-w-none ">
           {topPicks.map(
             (topPicks, i): JSX.Element => (
               <div
                 key={i}
-                className="max-h-md grid max-w-md items-center justify-center bg-black shadow-lg"
+                className="grid max-w-lg items-center justify-center gap-2 bg-black px-4 shadow-lg"
               >
                 <a
                   href={topPicks.href}
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light "
                 >
-                  <div className="relative h-72 w-72">
+                  <div className="relative lg:h-96 lg:w-72">
                     <Image
-                      className=" object-contain"
+                      className=" h- object-contain"
                       src={topPicks.imageSrc}
                       alt={topPicks.imageAlt}
                       layout="fill"

@@ -1,10 +1,10 @@
 export default function Acomplishments() {
   return (
     <>
-      <h2 className=" flex items-center justify-center space-y-16 text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+      <h2 className="m-24 flex items-center justify-center space-y-16 p-1 text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
         Highlights
       </h2>
-      <section className="py-auto my-auto">
+      <section className=" p-4">
         <div className="container mx-auto ">
           <div className="  flex flex-wrap">
             <div className=" w-full  md:w-1/2 lg:w-1/3">
@@ -25,10 +25,10 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className=" my-auto text-3xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-white">
                     MERN to Modern MERN
                   </h3>
-                  <p className="text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     MERN stack was my natural progression from HTML,CSS &
                     Javascript. After a few months of learning React, Redux,
                     Node, Express, MongoDB, I was ready to move on to modern
@@ -39,7 +39,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className="my-auto w-full  md:w-1/2 lg:w-1/3">
+            <div className=" w-full  md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -57,10 +57,10 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className=" my-auto text-3xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-white">
                     Security & Testing
                   </h3>
-                  <p className="text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     After using jest for unit testing and React Testing Library
                     for a few months, I was ready to move on to Cypress.io so I
                     could integrate an End to End testing framework. I also
@@ -69,7 +69,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className="my-auto w-full md:w-1/2 lg:w-1/3">
+            <div className=" w-full md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -87,10 +87,10 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className=" my-auto text-3xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-white">
                     Game Development
                   </h3>
-                  <p className="text-xl font-normal leading-loose text-gray-300">
+                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     I started learning about game development in the summer of
                     2020 and quickly fell in love. I started learning about
                     asset design software such as Blender. 3D rendering
@@ -101,7 +101,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className="my-auto w-full  md:w-1/2 lg:w-1/3">
+            <div className=" w-full  md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -119,10 +119,10 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className=" my-auto text-3xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-white">
                     Weekly email updates
                   </h3>
-                  <p className="text-xl font-normal leading-loose text-gray-300">
+                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     I am a big fan of the weekly email updates. I am always on
                     the lookout for new projects and new technologies. I also
                     like to keep up with the latest trends in the industry. Sign
@@ -132,7 +132,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className="my-auto w-full  md:w-1/2 lg:w-1/3">
+            <div className=" w-full  md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -150,10 +150,10 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className=" my-auto text-3xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-white">
                     Future Projects
                   </h3>
-                  <p className="text-xl font-normal leading-loose text-gray-300">
+                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     I have several projects in my mind that I would like to work
                     on. Anything that I can do to help people and businesses.
                     Plus feed the creative and compassionate wolf that is me.
@@ -161,7 +161,7 @@ export default function Acomplishments() {
                 </div>
               </div>
             </div>
-            <div className="my-auto w-full  md:w-1/2 lg:w-1/3">
+            <div className=" w-full  md:w-1/2 lg:w-1/3">
               <div className="flex">
                 <span className="mx-auto">
                   <svg
@@ -179,10 +179,10 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className=" my-auto text-3xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-white">
                     Social Media Aspirations
                   </h3>
-                  <p className="text-xl font-normal leading-loose text-gray-300">
+                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     YouTube, self hosted digital platform, API&apos;s, mobile
                     games & apps, social media marketing campaigns, neural nets,
                     Blockchain development, and more.

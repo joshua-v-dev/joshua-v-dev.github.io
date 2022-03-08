@@ -1,16 +1,19 @@
+import TopPicks from "../components/TopPicks";
+
 export default function Cta() {
   return (
     <>
-      <h2 className="mx-auto my-auto grid items-center justify-center text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+      <h2 className="container mx-auto my-auto grid items-center justify-center text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
         First, What brings you here?
       </h2>
-      <p className=" flex items-center justify-center space-y-5 space-x-5 text-3xl text-white brightness-200">
+      <p className="my-16 flex items-center justify-center space-y-5 space-x-5 text-3xl text-white brightness-200">
         Depending on who you are I&apos;ll show you the content accordingly in
         order to increase your user experience while browsing my portfolio.
       </p>
+      <TopPicks />
       <section className="grid grid-flow-col grid-cols-1">
         <div className="container mx-auto my-auto ">
-          <div className="flex flex-wrap items-center">
+          <div className="my-10 flex flex-wrap items-center">
             <div className=" h-full w-full  text-center md:w-1/2 lg:w-1/4">
               <svg
                 className="mx-auto "
@@ -96,7 +99,7 @@ export default function Cta() {
           </div>
         </div>
       </section>
-      <div className=" max-w-screen-4xl overflow-hidden rounded-2xl bg-gray-200">
+      <div className="max-w-screen-4xl my-16 overflow-hidden rounded-2xl bg-gray-200">
         <div className="mx-auto max-w-6xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Ready to dive in?</span>
