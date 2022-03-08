@@ -178,3 +178,39 @@ export const TimeLineData = [
     text: "I hope to further my skills & learn Python to code my first neural network",
   },
 ];
+import {
+  AnnotationIcon,
+  GlobeAltIcon,
+  LightningBoltIcon,
+  ScaleIcon,
+} from "@heroicons/react/outline";
+export const features = [
+  {
+    id: 0,
+    name: "Microservices",
+    description:
+      "Headless services that can be deployed to any cloud provider. No need to worry about infrastructure, just deploy your services and let them do the rest.",
+    icon: GlobeAltIcon,
+  },
+  {
+    id: 1,
+    name: "Next.js with TypeScript and Tailwindcss Production Build",
+    description:
+      "Secure, Scalable, and Fast. Built with Next.js, TypeScript, and Tailwindcss. Production ready for production deployment.",
+    icon: ScaleIcon,
+  },
+  {
+    id: 2,
+    name: "Design Tools",
+    description:
+      "Built with Sketch, Figma, and Adobe XD. No need to worry about design. Just focus on building your app.",
+    icon: LightningBoltIcon,
+  },
+  {
+    id: 3,
+    name: "Modern UX Principles and Architecture",
+    description:
+      "Built with React Hooks, Context, and Redux. No need to worry about the details. Just focus on building your app.",
+    icon: AnnotationIcon,
+  },
+];
