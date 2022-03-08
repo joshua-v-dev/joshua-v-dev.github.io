@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function TailHero() {
   return (
-    <div className="h-screen overflow-hidden bg-transparent">
-      <div className="mx-auto flex max-w-7xl items-center justify-center ">
-        <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:max-w-4xl  xl:pb-32">
+    <div className="relative h-screen bg-transparent sm:mx-auto ">
+      <div className=" sm:container lg:mx-auto lg:flex lg:items-center lg:justify-center ">
+        <div className="relative z-10 bg-transparent pb-6 sm:pb-8 md:pb-16 lg:max-w-4xl  xl:pb-28">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="currentColor"
@@ -54,14 +54,14 @@ export default function TailHero() {
                     <div className="relative">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Close main menu</span>
-                        <XIcon className="h-6 w-6" aria-hidden="true" />
+                        <XIcon className="h-12 w-12" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
                   <div className="space-y-1 px-2 pt-2 pb-3"></div>
                   <a
                     href="#"
-                    className="block w-full bg-transparent px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
+                    className="inline-block w-full bg-transparent px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
                   >
                     Discord
                   </a>
@@ -70,7 +70,7 @@ export default function TailHero() {
             </Transition>
           </Popover>
           <div className="flex items-center justify-center">
-            <a className="text-2xl font-bold text-white" href="#">
+            <a className="inline-block text-2xl font-bold text-white" href="#">
               <div className="relative h-32 w-32">
                 <Image
                   className="relative  object-contain"
@@ -81,7 +81,7 @@ export default function TailHero() {
               </div>
             </a>
           </div>
-          <main className=" flex max-w-7xl justify-center p-7 sm:px-6 ">
+          <main className=" max-w-8xl flex justify-center sm:px-6 lg:p-7 ">
             <div className=" p-3 text-center">
               <h1 className="text-7xl font-extrabold tracking-tight text-indigo-700 shadow-indigo-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
                 <span className="block text-8xl xl:inline xl:max-w-none">
@@ -92,22 +92,22 @@ export default function TailHero() {
                 Full Stack Web Developer
               </span>
 
-              <p className="text-base font-bold text-gray-500 brightness-125 sm:mx-auto  sm:max-w-xl sm:text-lg  md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none">
+              <p className="block space-y-6 text-base font-bold text-gray-500 brightness-125 sm:mx-auto  sm:max-w-xl sm:text-lg  md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none">
                 Innovation one idea at a time
               </p>
-              <div className="  sm:flex sm:justify-center ">
+              <div className="flex space-x-2 sm:justify-center ">
                 <div className="rounded-lg shadow">
                   <a
                     href="https://github.com/joshua-v-dev"
-                    className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-600 py-3 px-8 text-lg font-medium text-white outline-double  hover:bg-indigo-700 md:py-3 md:px-6 md:text-lg"
+                    className="inline-block rounded-xl border-2 border-transparent bg-indigo-600 py-2 px-4 text-lg font-medium text-gray-50 outline-double  transition  duration-200 hover:bg-indigo-700 md:px-6 md:text-lg"
                   >
                     Github
                   </a>
                 </div>
-                <div className="relative">
+                <div className="rounded-lg shadow">
                   <a
                     href="https://www.linkedin.com/in/joshuavaughn"
-                    className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-200 px-8 py-3 text-lg font-medium text-indigo-700 outline-double hover:bg-indigo-400 md:py-3 md:px-6 md:text-lg"
+                    className="inline-block rounded-xl border-2 border-transparent bg-indigo-500 py-2 px-4 text-lg font-medium text-gray-50 outline-double transition  duration-200 hover:bg-indigo-600 md:px-6 md:text-lg "
                   >
                     LinkedIn
                   </a>
@@ -117,7 +117,6 @@ export default function TailHero() {
           </main>
         </div>
       </div>
-      <div className="hidden lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"></div>
     </div>
   );
 }

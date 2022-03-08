@@ -3,9 +3,17 @@ import React from "react";
 export default function TailNav() {
   return (
     <>
-      <section className=" bg-transparent py-8 px-6 lg:px-8">
-        <nav className="relative  mx-auto flex ">
-          <div className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform lg:block">
+      <section className=" bg-transparent py-8 px-4 lg:px-10 ">
+        <nav className="relative flex items-center justify-between ">
+          <div className="hidden lg:flex">
+            <a
+              className=" rounded-full border border-gray-200 px-8 py-2 font-bold text-white hover:border-white lg:flex"
+              href="#"
+            >
+              Want To Play A Game?
+            </a>
+          </div>
+          <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:block lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
             <ul className="flex items-center space-x-10 text-white">
               <li>
                 <a className="text-lg font-bold text-white" href="#">
@@ -61,14 +69,6 @@ export default function TailNav() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="hidden lg:block">
-            <a
-              className="inline-block rounded-full border border-gray-200 px-8 py-2 font-bold text-white hover:border-white"
-              href="#"
-            >
-              Want To Play A Game?
-            </a>
           </div>
         </nav>
       </section>
