@@ -1,12 +1,13 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 
 export default function TailHero() {
   return (
-    <div className="h-screen overflow-hidden bg-transparent sm:w-screen">
+    <div className="h-screen w-screen overflow-hidden bg-transparent">
       <div className="mx-auto flex max-w-7xl items-center justify-center ">
-        <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:max-w-3xl  xl:pb-32">
+        <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:max-w-4xl  xl:pb-32">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="currentColor"
@@ -68,7 +69,18 @@ export default function TailHero() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
+          <div className="flex items-center justify-center">
+            <a className="text-2xl font-bold text-white" href="#">
+              <div className="relative m-0 h-32 w-32">
+                <Image
+                  className="relative  object-contain"
+                  src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644093867/V_3_eq6srr.svg"
+                  alt=""
+                  layout="fill"
+                ></Image>
+              </div>
+            </a>
+          </div>
           <main className=" flex max-w-7xl justify-center p-7 sm:px-6 ">
             <div className=" p-3 text-center">
               <h1 className="text-7xl font-extrabold tracking-tight text-indigo-700 shadow-indigo-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
