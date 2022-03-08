@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import TailNav from "../components/TailNav";
+import Header from "../components/Header";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ type LayoutProps = {
 const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
   return (
     <>
-      <TailNav />
+      <Header />
       {children}
       <Footer />
     </>

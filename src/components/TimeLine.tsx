@@ -3,10 +3,12 @@ import Technologies from "./Technologies";
 
 import Image from "next/image";
 import { TimeLineData } from "../database/database";
+import Acomplishments from "./Acomplishments";
 
 export default function Timeline() {
   return (
     <>
+      <Acomplishments />
       <div className="mx-auto grid gap-y-20 gap-x-20 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-1">
         <div className=" grid space-y-5 space-x-5">
           <h1 className="text-7xl font-extrabold uppercase tracking-tight  text-indigo-700 brightness-125 sm:text-4xl lg:pl-4">

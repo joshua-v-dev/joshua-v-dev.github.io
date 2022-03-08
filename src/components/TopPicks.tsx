@@ -11,12 +11,11 @@ import { topPicks } from "../database/database";
 export default function Projects() {
   return (
     <>
-      <div className=" h-auto w-auto space-x-44 space-y-4 bg-transparent">
-        <h2 className=" my-12 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
-          Top Picks
-        </h2>
-
-        <div className="auto-rows-4 justify-items-fit grid h-auto w-auto grid-flow-row-dense grid-cols-3 justify-center lg:max-w-none ">
+      <h2 className=" my-10 flex items-center justify-center text-6xl font-extrabold tracking-tight text-white">
+        Top Picks
+      </h2>
+      <div className="container bg-transparent">
+        <div className="auto-rows-4 justify-items-fit grid grid-flow-row-dense grid-cols-3 justify-center lg:max-w-none ">
           {topPicks.map(
             (topPicks, i): JSX.Element => (
               <div

@@ -5,8 +5,8 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 export default function TailHero() {
   return (
     <div className="relative h-screen overflow-hidden bg-transparent">
-      <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-transparent pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+      <div className="mx-auto flex max-w-7xl items-center justify-center ">
+        <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:w-full lg:max-w-3xl  xl:pb-32">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="currentColor"
@@ -69,22 +69,25 @@ export default function TailHero() {
             </Transition>
           </Popover>
 
-          <main className="mx-auto my-auto max-w-7xl px-4 sm:px-6 ">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl font-extrabold tracking-tight text-indigo-500 sm:text-5xl md:text-6xl">
-                <span className="block text-7xl xl:inline">Joshua Vaughn</span>{" "}
-                <span className="block text-purple-700 xl:inline">
-                  Full Stack Web Developer
-                </span>
+          <main className=" flex max-w-7xl justify-center p-7 sm:px-6 ">
+            <div className="mx-auto my-auto p-3 text-center">
+              <h1 className="text-7xl font-extrabold tracking-tight text-indigo-700 shadow-indigo-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
+                <span className="block text-8xl xl:inline xl:max-w-none">
+                  Joshua Vaughn
+                </span>{" "}
               </h1>
-              <p className="text-base font-bold text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:text-2xl">
+              <span className="block text-5xl font-extrabold tracking-tight text-purple-700 brightness-105 xl:inline xl:max-w-none ">
+                Full Stack Web Developer
+              </span>
+
+              <p className="text-base font-bold text-gray-500 brightness-125 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none">
                 Innovation one idea at a time
               </p>
-              <div className=" sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div className=" sm:mt-8 sm:flex sm:justify-center ">
                 <div className="rounded-lg shadow">
                   <a
                     href="https://github.com/joshua-v-dev"
-                    className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
+                    className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-600 py-3 px-8 text-lg font-medium text-white outline-double  hover:bg-indigo-700 md:py-3 md:px-6 md:text-lg"
                   >
                     Github
                   </a>
@@ -92,7 +95,7 @@ export default function TailHero() {
                 <div className="mt-3 sm:mt-0 sm:ml-3 md:mt-0 lg:mt-0">
                   <a
                     href="https://www.linkedin.com/in/joshuavaughn"
-                    className="flex w-full items-center justify-center rounded-xl border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg"
+                    className="flex items-center justify-center rounded-xl border border-transparent bg-indigo-100 px-8 py-3 text-lg font-medium text-indigo-700 outline-double hover:bg-indigo-200 md:py-3 md:px-6 md:text-lg"
                   >
                     LinkedIn
                   </a>
@@ -102,7 +105,7 @@ export default function TailHero() {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"></div>
+      <div className="hidden lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"></div>
     </div>
   );
 }

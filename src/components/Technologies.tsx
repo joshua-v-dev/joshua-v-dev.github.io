@@ -1,5 +1,3 @@
-//tailwind 2x2 column grid
-
 import React from "react";
 import { features } from "../database/database";
 
