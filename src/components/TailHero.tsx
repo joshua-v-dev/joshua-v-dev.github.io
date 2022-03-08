@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function TailHero() {
   return (
-    <div className="h-screen w-screen overflow-hidden bg-transparent">
+    <div className="h-screen overflow-hidden bg-transparent">
       <div className="mx-auto flex max-w-7xl items-center justify-center ">
         <div className="relative z-10 bg-transparent pb-12 sm:pb-16 md:pb-20 lg:max-w-4xl  xl:pb-32">
           <svg

@@ -3,8 +3,8 @@ import React from "react";
 export default function TailNav() {
   return (
     <>
-      <section className="w-screen bg-transparent py-8 px-6 lg:px-8">
-        <nav className="relative my-0 mx-auto flex max-w-full">
+      <section className=" bg-transparent py-8 px-6 lg:px-8">
+        <nav className="relative my-0 mx-auto flex ">
           <div className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform lg:block">
             <ul className="flex items-center space-x-10 text-white">
               <li>

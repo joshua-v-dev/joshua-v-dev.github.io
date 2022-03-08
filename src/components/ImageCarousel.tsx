@@ -1,13 +1,13 @@
 // import React, { useState, useEffect } from "react";
 // import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/outline";
-// import { ArrowRightIconNorm, ArrowLeftIconNorm } from './MediaNorm'
+// import { ArrowRightIconNorm, ArrowLeftIconNorm } from "./MediaNorm";
 // import Image from "next/image";
 // import { featuredProducts } from "../database/database";
-//
+// 
 // let slideInterval: NodeJS.Timer;
 // export default function Slider() {
 //   const [currentIndex, setCurrentIndex] = useState(0);
-//
+// 
 //   useEffect(() => {
 //     slideInterval = setInterval(() => {
 //       setCurrentIndex((currentIndex) => {
@@ -18,66 +18,68 @@
 //       });
 //     }, 4000);
 //   }, []);
-//
+// 
 //   useEffect(() => {
 //     return () => {
 //       clearInterval(slideInterval);
 //     };
 //   }, []);
-//
+// 
 //   return (
-//  <h1 className="container grid grid-cols-3 p-1 text-center text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
-//      Top Picks
-//     </h1>
-//     <div className="slider">
-//       <div className="slider__container">
-//         <div className="slider__container__left">
-//           <div className="slider__container__left__arrow">
-//             <ArrowLeftIconNorm>
-//               <ArrowLeftIcon
-//                 className="slider__container__left__arrow__icon "
-//                 onClick={() => {
-//                   setCurrentIndex((currentIndex) => {
-//                     if (currentIndex === 0) {
-//                       return featuredProducts.length - 1;
-//                     }
-//                     return currentIndex - 1;
-//                   });
-//                 }}
-//               />
-//             </ArrowLeftIconNorm>
+//     <>
+//       <h1 className="container grid grid-cols-3 p-1 text-center text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+//         Top Picks
+//       </h1>
+//       <div className="slider">
+//         <div className="slider__container">
+//           <div className="slider__container__left">
+//             <div className="slider__container__left__arrow">
+//               <ArrowLeftIconNorm>
+//                 <ArrowLeftIcon
+//                   className="slider__container__left__arrow__icon "
+//                   onClick={() => {
+//                     setCurrentIndex((currentIndex) => {
+//                       if (currentIndex === 0) {
+//                         return featuredProducts.length - 1;
+//                       }
+//                       return currentIndex - 1;
+//                     });
+//                   }}
+//                 />
+//               </ArrowLeftIconNorm>
+//             </div>
 //           </div>
-//         </div>
-//         <div className="slider__container__center">
-//           <div className="slider__container__center__slide">
-//             <Image
-//               src={featuredProducts[currentIndex]?.toString()}
-//               width={300}
-//               height={300}
-//               alt="featured product"
-//               priority
-//             />
-//           </div>
-//         </div>
-//         <div className="slider__container__right">
-//           <div className="slider__container__right__arrow">
-//             <ArrowRightIconNorm>
-//               <ArrowRightIcon
-//                 className="slider__container__right__arrow__icon"
-//                 onClick={() => {
-//                   setCurrentIndex((currentIndex) => {
-//                     if (currentIndex === featuredProducts.length - 1) {
-//                       return 0;
-//                     }
-//                     return currentIndex + 1;
-//                   });
-//                 }}
+//           <div className="slider__container__center">
+//             <div className="slider__container__center__slide">
+//               <Image
+//                 src={featuredProducts[currentIndex]?.toString()}
+//                 width={300}
+//                 height={300}
+//                 alt="featured product"
+//                 priority
 //               />
-//             </ArrowRightIconNorm>
+//             </div>
+//           </div>
+//           <div className="slider__container__right">
+//             <div className="slider__container__right__arrow">
+//               <ArrowRightIconNorm>
+//                 <ArrowRightIcon
+//                   className="slider__container__right__arrow__icon"
+//                   onClick={() => {
+//                     setCurrentIndex((currentIndex) => {
+//                       if (currentIndex === featuredProducts.length - 1) {
+//                         return 0;
+//                       }
+//                       return currentIndex + 1;
+//                     });
+//                   }}
+//                 />
+//               </ArrowRightIconNorm>
+//             </div>
 //           </div>
 //         </div>
 //       </div>
-//     </div>
+//     </>
 //   );
 // }
-export {};
+export {}
