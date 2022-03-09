@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../layout/Layout";
-import ProjectsPage from "../components/ProjectsPage";
+import HomePage from "../components/HomePage";
 
 const Home: React.FC = () => {
   return (
     <Layout>
-      <ProjectsPage />
+      <HomePage />
     </Layout>
   );
 };

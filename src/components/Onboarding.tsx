@@ -1,14 +1,7 @@
-import React from "react";
 import Image from "next/image";
-import TopPicks from "../components/TopPicks";
-import ImageCarousel from "../components/ImageCarousel";
-import SliderOverlay from "../components/SliderOverlay";
-import Cta from "../components/Cta";
-
-export default function ProjectsPage() {
+export default function Onboarding() {
   return (
     <>
-      <SliderOverlay />
       <div className="container mx-auto  grid items-center justify-center space-y-10">
         <h2 className="  text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
           First, What brings you here?
@@ -50,10 +43,6 @@ export default function ProjectsPage() {
           </div>
         </div>
       </div>
-      <TopPicks />
-      <ImageCarousel />
-
-      <Cta />
     </>
   );
 }
