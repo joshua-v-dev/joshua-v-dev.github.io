@@ -1,5 +1,5 @@
 import React from "react";
-import TailHero from "../components/TailHero";
+import TailHero from "./TailHero";
 import TailNav from "./TailNav";
 
 type HeaderProps = {
