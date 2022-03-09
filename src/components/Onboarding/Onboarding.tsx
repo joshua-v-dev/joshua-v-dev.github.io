@@ -37,7 +37,7 @@ export default function Onboarding() {
         <div className="lg:space-y-16">
           <div className="rounded-lg shadow">
             <a
-              href="https://www.linkedin.com/in/joshuavaughn"
+              href="https://www.linkedin.com/in/joshua-vaughn"
               className="inline-block rounded-xl border-2 border-transparent bg-yellow-400 py-2 px-4 text-xl font-bold text-gray-900 outline-double transition  duration-200 hover:bg-indigo-600 md:px-6 md:text-lg "
             >
               LinkedIn
