@@ -22,7 +22,7 @@ export default function SliderOverlay() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+            <Dialog.Overlay className="absolute inset-0 bg-indigo-900 bg-opacity-75 transition-opacity" />
           </Transition.Child>
           <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
             <Transition.Child
@@ -55,7 +55,7 @@ export default function SliderOverlay() {
                     </button>
                   </div>
                 </Transition.Child>
-                <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                <div className="flex h-full flex-col overflow-y-scroll bg-teal-600 py-6 shadow-xl">
                   <div className="px-4 sm:px-6">
                     <Dialog.Title className="text-lg font-medium text-gray-900">
                       Panel title
