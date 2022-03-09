@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import { projects } from "../../database/database";
+import { projects } from "../../../database/database";
 
 const Details = ({ htmlString }: { htmlString: string }) => {
   return (
@@ -15,7 +15,7 @@ const Details = ({ htmlString }: { htmlString: string }) => {
   );
 };
 
-export const getStaticProps = async ({ slug }: { slug: unknown }) => {
+export const getStaticProps = async ({ ...slug }: { slug: unknown }) => {
   const projects = fs.readFileSync(path.join(slug + ".tsx")).toString();
   const parsedProjects = matter(projects);
 
