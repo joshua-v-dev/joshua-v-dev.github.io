@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { topPicks } from "../database/database";
+import { topPicks } from "../../database/database";
 
 export default function Projects() {
   return (

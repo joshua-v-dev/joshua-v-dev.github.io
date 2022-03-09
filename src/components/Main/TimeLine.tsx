@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { TimeLineData } from "../database/database";
+import { TimeLineData } from "../../database/database";
 import Acomplishments from "./Acomplishments";
 
 export default function Timeline() {

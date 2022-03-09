@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "../components/Particles/index";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 type LayoutProps = {

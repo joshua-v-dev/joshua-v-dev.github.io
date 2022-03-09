@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { featuredProducts } from "../database/database";
+import { featuredProducts } from "../../database/database";
 
 let slideInterval: NodeJS.Timer;
 

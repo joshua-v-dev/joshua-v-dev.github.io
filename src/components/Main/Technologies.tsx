@@ -1,5 +1,5 @@
 import React from "react";
-import { features } from "../database/database";
+import { features } from "../../database/database";
 
 export default function Technologies() {
   return (

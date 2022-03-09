@@ -1,4 +1,4 @@
-import { callouts } from "../database/database";
+import { callouts } from "../../database/database";
 import Image from "next/image";
 
 export default function Gallery() {
