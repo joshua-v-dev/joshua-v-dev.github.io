@@ -4,6 +4,7 @@ import Image from "next/image";
 import TopPicks from "../components/TopPicks";
 import ImageCarousel from "../components/ImageCarousel";
 import SliderOverlay from "../components/SliderOverlay";
+import Cta from "../components/Cta";
 
 export default function ProjectsPage() {
   return (
@@ -94,6 +95,7 @@ export default function ProjectsPage() {
           </div>
         ))}
       </div>
+      <Cta />
     </>
   );
 }
