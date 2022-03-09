@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { topPicks } from "../../database/database";
+import Spin from "../Animations/Element/Spin";
 
 export default function Projects() {
   return (
@@ -19,13 +20,15 @@ export default function Projects() {
                   data-mdb-ripple-color="light "
                 >
                   <div className="relative  lg:h-96 lg:w-96">
-                    <Image
-                      className=" object-contain"
-                      src={topPicks.imageSrc}
-                      alt={topPicks.imageAlt}
-                      layout="fill"
-                      priority
-                    />
+                    <Spin>
+                      <Image
+                        className=" object-contain"
+                        src={topPicks.src}
+                        alt={topPicks.imageAlt}
+                        layout="fill"
+                        priority
+                      />
+                    </Spin>
                   </div>
                 </a>
                 <h5 className="flex justify-center space-y-4 p-1 text-xl font-medium text-white">

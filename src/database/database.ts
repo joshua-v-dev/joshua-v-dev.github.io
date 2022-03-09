@@ -2,8 +2,7 @@ export const projects = [
   {
     title: "MERN STACK",
     description: "PROGRESSIVE WEB APP TEMPLATES",
-    imageSrc:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Mongo", "Express", "React", "Node"],
 
     i: 0,
@@ -11,8 +10,7 @@ export const projects = [
   {
     title: "PLATFORMS",
     description: "SHOPIFY APPS, STORES & THEMES",
-    imageSrc:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["React", "Liquid", "Next", "Polaris", "GraphQL"],
 
     i: 1,
@@ -20,8 +18,7 @@ export const projects = [
   {
     title: "UI/UX",
     description: "GOOGLE UX CERTIFICATION COURSE",
-    imageSrc:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Adobe Creative Cloud Products"],
 
     i: 2,
@@ -29,8 +26,7 @@ export const projects = [
   {
     title: "PASSION PROJECTS",
     description: "INDIE GAME DESIGN AND DEVELOPMENT",
-    imageSrc:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1644349589/gamedev_tt1isx.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1644349589/gamedev_tt1isx.png",
     tags: ["Three.js", "Unity", "Blender"],
 
     i: 3,
@@ -38,8 +34,7 @@ export const projects = [
   {
     title: "PORTFOLIO PROJECT",
     description: "THIS PORTFOLIO PROJECT",
-    imageSrc:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Next.js", "React.js", "Radix UI"],
 
     i: 4,
@@ -47,18 +42,23 @@ export const projects = [
   {
     title: "FREELANCE CLIENTS",
     description: "THESE ARE SOME SMALL BUSINESS WEB APPS",
-    imageSrc:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
     tags: ["Next.js", "TypeScript", "Tailwind.css"],
 
     i: 5,
   },
 ];
+export const topSrc = [
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1645436154/something_backblk_utxei6.png",
+   "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
+
+];
 export const topPicks = [
   {
     name: "PORTFOLIO",
     description: "React, Tailwind CSS, and Next.js",
-    imageSrc:
+    src:
       "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
 
     imageAlt: "joshua vaughn portfolio",
@@ -67,7 +67,7 @@ export const topPicks = [
   {
     name: "SOMETHING THE GAME",
     description: "React Native, Babylon.js, Blender",
-    imageSrc:
+    src:
       "https://res.cloudinary.com/dpytkhyme/image/upload/v1645436154/something_backblk_utxei6.png",
 
     imageAlt: "something the game",
@@ -76,7 +76,7 @@ export const topPicks = [
   {
     name: "SHOPIFY E-COMMERCE",
     description: "React, Liquid, GraphQL, TailwindCSS",
-    imageSrc:
+    src:
       "https://res.cloudinary.com/dpytkhyme/image/upload/v1643976704/shopify_lvz0ui.png",
 
     imageAlt: "shopify",

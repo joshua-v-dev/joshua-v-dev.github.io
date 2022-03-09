@@ -1,6 +1,6 @@
 import React from "react";
 import TailNav from "./TailNav";
-import Particles from "../../components/Particles/index";
+import Particles from "../Animations/Particles/index";
 
 type HeaderProps = {
   isMain?: boolean;
