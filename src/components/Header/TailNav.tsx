@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React from "react";
 
 export default function TailNav() {
@@ -16,8 +17,8 @@ export default function TailNav() {
           <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:block lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
             <ul className="flex items-center space-x-10 text-white">
               <li>
-                <a className="text-lg font-bold text-white" href="#">
-                  Projects
+                <a className="text-lg font-bold text-white" href="/gallery">
+                  Gallery
                 </a>
               </li>
               <span>
@@ -64,7 +65,7 @@ export default function TailNav() {
                 </svg>
               </span>
               <li>
-                <a className="text-lg font-bold text-white" href="#">
+                <a className="text-lg font-bold text-white" href="/contact">
                   Contact
                 </a>
               </li>

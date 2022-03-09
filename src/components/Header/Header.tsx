@@ -1,6 +1,6 @@
 import React from "react";
-import TailHero from "./TailHero";
 import TailNav from "./TailNav";
+import Particles from "../../components/Particles/index";
 
 type HeaderProps = {
   isMain?: boolean;
@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <TailNav />
-      <TailHero />
+      <Particles />
     </>
   );
 };

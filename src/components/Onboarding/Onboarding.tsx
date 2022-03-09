@@ -1,4 +1,6 @@
 import Image from "next/image";
+import TopPicks from "./TopPicks";
+
 export default function Onboarding() {
   return (
     <>
@@ -43,6 +45,7 @@ export default function Onboarding() {
           </div>
         </div>
       </div>
+      <TopPicks />
     </>
   );
 }
