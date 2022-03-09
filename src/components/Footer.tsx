@@ -8,7 +8,7 @@ const Footer = () => {
           <div className=" flex flex-wrap items-center justify-between">
             <div className=" px-4 lg:mb-0 ">
               <p className="mt-3 hidden text-lg text-indigo-800 brightness-200 lg:block">
-                Joshua Vaughn #FullStackDeveloper
+                #FullStackDeveloper
               </p>
             </div>
             <div className="flex w-full flex-wrap items-center px-4 lg:w-1/2 lg:justify-end">
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="mt-6 text-lg text-indigo-800 brightness-200 lg:hidden">
-            JOSHUA VAUGHN #FullStackDeveloper
+            #FullStackDeveloper
           </p>
         </div>
       </section>
