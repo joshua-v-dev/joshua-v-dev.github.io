@@ -5,10 +5,10 @@ const Footer = () => {
     <>
       <section className="bg-transparent py-8">
         <div className="container mx-auto px-4">
-          <div className=" flex flex-wrap items-center justify-between">
+          <div className=" flex flex-wrap items-center justify-end">
             <div className=" px-4 lg:mb-0 ">
-              <p className="mt-3 hidden text-lg text-indigo-800 brightness-200 lg:block">
-                #FullStackDeveloper
+              <p className="bg--teal-500 font-blabg-clip-ck t textext-transparent bg-clip-text text-5xl text-transparent">
+                Joshua Vaughn
               </p>
             </div>
             <div className="flex w-full flex-wrap items-center px-4 lg:w-1/2 lg:justify-end">
@@ -54,7 +54,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <p className="mt-6 text-lg text-indigo-800 brightness-200 lg:hidden">
+          <p className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-5xl font-black text-transparent brightness-125">
             #FullStackDeveloper
           </p>
         </div>
