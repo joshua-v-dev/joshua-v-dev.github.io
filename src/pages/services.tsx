@@ -51,7 +51,7 @@ const Services = () => {
                     <div className="max-w-xl px-8 lg:pl-0">
                       <div className="mb-8 flex items-center">
                         <h2 className="font-heading mr-16 text-3xl font-bold text-white md:text-4xl">
-                          Standard
+                          Premium
                         </h2>
                         <span className="hidden w-full bg-gray-700 py-px lg:inline-block"></span>
                       </div>
@@ -103,7 +103,7 @@ const Services = () => {
                               fill="white"
                             ></path>
                           </svg>
-                          <span>1 Custom Domain</span>
+                          <span>Static Site</span>
                         </li>
                       </ul>
                     </div>
@@ -111,13 +111,13 @@ const Services = () => {
                   <div className="w-full px-4 lg:w-5/12">
                     <div className="h-full text-center">
                       <h3 className="mb-3 text-lg font-bold text-blue-500">
-                        1 yr hosting
+                        Click for more details
                       </h3>
                       <div className="mb-1 flex justify-center font-bold text-white">
                         <span className="mr-1 inline-block self-start text-xl">
                           $
                         </span>
-                        <p className="self-end text-5xl">999.99</p>
+                        <p className="self-end text-5xl">500</p>
                       </div>
                       <p className="mb-10 text-lg text-white">/P.W.A.</p>
                       <a
@@ -222,9 +222,7 @@ const Services = () => {
                         <span className="mr-1 inline-block self-start text-xl">
                           $
                         </span>
-                        <p className="self-end text-5xl">
-                          Contact for more information
-                        </p>
+                        <p className="self-end text-5xl">1000</p>
                       </div>
                       <p className="mb-10 text-lg text-white">/P.W.A.</p>
                       <a
