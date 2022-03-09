@@ -90,7 +90,7 @@ export default function TailNav() {
             </div>
             <div>
               <a
-                href="www.linkedin.com/in/joshua-vaughn"
+                href="https://www.linkedin.com/in/joshua-vaughn/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="text-2x1  transition-colors hover:text-white dark:hover:text-white"
