@@ -1,13 +1,16 @@
+import * as React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
 import { Refresh } from "./Refresh";
 
-const Spin = () => {
+import "../../../styles/css";
+
+const SpinIndex = () => {
   const [count, setCount] = useState(0);
   return (
     <>
       <Refresh onClick={() => setCount(count + 1)} />
-      <div className="container">
+      <div className="example-container">
         <motion.div
           animate={{
             scale: [1, 2, 2, 1, 1],
@@ -26,4 +29,5 @@ const Spin = () => {
     </>
   );
 };
-export default Spin;
+
+export default SpinIndex;
