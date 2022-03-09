@@ -1,9 +1,9 @@
-import React from 'react';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { marked } from 'marked';
-import { projects } from '../../database/database';
+import React from "react";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { marked } from "marked";
+import { projects } from "../../database/database";
 
 const Details = ({ htmlString }: { htmlString: string }) => {
   return (
@@ -16,7 +16,7 @@ const Details = ({ htmlString }: { htmlString: string }) => {
 };
 
 export const getStaticProps = async ({ slug }: { slug: unknown }) => {
-  const projects = fs.readFileSync(path.join(slug + '.tsx')).toString();
+  const projects = fs.readFileSync(path.join(slug + ".tsx")).toString();
   const parsedProjects = matter(projects);
 
   const htmlString = `${marked(parsedProjects.content)}`;
@@ -26,13 +26,12 @@ export const getStaticProps = async ({ slug }: { slug: unknown }) => {
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync(__dirname);
-  console.log('files: ', files);
+
   const paths = files.map((__filename) => ({
     params: {
-      slug: __filename.replace('.tsx', ''),
+      slug: __filename.replace(".tsx", ""),
     },
   }));
-  console.log('paths: ', paths);
 
   return {
     paths,
