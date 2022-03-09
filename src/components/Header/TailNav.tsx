@@ -33,7 +33,7 @@ export default function TailNav() {
                 </svg>
               </span>
               <li>
-                <a className="text-lg font-bold text-white" href="#">
+                <a className="text-lg font-bold text-white" href="/services">
                   Services
                 </a>
               </li>
