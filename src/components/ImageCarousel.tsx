@@ -23,7 +23,7 @@ const ImageCarousel = () => {
     };
   }, []);
   return (
-    <section className=" rounded-3xl bg-indigo-500 bg-opacity-30 p-20">
+    <section className="container mx-auto grid items-center justify-evenly rounded-3xl bg-indigo-500 bg-opacity-30 p-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center">
           <button

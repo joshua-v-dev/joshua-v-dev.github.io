@@ -5,8 +5,8 @@ import { topPicks } from "../database/database";
 export default function Projects() {
   return (
     <>
-      <div className=" grid  items-center justify-center space-y-24 p-16">
-        <div className="container grid grid-flow-col grid-cols-3 justify-center gap-x-24 gap-y-12  bg-transparent lg:max-w-none ">
+      <div className=" grid  items-center justify-center space-y-12 p-16">
+        <div className="container grid grid-flow-col grid-cols-3 justify-center gap-x-24 gap-y-8  bg-transparent lg:max-w-none ">
           {topPicks.map(
             (topPicks, i): JSX.Element => (
               <div
