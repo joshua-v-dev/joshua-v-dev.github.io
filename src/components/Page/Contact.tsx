@@ -4,8 +4,8 @@ export default function Contact() {
   return (
     <>
       <Layout>
-        <div className="block h-full w-full bg-gradient-to-r from-blue-600 via-teal-500 to-purple-500">
-          <section className="py-20">
+        <div className="block h-full w-full bg-gradient-to-r from-blue-600 via-teal-500 to-purple-500 space-y-16">
+          <section className="py-32">
             <div className="container mx-auto px-4">
               <div className="-mx-4 flex flex-wrap">
                 <div className="mb-8 w-full px-4 lg:mb-0 lg:w-1/2">
