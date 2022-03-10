@@ -1,4 +1,4 @@
-import Recruiter from "../components/Recruiter/Recruiter";
+import Recruiter from "../components/Page/Recruiter";
 import Layout from "../layout/Layout";
 
 const RecruiterPage = () => {

@@ -1,4 +1,4 @@
-import Contract from "../components/Page/Contract/Contract";
+import Contract from "../components/Page/Contract";
 import Layout from "../layout/Layout";
 
 const ContractPage = () => {
