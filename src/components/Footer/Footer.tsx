@@ -3,17 +3,17 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <section className="bg-transparent py-16">
+      <section className="max-h-max bg-transparent lg:py-12">
         <div className="container mx-auto px-4">
           <div className=" flex flex-wrap items-center justify-end">
             <div className=" px-auto  lg:mb-0 ">
-            <p className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-5xl font-black text-transparent brightness-125">
-          #FullStackDeveloper
-        </p>
+              <p className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-5xl font-black text-transparent brightness-125">
+                #FullStackDeveloper
+              </p>
             </div>
 
             <div className="flex w-full flex-wrap items-center px-4 lg:w-1/2 lg:justify-end">
-              <ul className="mb-6 inline-flex w-full flex-wrap lg:mb-0 lg:mr-12 lg:w-auto">
+              <ul className="mb-8 inline-flex w-full flex-wrap lg:mb-0 lg:mr-12 lg:w-auto">
                 <li className="mr-6 mb-2 md:mb-0">
                   <a
                     className="text-lg font-medium text-indigo-800 brightness-200 hover:text-indigo-700"

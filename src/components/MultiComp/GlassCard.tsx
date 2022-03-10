@@ -16,7 +16,11 @@ export default function GlassCard() {
       <div className="relative border border-gray-200 bg-white bg-opacity-60 bg-clip-padding px-4 py-10 shadow-lg sm:rounded-3xl sm:p-20">
         <div className="mx-auto max-w-md">
           <div>
-            <Image alt="logo" src="/img/logo.svg" className="h-7 sm:h-8" />
+            <Image
+              alt="logo"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1644085059/V_2_d5qwjw.svg"
+              className="h-7 sm:h-8"
+            />
           </div>
           <div className="divide-y divide-gray-200">
             <div className="space-y-4 py-8 text-base leading-6 text-gray-700 sm:text-lg sm:leading-7">

@@ -60,15 +60,15 @@ export const topPicks = [
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646886682/recruiter-card_tbnatw.png",
 
     imageAlt: "joshua vaughn portfolio",
-    href: "#",
+    href: "/recruiter",
   },
   {
     name: "Contract",
     description: "Let's build something together!",
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646888691/freelance-cta-card_a2k05w.png",
 
-    imageAlt: "something the game",
-    href: "#",
+    imageAlt: "contract me",
+    href: "/contract",
   },
   {
     name: "The Future",
@@ -76,7 +76,7 @@ export const topPicks = [
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646889648/Dark_Mode_E-commerce_Online_Store_Logo_u1z1kr.png",
 
     imageAlt: "shopify",
-    href: "#",
+    href: "/future",
   },
 ];
 

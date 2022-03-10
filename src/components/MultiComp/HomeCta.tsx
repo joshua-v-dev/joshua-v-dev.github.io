@@ -1,4 +1,4 @@
-export default function Cta() {
+export default function HomeCta() {
   return (
     <>
       <section className=" mx-auto grid grid-flow-col grid-cols-1 items-center justify-center px-48 py-48 lg:space-y-24">

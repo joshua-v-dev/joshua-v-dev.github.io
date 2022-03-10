@@ -76,7 +76,7 @@ export const SlideShow = () => {
               paginate(-1);
             }
           }}
-        />
+        ></motion.img>
       </AnimatePresence>
       <div className="next" onClick={() => paginate(1)}>
         {"‣"}

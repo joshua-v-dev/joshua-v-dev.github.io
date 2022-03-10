@@ -8,7 +8,7 @@ import { projects } from "../../../database/database";
 const Details = ({ htmlString }: { htmlString: string }) => {
   return (
     <>
-      <h1>Projects Page</h1>
+      <h1>This is the slug file</h1>
       <pre>{projects}</pre>
       <div dangerouslySetInnerHTML={{ __html: htmlString }} />
     </>

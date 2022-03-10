@@ -1,10 +1,19 @@
 // pages/_document.tsx
-import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
+import NextDocument, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentInitialProps,
+  DocumentContext,
+} from "next/document";
 import { getCssText } from "../../stitches.config";
 
 export default class Document extends NextDocument {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  static async getInitialProps(ctx: any) {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
     try {
       const initialProps = await NextDocument.getInitialProps(ctx);
 

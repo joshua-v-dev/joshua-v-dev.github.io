@@ -1,11 +1,11 @@
 import Technologies from "./Technologies";
 import ImageCarousel from "../MultiComp/ImageCarousel";
-import Cta from "../MultiComp/Cta";
+import HomeCta from "../MultiComp/HomeCta";
 const HomeMain = () => {
   return (
     <>
       <ImageCarousel />
-      <Cta />
+      <HomeCta />
       <Technologies />
     </>
   );
