@@ -3,7 +3,7 @@ import { features } from "../../database/database";
 
 export default function Technologies() {
   return (
-    <div className="bg-transparent">
+    <div className=" bg-transparent py-64">
       <div className="mx-auto max-w-7xl space-y-8 px-2 sm:px-4 lg:px-6">
         <div className=" relative space-y-4 lg:text-center">
           <h1 className=" text-6xl font-extrabold uppercase tracking-wide text-indigo-700 brightness-125">
@@ -18,7 +18,7 @@ export default function Technologies() {
           </p>
         </div>
 
-        <dl className="mx-auto grid grid-cols-2 gap-x-8 gap-y-12 space-y-2">
+        <dl className="mx-auto grid grid-cols-2 gap-x-10 gap-y-12 space-y-2 space-x-2">
           {features.map((feature) => (
             <div key={feature.id} className="relative  ">
               <dt>

@@ -5,8 +5,8 @@ const HomeMain = () => {
   return (
     <>
       <ImageCarousel />
-      <Technologies />
       <Cta />
+      <Technologies />
     </>
   );
 };
