@@ -1,13 +1,10 @@
-import Layout from "../layout/Layout";
-import Timeline from "../components/Main/TimeLine";
+import Story from "../components/Page/Story";
 
-const Story = () => {
+const StoryPage = () => {
   return (
     <>
-      <Layout>
-        <Timeline />
-      </Layout>
+      <Story />
     </>
   );
 };
-export default Story;
+export default StoryPage;

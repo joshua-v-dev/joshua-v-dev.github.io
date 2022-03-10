@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { topPicks } from "../../database/database";
 
-export default function Projects() {
+export default function TopPicks() {
   return (
     <>
       <div className=" grid  items-center justify-center space-y-12 p-16">

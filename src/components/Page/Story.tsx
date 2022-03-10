@@ -1,9 +1,12 @@
-import Timeline from "../../components/Main/TimeLine";
+import TimeLine from "../../components/Main/TimeLine";
+import Layout from "../../layout/Layout";
 
 export default function Story() {
   return (
     <>
-      <Timeline />
+      <Layout>
+        <TimeLine />
+      </Layout>
     </>
   );
 }

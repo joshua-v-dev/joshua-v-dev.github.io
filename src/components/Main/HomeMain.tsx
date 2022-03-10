@@ -1,13 +1,13 @@
 import Technologies from "./Technologies";
 import ImageCarousel from "../MultiComp/ImageCarousel";
 import Cta from "../MultiComp/Cta";
-const Main = () => {
+const HomeMain = () => {
   return (
     <>
       <Technologies />
-     <ImageCarousel />
-     <Cta />
+      <ImageCarousel />
+      <Cta />
     </>
   );
 };
-export default Main;
+export default HomeMain;

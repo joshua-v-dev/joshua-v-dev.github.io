@@ -6,7 +6,7 @@ type HeroProps = {
   isMain?: boolean;
 };
 
-const Hero: React.FC<HeroProps> = () => {
+const HomeHero: React.FC<HeroProps> = () => {
   return (
     <>
       <TailHero />
@@ -15,4 +15,4 @@ const Hero: React.FC<HeroProps> = () => {
   );
 };
 
-export default Hero;
+export default HomeHero;

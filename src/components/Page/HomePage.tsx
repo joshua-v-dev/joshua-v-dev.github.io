@@ -1,13 +1,13 @@
 import React from "react";
-import Hero from "../../components/Hero/Hero";
-import Main from "../../components/Main/Main";
+import HomeHero from "../Hero/HomeHero";
+import HomeMain from "../Main/HomeMain";
 import SliderOverlay from "../MultiComp/SliderOverlay";
 export default function HomePage() {
   return (
     <>
       <SliderOverlay />
-      <Hero />
-      <Main />
+      <HomeHero />
+      <HomeMain />
     </>
   );
 }
