@@ -12,6 +12,7 @@ const SpinIndex = () => {
       <Refresh onClick={() => setCount(count + 1)} />
       <div className="example-container">
         <motion.div
+          layout
           animate={{
             scale: [1, 2, 2, 1, 1],
             rotate: [0, 0, 270, 270, 0],
