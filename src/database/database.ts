@@ -50,34 +50,30 @@ export const projects = [
 ];
 export const topSrc = [
   "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
-  "https://res.cloudinary.com/dpytkhyme/image/upload/v1645436154/something_backblk_utxei6.png",
-   "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
-
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1646886682/recruiter-card_tbnatw.png",
+  "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
 ];
 export const topPicks = [
   {
-    name: "PORTFOLIO",
-    description: "React, Tailwind CSS, and Next.js",
-    src:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
+    name: "Recruiter",
+    description: "I'm Ready to Work!",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646886682/recruiter-card_tbnatw.png",
 
     imageAlt: "joshua vaughn portfolio",
     href: "#",
   },
   {
-    name: "SOMETHING THE GAME",
-    description: "React Native, Babylon.js, Blender",
-    src:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1645436154/something_backblk_utxei6.png",
+    name: "Contract",
+    description: "Let's build something together!",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646888691/freelance-cta-card_a2k05w.png",
 
     imageAlt: "something the game",
     href: "#",
   },
   {
-    name: "SHOPIFY E-COMMERCE",
-    description: "React, Liquid, GraphQL, TailwindCSS",
-    src:
-      "https://res.cloudinary.com/dpytkhyme/image/upload/v1643976704/shopify_lvz0ui.png",
+    name: "The Future",
+    description: "See What I'm Up To...",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646889648/Dark_Mode_E-commerce_Online_Store_Logo_u1z1kr.png",
 
     imageAlt: "shopify",
     href: "#",
