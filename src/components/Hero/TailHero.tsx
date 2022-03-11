@@ -1,6 +1,3 @@
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 
 export default function TailHero() {
@@ -16,59 +13,7 @@ export default function TailHero() {
             aria-hidden="true"
           ></svg>
 
-          <Popover>
-            <div className="relative px-4 pt-1 sm:px-6 lg:px-8">
-              <nav
-                className="relative flex items-center justify-between sm:h-10 lg:justify-start"
-                aria-label="Global"
-              >
-                <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
-                  <div className="flex w-full items-center justify-between md:w-auto">
-                    <div className="flex items-center md:hidden">
-                      <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                        <span className="sr-only">Tooling</span>
-                        <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                      </Popover.Button>
-                    </div>
-                  </div>
-                </div>
-                <div className="hidden md:block md:space-x-8 md:pr-4"></div>
-              </nav>
-            </div>
-
-            <Transition
-              as={Fragment}
-              enter="duration-150 ease-out"
-              enterFrom="opacity-0 scale-95"
-              enterTo="opacity-100 scale-100"
-              leave="duration-100 ease-in"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
-            >
-              <Popover.Panel
-                focus
-                className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
-              >
-                <div className="overflow-hidden rounded-lg bg-transparent shadow-md ring-1 ring-black ring-opacity-5">
-                  <div className="flex items-center justify-between px-5 pt-4">
-                    <div className="relative">
-                      <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                        <span className="sr-only">Close main menu</span>
-                        <XIcon className="h-12 w-12" aria-hidden="true" />
-                      </Popover.Button>
-                    </div>
-                  </div>
-                  <div className="space-y-1 px-2 pt-2 pb-3"></div>
-                  <a
-                    href="#"
-                    className="inline-block w-full bg-transparent px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
-                  >
-                    Discord
-                  </a>
-                </div>
-              </Popover.Panel>
-            </Transition>
-          </Popover>
+ 
           <div className="flex items-center justify-center">
             <a className="inline-block text-2xl font-bold text-white" href="#">
               <div className="relative h-32 w-32">
