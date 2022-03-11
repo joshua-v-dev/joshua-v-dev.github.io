@@ -1,6 +1,16 @@
-import React from "react";
+import { FunctionComponent } from "react";
 
-const Footer = () => {
+
+// import Button from "../MultiComp/Button";
+
+type Footer = {
+  
+  children: React.ReactNode;
+  title?: string;
+  primary?: boolean;
+  label?: string;
+};
+const  Footer : FunctionComponent<Footer> = () => {
   return (
     <>
       <section className="max-h-max bg-transparent lg:py-12">

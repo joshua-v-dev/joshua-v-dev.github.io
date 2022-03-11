@@ -1,10 +1,18 @@
+
+
 {
-	"configurations": [
-		{
-			"type": "pwa-chrome",
-			"name": "https://reactjs.org/link/invalid-hook-call",
-			"request": "launch",
-			"url": "https://reactjs.org/link/invalid-hook-call"
-		}
-	]
-}
+// Use IntelliSense to learn about possible attributes.
+"version": "0.2.0",
+ "configurations": [
+{
+  "type": "node",
+  "request": "launch",
+  "name": "TypeScript",
+  "program": "${workspaceFolder}/_app.tsx",
+  "outFiles": [
+    "${workspaceFolder}/**/*.js"
+     ]
+    }
+   ]
+  }
+
