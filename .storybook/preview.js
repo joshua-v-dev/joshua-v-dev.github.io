@@ -9,7 +9,7 @@ import { themes } from '@storybook/theming';
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme="default">
+    <ThemeProvider theme={themes}>
       <Story />
     </ThemeProvider>
   ),
