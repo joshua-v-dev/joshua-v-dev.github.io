@@ -1,13 +1,6 @@
-import { createStitches } from "@stitches/react";
+import { createStitches /* , CSS as StitchesCSS */ } from "@stitches/react";
 export type { CSS } from "@stitches/react/types/css-util";
 import type * as Stitches from "@stitches/react";
-import {
-  borderColor,
-  borderWidth,
-  colors,
-  screens,
-  spacing,
-} from "@stitches/tailwind/lib/theme";
 
 export type { VariantProps } from "@stitches/react";
 
@@ -145,7 +138,7 @@ export const stitches = createStitches({
       64: "16rem",
     },
     // backgroundColor
-    backgroundColor: colors,
+    // backgroundColor: colors,
     // backgroundPosition
     backgroundPosition: {
       bottom: "bottom",
@@ -166,7 +159,7 @@ export const stitches = createStitches({
     },
     // borderColor
     borderColor: {
-      ...colors,
+      // ...colors,
       "gray-300": "currentColor",
     },
     // borderRadius
@@ -211,9 +204,9 @@ export const stitches = createStitches({
       "not-allowed": "not-allowed",
     },
     // divideColor
-    divideColor: borderColor,
+    // divideColor: borderColor,
     // divideWidth
-    divideWidth: borderWidth,
+    // divideWidth: borderWidth,
     // fill
     fill: {
       current: "currentColor",
@@ -281,7 +274,7 @@ export const stitches = createStitches({
     // height
     height: {
       auto: "auto",
-      ...spacing,
+      // ...spacing,
       full: "100%",
       screen: "100vh",
     },
@@ -325,7 +318,7 @@ export const stitches = createStitches({
     // margin
     margin: {
       auto: "auto",
-      ...spacing,
+      // ...spacing,
       //  ...negativeSpacing,
     },
     // maxHeight
@@ -347,10 +340,10 @@ export const stitches = createStitches({
       "5xl": "64rem",
       "6xl": "72rem",
       full: "100%",
-      "screen-sm": screens.sm,
-      "screen-md": screens.md,
-      "screen-lg": screens.lg,
-      "screen-xl": screens.xl,
+      // "screen-sm": screens.sm,
+      // "screen-md": screens.md,
+      // "screen-lg": screens.lg,
+      // "screen-xl": screens.xl,
     },
     // minHeight
     minHeight: {
@@ -402,11 +395,11 @@ export const stitches = createStitches({
       12: "12",
     },
     // padding
-    padding: spacing,
+    // padding: spacing,
     // placeholderColor
-    placeholderColor: colors,
+    // placeholderColor: colors,
     // space
-    space: spacing,
+    // space: spacing,
     // stroke
     stroke: {
       current: "currentColor",
@@ -418,11 +411,11 @@ export const stitches = createStitches({
       2: "2",
     },
     // textColor
-    textColor: colors,
+    // textColor: colors,
     // width
     width: {
       auto: "auto",
-      ...spacing,
+      // ...spacing,
       "1/2": "50%",
       "1/3": "33.333333%",
       "2/3": "66.666667%",
@@ -629,7 +622,7 @@ export const stitches = createStitches({
     },
     // translate
     translate: {
-      ...spacing,
+      // ...spacing,
       // ...negativeSpacing,
       "-full": "-100%",
       "-1/2": "-50%",
@@ -817,5 +810,6 @@ export const stitches = createStitches({
   },
 });
 
-export const { css, styled, globalCss, theme, keyframes, getCssText } =
+export const { css, styled, globalCss, keyframes, getCssText, theme } =
   stitches;
+

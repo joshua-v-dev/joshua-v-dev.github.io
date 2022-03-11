@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/require-await */
 import React from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { marked } from "marked";
 import { projects } from "../../../database/database";
 
 const Details = ({ htmlString }: { htmlString: string }) => {
@@ -16,13 +16,15 @@ const Details = ({ htmlString }: { htmlString: string }) => {
 };
 
 export const getStaticProps = async ({ ...slug }: { slug: unknown }) => {
-  const projects = fs.readFileSync(path.join(slug + ".tsx")).toString();
-  const parsedProjects = matter(projects);
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+  const  projects = fs.readFileSync( path.join( `${slug} + ".tsx" `) ).toString()
+  const  parsedProjects = matter( projects )
 
-  const htmlString = `${marked(parsedProjects.content)}`;
+  const  toString = `${( parsedProjects.content ) }`
 
-  return { props: { htmlString } };
+  return  { props: { toString } }
 };
+
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync(__dirname);

@@ -1,4 +1,3 @@
-// pages/_document.tsx
 import React from "react";
 import NextDocument, {
   Html,
@@ -37,9 +36,9 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <Html className="dark">
+      <Html lang="en" >
         <Head />
-        <body className="dark:bg-gray-800">
+        <body>
           <Main />
           <NextScript />
         </body>
