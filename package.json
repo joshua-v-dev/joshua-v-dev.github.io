@@ -15,11 +15,6 @@
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
     "@stitches/react": "^1.2.7",
-    "@storybook/addon-backgrounds": "^6.4.19",
-    "@storybook/addon-measure": "^6.4.19",
-    "@storybook/addon-outline": "^6.4.19",
-    "@storybook/addon-storysource": "^6.4.19",
-    "@storybook/addon-toolbars": "^6.4.19",
     "framer-motion": "^6.2.8",
     "gray-matter": "^4.0.3",
     "next": "^12.1.0",
@@ -28,17 +23,11 @@
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "react-tsparticles": "^1.42.1",
-    "storybook-addon-next-router": "^3.1.1",
-    "storybook-dark-mode": "^1.0.9",
     "styled-components": "^5.3.3",
     "tsparticles": "^1.42.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addons": "^6.4.19",
-    "@storybook/testing-library": "0.0.9",
-    "@storybook/theming": "^6.4.19",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/line-clamp": "^0.3.1",
@@ -61,8 +50,7 @@
     "prettier-plugin-tailwindcss": "^0.1.8",
     "tailwindcss": "^3.0.23",
     "twin.macro": "^2.8.2",
-    "typescript": "^4.6.2",
-    "webpack": "^5.70.0"
+    "typescript": "^4.6.2"
   },
   "babelMacros": {
     "twin": {

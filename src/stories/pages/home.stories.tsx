@@ -1,26 +1,12 @@
-// YourComponent.stories.ts|tsx
+// /stories/pages/home.stories.jsx
 
-import React from 'react';
+import Home from "../../pages/index";
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import  Button  from '../../components/MultiComp/Button';
-
-//👇 This default export determines where your story goes in the story list
+export const HomePage = () => <Home />
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  /* 👇 The title prop is optional.
-  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
-  * to learn how to generate automatic titles
-  */
-  title: 'Button',
-  component: Button,
-} as ComponentMeta<typeof Button>;
-
-//👇 We create a “template” of how args map to rendering
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
-
-export const FirstStory = Template.bind({});
-
-FirstStory.args = {
-  /*👇 The args you need here will depend on your component */
+  title: "Pages/Home",
+  component: HomePage,
 };
+
