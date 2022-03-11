@@ -1,5 +1,5 @@
 // .storybook/preview.js
-import "../styles/globalStyles";
+import "../src/styles/globalStyles";
 import * as NextImage from "next/image";
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
