@@ -1,5 +1,5 @@
 module.exports = {
-  
+  staticDirs: ['../public', '../static', { from: '../foo/assets', to: '/assets' }],
   "stories": [
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
@@ -12,14 +12,14 @@ module.exports = {
   "framework": "@storybook/react",
   "core": {
     "builder": "webpack5",
+  },
      typescript: {
     check: false,
     checkOptions: {},
-    reactDocgen: 'react-docgen-typescript',
+    reactDocgen: false,
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
       propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
     },
   },
   }
-}
