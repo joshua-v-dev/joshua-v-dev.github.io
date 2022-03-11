@@ -26,7 +26,7 @@ const ImageCarousel = () => {
     <section className="container mx-auto grid items-center justify-center  rounded-3xl bg-teal-500 bg-opacity-30 py-24 px-48 brightness-125">
       <div className="flex flex-wrap items-center">
         <button
-          className="hidden h-16 w-16 rounded-full bg-indigo-50 p-5 transition duration-200 hover:bg-white lg:block"
+          className="hidden h-16 w-16 rounded-full bg-indigo-500 p-5 transition duration-200 hover:bg-white lg:block"
           onClick={() => {
             setCurrentIndex((currentIndex) => {
               if (currentIndex === 0) {
@@ -55,19 +55,19 @@ const ImageCarousel = () => {
           <h2 className="font-heading mb-4 text-3xl font-bold leading-tight text-white md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight">
             Check out my Blog!
           </h2>
-          <p className="mb-8 text-base leading-relaxed text-indigo-50 lg:text-xl lg:leading-relaxed">
+          <p className="mb-8 text-base leading-relaxed text-indigo-500 lg:text-xl lg:leading-relaxed">
             Checkout the latest news at my blog joshuasstories.tech. Keep up to
             date with me.
           </p>
           <a
-            className="inline-block rounded border border-white bg-white px-5 py-3 text-sm font-semibold text-indigo-500 transition duration-200 hover:bg-indigo-50"
+            className="inline-block rounded border border-white bg-white px-5 py-3 text-sm font-semibold text-indigo-500 transition duration-200 hover:bg-indigo-500"
             href={featuredProducts[currentIndex]?.toString()}
           >
             Learn More
           </a>
         </div>
         <button
-          className="hidden h-16 w-16 rounded-full bg-indigo-50 p-5 transition duration-200 hover:bg-white lg:block"
+          className="hidden h-16 w-16 rounded-full bg-indigo-500 p-5 transition duration-200 hover:bg-white lg:block"
           onClick={() => {
             setCurrentIndex((currentIndex) => {
               if (currentIndex === featuredProducts.length - 1) {
@@ -93,10 +93,10 @@ const ImageCarousel = () => {
           </svg>
         </button>
         <div className="w-full text-center">
-          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-50 bg-indigo-50"></button>
-          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-50"></button>
-          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-50"></button>
-          <button className="h-3 w-3 rounded-full border border-indigo-50"></button>
+          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-500 bg-indigo-500"></button>
+          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-500"></button>
+          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-500"></button>
+          <button className="h-3 w-3 rounded-full border border-indigo-500"></button>
         </div>
       </div>
     </section>
