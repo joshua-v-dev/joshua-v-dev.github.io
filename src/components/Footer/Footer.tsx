@@ -3,14 +3,14 @@ import { FunctionComponent } from "react";
 
 // import Button from "../MultiComp/Button";
 
-type Footer = {
+type FooterProps = {
   
   children: React.ReactNode;
   title?: string;
   primary?: boolean;
   label?: string;
 };
-const  Footer : FunctionComponent<Footer> = () => {
+const  Footer : FunctionComponent<FooterProps> = () => {
   return (
     <>
       <section className="max-h-max bg-transparent lg:py-12">
