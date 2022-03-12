@@ -5,7 +5,7 @@ module.exports = {
     tailwindcss: { config: "./tailwind.config.js" },
     autoprefixer: {},
     "postcss-preset-env": {
-      features: { 'nesting-rules': false },
+      features: { 'nesting-rules': true },
     },
     ...(process.env.NODE_ENV === "production" ? {} : {}),
   },
