@@ -1,6 +1,6 @@
 // styles/globalStyles.tsx
 import tw, { theme, globalStyles } from 'twin.macro'
-import { globalCss } from '../../stitches.config'
+import { globalCss } from './stitches.config'
 
 
 type Record<K extends string, T> = {
