@@ -13,11 +13,16 @@ export const Page: React.VFC = () => {
   return (
     <article>
       <Header
-        user={user}
-        onLogin={() => setUser({ name: 'Jane Doe' })}
-        onLogout={() => setUser(undefined)}
-        onCreateAccount={() => setUser({ name: 'Jane Doe' })}
-      />
+        user={ user }
+        onLogin={ () => setUser( { name: 'Jane Doe' } ) }
+        onLogout={ () => setUser( undefined ) }
+        onCreateAccount={ () => setUser( { name: 'Jane Doe' } ) } loggedIn={ function (): boolean
+        {
+          throw new Error( 'Function not implemented.' );
+        } } loggedOut={ function (): boolean
+        {
+          throw new Error( 'Function not implemented.' );
+        } }      />
 
       <section>
         <h2>Pages in Storybook</h2>
@@ -36,7 +41,7 @@ export const Page: React.VFC = () => {
         <ul>
           <li>
             Use a higher-level connected component. Storybook helps you compose such data from the
-            "args" of child component stories
+            &ldquo;args&ldquo; of child component stories
           </li>
           <li>
             Assemble data in the page component from your services. You can mock these services out

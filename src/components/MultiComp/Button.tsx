@@ -2,7 +2,7 @@ import { ComponentMeta } from '@storybook/react';
 import React from 'react';
 
 type ButtonProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   title?: string;
   component?: ComponentMeta<typeof Button>
   primary?: boolean;
