@@ -1,5 +1,5 @@
 {
-	"types": ["types"],
+	
 	"compilerOptions": {
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"module": "esnext",
@@ -31,14 +31,9 @@
 		"noEmit": true,
 		"isolatedModules": true,
 		"incremental": true,
-		"paths": {
-			"@/*": ["./src/*"],
-			"@/public/*": ["./public/*"],
-			
-			
-		}
 	},
-	"exclude": ["node_modules"],
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"],
+	"types": ["types"],
 	
 }

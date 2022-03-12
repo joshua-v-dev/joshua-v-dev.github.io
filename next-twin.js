@@ -27,7 +27,7 @@ module.exports = function withTwin() {
                     require.resolve('babel-plugin-macros'),
                     {
                       twin: {
-                        preset: 'styled-components',
+                        preset: 'stitches',
                         autoCssProp: false,
                       },
                     },
