@@ -1,11 +1,11 @@
 // .storybook/main.ts
-
 // Imports the Storybook's configuration API
 import type { StorybookConfig } from '@storybook/core-common';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   staticDirs: ['../public'],
+  
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -24,9 +24,9 @@ const config: StorybookConfig = {
   framework: '@storybook/react',
   core: {
     builder: 'webpack5',
-  },
+  },    
   features: {
-    postcss: false,
+    postcss: true,
   },
   refs: {
     'design-system': {

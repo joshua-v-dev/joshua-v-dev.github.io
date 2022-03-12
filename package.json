@@ -63,7 +63,8 @@
   },
   "babelMacros": {
     "twin": {
-      "preset": "stitches"
+      "preset": "stitches",
+      "stitchesConfig": "./stitches.config.ts"
     },
     "styledComponents": {
       "pure": true
@@ -73,6 +74,6 @@
     "node": "14.x"
   },
   "resolutions": {
-    "@storybook/{app}/webpack": "^5"
+    "@storybook/{_app}/webpack": "^5"
   }
 }
