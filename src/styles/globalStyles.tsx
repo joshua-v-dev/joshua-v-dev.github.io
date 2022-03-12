@@ -1,18 +1,18 @@
-// styles/globalStyles.tsx
-import { StyledComponentProps } from '@stitches/react/types/styled-component'
-import tw, { theme, globalStyles } from 'twin.macro'
-import { globalCss } from '../../stitches.config'
+import { createGlobalStyle } from 'styled-components'
+import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro'
 
-const customStyles = {
+const CustomStyles = createGlobalStyle({
   body: {
     WebkitTapHighlightColor: theme`colors.purple.500`,
     ...tw`antialiased`,
   },
-}
+})
 
-const styles = () => {
-  globalCss(customStyles)()
-  globalCss(globalStyles as StyledComponentProps<any[]>)()
-}
+const GlobalStyles = () => (
+  <>
+    <BaseStyles />
+    <CustomStyles />
+  </>
+)
 
-export default styles
+export default GlobalStyles

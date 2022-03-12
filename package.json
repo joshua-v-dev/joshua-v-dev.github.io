@@ -1,5 +1,14 @@
 {
   "name": "portfolio_nextjs",
+  "babelMacros": {
+    "twin": {
+      "preset": "stitches",
+      "stitchesConfig": "./stitches.config.ts"
+    }
+  },
+  "engines": {
+    "node": "14.x"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -26,6 +35,7 @@
     "react-is": "^17.0.2",
     "react-tsparticles": "^1.42.1",
     "styled-components": "^5.3.3",
+    "swr": "^1.2.2",
     "tsparticles": "^1.42.1"
   },
   "devDependencies": {
@@ -37,33 +47,16 @@
     "@types/react": "^17.0.40",
     "@types/styled-components": "^5.1.24",
     "@types/tailwindcss": "^3.0.9",
-    "@typescript-eslint/eslint-plugin": "^5.14.0",
-    "@typescript-eslint/parser": "^5.14.0",
     "autoprefixer": "^10.4.2",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-twin": "^1.0.2",
-    "eslint": "^8.11.0",
-    "eslint-config-next": "^12.1.0",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
     "postcss": "^8.4.8",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "tailwindcss": "^3.0.23",
     "twin.macro": "^2.8.2",
     "typescript": "^4.6.2"
-  },
-  "babelMacros": {
-    "twin": {
-      "preset": "stitches",
-      "stitchesConfig": "./stitches.config.ts"
-    }
-  },
-  "styledComponents": {
-    "pure": true
-  },
-  "engines": {
-    "node": "14.x"
-  },
-  "resolutions": {
-    "@storybook/{app}/webpack": "^5"
   }
 }

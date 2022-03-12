@@ -1,35 +1,43 @@
-// .storybook/preview.js
-import "../src/styles/globalStyles";
-import * as NextImage from "next/image";
-import React, { Children } from 'react';
-import { ThemeProvider } from 'styled-components';
-import { themes } from '@storybook/theming';
-import { Property } from "csstype";
-import { ComponentStory } from '@storybook/react';
+import React from 'react'
+import GlobalStyles from './../src/styles/globalStyles'
+import { theme } from 'twin.macro'
 
-export const decorators = [
-  (Story: ComponentStory<typeof ThemeProvider>) => (
-    <ThemeProvider theme={themes}>
-      <Story theme={ themes } />{Children}
-    </ThemeProvider>
-  ),
-];
-const OriginalNextImage = NextImage.default;
 
-Object.defineProperty(NextImage, "default", {
-  configurable: true,
-  value: (props: JSX.IntrinsicAttributes & Omit<React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>, "ref" | "style" | "src" | "srcSet" | "width" | "height" | "loading"> & { src?: any; width?: string | number; height?: string | number; layout?: "fixed" | "fill" | "intrinsic" | "responsive"; loader?: NextImage.ImageLoader; quality?: string | number; priority?: boolean; loading?: "lazy" | "eager"; lazyRoot?: React.RefObject<HTMLElement>; lazyBoundary?: string; placeholder?: "blur" | "empty"; blurDataURL?: string; unoptimized?: boolean; objectFit?: Property.ObjectFit; objectPosition?: Property.ObjectPosition<string | number>; onLoadingComplete?: ( result: { naturalWidth: number; naturalHeight: number; } ) => void; }) => <OriginalNextImage {...props} unoptimized />,
-});
 export const parameters = {
-    docs: {
-    theme: themes.dark,
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  layout: 'centered',
+  backgrounds: {
+    default: 'electric-ribbon',
+    values: [
+      {
+        name: 'electric-ribbon',
+        value: `linear-gradient(180deg, ${theme`colors.electric`}, ${theme`colors.ribbon`})`,
+      },
+    ],
   },
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+  controls: { expanded: true },
+  options: {
+    storySort: (a, b) => {
+      // We want the Welcome story at the top
+      if (b[1].kind === 'Welcome') {
+        return 1
+      }
+
+      // Sort the other stories by ID
+      // https://github.com/storybookjs/storybook/issues/548#issuecomment-530305279
+      return a[1].kind === b[1].kind
+        ? 0
+        : a[1].id.localeCompare(b[1].id, { numeric: true })
     },
-     layout: 'centered',
   },
 }
+
+export const decorators = [
+  Story => (
+    <>
+      <GlobalStyles />
+      <Story />
+   
+    </>
+  ),
+]

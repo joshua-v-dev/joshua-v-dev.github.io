@@ -1,11 +1,9 @@
-// types/twin.d.ts
 import 'twin.macro'
 import { css as cssImport } from '@stitches/react'
 import styledImport from '@stitches/react'
 
 // Support a css prop when used with twins styled.div({}) syntax
-
-type CSSProp<> = (<>(DefaultTheme) => () => string | CSSObject)
+type CSSProp<T = AnyIfEmpty<DefaultTheme>> = string | CSSObject;
 
 declare module 'react' {
   // The css prop
@@ -14,8 +12,7 @@ declare module 'react' {
     tw?: string
   }
   // The inline svg css prop
- 
-  interface SVGProps<> extends SVGProps<SVGSVGElement> {
+  interface SVGProps<T> extends SVGProps<SVGSVGElement> {
     css?: CSSProp
     tw?: string
   }
@@ -30,6 +27,6 @@ type StyledTags = {
 
 declare module 'twin.macro' {
   // The styled and css imports
-  const styled: typeof StyledTags | typeof styledImport
+  const styled: typeof StyledTags | typeof styledImport 
   const css: typeof cssImport
 }

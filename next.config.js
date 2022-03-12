@@ -1,10 +1,13 @@
-module.exports = {
-	webpack: (config) => {
-
-		config.resolve.preferRelative = true
-		return config
-	},
-	images: {
-		domains: ['res.cloudinary.com'],
-	},
-}
+/**
+ * @type {import('next').NextConfig}
+ **/
+  const withTwin = require('./next-twin.js')
+  module.exports =  withTwin({
+    images: {
+    domains: ['res.cloudinary.com'],
+  },
+    experimental: {
+      // Enables the styled-components SWC transform
+      styledComponents: true,
+    }
+  })

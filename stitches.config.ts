@@ -19,6 +19,7 @@ export const stitches = createStitches({
     },
     // colors
     colors: {
+     
       transparent: "transparent",
       current: "currentColor",
       black: "#000",

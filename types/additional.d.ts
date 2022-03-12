@@ -1,35 +1,8 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 import { Transform } from 'stream'
 declare module 'tsparticles'
-declare module '@tailwindcss/aspect-ratio'
-declare module '@tailwindcss/typography'
-declare module '@tailwindcss/ui'
-declare module '@tailwindcss/forms'
-declare module '@tailwindcss/components'
-declare module '@tailwindcss/utilities'
-declare module '@tailwindcss/colors'
-declare module '@tailwindcss/transitions'
-declare module '@tailwindcss/animations'
-declare module '@tailwindcss/border-colors'
-declare module '@tailwindcss/border-radii'
-declare module '@tailwindcss/border-widths'
-declare module '@tailwindcss/border-styles'
-declare module '@tailwindcss/breakpoints'
-declare module '@tailwindcss/font-sizes'
-declare module '@tailwindcss/font-weights'
-declare module '@tailwindcss/line-heights'
-declare module '@tailwindcss/letter-spacings'
-declare module '@tailwindcss/list-styles'
-declare module '@tailwindcss/opacity'
-declare module '@tailwindcss/shadows'
-declare module '@tailwindcss/sizing'
-declare module '@tailwindcss/spacing'
-declare module '@tailwindcss/text-colors'
-declare module '@tailwindcss/text-decoration'
-declare module '@tailwindcss/text-transforms'
-declare module '@tailwindcss/transitions'
-declare module '@tailwindcss/z-index'
-declare module '@tailwindcss/visually-hidden'
-declare module '@tailwindcss/aspect-ratio'
+
 
 // Type definitions for react-tsparticles
 // Project: https://github.com/matteobruni/tsparticles
@@ -63,9 +36,72 @@ export type ParticlesProps = IParticlesProps
 
 export * from 'tsparticles'
 
+// eslint-disable-next-line no-undef
 type Particles = React.ComponentClass<IParticlesProps, IParticlesState>
 
+// eslint-disable-next-line no-redeclare
 declare const Particles: Particles
+
+export default Particles
+
+declare module 'react-tsparticles' {
+	/****************************** Constants *************************************/
+	/****************************** Transformations *******************************/
+	type CropMode =
+		| string
+		| 'scale'
+		| 'fit'
+		| 'limit'
+		| 'mfit'
+		| 'fill'
+		| 'lfill'
+		| 'pad'
+		| 'lpad'
+		| 'mpad'
+		| 'crop'
+		| 'thumb'
+		| 'imagga_crop'
+		| 'imagga_scale'
+	type Gravity =
+		| string
+		| 'north_west'
+		| 'north'
+		| 'north_east'
+		| 'west'
+		| 'center'
+		| 'east'
+		| 'south_west'
+		| 'south'
+		| 'south_east'
+		| 'xy_center'
+		| 'face'
+		| 'face:center'
+		| 'face:auto'
+		| 'faces'
+		| 'faces:center'
+		| 'faces:auto'
+		| 'body'
+		| 'body:face'
+		| 'adv_face'
+		| 'adv_faces'
+		| 'adv_eyes'
+		| 'custom'
+		| 'custom:face'
+		| 'custom:faces'
+		| 'custom:adv_face'
+		| 'custom:adv_faces'
+		| 'auto'
+		| 'auto:adv_face'
+		| 'auto:adv_faces'
+		| 'auto:adv_eyes'
+		| 'auto:body'
+		| 'auto:face'
+		| 'auto:faces'
+		| 'auto:custom_no_override'
+		| 'auto:none'
+		| 'liquid'
+		| 'ocr_text'
+	type Angle = number | string
 
 export default Particles
 declare module 'cloudinary-react' {
@@ -1882,4 +1918,4 @@ interface MouseEvent<T = Element, E = NativeMouseEvent> extends UIEvent<T, E> {
 	screenX: number
 	screenY: number
 	shiftKey: boolean
-}
+}}

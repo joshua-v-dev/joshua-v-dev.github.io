@@ -14,6 +14,12 @@ module.exports = {
 
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+      extend: {
+      colors: {
+        electric: '#db00ff',
+        ribbon: '#0047ff',
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
