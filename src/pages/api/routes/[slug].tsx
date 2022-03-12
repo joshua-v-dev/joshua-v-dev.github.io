@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { ParsedUrlQuery } from 'querystring'
-
 interface IParams extends ParsedUrlQuery {
     slug: string
 }

@@ -2,6 +2,7 @@ import { WebpackConfigContext } from "next/dist/server/config-shared";
 import { ConfigFileDiagnosticsReporter, ParseConfigFileHost } from "typescript";
 
 module.exports = {
+  
   managerWebpack: async (config: ConfigFileDiagnosticsReporter, options: WebpackConfigContext) => {
     // update config here
     return config;
@@ -17,4 +18,10 @@ module.exports = {
   babel: async (config: ParseConfigFileHost, options: ParseConfigFileHost) => {
     return config;
   },
+  addons: async (config: ParseConfigFileHost, options: ParseConfigFileHost) => {
+    // add addons here
+    "@storybook/addon-postcss";
+    return config;
+  }
+
 };
