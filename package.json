@@ -66,6 +66,7 @@
   },
   "babelMacros": {
     "twin": {
+      "stitchesConfig": "./stitches.config.ts",
       "preset": "stitches"
       
     },
