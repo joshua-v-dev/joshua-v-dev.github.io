@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
 import { Transform } from 'stream'
 declare module 'tsparticles'
 
@@ -36,10 +34,10 @@ export type ParticlesProps = IParticlesProps
 
 export * from 'tsparticles'
 
-// eslint-disable-next-line no-undef
+
 type Particles = React.ComponentClass<IParticlesProps, IParticlesState>
 
-// eslint-disable-next-line no-redeclare
+
 declare const Particles: Particles
 
 export default Particles
