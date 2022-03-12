@@ -16,13 +16,7 @@ export const Page: React.VFC = () => {
         user={ user }
         onLogin={ () => setUser( { name: 'Jane Doe' } ) }
         onLogout={ () => setUser( undefined ) }
-        onCreateAccount={ () => setUser( { name: 'Jane Doe' } ) } loggedIn={ function (): boolean
-        {
-          throw new Error( 'Function not implemented.' );
-        } } loggedOut={ function (): boolean
-        {
-          throw new Error( 'Function not implemented.' );
-        } }      />
+        onCreateAccount={ () => setUser( { name: 'Jane Doe' } ) }       />
 
       <section>
         <h2>Pages in Storybook</h2>
