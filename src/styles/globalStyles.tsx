@@ -1,19 +1,7 @@
 // styles/globalStyles.tsx
+import { StyledComponentProps } from '@stitches/react/types/styled-component'
 import tw, { theme, globalStyles } from 'twin.macro'
-import { globalCss } from './stitches.config'
-
-
-type Record<K extends string, T> = {
-  [P in K]: T
-}
-type  PropResponse = Record<string, TemplateStringsArray>
-const PropResponse = {
-  prop1:"string",
-  prop2: "number",
-  prop3: "symbol"
-  
-  
-}
+import { globalCss } from '../../stitches.config'
 
 const customStyles = {
   body: {
@@ -24,7 +12,7 @@ const customStyles = {
 
 const styles = () => {
   globalCss(customStyles)()
-  globalCss(globalStyles as Record<string, PropResponse>)()
+  globalCss(globalStyles as StyledComponentProps<any[]>)()
 }
 
 export default styles

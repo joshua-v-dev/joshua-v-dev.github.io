@@ -1,7 +1,7 @@
 import { WEBPACK_VERSION } from "@storybook/manager-webpack5";
 import { WebpackConfigContext } from "next/dist/server/config-shared";
 import { ConfigFileDiagnosticsReporter, ParseConfigFileHost } from "typescript";
-import '../src/styles/stitches.config.ts'
+import '../stitches.config.ts'
 module.exports = {
   
   managerWebpack: async (config: ConfigFileDiagnosticsReporter, options: WebpackConfigContext) => {
