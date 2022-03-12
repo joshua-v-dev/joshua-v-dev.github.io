@@ -23,7 +23,7 @@ const config: StorybookConfig = {
   },
   framework: '@storybook/react',
   core: {
-    builder: 'webpack4',
+    builder: 'webpack5',
   },
   features: {
     postcss: false,

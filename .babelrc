@@ -3,7 +3,7 @@
   "plugins": [
     ["babel-plugin-twin", { "debug": false }],
     ["styled-components", { "ssr": true }],
-    "babel-plugin-macros",
-     ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+    "babel-plugin-macros"
+    
   ]
 }
