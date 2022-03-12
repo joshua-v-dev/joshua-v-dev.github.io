@@ -1,10 +1,11 @@
+import { WEBPACK_VERSION } from "@storybook/manager-webpack5";
 import { WebpackConfigContext } from "next/dist/server/config-shared";
 import { ConfigFileDiagnosticsReporter, ParseConfigFileHost } from "typescript";
 
 module.exports = {
   
   managerWebpack: async (config: ConfigFileDiagnosticsReporter, options: WebpackConfigContext) => {
-    // update config here
+  
     return config;
   },
   managerBabel: async (config: ParseConfigFileHost, options: ParseConfigFileHost) => {
@@ -12,7 +13,7 @@ module.exports = {
     return config;
   },
   webpackFinal: async (config: WebpackConfigContext, options: WebpackConfigContext) => {
-    // change webpack config
+   WEBPACK_VERSION
     return config;
   },
   babel: async (config: ParseConfigFileHost, options: ParseConfigFileHost) => {
