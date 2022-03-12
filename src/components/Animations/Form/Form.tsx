@@ -1,10 +1,10 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent } from "react";
 
 export default function App() {
   const [selectValue, setSelectValue] = useState("coconut");
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const handleSubmit = (_event: FormEvent) => {
+  const handleSubmit = () => {
     console.log("Form was submitted!");
   };
 

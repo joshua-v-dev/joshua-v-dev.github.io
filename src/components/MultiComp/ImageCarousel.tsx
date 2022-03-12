@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { featuredProducts } from "../../database/database";
 
-let slideInterval: NodeJS.Timer;
+let slideInterval: any;
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

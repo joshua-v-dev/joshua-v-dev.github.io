@@ -1,7 +1,4 @@
-import { FunctionComponent } from "react";
-
-
-// import Button from "../MultiComp/Button";
+import React, { FunctionComponent } from "react";
 
 type FooterProps = {
   

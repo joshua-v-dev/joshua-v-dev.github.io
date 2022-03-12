@@ -1,4 +1,4 @@
-import React from "react";
+import React, {  ReactElement } from "react";
 import Image from "next/image";
 import { TimeLineData } from "../../database/database";
 
@@ -17,7 +17,7 @@ export default function Timeline() {
 
           <dl className="grid max-w-full grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {TimeLineData.map(
-              (TimeLineData, i): JSX.Element => (
+              (TimeLineData, i): ReactElement => (
                 <div key={i} className="grid-col grid">
                   <div
                     key={TimeLineData.year}
