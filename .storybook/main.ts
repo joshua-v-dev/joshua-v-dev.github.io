@@ -26,7 +26,7 @@ const config: StorybookConfig = {
     builder: 'webpack5',
   },    
   features: {
-    postcss: true,
+    postcss: false,
   },
   refs: {
     'design-system': {
