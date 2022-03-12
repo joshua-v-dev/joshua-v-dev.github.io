@@ -1,7 +1,6 @@
 import { createStitches } from "@stitches/react";
 export type { CSS } from "@stitches/react/types/css-util";
 import type * as Stitches from "@stitches/react";
-
 export type { VariantProps } from "@stitches/react";
 
 export const stitches = createStitches({
