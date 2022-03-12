@@ -8,7 +8,10 @@ module.exports = {
 "./stitches.config.ts",
 './public/index.html',
 './public/**/*.{svg, ico}',
-'./dist/**/*.{js,css,html,json,png,jpg,jpeg,gif,webp,svg,ico}'],
+'./dist/**/*.{js,css,html,json,png,jpg,jpeg,gif,webp,svg,ico}',
+'./stories/**/*.{tsx, ts, jsx, js}'
+],
+
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
