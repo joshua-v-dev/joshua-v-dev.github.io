@@ -32,6 +32,7 @@
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
     "@storybook/addon-links": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "0.0.9",
     "@tailwindcss/aspect-ratio": "^0.4.0",
@@ -64,7 +65,7 @@
   "babelMacros": {
     "twin": {
       "preset": "stitches",
-      "stitchesConfig": "./stitches.config.ts"
+      "stitchesConfig": "../stitches.config.ts"
     },
     "styledComponents": {
       "pure": true
