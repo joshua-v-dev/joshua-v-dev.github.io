@@ -16,7 +16,8 @@ module.exports = function withTwin() {
         config.module = config.module || {}
         config.module.rules = config.module.rules || []
         config.module.rules.push({
-        test: /\.(stories|story)\.mdx$/,
+          test: /\.(stories|story)\.[tj]sx?$/,
+       
         use: [
         options.defaultLoaders.babel, 
           {    
@@ -38,7 +39,7 @@ module.exports = function withTwin() {
       ],
     });
            config.module.rules.push({
-            test: /\.(stories|story)\.[tj]sx?$/,
+            test: /\.(stories|story)\.mdx$/,
            loader: ['@mdx-js/loader'],
           include: [componentsDir, pagesDir],
           exclude: [/node_modules/],

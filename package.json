@@ -26,6 +26,8 @@
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
+    "@mdx-js/loader": "^2.0.0",
+    "@next/mdx": "^12.1.0",
     "@stitches/react": "^1.2.7",
     "@storybook/addons": "^6.4.19",
     "@storybook/source-loader": "^6.4.19",
