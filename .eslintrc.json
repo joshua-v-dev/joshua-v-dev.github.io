@@ -4,7 +4,7 @@
   "overrides": [
     {
       // or whatever matches stories specified in .storybook/main.js
-      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs|mdx)"],
       "rules": {
         // example of overriding a rule
         "storybook/hierarchy-separator": "error",

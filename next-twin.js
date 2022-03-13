@@ -10,7 +10,7 @@ module.exports = function withTwin() {
     return {
       ...nextConfig,
   addons: ['@storybook/addon-docs/register'],
-      webpack: async (config) => {         
+      webpackFinal: async (config) => {         
         const componentsDir = path.resolve(__dirname, '..', 'src', 'components')
         const pagesDir = path.resolve(__dirname, '..', 'src', 'pages')
         config.module = config.module || {}
