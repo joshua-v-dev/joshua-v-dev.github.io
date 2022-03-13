@@ -1,7 +1,7 @@
 import React from 'react'
 import { theme } from 'twin.macro'
 import { addParameters } from '@storybook/react';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 
 addParameters({
   docs: {

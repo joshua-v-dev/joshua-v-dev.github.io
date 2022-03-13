@@ -1,4 +1,4 @@
-// import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+// import { Meta, Story, Canvas } from '@storybook/addon-docs';
 // import { Introduction } from './Introduction';
 // 
 // <Meta title="MDX/Checkbox" component={Checkbox} />
