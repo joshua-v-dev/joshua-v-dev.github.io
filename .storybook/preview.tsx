@@ -1,7 +1,14 @@
 import React from 'react'
-// import Styles from './../src/styles/globalStyles'
 import { theme } from 'twin.macro'
+import { addParameters } from '@storybook/react';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 
+addParameters({
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+  },
+});
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -35,7 +42,6 @@ export const parameters = {
 export const decorators = [
   Story => (
     <>
-      {/* <Styles /> */}
       <Story />
    
     </>

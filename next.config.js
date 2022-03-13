@@ -3,18 +3,14 @@
  **/
 
   const withTwin = require('./next-twin.js')
-  module.exports = 
-  
-  
-  withTwin(
-   
-    {
+  module.exports =
+  {
+          images: {
+    domains: ['res.cloudinary.com'],
+  }}
+  withTwin({
     experimental: {
       // Enables the styled-components SWC transform
       styledComponents: true,
     },
-      
-    images: {
-    domains: ["res.cloudinary.com"],
-  },
   })

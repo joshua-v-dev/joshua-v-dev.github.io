@@ -1,7 +1,6 @@
 import 'twin.macro'
 import { css as cssImport } from '@stitches/react'
 import styledImport from '@stitches/react'
-// import  styledImport,  { CSSProp, css as cssImport } from 'styled-components'
 
 // Support a css prop when used with twins styled.div({}) syntax
 type CSSProp<T = AnyIfEmpty<DefaultTheme>> = string | CSSObject;

@@ -10,11 +10,11 @@ const FuturePage = () => {
       <button className="p-2 navbar-burger">
         <svg className="w-10 h-3" width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="39" height="2" rx="1" fill="#C4C4C4"></rect><rect x="19" y="11" width="20" height="2" rx="1" fill="#C4C4C4"></rect></svg>
       </button>
-      <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+      {/* <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
         <a className="text-2xl text-white font-bold" href="#">
           <Image className="h-7" src="zospace-assets/logos/zospace-logo.svg" alt="" width="auto"></Image>
         </a>
-      </div>
+      </div> */}
       <div className="hidden lg:block"><a className="inline-block mr-10 text-lg text-white hover:text-gray-50 font-bold border-b border-gray-200" href="#">Try for free!</a><a className="inline-block px-12 py-4 text-white font-bold border border-gray-200 hover:border-white rounded-full" href="#">Sign Up</a></div>
     </div>
   </nav>
