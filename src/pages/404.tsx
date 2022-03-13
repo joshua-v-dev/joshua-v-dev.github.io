@@ -1,10 +1,10 @@
 import Image from 'next/image'
 export default function Custom404() {
   return (<section className="relative py-20 2xl:py-40 bg-gray-800 overflow-hidden">
-  <Image className="absolute top-0 right-0 md:-mr-96 md:-mt-112" src="zospace-assets/lines/circle.svg" alt=""></Image>
+  {/* <Image className="absolute top-0 right-0 md:-mr-96 md:-mt-112" src="zospace-assets/lines/circle.svg" alt=""></Image>
   <Image className="absolute top-0 right-0 h-40 lg:h-80 lg:mr-64 lg:mt-24" src="zospace-assets/images/five-stars.svg" alt=""></Image>
   <Image className="hidden lg:block absolute top-0 left-0 h-64 -ml-10" src="zospace-assets/images/blue-double-circle.svg" alt=""></Image>
-  <Image className="absolute bottom-0 left-0 h-80" src="zospace-assets/lines/half-double-circle.svg" alt=""></Image>
+  <Image className="absolute bottom-0 left-0 h-80" src="zospace-assets/lines/half-double-circle.svg" alt=""></Image> */}
   <div className="relative container px-4 mx-auto">
     <div className="max-w-3xl mx-auto">
       <a className="inline-block text-white text-xl font-bold" href="#">

@@ -1,10 +1,10 @@
 
 import { AppProps } from 'next/app'
-import Styles from '../styles/globalStyles'
-import "tailwindcss/tailwind.css"
+import styles from '../styles/globalStyles'
+
 
 function App({ Component, pageProps }: AppProps) {
-	Styles()
+	styles()
 	return <Component {...pageProps} />
 }
 
