@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/await-thenable */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';

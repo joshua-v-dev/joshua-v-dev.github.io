@@ -1,4 +1,4 @@
-// /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 // import React from 'react';
 // 
 // export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
