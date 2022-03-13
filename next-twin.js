@@ -20,7 +20,7 @@ module.exports = function withTwin() {
         use: [
         options.defaultLoaders.babel, 
           {    
-           loader: ['babel-loader', '@mdx-js/loader'],
+           loader: ['babel-loader'],
           options: {
              compilers: [createCompiler({})],
              twin: {
@@ -39,7 +39,7 @@ module.exports = function withTwin() {
     });
            config.module.rules.push({
             test: /\.(stories|story)\.[tj]sx?$/,
-           loader: require.resolve('@storybook/source-loader'),
+           loader: ['@mdx-js/loader'],
           include: [componentsDir, pagesDir],
           exclude: [/node_modules/],
           enforce: 'pre',
