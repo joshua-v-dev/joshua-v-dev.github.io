@@ -1,5 +1,5 @@
 import React from 'react'
-import GlobalStyles from './../src/styles/globalStyles'
+import Styles from './../src/styles/globalStyles'
 import { theme } from 'twin.macro'
 
 
@@ -35,7 +35,7 @@ export const parameters = {
 export const decorators = [
   Story => (
     <>
-      <GlobalStyles />
+      <Styles />
       <Story />
    
     </>

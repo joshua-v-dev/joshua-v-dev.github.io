@@ -32,7 +32,7 @@
 		"isolatedModules": true,
 		"incremental": true,
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["next-env.d.ts", "twin.d.ts", "additional.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"],
 	"types": ["types"],
 	

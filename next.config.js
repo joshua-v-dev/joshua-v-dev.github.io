@@ -1,6 +1,7 @@
 /**
  * @type {import('next').NextConfig}
  **/
+
   const withTwin = require('./next-twin.js')
   module.exports =  withTwin({
     images: {

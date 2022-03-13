@@ -26,6 +26,7 @@
     "@stitches/react": "^1.2.7",
     "@storybook/addons": "^6.4.19",
     "@storybook/theming": "^6.4.19",
+    "cosmiconfig": "^7.0.1",
     "csstype": "^3.0.11",
     "framer-motion": "^6.2.8",
     "next": "^12.1.0",

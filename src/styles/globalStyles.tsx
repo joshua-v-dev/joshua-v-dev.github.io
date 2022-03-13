@@ -1,20 +1,9 @@
-import { createGlobalStyle } from 'styled-components'
-import tw, { theme, GlobalStyles } from 'twin.macro'
+import  GlobalStyles  from 'twin.macro'
+import { globalCss } from '../../stitches.config'
 
- const MacroStyles = require.resolve('babel-plugin-macros')
-const CustomStyles = createGlobalStyle({
-  body: {
-    WebkitTapHighlightColor: theme`colors.purple.500`,
-    ...tw`antialiased`,
-  },
-})
+//  const MacroStyles = require.resolve('babel-plugin-macros')
+const Styles = globalCss(GlobalStyles)
 
-const BaseStyles = () => (
-  <>
-  <MacroStyles />
-    <GlobalStyles />
-    <CustomStyles />
-  </>
-)
 
-export default BaseStyles
+
+export default Styles

@@ -1,5 +1,5 @@
 const path = require('path')
-const { NextConfig } = require('next')
+// const { NextConfig } = require('next')
 
 module.exports = function withTwin() {
   return nextConfig => {
@@ -27,7 +27,7 @@ module.exports = function withTwin() {
                     require.resolve('babel-plugin-macros'),
                     {
                       twin: {
-                        preset: 'stitches',
+                        preset: 'styled-components',
                         autoCssProp: false,
                       },
                     },

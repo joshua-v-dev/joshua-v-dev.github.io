@@ -1,5 +1,4 @@
 import { createStitches } from "@stitches/react";
-export type { CSS } from "@stitches/react/types/css-util";
 import type * as Stitches from "@stitches/react";
 
 
@@ -810,6 +809,6 @@ export const stitches = createStitches({
   },
 });
 
-export const { css, styled, globalCss, keyframes, getCssText, theme } =
+export const { css,  styled, globalCss, keyframes, getCssText, theme } =
   stitches;
 
