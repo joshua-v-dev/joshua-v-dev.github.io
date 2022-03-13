@@ -35,7 +35,7 @@ section li {
   margin-bottom: 8px;
 }
 
-section .tip {
+section tip {
   display: inline-block;
   border-radius: 1em;
   font-size: 11px;
