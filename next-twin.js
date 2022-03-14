@@ -2,6 +2,8 @@
 const path = require('path')
 const { NextConfig } = require('next')
 const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
+
+
 module.exports = function withTwin() {
   return nextConfig => {
      if (typeof nextConfig.webpack === 'function') {
@@ -11,7 +13,7 @@ module.exports = function withTwin() {
       ...nextConfig,
    addons: [
     {
-      name: '@storybook/addon-docs',
+      name: '@storybook/addon-docs/register',
       options: {
         configureJSX: true,
         babelOptions: {},
@@ -26,37 +28,56 @@ module.exports = function withTwin() {
         config.module = config.module || {}
         config.module.rules = config.module.rules || []
 
-        config.module.rules.push({
-            test: /\.(stories|story)\.mdx$/,
-           loader: ['@mdx-js/loader'],
-          include: [componentsDir, pagesDir],
-          exclude: [/node_modules/],
-          enforce: 'pre',
-          });
+        // config.module.rules.push({
+        //   // test: /\.(stories|story)\.[tj]sx?$/,
+        //    loader: '@mdx-js/loader',
+        //     options: {
+        //     compilers: [createCompiler({})],
+        //   },
+        //   include: [componentsDir, pagesDir],
+        //   // exclude: [/node_modules/],
+        //   // enforce: 'pre',
+        //   });
 
         config.module.rules.push({
-          test: /\.(stories|story)\.[tj]sx?$/,
+          test: /\.(stories|story)\.mdx$/,
        
         use: [
         options.defaultLoaders.babel, 
           {    
-           loader: ['babel-loader'],
-          options: {
-             compilers: [createCompiler({})],
-             twin: {
-                        preset: 'stitches',
-                        autoCssProp: false,
-                 },
-             plugins: [
+            loader: require.resolve('babel-loader'),
+             options: {
+            plugins: [
                   require.resolve('@babel/plugin-transform-react-jsx'),
-                  require.resolve('@storybook/source-loader'),
+                  // require.resolve('@storybook/source-loader'),
                   require.resolve('babel-plugin-macros'),
                   require.resolve('@babel/plugin-syntax-jsx'),
                   [require.resolve('babel-plugin-styled-components'), { ssr: true, displayName: true }],
                   [require.resolve('@babel/plugin-syntax-typescript'), { isTSX: true }],],
-          }},
+             twin: {
+                        preset: 'stitches',
+                        autoCssProp: false,
+                 },
+        }},
       ],
     }); 
+    config.module.rules.push({
+          // test: /\.(stories|story)\.[tj]sx?$/,
+           loader: '@mdx-js/loader',
+            options: {
+            compilers: [createCompiler({})],
+          },
+          include: [componentsDir, pagesDir],
+          // exclude: [/node_modules/],
+          // enforce: 'pre',
+          });
+
+       config.module.rules.push({
+      test: /\.(stories|story)\.[tj]sx?$/,
+      loader: require.resolve('@storybook/source-loader'),
+      exclude: [/node_modules/],
+      enforce: 'pre',
+    });
         return config;
     },
    }
