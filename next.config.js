@@ -12,7 +12,7 @@ const withMDX = require('@next/mdx')({
   },
 })
 
-  const withTwin = require('./next-twin.js')
+  const withTwin = require('./src/next-twin.js')
   module.exports =
   {
           images: {
