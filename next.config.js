@@ -12,10 +12,12 @@ const withMDX = require('@next/mdx')({
   },
 })
 
-  import withTwin from './next-twin.js'
-  export const images = {
-  domains: [ 'res.cloudinary.com' ],
-}
+  const withTwin = require('./next-twin.js')
+  module.exports =
+  {
+          images: {
+    domains: ['res.cloudinary.com'],
+  }}
   withTwin({
     experimental: {
       // Enables the styled-components SWC transform
