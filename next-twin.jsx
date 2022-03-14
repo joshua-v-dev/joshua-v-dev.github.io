@@ -25,7 +25,7 @@ export default function withTwin() {
       },
     },
   ],
-      webpackFinal: async (config) => {         
+      webpack: async (config) => {         
         const componentsDir = resolve(__dirname, '..', 'src', 'components')
         const pagesDir = resolve(__dirname, '..', 'src', 'pages')
         config.module = config.module || {}
