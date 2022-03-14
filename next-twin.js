@@ -9,7 +9,17 @@ module.exports = function withTwin() {
         } else {
     return {
       ...nextConfig,
-  addons: ['@storybook/addon-docs/register'],
+   addons: [
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+        transcludeMarkdown: true,
+      },
+    },
+  ],
       webpackFinal: async (config) => {         
         const componentsDir = path.resolve(__dirname, '..', 'src', 'components')
         const pagesDir = path.resolve(__dirname, '..', 'src', 'pages')
