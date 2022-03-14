@@ -6,7 +6,9 @@ module.exports = function withTwin() {
   return nextConfig => {
     return {
       ...nextConfig,
-
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
       webpack(config, options) {
         const { isServer, dev, dir } = options
         // replace your dir         
@@ -28,7 +30,7 @@ module.exports = function withTwin() {
                     require.resolve('babel-plugin-macros'),
                     {
                       twin: {
-                        preset: 'styled-components',
+                        preset: 'stitches',
                         autoCssProp: false,
                       },
                     },
