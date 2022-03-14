@@ -1,6 +1,4 @@
-/**
- * @type {import('next').NextConfig}
- */
+
 const withTwin = require('next-twin');
   withTwin({
     experimental: {
@@ -8,11 +6,18 @@ const withTwin = require('next-twin');
       styledComponents: true,
     },
   })
-const nextConfig = {
+
   // ATTENTION: because of https://github.com/vercel/next.js/issues/21679#issuecomment-771941447
-  future: { webpack5: true },
+  
 
-}
-
-module.exports = nextConfig
+module.exports = async ( withTwin, ({  NextConfig }) => {
+ /**
+ * @type {import('next').NextConfig}
+ */
+  const nextConfig = {
+    /* config options here */
+    future: { webpack5: true },
+  }
+  return nextConfig
+})(withTwin);
 
