@@ -1,8 +1,8 @@
  /** @type {import('@mdx-js/loader').Options}*/
-import { resolve } from 'path';
-import createCompiler from '@storybook/addon-docs/mdx-compiler-plugin';
+const path = require('path');
+const createCompiler = require('@storybook/addon-docs');
 // import { NextConfig } from 'next';
-import remarkFrontmatter from 'remark-frontmatter';
+const remarkFrontmatter = require('remark-frontmatter');
 
 export default function withTwin() {
   return nextConfig => {
@@ -11,6 +11,9 @@ export default function withTwin() {
         } else {
     return {
       ...nextConfig,
+        images : {
+  domains: [ 'res.cloudinary.com' ],
+},
    addons: [
     {
       name: '@storybook/addon-docs/register',
@@ -28,16 +31,16 @@ export default function withTwin() {
         config.module = config.module || {}
         config.module.rules = config.module.rules || []
 
-        // config.module.rules.push({
-        //   // test: /\.(stories|story)\.[tj]sx?$/,
-        //    loader: '@mdx-js/loader',
-        //     options: {
-        //     compilers: [createCompiler({})],
-        //   },
-        //   include: [componentsDir, pagesDir],
-        //   // exclude: [/node_modules/],
-        //   // enforce: 'pre',
-        //   });
+        config.module.rules.push({
+          test: /\.(stories|story)\.[tj]sx?$/,
+           loader: '@mdx-js/loader',
+            options: {
+            compilers: [createCompiler({})],
+          },
+          include: [componentsDir, pagesDir],
+          // exclude: [/node_modules/],
+          // enforce: 'pre',
+          });
 
         config.module.rules.push({
           test: /\.(stories|story)\.mdx$/,
@@ -67,7 +70,7 @@ export default function withTwin() {
       enforce: 'pre',
     });
     config.module.rules.push({
-          // test: /\.(stories|story)\.[tj]sx?$/,
+          test: /\.(stories|story)\.[tj]sx?$/,
            loader: '@mdx-js/loader@next',
             options: {
             compilers: [createCompiler({})],
