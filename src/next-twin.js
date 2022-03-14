@@ -1,10 +1,10 @@
  /** @type {import('@mdx-js/loader').Options}*/
-const path = require('path')
-const { NextConfig } = require('next')
-const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
+import { resolve } from 'path';
+import { NextConfig } from 'next';
+import createCompiler from '@storybook/addon-docs/mdx-compiler-plugin';
 
 
-module.exports = function withTwin() {
+export default function withTwin() {
   return nextConfig => {
      if (typeof nextConfig.webpack === 'function') {
           return nextConfig.webpack(config, options)
@@ -23,8 +23,8 @@ module.exports = function withTwin() {
     },
   ],
       webpackFinal: async (config) => {         
-        const componentsDir = path.resolve(__dirname, '..', 'src', 'components')
-        const pagesDir = path.resolve(__dirname, '..', 'src', 'pages')
+        const componentsDir = resolve(__dirname, '..', 'src', 'components')
+        const pagesDir = resolve(__dirname, '..', 'src', 'pages')
         config.module = config.module || {}
         config.module.rules = config.module.rules || []
 
@@ -63,7 +63,7 @@ module.exports = function withTwin() {
     }); 
     config.module.rules.push({
           // test: /\.(stories|story)\.[tj]sx?$/,
-           loader: '@mdx-js/loader',
+           loader: '@mdx-js/loader@next',
             options: {
             compilers: [createCompiler({})],
           },
