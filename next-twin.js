@@ -1,4 +1,4 @@
- /** @type {import('@mdx-js/loader').Options} */
+ /** @type {import('@mdx-js/loader').Options}*/
 const path = require('path')
 const { NextConfig } = require('next')
 const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
@@ -15,6 +15,15 @@ module.exports = function withTwin() {
         const pagesDir = path.resolve(__dirname, '..', 'src', 'pages')
         config.module = config.module || {}
         config.module.rules = config.module.rules || []
+
+        config.module.rules.push({
+            test: /\.(stories|story)\.mdx$/,
+           loader: ['@mdx-js/loader'],
+          include: [componentsDir, pagesDir],
+          exclude: [/node_modules/],
+          enforce: 'pre',
+          });
+
         config.module.rules.push({
           test: /\.(stories|story)\.[tj]sx?$/,
        
@@ -37,14 +46,7 @@ module.exports = function withTwin() {
                   [require.resolve('@babel/plugin-syntax-typescript'), { isTSX: true }],],
           }},
       ],
-    });
-           config.module.rules.push({
-            test: /\.(stories|story)\.mdx$/,
-           loader: ['@mdx-js/loader'],
-          include: [componentsDir, pagesDir],
-          exclude: [/node_modules/],
-          enforce: 'pre',
-          });
+    }); 
         return config;
     },
    }

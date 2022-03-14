@@ -69,24 +69,24 @@ export default function Collections() {
         </div>
       </div>
       <div className="flex flex-wrap mb-8 -mx-4">
-        <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
+        {/* <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
           <a href="#">
             <Image className="mx-auto h-64 w-full rounded object-cover" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""></Image>
           </a>
-        </div>
-        <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
+        </div> */}
+        {/* <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
           <a href="#">
             <Image className="mx-auto h-64 w-full rounded object-cover" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1055&amp;q=80" alt=""></Image>
           </a>
-        </div>
-        <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
+        </div> */}
+        {/* <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
           <div className="relative mx-auto h-64 w-full rounded-lg">
             <Image className="relative h-full w-full rounded-lg object-cover" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""></Image>
             <div className="absolute inset-0 bg-gray-900 opacity-50 rounded-lg"></div>
             <div className="absolute inset-0 flex items-center justify-center"><a className="inline-block py-2 px-4 border-2 border-gray-400 hover:border-white bg-transparent text-gray-50 hover:bg-white hover:text-gray-900 transition duration-200 rounded-l-xl rounded-t-xl font-bold leading-loose" href="#">View Project</a></div>
           </div>
-        </div>
-        <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
+        </div> */}
+        {/* <div className="w-full md:w-1/2 lg:w-1/4 mb-8 px-4">
           <a href="#">
             <Image className="mx-auto h-64 w-full rounded object-cover" src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80" alt=""></Image>
           </a>
@@ -110,7 +110,7 @@ export default function Collections() {
           <a href="#">
             <Image className="mx-auto h-64 w-full rounded object-cover" src="https://images.unsplash.com/photo-1413752362258-7af2a667b590?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1055&amp;q=80" alt=""></Image>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="text-center"><a className="inline-block py-2 px-6 leading-loose rounded-l-xl rounded-t-xl bg-pink-600 hover:bg-pink-700 text-gray-50 font-bold tansition duration-200" href="#">View More Projects</a></div>
     </div>
