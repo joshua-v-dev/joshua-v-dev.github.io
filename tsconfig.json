@@ -1,7 +1,6 @@
 {
-  "types": ["types"],
-
   "compilerOptions": {
+    "baseUrl": ".",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -39,7 +38,8 @@
     "types/additional.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "next-twin.jsx"
+    "next-twin.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "types": ["types"]
 }
