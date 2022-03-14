@@ -26,8 +26,8 @@
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
-    "@mdx-js/loader": "^2.0.0-rc.2",
-    "@mdx-js/react": "^2.0.0-rc.2",
+    "@mdx-js/loader": "^2.0.0",
+    "@mdx-js/react": "^2.0.0",
     "@next/mdx": "^12.1.0",
     "@reach/disclosure": "^0.16.2",
     "@reach/tooltip": "^0.16.2",
@@ -42,13 +42,13 @@
     "popmotion": "^11.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-tsparticles": "^1.42.1",
+    "react-tsparticles": "^1.42.2",
     "remark-frontmatter": "^4.0.1",
     "styled-components": "^5.3.3",
-    "tsparticles": "^1.42.1"
+    "tsparticles": "^1.42.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.7",
     "@storybook/addon-docs": "^6.4.19",
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
