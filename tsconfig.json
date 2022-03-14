@@ -38,7 +38,8 @@
     "types/twin.d.ts",
     "types/additional.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "next-twin.jsx"
   ],
   "exclude": ["node_modules"]
 }

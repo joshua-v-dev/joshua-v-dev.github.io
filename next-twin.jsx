@@ -1,7 +1,7 @@
  /** @type {import('@mdx-js/loader').Options}*/
 const path = require('path');
 const createCompiler = require('@storybook/addon-docs');
-// import { NextConfig } from 'next';
+import { NextConfig } from 'next';
 const remarkFrontmatter = require('remark-frontmatter');
 
 export default function withTwin() {
