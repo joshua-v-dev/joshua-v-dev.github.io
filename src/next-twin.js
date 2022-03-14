@@ -1,7 +1,7 @@
  /** @type {import('@mdx-js/loader').Options}*/
 import { resolve } from 'path';
 import createCompiler from '@storybook/addon-docs/mdx-compiler-plugin';
-import { NextConfig } from 'next';
+// import { NextConfig } from 'next';
 import remarkFrontmatter from 'remark-frontmatter';
 
 export default function withTwin() {
