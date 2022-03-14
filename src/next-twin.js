@@ -1,8 +1,8 @@
  /** @type {import('@mdx-js/loader').Options}*/
 import { resolve } from 'path';
-import { NextConfig } from 'next';
 import createCompiler from '@storybook/addon-docs/mdx-compiler-plugin';
-
+import { NextConfig } from 'next';
+import remarkFrontmatter from 'remark-frontmatter';
 
 export default function withTwin() {
   return nextConfig => {
@@ -66,6 +66,8 @@ export default function withTwin() {
            loader: '@mdx-js/loader@next',
             options: {
             compilers: [createCompiler({})],
+            providerImportSource: '@mdx-js/react',
+            remarkPlugins: [remarkFrontmatter],
           },
           include: [componentsDir, pagesDir],
           // exclude: [/node_modules/],
