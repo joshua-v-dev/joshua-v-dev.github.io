@@ -41,7 +41,6 @@ export default function withTwin() {
 
         config.module.rules.push({
           test: /\.(stories|story)\.mdx$/,
-       
         use: [
         options.defaultLoaders.babel, 
           {    
@@ -49,7 +48,7 @@ export default function withTwin() {
              options: {
             plugins: [
                   require.resolve('@babel/plugin-transform-react-jsx'),
-                  // require.resolve('@storybook/source-loader'),
+                  require.resolve('@storybook/source-loader'),
                   require.resolve('babel-plugin-macros'),
                   require.resolve('@babel/plugin-syntax-jsx'),
                   [require.resolve('babel-plugin-styled-components'), { ssr: true, displayName: true }],
@@ -61,6 +60,12 @@ export default function withTwin() {
         }},
       ],
     }); 
+        config.module.rules.push({
+      test: /\.(stories|story)\.[tj]sx?$/,
+      loader: require.resolve('@storybook/source-loader'),
+      exclude: [/node_modules/],
+      enforce: 'pre',
+    });
     config.module.rules.push({
           // test: /\.(stories|story)\.[tj]sx?$/,
            loader: '@mdx-js/loader@next',
@@ -74,12 +79,7 @@ export default function withTwin() {
           // enforce: 'pre',
           });
 
-       config.module.rules.push({
-      test: /\.(stories|story)\.[tj]sx?$/,
-      loader: require.resolve('@storybook/source-loader'),
-      exclude: [/node_modules/],
-      enforce: 'pre',
-    });
+   
         return config;
     },
    }

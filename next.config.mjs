@@ -1,6 +1,7 @@
 /**
  * @type {import('next').NextConfig}
  **/
+// import { NextConfig } from 'next';
 // const withMDX = require('@next/mdx')({
 //   extension: /\.mdx?$/,
 //   options: {
