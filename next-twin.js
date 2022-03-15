@@ -16,7 +16,7 @@ module.exports = function withTwin() {
         config.module = config.module || {}
         config.module.rules = config.module.rules || []
         config.module.rules.push({
-          test: /\.(tsx|jsx)$/,
+          test: (/\.(tsx|jsx)$/g, "''"),
           include: [componentsDir, pagesDir],
           use: [
             options.defaultLoaders.babel,
@@ -53,7 +53,7 @@ module.exports = function withTwin() {
           ],
         }),
           config.module.rules.push({
-      test: /\.mdx?$/,
+      test: (/\.mdx?$/g, "''"),
       use: [
         // The default `babel-loader` used by Next:
         options.defaultLoaders.babel,
