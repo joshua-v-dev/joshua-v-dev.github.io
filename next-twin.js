@@ -6,7 +6,9 @@ module.exports = function withTwin() {
   return nextConfig => {
     return {
       ...nextConfig,
- 
+   images: {
+    domains: ['res.cloudinary.com', 'static.shuffle.dev'],
+  },
       webpackFinal(config, options) {
         const { isServer, dev, dir } = options
         // replace your dir         
@@ -21,8 +23,13 @@ module.exports = function withTwin() {
             options.defaultLoaders.babel,
             {
               loader: 'babel-loader',
+             presets: [
+             "@babel/preset-env",
+              "@babel/preset-typescript"
+  ],
               options: {
                 sourceMaps: dev,
+                
                 plugins: [
                   [
                     require.resolve('babel-plugin-macros'),
