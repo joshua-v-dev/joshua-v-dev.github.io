@@ -22,6 +22,7 @@ module.exports = function withTwin() {
             options.defaultLoaders.babel,
             {
              images: {
+                  loader: 'cloudinary',
     domains: ['res.cloudinary.com']
   },
 },
@@ -33,7 +34,6 @@ module.exports = function withTwin() {
   ],
               options: {
                 sourceMaps: dev,
-                
                 plugins: [
                   [
                     require.resolve('babel-plugin-macros'),

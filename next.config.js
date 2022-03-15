@@ -7,6 +7,7 @@ const withMDX = require('@next/mdx')
 
 
   module.exports = {
+       loader: 'cloudinary',
    images: {
     domains: ['res.cloudinary.com']
   },
