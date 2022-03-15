@@ -9,7 +9,7 @@ module.exports = function withTwin() {
   images: {
     domains: ['res.cloudinary.com'],
   },
-      webpack(config, options) {
+      webpackFinal(config, options) {
         const { isServer, dev, dir } = options
         // replace your dir         
         const componentsDir = path.resolve(__dirname, '..', 'src', 'components')
@@ -42,7 +42,19 @@ module.exports = function withTwin() {
               },
             },
           ],
-        })
+        }),
+          config.module.rules.push({
+      test: /\.mdx?$/,
+      use: [
+        // The default `babel-loader` used by Next:
+        options.defaultLoaders.babel,
+        {
+          loader: '@mdx-js/loader',
+          /** @type {import('@mdx-js/loader').Options} */
+          options: {/* jsxImportSource: …, otherOptions… */}
+        }
+      ]
+    })
 
         if (typeof nextConfig.webpack === 'function') {
           return nextConfig.webpack(config, options)
