@@ -15,9 +15,9 @@ module.exports = {
   },
   stories: ['../src/**/*.stories.@(js|mdx|ts|tsx)', "../src/components/*.@(js|md)"],
   addons: ['@storybook/addon-docs/register', '@storybook/builder-webpack5', '@storybook/manager-webpack5' ],
-   features: {
-    storyStoreV7: true,
-  },
+  //  features: {
+  //   storyStoreV7: true,
+  // },
 }
 
 // .storybook/main.ts

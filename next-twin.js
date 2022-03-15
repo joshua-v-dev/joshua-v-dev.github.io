@@ -4,11 +4,10 @@ const { NextConfig } = require('next')
 
 module.exports = function withTwin() {
   return nextConfig => {
+    
     return {
       ...nextConfig,
-   images: {
-    domains: ['res.cloudinary.com', 'static.shuffle.dev'],
-  },
+  
       webpackFinal(config, options) {
         const { isServer, dev, dir } = options
         // replace your dir         
@@ -21,6 +20,11 @@ module.exports = function withTwin() {
           include: [componentsDir, pagesDir],
           use: [
             options.defaultLoaders.babel,
+            {
+             images: {
+    domains: ['res.cloudinary.com']
+  },
+},
             {
               loader: 'babel-loader',
              presets: [

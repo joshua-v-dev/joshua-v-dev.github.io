@@ -8,7 +8,7 @@ const withMDX = require('@next/mdx')
 
   module.exports = {
    images: {
-    domains: ['res.cloudinary.com', 'static.shuffle.dev'],
+    domains: ['res.cloudinary.com']
   },
 }
   withTwin({

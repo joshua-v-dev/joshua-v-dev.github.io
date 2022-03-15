@@ -5,8 +5,8 @@ import { create } from '@storybook/theming';
 export default create({
   base: 'light',
 
-  colorPrimary: 'hotpink',
-  colorSecondary: 'deepskyblue',
+  colorPrimary: 'electric blue',
+  colorSecondary: 'violet',
 
   // UI
   appBg: 'white',

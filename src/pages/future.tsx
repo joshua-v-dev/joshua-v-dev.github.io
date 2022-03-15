@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 const FuturePage = () => {
   return (
     <>
@@ -45,10 +45,10 @@ const FuturePage = () => {
         </div>
       </div>
       <div className="relative hidden lg:block w-1/2 px-4">
-        <Image className="absolute bottom-0 max-h-128 2xl:max-h-144" src="zospace-assets/images/two-phones-bottom.png" alt=""></Image>
+        {/* <Image className="absolute bottom-0 max-h-128 2xl:max-h-144" src="zospace-assets/images/two-phones-bottom.png" alt=""></Image> */}
       </div>
       <div className="lg:hidden w-full">
-        <Image className="md:max-w-lg mx-auto" src="zospace-assets/images/zospace_app2.png" alt=""></Image>
+        {/* <Image className="md:max-w-lg mx-auto" src="zospace-assets/images/zospace_app2.png" alt=""></Image> */}
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@ const FuturePage = () => {
     <nav className="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
       <div className="flex items-center mb-16 pr-6">
         <a className="ml-10 mr-auto text-2xl text-gray-800 font-bold" href="#">
-          <Image className="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto"></Image>
+          {/* <Image className="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto"></Image> */}
         </a>
       </div>
       <div>
@@ -94,7 +94,7 @@ const FuturePage = () => {
         <h2 className="mb-6 text-5xl text-blue-800 font-bold font-heading">Lorem ipsum dolor sit amet consectutar</h2>
         <div className="flex items-center justify-center">
           <div className="mr-6">
-            <Image className="w-14 h-14 object-cover" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""></Image>
+            {/* <Image className="w-14 h-14 object-cover" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""></Image> */}
           </div>
           <div className="text-left">
             <h3 className="mb-2 text-lg text-gray-500 font-semibold font-heading">Sara Sampton</h3>
@@ -116,7 +116,7 @@ const FuturePage = () => {
 <section className="skewed-bottom-right">
   <nav className="relative px-6 py-6 flex justify-between items-center bg-gray-900">
     <a className="text-white text-3xl font-bold leading-none" href="#">
-      <Image className="h-12" src="atis-assets/logo/atis/atis-color-white.svg" alt="" width="auto"></Image>
+      {/* <Image className="h-12" src="atis-assets/logo/atis/atis-color-white.svg" alt="" width="auto"></Image> */}
     </a>
     <div className="lg:hidden">
       <button className="navbar-burger flex items-center text-white p-3">
@@ -173,13 +173,13 @@ const FuturePage = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 px-4 flex items-center justify-center">
-          <div className="relative" >
+          {/* <div className="relative" >
             <Image className="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none" src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""></Image>
             <Image className="hidden md:block absolute"  src="atis-assets/elements/blue-up.svg" alt=""></Image>
             <Image className="hidden md:block absolute"  src="atis-assets/elements/wing-purple-down.svg" alt=""></Image>
             <Image className="hidden md:block absolute"  src="atis-assets/elements/bullets-dark-right.svg" alt=""></Image>
             <Image className="hidden md:block absolute" src="atis-assets/elements/bullets-yellow-left.svg" alt=""></Image>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -193,9 +193,9 @@ const FuturePage = () => {
     <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
     <nav className="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto">
       <div className="flex items-center mb-8">
-        <a className="mr-auto text-3xl font-bold leading-none" href="#">
+        {/* <a className="mr-auto text-3xl font-bold leading-none" href="#">
           <Image className="h-10" src="atis-assets/logo/atis/atis-color-black.svg" alt="" width="auto"></Image>
-        </a>
+        </a> */}
         <button className="navbar-close">
           <svg className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -218,13 +218,13 @@ const FuturePage = () => {
         </p>
         <div className="text-center">
           <a className="inline-block px-1" href="#">
-            <Image src="atis-assets/social/facebook-purple.svg" alt=""></Image>
+            {/* <Image src="atis-assets/social/facebook-purple.svg" alt=""></Image> */}
           </a>
           <a className="inline-block px-1" href="#">
-            <Image src="atis-assets/social/twitter-purple.svg" alt=""></Image>
+            {/* <Image src="atis-assets/social/twitter-purple.svg" alt=""></Image> */}
           </a>
           <a className="inline-block px-1" href="#">
-            <Image src="atis-assets/social/instagram-purple.svg" alt=""></Image>
+            {/* <Image src="atis-assets/social/instagram-purple.svg" alt=""></Image> */}
           </a>
         </div>
       </div>

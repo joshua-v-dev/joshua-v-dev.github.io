@@ -4,6 +4,7 @@ import type * as Stitches from "@stitches/react";
 
 export const stitches = createStitches({
   prefix: "",
+
   theme: {
     // screens
     screens: {
