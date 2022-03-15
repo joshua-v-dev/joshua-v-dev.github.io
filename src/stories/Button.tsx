@@ -22,7 +22,12 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  /** 
+   * children
+   * */    
+  children?: React.ReactNode;
 }
+
 
 /**
  * Primary UI component for user interaction
