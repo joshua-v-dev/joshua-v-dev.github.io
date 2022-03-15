@@ -6,9 +6,7 @@ module.exports = function withTwin() {
   return nextConfig => {
     return {
       ...nextConfig,
-  images: {
-    domains: ['res.cloudinary.com'],
-  },
+ 
       webpackFinal(config, options) {
         const { isServer, dev, dir } = options
         // replace your dir         

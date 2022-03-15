@@ -6,7 +6,12 @@ const withMDX = require('@next/mdx')
   const withTwin = require('./next-twin.js')
 
 
-  module.exports =  withTwin({
+  module.exports = {
+   images: {
+    domains: ['res.cloudinary.com', 'static.shuffle.dev'],
+  },
+}
+  withTwin({
     experimental: {
        future: { webpack5: true }
     },
@@ -27,5 +32,6 @@ const withMDX = require('@next/mdx')
     // If you use `MDXProvider`, uncomment the following line.
     // providerImportSource: "@mdx-js/react",
   },
+  
 }) 
 )
