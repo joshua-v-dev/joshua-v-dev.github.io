@@ -6,12 +6,12 @@ const withMDX = require('@next/mdx')
   const withTwin = require('./next-twin.js')
 
 
-  module.exports = {
-       loader: 'cloudinary',
-   images: {
+  module.exports = 
+    
+ {  images: {
     domains: ['res.cloudinary.com']
-  },
-}
+  }}
+
   withTwin({
     experimental: {
        future: { webpack5: true }
@@ -20,19 +20,19 @@ const withMDX = require('@next/mdx')
     compiler: {
     // ssr and displayName are configured by default
     styledComponents: true,
-  },
-    },
+  }
+    })
     
-    withMDX({
-  // Append the default value with md extensions
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-    extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-    // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
-  },
-  
-}) 
-)
+//     withMDX({
+//   // Append the default value with md extensions
+//   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+//     extension: /\.mdx?$/,
+//   options: {
+//     remarkPlugins: [],
+//     rehypePlugins: [],
+//     // If you use `MDXProvider`, uncomment the following line.
+//     // providerImportSource: "@mdx-js/react",
+//   },
+//   
+// }) 
+
