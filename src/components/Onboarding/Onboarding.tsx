@@ -16,7 +16,7 @@ export default function Onboarding ()
 
       <div className="grid items-center sm:justify-center my-16 ">
       </div>
-      <div className=" flex items-center justify-center space-x-16 ">
+      {/* <div className=" flex items-center justify-center space-x-16 ">
 
         <a href="https://github.com/joshua-v-dev">
           <svg
@@ -51,7 +51,7 @@ export default function Onboarding ()
             </svg>
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

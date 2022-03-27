@@ -9,7 +9,7 @@ export default function TailNav ()
         <nav className="relative flex items-center justify-between ">
           <div className="hidden lg:flex">
             <a
-              className=" rounded-full border border-indigo-600 px-8 py-2 font-bold brightness-125  text-indigo-600 hover:brightness-200 hover:text-white hover:border-gray-200 lg:flex"
+              className=" rounded-full border border-indigo-900 px-8 py-2 font-bold brightness-200  text-blue-900  shadow-green-500/50 hover:brightness-200 hover:text-white hover:border-gray-200 lg:flex"
               href="#"
             >
               Want To Play A Game?

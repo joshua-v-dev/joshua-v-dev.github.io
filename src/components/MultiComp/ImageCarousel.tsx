@@ -30,7 +30,7 @@ const ImageCarousel = () =>
     };
   }, [] );
   return (
-    <section className="container mx-auto grid items-center justify-center  rounded-3xl bg-teal-500 bg-opacity-30 py-24 px-48 brightness-125">
+    <section className="container mx-auto grid items-center justify-center  rounded-3xl bg-teal-500 bg-opacity-30 py-24 px-48 brightness-125 bg-indigo-600">
       <div className="flex flex-wrap items-center">
         <button
           className="hidden h-16 w-16 rounded-full bg-indigo-600 p-5 transition duration-200 hover:bg-indigo-700 lg:block"
