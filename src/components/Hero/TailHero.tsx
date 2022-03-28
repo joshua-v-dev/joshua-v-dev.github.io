@@ -29,17 +29,18 @@ export default function TailHero ()
           </div>
           <main className=" py-4 max-w-8xl flex justify-center sm:px-6 lg:space-y-16 lg:p-7 select-none">
             <div className=" p-3 text-center lg:space-y-6">
-              <h1 className="select-none text-8xl font-extrabold tracking-tight text-blue-900  shadow-green-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
+
+              <h1 className="select-none text-8xl font-extrabold tracking-tight text-green-400  shadow-green-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
                 <span className="block text-9xl font-extrabold tracking-wide xl:inline xl:max-w-none">
                   Joshua Vaughn
                 </span>
               </h1>
               <div className="my-2">
-                <span className="block text-5xl font-extrabold tracking-tighter text-blue-700 brightness-200 xl:inline xl:max-w-none ">
+                <span className="block text-5xl font-extrabold tracking-tighter text-green-600 brightness-150 xl:inline xl:max-w-none ">
                   Full Stack Web Developer
                 </span>
               </div>
-              <p className="block text-xl font-extrabold tracking-tight text-gray-500 brightness-125 sm:mx-auto  sm:max-w-xl sm:text-lg  md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none">
+              <p className="block text-2xl font-extrabold tracking-tight text-gray-500 brightness-150 sm:mx-auto sm:max-w-xl sm:text-lg  md:text-xl lg:mx-0 lg:text-3xl xl:max-w-none shadow-inner-xl">
                 Innovation one idea at a time
               </p>
 

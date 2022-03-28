@@ -13,24 +13,24 @@ export default function ParticleAnimation ()
           },
           particles: {
             number: {
-              value: 88.88,
-              limit: 888.88,
+              value: 44.44,
+              limit: 444.88,
               density: {
                 enable: true,
-                value_area: 888.8888888888889,
+                value_area: 484.884,
 
               },
             },
             orbit: {
               enable: true,
               rotation: {
-                value: 88.88,
+                value: 44.8888,
 
               },
             },
             tilt: {
               enable: true,
-              value: 176.88,
+              value: 144.88888,
 
             },
             collisions: {
@@ -40,7 +40,7 @@ export default function ParticleAnimation ()
             },
             roll: {
               enable: true,
-              speed: 4.44,
+              speed: 1.888,
             },
             color: {
               value: "rgb(52, 211, 153)",
@@ -48,11 +48,11 @@ export default function ParticleAnimation ()
             shape: {
               type: "star",
               stroke: {
-                width: 28.44,
+                width: 28.88,
                 color: "rgb(126, 34, 206)",
               },
               polygon: {
-                nb_sides: 32,
+                nb_sides: 12.44,
               },
 
 
@@ -68,12 +68,12 @@ export default function ParticleAnimation ()
               },
             },
             size: {
-              value: 28,
+              value: 36.88,
               random: true,
               anim: {
                 enable: true,
-                speed: 2.8,
-                size_min: 0.44,
+                speed: 3.2,
+                size_min: 0.444,
                 sync: true,
               },
             },
@@ -108,8 +108,8 @@ export default function ParticleAnimation ()
                 mode: "connect",
                 parallax: {
                   enable: true,
-                  force: 250,
-                  smooth: 550,
+                  force: 280.88,
+                  smooth: 488.88,
                 },
               },
               onClick: {
