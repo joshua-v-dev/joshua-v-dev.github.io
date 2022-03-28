@@ -30,8 +30,8 @@ const ImageCarousel = () =>
     };
   }, [] );
   return (
-    <section className="container mx-auto grid items-center justify-center  rounded-3xl bg-teal-500 bg-opacity-30 py-24 px-48 brightness-125 bg-indigo-600">
-      <div className="flex flex-wrap items-center">
+    <section className="container max-h-full mx-auto my-auto grid items-center justify-center  rounded-2xl bg-opacity-30 py-24 px-52 brightness-125 bg-indigo-600">
+      <div className="flex flex-wrap items-center ">
         <button
           className="hidden h-16 w-16 rounded-full bg-indigo-600 p-5 transition duration-200 hover:bg-indigo-700 lg:block"
           onClick={ () =>
@@ -61,7 +61,7 @@ const ImageCarousel = () =>
             ></path>
           </svg>
         </button>
-        <div className="mx-auto mb-14 max-w-2xl text-center">
+        <div className="mx-auto mb-14 max-w-2xl text-center ">
           <h2 className="font-heading mb-4 text-3xl font-extrabold leading-tight text-gray-200 md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight">
             Check out my Blog!
           </h2>
