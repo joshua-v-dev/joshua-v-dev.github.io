@@ -1,81 +1,100 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-export default function ParticleAnimation() {
+export default function ParticleAnimation ()
+{
   return (
     <>
       <Particles
-        options={{
+        options={ {
           fullScreen: {
             enable: true,
             zIndex: -1,
           },
           particles: {
             number: {
-              value: 40,
-              limit: 160,
+              value: 44.44,
+              limit: 444.88,
               density: {
                 enable: true,
-                value_area: 400,
+                value_area: 484.884,
+
               },
+            },
+            orbit: {
+              enable: true,
+              rotation: {
+                value: 44.8888,
+
+              },
+            },
+            tilt: {
+              enable: true,
+              value: 144.88888,
+
+            },
+            collisions: {
+              enable: true,
+              mode: "absorb",
+
+            },
+            roll: {
+              enable: true,
+              speed: 1.888,
             },
             color: {
               value: "rgb(52, 211, 153)",
             },
             shape: {
-              type: "dyrect",
+              type: "star",
               stroke: {
-                width: 1.5,
+                width: 28.88,
                 color: "rgb(126, 34, 206)",
               },
               polygon: {
-                nb_sides: 10,
+                nb_sides: 12.44,
               },
-              image: {
-                src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1644349608/JV-BLK-RD-Logo_lzzpsd.png",
-                position: "relative",
-                width: 100,
-                height: 100,
-              },
+
+
             },
             opacity: {
-              value: 0.6,
+              value: 1,
               random: true,
               anim: {
                 enable: true,
-                speed: 1.5,
-                opacity_min: 0.5,
+                speed: 1,
+                opacity_min: 0.88,
                 sync: true,
               },
             },
             size: {
-              value: 80,
+              value: 36.88,
               random: true,
               anim: {
                 enable: true,
-                speed: 5,
-                size_min: 10,
+                speed: 3.2,
+                size_min: 0.444,
                 sync: true,
               },
             },
             line_linked: {
               enable: true,
-              distance: 240,
+              distance: 27,
 
               color: "rgb(167, 243, 208)",
               opacity: 1,
-              width: 1.2,
+              width: 2.7,
             },
             move: {
               enable: true,
               speed: 1,
-              direction: "none",
+              direction: "bottom",
               random: true,
-              straight: false,
-              out_mode: "out",
-              bounce: false,
+              straight: true,
+              out_mode: "split",
+              bounce: true,
               attract: {
-                enable: false,
+                enable: true,
                 rotateX: 1080,
                 rotateY: 1080,
               },
@@ -89,37 +108,38 @@ export default function ParticleAnimation() {
                 mode: "connect",
                 parallax: {
                   enable: true,
-                  force: 200,
-                  smooth: 400,
+                  force: 280.88,
+                  smooth: 488.88,
                 },
               },
               onClick: {
                 enable: true,
                 mode: "push",
+
               },
               resize: true,
             },
             modes: {
               grab: {
-                distance: 320,
+                distance: 27,
                 lineLinked: {
                   opacity: 1,
                 },
               },
               bubble: {
-                distance: 24,
-                size: 20,
-                duration: 0.2,
+                distance: 27,
+                size: 27,
+                duration: 18,
                 opacity: 1,
               },
               repulse: {
-                distance: 3,
+                distance: 27,
               },
               push: {
-                particles_nb: 3,
+                particles_nb: 27,
               },
               remove: {
-                particles_nb: 3,
+                particles_nb: 27,
               },
             },
           },
@@ -130,7 +150,7 @@ export default function ParticleAnimation() {
               color: {
                 value: {
                   r: 27,
-                  g: 17,
+                  g: 27,
                   b: 27,
                 },
               },
@@ -140,9 +160,9 @@ export default function ParticleAnimation() {
           fps_limit: 60,
           background: {
             image:
-              "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1639943200/rainbow-4-pillar-wallpaper_qmxakk.png')",
+              "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1645573359/deep_space_bg_multi_right_a1opj9.png')",
           },
-        }}
+        } }
       />
     </>
   );

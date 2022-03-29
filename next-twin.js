@@ -16,15 +16,16 @@ module.exports = function withTwin() {
         config.module = config.module || {}
         config.module.rules = config.module.rules || []
         config.module.rules.push({
-          test: /\.(tsx|jsx)$/,
+          test: (/\.(tsx|jsx)$/g, "''"),
           include: [componentsDir, pagesDir],
           use: [
             options.defaultLoaders.babel,
-            {
-             images: {
-    domains: ['res.cloudinary.com']
-  },
-},
+//             {
+//              images: {
+//                   loader: 'cloudinary',
+//     domains: ['res.cloudinary.com']
+//   },
+// },
             {
               loader: 'babel-loader',
              presets: [
@@ -33,7 +34,6 @@ module.exports = function withTwin() {
   ],
               options: {
                 sourceMaps: dev,
-                
                 plugins: [
                   [
                     require.resolve('babel-plugin-macros'),
@@ -51,19 +51,19 @@ module.exports = function withTwin() {
               },
             },
           ],
-        }),
-          config.module.rules.push({
-      test: /\.mdx?$/,
-      use: [
-        // The default `babel-loader` used by Next:
-        options.defaultLoaders.babel,
-        {
-          loader: '@mdx-js/loader',
-          /** @type {import('@mdx-js/loader').Options} */
-          options: {/* jsxImportSource: …, otherOptions… */}
-        }
-      ]
-    })
+        })
+    //       config.module.rules.push({
+    //   test: (/\.mdx?$/g, "''"),
+    //   use: [
+    //     // The default `babel-loader` used by Next:
+    //     options.defaultLoaders.babel,
+    //     {
+    //       loader: '@mdx-js/loader',
+    //       /** @type {import('@mdx-js/loader').Options} */
+    //       options: {/* jsxImportSource: …, otherOptions… */}
+    //     }
+    //   ]
+    // })
 
         if (typeof nextConfig.webpack === 'function') {
           return nextConfig.webpack(config, options)

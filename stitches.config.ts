@@ -83,6 +83,7 @@ export const stitches = createStitches({
       "blue-300": "#90cdf4",
       "blue-400": "#63b3ed",
       "blue-500": "#4299e1",
+      "blue-550": "#0072b1",
       "blue-600": "#3182ce",
       "blue-700": "#2b6cb0",
       "blue-800": "#2c5282",

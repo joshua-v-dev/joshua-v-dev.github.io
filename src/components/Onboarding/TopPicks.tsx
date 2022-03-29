@@ -2,45 +2,46 @@ import React, { FunctionComponentElement } from 'react'
 import Image from 'next/image'
 import { topPicks } from '../../database/database'
 
-export default function TopPicks() {
+export default function TopPicks ()
+{
 	return (
 		<>
-			<div className=' grid  items-center justify-center space-x-64 space-y-16 p-16'>
-				<div className='container grid grid-flow-col grid-cols-3 justify-center gap-x-24 gap-y-8  bg-transparent lg:max-w-none '>
-					{topPicks.map(
-						(topPicks, i): FunctionComponentElement<PageTransitionEvent>  => (
+			<div className=' grid items-center justify-center my-32 space-y-8 space-x-8'>
+				<div className='container grid grid-flow-col-dense grid-cols-3 gap-x-16  bg-transparent'>
+					{ topPicks.map(
+						( topPicks, i ): FunctionComponentElement<PageTransitionEvent> => (
 							<div
-								key={i}
-								className=' grid  max-w-lg items-center justify-center gap-2 border-2 bg-black px-4 shadow-xl'>
+								key={ i }
+								className='container grid border-2 p-8 border-gray-200 bg-black justify-center items-center'>
 								<a
-									className='relative h-40 w-40'
-									href={topPicks.href}
+									className='relative h-96 w-96 p-8 border-2 border-gray-200'
+									href={ topPicks.href }
 									data-mdb-ripple='true'
 									data-mdb-ripple-color='light '>
 									<Image
-										className=' object-contain'
-										src={topPicks.src}
-										alt={topPicks.imageAlt}
+										className='object-cover '
+										src={ topPicks.src }
+										alt={ topPicks.imageAlt }
 										layout='fill'
 										priority
 									/>
 								</a>
-								<h5 className='flex justify-center space-y-4 p-1 text-xl font-medium text-white'>
-									{topPicks.name}
+								<h5 className='grid justify-center p-8 text-5xl font-medium text-gray-200'>
+									{ topPicks.name }
 								</h5>
-								<p className='flex justify-center text-base text-white'>{topPicks.description}</p>
-								<a href={topPicks.href} data-mdb-ripple='true' data-mdb-ripple-color='light '>
-									<div className='flex items-center justify-center p-6'>
+								<p className='grid justify-center text-gray-200 text-xl font-medium p-2'>{ topPicks.description }</p>
+								<a href={ topPicks.href } data-mdb-ripple='true' data-mdb-ripple-color='light '>
+									<div className='grid items-center justify-center p-6 '>
 										<button
 											type='button'
-											className=' rounded bg-indigo-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg'>
+											className=' rounded bg-indigo-600 px-6 py-4 text-sm font-semibold uppercase leading-tight text-gray-200 shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg'>
 											Learn More
 										</button>
 									</div>
 								</a>
 							</div>
 						),
-					)}
+					) }
 				</div>
 			</div>
 		</>

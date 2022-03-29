@@ -1,23 +1,29 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
+
 import React from "react";
 
-export default function TailNav() {
+export default function TailNav ()
+{
   return (
     <>
       <section className=" bg-transparent py-8 px-4 lg:px-10 ">
         <nav className="relative flex items-center justify-between ">
           <div className="hidden lg:flex">
             <a
-              className=" rounded-full border border-gray-200 px-8 py-2 font-bold text-white hover:border-white lg:flex"
+              className=" rounded-full border border-indigo-900 px-8 py-2 font-bold brightness-200  text-blue-900  shadow-green-500/50 hover:brightness-200 hover:text-gray-200 hover:border-gray-300 lg:flex"
               href="#"
             >
               Want To Play A Game?
             </a>
           </div>
           <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:block lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
-            <ul className="flex items-center space-x-10 text-white">
+            <ul className="flex items-center space-x-10 text-grey-500 brightness-125">
               <li>
-                <a className="text-lg font-bold text-white" href="/gallery">
+                <a className="text-lg font-bold text-gray-500 brightness-125 hover:brightness-200" href="/gallery">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a className="text-lg font-bold text-gray-500 brightness-125 hover:brightness-200" href="/gallery">
                   Gallery
                 </a>
               </li>
@@ -29,11 +35,11 @@ export default function TailNav() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#5a67d8"></circle>
                 </svg>
               </span>
               <li>
-                <a className="text-lg font-bold text-white" href="/services">
+                <a className=" hover:brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:text-brightness-200" href="/services">
                   Services
                 </a>
               </li>
@@ -45,11 +51,11 @@ export default function TailNav() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#5a67d8"></circle>
                 </svg>
               </span>
               <li>
-                <a className="text-lg font-bold text-white" href="/story">
+                <a className=" hover:brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:text-brightness-200" href="/story">
                   Story
                 </a>
               </li>
@@ -61,11 +67,11 @@ export default function TailNav() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#5a67d8"></circle>
                 </svg>
               </span>
               <li>
-                <a className="text-lg font-bold text-white" href="/contact">
+                <a className="hover:brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:text-brightness-200" href="/contact">
                   Contact
                 </a>
               </li>
@@ -76,7 +82,7 @@ export default function TailNav() {
               <a href="https://github.com/joshua-v-dev">
                 <svg
                   stroke="currentColor"
-                  className="h-12 w-12 rounded-full bg-white"
+                  className="h-12 w-12 rounded-full bg-indigo-600 hover:bg-white"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -93,12 +99,12 @@ export default function TailNav() {
                 href="https://www.linkedin.com/in/joshua-vaughn/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="text-2x1  transition-colors hover:text-white dark:hover:text-white"
+                className="text-2x1  transition-colors hover:text-white dark:hover:text-indigo-600"
               >
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  className="h-12 w-12 rounded-xl bg-white p-1"
+                  className="h-12 w-12 rounded-xl bg-indigo-600 p-1"
                   viewBox="0 0 450 510"
                   xmlns="http://www.w3.org/2000/svg"
                 >
