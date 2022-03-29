@@ -13,24 +13,24 @@ export default function ParticleAnimation ()
           },
           particles: {
             number: {
-              value: 44.44,
-              limit: 444.88,
+              value: 14,
+              limit: 114,
               density: {
                 enable: true,
-                value_area: 484.884,
+                value_area: 144,
 
               },
             },
             orbit: {
               enable: true,
               rotation: {
-                value: 44.8888,
+                value: 44,
 
               },
             },
             tilt: {
               enable: true,
-              value: 144.88888,
+              value: 114,
 
             },
             collisions: {
@@ -40,7 +40,7 @@ export default function ParticleAnimation ()
             },
             roll: {
               enable: true,
-              speed: 1.888,
+              speed: 4,
             },
             color: {
               value: "rgb(52, 211, 153)",
@@ -48,46 +48,46 @@ export default function ParticleAnimation ()
             shape: {
               type: "star",
               stroke: {
-                width: 28.88,
+                width: 44,
                 color: "rgb(126, 34, 206)",
               },
               polygon: {
-                nb_sides: 12.44,
+                nb_sides: 14,
               },
 
 
             },
             opacity: {
-              value: 1,
+              value: 0.88,
               random: true,
               anim: {
                 enable: true,
                 speed: 1,
-                opacity_min: 0.88,
+                opacity_min: 0.28,
                 sync: true,
               },
             },
             size: {
-              value: 36.88,
+              value: 44.88,
               random: true,
               anim: {
                 enable: true,
-                speed: 3.2,
-                size_min: 0.444,
+                speed: 0.14,
+                size_min: 0.44,
                 sync: true,
               },
             },
             line_linked: {
               enable: true,
-              distance: 27,
+              distance: 14,
 
               color: "rgb(167, 243, 208)",
-              opacity: 1,
-              width: 2.7,
+              opacity: 0.88,
+              width: 4,
             },
             move: {
               enable: true,
-              speed: 1,
+              speed: 0.44,
               direction: "bottom",
               random: true,
               straight: true,
@@ -108,8 +108,8 @@ export default function ParticleAnimation ()
                 mode: "connect",
                 parallax: {
                   enable: true,
-                  force: 280.88,
-                  smooth: 488.88,
+                  force: 240,
+                  smooth: 480,
                 },
               },
               onClick: {
@@ -121,25 +121,25 @@ export default function ParticleAnimation ()
             },
             modes: {
               grab: {
-                distance: 27,
+                distance: 14,
                 lineLinked: {
                   opacity: 1,
                 },
               },
               bubble: {
-                distance: 27,
-                size: 27,
-                duration: 18,
-                opacity: 1,
+                distance: 9,
+                size: 9,
+                duration: 9,
+                opacity: 0.88,
               },
               repulse: {
-                distance: 27,
+                distance: 18,
               },
               push: {
-                particles_nb: 27,
+                particles_nb: 18,
               },
               remove: {
-                particles_nb: 27,
+                particles_nb: 18,
               },
             },
           },
