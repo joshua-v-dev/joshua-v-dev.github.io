@@ -10,28 +10,28 @@ export const features = [
 		id: 0,
 		name: 'Microservices',
 		description:
-			'Headless services that can be deployed to any cloud provider. No need to worry about infrastructure, just deploy your services and let them do the rest.',
+			'Headless services that can be deployed to any cloud provider. No need to worry about infrastructure, just deploy your services & let them do the rest.',
 		icon: GlobeAltIcon,
 	},
 	{
 		id: 1,
-		name: 'Next.js with TypeScript and Tailwindcss Production Build',
+		name: 'Next.js with TypeScript & Tailwindcss Production Build',
 		description:
-			'Secure, Scalable, and Fast. Built with Next.js, TypeScript, and Tailwindcss. Production ready for production deployment.',
+			'Secure, Scalable & Fast. Built with Next.js, TypeScript, & Tailwindcss. Production ready for production deployment.',
 		icon: ScaleIcon,
 	},
 	{
 		id: 2,
 		name: 'Design Tools',
 		description:
-			'Built with Sketch, Figma, and Adobe XD. No need to worry about design. Just focus on building your app.',
+			'Built with Sketch, Figma & Adobe XD. No need to worry about design. Just focus on building your app.',
 		icon: LightningBoltIcon,
 	},
 	{
 		id: 3,
-		name: 'Modern UX Principles and Architecture',
+		name: 'Modern UX Principles & Architecture',
 		description:
-			'Built with React Hooks, Context, and Redux. No need to worry about the details. Just focus on building your app.',
+			'Built with React Hooks, Context, & Redux. No need to worry about the details. Just focus on building your app.',
 		icon: AnnotationIcon,
 	},
 ]
@@ -122,12 +122,12 @@ export const callouts = [
 	{
 		id: 1,
 		name: 'PORTFOLIO',
-		description: 'React, Tailwind CSS, and Next.js',
+		description: 'React, TailwindCSS & Next.js',
 		imageSrc:
 			'https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg',
 
 		imageAlt:
-			'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+			'Desk with leather desk pad, walnut desk organizer, wireless keyboard, mouse & porcelain mug.',
 		href: '#',
 	},
 	{
@@ -137,7 +137,7 @@ export const callouts = [
 		imageSrc:
 			'https://res.cloudinary.com/dpytkhyme/image/upload/v1643976423/mernstack_1_cpteis.png',
 		imageAlt:
-			'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+			'Wood table with porcelain mug, leather journal, brass pen, leather key ring & houseplant.',
 		href: '#',
 	},
 	{
@@ -155,7 +155,7 @@ export const callouts = [
 		imageSrc: 'https://res.cloudinary.com/dpytkhyme/image/upload/v1643977258/googleux_t7xakq.png',
 
 		imageAlt:
-			'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+			'Desk with leather desk pad, walnut desk organizer, wireless keyboard, mouse & porcelain mug.',
 		href: '#',
 	},
 	{
@@ -165,7 +165,7 @@ export const callouts = [
 		imageSrc:
 			'https://res.cloudinary.com/dpytkhyme/image/upload/v1644118954/indiegamedev_1_fls4tq.svg',
 		imageAlt:
-			'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+			'Wood table with porcelain mug, leather journal, brass pen, leather key ring & houseplant.',
 		href: '#',
 	},
 	{
