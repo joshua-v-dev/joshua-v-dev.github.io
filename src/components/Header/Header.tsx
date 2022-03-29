@@ -1,16 +1,19 @@
 import React from "react";
-import TailNav from "./TailNav";
 import Particles from "../Animations/Particles/index";
+import TailNav from "./TailNav";
+
 
 type HeaderProps = {
   isMain?: boolean;
 };
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = () =>
+{
   return (
     <>
-      <TailNav />
       <Particles />
+      <TailNav />
+
     </>
   );
 };
