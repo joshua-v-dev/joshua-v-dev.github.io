@@ -2,8 +2,8 @@ export default function HomeCta ()
 {
   return (
     <>
-      <section className="  grid grid-flow-col grid-cols-1 items-center justify-center p-10 mx-auto lg:space-y-24 brightness-125">
-        <div className="container ">
+      <section className="container">
+        <div className="container  mx-auto grid grid-flow-col grid-cols-1 items-center justify-center px-28 py-32 brightness-125  ">
           <div className=" flex flex-wrap items-center ">
             <div className="text-center md:w-1/2 lg:w-1/4 ">
               <svg
@@ -62,7 +62,7 @@ export default function HomeCta ()
               </svg>
               <h3 className="  text-3xl font-bold text-blue-500">E-Commerce</h3>
               <p className="text-xl text-gray-300">
-                Shopify stores, themes & apps
+                Stores, Themes & Apps
               </p>
             </div>
             <div className="  text-center md:w-1/2 lg:w-1/4">
@@ -81,17 +81,17 @@ export default function HomeCta ()
                 <circle cx="24" cy="24" r="23.5" stroke=" #0072b1"></circle>
               </svg>
               <h3 className="  text-3xl font-bold text-blue-500">
-                Recruiting & Hiring Me
+                Hiring Me
               </h3>
               <p className="text-xl text-gray-300">
-                I am excited to work with you.
+                Powerful. Simple. Flexible.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="flex justify-center lg:space-y-24">
-        <div className="max-w-screen-3xl container overflow-hidden rounded-2xl bg-gray-200">
+      <section className="flex justify-center mx-auto ">
+        <div className="container max-w-screen-xl  overflow-hidden rounded-3xl bg-gray-300">
           <div className="mx-auto max-w-5xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
             <h2 className="text-3xl font-extrabold tracking-tight text-blue-400 sm:text-4xl">
               <span className="block">Ready to dive in?</span>
