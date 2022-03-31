@@ -1,6 +1,7 @@
 import Layout from "../../layout/Layout";
 
-export default function Contact() {
+export default function Contact ()
+{
   return (
     <>
       <Layout>
@@ -45,11 +46,11 @@ export default function Contact() {
                     <textarea
                       className="mb-4 w-full resize-none rounded border p-3"
                       name="message"
-                      cols={30}
-                      rows={10}
+                      cols={ 30 }
+                      rows={ 10 }
                       placeholder="Your Message..."
                     ></textarea>
-                    <button className="block rounded border border-indigo-500 bg-indigo-500 px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:border-indigo-600 hover:bg-indigo-600">
+                    <button className="block rounded border border-indigo-500 bg-indigo-500 px-5 py-3 text-sm font-semibold text-gray-200 transition duration-200 hover:border-indigo-600 hover:bg-indigo-600">
                       Send
                     </button>
                   </form>

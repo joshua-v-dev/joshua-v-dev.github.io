@@ -1,5 +1,6 @@
 import Layout from "../../layout/Layout";
-const Services = () => {
+const Services = () =>
+{
   return (
     <>
       <Layout>
@@ -11,7 +12,7 @@ const Services = () => {
               <span className="bg-gradient-to-br from-yellow-200 to-orange-600 bg-clip-text text-2xl font-extrabold text-transparent brightness-125">
                 Two ways to start!
               </span>
-              <h2 className="font-heading my-10 text-5xl font-bold text-white lg:text-6xl">
+              <h2 className="font-heading my-10 text-5xl font-bold text-gray-200 lg:text-6xl">
                 We can build something great together
               </h2>
               <div className="mx-auto max-w-md">
@@ -19,13 +20,13 @@ const Services = () => {
                   Let&apos;s start building your digital solution today.
                 </p>
                 <a
-                  className="mb-4 inline-block rounded-full bg-blue-500 py-4 px-12 font-bold text-white transition duration-200 hover:bg-blue-600 sm:mb-0 sm:mr-4"
+                  className="mb-4 inline-block rounded-full bg-blue-500 py-4 px-12 font-bold text-gray-200 transition duration-200 hover:bg-blue-600 sm:mb-0 sm:mr-4"
                   href="#"
                 >
                   Contract Me
                 </a>
                 <a
-                  className="inline-block rounded-full border border-gray-50 py-4 px-12 font-bold text-white hover:border-gray-100"
+                  className="inline-block rounded-full border border-gray-50 py-4 px-12 font-bold text-gray-200 hover:border-gray-100"
                   href="#"
                 >
                   Recruit Me
@@ -37,7 +38,7 @@ const Services = () => {
         <section className="bg-transparent py-20 2xl:py-40">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center md:mb-24">
-              <h2 className="font-heading mb-8 text-5xl font-bold text-white md:mb-14 lg:text-6xl 2xl:text-7xl">
+              <h2 className="font-heading mb-8 text-5xl font-bold text-gray-200 md:mb-14 lg:text-6xl 2xl:text-7xl">
                 Choose a product
               </h2>
               <p className="text-lg text-gray-200">
@@ -50,13 +51,13 @@ const Services = () => {
                   <div className="mb-4 w-full px-4 lg:mb-0 lg:w-7/12">
                     <div className="max-w-xl px-8 lg:pl-0">
                       <div className="mb-8 flex items-center">
-                        <h2 className="font-heading mr-16 text-3xl font-bold text-white md:text-4xl">
+                        <h2 className="font-heading mr-16 text-3xl font-bold text-gray-200 md:text-4xl">
                           Premium
                         </h2>
                         <span className="hidden w-full bg-gray-700 py-px lg:inline-block"></span>
                       </div>
                       <p className="mb-6 text-lg text-gray-200">Landing + 2</p>
-                      <ul className="-mx-4 flex flex-wrap text-left text-base text-white lg:text-lg">
+                      <ul className="-mx-4 flex flex-wrap text-left text-base text-gray-200 lg:text-lg">
                         <li className="mb-6 flex w-full items-center px-4 lg:w-1/2">
                           <svg
                             className="mr-6 h-4 w-5"
@@ -113,15 +114,15 @@ const Services = () => {
                       <h3 className="mb-3 text-lg font-bold text-blue-500">
                         Click for more details
                       </h3>
-                      <div className="mb-1 flex justify-center font-bold text-white">
+                      <div className="mb-1 flex justify-center font-bold text-gray-200">
                         <span className="mr-1 inline-block self-start text-xl">
                           $
                         </span>
                         <p className="self-end text-5xl">500</p>
                       </div>
-                      <p className="mb-10 text-lg text-white">/P.W.A.</p>
+                      <p className="mb-10 text-lg text-gray-200">/P.W.A.</p>
                       <a
-                        className="rounded-full bg-blue-500 px-12 py-5 font-bold text-white transition duration-200 hover:bg-blue-600"
+                        className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-blue-600"
                         href="#"
                       >
                         Learn More
@@ -135,7 +136,7 @@ const Services = () => {
                   <div className="mb-4 w-full px-4 lg:mb-0 lg:w-7/12">
                     <div className="max-w-xl px-8 lg:pl-0">
                       <div className="mb-8 flex items-center">
-                        <h2 className="font-heading mr-16 text-3xl font-bold text-white md:text-4xl">
+                        <h2 className="font-heading mr-16 text-3xl font-bold text-gray-200 md:text-4xl">
                           Custom
                         </h2>
                         <span className="hidden w-full bg-gray-700 py-px lg:inline-block"></span>
@@ -143,7 +144,7 @@ const Services = () => {
                       <p className="mb-6 text-lg text-gray-200">
                         If you can think it I can make it
                       </p>
-                      <ul className="-mx-4 flex flex-wrap text-left text-base text-white lg:text-lg">
+                      <ul className="-mx-4 flex flex-wrap text-left text-base text-gray-200 lg:text-lg">
                         <li className="mb-6 flex w-full items-center px-4 lg:w-1/2">
                           <svg
                             className="mr-6 h-4 w-5"
@@ -218,15 +219,15 @@ const Services = () => {
                       <h3 className="mb-3 text-lg font-bold text-blue-500">
                         Click for more details
                       </h3>
-                      <div className="mb-1 flex justify-center font-bold text-white">
+                      <div className="mb-1 flex justify-center font-bold text-gray-200">
                         <span className="mr-1 inline-block self-start text-xl">
                           $
                         </span>
                         <p className="self-end text-5xl">1000</p>
                       </div>
-                      <p className="mb-10 text-lg text-white">/P.W.A.</p>
+                      <p className="mb-10 text-lg text-gray-200">/P.W.A.</p>
                       <a
-                        className="rounded-full bg-blue-500 px-12 py-5 font-bold text-white transition duration-200 hover:bg-blue-600"
+                        className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-blue-600"
                         href="#"
                       >
                         Learn More

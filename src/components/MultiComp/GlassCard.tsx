@@ -1,19 +1,11 @@
-// <!--
-//   Welcome to Tailwind Play, the official Tailwind CSS playground!
-//
-//   Everything here works just like it does when you're running Tailwind locally
-//   with a real build pipeline. You can customize your config file, use features
-//   like `@apply`, or even add third-party plugins.
-//
-//   Feel free to play with this example if you're just learning, or trash it and
-//   start from scratch if you know enough to be dangerous. Have fun!
-// -->
+
 import Image from "next/image";
 
-export default function GlassCard() {
+export default function GlassCard ()
+{
   <div className="flex min-h-screen flex-col justify-center bg-gray-100 py-6 sm:py-12">
     <div className="relative py-3 sm:mx-auto sm:max-w-xl">
-      <div className="relative border border-gray-200 bg-white bg-opacity-60 bg-clip-padding px-4 py-10 shadow-lg sm:rounded-3xl sm:p-20">
+      <div className="relative border border-gray-200 bg-gray-200 bg-opacity-60 bg-clip-padding px-4 py-10 shadow-lg sm:rounded-3xl sm:p-20">
         <div className="mx-auto max-w-md">
           <div>
             <Image
@@ -47,7 +39,7 @@ export default function GlassCard() {
                     Customizing your
                     <code className="text-sm font-bold text-gray-900">
                       tailwind.config.js
-                    </code>{" "}
+                    </code>{ " " }
                     file
                   </p>
                 </li>
@@ -101,8 +93,8 @@ export default function GlassCard() {
                   href="https://tailwindcss.com/docs"
                   className="text-cyan-600 hover:text-cyan-700"
                 >
-                  {" "}
-                  Read the docs &rarr;{" "}
+                  { " " }
+                  Read the docs &rarr;{ " " }
                 </a>
               </p>
             </div>

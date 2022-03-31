@@ -1,8 +1,9 @@
-import React, {  ReactElement } from "react";
+import React, { ReactElement } from "react";
 import Image from "next/image";
 import { TimeLineData } from "../../database/database";
 
-export default function Timeline() {
+export default function Timeline ()
+{
   return (
     <>
       <div className=" grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-max lg:grid-cols-2 lg:px-1">
@@ -10,29 +11,29 @@ export default function Timeline() {
           <h1 className="text-9xl font-extrabold uppercase tracking-tight  text-indigo-700 brightness-125 sm:text-4xl lg:pl-4">
             Roadmap
           </h1>
-          <p className="text-2xl font-semibold text-white brightness-125">
+          <p className="text-2xl font-semibold text-gray-200 brightness-125">
             Technologies I have used so far to build my projects & a little bit
             about my future.
           </p>
 
           <dl className="grid max-w-full grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-            {TimeLineData.map(
-              (TimeLineData, i): ReactElement => (
-                <div key={i} className="grid-col grid">
+            { TimeLineData.map(
+              ( TimeLineData, i ): ReactElement => (
+                <div key={ i } className="grid-col grid">
                   <div
-                    key={TimeLineData.year}
-                    className="space-y-5 border-t border-white p-5"
+                    key={ TimeLineData.year }
+                    className="space-y-5 border-t border-gray-200 p-5"
                   >
-                    <dt className="text-2xl text-white underline">
-                      {TimeLineData.year}
+                    <dt className="text-2xl text-gray-200 underline">
+                      { TimeLineData.year }
                     </dt>
-                    <dd className="space-y-5 text-xl text-white">
-                      {TimeLineData.text}
+                    <dd className="space-y-5 text-xl text-gray-200">
+                      { TimeLineData.text }
                     </dd>
                   </div>
                 </div>
               )
-            )}
+            ) }
           </dl>
         </div>
         <div className="relative grid grid-cols-2 grid-rows-2 gap-3 sm:gap-6 lg:max-w-none lg:gap-8">

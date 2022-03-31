@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Recruiter = () => {
+const Recruiter = () =>
+{
   return (
     <>
       <section className="overflow-hidden rounded-lg bg-gray-800 py-10 opacity-80 2xl:py-20">
@@ -26,7 +27,7 @@ const Recruiter = () => {
               </Link>
             </div>
 
-            <h2 className="font-heading  text-6xl font-bold text-white 2xl:text-7xl">
+            <h2 className="font-heading  text-6xl font-bold text-gray-200 2xl:text-7xl">
               I Love Software
             </h2>
             <p className="mx-auto  max-w-xl text-xl text-gray-200">

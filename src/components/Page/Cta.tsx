@@ -1,4 +1,5 @@
-const Cta = () => {
+const Cta = () =>
+{
   return (
     <>
       <section className="relative overflow-hidden bg-gray-800 pt-20 pb-32  2xl:py-40">
@@ -9,7 +10,7 @@ const Cta = () => {
             <span className="bg-gradient-to-br from-yellow-200 to-orange-600 bg-clip-text text-lg font-bold text-transparent">
               LET&apos;S CHANGE THE WORLD!
             </span>
-            <h2 className="font-heading my-10 text-5xl font-bold text-white lg:text-6xl">
+            <h2 className="font-heading my-10 text-5xl font-bold text-gray-200 lg:text-6xl">
               Let&apos;s change the World together!
             </h2>
             <div className="mx-auto max-w-md">
@@ -18,7 +19,7 @@ const Cta = () => {
               </p>
 
               <a
-                className="inline-block rounded-full border border-gray-50 py-4 px-12 font-bold text-white hover:border-gray-100"
+                className="inline-block rounded-full border border-gray-50 py-4 px-12 font-bold text-gray-200 hover:border-gray-100"
                 href="#"
               >
                 Contact Me Now!

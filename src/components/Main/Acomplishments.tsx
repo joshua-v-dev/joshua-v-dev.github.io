@@ -29,7 +29,7 @@ export default function Acomplishments ()
                   </svg>
                 </span>
                 <div>
-                  <h3 className="px-3 text-4xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     MERN to Modern MERN
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
@@ -61,7 +61,7 @@ export default function Acomplishments ()
                   </svg>
                 </span>
                 <div>
-                  <h3 className="px-3 text-4xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Security & Testing
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
@@ -91,7 +91,7 @@ export default function Acomplishments ()
                   </svg>
                 </span>
                 <div>
-                  <h3 className="px-3 text-4xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Game Development
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
@@ -123,7 +123,7 @@ export default function Acomplishments ()
                   </svg>
                 </span>
                 <div>
-                  <h3 className="px-3 text-4xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Weekly email updates
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
@@ -154,7 +154,7 @@ export default function Acomplishments ()
                   </svg>
                 </span>
                 <div>
-                  <h3 className="px-3 text-4xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Future Projects
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
@@ -183,7 +183,7 @@ export default function Acomplishments ()
                   </svg>
                 </span>
                 <div>
-                  <h3 className="px-3 text-4xl font-extrabold text-white">
+                  <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Social Media Aspirations
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">

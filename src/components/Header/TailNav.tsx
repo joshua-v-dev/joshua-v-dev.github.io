@@ -94,7 +94,7 @@ export default function TailNav ()
               <a href="https://github.com/joshua-v-dev">
                 <svg
                   stroke="currentColor"
-                  className="h-12 w-12 rounded-full bg-indigo-600 hover:bg-white"
+                  className="h-12 w-12 rounded-full bg-indigo-600 hover:bg-gray-200"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -111,7 +111,7 @@ export default function TailNav ()
                 href="https://www.linkedin.com/in/joshua-vaughn/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="text-2x1  transition-colors hover:text-white dark:hover:text-indigo-600"
+                className="text-2x1  transition-colors hover:text-gray-200 dark:hover:text-indigo-600"
               >
                 <svg
                   stroke="currentColor"
