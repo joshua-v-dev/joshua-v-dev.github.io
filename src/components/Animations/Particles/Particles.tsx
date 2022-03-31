@@ -1,6 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
+
 export default function ParticleAnimation ()
 {
   return (
@@ -9,14 +10,13 @@ export default function ParticleAnimation ()
         options={ {
           retina_detect: true,
           fps_limit: 60,
-          preset: "seaanemone",
           backgroundMode: {
             enable: true
           },
           outModes: {
-            bottom: "destroy",
+            bottom: "bounce",
             default: "destroy",
-            top: "bounce"
+            top: "destroy"
           },
           fullScreen: {
             enable: true,
@@ -25,36 +25,39 @@ export default function ParticleAnimation ()
           particles: {
             bounce: {
               vertical: {
-                value: 0.88,
+                value: 0.69,
                 random: {
                   enable: true,
-                  minimumValue: 0.4
+                  minimumValue: 0.39
                 }
               }
             },
+
             color: {
-              value: "rgb(52, 211, 153)"
-            },
-            links: {
-              enable: true
+              value: [ "rgb(167, 243, 208)", "#5a67d8", "rgb(79 70 229)" ],
+              animation: {
+                enable: true,
+                speed: 0.39,
+                sync: true
+              }
             },
             number: {
-              value: 27,
-              limit: 270,
+              value: 120,
+              limit: 400,
               density: {
                 enable: true,
-                value_area: 540,
+                value_area: 600,
               },
             },
             orbit: {
               enable: true,
               rotation: {
-                value: 360,
+                value: 720,
               },
             },
             tilt: {
               enable: true,
-              value: 90,
+              value: 69,
             },
             collisions: {
               enable: true,
@@ -62,59 +65,60 @@ export default function ParticleAnimation ()
             },
             roll: {
               enable: true,
-              speed: 0.27,
+              speed: 0.39,
             },
 
             shape: {
-              type: [ "triangle", "edge", "polygon" ],
+              type: [ "triangle", "circle" ],
               stroke: {
-                width: 27,
-                color: "#0072b1",
+                width: 69,
+
               },
               polygon: {
-                nb_sides: 12,
+                nb_sides: 69,
               },
 
-            },
-            opacity: {
-              value: 0.88,
-              random: true,
-              anim: {
-                enable: true,
-                speed: 1,
-                opacity_min: 0.28,
-                sync: true,
-              },
             },
             size: {
-              value: 27,
+              value: { min: 39, max: 99 },
+              random: true,
+              animation: {
+                enable: true,
+                speed: 0.39,
+                size_min: 0.39,
+                sync: true,
+                minimumValue: 0.69,
+                startValue: "min",
+
+              }
+            },
+            opacity: {
+              value: 0.69,
               random: true,
               anim: {
                 enable: true,
-                speed: 0.27,
-                size_min: 0.27,
+                speed: 0.39,
+                opacity_min: 0.39,
                 sync: true,
               },
             },
-            line_linked: {
-              enable: true,
-              distance: 540,
-
-              color: "rgb(167, 243, 208)",
-              opacity: 1.5,
-              width: 3,
-            },
+            // line_linked: {
+            //   enable: true,
+            //   distance: 69,
+            //   opacity: 1,
+            //   width: 6,
+            // },
             move: {
               gravity: {
                 enable: true,
-                acceleration: 0.27,
-                maxSpeed: 1,
+                acceleration: 0.69,
+                maxSpeed: 3.99,
 
               },
               enable: true,
-              speed: 0.27,
+              speed: { min: 0.39, max: 0.99 },
               direction: "bottom",
-              random: true,
+              random: false,
               straight: true,
               out_mode: "bounceVertical",
               bounce: true,
@@ -127,51 +131,59 @@ export default function ParticleAnimation ()
           },
           interactivity: {
             detect_on: "window",
+
             events: {
+
               onHover: {
                 enable: true,
                 mode: "connect",
                 parallax: {
                   enable: true,
-                  force: 270,
-                  smooth: 420,
+                  force: 360,
+                  smooth: 720,
                 },
               },
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: "trail",
 
               },
+
               resize: true,
             },
             modes: {
+              trail: {
+                delay: 0.1,
+                quantity: 1
+              },
+
               grab: {
-                distance: 18,
+                distance: 39,
                 lineLinked: {
-                  opacity: 0.88,
+                  opacity: 0.99,
                 },
               },
               bubble: {
-                distance: 27,
-                size: 18,
-                duration: 18,
-                opacity: 0.88,
+                distance: 39,
+                size: 39,
+                duration: 99,
+                opacity: 0.99,
               },
               repulse: {
-                distance: 27,
+                distance: 39,
               },
               push: {
-                particles_nb: 18,
+                particles_nb: 39,
               },
               remove: {
-                particles_nb: 27,
+                particles_nb: 39,
               },
             },
           },
           backgroundMask: {
             enable: true,
             cover: {
-              opacity: 0.88,
+              opacity: 0.69,
               color: {
                 value: {
                   r: 27,
