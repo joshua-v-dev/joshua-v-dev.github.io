@@ -4,7 +4,7 @@ export default function Onboarding ()
 {
   return (
     <>
-      <div className="container mx-auto my-auto px-20 grid items-center justify-center space-y-8">
+      <div className="container mx-auto my-auto px-36 grid items-center justify-center space-y-8">
         <h2 className="  text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
           First, What brings you here?
         </h2>
