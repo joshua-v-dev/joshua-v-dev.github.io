@@ -56,7 +56,7 @@ const Footer: FunctionComponent<FooterProps> = () =>
                 </li>
               </ul>
               <a
-                className="text-md inline-block rounded border border-indigo-900 bg-indigo-800 px-5 py-3 font-semibold text-gray-200 brightness-200 transition duration-200 hover:border-indigo-600 hover:bg-indigo-600"
+                className="text-md inline-block rounded border border-indigo-900 bg-indigo-700 px-5 py-3 font-semibold text-gray-200 brightness-125 transition duration-200 hover:border-indigo-600 hover:bg-indigo-600"
                 href="#"
               >
                 Get in Touch

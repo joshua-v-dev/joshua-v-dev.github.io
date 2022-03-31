@@ -6,15 +6,15 @@ export default function TopPicks ()
 {
 	return (
 		<>
-			<div className=' grid items-center justify-center my-32 space-y-8 space-x-8'>
-				<div className='container grid grid-flow-col-dense grid-cols-3 gap-x-16  bg-transparent'>
+			<div className=' grid items-center justify-center my-10 space-y-8 space-x-4'>
+				<div className='container grid grid-flow-col-dense grid-cols-3 gap-x-8 sm:grid-cols-1 bg-transparent'>
 					{ topPicks.map(
 						( topPicks, i ): FunctionComponentElement<PageTransitionEvent> => (
 							<div
 								key={ i }
 								className='container grid border-2 p-8 border-gray-200 bg-black justify-center items-center'>
 								<a
-									className='relative h-96 w-96 p-8 border-2 border-gray-200'
+									className='relative h-80 w-80 p-8 border-2 border-gray-200'
 									href={ topPicks.href }
 									data-mdb-ripple='true'
 									data-mdb-ripple-color='light '>

@@ -2,7 +2,7 @@ export default function HomeCta ()
 {
   return (
     <>
-      <section className=" mx-auto grid grid-flow-col grid-cols-1 items-center justify-center px-48 py-48 lg:space-y-24 brightness-125">
+      <section className="  grid grid-flow-col grid-cols-1 items-center justify-center p-10 mx-auto lg:space-y-24 brightness-125">
         <div className="container ">
           <div className=" flex flex-wrap items-center ">
             <div className="text-center md:w-1/2 lg:w-1/4 ">
