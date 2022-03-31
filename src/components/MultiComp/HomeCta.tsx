@@ -3,7 +3,7 @@ export default function HomeCta ()
   return (
     <>
       <section className="container">
-        <div className="container  mx-auto grid grid-flow-col grid-cols-1 items-center justify-center px-28 py-32 brightness-125  ">
+        <div className=" mx-auto grid grid-flow-col grid-cols-1 items-center justify-center px-28 py-28 brightness-125  ">
           <div className=" flex flex-wrap items-center ">
             <div className="text-center md:w-1/2 lg:w-1/4 ">
               <svg

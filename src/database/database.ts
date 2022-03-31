@@ -15,7 +15,7 @@ export const features = [
 	},
 	{
 		id: 1,
-		name: 'Next.js with TypeScript & Tailwindcss Production Build',
+		name: 'Next.js, TypeScript & Tailwindcss',
 		description:
 			'Secure, Scalable & Fast. Built with Next.js, TypeScript, & Tailwindcss. Production ready for production deployment.',
 		icon: ScaleIcon,
@@ -31,7 +31,7 @@ export const features = [
 		id: 3,
 		name: 'Modern UX Principles & Architecture',
 		description:
-			'Built with React Hooks, Context, & Redux. No need to worry about the details. Just focus on building your app.',
+			'Using JAM Stack tooling. No need to worry about the details. Just focus on building your app.',
 		icon: AnnotationIcon,
 	},
 ]

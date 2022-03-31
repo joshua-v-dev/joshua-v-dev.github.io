@@ -4,9 +4,9 @@ import { features } from "../../database/database";
 export default function Technologies ()
 {
   return (
-    <div className="grid grid-flow-row  mx-auto bg-transparent py-16">
+    <div className="grid grid-flow-row  mx-auto bg-transparent lg:my-24">
       <div className="mx-auto max-w-7xl space-y-8  sm:px-4 ">
-        <div className=" relative space-y-2 lg:text-center">
+        <div className=" relative space-y-4 lg:text-center">
           <h1 className=" text-6xl font-extrabold uppercase tracking-wide text-indigo-700 brightness-125">
             Technologies
           </h1>
@@ -18,8 +18,8 @@ export default function Technologies ()
             focus on building your app.
           </p>
 
-          <div className="grid grid-flow-row p-4">
-            <dl className=" grid grid-cols-2  gap-x-12 gap-y-12  ">
+          <div className="grid grid-flow-row ">
+            <dl className=" grid grid-cols-2  gap-x-8 gap-y-8  ">
               { features.map( ( feature ) => (
                 <div key={ feature.id } className="relative  ">
 
