@@ -69,7 +69,7 @@ export default function ParticleAnimation ()
             },
 
             shape: {
-              type: [ "triangle", "circle" ],
+              type: [ "circle" ],
               stroke: {
                 width: 69,
 
@@ -93,7 +93,7 @@ export default function ParticleAnimation ()
               }
             },
             opacity: {
-              value: 0.69,
+              value: 3,
               random: true,
               anim: {
                 enable: true,
@@ -102,12 +102,7 @@ export default function ParticleAnimation ()
                 sync: true,
               },
             },
-            // line_linked: {
-            //   enable: true,
-            //   distance: 69,
-            //   opacity: 1,
-            //   width: 6,
-            // },
+
             move: {
               gravity: {
                 enable: true,
@@ -183,11 +178,11 @@ export default function ParticleAnimation ()
           backgroundMask: {
             enable: true,
             cover: {
-              opacity: 0.69,
+              opacity: 0.79,
               color: {
                 value: {
                   r: 27,
-                  g: 17,
+                  g: 27,
                   b: 27,
                 },
               },

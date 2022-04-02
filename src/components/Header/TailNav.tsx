@@ -6,11 +6,11 @@ export default function TailNav ()
 {
   return (
     <>
-      <section className=" bg-transparent py-8 px-4 lg:px-10 ">
+      <section className=" bg-transparent p-4 ">
         <nav className="relative flex items-center justify-between ">
           <div className="hidden lg:flex">
             <a
-              className=" rounded-full border border-indigo-900 px-8 py-2 font-bold brightness-200  text-blue-900  shadow-green-500/50 hover:brightness-200 hover:text-gray-200 hover:border-gray-300 lg:flex"
+              className=" rounded-full border border-indigo-900 px-4 py-1 font-bold brightness-200  text-blue-900  shadow-green-500/50 hover:brightness-200 hover:text-gray-200 hover:border-gray-300 lg:flex"
               href="#"
             >
               Want To Play A Game?
@@ -94,7 +94,7 @@ export default function TailNav ()
               <a href="https://github.com/joshua-v-dev">
                 <svg
                   stroke="currentColor"
-                  className="h-12 w-12 rounded-full bg-indigo-600 hover:bg-gray-200"
+                  className="h-10 w-10 rounded-full bg-indigo-600 hover:bg-gray-200"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -116,7 +116,7 @@ export default function TailNav ()
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  className="h-12 w-12 rounded-xl bg-indigo-600 p-1"
+                  className="h-10 w-10 rounded-xl bg-indigo-600 p-1"
                   viewBox="0 0 450 510"
                   xmlns="http://www.w3.org/2000/svg"
                 >

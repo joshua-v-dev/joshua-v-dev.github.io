@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { featuredProducts } from "../../database/database";
 
-let slideInterval: any;
+
+let slideInterval: NodeJS.Timer
 
 const ImageCarousel = () =>
 {
@@ -28,9 +29,9 @@ const ImageCarousel = () =>
     {
       clearInterval( slideInterval );
     };
-  }, [] );
+  }, [ currentIndex ] );
   return (
-    <section className="container max-h-full max-w-6xl mx-auto my-auto grid items-center justify-center  rounded-3xl bg-opacity-30 py-24 px-50 brightness-125 bg-indigo-600">
+    <section className="container max-h-full max-w-6xl mx-auto  grid items-center justify-center  rounded-3xl bg-opacity-30  brightness-125 bg-indigo-600">
       <div className="flex flex-wrap items-center ">
         <button
           className="hidden h-16 w-16 rounded-full bg-indigo-600 p-5 transition duration-200 hover:bg-indigo-700 lg:block"
@@ -105,14 +106,15 @@ const ImageCarousel = () =>
             ></path>
           </svg>
         </button>
-        <div className="w-full text-center">
-          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-500 bg-indigo-500"></button>
+        {/* <div className="w-full text-center">
+          <button className="mr-2 h-3 w-3 rounded-full border border-indigo-500 bg-indigo-500" ></button>
           <button className="mr-2 h-3 w-3 rounded-full border border-indigo-500"></button>
           <button className="mr-2 h-3 w-3 rounded-full border border-indigo-500"></button>
           <button className="h-3 w-3 rounded-full border border-indigo-500"></button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
 };
 export default ImageCarousel;
+

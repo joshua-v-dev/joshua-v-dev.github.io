@@ -8,7 +8,7 @@ export default function TopPicks ()
 		<>
 			<div className='container grid items-center justify-center my-10 '>
 				<div className='container grid grid-flow-col-dense  grid-cols-3
-				 gap-x-8 sm:grid-cols-1 bg-transparent shadow-indigo-600  '>
+				 gap-x-24 sm:grid-cols-1 bg-transparent shadow-indigo-600  '>
 					{ topPicks.map(
 						( topPicks, i ): FunctionComponentElement<PageTransitionEvent> => (
 							<div

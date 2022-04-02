@@ -1,6 +1,6 @@
 import React from "react";
 import HomeHero from "../Hero/HomeHero";
-import HomeMain from "../Main/HomeMain";
+import HomeCta from "../MultiComp/HomeCta";
 
 export default function HomePage ()
 {
@@ -8,7 +8,7 @@ export default function HomePage ()
     <>
 
       <HomeHero />
-      <HomeMain />
+      <HomeCta />
     </>
   );
 }

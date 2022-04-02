@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import Image from 'next/image'
 
 type FooterProps = {
 
@@ -11,18 +12,28 @@ const Footer: FunctionComponent<FooterProps> = () =>
 {
   return (
     <>
-      <section className="max-h-max bg-transparent lg:py-12">
-        <div className="container mx-auto px-4">
-          <div className=" flex flex-wrap items-center justify-end">
-            <div className=" px-auto  lg:mb-0 ">
-              <p className="bg-gradient-to-r from-blue-500 to-indigo-800 bg-clip-text text-5xl font-black text-transparent brightness-125">
-                #FullStackDeveloper
-              </p>
+      <section className="max-h-max bg-transparent py-6 ">
+
+        <div className="container mx-auto ">
+
+          <div className="lg:flex lg:space-x-32  sm:grid sm:items-center sm:justify-center">
+            <div className="relative h-20 w-20 lg:flex">
+              <Image
+                className="relative  object-contain rounded-full bg-opacity-3"
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648330190/JV_LOGO_BLUE_NEON_flabe5.png"
+                alt=""
+                layout="fill"
+              ></Image>
             </div>
 
-            <div className="flex w-full flex-wrap items-center px-4 lg:w-1/2 lg:justify-end">
-              <ul className="mb-8 inline-flex w-full flex-wrap lg:mb-0 lg:mr-12 lg:w-auto">
-                <li className="mr-6 mb-2 md:mb-0">
+            <p className="bg-gradient-to-r from-blue-500 to-indigo-800 bg-clip-text text-5xl font-black text-transparent brightness-125">
+              #FullStackDeveloper
+            </p>
+
+
+            <div className="lg:flex grid grid-flow-col grid-cols-4 items-center">
+              <ul className="lg:flex grid gap-x-5 grid-flow-row grid-rows-1" >
+                <li >
                   <a
                     className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                     href="#"
@@ -30,7 +41,7 @@ const Footer: FunctionComponent<FooterProps> = () =>
                     About
                   </a>
                 </li>
-                <li className="mr-6 mb-2 md:mb-0">
+                <li>
                   <a
                     className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                     href="#"
@@ -38,7 +49,7 @@ const Footer: FunctionComponent<FooterProps> = () =>
                     Projects
                   </a>
                 </li>
-                <li className="mr-6 mb-2 md:mb-0">
+                <li >
                   <a
                     className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                     href="#"
@@ -46,7 +57,7 @@ const Footer: FunctionComponent<FooterProps> = () =>
                     Services
                   </a>
                 </li>
-                <li className="mb-2 md:mb-0">
+                <li >
                   <a
                     className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                     href="#"
@@ -55,12 +66,6 @@ const Footer: FunctionComponent<FooterProps> = () =>
                   </a>
                 </li>
               </ul>
-              <a
-                className="text-md inline-block rounded border border-indigo-900 bg-indigo-700 px-5 py-3 font-semibold text-gray-200 brightness-125 transition duration-200 hover:border-indigo-600 hover:bg-indigo-600"
-                href="#"
-              >
-                Get in Touch
-              </a>
             </div>
           </div>
         </div>
