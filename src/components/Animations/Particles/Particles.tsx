@@ -34,19 +34,19 @@ export default function ParticleAnimation ()
             },
 
             color: {
-              value: [ "rgb(167, 243, 208)", "#5a67d8", "rgb(79 70 229)" ],
+              value: [ "rgb(167, 250, 208)" ],
               animation: {
                 enable: true,
-                speed: 0.39,
+                speed: 0.00039,
                 sync: true
               }
             },
             number: {
-              value: 120,
-              limit: 400,
+              value: 90,
+              limit: 450,
               density: {
                 enable: true,
-                value_area: 600,
+                value_area: 1080,
               },
             },
             orbit: {
@@ -57,11 +57,11 @@ export default function ParticleAnimation ()
             },
             tilt: {
               enable: true,
-              value: 69,
+              value: 360,
             },
             collisions: {
               enable: true,
-              mode: "absorb",
+              mode: "bounce",
             },
             roll: {
               enable: true,
@@ -87,7 +87,7 @@ export default function ParticleAnimation ()
                 speed: 0.39,
                 size_min: 0.39,
                 sync: true,
-                minimumValue: 0.69,
+                minimumValue: 0.39,
                 startValue: "min",
 
               }
@@ -106,8 +106,8 @@ export default function ParticleAnimation ()
             move: {
               gravity: {
                 enable: true,
-                acceleration: 0.69,
-                maxSpeed: 3.99,
+                acceleration: 0.0000003,
+                maxSpeed: 3,
 
               },
               enable: true,
@@ -115,7 +115,7 @@ export default function ParticleAnimation ()
               direction: "bottom",
               random: false,
               straight: true,
-              out_mode: "bounceVertical",
+              out_mode: "bounce",
               bounce: true,
               attract: {
                 enable: true,
@@ -148,8 +148,8 @@ export default function ParticleAnimation ()
             },
             modes: {
               trail: {
-                delay: 0.1,
-                quantity: 1
+                delay: 0.39,
+                quantity: 3
               },
 
               grab: {
@@ -159,10 +159,10 @@ export default function ParticleAnimation ()
                 },
               },
               bubble: {
-                distance: 39,
-                size: 39,
-                duration: 99,
-                opacity: 0.99,
+                distance: 69,
+                size: 69,
+                duration: 90,
+                opacity: 1,
               },
               repulse: {
                 distance: 39,
@@ -178,7 +178,7 @@ export default function ParticleAnimation ()
           backgroundMask: {
             enable: true,
             cover: {
-              opacity: 0.79,
+              opacity: 0.69,
               color: {
                 value: {
                   r: 27,
