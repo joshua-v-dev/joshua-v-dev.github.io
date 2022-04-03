@@ -1,8 +1,9 @@
 import React from "react";
-import HomeHero from "../Hero/HomeHero";
-import HomeCta from "../MultiComp/HomeCta";
+import HomeHero from "./HomeHero";
+import HomeCta from "./HomeCta";
 
-export default function HomePage() {
+export default function HomePage ()
+{
   return (
     <>
       <HomeHero />

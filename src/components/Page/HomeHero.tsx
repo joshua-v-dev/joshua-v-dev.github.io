@@ -1,6 +1,6 @@
-import HomeOnboarding from "../../components/Onboarding/HomeOnboarding";
+import HomeOnboarding from "../Onboarding/HomeOnboarding";
 import React from "react";
-import TailHero from "./TailHero";
+import TailHero from "../Hero/TailHero";
 
 type HeroProps = {
   isMain?: boolean;

@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Recruiter = () => {
+const Recruiter = () =>
+{
   return (
     <>
       <section className="overflow-hidden rounded-lg bg-gray-800 py-10 opacity-80 2xl:py-20">
         <div className="container mx-auto px-4">
           <Image
             className="relative  "
-            src="https://static.shuffle.dev/uploads/files/d2/d2b9d71d609f28a869486694342af661027ed370/Clean-Work-Place-LinkedIn-Banner-full-stack-1.png"
+            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg"
             alt=""
             width="1500"
             height="350"
@@ -35,7 +36,7 @@ const Recruiter = () => {
             <div className=" inline-flex items-center border-t border-gray-500 pt-14">
               <Image
                 className=" rounded-full "
-                src="https://static.shuffle.dev/uploads/files/d2/d2b9d71d609f28a869486694342af661027ed370/Green-Purple-Computing-Technology-Logo-blackback.png"
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg"
                 alt=""
                 width="50"
                 height="50"
