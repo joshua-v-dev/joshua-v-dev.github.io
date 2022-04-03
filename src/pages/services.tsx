@@ -1,9 +1,12 @@
 import Services from "../components/Page/Services";
-
-const ServicesPage = () => {
+import Layout from "../layout/Layout";
+const ServicesPage = () =>
+{
   return (
     <>
-      <Services />
+      <Layout>
+        <Services />
+      </Layout>
     </>
   );
 };

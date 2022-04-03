@@ -1,9 +1,12 @@
 import Story from "../components/Page/Story";
-
-const StoryPage = () => {
+import Layout from "../layout/Layout";
+const StoryPage = () =>
+{
   return (
     <>
-      <Story />
+      <Layout>
+        <Story />
+      </Layout>
     </>
   );
 };
