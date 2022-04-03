@@ -1,6 +1,7 @@
 // import Image from "next/image";
 
-export default function Onboarding() {
+export default function Onboarding ()
+{
   return (
     <>
       <div className="container mx-auto my-auto grid items-center justify-center space-y-8 px-36">

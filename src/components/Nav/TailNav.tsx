@@ -6,9 +6,9 @@ export default function TailNav ()
 {
   return (
     <>
-      <section className=" bg-transparent lg:p-6 sm:p-4 ">
-        <nav className="relative container flex items-center justify-between ">
-          <div className="sm:hidden lg:flex">
+      <section className="container bg-transparent lg:p-7 p-5 ">
+        <nav className="container relative flex items-center justify-between ">
+          <div className="hidden lg:flex">
             <a
               className=" rounded-full border border-indigo-900 px-4 py-1 font-bold text-blue-900  shadow-green-500/50  brightness-200 hover:border-gray-300 hover:text-gray-200 hover:brightness-200 lg:flex"
               href="#"
