@@ -3,6 +3,7 @@ import HomeHero from "./HomeHero";
 import HomeCta from "./HomeCta";
 
 
+
 export default function HomePage ()
 {
   return (
@@ -10,6 +11,7 @@ export default function HomePage ()
 
       <HomeHero />
       <HomeCta />
+
     </>
   );
 }

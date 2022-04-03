@@ -1,4 +1,4 @@
-import TopPicks from "../MultiComp/TopPicks";
+import GlassTopPicks from "../MultiComp/GlassTopPicks";
 import Onboarding from "../Onboarding/Onboarding";
 
 export default function HomeOnboarding ()
@@ -6,7 +6,7 @@ export default function HomeOnboarding ()
   return (
     <>
       <Onboarding />
-      <TopPicks />
+      <GlassTopPicks />
     </>
   );
 }
