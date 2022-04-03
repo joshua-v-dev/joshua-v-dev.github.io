@@ -2,7 +2,8 @@
 // import Link from 'next/link';
 import React from "react";
 
-export default function TailNav() {
+export default function TailNav ()
+{
   return (
     <>
       <section className=" bg-transparent p-4 ">
@@ -20,7 +21,7 @@ export default function TailNav() {
               <li>
                 <a
                   className="text-lg font-bold text-gray-500 brightness-125 hover:brightness-200"
-                  href="/gallery"
+                  href="/"
                 >
                   Home
                 </a>

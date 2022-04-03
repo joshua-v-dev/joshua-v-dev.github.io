@@ -101,7 +101,7 @@ export const topPicks = [
     href: "/recruiter",
   },
   {
-    name: "Contract",
+    name: "Freelance",
     description: "Let's build something together!",
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646888691/freelance-cta-card_a2k05w.png",
 
@@ -109,7 +109,7 @@ export const topPicks = [
     href: "/contract",
   },
   {
-    name: "The Future",
+    name: "Personal",
     description: "See What I'm Up To...",
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646889648/Dark_Mode_E-commerce_Online_Store_Logo_u1z1kr.png",
 
