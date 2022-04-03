@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-const Contract = () => {
+const Contract = () =>
+{
   return (
     <>
       <section className="relative overflow-hidden bg-transparent bg-center">
@@ -38,17 +39,6 @@ const Contract = () => {
                     height="500"
                   />
 
-                  {/* <video
-                    className="absolute top-1/2 left-1/2 min-h-full min-w-full max-w-none -translate-y-1/2 -translate-x-1/2 transform"
-                    src="https://res.cloudinary.com/dpytkhyme/image/upload/v1646914489/JV-BLK-RD-Logo_tzyuw8.gif"
-                    muted={true}
-                    width="200"
-                    height="200"
-                  ></video>
-                  <source
-                    src="https://res.cloudinary.com/dpytkhyme/image/upload/v1646914489/JV-BLK-RD-Logo_tzyuw8.gif"
-                    type="gif"
-                  ></source> */}
                 </div>
               </div>
             </div>

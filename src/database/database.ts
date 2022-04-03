@@ -95,7 +95,7 @@ export const topPicks = [
   {
     name: "Recruiter",
     description: "I'm Ready to Work!",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646886682/recruiter-card_tbnatw.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648967012/Recruiter_gx369v.png",
 
     imageAlt: "joshua vaughn portfolio",
     href: "/recruiter",
@@ -103,7 +103,7 @@ export const topPicks = [
   {
     name: "Freelance",
     description: "Let's build something together!",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646888691/freelance-cta-card_a2k05w.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648966991/Freelance_fgje1v.png",
 
     imageAlt: "contract me",
     href: "/contract",
@@ -111,7 +111,7 @@ export const topPicks = [
   {
     name: "Personal",
     description: "See What I'm Up To...",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1646889648/Dark_Mode_E-commerce_Online_Store_Logo_u1z1kr.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648967008/Personal_nxvarr.png",
 
     imageAlt: "shopify",
     href: "/future",
