@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "../Animations/Particles/index";
-import TailNav from "./TailNav";
+import TailNav from "../Nav/TailNav";
 
 
 type HeaderProps = {
