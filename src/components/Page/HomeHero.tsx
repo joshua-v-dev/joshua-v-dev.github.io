@@ -1,4 +1,4 @@
-import HomeOnboarding from "../Onboarding/HomeOnboarding";
+import HomeOnboarding from "./HomeOnboarding";
 import React from "react";
 import TailHero from "../Hero/TailHero";
 
