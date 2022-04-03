@@ -1,9 +1,8 @@
-const Cta = () =>
-{
+const Cta = () => {
   return (
     <>
-      <section >
-        <div className="container p-10 -space-x-10 grid grid-flow-col grid-cols-4 items-center justify-center ">
+      <section>
+        <div className="container grid grid-flow-col grid-cols-4 items-center justify-center -space-x-10 p-10 ">
           <div className="text-center  brightness-125">
             <svg
               className="mx-auto "
@@ -60,9 +59,7 @@ const Cta = () =>
               <circle cx="24" cy="24" r="23.5" stroke=" #0072b1"></circle>
             </svg>
             <h3 className="  text-3xl font-bold text-blue-500">E-Commerce</h3>
-            <p className="text-xl text-gray-300">
-              Stores, Themes & Apps
-            </p>
+            <p className="text-xl text-gray-300">Stores, Themes & Apps</p>
           </div>
           <div className="  text-center ">
             <svg
@@ -79,22 +76,17 @@ const Cta = () =>
               ></path>
               <circle cx="24" cy="24" r="23.5" stroke=" #0072b1"></circle>
             </svg>
-            <h3 className="  text-3xl font-bold text-blue-500">
-              Hiring Me
-            </h3>
-            <p className="text-xl text-gray-300">
-              Powerful. Simple. Flexible.
-            </p>
+            <h3 className="  text-3xl font-bold text-blue-500">Hiring Me</h3>
+            <p className="text-xl text-gray-300">Powerful. Simple. Flexible.</p>
           </div>
         </div>
-
       </section>
       <section className="relative overflow-hidden bg-gray-800 pt-20 pb-32  2xl:py-40">
         <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-bl from-teal-400 to-teal-900  opacity-30"></div>
-        <div className=" bg-gradient-tr absolute inset-x-0 bottom-0 -ml-64 -mb-12 h-3/5 -rotate-6 transform from-blue-400 to-orange-800"></div>
+        <div className=" bg-gradient-tr to-orange-800 absolute inset-x-0 bottom-0 -ml-64 -mb-12 h-3/5 -rotate-6 transform from-blue-400"></div>
         <div className="container relative mx-auto px-3">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="bg-gradient-to-br from-yellow-200 to-orange-600 bg-clip-text text-lg font-bold text-transparent">
+            <span className="to-orange-600 bg-gradient-to-br from-yellow-200 bg-clip-text text-lg font-bold text-transparent">
               LET&apos;S CHANGE THE WORLD!
             </span>
             <h2 className="font-heading my-10 text-5xl font-bold text-gray-200 lg:text-6xl">

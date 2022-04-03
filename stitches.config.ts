@@ -1,7 +1,6 @@
 import { createStitches } from "@stitches/react";
 import type * as Stitches from "@stitches/react";
 
-
 export const stitches = createStitches({
   prefix: "",
 
@@ -19,7 +18,6 @@ export const stitches = createStitches({
     },
     // colors
     colors: {
-     
       transparent: "transparent",
       current: "currentColor",
       black: "#000",
@@ -811,6 +809,5 @@ export const stitches = createStitches({
   },
 });
 
-export const { css,  styled, globalCss, keyframes, getCssText, theme } =
+export const { css, styled, globalCss, keyframes, getCssText, theme } =
   stitches;
-

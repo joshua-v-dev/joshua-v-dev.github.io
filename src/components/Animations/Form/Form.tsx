@@ -3,7 +3,6 @@ import { useState, ChangeEvent } from "react";
 export default function App() {
   const [selectValue, setSelectValue] = useState("coconut");
 
-  
   const handleSubmit = () => {
     console.log("Form was submitted!");
   };

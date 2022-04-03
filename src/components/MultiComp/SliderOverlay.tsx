@@ -2,20 +2,19 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 
-export default function SliderOverlay ()
-{
-  const [ open, setOpen ] = useState( true );
+export default function SliderOverlay() {
+  const [open, setOpen] = useState(true);
 
   return (
-    <Transition.Root show={ open } as={ Fragment }>
+    <Transition.Root show={open} as={Fragment}>
       <Dialog
         as="div"
-        className="lg:hidden sm:visible fixed inset-0 overflow-hidden"
-        onClose={ setOpen }
+        className="fixed inset-0 overflow-hidden sm:visible lg:hidden"
+        onClose={setOpen}
       >
         <div className="absolute inset-0 overflow-hidden">
           <Transition.Child
-            as={ Fragment }
+            as={Fragment}
             enter="ease-in-out duration-500"
             enterFrom="opacity-0"
             enterTo="opacity-100"
@@ -27,7 +26,7 @@ export default function SliderOverlay ()
           </Transition.Child>
           <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
             <Transition.Child
-              as={ Fragment }
+              as={Fragment}
               enter="transform transition ease-in-out duration-500 sm:duration-700"
               enterFrom="translate-x-full"
               enterTo="translate-x-0"
@@ -37,7 +36,7 @@ export default function SliderOverlay ()
             >
               <div className="relative w-screen max-w-md">
                 <Transition.Child
-                  as={ Fragment }
+                  as={Fragment}
                   enter="ease-in-out duration-500"
                   enterFrom="opacity-0"
                   enterTo="opacity-100"
@@ -49,7 +48,7 @@ export default function SliderOverlay ()
                     <button
                       type="button"
                       className="rounded-md text-gray-300 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                      onClick={ () => setOpen( false ) }
+                      onClick={() => setOpen(false)}
                     >
                       <span className="sr-only">Close panel</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
@@ -63,14 +62,14 @@ export default function SliderOverlay ()
                     </Dialog.Title>
                   </div>
                   <div className="relative flex-1 px-4 sm:px-6">
-                    {/* Replace with your content */ }
+                    {/* Replace with your content */}
                     <div className="absolute inset-0 px-4 sm:px-6">
                       <div
                         className="h-full border-2 border-dashed border-gray-200"
                         aria-hidden="true"
                       />
                     </div>
-                    {/* /End replace */ }
+                    {/* /End replace */}
                   </div>
                 </div>
               </div>

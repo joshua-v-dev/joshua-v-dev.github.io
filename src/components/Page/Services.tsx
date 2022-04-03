@@ -1,6 +1,5 @@
 import Layout from "../../layout/Layout";
-const Services = () =>
-{
+const Services = () => {
   return (
     <>
       <Layout>
@@ -9,7 +8,7 @@ const Services = () =>
           <div className="w-2full bg-gradient-zospace-2 absolute inset-x-0 bottom-0 -ml-64 -mb-12 h-3/5 -rotate-6 transform"></div>
           <div className="container relative mx-auto px-3">
             <div className="mx-auto max-w-3xl text-center">
-              <span className="bg-gradient-to-br from-yellow-200 to-orange-600 bg-clip-text text-2xl font-extrabold text-transparent brightness-125">
+              <span className="to-orange-600 bg-gradient-to-br from-yellow-200 bg-clip-text text-2xl font-extrabold text-transparent brightness-125">
                 Two ways to start!
               </span>
               <h2 className="font-heading my-10 text-5xl font-bold text-gray-200 lg:text-6xl">

@@ -1,22 +1,20 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-
-export default function ParticleAnimation ()
-{
+export default function ParticleAnimation() {
   return (
     <>
       <Particles
-        options={ {
+        options={{
           retina_detect: true,
           fps_limit: 60,
           backgroundMode: {
-            enable: true
+            enable: true,
           },
           outModes: {
             bottom: "bounce",
             default: "destroy",
-            top: "destroy"
+            top: "destroy",
           },
           fullScreen: {
             enable: true,
@@ -28,18 +26,18 @@ export default function ParticleAnimation ()
                 value: 0.9,
                 random: {
                   enable: true,
-                  minimumValue: 0.09
-                }
-              }
+                  minimumValue: 0.09,
+                },
+              },
             },
 
             color: {
-              value: [ "rgb(167, 250, 208)" ],
+              value: ["rgb(167, 250, 208)"],
               animation: {
                 enable: true,
                 speed: 0.00039,
-                sync: true
-              }
+                sync: true,
+              },
             },
             number: {
               value: 60,
@@ -69,15 +67,13 @@ export default function ParticleAnimation ()
             },
 
             shape: {
-              type: [ "circle" ],
+              type: ["circle"],
               stroke: {
                 width: 39,
-
               },
               polygon: {
                 nb_sides: 9,
               },
-
             },
             size: {
               value: { min: 39, max: 49 },
@@ -89,8 +85,7 @@ export default function ParticleAnimation ()
                 sync: true,
                 minimumValue: 0.39,
                 startValue: "min",
-
-              }
+              },
             },
             opacity: {
               value: 2,
@@ -108,7 +103,6 @@ export default function ParticleAnimation ()
                 enable: true,
                 acceleration: 0.03,
                 maxSpeed: 3,
-
               },
               enable: true,
               speed: { min: 0.39, max: 0.69 },
@@ -128,7 +122,6 @@ export default function ParticleAnimation ()
             detect_on: "window",
 
             events: {
-
               onHover: {
                 enable: true,
                 mode: "connect",
@@ -141,7 +134,6 @@ export default function ParticleAnimation ()
               onClick: {
                 enable: true,
                 mode: "trail",
-
               },
 
               resize: true,
@@ -149,7 +141,7 @@ export default function ParticleAnimation ()
             modes: {
               trail: {
                 delay: 0.39,
-                quantity: 3
+                quantity: 3,
               },
 
               grab: {
@@ -192,10 +184,8 @@ export default function ParticleAnimation ()
             image:
               "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1645573359/deep_space_bg_multi_right_a1opj9.png')",
           },
-        } }
+        }}
       />
     </>
   );
 }
-
-

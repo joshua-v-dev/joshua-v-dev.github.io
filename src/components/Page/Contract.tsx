@@ -20,7 +20,7 @@ const Contract = () => {
                 <div className="flex flex-wrap">
                   <div className="w-full py-1 md:mr-4 md:w-auto md:py-0">
                     <a
-                      className="inline-block w-full rounded-xl border border-violet-500 bg-violet-500 py-3 px-5 text-center text-base font-medium leading-4 text-violet-50 shadow-sm hover:bg-violet-600 focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50 md:text-lg"
+                      className="border-violet-500 bg-violet-500 text-violet-50 hover:bg-violet-600 focus:ring-violet-500 inline-block w-full rounded-xl border py-3 px-5 text-center text-base font-medium leading-4 shadow-sm focus:ring-2 focus:ring-opacity-50 md:text-lg"
                       href="#"
                     >
                       Request a Demo

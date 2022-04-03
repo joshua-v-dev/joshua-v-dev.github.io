@@ -1,8 +1,6 @@
-
 import Image from "next/image";
 
-export default function GlassCard ()
-{
+export default function GlassCard() {
   <div className="flex min-h-screen flex-col justify-center bg-gray-100 py-6 sm:py-12">
     <div className="relative py-3 sm:mx-auto sm:max-w-xl">
       <div className="relative border border-gray-200 bg-gray-200 bg-opacity-60 bg-clip-padding px-4 py-10 shadow-lg sm:rounded-3xl sm:p-20">
@@ -24,7 +22,7 @@ export default function GlassCard ()
                 <li className="flex items-start">
                   <span className="flex h-6 items-center sm:h-7">
                     <svg
-                      className="h-5 w-5 flex-shrink-0 text-cyan-500"
+                      className="text-cyan-500 h-5 w-5 flex-shrink-0"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -39,14 +37,14 @@ export default function GlassCard ()
                     Customizing your
                     <code className="text-sm font-bold text-gray-900">
                       tailwind.config.js
-                    </code>{ " " }
+                    </code>{" "}
                     file
                   </p>
                 </li>
                 <li className="flex items-start">
                   <span className="flex h-6 items-center sm:h-7">
                     <svg
-                      className="h-5 w-5 flex-shrink-0 text-cyan-500"
+                      className="text-cyan-500 h-5 w-5 flex-shrink-0"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -67,7 +65,7 @@ export default function GlassCard ()
                 <li className="flex items-start">
                   <span className="flex h-6 items-center sm:h-7">
                     <svg
-                      className="h-5 w-5 flex-shrink-0 text-cyan-500"
+                      className="text-cyan-500 h-5 w-5 flex-shrink-0"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -93,8 +91,8 @@ export default function GlassCard ()
                   href="https://tailwindcss.com/docs"
                   className="text-cyan-600 hover:text-cyan-700"
                 >
-                  { " " }
-                  Read the docs &rarr;{ " " }
+                  {" "}
+                  Read the docs &rarr;{" "}
                 </a>
               </p>
             </div>

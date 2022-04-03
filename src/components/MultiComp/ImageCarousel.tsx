@@ -1,51 +1,40 @@
 import React, { useState, useEffect } from "react";
 import { featuredProducts } from "../../database/database";
 
+let slideInterval: NodeJS.Timer;
 
-let slideInterval: NodeJS.Timer
+const ImageCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-const ImageCarousel = () =>
-{
-  const [ currentIndex, setCurrentIndex ] = useState( 0 );
-
-  useEffect( () =>
-  {
-    slideInterval = setInterval( () =>
-    {
-      setCurrentIndex( ( currentIndex ) =>
-      {
-        if ( currentIndex === featuredProducts.length - 1 )
-        {
+  useEffect(() => {
+    slideInterval = setInterval(() => {
+      setCurrentIndex((currentIndex) => {
+        if (currentIndex === featuredProducts.length - 1) {
           return 0;
         }
         return currentIndex + 1;
-      } );
-    }, 4000 );
-  }, [] );
+      });
+    }, 4000);
+  }, []);
 
-  useEffect( () =>
-  {
-    return () =>
-    {
-      clearInterval( slideInterval );
+  useEffect(() => {
+    return () => {
+      clearInterval(slideInterval);
     };
-  }, [ currentIndex ] );
+  }, [currentIndex]);
   return (
-    <section className="container max-h-full max-w-6xl mx-auto  grid items-center justify-center  rounded-3xl bg-opacity-30  brightness-125 bg-indigo-600">
+    <section className="container mx-auto grid max-h-full  max-w-6xl items-center justify-center  rounded-3xl bg-indigo-600  bg-opacity-30 brightness-125">
       <div className="flex flex-wrap items-center ">
         <button
           className="hidden h-16 w-16 rounded-full bg-indigo-600 p-5 transition duration-200 hover:bg-indigo-700 lg:block"
-          onClick={ () =>
-          {
-            setCurrentIndex( ( currentIndex ) =>
-            {
-              if ( currentIndex === 0 )
-              {
+          onClick={() => {
+            setCurrentIndex((currentIndex) => {
+              if (currentIndex === 0) {
                 return featuredProducts.length - 1;
               }
               return currentIndex - 1;
-            } );
-          } }
+            });
+          }}
         >
           <svg
             className="text-indigo-400 hover:text-indigo-500"
@@ -72,24 +61,21 @@ const ImageCarousel = () =>
           </p>
           <a
             className="inline-block rounded border border-gray-200 bg-indigo-600 px-5 py-3 text-sm font-semibold text-gray-200 transition duration-200 hover:bg-indigo-700"
-            href={ featuredProducts[ currentIndex ]?.toString() }
+            href={featuredProducts[currentIndex]?.toString()}
           >
             Learn More
           </a>
         </div>
         <button
-          className="hidden h-16 w-16 rounded-full bg-indigo-600 hover:text-indigo-500 hover:bg-indigo-700 p-5 transition duration-200  lg:block"
-          onClick={ () =>
-          {
-            setCurrentIndex( ( currentIndex ) =>
-            {
-              if ( currentIndex === featuredProducts.length - 1 )
-              {
+          className="hidden h-16 w-16 rounded-full bg-indigo-600 p-5 transition duration-200 hover:bg-indigo-700 hover:text-indigo-500  lg:block"
+          onClick={() => {
+            setCurrentIndex((currentIndex) => {
+              if (currentIndex === featuredProducts.length - 1) {
                 return 0;
               }
               return currentIndex + 1;
-            } );
-          } }
+            });
+          }}
         >
           <svg
             className="text-indigo-400 hover:text-indigo-500"
@@ -117,4 +103,3 @@ const ImageCarousel = () =>
   );
 };
 export default ImageCarousel;
-

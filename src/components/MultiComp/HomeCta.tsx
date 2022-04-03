@@ -1,8 +1,7 @@
-export default function HomeCta ()
-{
+export default function HomeCta() {
   return (
     <>
-      <section className="flex justify-center mx-auto ">
+      <section className="mx-auto flex justify-center ">
         <div className="container max-w-screen-xl  overflow-hidden rounded-3xl bg-gray-300">
           <div className="mx-auto max-w-5xl py-8 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-14 lg:px-8">
             <h2 className="text-3xl font-extrabold tracking-tight text-blue-400 sm:text-4xl">
@@ -32,8 +31,6 @@ export default function HomeCta ()
           </div>
         </div>
       </section>
-
-
     </>
   );
 }

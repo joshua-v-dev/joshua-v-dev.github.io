@@ -1,10 +1,6 @@
-
-
-export default function Acomplishments ()
-{
+export default function Acomplishments() {
   return (
     <>
-
       <h2 className=" flex items-center justify-center space-y-16 p-1 text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
         Highlights
       </h2>
@@ -96,11 +92,10 @@ export default function Acomplishments ()
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     I started learning about game development in the summer of
-                    2020 & quickly fell in love. I started learning about
-                    asset design software such as Blender. 3D rendering
-                    frameworks such as Babylon.js & Three.js. I also learned
-                    about the Unity Game Engine & how it can be used to create
-                    games.
+                    2020 & quickly fell in love. I started learning about asset
+                    design software such as Blender. 3D rendering frameworks
+                    such as Babylon.js & Three.js. I also learned about the
+                    Unity Game Engine & how it can be used to create games.
                   </p>
                 </div>
               </div>
@@ -128,9 +123,9 @@ export default function Acomplishments ()
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     I am a big fan of the weekly email updates. I am always on
-                    the lookout for new projects & new technologies. I also
-                    like to keep up with the latest trends in the industry. Sign
-                    up for my weekly email updates to stay up to date with the
+                    the lookout for new projects & new technologies. I also like
+                    to keep up with the latest trends in the industry. Sign up
+                    for my weekly email updates to stay up to date with the
                     latest news & trends.
                   </p>
                 </div>
@@ -159,8 +154,8 @@ export default function Acomplishments ()
                   </h3>
                   <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
                     I have several projects in my mind that I would like to work
-                    on. Anything that I can do to help people & businesses.
-                    Plus feed the creative & compassionate wolf that is me.
+                    on. Anything that I can do to help people & businesses. Plus
+                    feed the creative & compassionate wolf that is me.
                   </p>
                 </div>
               </div>

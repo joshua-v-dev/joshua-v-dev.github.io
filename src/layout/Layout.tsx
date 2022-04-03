@@ -11,8 +11,8 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
     <>
       <Header />
       {children}
-      <Footer>{children}</Footer> 
-      </>
+      <Footer>{children}</Footer>
+    </>
   );
 };
 

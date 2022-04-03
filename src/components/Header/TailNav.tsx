@@ -2,24 +2,26 @@
 // import Link from 'next/link';
 import React from "react";
 
-export default function TailNav ()
-{
+export default function TailNav() {
   return (
     <>
       <section className=" bg-transparent p-4 ">
         <nav className="relative flex items-center justify-between ">
           <div className="hidden lg:flex">
             <a
-              className=" rounded-full border border-indigo-900 px-4 py-1 font-bold brightness-200  text-blue-900  shadow-green-500/50 hover:brightness-200 hover:text-gray-200 hover:border-gray-300 lg:flex"
+              className=" rounded-full border border-indigo-900 px-4 py-1 font-bold text-blue-900  shadow-green-500/50  brightness-200 hover:border-gray-300 hover:text-gray-200 hover:brightness-200 lg:flex"
               href="#"
             >
               Want To Play A Game?
             </a>
           </div>
           <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:block lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
-            <ul className="flex items-center space-x-10 text-grey-500 brightness-125">
+            <ul className="text-grey-500 flex items-center space-x-10 brightness-125">
               <li>
-                <a className="text-lg font-bold text-gray-500 brightness-125 hover:brightness-200" href="/gallery">
+                <a
+                  className="text-lg font-bold text-gray-500 brightness-125 hover:brightness-200"
+                  href="/gallery"
+                >
                   Home
                 </a>
               </li>
@@ -35,7 +37,10 @@ export default function TailNav ()
                 </svg>
               </span>
               <li>
-                <a className="text-lg font-bold text-gray-500 brightness-125 hover:brightness-200" href="/gallery">
+                <a
+                  className="text-lg font-bold text-gray-500 brightness-125 hover:brightness-200"
+                  href="/gallery"
+                >
                   Gallery
                 </a>
               </li>
@@ -51,7 +56,10 @@ export default function TailNav ()
                 </svg>
               </span>
               <li>
-                <a className=" hover:brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:text-brightness-200" href="/services">
+                <a
+                  className=" hover:text-brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:brightness-200"
+                  href="/services"
+                >
                   Services
                 </a>
               </li>
@@ -67,7 +75,10 @@ export default function TailNav ()
                 </svg>
               </span>
               <li>
-                <a className=" hover:brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:text-brightness-200" href="/story">
+                <a
+                  className=" hover:text-brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:brightness-200"
+                  href="/story"
+                >
                   Story
                 </a>
               </li>
@@ -83,7 +94,10 @@ export default function TailNav ()
                 </svg>
               </span>
               <li>
-                <a className="hover:brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:text-brightness-200" href="/contact">
+                <a
+                  className="hover:text-brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:brightness-200"
+                  href="/contact"
+                >
                   Contact
                 </a>
               </li>
