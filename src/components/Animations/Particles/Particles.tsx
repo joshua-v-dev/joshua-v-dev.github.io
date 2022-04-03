@@ -25,10 +25,10 @@ export default function ParticleAnimation ()
           particles: {
             bounce: {
               vertical: {
-                value: 0.69,
+                value: 0.9,
                 random: {
                   enable: true,
-                  minimumValue: 0.39
+                  minimumValue: 0.09
                 }
               }
             },
@@ -42,17 +42,17 @@ export default function ParticleAnimation ()
               }
             },
             number: {
-              value: 90,
-              limit: 450,
+              value: 60,
+              limit: 360,
               density: {
                 enable: true,
-                value_area: 1080,
+                value_area: 1200,
               },
             },
             orbit: {
               enable: true,
               rotation: {
-                value: 720,
+                value: 420,
               },
             },
             tilt: {
@@ -71,16 +71,16 @@ export default function ParticleAnimation ()
             shape: {
               type: [ "circle" ],
               stroke: {
-                width: 69,
+                width: 39,
 
               },
               polygon: {
-                nb_sides: 69,
+                nb_sides: 9,
               },
 
             },
             size: {
-              value: { min: 39, max: 99 },
+              value: { min: 39, max: 49 },
               random: true,
               animation: {
                 enable: true,
@@ -93,7 +93,7 @@ export default function ParticleAnimation ()
               }
             },
             opacity: {
-              value: 3,
+              value: 2,
               random: true,
               anim: {
                 enable: true,
@@ -106,16 +106,16 @@ export default function ParticleAnimation ()
             move: {
               gravity: {
                 enable: true,
-                acceleration: 0.0000003,
+                acceleration: 0.03,
                 maxSpeed: 3,
 
               },
               enable: true,
-              speed: { min: 0.39, max: 0.99 },
+              speed: { min: 0.39, max: 0.69 },
               direction: "bottom",
               random: false,
               straight: true,
-              out_mode: "bounce",
+              out_mode: "bounceVertical",
               bounce: true,
               attract: {
                 enable: true,
@@ -160,7 +160,7 @@ export default function ParticleAnimation ()
               },
               bubble: {
                 distance: 69,
-                size: 69,
+                size: 39,
                 duration: 90,
                 opacity: 1,
               },
