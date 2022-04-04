@@ -1,7 +1,6 @@
 // import Image from 'next/image';
-import Layout from '../layout/Layout';
-const FuturePage = () =>
-{
+import Layout from "../layout/Layout";
+const FuturePage = () => {
   return (
     <>
       <Layout>
@@ -111,10 +110,10 @@ const FuturePage = () =>
                 </div>
               </div>
               <div className="relative hidden w-1/2 px-4 lg:block">
-                {/* <Image className="absolute bottom-0 max-h-128 2xl:max-h-144" src="zospace-assets/images/two-phones-bottom.png" alt=""></Image> */ }
+                {/* <Image className="absolute bottom-0 max-h-128 2xl:max-h-144" src="zospace-assets/images/two-phones-bottom.png" alt=""></Image> */}
               </div>
               <div className="w-full lg:hidden">
-                {/* <Image className="md:max-w-lg mx-auto" src="zospace-assets/images/zospace_app2.png" alt=""></Image> */ }
+                {/* <Image className="md:max-w-lg mx-auto" src="zospace-assets/images/zospace_app2.png" alt=""></Image> */}
               </div>
             </div>
           </div>
@@ -126,7 +125,7 @@ const FuturePage = () =>
                   className="ml-10 mr-auto text-2xl font-bold text-gray-800"
                   href="#"
                 >
-                  {/* <Image className="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto"></Image> */ }
+                  {/* <Image className="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto"></Image> */}
                 </a>
               </div>
               <div>
@@ -202,7 +201,7 @@ const FuturePage = () =>
                 </h2>
                 <div className="flex items-center justify-center">
                   <div className="mr-6">
-                    {/* <Image className="w-14 h-14 object-cover" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""></Image> */ }
+                    {/* <Image className="w-14 h-14 object-cover" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""></Image> */}
                   </div>
                   <div className="text-left">
                     <h3 className="font-heading mb-2 text-lg font-semibold text-gray-500">
@@ -259,7 +258,10 @@ const FuturePage = () =>
             </div>
             <ul className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform  lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6">
               <li>
-                <a className="text-sm text-gray-300 hover:text-gray-200" href="#">
+                <a
+                  className="text-sm text-gray-300 hover:text-gray-200"
+                  href="#"
+                >
                   Start
                 </a>
               </li>
@@ -301,7 +303,10 @@ const FuturePage = () =>
                 </svg>
               </li>
               <li>
-                <a className="text-sm text-gray-300 hover:text-gray-200" href="#">
+                <a
+                  className="text-sm text-gray-300 hover:text-gray-200"
+                  href="#"
+                >
                   Services
                 </a>
               </li>
@@ -322,7 +327,10 @@ const FuturePage = () =>
                 </svg>
               </li>
               <li>
-                <a className="text-sm text-gray-300 hover:text-gray-200" href="#">
+                <a
+                  className="text-sm text-gray-300 hover:text-gray-200"
+                  href="#"
+                >
                   Platform
                 </a>
               </li>
@@ -343,7 +351,10 @@ const FuturePage = () =>
                 </svg>
               </li>
               <li>
-                <a className="text-sm text-gray-300 hover:text-gray-200" href="#">
+                <a
+                  className="text-sm text-gray-300 hover:text-gray-200"
+                  href="#"
+                >
                   Testimonials
                 </a>
               </li>
@@ -497,13 +508,13 @@ const FuturePage = () =>
                 </p>
                 <div className="text-center">
                   <a className="inline-block px-1" href="#">
-                    {/* <Image src="atis-assets/social/facebook-purple.svg" alt=""></Image> */ }
+                    {/* <Image src="atis-assets/social/facebook-purple.svg" alt=""></Image> */}
                   </a>
                   <a className="inline-block px-1" href="#">
-                    {/* <Image src="atis-assets/social/twitter-purple.svg" alt=""></Image> */ }
+                    {/* <Image src="atis-assets/social/twitter-purple.svg" alt=""></Image> */}
                   </a>
                   <a className="inline-block px-1" href="#">
-                    {/* <Image src="atis-assets/social/instagram-purple.svg" alt=""></Image> */ }
+                    {/* <Image src="atis-assets/social/instagram-purple.svg" alt=""></Image> */}
                   </a>
                 </div>
               </div>

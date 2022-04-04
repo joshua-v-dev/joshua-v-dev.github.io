@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Recruiter = () =>
-{
+const Recruiter = () => {
   return (
     <>
       <section className="overflow-hidden rounded-lg bg-gray-800 py-10 opacity-80 2xl:py-20">

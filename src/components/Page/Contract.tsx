@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-const Contract = () =>
-{
+const Contract = () => {
   return (
     <>
       <section className="relative overflow-hidden bg-transparent bg-center">
@@ -38,7 +37,6 @@ const Contract = () =>
                     width="500"
                     height="500"
                   />
-
                 </div>
               </div>
             </div>

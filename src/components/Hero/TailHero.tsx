@@ -1,17 +1,11 @@
 import Image from "next/image";
 
-export default function TailHero ()
-{
+export default function TailHero() {
   return (
-    <div className="relative h-screen bg-transparent mx-auto flex lg:items-start sm:items-center  ">
-
-      <div className="z-10 bg-transparent mx-auto">
-
+    <div className="relative mx-auto flex h-screen bg-transparent sm:items-center lg:items-start ">
+      <div className="z-10 mx-auto bg-transparent">
         <div className="flex select-none items-center justify-center">
-          <a
-            className="text-2xl font-bold text-gray-200"
-            href="#"
-          >
+          <a className="text-2xl font-bold text-gray-200" href="#">
             <div className="relative h-36 w-36">
               <Image
                 className="rounded-full object-contain"
@@ -25,7 +19,7 @@ export default function TailHero ()
         <main className="  flex select-none justify-center py-6">
           <div className=" text-center ">
             <h1 className=" text-8xl font-extrabold tracking-tight text-green-400  shadow-green-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
-              <span className=" text-8xl sm:text-7xl font-extrabold tracking-wide xl:inline ">
+              <span className=" text-8xl font-extrabold tracking-wide sm:text-7xl xl:inline ">
                 Joshua Vaughn
               </span>
             </h1>
@@ -41,6 +35,5 @@ export default function TailHero ()
         </main>
       </div>
     </div>
-
   );
 }

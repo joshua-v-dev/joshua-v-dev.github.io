@@ -1,5 +1,4 @@
-export default function HomeCta ()
-{
+export default function HomeCta() {
   return (
     <>
       <section className="mx-auto flex justify-center ">
@@ -15,7 +14,7 @@ export default function HomeCta ()
               <div className="inline-flex rounded-md shadow lg:space-x-2">
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-teal-600 brightness-150 px-4 py-2 text-base font-medium text-indigo-600 hover:bg-indigo-700"
+                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-base font-medium text-indigo-600 brightness-150 hover:bg-indigo-700"
                 >
                   Activate Demo
                 </a>
@@ -23,7 +22,7 @@ export default function HomeCta ()
               <div className="inline-flex rounded-md shadow">
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base brightness-150 font-medium text-teal-600 hover:bg-indigo-50"
+                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-teal-600 brightness-150 hover:bg-indigo-50"
                 >
                   Contact Me
                 </a>

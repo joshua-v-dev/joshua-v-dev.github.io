@@ -1,7 +1,6 @@
 import Services from "../components/Page/Services";
 import Layout from "../layout/Layout";
-const ServicesPage = () =>
-{
+const ServicesPage = () => {
   return (
     <>
       <Layout>

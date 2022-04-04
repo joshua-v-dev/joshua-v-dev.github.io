@@ -1,9 +1,6 @@
-
-const Services = () =>
-{
+const Services = () => {
   return (
     <>
-
       <section className="relative overflow-hidden bg-transparent pt-20 pb-32 2xl:py-40">
         <div className="absolute inset-x-0 bottom-0 h-full bg-transparent"></div>
         <div className="w-2full bg-gradient-zospace-2 absolute inset-x-0 bottom-0 -ml-64 -mb-12 h-3/5 -rotate-6 transform"></div>
@@ -239,7 +236,6 @@ const Services = () =>
           </div>
         </div>
       </section>
-
     </>
   );
 };

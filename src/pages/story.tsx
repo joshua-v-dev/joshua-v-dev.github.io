@@ -1,7 +1,6 @@
 import Story from "../components/Page/Story";
 import Layout from "../layout/Layout";
-const StoryPage = () =>
-{
+const StoryPage = () => {
   return (
     <>
       <Layout>

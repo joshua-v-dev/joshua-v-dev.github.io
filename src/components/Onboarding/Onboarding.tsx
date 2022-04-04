@@ -1,10 +1,9 @@
 // import Image from "next/image";
 
-export default function Onboarding ()
-{
+export default function Onboarding() {
   return (
     <>
-      <div className="container mx-auto my-auto grid items-center justify-center space-y-8 px-36">
+      <div className="container mx-auto my-auto grid space-y-8">
         <h2 className="  text-6xl font-extrabold tracking-tight text-indigo-600 brightness-125">
           First, What brings you here?
         </h2>

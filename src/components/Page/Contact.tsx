@@ -1,10 +1,6 @@
-
-
-export default function Contact ()
-{
+export default function Contact() {
   return (
     <>
-
       <div className="block h-full w-full space-y-16 bg-gradient-to-r from-blue-600 via-teal-500 to-purple-500">
         <section className="py-32">
           <div className="container mx-auto px-4">
@@ -46,8 +42,8 @@ export default function Contact ()
                   <textarea
                     className="mb-4 w-full resize-none rounded border p-3"
                     name="message"
-                    cols={ 30 }
-                    rows={ 10 }
+                    cols={30}
+                    rows={10}
                     placeholder="Your Message..."
                   ></textarea>
                   <button className="block rounded border border-indigo-500 bg-indigo-500 px-5 py-3 text-sm font-semibold text-gray-200 transition duration-200 hover:border-indigo-600 hover:bg-indigo-600">
@@ -59,7 +55,6 @@ export default function Contact ()
           </div>
         </section>
       </div>
-
     </>
   );
 }
