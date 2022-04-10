@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Recruiter = () => {
+const Recruiter = () =>
+{
   return (
     <>
       <section className="container max-w-max overflow-hidden rounded-xl bg-transparent py-5 opacity-100 2xl:py-10">
@@ -29,13 +30,13 @@ const Recruiter = () => {
             height="350"
           ></Image>
           <div className="mx-auto max-w-7xl space-y-8 text-center">
-            <div className="mx-auto grid py-5 ">
+            <div className="mx-auto grid justify-center items-center py-4 ">
               <Link passHref href="/cta">
                 <button
                   type="button"
-                  className=" bg-gradient-to-r from-yellow-500 to-yellow-700 bg-clip-text text-7xl font-extrabold text-transparent brightness-125"
+                  className="hover:brightness-200 border-b border-t py-4 border-gray-500 max-w-max bg-gradient-to-r from-yellow-500 to-yellow-700 bg-clip-text text-7xl font-extrabold text-transparent brightness-125"
                 >
-                  Hire Me!
+                  Hire Me Here!
                 </button>
               </Link>
             </div>

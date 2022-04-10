@@ -1,11 +1,12 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-export default function ParticleAnimation() {
+export default function ParticleAnimation ()
+{
   return (
     <>
       <Particles
-        options={{
+        options={ {
           retina_detect: true,
           fps_limit: 60,
           backgroundMode: {
@@ -32,7 +33,7 @@ export default function ParticleAnimation() {
             },
 
             color: {
-              value: ["rgb(167, 250, 208)"],
+              value: [ "rgb(167, 250, 208)" ],
               animation: {
                 enable: true,
                 speed: 0.00039,
@@ -67,7 +68,7 @@ export default function ParticleAnimation() {
             },
 
             shape: {
-              type: ["circle"],
+              type: [ "circle" ],
               stroke: {
                 width: 39,
               },
@@ -184,6 +185,9 @@ export default function ParticleAnimation() {
           background: {
             repeat: "no-repeat",
             size: "cover",
+            color: {
+              value: "#000000",
+            },
 
             image:
               "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649542389/Untitled_design_1_vwaott.png')",
@@ -200,7 +204,7 @@ export default function ParticleAnimation() {
             // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540758/8_ewlfe8.png')",
             // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649542389/Untitled_design_1_vwaott.png')",
           },
-        }}
+        } }
       />
     </>
   );
