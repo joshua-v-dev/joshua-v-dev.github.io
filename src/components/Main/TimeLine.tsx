@@ -5,12 +5,12 @@ import { TimeLineData } from "../../database/database";
 export default function Timeline() {
   return (
     <>
-      <div className=" grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-max lg:grid-cols-2 lg:px-1">
+      <div className="container grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-screen-2xl lg:grid-cols-2">
         <div className=" grid space-y-5 space-x-5">
-          <h1 className="text-9xl font-extrabold uppercase tracking-tight  text-indigo-700 brightness-125 sm:text-4xl lg:pl-4">
+          <h1 className="tracking-loose container font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-5xl ">
             Roadmap
           </h1>
-          <p className="text-2xl font-semibold text-gray-200 brightness-125">
+          <p className="text-2xl font-medium text-gray-200 brightness-125">
             Technologies I have used so far to build my projects & a little bit
             about my future.
           </p>
@@ -23,10 +23,10 @@ export default function Timeline() {
                     key={TimeLineData.year}
                     className="space-y-5 border-t border-gray-200 p-5"
                   >
-                    <dt className="text-2xl text-gray-200 underline">
+                    <dt className="text-3xl text-gray-200 underline">
                       {TimeLineData.year}
                     </dt>
-                    <dd className="space-y-5 text-xl text-gray-200">
+                    <dd className="space-y-5 text-2xl text-gray-200">
                       {TimeLineData.text}
                     </dd>
                   </div>
@@ -38,7 +38,7 @@ export default function Timeline() {
         <div className="relative grid grid-cols-2 grid-rows-2 gap-3 sm:gap-6  lg:gap-8">
           <div className="relative h-full w-full ">
             <Image
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982438/portfolio_project_thumbnails_u11j8x.png"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540674/2_wgngqv.png"
               alt="string"
               className="rounded-lg bg-gray-100"
               layout="fill"
@@ -47,7 +47,7 @@ export default function Timeline() {
           </div>
           <div className="relative h-full w-full">
             <Image
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982446/portfolio_project_thumbnails_kv7dld.svg"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648967003/HybridBox_nwqhlx.png"
               alt="Top down view of walnut card tray with embedded magnets and card groove."
               className="rounded-lg bg-gray-100"
               layout="fill"
@@ -56,7 +56,7 @@ export default function Timeline() {
           </div>
           <div className="relative h-full w-full">
             <Image
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982450/portfolio_project_thumbnails_1_dfjrl0.png"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540792/12_umzgvm.png"
               alt="Side of walnut card tray with card groove and recessed card area."
               className="rounded-lg bg-gray-100"
               layout="fill"
@@ -65,16 +65,7 @@ export default function Timeline() {
           </div>
           <div className="relative h-full w-full">
             <Image
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643982762/Kayla_s_Playground_fwistb.png"
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100"
-              layout="fill"
-              priority
-            />
-          </div>
-          <div className="relative h-full w-full">
-            <Image
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643978160/Simple_Lined_Black_Onboarding_Page_Wireframe_Website_UI_Prototype_maycmm.svg"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540780/11_miofs2.png"
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
               className="rounded-lg bg-gray-100"
               layout="fill"

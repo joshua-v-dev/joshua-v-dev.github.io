@@ -1,7 +1,6 @@
 //Paralax scroll effects and text slide in transitions need to be added.
 
-const Services = () =>
-{
+const Services = () => {
   return (
     <>
       <section className="relative overflow-hidden bg-transparent">
@@ -10,7 +9,7 @@ const Services = () =>
             <span className=" bg-gradient-to-r from-blue-500 to-indigo-800 bg-clip-text text-5xl font-extrabold text-transparent brightness-125">
               Two ways to start!
             </span>
-            <h2 className=" leading-loose  bg-gradient-to-r from-blue-500 to-indigo-800 bg-clip-text text-5xl font-bold text-transparent brightness-125 lg:text-6xl">
+            <h2 className=" bg-gradient-to-r  from-blue-500 to-indigo-800 bg-clip-text text-5xl font-bold leading-loose text-transparent brightness-125 lg:text-6xl">
               We can build something great together
             </h2>
             <div className="mx-auto max-w-lg">
@@ -317,9 +316,7 @@ const Services = () =>
                       Click for more details
                     </h3>
                     <div className=" flex justify-center font-bold text-gray-200">
-                      <span className="inline-block self-start text-xl">
-                        $
-                      </span>
+                      <span className="inline-block self-start text-xl">$</span>
                       <p className="self-end text-5xl">500</p>
                     </div>
                     <p className="text-lg text-gray-200">/P.W.A.</p>
