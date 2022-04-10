@@ -1,4 +1,4 @@
-const CtaMulti = () =>
+const CallToAction = () =>
 {
     return (
         <section className="relative my-20 overflow-hidden bg-gray-800 pt-20 pb-32  2xl:py-40">
@@ -29,4 +29,4 @@ const CtaMulti = () =>
         </section>
     )
 }
-export default CtaMulti;
+export default CallToAction;

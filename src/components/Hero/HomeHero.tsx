@@ -1,12 +1,13 @@
-import HomeOnboarding from "./HomeOnboarding";
+import HomeOnboarding from "../Onboarding/HomeOnboarding";
 import React from "react";
-import TailHero from "../Hero/TailHero";
+import TailHero from "../MultiComp/Hero";
 
 type HeroProps = {
   isMain?: boolean;
 };
 
-const HomeHero: React.FC<HeroProps> = () => {
+const HomeHero: React.FC<HeroProps> = () =>
+{
   return (
     <>
       <TailHero />

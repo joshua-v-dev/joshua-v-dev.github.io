@@ -1,9 +1,9 @@
-import CtaMulti from "components/MultiComp/CtaMulti";
+import CallToAction from "components/MultiComp/CallToAction";
 const Cta = () =>
 {
   return (
     <>
-      <CtaMulti />
+      <CallToAction />
     </>
   );
 };
