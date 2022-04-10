@@ -1,32 +1,30 @@
 import Image from "next/image";
-
-const Contract = () => {
+import Button from "components/MultiComp/Button";
+const Contract = () =>
+{
   return (
     <>
-      <section className="relative overflow-hidden bg-transparent bg-center">
-        <div className="py-20 md:py-28">
-          <div className="container mx-auto px-4">
-            <div className="-mx-4 flex flex-wrap xl:items-center">
-              <div className="mb-16 w-full px-4 md:mb-0 md:w-1/2">
-                <h1 className="mb-6 text-3xl font-bold leading-tight tracking-tight text-gray-50 brightness-125 md:text-5xl lg:text-6xl">
+      <section className="py-10 my-10 border-b-1 container grid grid-flow-row items-center  justify-center rounded-3xl border-4 border-t-4 border-double
+								 border-black border-indigo-600/90 border-t-indigo-600  border-opacity-90 bg-black/30 p-12  shadow-md
+								 shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm">
+        <div className=" p-10 md:py-28">
+          <div className=" mx-auto">
+            <div className=" flex flex-wrap xl:items-center">
+              <div className="mb-16 w-full  md:mb-0 md:w-1/2">
+                <h1 className="mb-6 text-3xl font-bold leading-tight tracking-tight text-green-700 brightness-200 md:text-5xl lg:text-6xl">
                   Web technology can revolutionize any business
                 </h1>
-                <p className="mb-8 text-lg font-medium text-gray-50 brightness-125 md:text-xl">
+                <p className=" text-lg font-semibold  text-indigo-500 brightness-125 lg:text-3xl md:text-xl">
                   In this modern age a business only truly exists if it&apos;s
                   online. The best apps are the tell tale sign of the best
                   businesses. Let me help you create the best app for your
                   business.
                 </p>
-                <div className="flex flex-wrap">
-                  <div className="w-full py-1 md:mr-4 md:w-auto md:py-0">
-                    <a
-                      className="border-violet-500 bg-violet-500 text-violet-50 hover:bg-violet-600 focus:ring-violet-500 inline-block w-full rounded-xl border py-3 px-5 text-center text-base font-medium leading-4 shadow-sm focus:ring-2 focus:ring-opacity-50 md:text-lg"
-                      href="#"
-                    >
-                      Request a Demo
-                    </a>
-                  </div>
+
+                <div className="grid p-0 m-auto justify-start items-start">
+                  <Button />
                 </div>
+
               </div>
               <div className="w-full px-4 md:w-1/2">
                 <div className="relative mx-auto my-auto max-w-max md:mr-0">
