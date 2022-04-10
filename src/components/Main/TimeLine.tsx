@@ -2,12 +2,13 @@ import React, { ReactElement } from "react";
 import Image from "next/image";
 import { TimeLineData } from "../../database/database";
 
-export default function Timeline() {
+export default function Timeline ()
+{
   return (
     <>
       <div className="container grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-screen-2xl lg:grid-cols-2">
         <div className=" grid space-y-5 space-x-5">
-          <h1 className="tracking-loose container font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-5xl ">
+          <h1 className="tracking-loose container font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-7xl ">
             Roadmap
           </h1>
           <p className="text-2xl font-medium text-gray-200 brightness-125">
@@ -16,23 +17,23 @@ export default function Timeline() {
           </p>
 
           <dl className="grid max-w-full grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-            {TimeLineData.map(
-              (TimeLineData, i): ReactElement => (
-                <div key={i} className="grid-col grid">
+            { TimeLineData.map(
+              ( TimeLineData, i ): ReactElement => (
+                <div key={ i } className="grid-col grid">
                   <div
-                    key={TimeLineData.year}
+                    key={ TimeLineData.year }
                     className="space-y-5 border-t border-gray-200 p-5"
                   >
                     <dt className="text-3xl text-gray-200 underline">
-                      {TimeLineData.year}
+                      { TimeLineData.year }
                     </dt>
                     <dd className="space-y-5 text-2xl text-gray-200">
-                      {TimeLineData.text}
+                      { TimeLineData.text }
                     </dd>
                   </div>
                 </div>
               )
-            )}
+            ) }
           </dl>
         </div>
         <div className="relative grid grid-cols-2 grid-rows-2 gap-3 sm:gap-6  lg:gap-8">
