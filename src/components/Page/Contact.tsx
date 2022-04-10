@@ -1,13 +1,13 @@
 export default function Contact() {
   return (
     <>
-      <div className="block h-full w-full space-y-16 bg-gradient-to-r from-blue-600 via-teal-500 to-purple-500">
+      <div className="block h-full w-full space-y-16 rounded-lg bg-gradient-to-r from-blue-600 via-teal-500 to-purple-500 opacity-80">
         <section className="py-32">
           <div className="container mx-auto px-4">
             <div className="-mx-4 flex flex-wrap">
               <div className="mb-8 w-full px-4 lg:mb-0 lg:w-1/2">
                 <div className="max-w-lg">
-                  <h2 className="font-heading mb-8 text-3xl font-bold leading-tight md:text-4xl md:leading-tight lg:mb-12 lg:text-5xl lg:leading-tight">
+                  <h2 className="font-heading mb-8 text-3xl font-bold leading-tight md:text-4xl md:leading-tight lg:mb-12 lg:text-6xl lg:leading-tight">
                     I look forward to hearing from you.
                   </h2>
                   <h3 className="font-heading mb-1 text-2xl font-bold">
@@ -16,13 +16,13 @@ export default function Contact() {
                   <p className="mb-6 text-lg font-bold leading-loose">
                     Mon-Sat 9am - 9pm
                   </p>
-                  <h3 className="font-heading mb-1 text-2xl font-bold">
+                  <h3 className="font-heading mb-1 text-4xl font-bold">
                     Let&apos;s innovate together!
                   </h3>
-                  <p className="text-lg font-bold leading-loose ">
+                  <p className="text-2xl font-bold leading-loose ">
                     What are you waiting for? Let&apos;s get in touch!
                   </p>
-                  <p className="text-lg font-bold leading-loose">
+                  <p className="text-xl font-bold leading-loose">
                     Thank you for your time
                   </p>
                 </div>

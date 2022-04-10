@@ -1,12 +1,11 @@
-export default function Acomplishments ()
-{
+export default function Acomplishments() {
   return (
     <>
       <h2 className="tracking-loose container font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-7xl ">
         Highlights
       </h2>
-      <section className="container p-4 gap-10">
-        <div className="grid grid-col-3 mx-auto gap-20 ">
+      <section className="container gap-10 p-4">
+        <div className="grid-col-3 mx-auto grid gap-20 ">
           <div className="  flex flex-wrap gap-y-24">
             <div className="  md:w-1/2 lg:w-1/3">
               <div className="flex max-w-max">
