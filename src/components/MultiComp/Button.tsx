@@ -1,5 +1,4 @@
-const Button = () =>
-{
+const Button = () => {
   return (
     <div className="container mt-5 -mb-10 grid items-end justify-end p-3">
       <button
@@ -11,7 +10,7 @@ const Button = () =>
         Learn More
       </button>
     </div>
-  )
+  );
 };
 
 export default Button;
