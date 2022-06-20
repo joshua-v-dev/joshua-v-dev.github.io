@@ -1,14 +1,14 @@
 export default function Acomplishments() {
   return (
     <>
-      <h2 className=" flex items-center justify-center space-y-16 p-1 text-7xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+      <h2 className="tracking-loose container font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-7xl ">
         Highlights
       </h2>
-      <section className=" p-4">
-        <div className="container mx-auto ">
-          <div className="  flex flex-wrap">
+      <section className="container gap-10 p-4">
+        <div className="grid-col-3 mx-auto grid gap-20 ">
+          <div className="  flex flex-wrap gap-y-24">
             <div className="  md:w-1/2 lg:w-1/3">
-              <div className="flex">
+              <div className="flex max-w-max">
                 <span className="mx-auto">
                   <svg
                     width="48"
@@ -25,10 +25,10 @@ export default function Acomplishments() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="px-3 text-4xl font-extrabold text-gray-200">
-                    MERN to Modern MERN
+                  <h3 className="px-3 text-4xl font-extrabold text-gray-200 ">
+                    MERN to JAM
                   </h3>
-                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-2xl font-medium leading-normal text-gray-300 brightness-100">
                     MERN stack was my natural progression from HTML,CSS &
                     Javascript. After a few months of learning React, Redux,
                     Node, Express, MongoDB, I was ready to move on to modern
@@ -60,7 +60,7 @@ export default function Acomplishments() {
                   <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Security & Testing
                   </h3>
-                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-2xl font-medium leading-normal text-gray-300 brightness-100">
                     After using jest for unit testing & React Testing Library
                     for a few months, I was ready to move on to Cypress.io so I
                     could integrate an End to End testing framework. I also
@@ -90,7 +90,7 @@ export default function Acomplishments() {
                   <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Game Development
                   </h3>
-                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-2xl font-medium leading-normal text-gray-300 brightness-100">
                     I started learning about game development in the summer of
                     2020 & quickly fell in love. I started learning about asset
                     design software such as Blender. 3D rendering frameworks
@@ -119,9 +119,9 @@ export default function Acomplishments() {
                 </span>
                 <div>
                   <h3 className="px-3 text-4xl font-extrabold text-gray-200">
-                    Weekly email updates
+                    Weekly email
                   </h3>
-                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-2xl font-medium leading-normal text-gray-300 brightness-100">
                     I am a big fan of the weekly email updates. I am always on
                     the lookout for new projects & new technologies. I also like
                     to keep up with the latest trends in the industry. Sign up
@@ -152,7 +152,7 @@ export default function Acomplishments() {
                   <h3 className="px-3 text-4xl font-extrabold text-gray-200">
                     Future Projects
                   </h3>
-                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-2xl font-medium leading-normal text-gray-300 brightness-100">
                     I have several projects in my mind that I would like to work
                     on. Anything that I can do to help people & businesses. Plus
                     feed the creative & compassionate wolf that is me.
@@ -179,9 +179,9 @@ export default function Acomplishments() {
                 </span>
                 <div>
                   <h3 className="px-3 text-4xl font-extrabold text-gray-200">
-                    Social Media Aspirations
+                    Social Media
                   </h3>
-                  <p className=" text-xl font-normal leading-loose text-gray-300 brightness-100">
+                  <p className=" text-2xl font-medium leading-normal text-gray-300 brightness-100">
                     YouTube, self hosted digital platform, API&apos;s, mobile
                     games & apps, social media marketing campaigns, neural nets,
                     Blockchain development, etc.
