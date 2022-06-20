@@ -39,7 +39,7 @@
     "react-tsparticles": "^1.42.3",
     "remark-frontmatter": "^4.0.1",
     "styled-components": "^5.3.3",
-    "tsparticles": "^1.42.2"
+    "tsparticles": "^1.42.3"
   },
   "devDependencies": {
     "@babel/core": "^7.17.7",
