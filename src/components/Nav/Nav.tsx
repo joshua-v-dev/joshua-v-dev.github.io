@@ -2,7 +2,8 @@
 // import Link from 'next/link';
 import React from "react";
 
-export default function TailNav() {
+export default function Nav ()
+{
   return (
     <>
       <section className=" bg-transparent p-5 lg:p-6">

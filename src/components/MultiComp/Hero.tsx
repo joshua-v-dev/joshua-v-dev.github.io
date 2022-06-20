@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-export default function TailHero() {
+export default function Hero ()
+{
   return (
     <div className="relative mx-auto flex h-screen bg-transparent sm:items-center lg:items-start ">
       <div className="z-10 mx-auto bg-transparent">
