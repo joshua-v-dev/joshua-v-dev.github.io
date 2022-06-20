@@ -24,8 +24,6 @@
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
-    "@mdx-js/loader": "^2.0.0",
-    "@mdx-js/react": "^2.0.0",
     "@next/mdx": "^12.1.0",
     "@reach/disclosure": "^0.16.2",
     "@reach/tooltip": "^0.16.2",
@@ -38,7 +36,7 @@
     "popmotion": "^11.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-tsparticles": "^1.42.2",
+    "react-tsparticles": "^1.42.3",
     "remark-frontmatter": "^4.0.1",
     "styled-components": "^5.3.3",
     "tsparticles": "^1.42.3"

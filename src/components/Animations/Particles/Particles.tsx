@@ -1,11 +1,12 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-export default function ParticleAnimation() {
+export default function ParticleAnimation ()
+{
   return (
     <>
       <Particles
-        options={{
+        options={ {
           retina_detect: true,
           fps_limit: 60,
           backgroundMode: {
@@ -32,7 +33,7 @@ export default function ParticleAnimation() {
             },
 
             color: {
-              value: ["rgb(167, 250, 208)"],
+              value: [ "rgb(167, 250, 208)" ],
               animation: {
                 enable: true,
                 speed: 0.00039,
@@ -67,7 +68,7 @@ export default function ParticleAnimation() {
             },
 
             shape: {
-              type: ["circle"],
+              type: [ "circle" ],
               stroke: {
                 width: 39,
               },
@@ -93,7 +94,7 @@ export default function ParticleAnimation() {
               anim: {
                 enable: true,
                 speed: 0.39,
-                opacity_min: 0.39,
+                opacity_min: 0.59,
                 sync: true,
               },
             },
@@ -170,21 +171,40 @@ export default function ParticleAnimation() {
           backgroundMask: {
             enable: true,
             cover: {
-              opacity: 0.69,
+              opacity: 0.59,
+
               color: {
                 value: {
-                  r: 27,
+                  r: 37,
                   g: 27,
-                  b: 27,
+                  b: 57,
                 },
               },
             },
           },
           background: {
+            repeat: "no-repeat",
+            size: "cover",
+            color: {
+              value: "#000000",
+            },
+
             image:
-              "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1645573359/deep_space_bg_multi_right_a1opj9.png')",
+              "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649542389/Untitled_design_1_vwaott.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540401/Blue_vgf0qc.jpg')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540674/2_wgngqv.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540699/3_qgyut2.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540726/5_llshaq.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540754/7_wlggwt.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540758/8_ewlfe8.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540792/12_umzgvm.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540775/10_rny8kp.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540780/11_miofs2.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540765/9_z6mctn.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540758/8_ewlfe8.png')",
+            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649542389/Untitled_design_1_vwaott.png')",
           },
-        }}
+        } }
       />
     </>
   );
