@@ -1,12 +1,11 @@
 import React from "react";
-import TailNav from "../Nav/TailNav";
-import HomeHero from "./HomeHero";
-import HomeCta from "./HomeCta";
+import HomeHero from "../Hero/HomeHero";
+import HomeCta from "../Cta/HomeCta";
 
-export default function HomePage() {
+export default function HomePage ()
+{
   return (
     <>
-      <TailNav />
       <HomeHero />
       <HomeCta />
     </>
