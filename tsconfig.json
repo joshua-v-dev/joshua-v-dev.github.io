@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -40,6 +44,7 @@
     "**/*.tsx",
     "next-twin.js"
   ],
-  "exclude": ["node_modules"],
-  "types": ["types"]
+  "exclude": [
+    "node_modules"
+  ]
 }

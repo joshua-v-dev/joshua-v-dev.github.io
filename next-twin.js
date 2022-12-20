@@ -23,12 +23,6 @@ module.exports = function withTwin() {
           include: [componentsDir, pagesDir],
           use: [
             options.defaultLoaders.babel,
-            //             {
-            //              images: {
-            //                   loader: 'cloudinary',
-            //     domains: ['res.cloudinary.com']
-            //   },
-            // },
             {
               loader: "babel-loader",
               presets: ["@babel/preset-env", "@babel/preset-typescript"],
@@ -58,18 +52,6 @@ module.exports = function withTwin() {
             },
           ],
         });
-        //       config.module.rules.push({
-        //   test: (/\.mdx?$/g, "''"),
-        //   use: [
-        //     // The default `babel-loader` used by Next:
-        //     options.defaultLoaders.babel,
-        //     {
-        //       loader: '@mdx-js/loader',
-        //       /** @type {import('@mdx-js/loader').Options} */
-        //       options: {/* jsxImportSource: …, otherOptions… */}
-        //     }
-        //   ]
-        // })
 
         if (typeof nextConfig.webpack === "function") {
           return nextConfig.webpack(config, options);

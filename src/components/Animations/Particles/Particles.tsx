@@ -1,12 +1,10 @@
-import React from "react";
 import Particles from "react-tsparticles";
 
-export default function ParticleAnimation ()
-{
+export default function ParticleAnimation() {
   return (
     <>
       <Particles
-        options={ {
+        options={{
           retina_detect: true,
           fps_limit: 60,
           backgroundMode: {
@@ -33,7 +31,7 @@ export default function ParticleAnimation ()
             },
 
             color: {
-              value: [ "rgb(167, 250, 208)" ],
+              value: ["rgb(167, 250, 208)"],
               animation: {
                 enable: true,
                 speed: 0.00039,
@@ -68,7 +66,7 @@ export default function ParticleAnimation ()
             },
 
             shape: {
-              type: [ "circle" ],
+              type: ["circle"],
               stroke: {
                 width: 39,
               },
@@ -190,21 +188,9 @@ export default function ParticleAnimation ()
             },
 
             image:
-              "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649542389/Untitled_design_1_vwaott.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540401/Blue_vgf0qc.jpg')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540674/2_wgngqv.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540699/3_qgyut2.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540726/5_llshaq.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540754/7_wlggwt.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540758/8_ewlfe8.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540792/12_umzgvm.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540775/10_rny8kp.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540780/11_miofs2.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540765/9_z6mctn.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649540758/8_ewlfe8.png')",
-            // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649542389/Untitled_design_1_vwaott.png')",
+              "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1649542389/Untitled_design_1_vwaott.png')"
           },
-        } }
+        }}
       />
     </>
   );
