@@ -32,7 +32,8 @@ export default function GlassTopPicks() {
                     className="flex items-center justify-center rounded-md object-cover p-2"
                     src={topPicks.src}
                     alt={topPicks.imageAlt}
-                    layout="fill"
+                    width={500}
+                    height={500}
                     priority
                   />
                 </Link>

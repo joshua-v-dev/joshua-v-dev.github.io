@@ -1,7 +1,7 @@
-import Custom from "components/Page/Custom";
+import Custom from "src/components/Page/Custom";
 
-export default function Custom404 ()
-{
+
+export default function Custom404() {
   return (
 
     <Custom />

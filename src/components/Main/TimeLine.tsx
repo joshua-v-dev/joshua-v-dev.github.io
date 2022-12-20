@@ -1,5 +1,5 @@
-import React, { ReactElement } from "react";
 import Image from "next/image";
+import { ReactElement } from "react";
 import { TimeLineData } from "../../database/database";
 
 export default function Timeline() {
@@ -41,7 +41,8 @@ export default function Timeline() {
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540674/2_wgngqv.png"
               alt="string"
               className="rounded-lg bg-gray-100"
-              layout="fill"
+              width={500}
+              height={500}
               priority
             />
           </div>
@@ -50,7 +51,8 @@ export default function Timeline() {
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648967003/HybridBox_nwqhlx.png"
               alt="Top down view of walnut card tray with embedded magnets and card groove."
               className="rounded-lg bg-gray-100"
-              layout="fill"
+              width={500}
+              height={500}
               priority
             />
           </div>
@@ -59,7 +61,8 @@ export default function Timeline() {
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540792/12_umzgvm.png"
               alt="Side of walnut card tray with card groove and recessed card area."
               className="rounded-lg bg-gray-100"
-              layout="fill"
+              width={500}
+              height={500}
               priority
             />
           </div>
@@ -68,7 +71,8 @@ export default function Timeline() {
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540780/11_miofs2.png"
               alt="Walnut card tray filled with cards and card angled in dedicated groove."
               className="rounded-lg bg-gray-100"
-              layout="fill"
+              width={500}
+              height={500}
               priority
             />
           </div>

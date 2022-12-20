@@ -1,9 +1,5 @@
-import {
-  AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  ScaleIcon,
-} from "@heroicons/react/outline";
+import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from "./icons";
+
 
 export const features = [
   {
@@ -96,7 +92,6 @@ export const topPicks = [
     name: "Recruiter",
     description: "I'm Ready to Work!",
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648967012/Recruiter_gx369v.png",
-
     imageAlt: "joshua vaughn portfolio",
     href: "/recruiter",
   },

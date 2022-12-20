@@ -1,15 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
-const RecruiterMain = () =>
-{
+const RecruiterMain = () => {
     return (
         <div className=" mx-auto px-4">
             <Image
                 className="relative grid overflow-hidden rounded-xl "
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649554635/Untitled_design_2_mazwcv.png"
                 alt=""
-                width="1500"
-                height="350"
+                width={1500}
+                height={300}
             ></Image>
             <div className="mx-auto max-w-7xl space-y-8 text-center">
                 <div className="mx-auto grid justify-center items-center py-4 ">

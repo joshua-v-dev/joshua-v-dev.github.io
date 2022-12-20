@@ -1,20 +1,19 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 // import Link from 'next/link';
-import React from "react";
+import Link from "next/link";
 
-export default function Nav ()
-{
+export default function Nav() {
   return (
     <>
       <section className=" bg-transparent p-5 lg:p-6">
         <nav className=" relative flex items-center justify-between ">
           <div className="hidden lg:flex lg:justify-start">
-            <a
+            <Link
               className=" rounded-full border border-indigo-900 px-4 py-1 font-bold text-blue-900  shadow-green-500/50  brightness-200 hover:border-gray-300 hover:text-gray-200 hover:brightness-200 lg:flex"
               href="#"
             >
               Want To Play A Game?
-            </a>
+            </Link>
           </div>
           <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:block lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
             <ul className="text-grey-500 flex items-center space-x-10 brightness-125">

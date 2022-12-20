@@ -23,7 +23,7 @@
 //                   src={callouts.imageSrc}
 //                   alt={callouts.imageAlt}
 //                   className="max-h-fit max-w-fit bg-emerald-600"
-//                   layout="fill"
+
 //                   priority
 //                 />
 //               </a>
@@ -65,10 +65,11 @@
 */
 import { Dialog, Menu, Transition } from '@headlessui/react'
 
-import { CogIcon, FilterIcon, HeartIcon, HomeIcon, PhotographIcon, ReceiptTaxIcon, UserGroupIcon } from '@heroicons/react/outline'
+
 
 import Image from 'next/image'
 import { Fragment, useState } from 'react'
+import { CogIcon, FilterIcon, HeartIcon, HomeIcon, PhotographIcon, ReceiptTaxIcon, UserGroupIcon } from 'src/database/icons'
 
 const navigation = [
   { name: 'Home', href: '#', icon: HomeIcon, current: false },
@@ -165,10 +166,11 @@ export default function Example() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   <item.icon
-                    className={classNames(
-                      item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
-                      'h-6 w-6'
-                    )}
+                    //  icon= {() => {return classNames(
+                    //     item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
+                    //     'h-6 w-6'
+                    //   )}}
+
                     aria-hidden="true"
                   />
                   <span className="mt-2">{item.name}</span>
@@ -247,10 +249,10 @@ export default function Example() {
                             aria-current={item.current ? 'page' : undefined}
                           >
                             <item.icon
-                              className={classNames(
-                                item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
-                                'mr-3 h-6 w-6'
-                              )}
+                              // className={classNames(
+                              //   item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
+                              //   'mr-3 h-6 w-6'
+                              // )}
                               aria-hidden="true"
                             />
                             <span>{item.name}</span>
@@ -506,7 +508,7 @@ export default function Example() {
                       type="button"
                       className="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-white text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     >
-                      <HeartIcon className="h-6 w-6" aria-hidden="true" />
+                      <HeartIcon aria-hidden="true" />
                       <span className="sr-only">Favorite</span>
                     </button>
                   </div>
@@ -517,7 +519,7 @@ export default function Example() {
                     {Object.keys(currentFile.information).map((key) => (
                       <div key={key} className="flex justify-between py-3 text-sm font-medium">
                         <dt className="text-gray-500">{key}</dt>
-                        <dd className="whitespace-nowrap text-gray-900">{currentFile.information}</dd>
+                        <dd className="whitespace-nowrap text-gray-900">{currentFile.information.Created}</dd>
                       </div>
                     ))}
                   </dl>

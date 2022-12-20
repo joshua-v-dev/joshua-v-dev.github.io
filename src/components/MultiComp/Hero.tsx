@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-export default function Hero ()
-{
+export default function Hero() {
   return (
     <div className="relative mx-auto flex h-screen bg-transparent sm:items-center lg:items-start ">
       <div className="z-10 mx-auto bg-transparent">
@@ -12,8 +11,9 @@ export default function Hero ()
                 className="rounded-full object-contain"
                 src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648330190/JV_LOGO_BLUE_NEON_flabe5.png"
                 alt=""
-                layout="fill"
-              ></Image>
+                width={200}
+                height={200}
+              />
             </div>
           </a>
         </div>

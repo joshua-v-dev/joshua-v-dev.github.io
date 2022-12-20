@@ -16,8 +16,10 @@ const Footer: FunctionComponent<FooterProps> = () => {
             <Image
               className="bg-opacity-3 rounded-full object-contain"
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648330190/JV_LOGO_BLUE_NEON_flabe5.png"
-              alt=""
-              layout="fill"
+              alt="JV_LOGO_BLUE_NEON"
+              width={200}
+              height={200}
+
             />
           </div>
           <div className="flex" >

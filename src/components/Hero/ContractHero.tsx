@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Button from "components/MultiComp/Button";
-const ContractHero = () =>
-{
+import Button from "src/components/MultiComp/Button";
+const ContractHero = () => {
     return (
         <section
             className="border-b-1 container my-10 grid grid-flow-row items-center justify-center  rounded-3xl border-4 border-t-4 border-double border-black
@@ -32,8 +31,8 @@ const ContractHero = () =>
                                     className="-left-18 absolute -top-12 z-10 w-28 md:w-auto"
                                     src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643879107/Green_Purple_Computing_Technology_Logo_t9rm0q.svg"
                                     alt=""
-                                    width="500"
-                                    height="500"
+                                    width={500}
+                                    height={500}
                                 />
                             </div>
                         </div>
