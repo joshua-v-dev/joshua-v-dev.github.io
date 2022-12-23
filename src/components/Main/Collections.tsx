@@ -8,7 +8,7 @@
 //           Collections
 //         </h2>
 //       </div>
-//       <div className="lg:max-h-max  container mx-auto grid grid-flow-col grid-rows-2  gap-12 sm:py-24 lg:max-w-max ">
+//       <div className="lg:max-h-max  container mx-auto grid grid-flow-col grid-rows-2  gap-12 sm:py-24 ">
 //         {callouts.map((callouts) => (
 //           <div
 //             key={callouts.id}
@@ -22,7 +22,7 @@
 //                 <Image
 //                   src={callouts.imageSrc}
 //                   alt={callouts.imageAlt}
-//                   className="max-h-fit max-w-fit bg-emerald-600"
+//                   className="max-h-fit  bg-emerald-600"
 
 //                   priority
 //                 />
@@ -205,7 +205,7 @@ export default function Example() {
                 leaveFrom="translate-x-0"
                 leaveTo="-translate-x-full"
               >
-                <Dialog.Panel className="relative flex max-w-xs flex-1 flex-col bg-indigo-700 pt-5 pb-4">
+                <Dialog.Panel className="relative flex  flex-1 flex-col bg-indigo-700 pt-5 pb-4">
                   <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-300"
@@ -369,7 +369,7 @@ export default function Example() {
           {/* Main content */}
           <div className="flex flex-1 items-stretch overflow-hidden">
             <main className="flex-1 overflow-y-auto">
-              <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+              <div className="mx-auto  px-4 pt-8 sm:px-6 lg:px-8">
                 <div className="flex">
                   <h1 className="flex-1 text-2xl font-bold text-gray-900">Photos</h1>
                   <div className="ml-6 flex items-center rounded-lg bg-gray-100 p-0.5 sm:hidden">

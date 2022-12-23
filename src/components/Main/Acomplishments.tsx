@@ -8,7 +8,7 @@ export default function Acomplishments() {
         <div className="grid-col-3 mx-auto grid gap-20 ">
           <div className="  flex flex-wrap gap-y-24">
             <div className="  md:w-1/2 lg:w-1/3">
-              <div className="flex max-w-max">
+              <div className="flex ">
                 <span className="mx-auto">
                   <svg
                     width="48"

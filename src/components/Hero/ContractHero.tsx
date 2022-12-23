@@ -26,7 +26,7 @@ const ContractHero = () => {
                             </div>
                         </div>
                         <div className=" px-4 md:w-1/2">
-                            <div className="relative mx-auto my-auto max-w-max md:mr-0">
+                            <div className="relative mx-auto my-auto md:mr-0">
                                 <Image
                                     className="-left-18 absolute -top-12 z-10 w-28 md:w-auto"
                                     src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643879107/Green_Purple_Computing_Technology_Logo_t9rm0q.svg"

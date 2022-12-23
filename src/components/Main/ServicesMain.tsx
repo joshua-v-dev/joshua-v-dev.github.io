@@ -11,11 +11,11 @@ const ServicesMain = () => {
                             P.W.A. (Progressive.Web.App)
                         </p>
                     </div>
-                    <div className="mx-auto max-w-6xl">
+                    <div className="mx-auto ">
                         <div className="border-12 rounded-xl border-gray-700 bg-gray-900 ">
                             <div className="flex flex-wrap">
                                 <div className="  px-4  lg:w-7/12">
-                                    <div className="max-w-xl px-8">
+                                    <div className=" px-8">
                                         <div className="flex items-center">
                                             <h2 className="font-heading text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Premium
@@ -100,7 +100,7 @@ const ServicesMain = () => {
                         <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pt-12 pb-14 lg:pl-24 lg:pt-24">
                             <div className=" flex flex-wrap">
                                 <div className="  px-4 lg:mb-0 lg:w-7/12">
-                                    <div className="max-w-xl px-8 ">
+                                    <div className=" px-8 ">
                                         <div className=" flex items-center">
                                             <h2 className="font-heading text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Custom
@@ -215,11 +215,11 @@ const ServicesMain = () => {
                             P.W.A. (Progressive.Web.App)
                         </p>
                     </div>
-                    <div className="mx-auto max-w-6xl">
+                    <div className="mx-auto ">
                         <div className="border-12  rounded-xl border-gray-700 bg-gray-900">
                             <div className=" flex flex-wrap">
                                 <div className="  px-4 lg:w-7/12">
-                                    <div className="max-w-xl px-8 lg:pl-0">
+                                    <div className=" px-8 lg:pl-0">
                                         <div className="flex items-center">
                                             <h2 className="font-heading mr-16 text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Premium
@@ -302,7 +302,7 @@ const ServicesMain = () => {
                         <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pt-12 pb-14 lg:pl-24 lg:pt-24">
                             <div className=" flex flex-wrap">
                                 <div className="  px-4  lg:w-7/12">
-                                    <div className="max-w-xl px-8 lg:pl-0">
+                                    <div className=" px-8 lg:pl-0">
                                         <div className="flex items-center">
                                             <h2 className="font-heading  text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Custom

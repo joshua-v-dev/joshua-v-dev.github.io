@@ -5,7 +5,7 @@ const FormBlock = () => {
                 <div className="container mx-auto px-4">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="mb-8 px-4 lg:mb-0 lg:w-1/2">
-                            <div className="max-w-lg">
+                            <div>
                                 <h2 className="font-heading mb-8 text-3xl font-bold leading-tight md:text-4xl md:leading-tight lg:mb-12 lg:text-6xl lg:leading-tight">
                                     I look forward to hearing from you.
                                 </h2>

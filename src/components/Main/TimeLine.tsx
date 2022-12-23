@@ -5,7 +5,7 @@ import { TimeLineData } from "../../database/database";
 export default function Timeline() {
   return (
     <>
-      <div className="container grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:max-w-screen-2xl lg:grid-cols-2">
+      <div className="container grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:grid-cols-2">
         <div className=" grid space-y-5 space-x-5">
           <h1 className="tracking-loose container font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-7xl ">
             Roadmap

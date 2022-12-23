@@ -7,13 +7,13 @@ const FutureMain = () => {
                         <div className=" flex flex-wrap">
                             <div className="mb-8 flex  items-center px-4 md:mb-20 lg:mb-0 lg:w-1/2">
                                 <div className=" text-center lg:text-left">
-                                    <div className="mx-auto max-w-md lg:mx-0">
+                                    <div className="mx-auto lg:mx-0">
                                         <h2 className="mb-3 text-4xl font-bold text-gray-200 lg:text-5xl">
                                             <span>Build &amp; Launch without</span>
                                             <span className="text-purple-600">problems</span>
                                         </h2>
                                     </div>
-                                    <div className="mx-auto max-w-sm lg:mx-0">
+                                    <div className="mx-auto lg:mx-0">
                                         <p className="mb-4 leading-loose text-gray-400">
                                             Easter Egg:
                                             Everybody get up it&apos;s time to slam now
@@ -60,9 +60,9 @@ const FutureMain = () => {
 
                 <div className="bg-cover bg-transparent bg-no-repeat pt-20">
                     <div className=" bg-transparent my-3 ">
-                        <div className="mx-auto lg:space-y-8 max-w-2xl lg:max-w-5xl text-center">
+                        <div className="mx-auto text-center">
                             <div className="flex items-center justify-center">
-                                <div className="text-center lg:space-y-8">
+                                <div className="text-center ">
                                     <h3 className="  lg:text-7xl font-extrabold  text-indigo-800 brightness-150 leading-snug ">
                                         Joshua Vaughn
                                     </h3>
@@ -80,7 +80,7 @@ const FutureMain = () => {
 
                 <div className="container mx-auto px-4">
 
-                    <div className="mx-auto max-w-2xl pb-12">
+                    <div className="mx-auto pb-12">
 
                         <p className="mb-6 text-lg lg:text-2xl text-gray-500">
                             These are the things that I am doing in the future for my web development projects.
