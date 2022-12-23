@@ -1,8 +1,9 @@
 //Paralax scroll effects and text slide in transitions need to be added.
-import ServicesHero from "components/Hero/ServicesHero";
-import ServicesMain from "components/Main/ServicesMain";
-const Services = () =>
-{
+
+import ServicesHero from "../Hero/ServicesHero";
+import ServicesMain from "../Main/ServicesMain";
+
+const Services = () => {
   return (
     <>
       <ServicesHero />

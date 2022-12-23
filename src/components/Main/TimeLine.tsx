@@ -15,7 +15,7 @@ export default function Timeline() {
             about my future.
           </p>
 
-          <dl className="grid max-w-full grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+          <dl className="grid max- grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {TimeLineData.map(
               (TimeLineData, i): ReactElement => (
                 <div key={i} className="grid-col grid">
@@ -36,7 +36,7 @@ export default function Timeline() {
           </dl>
         </div>
         <div className="relative grid grid-cols-2 grid-rows-2 gap-3 sm:gap-6  lg:gap-8">
-          <div className="relative h-full w-full ">
+          <div className="relative h-full  ">
             <Image
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540674/2_wgngqv.png"
               alt="string"
@@ -46,7 +46,7 @@ export default function Timeline() {
               priority
             />
           </div>
-          <div className="relative h-full w-full">
+          <div className="relative h-full ">
             <Image
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648967003/HybridBox_nwqhlx.png"
               alt="Top down view of walnut card tray with embedded magnets and card groove."
@@ -56,7 +56,7 @@ export default function Timeline() {
               priority
             />
           </div>
-          <div className="relative h-full w-full">
+          <div className="relative h-full ">
             <Image
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540792/12_umzgvm.png"
               alt="Side of walnut card tray with card groove and recessed card area."
@@ -66,7 +66,7 @@ export default function Timeline() {
               priority
             />
           </div>
-          <div className="relative h-full w-full">
+          <div className="relative h-full ">
             <Image
               src="https://res.cloudinary.com/dpytkhyme/image/upload/v1649540780/11_miofs2.png"
               alt="Walnut card tray filled with cards and card angled in dedicated groove."

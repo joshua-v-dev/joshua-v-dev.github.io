@@ -1,8 +1,7 @@
+import RecruiterHero from "../Hero/RecruiterHero";
+import RecruiterMain from "../Main/RecruiterMain";
 
-import RecruiterHero from "components/Hero/RecruiterHero";
-import RecruiterMain from "components/Main/RecruiterMain";
-const Recruiter = () =>
-{
+const Recruiter = () => {
   return (
     <>
       <section className="container max-w-max overflow-hidden rounded-xl bg-transparent py-5 opacity-100 2xl:py-10">

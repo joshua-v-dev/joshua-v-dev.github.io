@@ -143,25 +143,25 @@ export default function Example() {
         <body class="h-full overflow-hidden">
         ```
       */}
-      <div className="flex h-full">
+      <div className="flex">
         {/* Narrow sidebar */}
         <div className="hidden w-28 overflow-y-auto bg-indigo-700 md:block">
-          <div className="flex w-full flex-col items-center py-6">
+          <div className="flex flex-col items-center py-6">
             <div className="flex flex-shrink-0 items-center">
               <Image
-                className="h-8 w-auto"
+                className="h-8"
                 src="https://tailwindui.com/img/logos/mark.svg?color=white"
                 alt="Your Company"
               />
             </div>
-            <div className="mt-6 w-full flex-1 space-y-1 px-2">
+            <div className="mt-6 flex-1 gap-y-1 px-2">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-800 hover:text-white',
-                    'group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium'
+                    'group p-3 rounded-md flex flex-col items-center text-xs font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
@@ -205,7 +205,7 @@ export default function Example() {
                 leaveFrom="translate-x-0"
                 leaveTo="-translate-x-full"
               >
-                <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-indigo-700 pt-5 pb-4">
+                <Dialog.Panel className="relative flex max-w-xs flex-1 flex-col bg-indigo-700 pt-5 pb-4">
                   <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-300"
@@ -228,7 +228,7 @@ export default function Example() {
                   </Transition.Child>
                   <div className="flex flex-shrink-0 items-center px-4">
                     <Image
-                      className="h-8 w-auto"
+                      className="h-8"
                       src="https://tailwindui.com/img/logos/mark.svg?color=white"
                       alt="Your Company"
                     />
@@ -272,7 +272,7 @@ export default function Example() {
 
         {/* Content area */}
         <div className="flex flex-1 flex-col overflow-hidden">
-          <header className="w-full">
+          <header>
             <div className="relative z-10 flex h-16 flex-shrink-0 border-b border-gray-200 bg-white shadow-sm">
               <button
                 type="button"
@@ -284,28 +284,28 @@ export default function Example() {
               </button>
               <div className="flex flex-1 justify-between px-4 sm:px-6">
                 <div className="flex flex-1">
-                  <form className="flex w-full md:ml-0" action="#" method="GET">
+                  <form className="flex md:ml-0" action="#" method="GET">
                     <label htmlFor="desktop-search-field" className="sr-only">
                       Search all files
                     </label>
                     <label htmlFor="mobile-search-field" className="sr-only">
                       Search all files
                     </label>
-                    <div className="relative w-full text-gray-400 focus-within:text-gray-600">
+                    <div className="relative text-gray-400 focus-within:text-gray-600">
                       <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center">
                         {/* <MagnifyingGlassIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" /> */}
                       </div>
                       <input
                         name="mobile-search-field"
                         id="mobile-search-field"
-                        className="h-full w-full border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 sm:hidden"
+                        className="h-full  border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 sm:hidden"
                         placeholder="Search"
                         type="search"
                       />
                       <input
                         name="desktop-search-field"
                         id="desktop-search-field"
-                        className="hidden h-full w-full border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 sm:block"
+                        className="hidden h-full  border-transparent py-2 pl-8 pr-3 text-base text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 sm:block"
                         placeholder="Search all files"
                         type="search"
                       />
@@ -400,7 +400,7 @@ export default function Example() {
                     <select
                       id="tabs"
                       name="tabs"
-                      className="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                      className="block rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                       defaultValue="Recently Viewed"
                     >
                       <option>Recently Viewed</option>
@@ -463,7 +463,7 @@ export default function Example() {
                             file.current
                               ? 'ring-2 ring-offset-2 ring-indigo-500'
                               : 'focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500',
-                            'group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden'
+                            'group block  aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden'
                           )}
                         >
                           <Image
@@ -493,7 +493,7 @@ export default function Example() {
             <aside className="hidden w-96 overflow-y-auto border-l border-gray-200 bg-white p-8 lg:block">
               <div className="space-y-6 pb-16">
                 <div>
-                  <div className="aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg">
+                  <div className="aspect-w-10 aspect-h-7 block  overflow-hidden rounded-lg">
                     <Image src={currentFile.source} alt="" className="object-cover" />
                   </div>
                   <div className="mt-4 flex items-start justify-between">

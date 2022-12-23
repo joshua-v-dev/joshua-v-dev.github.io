@@ -1,6 +1,5 @@
-import FormBlock from "components/MultiComp/FormBlock";
-export default function Contact ()
-{
+import FormBlock from "../MultiComp/FormBlock";
+export default function Contact() {
   return (
     <>
       <FormBlock />

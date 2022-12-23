@@ -10,7 +10,7 @@ const ContractHero = () => {
             <div className=" p-10 md:py-28">
                 <div className=" mx-auto">
                     <div className=" flex flex-wrap xl:items-center">
-                        <div className="mb-16 w-full  md:mb-0 md:w-1/2">
+                        <div className="mb-16   md:mb-0 md:w-1/2">
                             <h1 className="mb-6 text-3xl font-bold leading-tight tracking-tight text-green-700 brightness-200 md:text-5xl lg:text-6xl">
                                 Web technology can revolutionize any business
                             </h1>
@@ -25,7 +25,7 @@ const ContractHero = () => {
                                 <Button />
                             </div>
                         </div>
-                        <div className="w-full px-4 md:w-1/2">
+                        <div className=" px-4 md:w-1/2">
                             <div className="relative mx-auto my-auto max-w-max md:mr-0">
                                 <Image
                                     className="-left-18 absolute -top-12 z-10 w-28 md:w-auto"

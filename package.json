@@ -1,11 +1,5 @@
 {
   "name": "joshuas_next_portfolio",
-  "babelMacros": {
-    "twin": {
-      "preset": "stitches",
-      "stitchesConfig": "./stitches.config.ts"
-    }
-  },
   "engines": {
     "node": "16.x"
   },
@@ -18,41 +12,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@babel/plugin-syntax-jsx": "^7.16.7",
-    "@babel/plugin-syntax-typescript": "^7.16.7",
-    "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^2.0.13",
-    "@stitches/react": "^1.2.7",
-    "@types/react-dom": "^18.0.9",
     "framer-motion": "^7.10.3",
-    "gray-matter": "^4.0.3",
     "next": "^13.0.7",
     "popmotion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^2.6.0",
-    "remark-frontmatter": "^4.0.1",
     "tsparticles": "^2.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.7",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@types/node": "^18.11.17",
     "@types/react": "^18.0.26",
-    "@types/tailwindcss": "^3.0.9",
     "autoprefixer": "^10.4.2",
-    "babel-loader": "^9.1.0",
-    "babel-plugin-macros": "^3.1.0",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
     "postcss": "^8.4.8",
     "prettier": "^2.6.1",
     "prettier-plugin-tailwindcss": "^0.2.1",
     "tailwindcss": "^3.0.23",
-    "twin.macro": "^3.0.0",
-    "typescript": "^4.6.2",
-    "webpack": "^5.70.0"
+    "typescript": "^4.6.2"
   }
 }

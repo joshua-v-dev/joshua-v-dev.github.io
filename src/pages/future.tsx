@@ -1,8 +1,8 @@
 
+import Future from "src/components/Page/Future";
 import Layout from "../layout/Layout";
-import Future from "components/Page/Future";
-const FuturePage = () =>
-{
+
+const FuturePage = () => {
   return (
     <>
       <Layout>

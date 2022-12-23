@@ -1,5 +1,4 @@
-const ServicesMain = () =>
-{
+const ServicesMain = () => {
     return (
         <>
             <section className="bg-transparent ">
@@ -15,17 +14,17 @@ const ServicesMain = () =>
                     <div className="mx-auto max-w-6xl">
                         <div className="border-12 rounded-xl border-gray-700 bg-gray-900 ">
                             <div className="flex flex-wrap">
-                                <div className=" w-full px-4  lg:w-7/12">
+                                <div className="  px-4  lg:w-7/12">
                                     <div className="max-w-xl px-8">
                                         <div className="flex items-center">
                                             <h2 className="font-heading text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Premium
                                             </h2>
-                                            <span className="hidden w-full bg-gray-700 py-px lg:inline-block"></span>
+                                            <span className="hidden  bg-gray-700 py-px lg:inline-block"></span>
                                         </div>
                                         <p className=" text-lg text-gray-200">Landing + 2</p>
                                         <ul className=" flex flex-wrap text-left text-base text-gray-200 lg:text-lg">
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -41,7 +40,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span>Landing Page</span>
                                             </li>
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className="h-4 w-5"
                                                     width="20"
@@ -57,7 +56,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span>2 Linked Pages</span>
                                             </li>
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -76,7 +75,7 @@ const ServicesMain = () =>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="w-full px-4 lg:w-5/12">
+                                <div className=" px-4 lg:w-5/12">
                                     <div className="h-full text-center">
                                         <h3 className=" text-lg font-bold text-blue-500">
                                             Click for more details
@@ -100,19 +99,19 @@ const ServicesMain = () =>
                         </div>
                         <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pt-12 pb-14 lg:pl-24 lg:pt-24">
                             <div className=" flex flex-wrap">
-                                <div className=" w-full px-4 lg:mb-0 lg:w-7/12">
+                                <div className="  px-4 lg:mb-0 lg:w-7/12">
                                     <div className="max-w-xl px-8 ">
                                         <div className=" flex items-center">
                                             <h2 className="font-heading text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Custom
                                             </h2>
-                                            <span className="hidden w-full bg-gray-700 py-px lg:inline-block"></span>
+                                            <span className="hidden  bg-gray-700 py-px lg:inline-block"></span>
                                         </div>
                                         <p className=" text-lg text-gray-200">
                                             If you can think it I can make it
                                         </p>
                                         <ul className="flex flex-wrap text-left text-base text-gray-200 lg:text-lg">
-                                            <li className="flex w-full items-center px-4 lg:w-1/2">
+                                            <li className="flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className="h-4 w-5"
                                                     width="20"
@@ -128,7 +127,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span className="font-medium">Animations</span>
                                             </li>
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -144,7 +143,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span className="font-medium">Custom Artwork</span>
                                             </li>
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -162,7 +161,7 @@ const ServicesMain = () =>
                                                     Cloud Storage & Management
                                                 </span>
                                             </li>
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -181,7 +180,7 @@ const ServicesMain = () =>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="w-full px-4 lg:w-5/12">
+                                <div className=" px-4 lg:w-5/12">
                                     <div className="h-full text-center">
                                         <h3 className=" text-lg font-bold text-blue-500">
                                             Click for more details
@@ -219,17 +218,17 @@ const ServicesMain = () =>
                     <div className="mx-auto max-w-6xl">
                         <div className="border-12  rounded-xl border-gray-700 bg-gray-900">
                             <div className=" flex flex-wrap">
-                                <div className=" w-full px-4 lg:w-7/12">
+                                <div className="  px-4 lg:w-7/12">
                                     <div className="max-w-xl px-8 lg:pl-0">
                                         <div className="flex items-center">
                                             <h2 className="font-heading mr-16 text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Premium
                                             </h2>
-                                            <span className="hidden w-full bg-gray-700 py-px lg:inline-block"></span>
+                                            <span className="hidden  bg-gray-700 py-px lg:inline-block"></span>
                                         </div>
                                         <p className=" text-lg text-gray-200">Landing + 2</p>
                                         <ul className=" flex flex-wrap text-left text-base text-gray-200 lg:text-lg">
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className="mr-6 h-4 w-5"
                                                     width="20"
@@ -245,7 +244,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span>Landing Page</span>
                                             </li>
-                                            <li className="flex w-full items-center px-4 lg:w-1/2">
+                                            <li className="flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -261,7 +260,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span>2 Linked Pages</span>
                                             </li>
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -280,7 +279,7 @@ const ServicesMain = () =>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="w-full px-4 lg:w-5/12">
+                                <div className=" px-4 lg:w-5/12">
                                     <div className="h-full text-center">
                                         <h3 className=" text-lg font-bold text-blue-500">
                                             Click for more details
@@ -302,19 +301,19 @@ const ServicesMain = () =>
                         </div>
                         <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pt-12 pb-14 lg:pl-24 lg:pt-24">
                             <div className=" flex flex-wrap">
-                                <div className=" w-full px-4  lg:w-7/12">
+                                <div className="  px-4  lg:w-7/12">
                                     <div className="max-w-xl px-8 lg:pl-0">
                                         <div className="flex items-center">
                                             <h2 className="font-heading  text-3xl font-bold text-gray-200 md:text-4xl">
                                                 Custom
                                             </h2>
-                                            <span className="hidden w-full bg-gray-700 py-px lg:inline-block"></span>
+                                            <span className="hidden  bg-gray-700 py-px lg:inline-block"></span>
                                         </div>
                                         <p className=" text-lg text-gray-200">
                                             If you can think it I can make it
                                         </p>
                                         <ul className=" flex flex-wrap text-left text-base text-gray-200 lg:text-lg">
-                                            <li className=" flex w-full items-center px-4 lg:w-1/2">
+                                            <li className=" flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -330,7 +329,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span className="font-medium">Animations</span>
                                             </li>
-                                            <li className="flex w-full items-center px-4 lg:w-1/2">
+                                            <li className="flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className="h-4 w-5"
                                                     width="20"
@@ -346,7 +345,7 @@ const ServicesMain = () =>
                                                 </svg>
                                                 <span className="font-medium">Custom Artwork</span>
                                             </li>
-                                            <li className="flex w-full items-center px-4 lg:w-1/2">
+                                            <li className="flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className="h-4 w-5"
                                                     width="20"
@@ -364,7 +363,7 @@ const ServicesMain = () =>
                                                     Cloud Storage & Management
                                                 </span>
                                             </li>
-                                            <li className="flex w-full items-center px-4 lg:w-1/2">
+                                            <li className="flex  items-center px-4 lg:w-1/2">
                                                 <svg
                                                     className=" h-4 w-5"
                                                     width="20"
@@ -383,7 +382,7 @@ const ServicesMain = () =>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="w-full px-4 lg:w-5/12">
+                                <div className=" px-4 lg:w-5/12">
                                     <div className="h-full text-center">
                                         <h3 className=" text-lg font-bold text-blue-500">
                                             Click for more details

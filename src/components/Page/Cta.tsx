@@ -1,6 +1,5 @@
-import CallToAction from "components/MultiComp/CallToAction";
-const Cta = () =>
-{
+import CallToAction from "../MultiComp/CallToAction";
+const Cta = () => {
   return (
     <>
       <CallToAction />
