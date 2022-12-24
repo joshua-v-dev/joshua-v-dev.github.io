@@ -69,7 +69,7 @@ import { Dialog, Menu, Transition } from '@headlessui/react'
 
 import Image from 'next/image'
 import { Fragment, useState } from 'react'
-import { CogIcon, FilterIcon, HeartIcon, HomeIcon, PhotographIcon, ReceiptTaxIcon, UserGroupIcon } from 'src/database/icons'
+import { CogIcon, FilterIcon, HeartIcon, HomeIcon, PhotographIcon, ReceiptTaxIcon, UserGroupIcon } from 'src/lib/icons'
 
 const navigation = [
   { name: 'Home', href: '#', icon: HomeIcon, current: false },

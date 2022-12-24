@@ -1,4 +1,4 @@
-import { features } from "../../database/database";
+import { features } from "../../lib/constants";
 
 export default function Technologies() {
   return (

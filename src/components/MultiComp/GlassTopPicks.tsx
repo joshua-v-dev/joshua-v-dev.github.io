@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FunctionComponentElement } from "react";
-import { topPicks } from "../../database/database";
+import { topPicks } from "../../lib/constants";
 
 export default function GlassTopPicks() {
   return (
