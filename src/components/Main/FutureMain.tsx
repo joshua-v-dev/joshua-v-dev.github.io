@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const FutureMain = () => {
     return (
         <section>
@@ -26,18 +28,18 @@ const FutureMain = () => {
                                             ... Bugs Bunny Rules!
                                         </p>
                                         <div>
-                                            <a
+                                            <Link
                                                 className="mb-2 inline-block  rounded-r-xl rounded-t-xl bg-purple-600 py-2 px-6 font-semibold leading-loose text-gray-200 transition duration-200 hover:bg-purple-700 lg:mb-0 lg:mr-3 lg:w-auto"
                                                 href="#"
                                             >
                                                 Get Started
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 className="inline-block  rounded-r-xl rounded-t-xl border-2 border-gray-700 bg-gray-900 py-2 px-6 font-semibold leading-loose text-gray-200 transition duration-200 hover:border-gray-600 lg:w-auto"
                                                 href="#"
                                             >
                                                 How it works
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

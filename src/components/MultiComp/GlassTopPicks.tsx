@@ -8,7 +8,7 @@ export default function GlassTopPicks() {
     <>
       <div className="container">
         <div
-          className="mx-auto my-2 grid grid-flow-col gap-x-3 grid-cols-3 bg-transparent shadow-indigo-600">
+          className="mx-auto my-2 grid sm:grid-flow-col gap-x-3 lg:grid-cols-3 bg-transparent shadow-indigo-600">
           {topPicks.map(
             (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
               <div
@@ -44,7 +44,7 @@ export default function GlassTopPicks() {
                   {topPicks.description}
                 </p>
                 <div className="flex flex-wrap items-center justify-center">
-                  <a
+                  <Link
                     href={topPicks.href}
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
@@ -59,7 +59,7 @@ export default function GlassTopPicks() {
                         Learn More
                       </button>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             )

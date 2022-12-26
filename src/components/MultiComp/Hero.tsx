@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <div className="relative mx-auto flex h-screen bg-transparent sm:items-center lg:items-start ">
       <div className="z-10 mx-auto bg-transparent">
         <div className="flex select-none items-center justify-center">
-          <a className="text-2xl font-bold text-gray-200" href="#">
+          <Link className="text-2xl font-bold text-gray-200" href="#">
             <div className="relative h-36 w-36">
               <Image
                 className="rounded-full object-contain"
@@ -15,7 +16,7 @@ export default function Hero() {
                 height={200}
               />
             </div>
-          </a>
+          </Link>
         </div>
         <main className="  flex select-none justify-center py-6">
           <div className=" text-center ">

@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const ServicesMain = () => {
     return (
         <>
@@ -87,12 +89,12 @@ const ServicesMain = () => {
                                             <p className="self-end text-5xl">500</p>
                                         </div>
                                         <p className=" text-lg text-gray-200">/P.W.A.</p>
-                                        <a
+                                        <Link
                                             className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-blue-600"
                                             href="#"
                                         >
                                             Learn More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -192,12 +194,12 @@ const ServicesMain = () => {
                                             <p className="self-end text-5xl">1000</p>
                                         </div>
                                         <p className="text-lg text-gray-200">/P.W.A.</p>
-                                        <a
+                                        <Link
                                             className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-blue-600"
                                             href="#"
                                         >
                                             Learn More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -289,12 +291,12 @@ const ServicesMain = () => {
                                             <p className="self-end text-5xl">500</p>
                                         </div>
                                         <p className="text-lg text-gray-200">/P.W.A.</p>
-                                        <a
+                                        <Link
                                             className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-blue-600"
                                             href="#"
                                         >
                                             Learn More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -394,12 +396,12 @@ const ServicesMain = () => {
                                             <p className="self-end text-5xl">1000</p>
                                         </div>
                                         <p className=" text-lg text-gray-200">/P.W.A.</p>
-                                        <a
+                                        <Link
                                             className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-blue-600"
                                             href="#"
                                         >
                                             Learn More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomeCta() {
   return (
     <>
@@ -12,20 +14,20 @@ export default function HomeCta() {
             </h2>
             <div className="flex lg:flex-shrink-0 lg:space-x-4">
               <div className="inline-flex rounded-md shadow lg:space-x-2">
-                <a
+                <Link
                   href="#"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-base font-medium text-indigo-600 brightness-150 hover:bg-indigo-700"
                 >
                   Activate Demo
-                </a>
+                </Link>
               </div>
               <div className="inline-flex rounded-md shadow">
-                <a
+                <Link
                   href="#"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-teal-600 brightness-150 hover:bg-indigo-50"
                 >
                   Contact Me
-                </a>
+                </Link>
               </div>
             </div>
           </div>

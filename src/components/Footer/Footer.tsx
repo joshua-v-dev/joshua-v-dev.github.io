@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FunctionComponent } from "react";
 
 type FooterProps = {
@@ -30,36 +31,36 @@ const Footer: FunctionComponent<FooterProps> = () => {
           <div className="relative flex">
             <ul className="grid grid-flow-row grid-rows-2 sm:grid-flow-col lg:flex-row lg:inline-flex lg:gap-x-10 lg:py-10 lg:items-center lg:justify-center ">
               <li>
-                <a
+                <Link
                   className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                   href="#"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                   href="#"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                   href="#"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
                   href="#"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

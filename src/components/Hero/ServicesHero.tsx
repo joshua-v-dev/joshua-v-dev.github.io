@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ServicesHero = () => {
     return (
         <div className="mx-auto  text-center">
@@ -11,18 +13,18 @@ const ServicesHero = () => {
                 <p className=" text-2xl font-bold text-gray-200">
                     Let&apos;s start building your digital solution today
                 </p>
-                <a
+                <Link
                     className="mb-4 inline-block rounded-full bg-blue-500 py-4 px-12 font-bold text-gray-200 transition duration-200 hover:bg-blue-600 sm:mb-0 sm:mr-4"
                     href="#"
                 >
                     Contract Me
-                </a>
-                <a
+                </Link>
+                <Link
                     className="inline-block rounded-full border border-gray-50 py-4 px-12 font-bold text-gray-200 hover:border-gray-100"
                     href="#"
                 >
                     Recruit Me
-                </a>
+                </Link>
             </div>
         </div>
     )

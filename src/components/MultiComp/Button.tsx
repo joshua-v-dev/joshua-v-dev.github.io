@@ -1,6 +1,6 @@
 const Button = () => {
   return (
-    <div className="container mt-5 -mb-10 grid items-end justify-end p-3">
+    <div className="container mt-5 -mb-10 grid items-center justify-center p-3">
       <button
         type="button"
         className="/90 grid grid-flow-col-dense justify-end rounded-3xl border-2 border-t-2

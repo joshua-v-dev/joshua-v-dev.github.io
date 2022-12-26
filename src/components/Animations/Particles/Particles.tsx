@@ -1,5 +1,6 @@
 import Particles from "react-tsparticles";
 
+
 export default function ParticleAnimation() {
   return (
     <>
@@ -150,19 +151,19 @@ export default function ParticleAnimation() {
                 },
               },
               bubble: {
-                distance: 69,
-                size: 39,
-                duration: 90,
+                distance: 9,
+                size: 9,
+                duration: 9,
                 opacity: 1,
               },
               repulse: {
-                distance: 39,
+                distance: 3,
               },
               push: {
-                particles_nb: 39,
+                particles_nb: 3,
               },
               remove: {
-                particles_nb: 39,
+                particles_nb: 3,
               },
             },
           },

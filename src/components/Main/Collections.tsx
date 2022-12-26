@@ -68,6 +68,7 @@ import { Dialog, Menu, Transition } from '@headlessui/react'
 
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { Fragment, useState } from 'react'
 import { CogIcon, FilterIcon, HeartIcon, HomeIcon, PhotographIcon, ReceiptTaxIcon, UserGroupIcon } from 'src/lib/icons'
 
@@ -156,7 +157,7 @@ export default function Example() {
             </div>
             <div className="mt-6 flex-1 gap-y-1 px-2">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className={classNames(
@@ -174,7 +175,7 @@ export default function Example() {
                     aria-hidden="true"
                   />
                   <span className="mt-2">{item.name}</span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -237,7 +238,7 @@ export default function Example() {
                     <nav className="flex h-full flex-col">
                       <div className="space-y-1">
                         {navigation.map((item) => (
-                          <a
+                          <Link
                             key={item.name}
                             href={item.href}
                             className={classNames(
@@ -256,7 +257,7 @@ export default function Example() {
                               aria-hidden="true"
                             />
                             <span>{item.name}</span>
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </nav>
@@ -338,7 +339,7 @@ export default function Example() {
                         {userNavigation.map((item) => (
                           <Menu.Item key={item.name}>
                             {({ active }) => (
-                              <a
+                              <Link
                                 href={item.href}
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
@@ -346,7 +347,7 @@ export default function Example() {
                                 )}
                               >
                                 {item.name}
-                              </a>
+                              </Link>
                             )}
                           </Menu.Item>
                         ))}
@@ -412,7 +413,7 @@ export default function Example() {
                     <div className="flex items-center border-b border-gray-200">
                       <nav className="-mb-px flex flex-1 space-x-6 xl:space-x-8" aria-label="Tabs">
                         {tabs.map((tab) => (
-                          <a
+                          <Link
                             key={tab.name}
                             href={tab.href}
                             aria-current={tab.current ? 'page' : undefined}
@@ -424,7 +425,7 @@ export default function Example() {
                             )}
                           >
                             {tab.name}
-                          </a>
+                          </Link>
                         ))}
                       </nav>
                       <div className="ml-6 hidden items-center rounded-lg bg-gray-100 p-0.5 sm:flex">

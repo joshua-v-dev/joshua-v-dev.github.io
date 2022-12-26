@@ -9,9 +9,11 @@ type LayoutProps = {
 const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Header />
-      {children}
-      <Footer />
+      <div className="container">
+        <Header />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 };

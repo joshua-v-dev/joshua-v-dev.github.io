@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const CallToAction = () => {
     return (
         <section className="relative my-20 overflow-hidden bg-gray-800 pt-20 pb-32  2xl:py-40">
@@ -16,12 +18,12 @@ const CallToAction = () => {
                             Let&apos;s change YOUR World together!
                         </p>
 
-                        <a
+                        <Link
                             className="inline-block rounded-full border border-gray-50 py-4 px-12 font-bold text-gray-200 hover:border-gray-100"
                             href="#"
                         >
                             Contact Me Now!
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
