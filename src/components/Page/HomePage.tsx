@@ -1,11 +1,10 @@
-import React from "react";
-import HomeHero from "../Hero/HomeHero";
 import HomeCta from "../Cta/HomeCta";
+import HomeHero from "../Hero/HomeHero";
 
-export default function HomePage ()
-{
+export default function HomePage() {
   return (
     <>
+
       <HomeHero />
       <HomeCta />
     </>

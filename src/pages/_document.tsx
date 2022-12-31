@@ -19,7 +19,7 @@ export default class Document extends NextDocument {
         ...initialProps,
 
       };
-      // eslint-disable-next-line no-empty
+
     } finally {
     }
   }

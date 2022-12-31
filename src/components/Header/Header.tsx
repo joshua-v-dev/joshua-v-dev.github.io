@@ -1,6 +1,6 @@
 
 import React from "react";
-import Particles from "../Animations/Particles/index";
+import ParticlesContainer from "../Animations/Particles/ParticlesContainer";
 import Nav from "../Nav/Nav";
 
 type HeaderProps = {
@@ -10,7 +10,7 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = () => {
   return (
     <>
-      <Particles />
+      <ParticlesContainer />
       <Nav />
     </>
   );
