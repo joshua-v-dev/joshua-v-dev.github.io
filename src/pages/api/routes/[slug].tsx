@@ -1,25 +1,28 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-import { ParsedUrlQuery } from "querystring";
-interface IParams extends ParsedUrlQuery {
-  slug: string;
+import { GetServerSideProps } from "next";
+import { useRouter } from "next/router";
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { slug } = context.query;
+  return {
+    props: {
+      slug,
+    },
+  };
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const arr: string[] = ["slug1", "slug2"];
-  const paths = arr.map((slug) => {
-    return {
-      params: { slug },
-    };
-  });
-  return {
-    paths,
-    fallback: true,
-  };
+const Route = ({ slug }: any) => {
+  const router = useRouter();
+  return (
+    <>
+      <h1>Route: {slug}</h1>
+      <button onClick={() => router.push("/")}
+      >
+        Go to Home
+      </button>
+    </>
+  );
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  // This is where the error occurs
-  const { slug } = context.params as IParams; // Property 'slug' does not exist on type 'ParsedUrlQuery | undefined'
-  const props = fetch(`/api/${slug}`);
-  return { props };
-};
+export default Route;
+
+
