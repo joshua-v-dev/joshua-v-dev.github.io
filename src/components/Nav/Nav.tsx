@@ -1,11 +1,9 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-// import Link from 'next/link';
 import Link from "next/link";
 
 export default function Nav() {
   return (
     <>
-      <section className=" bg-transparent p-5 lg:p-6">
+      <section className="mx-auto bg-transparent p-5 lg:p-6">
         <nav className=" relative flex items-center justify-between ">
           <div className="hidden lg:flex lg:justify-start">
             <Link

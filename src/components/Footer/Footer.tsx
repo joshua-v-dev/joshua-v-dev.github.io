@@ -1,72 +1,83 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FunctionComponent } from "react";
+import Link from 'next/link';
 
-type FooterProps = {
-
-  title?: string;
-  primary?: boolean;
-  label?: string;
+type TExternalLinkProps = {
+  href: string;
+  children: React.ReactNode;
 };
-const Footer: FunctionComponent<FooterProps> = () => {
+
+const ExternalLink = ({ href, children }: TExternalLinkProps) => (
+  <Link
+    className="text-gray-500 hover:text-gray-600 transition"
+    target="_blank"
+    rel="noopener noreferrer"
+    href={href}
+  >
+    {children}
+  </Link>
+);
+
+export default function Footer() {
   return (
-    <>
-      <section className="mx-auto bg-transparent">
-        <div className="grid items-center justify-center grid-cols-1 lg:flex lg:items-center ">
-          <div className="relative px-5 h-20 w-20 lg:flex">
-            <Image
-              className="bg-opacity-3 rounded-full object-contain"
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648330190/JV_LOGO_BLUE_NEON_flabe5.png"
-              alt="JV_LOGO_BLUE_NEON"
-              width={200}
-              height={200}
+    <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8">
+      <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
 
-            />
-          </div>
-          <div className="flex" >
-            <p className="sm:grid lg:inline-flex p-5 bg-gradient-to-r from-blue-500 to-indigo-800 bg-clip-text text-5xl font-black text-transparent brightness-125">
-              #FullStackDeveloper
-            </p>
-          </div>
-          <div className="relative flex">
-            <ul className="grid grid-flow-row grid-rows-2 sm:grid-flow-col lg:flex-row lg:inline-flex lg:gap-x-10 lg:py-10 lg:items-center lg:justify-center ">
-              <li>
-                <Link
-                  className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
-                  href="#"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
-                  href="#"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
-                  href="#"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-lg font-medium text-gray-200 brightness-200 hover:text-indigo-700"
-                  href="#"
-                >
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
+        <div className="flex flex-col space-y-4">
+          <Link
+            href="/"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            About
+          </Link>
+          <Link
+            href="/newsletter"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Newsletter
+          </Link>
         </div>
-      </section>
-    </>
+        <div className="flex flex-col space-y-4">
+          <ExternalLink href="https://twitter.com/leeerob">
+            Twitter
+          </ExternalLink>
+          <ExternalLink href="https://github.com/leerob">GitHub</ExternalLink>
+          <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
+            YouTube
+          </ExternalLink>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <Link
+            href="/uses"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Uses
+          </Link>
+          <Link
+            href="/guestbook"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Guestbook
+          </Link>
+          <Link
+            href="/snippets"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Snippets
+          </Link>
+          <Link
+            href="/tweets"
+            className="text-gray-500 hover:text-gray-600 transition"
+          >
+            Tweets
+          </Link>
+        </div>
+      </div>
+    </footer>
   );
-};
-export default Footer;
+}

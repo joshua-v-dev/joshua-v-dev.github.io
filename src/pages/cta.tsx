@@ -1,14 +1,4 @@
 import Cta from "../components/Page/Cta";
-import Layout from "../layout/Layout";
 
-const CtaPage = () =>
-{
-  return (
-    <>
-      <Layout>
-        <Cta />
-      </Layout>
-    </>
-  );
-};
+const CtaPage = () => { return <Cta /> };
 export default CtaPage;

@@ -4,7 +4,7 @@ import FutureMain from "../Main/FutureMain"
 const Future = () => {
     return (
 
-        <main className="container rounded-t-full mx-auto py-2">
+        <main className=" rounded-t-full mx-auto py-2">
             <FutureHero />
             <FutureMain />
         </main>

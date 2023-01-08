@@ -55,7 +55,7 @@ const options = {
       }
     }
   },
-  "delay": 0,
+  "delay": 1,
   "fullScreen": {
     "enable": true,
     "zIndex": -1
@@ -71,10 +71,15 @@ const options = {
         "mode": [
           "push",
           "repulse",
-          "remove",
-          "bounce",
-          "attract",
           "bubble",
+          "remove",
+          "trail",
+          "attract",
+          "bounce",
+          "connect",
+          "slow",
+
+
         ],
         "parallax": {
           "enable": false,

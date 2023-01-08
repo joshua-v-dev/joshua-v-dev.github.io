@@ -1,11 +1,10 @@
 import Link from "next/link";
-
-export default function HomeCta() {
+const HomeCta = () => {
   return (
     <>
-      <section className="mx-auto flex justify-center ">
-        <div className="container  overflow-hidden rounded-3xl bg-transparent">
-          <div className="mx-auto  py-7 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-14 lg:px-8">
+      <section className=" flex justify-center items-center ">
+        <div className="  overflow-hidden rounded-3xl bg-transparent">
+          <div className=" py-7 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-14 lg:px-8">
             <h2 className="text-3xl font-extrabold tracking-tight text-blue-400 sm:text-4xl">
               <span className="block">Ready to dive in?</span>
               <span className="block text-indigo-600">
@@ -13,10 +12,10 @@ export default function HomeCta() {
               </span>
             </h2>
             <div className="flex lg:flex-shrink-0 lg:space-x-4">
-              <div className="inline-flex rounded-md shadow lg:space-x-2">
+              <div className="flex rounded-md shadow lg:space-x-2">
                 <Link
                   href="#"
-                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-base font-medium text-indigo-600 brightness-150 hover:bg-indigo-700"
+                  className="flex items-center justify-center rounded-md border border-transparent bg-teal-600 px-4 py-2 text-base font-medium text-indigo-600 brightness-150 hover:bg-indigo-700"
                 >
                   Activate Demo
                 </Link>
@@ -36,3 +35,6 @@ export default function HomeCta() {
     </>
   );
 }
+
+
+export default HomeCta;

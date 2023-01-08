@@ -1,8 +1,7 @@
 import FormBlock from "../MultiComp/FormBlock";
-export default function Contact() {
-  return (
-    <>
-      <FormBlock />
-    </>
-  );
+const Contact = () => {
+  return <FormBlock />;
+
 }
+
+export default Contact;

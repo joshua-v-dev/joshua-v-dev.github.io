@@ -3,7 +3,7 @@ import Button from "src/components/MultiComp/Button";
 const ContractHero = () => {
     return (
         <section
-            className="border-b-1 container my-10 grid grid-flow-row items-center justify-center  rounded-3xl border-4 border-t-4 border-double border-black
+            className="border-b-1 my-10 grid grid-flow-row items-center justify-center  rounded-3xl border-4 border-t-4 border-double border-black
 								 border-indigo-600/90 border-t-indigo-600 border-opacity-90  bg-black/30 p-12 py-10  shadow-md
 								 shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
         >

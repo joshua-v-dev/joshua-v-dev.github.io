@@ -5,7 +5,7 @@ const FutureMain = () => {
         <section>
             <section className="skewed-bottom-right rounded-md my-5">
                 <div className="radius-for-skewed bg-gray-900 pt-12 pb-20 lg:pt-12">
-                    <div className="container mx-auto px-4">
+                    <div className=" mx-auto px-4">
                         <div className=" flex flex-wrap">
                             <div className="mb-8 flex  items-center px-4 md:mb-20 lg:mb-0 lg:w-1/2">
                                 <div className=" text-center lg:text-left">
@@ -80,7 +80,7 @@ const FutureMain = () => {
                     </div>
                 </div>
 
-                <div className="container mx-auto px-4">
+                <div className=" mx-auto px-4">
 
                     <div className="mx-auto pb-12">
 

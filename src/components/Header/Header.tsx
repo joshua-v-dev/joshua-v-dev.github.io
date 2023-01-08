@@ -1,17 +1,17 @@
 
 import React from "react";
-import ParticlesContainer from "../Animations/Particles/ParticlesContainer";
-import Nav from "../Nav/Nav";
+
 
 type HeaderProps = {
-  isMain?: boolean;
+
+  children: React.ReactNode;
 };
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = ({ children }) => {
   return (
     <>
-      <ParticlesContainer />
-      <Nav />
+
+      {children}
     </>
   );
 };

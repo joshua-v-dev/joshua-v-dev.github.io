@@ -4,7 +4,7 @@ const ServicesMain = () => {
     return (
         <>
             <section className="bg-transparent ">
-                <div className="container mx-auto px-4">
+                <div className=" mx-auto px-4">
                     <div className=" text-center ">
                         <h2 className="font-heading text-5xl font-bold text-gray-200 lg:text-6xl 2xl:text-7xl">
                             Choose a product
@@ -208,7 +208,7 @@ const ServicesMain = () => {
                 </div>
             </section>
             <section className="bg-transparent py-20 2xl:py-40">
-                <div className="container mx-auto px-4">
+                <div className=" mx-auto px-4">
                     <div className=" text-center">
                         <h2 className="font-heading  text-5xl font-bold text-gray-200  lg:text-6xl 2xl:text-7xl">
                             Choose a product

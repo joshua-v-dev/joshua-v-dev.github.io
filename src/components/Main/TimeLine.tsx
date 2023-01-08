@@ -5,9 +5,9 @@ import { TimeLineData } from "../../lib/constants";
 export default function Timeline() {
   return (
     <>
-      <div className="container grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:grid-cols-2">
+      <div className=" grid gap-y-10 gap-x-10 space-y-7 space-x-7 sm:px-6 sm:py-32 lg:grid-cols-2">
         <div className=" grid space-y-5 space-x-5">
-          <h1 className="tracking-loose container font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-7xl ">
+          <h1 className="tracking-loose font-extrabold uppercase leading-loose text-indigo-700  brightness-125 sm:text-4xl lg:text-7xl ">
             Roadmap
           </h1>
           <p className="text-2xl font-medium text-gray-200 brightness-125">
