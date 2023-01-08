@@ -3,11 +3,12 @@ import Link from 'next/link';
 type TExternalLinkProps = {
   href: string;
   children: React.ReactNode;
+  className?: string;
 };
 
 const ExternalLink = ({ href, children }: TExternalLinkProps) => (
   <Link
-    className="text-gray-500 hover:text-gray-600 transition"
+    className="text-blue-500 hover:text-gray-600 transition"
     target="_blank"
     rel="noopener noreferrer"
     href={href}
@@ -18,11 +19,11 @@ const ExternalLink = ({ href, children }: TExternalLinkProps) => (
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8">
+    <footer className="block sm:flex-cols-2 lg:flex sm:flex-row lg:flex-col justify-center sm:items-center lg:items-start lg:max-w-2xl mx-auto">
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
 
-      <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
-        <div className="flex flex-col space-y-4">
+      <div className=" max-w-2xl grid sm:grid-cols-2 lg:grid-cols-1   gap-4 pb-16">
+        <div className="flex sm:flex-row lg:flex-col space-y-4">
           <Link
             href="/"
             className="text-blue-500 hover:text-gray-600 transition"
@@ -43,7 +44,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4 ">
-          <ExternalLink href="https://twitter.com/JoshuaVStories">
+          <ExternalLink className="text-blue-500" href="https://twitter.com/JoshuaVStories">
             Twitter
           </ExternalLink>
           <ExternalLink href="https://github.com/joshua-v-dev">GitHub</ExternalLink>
@@ -66,7 +67,7 @@ export default function Footer() {
           </Link>
           <Link
             href="/snippets"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-blue-500 hover:text-gray-600 transition"
           >
             Snippets
           </Link>
