@@ -1,6 +1,6 @@
 const FutureHero = () => {
     return (
-        <section className=" overflow-hidden bg-transparent">
+        <section className="bg-transparent">
             <div className=" mx-auto pt-5 md:pt-6 lg:pt-12">
                 <div className=" flex flex-wrap">
                     <div className=" px-4 2xl:w-2/5">

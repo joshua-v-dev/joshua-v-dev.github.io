@@ -25,42 +25,42 @@ export default function Footer() {
         <div className="flex flex-col space-y-4">
           <Link
             href="/"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-blue-500 hover:text-gray-600 transition"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-blue-500 hover:text-gray-600 transition"
           >
             About
           </Link>
           <Link
-            href="/newsletter"
-            className="text-gray-500 hover:text-gray-600 transition"
+            href="/future"
+            className="text-blue-500 hover:text-gray-600 transition"
           >
-            Newsletter
+            Coming Soon!
           </Link>
         </div>
-        <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://twitter.com/leeerob">
+        <div className="flex flex-col space-y-4 ">
+          <ExternalLink href="https://twitter.com/JoshuaVStories">
             Twitter
           </ExternalLink>
-          <ExternalLink href="https://github.com/leerob">GitHub</ExternalLink>
-          <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
+          <ExternalLink href="https://github.com/joshua-v-dev">GitHub</ExternalLink>
+          <ExternalLink href="https://www.youtube.com/@joshuavstories1529">
             YouTube
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
           <Link
             href="/uses"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-blue-500 hover:text-gray-600 transition"
           >
             Uses
           </Link>
           <Link
             href="/guestbook"
-            className="text-gray-500 hover:text-gray-600 transition"
+            className="text-blue-500 hover:text-gray-600 transition"
           >
             Guestbook
           </Link>
@@ -70,12 +70,12 @@ export default function Footer() {
           >
             Snippets
           </Link>
-          <Link
+          {/* <Link
             href="/tweets"
             className="text-gray-500 hover:text-gray-600 transition"
           >
             Tweets
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
     return (
-        <Html lang="en">
+        <Html lang="en" className='h-full bg-primaryBg'>
             <Head>
                 <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
                 {/* <link href="/static/favicons/site.webmanifest" rel="manifest" /> */}
@@ -46,7 +46,7 @@ export default function Document() {
             </Head>
 
 
-            <body className="bg-white dark:bg-black text-white dark:text-black">
+            <body className="bg-primaryBg h-full overflow-x-hidden dark:bg-black text-white dark:text-black">
 
                 <Main />
                 <NextScript />

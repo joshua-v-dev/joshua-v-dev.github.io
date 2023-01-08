@@ -14,7 +14,10 @@
   "dependencies": {
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^2.0.13",
+    "@next/font": "^13.1.1",
+    "@vercel/analytics": "^0.1.6",
     "classnames": "^2.3.2",
+    "date-fns": "^2.29.3",
     "framer-motion": "^8.2.4",
     "next": "^13.1.1",
     "next-themes": "^0.2.1",
@@ -22,6 +25,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^2.7.1",
+    "swr": "^2.0.0",
     "tsparticles": "^2.7.1",
     "use-delayed-render": "^0.0.7"
   },
@@ -40,5 +44,29 @@
     "prettier-plugin-tailwindcss": "^0.2.1",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.6.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "resolutions": {
+    "next": "13.1.1"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    ".next",
+    "out",
+    "next.config.js"
+  ],
+  "peerDependencies": {
+    "next": "^13.1.1",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-tsparticles": "^2.7.1",
+    "tsparticles": "^2.7.1",
+    "use-delayed-render": "^0.0.7"
   }
 }

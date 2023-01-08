@@ -55,7 +55,7 @@ const options = {
       }
     }
   },
-  "delay": 1,
+  "delay": 0,
   "fullScreen": {
     "enable": true,
     "zIndex": -1
@@ -69,17 +69,8 @@ const options = {
       "onClick": {
         "enable": true,
         "mode": [
-          "push",
-          "repulse",
-          "bubble",
-          "remove",
           "trail",
-          "attract",
-          "bounce",
-          "connect",
-          "slow",
-
-
+          "bubble"
         ],
         "parallax": {
           "enable": false,
@@ -108,7 +99,7 @@ const options = {
         }
       },
       "resize": {
-        "delay": 1,
+        "delay": 0,
         "enable": true
       }
     },
@@ -118,7 +109,7 @@ const options = {
         "duration": 0.4,
         "easing": "ease-out-quad",
         "factor": 1,
-        "maxSpeed": 50,
+        "maxSpeed": 25,
         "speed": 1
       },
       "bounce": {
@@ -163,14 +154,14 @@ const options = {
         "duration": 0.4,
         "factor": 100,
         "speed": 1,
-        "maxSpeed": 50,
+        "maxSpeed": 25,
         "easing": "ease-out-quad",
         "divs": {
           "distance": 200,
           "duration": 0.4,
           "factor": 100,
           "speed": 1,
-          "maxSpeed": 50,
+          "maxSpeed": 25,
           "easing": "ease-out-quad",
           "selectors": []
         }
@@ -188,7 +179,7 @@ const options = {
             "value": "#ff0000",
             "animation": {
               "enable": true,
-              "speed": 400,
+              "speed": 100,
               "sync": true
             }
           },
@@ -348,7 +339,7 @@ const options = {
           "count": 0,
           "enable": true,
           "offset": 0,
-          "speed": 50,
+          "speed": 25,
           "decay": 0,
           "sync": false
         },
@@ -399,7 +390,7 @@ const options = {
         "acceleration": 9.81,
         "enable": false,
         "inverse": false,
-        "maxSpeed": 50
+        "maxSpeed": 25
       },
       "path": {
         "clamp": true,
@@ -640,7 +631,7 @@ const options = {
         "enable": false,
         "speed": 1,
         "decay": 0,
-        "sync": false
+        "sync": true
       },
       "enable": false,
       "opacity": 1,

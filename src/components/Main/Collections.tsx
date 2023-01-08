@@ -48,25 +48,9 @@
 //     </>
 //   );
 // }
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+
+
 import { Dialog, Menu, Transition } from '@headlessui/react'
-
-
-
 import Image from 'next/image'
 import Link from 'next/link'
 import { Fragment, useState } from 'react'
