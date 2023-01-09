@@ -1,7 +1,7 @@
 import Container from "src/components/Container/Container";
 import Guestbook from "src/components/Guestbook/Guestbook";
 
-export default function GuestbookPage({ fallbackData }: { fallbackData: any }) {
+export default function GuestbookPage() {
   return (
     <Container
       title="Guestbook – Lee Robinson"
@@ -15,7 +15,7 @@ export default function GuestbookPage({ fallbackData }: { fallbackData: any }) {
           Leave a comment below. It could be anything – appreciation,
           information, wisdom, or even humor. Surprise me!
         </p>
-        <Guestbook fallbackData={fallbackData} />
+        <Guestbook />
       </div>
     </Container>
   );
