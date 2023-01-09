@@ -1,6 +1,5 @@
-
-import { Inter } from '@next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import { Inter } from "@next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { Session } from "inspector";
 import { type AppType } from "next/app";
 import ParticlesContainer from "src/components/Animations/Particles/ParticlesContainer";
@@ -17,9 +16,7 @@ const MyApp: AppType<{ session: Session }> = ({
   pageProps: { session, ...pageProps },
 }) => {
   return (
-
     <>
-
       <ThemeProvider attribute="class">
         <ParticlesContainer />
         {/* <Nav /> */}
@@ -29,10 +26,7 @@ const MyApp: AppType<{ session: Session }> = ({
         </main>
         {/* <Footer /> */}
       </ThemeProvider>
-
-
     </>
-
   );
 };
 

@@ -8,21 +8,16 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       slug,
     },
   };
-}
+};
 
 const Route = ({ slug }: any) => {
   const router = useRouter();
   return (
     <>
       <h1>Route: {slug}</h1>
-      <button onClick={() => router.push("/")}
-      >
-        Go to Home
-      </button>
+      <button onClick={() => router.push("/")}>Go to Home</button>
     </>
   );
 };
 
 export default Route;
-
-

@@ -8,7 +8,6 @@ import MobileMenu from "../Menu/MobileMenu";
 type TNavItemProps = {
   href: string;
   text: string;
-
 };
 
 function NavItem({ href, text }: TNavItemProps) {
@@ -20,9 +19,9 @@ function NavItem({ href, text }: TNavItemProps) {
       href={href}
       className={cn(
         isActive
-          ? 'font-semibold text-gray-800 dark:text-gray-200'
-          : 'font-normal text-gray-600 dark:text-gray-400',
-        'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
+          ? "font-semibold text-gray-800 dark:text-gray-200"
+          : "font-normal text-gray-600 dark:text-gray-400",
+        "hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block"
       )}
     >
       <span className="capsize">{text}</span>
@@ -31,22 +30,18 @@ function NavItem({ href, text }: TNavItemProps) {
 }
 
 export default function Nav() {
-
   return (
     <>
-      <nav className="relative flex items-center justify-between  max-w-5xl border-gray-200 dark:border-gray-700 mx-auto py-6 sm:pb-16  text-gray-900 bg-transparent  dark:bg-transparent bg-opacity-60 dark:text-gray-100">
+      <nav className="relative mx-auto flex max-w-5xl  items-center justify-between border-gray-200 bg-transparent bg-opacity-60 py-6  text-gray-900 dark:border-gray-700  dark:bg-transparent dark:text-gray-100 sm:pb-16">
         {/* <section className="mx-auto bg-transparent p-5 lg:p-6"> */}
         {/* <div className="ml-[-0.60rem]"> */}
         <MobileMenu />
-
-
 
         {/* </div> */}
 
         <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:inline-flex lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
           {/* <ul className="text-grey-500 flex items-center space-x-10 brightness-125">
               <li> */}
-
 
           <LightDarkMode />
 
@@ -106,7 +101,6 @@ export default function Nav() {
           {/* </li>
             </ul> */}
         </div>
-
 
         {/* </section> */}
       </nav>

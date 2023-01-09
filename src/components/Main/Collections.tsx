@@ -49,74 +49,81 @@
 //   );
 // }
 
-
-import { Dialog, Menu, Transition } from '@headlessui/react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Fragment, useState } from 'react'
-import { CogIcon, FilterIcon, HeartIcon, HomeIcon, PhotographIcon, ReceiptTaxIcon, UserGroupIcon } from 'src/lib/icons'
+import { Dialog, Menu, Transition } from "@headlessui/react";
+import Image from "next/image";
+import Link from "next/link";
+import { Fragment, useState } from "react";
+import {
+  CogIcon,
+  FilterIcon,
+  HeartIcon,
+  HomeIcon,
+  PhotographIcon,
+  ReceiptTaxIcon,
+  UserGroupIcon,
+} from "src/lib/icons";
 
 const navigation = [
-  { name: 'Home', href: '#', icon: HomeIcon, current: false },
-  { name: 'All Files', href: '#', icon: FilterIcon, current: false },
-  { name: 'Photos', href: '#', icon: PhotographIcon, current: true },
-  { name: 'Shared', href: '#', icon: UserGroupIcon, current: false },
-  { name: 'Albums', href: '#', icon: ReceiptTaxIcon, current: false },
-  { name: 'Settings', href: '#', icon: CogIcon, current: false },
-]
+  { name: "Home", href: "#", icon: HomeIcon, current: false },
+  { name: "All Files", href: "#", icon: FilterIcon, current: false },
+  { name: "Photos", href: "#", icon: PhotographIcon, current: true },
+  { name: "Shared", href: "#", icon: UserGroupIcon, current: false },
+  { name: "Albums", href: "#", icon: ReceiptTaxIcon, current: false },
+  { name: "Settings", href: "#", icon: CogIcon, current: false },
+];
 const userNavigation = [
-  { name: 'Your profile', href: '#' },
-  { name: 'Sign out', href: '#' },
-]
+  { name: "Your profile", href: "#" },
+  { name: "Sign out", href: "#" },
+];
 const tabs = [
-  { name: 'Recently Viewed', href: '#', current: true },
-  { name: 'Recently Added', href: '#', current: false },
-  { name: 'Favorited', href: '#', current: false },
-]
+  { name: "Recently Viewed", href: "#", current: true },
+  { name: "Recently Added", href: "#", current: false },
+  { name: "Favorited", href: "#", current: false },
+];
 const files = [
   {
-    name: 'IMG_4985.HEIC',
-    size: '3.9 MB',
+    name: "IMG_4985.HEIC",
+    size: "3.9 MB",
     source:
-      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+      "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
     current: true,
   },
   // More files...
-]
+];
 const currentFile = {
-  name: 'IMG_4985.HEIC',
-  size: '3.9 MB',
+  name: "IMG_4985.HEIC",
+  size: "3.9 MB",
   source:
-    'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+    "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80",
   information: {
-    'Uploaded by': 'Marie Culver',
-    Created: 'June 8, 2020',
-    'Last modified': 'June 8, 2020',
-    Dimensions: '4032 x 3024',
-    Resolution: '72 x 72',
+    "Uploaded by": "Marie Culver",
+    Created: "June 8, 2020",
+    "Last modified": "June 8, 2020",
+    Dimensions: "4032 x 3024",
+    Resolution: "72 x 72",
   },
   sharedWith: [
     {
       id: 1,
-      name: 'Aimee Douglas',
+      name: "Aimee Douglas",
       imageUrl:
-        'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=1024&h=1024&q=80',
+        "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=1024&h=1024&q=80",
     },
     {
       id: 2,
-      name: 'Andrea McMillan',
+      name: "Andrea McMillan",
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=oilqXxSqey&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=oilqXxSqey&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   ],
-}
+};
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <>
@@ -145,10 +152,12 @@ export default function Example() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-800 hover:text-white',
-                    'group p-3 rounded-md flex flex-col items-center text-xs font-medium'
+                    item.current
+                      ? "bg-indigo-800 text-white"
+                      : "text-indigo-100 hover:bg-indigo-800 hover:text-white",
+                    "group flex flex-col items-center rounded-md p-3 text-xs font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   <item.icon
                     //  icon= {() => {return classNames(
@@ -167,7 +176,11 @@ export default function Example() {
 
         {/* Mobile menu */}
         <Transition.Root show={mobileMenuOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-40 md:hidden" onClose={setMobileMenuOpen}>
+          <Dialog
+            as="div"
+            className="relative z-40 md:hidden"
+            onClose={setMobileMenuOpen}
+          >
             <Transition.Child
               as={Fragment}
               enter="transition-opacity ease-linear duration-300"
@@ -227,11 +240,11 @@ export default function Example() {
                             href={item.href}
                             className={classNames(
                               item.current
-                                ? 'bg-indigo-800 text-white'
-                                : 'text-indigo-100 hover:bg-indigo-800 hover:text-white',
-                              'group py-2 px-3 rounded-md flex items-center text-sm font-medium'
+                                ? "bg-indigo-800 text-white"
+                                : "text-indigo-100 hover:bg-indigo-800 hover:text-white",
+                              "group flex items-center rounded-md py-2 px-3 text-sm font-medium"
                             )}
-                            aria-current={item.current ? 'page' : undefined}
+                            aria-current={item.current ? "page" : undefined}
                           >
                             <item.icon
                               // className={classNames(
@@ -326,8 +339,8 @@ export default function Example() {
                               <Link
                                 href={item.href}
                                 className={classNames(
-                                  active ? 'bg-gray-100' : '',
-                                  'block px-4 py-2 text-sm text-gray-700'
+                                  active ? "bg-gray-100" : "",
+                                  "block px-4 py-2 text-sm text-gray-700"
                                 )}
                               >
                                 {item.name}
@@ -356,7 +369,9 @@ export default function Example() {
             <main className="flex-1 overflow-y-auto">
               <div className="mx-auto  px-4 pt-8 sm:px-6 lg:px-8">
                 <div className="flex">
-                  <h1 className="flex-1 text-2xl font-bold text-gray-900">Photos</h1>
+                  <h1 className="flex-1 text-2xl font-bold text-gray-900">
+                    Photos
+                  </h1>
                   <div className="ml-6 flex items-center rounded-lg bg-gray-100 p-0.5 sm:hidden">
                     <button
                       type="button"
@@ -395,17 +410,20 @@ export default function Example() {
                   </div>
                   <div className="hidden sm:block">
                     <div className="flex items-center border-b border-gray-200">
-                      <nav className="-mb-px flex flex-1 space-x-6 xl:space-x-8" aria-label="Tabs">
+                      <nav
+                        className="-mb-px flex flex-1 space-x-6 xl:space-x-8"
+                        aria-label="Tabs"
+                      >
                         {tabs.map((tab) => (
                           <Link
                             key={tab.name}
                             href={tab.href}
-                            aria-current={tab.current ? 'page' : undefined}
+                            aria-current={tab.current ? "page" : undefined}
                             className={classNames(
                               tab.current
-                                ? 'border-indigo-500 text-indigo-600'
-                                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
-                              'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm'
+                                ? "border-indigo-500 text-indigo-600"
+                                : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
+                              "whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
                             )}
                           >
                             {tab.name}
@@ -433,7 +451,10 @@ export default function Example() {
                 </div>
 
                 {/* Gallery */}
-                <section className="mt-8 pb-16" aria-labelledby="gallery-heading">
+                <section
+                  className="mt-8 pb-16"
+                  aria-labelledby="gallery-heading"
+                >
                   <h2 id="gallery-heading" className="sr-only">
                     Recently viewed
                   </h2>
@@ -446,27 +467,34 @@ export default function Example() {
                         <div
                           className={classNames(
                             file.current
-                              ? 'ring-2 ring-offset-2 ring-indigo-500'
-                              : 'focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500',
-                            'group block  aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden'
+                              ? "ring-2 ring-indigo-500 ring-offset-2"
+                              : "focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+                            "aspect-w-10 aspect-h-7  group block overflow-hidden rounded-lg bg-gray-100"
                           )}
                         >
                           <Image
                             src={file.source}
                             alt=""
                             className={classNames(
-                              file.current ? '' : 'group-hover:opacity-75',
-                              'object-cover pointer-events-none'
+                              file.current ? "" : "group-hover:opacity-75",
+                              "pointer-events-none object-cover"
                             )}
                           />
-                          <button type="button" className="absolute inset-0 focus:outline-none">
-                            <span className="sr-only">View details for {file.name}</span>
+                          <button
+                            type="button"
+                            className="absolute inset-0 focus:outline-none"
+                          >
+                            <span className="sr-only">
+                              View details for {file.name}
+                            </span>
                           </button>
                         </div>
                         <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">
                           {file.name}
                         </p>
-                        <p className="pointer-events-none block text-sm font-medium text-gray-500">{file.size}</p>
+                        <p className="pointer-events-none block text-sm font-medium text-gray-500">
+                          {file.size}
+                        </p>
                       </li>
                     ))}
                   </ul>
@@ -479,7 +507,11 @@ export default function Example() {
               <div className="space-y-6 pb-16">
                 <div>
                   <div className="aspect-w-10 aspect-h-7 block  overflow-hidden rounded-lg">
-                    <Image src={currentFile.source} alt="" className="object-cover" />
+                    <Image
+                      src={currentFile.source}
+                      alt=""
+                      className="object-cover"
+                    />
                   </div>
                   <div className="mt-4 flex items-start justify-between">
                     <div>
@@ -487,7 +519,9 @@ export default function Example() {
                         <span className="sr-only">Details for </span>
                         {currentFile.name}
                       </h2>
-                      <p className="text-sm font-medium text-gray-500">{currentFile.size}</p>
+                      <p className="text-sm font-medium text-gray-500">
+                        {currentFile.size}
+                      </p>
                     </div>
                     <button
                       type="button"
@@ -502,9 +536,14 @@ export default function Example() {
                   <h3 className="font-medium text-gray-900">Information</h3>
                   <dl className="mt-2 divide-y divide-gray-200 border-t border-b border-gray-200">
                     {Object.keys(currentFile.information).map((key) => (
-                      <div key={key} className="flex justify-between py-3 text-sm font-medium">
+                      <div
+                        key={key}
+                        className="flex justify-between py-3 text-sm font-medium"
+                      >
                         <dt className="text-gray-500">{key}</dt>
-                        <dd className="whitespace-nowrap text-gray-900">{currentFile.information.Created}</dd>
+                        <dd className="whitespace-nowrap text-gray-900">
+                          {currentFile.information.Created}
+                        </dd>
                       </div>
                     ))}
                   </dl>
@@ -512,7 +551,9 @@ export default function Example() {
                 <div>
                   <h3 className="font-medium text-gray-900">Description</h3>
                   <div className="mt-2 flex items-center justify-between">
-                    <p className="text-sm italic text-gray-500">Add a description to this image.</p>
+                    <p className="text-sm italic text-gray-500">
+                      Add a description to this image.
+                    </p>
                     <button
                       type="button"
                       className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -524,12 +565,24 @@ export default function Example() {
                 </div>
                 <div>
                   <h3 className="font-medium text-gray-900">Shared with</h3>
-                  <ul role="list" className="mt-2 divide-y divide-gray-200 border-t border-b border-gray-200">
+                  <ul
+                    role="list"
+                    className="mt-2 divide-y divide-gray-200 border-t border-b border-gray-200"
+                  >
                     {currentFile.sharedWith.map((person) => (
-                      <li key={person.id} className="flex items-center justify-between py-3">
+                      <li
+                        key={person.id}
+                        className="flex items-center justify-between py-3"
+                      >
                         <div className="flex items-center">
-                          <Image src={person.imageUrl} alt="" className="h-8 w-8 rounded-full" />
-                          <p className="ml-4 text-sm font-medium text-gray-900">{person.name}</p>
+                          <Image
+                            src={person.imageUrl}
+                            alt=""
+                            className="h-8 w-8 rounded-full"
+                          />
+                          <p className="ml-4 text-sm font-medium text-gray-900">
+                            {person.name}
+                          </p>
                         </div>
                         <button
                           type="button"
@@ -574,5 +627,5 @@ export default function Example() {
         </div>
       </div>
     </>
-  )
+  );
 }

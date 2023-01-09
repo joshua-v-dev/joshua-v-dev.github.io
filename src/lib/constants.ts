@@ -1,5 +1,9 @@
-import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from "./icons";
-
+import {
+  AnnotationIcon,
+  GlobeAltIcon,
+  LightningBoltIcon,
+  ScaleIcon,
+} from "./icons";
 
 export const features = [
   {

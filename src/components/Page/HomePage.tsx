@@ -4,7 +4,6 @@ import HomeHero from "../Hero/HomeHero";
 export default function HomePage() {
   return (
     <>
-
       <HomeHero />
       <HomeCta />
     </>

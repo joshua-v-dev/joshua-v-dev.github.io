@@ -6,16 +6,14 @@ import { topPicks } from "../../lib/constants";
 export default function GlassTopPicks() {
   return (
     <>
-
-      <div
-        className="mx-auto my-2 grid sm:grid-flow-col gap-x-3 lg:grid-cols-3 bg-transparent shadow-indigo-600">
+      <div className="mx-auto my-2 grid gap-x-3 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
         {topPicks.map(
           (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
             <div
               key={i}
-              className="relative border-b-1 grid sm:grid-flow-col md:grid-flow-row items-center justify-evenly rounded-3xl border-4 border-t-4 border-double
-								 border-black border-indigo-600/90 border-t-indigo-600 border-opacity-90 bg-black/30 p-9 shadow-md 
-								 shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm hover:scale-105 "
+              className="border-b-1 relative grid items-center justify-evenly rounded-3xl border-4 border-t-4 border-double border-black border-indigo-600/90
+								 border-t-indigo-600 border-opacity-90 bg-black/30 p-9 shadow-md shadow-indigo-600 outline-2 
+								 outline-offset-2 outline-black brightness-125 backdrop-blur-sm hover:scale-105 sm:grid-flow-col md:grid-flow-row "
             >
               <Link
                 className=" mx-auto h-60 w-60 rounded-lg border-double outline-8
@@ -27,7 +25,6 @@ export default function GlassTopPicks() {
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light "
               >
-
                 <Image
                   className="flex items-center justify-center rounded-md object-cover p-2"
                   src={topPicks.src}
@@ -65,7 +62,6 @@ export default function GlassTopPicks() {
           )
         )}
       </div>
-
     </>
   );
 }

@@ -15,7 +15,7 @@ export default function Timeline() {
             about my future.
           </p>
 
-          <dl className="grid max- grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+          <dl className="max- grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {TimeLineData.map(
               (TimeLineData, i): ReactElement => (
                 <div key={i} className="grid-col grid">

@@ -22,10 +22,7 @@ export default function Technologies() {
                 <div key={feature.id} className="relative  ">
                   <dt>
                     <div className="mx-auto grid h-10 w-10 items-center justify-center rounded-md bg-indigo-600 text-gray-50">
-                      <feature.icon
-
-                        aria-hidden="true"
-                      />
+                      <feature.icon aria-hidden="true" />
                     </div>
                     <p className="p-1 text-3xl font-extrabold text-indigo-600 brightness-125">
                       {feature.name}
