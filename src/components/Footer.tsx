@@ -65,10 +65,10 @@ export default function Footer() {
             Uses
           </Link>
           <Link
-            href="/guestbook"
+            href="/whitelist"
             className="text-blue-500 transition hover:text-gray-600"
           >
-            Guestbook
+            Whitelist
           </Link>
           <Link
             href="/snippets"

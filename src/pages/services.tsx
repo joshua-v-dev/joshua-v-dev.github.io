@@ -1,5 +1,5 @@
-import ServicesHero from "~/components/Hero/ServicesHero";
-import ServicesMain from "~/components/Main/ServicesMain";
+import ServicesHero from "~/components/ServicesHero";
+import ServicesMain from "~/components/ServicesMain";
 const ServicesPage = () => {
   return (
     <>

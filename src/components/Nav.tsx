@@ -47,7 +47,7 @@ export default function Nav() {
 
           <NavItem href="/services" text="Services" />
           <Dot />
-          <NavItem href="/guestbook" text="Guestbook" />
+          <NavItem href="/whitelist" text="Whitelist" />
           <Dot />
           <NavItem href="/services" text="Services" />
           <Dot />

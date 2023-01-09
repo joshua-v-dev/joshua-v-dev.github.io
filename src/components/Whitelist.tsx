@@ -46,7 +46,7 @@ import SuccessMessage from "./SuccessMessage";
 //     );
 // }
 
-export default function Guestbook() {
+export default function Whitelist() {
   //   const { data: session } = useSession();
   // const { mutate } = useSWRConfig();
   const [form, setForm] = useState<FormState>({ state: "pending" });

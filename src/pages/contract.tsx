@@ -1,4 +1,4 @@
-import ContractHero from "~/components/Hero/ContractHero";
+import ContractHero from "~/components/ContractHero";
 
 const ContractPage = () => {
   return <ContractHero />;

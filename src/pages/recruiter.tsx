@@ -1,5 +1,5 @@
-import RecruiterHero from "~/components/Hero/RecruiterHero";
-import RecruiterMain from "~/components/Main/RecruiterMain";
+import RecruiterHero from "~/components/RecruiterHero";
+import RecruiterMain from "~/components/RecruiterMain";
 
 const RecruiterPage = () => {
   return (

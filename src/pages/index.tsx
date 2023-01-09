@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "~/components/Container";
-import HomeHero from "~/components/Hero/HomeHero";
 import HomeCta from "~/components/HomeCta";
+import HomeHero from "~/components/HomeHero";
 
 const Home: React.FC = () => {
   return (

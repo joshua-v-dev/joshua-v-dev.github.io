@@ -1,5 +1,5 @@
-import Acomplishments from "~/components/Main/Acomplishments";
-import TimeLine from "~/components/Main/TimeLine";
+import Acomplishments from "~/components/Acomplishments";
+import TimeLine from "~/components/TimeLine";
 const StoryPage = () => {
   return (
     <>

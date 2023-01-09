@@ -2,7 +2,7 @@ import { Inter } from "@next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Session } from "inspector";
 import { type AppType } from "next/app";
-import ParticlesContainer from "src/components/Animations/Particles/ParticlesContainer";
+import ParticlesContainer from "~/components/ParticlesContainer";
 
 import { ThemeProvider } from "next-themes";
 import "../styles/main.css";

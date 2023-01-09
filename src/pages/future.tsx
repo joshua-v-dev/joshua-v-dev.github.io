@@ -1,5 +1,5 @@
-import FutureHero from "~/components/Hero/FutureHero";
-import FutureMain from "~/components/Main/FutureMain";
+import FutureHero from "~/components/FutureHero";
+import FutureMain from "~/components/FutureMain";
 
 const FuturePage = () => {
   return (

@@ -1,7 +1,7 @@
 import Container from "~/components/Container";
-import Guestbook from "~/components/Guestbook";
+import Whitelist from "~/components/Whitelist";
 
-export default function GuestbookPage() {
+export default function WhitelistPage() {
   return (
     <Container
       title="Guestbook – Lee Robinson"
@@ -15,7 +15,7 @@ export default function GuestbookPage() {
           Leave a comment below. It could be anything – appreciation,
           information, wisdom, or even humor. Surprise me!
         </p>
-        <Guestbook />
+        <Whitelist />
       </div>
     </Container>
   );
