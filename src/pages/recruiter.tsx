@@ -1,9 +1,11 @@
-import Recruiter from "../components/Page/Recruiter";
+import RecruiterHero from "~/components/Hero/RecruiterHero";
+import RecruiterMain from "~/components/Main/RecruiterMain";
 
 const RecruiterPage = () => {
   return (
     <>
-      <Recruiter />
+      <RecruiterHero />
+      <RecruiterMain />
     </>
   );
 };

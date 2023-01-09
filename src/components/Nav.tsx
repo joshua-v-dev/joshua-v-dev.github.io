@@ -1,9 +1,9 @@
 import cn from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { LightDarkMode } from "../Button/LightDarkMode";
-import { Dot } from "../Divider/Dot";
-import MobileMenu from "../Menu/MobileMenu";
+import { Dot } from "./Dot";
+import { LightDarkMode } from "./LightDarkMode";
+import MobileMenu from "./MobileMenu";
 
 type TNavItemProps = {
   href: string;

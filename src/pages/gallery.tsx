@@ -1,9 +1,5 @@
-import Gallery from "../components/Page/Gallery";
+import Collections from "~/components/Main/Collections";
 
 export default function GalleryPage() {
-  return (
-    <>
-      <Gallery />
-    </>
-  );
+  return <Collections />;
 }

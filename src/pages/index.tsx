@@ -1,12 +1,14 @@
 import React from "react";
-import Container from "src/components/Container/Container";
-import HomePage from "../components/Page/HomePage";
+import Container from "~/components/Container";
+import HomeHero from "~/components/Hero/HomeHero";
+import HomeCta from "~/components/HomeCta";
 
 const Home: React.FC = () => {
   return (
     <>
       <Container>
-        <HomePage />
+        <HomeHero />
+        <HomeCta />
       </Container>
     </>
   );

@@ -1,9 +1,11 @@
-import Future from "src/components/Page/Future";
+import FutureHero from "~/components/Hero/FutureHero";
+import FutureMain from "~/components/Main/FutureMain";
 
 const FuturePage = () => {
   return (
     <>
-      <Future />
+      <FutureHero />
+      <FutureMain />
     </>
   );
 };

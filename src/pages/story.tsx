@@ -1,8 +1,10 @@
-import Story from "../components/Page/Story";
+import Acomplishments from "~/components/Main/Acomplishments";
+import TimeLine from "~/components/Main/TimeLine";
 const StoryPage = () => {
   return (
     <>
-      <Story />
+      <TimeLine />
+      <Acomplishments />
     </>
   );
 };

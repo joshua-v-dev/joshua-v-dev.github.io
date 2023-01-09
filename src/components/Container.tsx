@@ -1,9 +1,6 @@
-// import cn from 'classnames';
 import Head from "next/head";
-// import NextLink from 'next/link';
-// import { useRouter } from 'next/router';
-import Nav from "../Nav/Nav";
-// import Footer from '../Footer/Footer';
+import Footer from "./Footer";
+import Nav from "./Nav";
 
 export default function Container(props: { [x: string]: any; children: any }) {
   const { children, ...customMeta } = props;
@@ -51,7 +48,7 @@ export default function Container(props: { [x: string]: any; children: any }) {
           className="flex flex-col justify-center bg-transparent px-8 dark:bg-transparent"
         >
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </main>
       </div>
     </div>

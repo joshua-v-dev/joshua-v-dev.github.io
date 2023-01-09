@@ -1,5 +1,5 @@
-import Container from "src/components/Container/Container";
-import Guestbook from "src/components/Guestbook/Guestbook";
+import Container from "~/components/Container";
+import Guestbook from "~/components/Guestbook";
 
 export default function GuestbookPage() {
   return (

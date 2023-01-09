@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { wrap } from "popmotion";
 import { useState } from "react";
-import { topSrc } from "../../../lib/constants";
+import { topSrc } from "../lib/constants";
 
 const variants = {
   enter: (direction: number) => {

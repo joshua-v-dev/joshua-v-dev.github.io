@@ -1,6 +1,6 @@
-import Cta from "../components/Page/Cta";
+import CallToAction from "~/components/MultiComp/CallToAction";
 
 const CtaPage = () => {
-  return <Cta />;
+  return <CallToAction />;
 };
 export default CtaPage;

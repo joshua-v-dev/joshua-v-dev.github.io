@@ -1,10 +1,6 @@
-import Contract from "../components/Page/Contract";
+import ContractHero from "~/components/Hero/ContractHero";
 
 const ContractPage = () => {
-  return (
-    <>
-      <Contract />
-    </>
-  );
+  return <ContractHero />;
 };
 export default ContractPage;

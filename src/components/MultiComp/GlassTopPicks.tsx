@@ -6,6 +6,15 @@ import { topPicks } from "../../lib/constants";
 export default function GlassTopPicks() {
   return (
     <>
+      <div className=" mx-auto my-2 grid items-center justify-center">
+        <h2 className="text-6xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+          First, What brings you here?
+        </h2>
+        <p className="grid  text-3xl font-bold text-gray-700 brightness-200">
+          Depending on who you are I&apos;ll show you the content accordingly in
+          order to increase your user experience while browsing my portfolio.
+        </p>
+      </div>
       <div className="mx-auto my-2 grid gap-x-3 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
         {topPicks.map(
           (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (

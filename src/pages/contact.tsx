@@ -1,4 +1,4 @@
-import Contact from "../components/Page/Contact";
+import FormBlock from "~/components/MultiComp/FormBlock";
 export default function ContactPage() {
-  return <Contact />;
+  return <FormBlock />;
 }

@@ -4,10 +4,10 @@ import { useRef, useState } from "react";
 // import { signIn, useSession } from 'next-auth/react';
 // import useSWR, { useSWRConfig } from 'swr';
 import { FormState } from "~/lib/types/form";
-import Form from "../Animations/Form/Form";
-import ErrorMessage from "../Notification/ErrorMessage";
-import LoadingSpinner from "../Notification/LoadingSpinner";
-import SuccessMessage from "../Notification/SuccessMessage";
+import ErrorMessage from "./ErrorMessage";
+import Form from "./Form";
+import LoadingSpinner from "./LoadingSpinner";
+import SuccessMessage from "./SuccessMessage";
 
 // function GuestbookEntry({ entry, user }: { entry: any; user?: any; }) {
 //     // const { mutate } = useSWRConfig();

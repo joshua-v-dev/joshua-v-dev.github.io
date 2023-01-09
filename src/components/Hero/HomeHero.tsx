@@ -1,6 +1,6 @@
-import HomeOnboarding from "../Onboarding/HomeOnboarding";
 import React from "react";
 import Hero from "../MultiComp/Hero";
+import HomeOnboarding from "../Onboarding";
 
 type HeroProps = {
   isMain?: boolean;

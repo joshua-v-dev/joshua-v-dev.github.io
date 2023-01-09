@@ -1,8 +1,10 @@
-import Services from "../components/Page/Services";
+import ServicesHero from "~/components/Hero/ServicesHero";
+import ServicesMain from "~/components/Main/ServicesMain";
 const ServicesPage = () => {
   return (
     <>
-      <Services />
+      <ServicesHero />
+      <ServicesMain />
     </>
   );
 };

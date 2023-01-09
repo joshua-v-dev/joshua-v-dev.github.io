@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Container from "src/components/Container/Container";
+import Container from "~/components/Container";
 
 export default function Custom404() {
   return (
