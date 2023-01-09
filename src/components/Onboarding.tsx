@@ -1,4 +1,4 @@
-import GlassTopPicks from "./MultiComp/GlassTopPicks";
+import GlassTopPicks from "./GlassTopPicks";
 
 export default function HomeOnboarding() {
   return <GlassTopPicks />;

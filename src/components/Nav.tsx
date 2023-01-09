@@ -19,9 +19,9 @@ function NavItem({ href, text }: TNavItemProps) {
       href={href}
       className={cn(
         isActive
-          ? "font-semibold text-gray-800 dark:text-gray-200"
-          : "font-normal text-gray-600 dark:text-gray-400",
-        "hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block"
+          ? "font-bold text-gray-100 dark:text-gray-300"
+          : "font-semibold text-white dark:text-gray-500",
+        "hidden rounded-lg p-1 transition-all hover:bg-transparent dark:hover:bg-green-800 dark:hover:brightness-200 dark:hover:text-black px-3 py-2 md:inline-block "
       )}
     >
       <span className="capsize">{text}</span>
@@ -32,29 +32,45 @@ function NavItem({ href, text }: TNavItemProps) {
 export default function Nav() {
   return (
     <>
-      <nav className="relative mx-auto flex max-w-5xl  items-center justify-between border-gray-200 bg-transparent bg-opacity-60 py-6  text-gray-900 dark:border-gray-700  dark:bg-transparent dark:text-gray-100 sm:pb-16">
-        {/* <section className="mx-auto bg-transparent p-5 lg:p-6"> */}
-        {/* <div className="ml-[-0.60rem]"> */}
-        <MobileMenu />
+      <nav className="relative mx-auto flex max-w-3xl items-center justify-evenly border-gray-200 bg-transparent bg-opacity-60 py-3 text-gray-500 dark:border-gray-800  dark:bg-transparent dark:text-gray-600 ">
+        <section className=" bg-transparent p-4 lg:p-6">
+          <div className="ml-[-0.60rem]">
+            <MobileMenu />
 
-        {/* </div> */}
+          </div>
 
-        <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:inline-flex lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
-          {/* <ul className="text-grey-500 flex items-center space-x-10 brightness-125">
-              <li> */}
+          <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:inline-flex lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
+            <ul className="text-grey-500 flex items-center space-x-5 brightness-125">
+              <li>
 
-          <LightDarkMode />
+                <LightDarkMode />
+              </li>
 
-          <NavItem href="/services" text="Services" />
-          <Dot />
-          <NavItem href="/whitelist" text="Whitelist" />
-          <Dot />
-          <NavItem href="/services" text="Services" />
-          <Dot />
-          <NavItem href="/gallery" text="Projects" />
-          <Dot />
-          <NavItem href="/future" text="Game" />
-          {/* <Link
+              <li>
+                <NavItem href="/services" text="Services" />
+              </li>
+              <Dot />
+
+              <li>
+                <NavItem href="/whitelist" text="Whitelist" />
+
+              </li>
+              <Dot />
+              <li>
+                <NavItem href="/services" text="Services" />
+
+              </li>
+              <Dot />
+              <li>
+                <NavItem href="/gallery" text="Projects" />
+
+              </li>
+              <Dot />
+              <li>
+                <NavItem href="/future" text="Game" />
+              </li>
+            </ul>
+            {/* <Link
                   className=" hover:text-brightness-200 text-lg font-bold text-gray-500 brightness-125 hover:brightness-200"
                   href="/services"
                 >
@@ -98,11 +114,11 @@ export default function Nav() {
                 >
                   Contact
                 </Link> */}
-          {/* </li>
+            {/* </li>
             </ul> */}
-        </div>
+          </div>
 
-        {/* </section> */}
+        </section>
       </nav>
     </>
   );

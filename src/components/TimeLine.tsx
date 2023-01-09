@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ReactElement } from "react";
-import { TimeLineData } from "../../lib/constants";
+import { TimeLineData } from "~/lib/constants";
 
 export default function Timeline() {
   return (

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import Nav from "./Nav";
 
 export default function Container(props: { [x: string]: any; children: any }) {
@@ -17,12 +17,12 @@ export default function Container(props: { [x: string]: any; children: any }) {
 
   return (
     <div className="bg-transparent dark:bg-transparent">
+
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        {/* <meta property="og:url" content={`https://leerob.io${router.asPath}`} />
-                <link rel="canonical" href={`https://leerob.io${router.asPath}`} /> */}
+        <link rel="canonical" href="https://joshuavstories.com" />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Joshua Vaughn" />
         <meta property="og:description" content={meta.description} />
@@ -37,20 +37,13 @@ export default function Container(props: { [x: string]: any; children: any }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <Nav />
-      <div className="flex justify-center px-8">
-        <a href="#skip" className="skip-nav">
-          Skip to content
-        </a>
 
-        <main
-          id="skip"
-          className="flex flex-col justify-center bg-transparent px-8 dark:bg-transparent"
-        >
-          {children}
-          <Footer />
-        </main>
-      </div>
+      <Nav />
+
+      {children}
+
+      {/* <Footer /> */}
+
     </div>
   );
 }

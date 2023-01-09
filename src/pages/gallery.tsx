@@ -1,4 +1,4 @@
-import Collections from "~/components/Main/Collections";
+import Collections from "~/components/Collections";
 
 export default function GalleryPage() {
   return <Collections />;

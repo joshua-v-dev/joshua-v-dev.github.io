@@ -1,4 +1,4 @@
-import CallToAction from "~/components/MultiComp/CallToAction";
+import CallToAction from "~/components/CallToAction";
 
 const CtaPage = () => {
   return <CallToAction />;

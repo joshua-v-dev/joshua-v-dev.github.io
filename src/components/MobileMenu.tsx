@@ -45,12 +45,12 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            "absolute flex flex-col bg-gray-100 dark:bg-gray-900",
+            "absolute h-full flex flex-col opacity-2 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 dark:bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-500 via-purple-500 to-blue-500",
             isMenuRendered && styles.menuRendered
           )}
         >
           <li
-            className="border-b border-gray-300 text-sm font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
+            className="border-b border-gray-300 text-sm font-semibold text-gray-500 dark:border-gray-700 dark:text-gray-100"
             style={{ transitionDelay: "150ms" }}
           >
             <Link href="/" className="flex w-auto pb-4">
