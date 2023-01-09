@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 // import fetcher from 'src/lib/fetcher';
 // import { signIn, useSession } from 'next-auth/react';
 // import useSWR, { useSWRConfig } from 'swr';
-import { FormState } from "~/lib/types/form";
+import { FormState } from "~/lib/form";
 import ErrorMessage from "./ErrorMessage";
 import Form from "./Form";
 import LoadingSpinner from "./LoadingSpinner";
