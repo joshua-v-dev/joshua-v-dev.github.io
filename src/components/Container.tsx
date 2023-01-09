@@ -17,7 +17,6 @@ export default function Container(props: { [x: string]: any; children: any }) {
 
   return (
     <div className="bg-transparent dark:bg-transparent">
-
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -43,7 +42,6 @@ export default function Container(props: { [x: string]: any; children: any }) {
       {children}
 
       {/* <Footer /> */}
-
     </div>
   );
 }

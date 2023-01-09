@@ -3,21 +3,23 @@ import Link from "next/link";
 import { FunctionComponentElement } from "react";
 import { topPicks } from "~/lib/constants";
 
-
 export default function GlassTopPicks() {
   return (
     <>
-      <div className="container ">
-        <div className=" mx-auto my-2 grid grid-col items-center justify-center gap-4">
-          <h2 className="text-6xl font-extrabold tracking-tight text-indigo-600 brightness-125">
-            First, What brings you here?
-          </h2>
-          <p className="grid  text-3xl font-bold text-gray-700 brightness-200">
-            Depending on who you are I&apos;ll show you the content accordingly in
-            order to increase your user experience while browsing my portfolio.
-          </p>
+      <div className="max-h-lg grid container" id="main-content">
+        <div className=" grid-col-3 mx-auto my-4 grid max-w-4xl items-center justify-center gap-4">
+          <div className=" grid items-start justify-center">
+            <h2 className="text-4xl font-extrabold tracking-tight text-indigo-600 brightness-125">
+              First, What brings you here?
+            </h2>
+            <p className="grid  text-2xl font-bold text-gray-700 brightness-200">
+              Depending on who you are I&apos;ll show you the content
+              accordingly in order to increase your user experience while
+              browsing my portfolio.
+            </p>
+          </div>
         </div>
-        <div className="mx-auto my-2 grid gap-10 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
+        <div className="mx-auto my-2 grid max-w-4xl gap-10 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
           {topPicks.map(
             (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
               <div
@@ -37,7 +39,9 @@ export default function GlassTopPicks() {
                   data-mdb-ripple-color="light "
                 >
                   <Image
-                    className="flex items-center justify-center rounded-md object-cover p-2"
+                    className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30
+                     object-cover p-2 shadow-indigo-600 outline-2 
+                    outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
                     src={topPicks.src}
                     alt={topPicks.imageAlt}
                     width={500}

@@ -51,7 +51,7 @@ module.exports = {
       "4xl": "2560px",
       "5xl": "3840px",
       "6xl": "5120px",
-      "7xl": "6400px"
+      "7xl": "6400px",
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,

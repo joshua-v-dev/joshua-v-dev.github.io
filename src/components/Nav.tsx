@@ -21,7 +21,7 @@ function NavItem({ href, text }: TNavItemProps) {
         isActive
           ? "font-bold text-gray-100 dark:text-gray-300"
           : "font-semibold text-white dark:text-gray-500",
-        "hidden rounded-lg p-1 transition-all hover:bg-transparent dark:hover:bg-green-800 dark:hover:brightness-200 dark:hover:text-black px-3 py-2 md:inline-block "
+        "hidden rounded-lg p-1 px-3 py-2 transition-all hover:bg-transparent dark:hover:bg-green-800 dark:hover:text-black dark:hover:brightness-200 md:inline-block "
       )}
     >
       <span className="capsize">{text}</span>
@@ -36,13 +36,11 @@ export default function Nav() {
         <section className=" bg-transparent p-4 lg:p-6">
           <div className="ml-[-0.60rem]">
             <MobileMenu />
-
           </div>
 
           <div className="hidden lg:absolute lg:top-1/2 lg:left-1/2 lg:inline-flex lg:-translate-y-1/2 lg:-translate-x-1/2 lg:transform">
             <ul className="text-grey-500 flex items-center space-x-5 brightness-125">
               <li>
-
                 <LightDarkMode />
               </li>
 
@@ -53,17 +51,14 @@ export default function Nav() {
 
               <li>
                 <NavItem href="/whitelist" text="Whitelist" />
-
               </li>
               <Dot />
               <li>
                 <NavItem href="/services" text="Services" />
-
               </li>
               <Dot />
               <li>
                 <NavItem href="/gallery" text="Projects" />
-
               </li>
               <Dot />
               <li>
@@ -117,7 +112,6 @@ export default function Nav() {
             {/* </li>
             </ul> */}
           </div>
-
         </section>
       </nav>
     </>
