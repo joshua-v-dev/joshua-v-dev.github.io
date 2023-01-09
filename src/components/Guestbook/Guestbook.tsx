@@ -1,8 +1,8 @@
 import { format } from 'date-fns';
-import { Key, Suspense, useRef, useState } from 'react';
-import fetcher from 'src/lib/fetcher';
+import { useRef, useState } from 'react';
+// import fetcher from 'src/lib/fetcher';
 // import { signIn, useSession } from 'next-auth/react';
-import useSWR, { useSWRConfig } from 'swr';
+// import useSWR, { useSWRConfig } from 'swr';
 import { FormState } from '~/lib/types/form';
 import Form from '../Animations/Form/Form';
 import ErrorMessage from '../Notification/ErrorMessage';
@@ -12,7 +12,7 @@ import SuccessMessage from '../Notification/SuccessMessage';
 
 
 function GuestbookEntry({ entry, user }: { entry: any; user?: any; }) {
-    const { mutate } = useSWRConfig();
+    // const { mutate } = useSWRConfig();
     const deleteEntry = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
 
@@ -20,7 +20,7 @@ function GuestbookEntry({ entry, user }: { entry: any; user?: any; }) {
             method: 'DELETE'
         });
 
-        mutate('/api/guestbook');
+        // mutate('/api/guestbook');
     };
 
     return (
@@ -50,12 +50,12 @@ function GuestbookEntry({ entry, user }: { entry: any; user?: any; }) {
 
 export default function Guestbook({ fallbackData }: { fallbackData: any; }) {
     //   const { data: session } = useSession();
-    const { mutate } = useSWRConfig();
+    // const { mutate } = useSWRConfig();
     const [form, setForm] = useState<FormState>({ state: 'pending' });
     const inputEl = useRef(null);
-    const { data: entries } = useSWR('/api/guestbook', fetcher, {
-        fallbackData
-    });
+    // const { data: entries } = useSWR('/api/guestbook', fetcher, {
+    //     fallbackData
+    // });
 
     const leaveEntry = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
@@ -82,7 +82,7 @@ export default function Guestbook({ fallbackData }: { fallbackData: any; }) {
         }
 
         // inputEl.current.value = '';
-        mutate('/api/guestbook');
+        // mutate('/api/guestbook');
         setForm({
             state: 'success',
             message: `Hooray! Thanks for signing my Guestbook.`
@@ -139,14 +139,14 @@ export default function Guestbook({ fallbackData }: { fallbackData: any; }) {
                     </p>
                 )}
             </div>
-            <div className="mt-4 space-y-8">
+            {/* <div className="mt-4 space-y-8">
                 <Suspense fallback={null}>
                     {entries?.map((entry: { id: Key | null | undefined; }) => (
                         // <GuestbookEntry key={entry.id} entry={entry} user={session?.user} />
                         <GuestbookEntry key={entry.id} entry={entry} />
                     ))}
                 </Suspense>
-            </div>
+            </div> */}
         </>
     );
 }
