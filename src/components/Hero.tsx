@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="relative mx-auto flex h-screen bg-transparent sm:items-center lg:items-start ">
-      <div className="z-10 mx-auto bg-transparent">
+    <div className="relative flex h-screen items-start justify-center bg-transparent  ">
+      <div className="z-10  mx-auto bg-transparent">
         <div className="flex select-none items-center justify-center">
           <Link className="text-2xl font-bold text-gray-200" href="#">
             <div className="relative h-36 w-36">
@@ -20,17 +20,17 @@ export default function Hero() {
         </div>
         <main className="  flex select-none justify-center py-6">
           <div className=" text-center ">
-            <h1 className=" text-8xl font-extrabold tracking-tight text-green-400  shadow-green-500/50 outline-1 brightness-150 sm:text-3xl md:text-4xl">
-              <span className=" text-8xl font-extrabold tracking-wide sm:text-7xl xl:inline ">
+            <h1 className=" text-9xl font-extrabold tracking-tightest text-accent-2  shadow-accent-2-500/50 outline-1 brightness-190 sm:text-3xl md:text-4xl">
+              <span className=" text-9xl font-extrabold tracking-wide sm:text-7xl xl:inline ">
                 Joshua Vaughn
               </span>
             </h1>
             <div className="my-2">
-              <span className=" text-5xl font-extrabold tracking-tighter text-green-600 brightness-150 xl:inline ">
+              <span className=" text-6xl font-extrabold tracking-tight text-dark shadow-dark-4xl brightness-100 xl:inline ">
                 Full Stack Web Developer
               </span>
             </div>
-            <p className=" text-2xl font-extrabold tracking-tight text-gray-500 brightness-150  ">
+            <p className=" text-4xl font-extrabold tracking-leading text-zinc-800 shadow-dark-xl brightness-85   ">
               Innovation one idea at a time
             </p>
           </div>

@@ -94,14 +94,14 @@ export const topSrc = [
 export const topPicks = [
   {
     name: "Recruiter",
-    description: "I'm Ready to Work!",
+    description: "I'm Ready to Work",
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648967012/Recruiter_gx369v.png",
     imageAlt: "joshua vaughn portfolio",
     href: "/recruiter",
   },
   {
     name: "Freelance",
-    description: "Let's build something together!",
+    description: "Let's build together!",
     src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648966991/Freelance_fgje1v.png",
 
     imageAlt: "contract me",

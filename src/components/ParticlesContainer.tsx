@@ -24,19 +24,29 @@ const options = {
     repeat: "no-repeat",
     position: "50% 50%",
     " size": "fit",
+    rotate: {
+      value: 0,
+      animation: {
+        enable: false,
+        speed: 0,
+        sync: false,
+      },
+    },
     color: {
       value: "#000000",
     },
+
     opacity: 0.5,
 
+
     image:
-      "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1672489722/Portfolio/Untitled_design_dnfwrk.svg')",
+      "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1673321846/tech_background_1_f2pvmd.svg')",
   },
   backgroundMask: {
     composite: "destination-out",
     cover: {
       color: {
-        value: "#fff",
+        value: "#0072b1",
       },
       opacity: 1,
     },

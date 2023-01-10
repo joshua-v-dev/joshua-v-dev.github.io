@@ -1,6 +1,6 @@
 import React from "react";
+import GlassTopPicks from "./GlassTopPicks";
 import Hero from "./Hero";
-import HomeOnboarding from "./Onboarding";
 
 type HeroProps = {
   isMain?: boolean;
@@ -10,7 +10,7 @@ const HomeHero: React.FC<HeroProps> = () => {
   return (
     <>
       <Hero />
-      <HomeOnboarding />
+      <GlassTopPicks />
     </>
   );
 };

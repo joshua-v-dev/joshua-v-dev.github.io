@@ -2,7 +2,7 @@
 
 const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
-
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*/*.{js,jsx,ts,tsx, html, wasm}"],
   darkMode: "media",
@@ -21,10 +21,15 @@ module.exports = {
         secondary: "var(--secondary)",
         onSecondaryBg: "var(--onSecondaryBg)",
         secondaryBg: "var(--secondaryBg)",
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
+        "accent-1": "#40a4f3",
+        "accent-2": "#1d64cf",
+        "accent-3": "#0c387a",
+        "accent-4": "#14499c",
+        "accent-5": "#0072b1",
+        "accent-7": "#022a59",
         success: "#0070f3",
+
+
         primary: {
           // Customize it on globals.css :root
           50: "rgb(var(--tw-color-primary-50) / 5",
@@ -38,7 +43,7 @@ module.exports = {
           800: "rgb(var(--tw-color-primary-800) / 80)",
           900: "rgb(var(--tw-color-primary-900) / 90)",
         },
-        dark: "#222222",
+        dark: "#1e1e1e",
       },
     },
     screens: {
@@ -221,8 +226,13 @@ module.exports = {
       100: "1",
       105: "1.05",
       110: "1.1",
+      120: "1.2",
       125: "1.25",
       150: "1.5",
+      160: "1.6",
+      175: "1.75",
+      180: "1.8",
+      190: "1.9",
       200: "2",
     },
     borderColor: ({ theme }) => ({
