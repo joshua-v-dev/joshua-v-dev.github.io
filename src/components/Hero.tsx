@@ -30,7 +30,7 @@ export default function Hero() {
                 Full Stack Web Developer
               </span>
             </div>
-            <p className=" text-4xl font-extrabold tracking-leading text-zinc-800 shadow-dark-xl brightness-85   ">
+            <p className=" text-4xl font-extrabold tracking-leading text-zinc-700 shadow-dark-2xl ">
               Innovation one idea at a time
             </p>
           </div>

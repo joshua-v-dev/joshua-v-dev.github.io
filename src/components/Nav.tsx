@@ -21,7 +21,7 @@ function NavItem({ href, text }: TNavItemProps) {
         isActive
           ? "font-bold text-gray-100 dark:text-gray-300"
           : "font-semibold text-white dark:text-gray-500",
-        "hidden rounded-lg p-1 px-3 py-2 transition-all hover:bg-transparent dark:hover:bg-green-800 dark:hover:text-black dark:hover:brightness-200 md:inline-block "
+        "hidden rounded-lg px-3 py-2 transition-all hover:bg-transparent hover:brightness-150 hover:text-lg dark:hover:text-accent-3  dark:hover:brightness-200 md:inline-block "
       )}
     >
       <span className="capsize">{text}</span>
