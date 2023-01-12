@@ -83,7 +83,7 @@ export default function Whitelist() {
     // mutate('/api/guestbook');
     setForm({
       state: "success",
-      message: `Hooray! Thanks for signing my Guestbook.`,
+      message: `Hooray! Thanks for signing up for the Whitelist.`,
     });
   };
 
@@ -91,10 +91,10 @@ export default function Whitelist() {
     <>
       <div className="dark:bg-blue-opaque my-4 w-full rounded border border-blue-200 bg-blue-50 p-6 dark:border-gray-800">
         <h5 className="text-lg font-bold text-gray-900 dark:text-gray-100 md:text-xl">
-          Sign the Guestbook
+          Sign up for the Whitelist
         </h5>
         <p className="my-1 text-gray-800 dark:text-gray-200">
-          Share a message for a future visitor of my site.
+          Get notified when we launch.
         </p>
         {/* {!session && ( */}
 

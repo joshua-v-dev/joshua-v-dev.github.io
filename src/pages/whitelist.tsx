@@ -9,11 +9,10 @@ export default function WhitelistPage() {
     >
       <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-          Guestbook
+          Whitelist
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          Leave a comment below. It could be anything – appreciation,
-          information, wisdom, or even humor. Surprise me!
+          Leave a comment and I will add you to the whitelist.
         </p>
         <Whitelist />
       </div>

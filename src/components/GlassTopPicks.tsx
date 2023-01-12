@@ -3,22 +3,21 @@ import Link from "next/link";
 import { FunctionComponentElement } from "react";
 import { topPicks } from "~/lib/constants";
 
-export default function GlassTopPicks() {
+const GlassTopPicks = () => {
   return (
     <>
-      <div className="mx-auto grid h-screen ">
-        <div className="grid-col-3 my-4  mx-auto grid max-w-4xl items-center justify-center ">
-          <div className=" grid items-center justify-center">
-            <h2 className="shadow-accent-1-xl text-6xl font-bold tracking-tight text-accent-1 brightness-125">
-              First, What brings you here?
-            </h2>
-            <p className="shadow-accent-2-xl my-1 grid text-3xl font-bold text-accent-2 brightness-150">
-              Depending on who you are I&apos;ll show you the content
-              accordingly in order to increase your user experience while
-              browsing my portfolio.
-            </p>
-          </div>
+      <section id="main-content" className="mx-auto grid max-w-4xl p-5">
+        <div className="grid items-center justify-center">
+          <h2 className=" shadow-accent-1-xl  p-1 text-6xl font-bold tracking-tight text-accent-1 brightness-125">
+            First, What brings you here?
+          </h2>
+          <p className=" shadow-accent-2-xl  grid p-2 text-2xl font-bold text-accent-2 brightness-150">
+            Depending on who you are I&apos;ll show you the content accordingly
+            in order to increase your user experience while browsing my
+            portfolio.
+          </p>
         </div>
+
         <div className="lg:max-h-xs mx-auto grid max-w-4xl gap-x-8 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
           {topPicks.map(
             (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
@@ -77,7 +76,9 @@ export default function GlassTopPicks() {
             )
           )}
         </div>
-      </div>
+      </section>
     </>
   );
-}
+};
+
+export default GlassTopPicks;

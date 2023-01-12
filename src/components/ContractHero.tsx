@@ -3,7 +3,7 @@ import Button from "~/components/Button";
 const ContractHero = () => {
   return (
     <section
-      className="border-b-1 my-10 grid grid-flow-row items-center justify-center  rounded-3xl border-4 border-t-4 border-double border-black
+      className="border-b-1 grid grid-flow-row items-center justify-center  rounded-3xl border-4 border-t-4 border-double border-black
 								 border-indigo-600/90 border-t-indigo-600 border-opacity-90  bg-black/30 p-12 py-10  shadow-md
 								 shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
     >
@@ -26,7 +26,7 @@ const ContractHero = () => {
               </div>
             </div>
             <div className=" px-4 md:w-1/2">
-              <div className="relative mx-auto my-auto md:mr-0">
+              <div className="relative mx-auto md:mr-0">
                 <Image
                   className="-left-18 absolute -top-12 z-10 w-28 md:w-auto"
                   src="https://res.cloudinary.com/dpytkhyme/image/upload/v1643879107/Green_Purple_Computing_Technology_Logo_t9rm0q.svg"

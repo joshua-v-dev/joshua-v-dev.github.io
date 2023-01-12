@@ -1,17 +1,14 @@
 import React from "react";
-import Container from "~/components/Container";
+import GlassTopPicks from "~/components/GlassTopPicks";
 import HomeCta from "~/components/HomeCta";
 import HomeHero from "~/components/HomeHero";
 
 const Home: React.FC = () => {
   return (
     <>
-      <div className="bg-transparent container dark:bg-transparent">
-        <Container>
-          <HomeHero />
-          <HomeCta />
-        </Container>
-      </div>
+      <HomeHero />
+      <GlassTopPicks />
+      <HomeCta />
     </>
   );
 };

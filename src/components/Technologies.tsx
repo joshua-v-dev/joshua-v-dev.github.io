@@ -2,7 +2,7 @@ import { features } from "~/lib/constants";
 
 export default function Technologies() {
   return (
-    <div className="mx-auto grid  grid-flow-row bg-transparent lg:my-24">
+    <div className="mx-auto grid  grid-flow-row bg-transparent">
       <div className="mx-auto   sm:px-4 ">
         <div className=" relative space-y-4 lg:text-center">
           <h1 className=" text-6xl font-extrabold uppercase tracking-wide text-indigo-700 brightness-125">

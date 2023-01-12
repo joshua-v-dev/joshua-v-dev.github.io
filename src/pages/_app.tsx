@@ -1,13 +1,14 @@
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Session } from "inspector";
 import { type AppType } from "next/app";
 import ParticlesContainer from "~/components/ParticlesContainer";
 
 import { ThemeProvider } from "next-themes";
+import Container from "~/components/Container";
 import "../styles/main.css";
 
-const interVariable = Inter();
+// const interVariable = Inter();
 
 const MyApp: AppType<{ session: Session }> = ({
   Component,
@@ -16,12 +17,13 @@ const MyApp: AppType<{ session: Session }> = ({
   return (
     <>
       <ThemeProvider attribute="class">
-        <ParticlesContainer />
-
-        <main className={interVariable.className}>
-          <Component {...pageProps} />
-          <Analytics />
-        </main>
+        <div className="select-none overflow-x-hidden">
+          <Container>
+            <ParticlesContainer />
+            <Component {...pageProps} />
+            <Analytics />
+          </Container>
+        </div>
       </ThemeProvider>
     </>
   );

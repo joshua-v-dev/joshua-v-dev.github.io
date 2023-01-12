@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const FutureMain = () => {
   return (
-    <section>
-      <section className="skewed-bottom-right my-5 rounded-md">
+    <>
+      <section className="skewed-bottom-right rounded-md">
         <div className="radius-for-skewed bg-gray-900 pt-12 pb-20 lg:pt-12">
           <div className=" mx-auto px-4">
             <div className=" flex flex-wrap">
@@ -53,10 +53,9 @@ const FutureMain = () => {
           </svg>
         </div>
       </section>
-
-      <section className="lg:grid-col-2 lg:my-12 lg:grid lg:grid-flow-col">
+      <section className="lg:grid-col-2 lg:grid lg:grid-flow-col">
         <div className="bg-transparent bg-cover bg-no-repeat pt-20">
-          <div className=" my-3 bg-transparent ">
+          <div className=" bg-transparent ">
             <div className="mx-auto text-center">
               <div className="flex items-center justify-center">
                 <div className="text-center ">
@@ -102,7 +101,7 @@ const FutureMain = () => {
           </div>
         </div>
       </section>
-    </section>
+    </>
   );
 };
 export default FutureMain;

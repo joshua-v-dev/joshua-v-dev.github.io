@@ -17,7 +17,7 @@ export default function Container(props: { [x: string]: any; children: any }) {
   };
 
   return (
-    <div className="bg-transparent dark:bg-transparent">
+    <>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -37,14 +37,10 @@ export default function Container(props: { [x: string]: any; children: any }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <div className="ml-[-0.60rem]">
-        <MobileMenu />
-      </div>
+      <MobileMenu />
       <Nav />
-
       {children}
-
       <Footer />
-    </div>
+    </>
   );
 }
