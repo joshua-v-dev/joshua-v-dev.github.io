@@ -29,7 +29,6 @@ module.exports = {
         "accent-7": "#022a59",
         success: "#0070f3",
 
-
         primary: {
           // Customize it on globals.css :root
           50: "rgb(var(--tw-color-primary-50) / 5",

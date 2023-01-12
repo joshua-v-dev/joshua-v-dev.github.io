@@ -6,11 +6,12 @@ import HomeHero from "~/components/HomeHero";
 const Home: React.FC = () => {
   return (
     <>
-      <Container>
-        <HomeHero />
-        <HomeCta />
-        {/* <SkipToContent /> */}
-      </Container>
+      <div className="bg-transparent container dark:bg-transparent">
+        <Container>
+          <HomeHero />
+          <HomeCta />
+        </Container>
+      </div>
     </>
   );
 };

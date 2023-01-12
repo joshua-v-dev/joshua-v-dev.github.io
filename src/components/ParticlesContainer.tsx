@@ -38,7 +38,6 @@ const options = {
 
     opacity: 0.5,
 
-
     image:
       "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1673321846/tech_background_1_f2pvmd.svg')",
   },

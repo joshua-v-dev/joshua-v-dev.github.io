@@ -90,7 +90,7 @@ const ServicesMain = () => {
                     </div>
                     <p className=" text-lg text-gray-200">/P.W.A.</p>
                     <Link
-                      className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-blue-600"
+                      className="rounded-full bg-blue-500 px-12 py-5 font-bold text-gray-200 transition duration-200 hover:bg-accent-2"
                       href="#"
                     >
                       Learn More

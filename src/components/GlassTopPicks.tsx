@@ -6,26 +6,26 @@ import { topPicks } from "~/lib/constants";
 export default function GlassTopPicks() {
   return (
     <>
-      <div className="mx-auto grid h-screen container" id="main-content">
+      <div className="mx-auto grid h-screen ">
         <div className="grid-col-3 my-4  mx-auto grid max-w-4xl items-center justify-center ">
           <div className=" grid items-center justify-center">
-            <h2 className="text-5xl font-bold tracking-tight text-accent-1 shadow-accent-1-xl brightness-125">
+            <h2 className="shadow-accent-1-xl text-6xl font-bold tracking-tight text-accent-1 brightness-125">
               First, What brings you here?
             </h2>
-            <p className="my-1 grid text-2xl font-bold text-accent-2 brightness-150 shadow-accent-2-xl">
+            <p className="shadow-accent-2-xl my-1 grid text-3xl font-bold text-accent-2 brightness-150">
               Depending on who you are I&apos;ll show you the content
               accordingly in order to increase your user experience while
               browsing my portfolio.
             </p>
           </div>
         </div>
-        <div className="lg:max-h-xs mx-auto grid max-w-4xl gap-10 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
+        <div className="lg:max-h-xs mx-auto grid max-w-4xl gap-x-8 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
           {topPicks.map(
             (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
               <div
                 key={i}
                 className="border-b-1 relative grid items-center justify-evenly rounded-3xl border-4 border-t-4 border-double border-black border-indigo-600/90
-								 border-t-indigo-600 border-opacity-90 bg-black/30 p-1 shadow-md shadow-indigo-600 outline-2 
+								 border-t-indigo-600 border-opacity-90 bg-black/30 p-4 shadow-md shadow-indigo-600 outline-2 
 								 outline-offset-2 outline-black brightness-125 backdrop-blur-sm hover:scale-105 sm:grid-flow-col md:grid-flow-row "
               >
                 <Link
@@ -40,7 +40,7 @@ export default function GlassTopPicks() {
                 >
                   <Image
                     className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30
-                     object-cover p-2 shadow-indigo-600 outline-2 
+                     object-cover shadow-indigo-600 outline-2 
                     outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
                     src={topPicks.src}
                     alt={topPicks.imageAlt}
@@ -49,10 +49,10 @@ export default function GlassTopPicks() {
                     priority
                   />
                 </Link>
-                <h5 className="grid justify-center p-2 text-3xl  font-extrabold shadow-accent-2-2xl leading-relaxed text-accent-2 brightness-100">
+                <h5 className="shadow-accent-2-2xl grid justify-center p-2  text-3xl font-extrabold leading-relaxed text-accent-2 brightness-100">
                   {topPicks.name}
                 </h5>
-                <p className="grid justify-center text-md font-bold text-lg text-accent-1  shadow-accent-1-2xl">
+                <p className="text-md shadow-accent-1-2xl grid justify-center text-lg font-bold  text-accent-1">
                   {topPicks.description}
                 </p>
                 <div className="flex flex-wrap items-center justify-center">

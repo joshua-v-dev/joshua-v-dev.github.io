@@ -2,16 +2,18 @@ import Link from "next/link";
 const HomeCta = () => {
   return (
     <>
-      <section className="container mx-auto my-5 flex items-center justify-around ">
-        <div className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30
+      <section className="relative mx-auto my-5 flex max-w-4xl items-center justify-center ">
+        <div
+          className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30
                      object-cover p-2 shadow-indigo-600 outline-2 
-                    outline-offset-2 outline-black brightness-125 backdrop-blur-sm">
+                    outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
+        >
           <div className=" rounded-3xl bg-transparent">
             <div className=" py-7 px-4 sm:px-6 lg:flex lg:items-center lg:justify-evenly lg:gap-x-10 lg:py-14 lg:px-10">
               <div className="my-3 flex flex-col items-center justify-center">
-                <h2 className="text-3xl font-extrabold tracking-tight text-blue-400 sm:text-4xl">
-                  <span className="block">Ready to dive in?</span>
-                  <span className="block text-indigo-600">
+                <h2 className="text-5xl font-extrabold tracking-tight text-blue-400 sm:text-4xl">
+                  <span className="flex">Ready to dive in?</span>
+                  <span className="flex text-indigo-600">
                     Let&apos;s solve your technology needs
                   </span>
                 </h2>

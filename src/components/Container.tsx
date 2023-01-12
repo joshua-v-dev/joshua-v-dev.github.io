@@ -1,10 +1,11 @@
 import Head from "next/head";
-// import Footer from "./Footer";
+import Footer from "./Footer";
+import MobileMenu from "./MobileMenu";
 import Nav from "./Nav";
 
 export default function Container(props: { [x: string]: any; children: any }) {
   const { children, ...customMeta } = props;
-  // const router = useRouter();
+
   const meta = {
     title: "Joshua Vaughn – Developer, DJ, Designer.",
     description: `Front-end developer, JavaScript enthusiast, and course creator.`,
@@ -36,12 +37,14 @@ export default function Container(props: { [x: string]: any; children: any }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-
+      <div className="ml-[-0.60rem]">
+        <MobileMenu />
+      </div>
       <Nav />
 
       {children}
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
