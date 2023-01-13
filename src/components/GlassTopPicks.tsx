@@ -6,12 +6,12 @@ import { topPicks } from "~/lib/constants";
 const GlassTopPicks = () => {
   return (
     <>
-      <section id="main-content" className="mx-auto grid max-w-4xl p-5">
+      <section id="main-content" className="mx-auto grid max-w-4xl p-3">
         <div className="grid items-center justify-center">
           <h2 className=" shadow-accent-1-xl  p-1 text-6xl font-bold tracking-tight text-accent-1 brightness-125">
-            First, What brings you here?
+            What brings you here?
           </h2>
-          <p className=" shadow-accent-2-xl  grid p-2 text-2xl font-bold text-accent-2 brightness-150">
+          <p className=" shadow-accent-2-xl  grid p-3 text-2xl font-bold text-accent-2 brightness-150">
             Depending on who you are I&apos;ll show you the content accordingly
             in order to increase your user experience while browsing my
             portfolio.

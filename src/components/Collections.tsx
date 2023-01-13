@@ -76,14 +76,6 @@ export default function Example() {
 
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-50">
-        <body class="h-full overflow-hidden">
-        ```
-      */}
       <div className="flex">
         {/* Narrow sidebar */}
         <div className="hidden w-28 overflow-y-auto bg-indigo-700 md:block">

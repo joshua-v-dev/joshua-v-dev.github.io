@@ -3,8 +3,8 @@ import SkipToContent from "./SkipToContent";
 
 const HomeHero = () => {
   return (
-    <main className="flex h-screen w-full flex-1 flex-col items-center justify-center px-20 text-center">
-      <section className="z-10 mx-auto flex flex-col items-center justify-center bg-transparent  ">
+    <>
+      <section className="z-10 mx-auto flex min-h-screen flex-1 flex-col items-center justify-start bg-transparent text-center  ">
         <div className="relative flex flex-col items-center justify-center">
           <Image
             className="rounded-full object-contain"
@@ -32,9 +32,9 @@ const HomeHero = () => {
             </span>
           </h3>
         </div>
+        <SkipToContent />
       </section>
-      <SkipToContent />
-    </main>
+    </>
   );
 };
 
