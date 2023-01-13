@@ -4,7 +4,7 @@ import Whitelist from "~/components/Whitelist";
 export default function WhitelistPage() {
   return (
     <Container
-      title="Guestbook – Lee Robinson"
+      title="WhitelistPage – Joshua Vaughn"
       description="Sign my digital guestbook and share some wisdom."
     >
       <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">

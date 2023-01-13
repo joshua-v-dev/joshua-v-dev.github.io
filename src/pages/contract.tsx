@@ -1,6 +1,12 @@
 import ContractHero from "~/components/ContractHero";
+import FormBlock from "~/components/FormBlock";
 
 const ContractPage = () => {
-  return <ContractHero />;
+  return (
+    <>
+      <ContractHero />
+      <FormBlock />
+    </>
+  )
 };
 export default ContractPage;
