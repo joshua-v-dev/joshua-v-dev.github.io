@@ -15,6 +15,7 @@ const Container = (props: { [x: string]: any; children: any }) => {
 
   return (
     <>
+
       <Head>
         <title>{meta.title}</title>
         <link href="/static/favicons/favicon.ico" rel="shortcut icon" />

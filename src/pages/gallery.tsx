@@ -1,9 +1,11 @@
 import Collections from "~/components/Collections";
 
-export default function GalleryPage() {
+const GalleryPage = () => {
   return (
     <>
       <Collections />
     </>
   );
 }
+
+export default GalleryPage;

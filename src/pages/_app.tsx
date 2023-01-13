@@ -19,16 +19,19 @@ const MyApp: AppType<{ session: Session }> = ({
 }) => {
   return (
     <>
-      <ParticlesContainer />
       <ThemeProvider attribute="class">
-        <MobileMenu />
-        <Nav />
-
         <Container>
+          <ParticlesContainer />
+
+          <MobileMenu />
+          <Nav />
+
+
           <Component {...pageProps} />
           <Analytics />
+
+          <Footer />
         </Container>
-        <Footer />
       </ThemeProvider>
     </>
   );

@@ -1,7 +1,7 @@
 import Container from "~/components/Container";
 import Whitelist from "~/components/Whitelist";
 
-export default function WhitelistPage() {
+const WhitelistPage = () => {
   return (
     <Container
       title="WhitelistPage – Joshua Vaughn"
@@ -19,6 +19,8 @@ export default function WhitelistPage() {
     </Container>
   );
 }
+
+export default WhitelistPage;
 
 // export async function getStaticProps() {
 //   const entries = await prisma.guestbook.findMany({
