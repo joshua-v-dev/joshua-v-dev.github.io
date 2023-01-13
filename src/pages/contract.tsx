@@ -7,6 +7,6 @@ const ContractPage = () => {
       <ContractHero />
       <FormBlock />
     </>
-  )
+  );
 };
 export default ContractPage;
