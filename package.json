@@ -21,7 +21,7 @@
     "@vercel/analytics": "^0.1.6",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
-    "framer-motion": "^8.2.4",
+    "framer-motion": "^8.4.3",
     "motion": "^10.15.5",
     "next": "^13.1.2",
     "next-themes": "^0.2.1",
