@@ -29,7 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^2.7.1",
-    "tsparticles": "^2.7.1"
+    "tsparticles": "^2.8.0"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
