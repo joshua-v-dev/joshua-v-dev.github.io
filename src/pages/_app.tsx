@@ -26,7 +26,6 @@ const MyApp: AppType<{ session: Session }> = ({
           <MobileMenu />
           <Nav />
 
-
           <Component {...pageProps} />
           <Analytics />
 

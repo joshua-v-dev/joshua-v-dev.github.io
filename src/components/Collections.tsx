@@ -2,11 +2,14 @@ import { Dialog, Menu, Transition } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
+import { HeartIcon } from "src/lib/icons";
 import {
-  HeartIcon
-} from "src/lib/icons";
-import { currentFile, files, navigation, tabs, userNavigation } from "~/lib/constants";
-
+  currentFile,
+  files,
+  navigation,
+  tabs,
+  userNavigation,
+} from "~/lib/constants";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -498,7 +501,6 @@ const Collections = () => {
       </div>
     </>
   );
-}
-
+};
 
 export default Collections;

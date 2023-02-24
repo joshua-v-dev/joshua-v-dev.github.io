@@ -6,6 +6,6 @@ const GalleryPage = () => {
       <Collections />
     </>
   );
-}
+};
 
 export default GalleryPage;

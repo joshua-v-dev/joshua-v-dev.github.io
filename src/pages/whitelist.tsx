@@ -18,7 +18,7 @@ const WhitelistPage = () => {
       </div>
     </Container>
   );
-}
+};
 
 export default WhitelistPage;
 
