@@ -5,7 +5,7 @@ import { type AppType } from "next/app";
 
 import { ThemeProvider } from "next-themes";
 import Container from "~/components/Container";
-import Footer from "~/components/Footer";
+// import Footer from "~/components/Footer";
 import MobileMenu from "~/components/MobileMenu";
 import Nav from "~/components/Nav";
 import ParticlesContainer from "~/components/ParticlesContainer";
@@ -29,7 +29,7 @@ const MyApp: AppType<{ session: Session }> = ({
           <Component {...pageProps} />
           <Analytics />
 
-          <Footer />
+          {/* <Footer /> */}
         </Container>
       </ThemeProvider>
     </>

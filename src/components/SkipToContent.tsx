@@ -24,7 +24,7 @@ export default function SkipToContent() {
     <>
       <Link
         href="#main-content"
-        className="z-50 mx-auto flex items-center justify-center bg-transparent py-20 text-white"
+        className="z-50 mx-auto bg-transparent py-1 text-white"
       >
         Skip to main content
       </Link>
