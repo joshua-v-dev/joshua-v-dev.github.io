@@ -1108,7 +1108,6 @@ module.exports = {
     require("@headlessui/react"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
-    require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
   ],
 };

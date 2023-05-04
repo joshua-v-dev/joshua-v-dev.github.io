@@ -99,7 +99,7 @@ const ServicesMain = () => {
                 </div>
               </div>
             </div>
-            <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pt-12 pb-14 lg:pl-24 lg:pt-24">
+            <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pb-14 pt-12 lg:pl-24 lg:pt-24">
               <div className=" flex flex-wrap">
                 <div className="  px-4 lg:mb-0 lg:w-7/12">
                   <div className=" px-8 ">
@@ -301,7 +301,7 @@ const ServicesMain = () => {
                 </div>
               </div>
             </div>
-            <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pt-12 pb-14 lg:pl-24 lg:pt-24">
+            <div className="border-12 rounded-xl border-gray-700 bg-gray-900 pb-14 pt-12 lg:pl-24 lg:pt-24">
               <div className=" flex flex-wrap">
                 <div className="  px-4  lg:w-7/12">
                   <div className=" px-8 lg:pl-0">

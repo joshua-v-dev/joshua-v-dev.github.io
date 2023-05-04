@@ -5,9 +5,8 @@ const HomeHero = () => {
   return (
     <>
       <section className="z-10 mx-auto flex min-h-screen flex-1 flex-col items-center justify-start bg-transparent text-center  ">
-
         <div className="relative flex flex-col items-center justify-center">
-          <div className="absolute inset-0 z-0 flex items-center justify-center w-full h-full bg-gradient-to-r from-accent-2 to-accent-7 opacity-50 mix-blend-multiply filter blur-3xl brightness-50" />
+          <div className="absolute inset-0 z-0 flex h-full w-full items-center justify-center bg-gradient-to-r from-accent-2 to-accent-7 opacity-50 mix-blend-multiply blur-3xl brightness-50 filter" />
 
           <Image
             className="rounded-full object-contain"
@@ -36,7 +35,6 @@ const HomeHero = () => {
           </h3>
 
           <div className="flex flex-col items-center justify-center">
-
             <SkipToContent />
           </div>
         </div>

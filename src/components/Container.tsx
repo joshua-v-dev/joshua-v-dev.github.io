@@ -18,7 +18,7 @@ const Container = (props: { [x: string]: any; children: any }) => {
       <Head>
         <title>{meta.title}</title>
         <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
-        {/* <link href="/static/favicons/site.webmanifest" rel="manifest" /> */}
+
         <link
           href="/static/favicons/apple-touch-icon.png"
           rel="apple-touch-icon"

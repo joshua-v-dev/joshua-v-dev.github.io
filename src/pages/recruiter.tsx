@@ -1,11 +1,14 @@
-import RecruiterHero from "~/components/RecruiterHero";
-import RecruiterMain from "~/components/RecruiterMain";
+// import RecruiterHero from "~/components/RecruiterHero";
+// import RecruiterMain from "~/components/RecruiterMain";
+
+import Recruiter from "~/components/Recruiter";
 
 const RecruiterPage = () => {
   return (
     <>
-      <RecruiterHero />
-      <RecruiterMain />
+      <Recruiter />
+      {/* <RecruiterHero />
+      <RecruiterMain /> */}
     </>
   );
 };

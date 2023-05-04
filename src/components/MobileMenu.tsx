@@ -63,8 +63,8 @@ const MobileMenu = () => {
               className="border-b border-gray-300 text-lg font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
               style={{ transitionDelay: "175ms" }}
             >
-              <Link href="/whitelist" className="flex w-auto pb-4">
-                Whitelist
+              <Link href="/products" className="flex w-auto pb-4">
+                Products
               </Link>
             </li>
             <li
