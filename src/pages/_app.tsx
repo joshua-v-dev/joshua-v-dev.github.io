@@ -26,12 +26,13 @@ const MyApp: AppType<{ session: Session }> = ({
 
             <Component {...pageProps} />
 
-            <Analytics />
+
 
             {/* <Footer /> */}
           </Container>
         </ThemeProvider>
       </SessionProvider>
+      <Analytics />
     </>
   );
 };

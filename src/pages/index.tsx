@@ -7,14 +7,15 @@ import ParticlesContainer from "~/components/ParticlesContainer";
 const Home: React.FC = () => {
   return (
     <>
+      <div className="bg-[url('/assets/images/herobg.png')]">
+        <HomeHero />
+        <div className='h-10' />
 
-      <HomeHero />
-      <div className='h-10' />
-
-      <GlassTopPicks />
-      <div className='h-10' />
-      <HomeCta />
-      <ParticlesContainer />
+        <GlassTopPicks />
+        <div className='h-10' />
+        <HomeCta />
+        <ParticlesContainer />
+      </div>
     </>
   );
 };

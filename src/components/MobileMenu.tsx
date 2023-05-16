@@ -18,7 +18,7 @@ const MobileMenu = () => {
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
-      document.body.style.overflow = "";
+      document.body.style.overflow = "hidden";
     } else {
       setIsMenuOpen(true);
       document.body.style.overflow = "hidden";
@@ -33,7 +33,7 @@ const MobileMenu = () => {
 
   return (
     <>
-      <nav className="absolute h-full w-full ">
+      <nav className="absolute h-full w-full bg-transparent ">
         <button
           className={cn(styles.burger, "visible md:hidden")}
           aria-label="Toggle menu"
@@ -47,7 +47,7 @@ const MobileMenu = () => {
           <ul
             className={cn(
               styles.menu,
-              "opacity-2 shadow-dark-md absolute flex flex-col rounded-md bg-gradient-to-r from-accent-3 via-accent-4 to-accent-5",
+              "opacity-2 shadow-dark-md absolute flex flex-col rounded-md bg-gradient-to-r from-accent-3 via-accent-4 to-accent-5 dark:border-gray-600",
               isMenuRendered && styles.menuRendered
             )}
           >

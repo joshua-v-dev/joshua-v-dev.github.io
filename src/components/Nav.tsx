@@ -31,10 +31,10 @@ function NavItem({ href, text }: TNavItemProps) {
 const Nav = () => {
   return (
     <>
-      <nav className="relative mx-auto flex max-w-3xl items-center justify-evenly border-gray-200 bg-transparent bg-opacity-60 py-3 text-gray-500 dark:border-gray-800  dark:bg-transparent dark:text-gray-600 ">
+      <nav className="relative mx-auto flex max-w-3xl items-center justify-evenly border-gray-200 bg-transparent text-gray-500 dark:border-gray-800 dark:text-gray-600 ">
         <section className=" bg-transparent p-4 lg:p-6">
-          <div className="hidden lg:absolute lg:left-1/2 lg:top-1/2 lg:inline-flex lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform">
-            <ul className="text-grey-500 flex items-center space-x-5 brightness-125">
+          <div className="hidden lg:bg-transparent lg:absolute lg:left-1/2 lg:top-1/2 lg:inline-flex lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform">
+            <ul className="bg-transparent text-grey-500 flex items-center space-x-5 brightness-125">
               <li>
                 <LightDarkMode />
               </li>

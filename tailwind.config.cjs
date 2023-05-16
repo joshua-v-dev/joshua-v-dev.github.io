@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require("tailwindcss/defaultTheme");
-const plugin = require("tailwindcss/plugin");
-const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme")
+const plugin = require("tailwindcss/plugin")
+const colors = require("tailwindcss/colors")
 module.exports = {
   content: ["./src/**/*/*.{js,jsx,ts,tsx, html, wasm}"],
   darkMode: "media",
@@ -174,6 +174,7 @@ module.exports = {
     backdropSepia: ({ theme }) => theme("sepia"),
     backgroundColor: ({ theme }) => theme("colors"),
     backgroundImage: {
+      // 'herobg': "url('/assets/images/herobg.png')",
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
       "gradient-to-tr":
@@ -187,6 +188,7 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
+
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
@@ -1034,8 +1036,8 @@ module.exports = {
             maxWidth: "1280px",
           },
         },
-      };
-      addUtilities(newUtilities);
+      }
+      addUtilities(newUtilities)
 
       const newComponents = {
         ".btn": {
@@ -1049,10 +1051,10 @@ module.exports = {
             backgroundColor: "#f2f2f2",
           },
         },
-      };
-      addComponents(newComponents);
+      }
+      addComponents(newComponents)
 
-      const screens = config("theme.screens", {});
+      const screens = config("theme.screens", {})
 
       const screenUtilities = Object.keys(screens).reduce((acc, label) => {
         return {
@@ -1060,10 +1062,10 @@ module.exports = {
           [`.${e(`container`, label)}`]: {
             maxWidth: screens[label],
           },
-        };
-      }, {});
+        }
+      }, {})
 
-      addUtilities(screenUtilities, ["responsive"]);
+      addUtilities(screenUtilities, ["responsive"])
 
       const container = {
         ".container": {
@@ -1087,8 +1089,8 @@ module.exports = {
             maxWidth: "1280px",
           },
         },
-      };
-      addComponents(container);
+      }
+      addComponents(container)
 
       const btn = {
         ".btn": {
@@ -1102,12 +1104,12 @@ module.exports = {
             backgroundColor: "#f2f2f2",
           },
         },
-      };
-      addComponents(btn);
+      }
+      addComponents(btn)
     }),
     require("@headlessui/react"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
   ],
-};
+}

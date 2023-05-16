@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @variants dark {
+    html {
+      @layer dark;
+    }
+  }
+}
+
+
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -13,7 +23,7 @@ html {
 }
 
 #__next {
-  @apply bg-transparent dark:bg-transparent;
+  @layer bg-transparent dark: bg-transparent;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -33,7 +43,7 @@ html {
 }
 
 .skip-nav {
-  @apply absolute -left-1/4 -top-8 -translate-y-12 transform px-4 py-3 transition-transform duration-200 focus:top-4 focus:translate-y-3;
+  @layer absolute -left-1/4 -top-8 -translate-y-12 transform px-4 py-3 transition-transform duration-200 focus: top-4 focus:translate-y-3;
 }
 
 #skip {
@@ -66,24 +76,24 @@ html {
 }
 
 .prose .anchor:after {
-  @apply text-gray-300 dark:text-gray-700;
+  @layer text-gray-300 dark: text-gray-700;
   content: "#";
 }
 
-.prose *:hover > .anchor {
+.prose *:hover>.anchor {
   @apply visible;
 }
 
 .prose pre {
-  @apply border border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900;
+  @layer border border-gray-200 bg-gray-50 dark: border-gray-700 dark:bg-gray-900;
 }
 
 .prose code {
-  @apply rounded-lg border border-gray-100 bg-gray-100 px-1 py-0.5 text-gray-800 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200;
+  @layer rounded-lg border border-gray-100 bg-gray-100 px-1 py-0.5 text-gray-800 dark: border-gray-800 dark:bg-gray-900 dark:text-gray-200;
 }
 
 .prose pre code {
-  @apply p-0 text-gray-800 dark:text-gray-200;
+  @layer p-0 text-gray-800 dark: text-gray-200;
   border: initial;
 }
 
@@ -92,7 +102,7 @@ html {
   @apply m-0;
 }
 
-.prose > :first-child {
+.prose> :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
@@ -102,11 +112,11 @@ html {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-gray-700 dark:text-gray-300;
+  @layer text-gray-700 dark: text-gray-300;
 }
 
 .token.punctuation {
-  @apply text-gray-700 dark:text-gray-300;
+  @layer text-gray-700 dark: text-gray-300;
 }
 
 .token.property,
@@ -155,7 +165,7 @@ html {
 
 code[class*="language-"],
 pre[class*="language-"] {
-  @apply text-gray-800 dark:text-gray-50;
+  @layer text-gray-800 dark: text-gray-50;
 }
 
 pre::-webkit-scrollbar {
@@ -163,20 +173,22 @@ pre::-webkit-scrollbar {
 }
 
 pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .rehype-code-title {
-  @apply rounded-t-lg border border-b-0 border-gray-200 bg-gray-200 px-5 py-3 font-mono text-sm font-bold text-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200;
+  @layer rounded-t-lg border border-b-0 border-gray-200 bg-gray-200 px-5 py-3 font-mono text-sm font-bold text-gray-800 dark: border-gray-700 dark:bg-gray-800 dark:text-gray-200;
 }
 
-.rehype-code-title + pre {
+.rehype-code-title+pre {
   @apply mt-0 rounded-t-none;
 }
 
 .highlight-line {
-  @apply -mx-4 block border-l-4 border-blue-500 bg-gray-100 px-4 dark:bg-gray-800;
+  @layer -mx-4 block border-l-4 border-blue-500 bg-gray-100 px-4 dark: bg-gray-800;
 }
 
 /* Remove Safari input shadow on mobile */
@@ -187,15 +199,15 @@ input[type="email"] {
   appearance: none;
 }
 
-.metric-card > a {
+.metric-card>a {
   @apply no-underline;
 }
 
-.metric-card > p {
+.metric-card>p {
   @apply my-2;
 }
 
-.step > h3 {
+.step>h3 {
   @apply my-0;
 }
 
@@ -211,6 +223,6 @@ table {
   white-space: nowrap;
 }
 
-.prose .callout > p {
+.prose .callout>p {
   margin: 0 !important;
 }

@@ -11,7 +11,7 @@ export const LightDarkMode = () => {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="flex h-10 w-10 items-center justify-center rounded-lg bg-transparent ring-gray-300  transition-all hover:ring-2  dark:bg-gray-600"
+      className="flex h-7 w-7 items-center justify-center rounded-lg bg-transparent ring-gray-300  transition-all hover:ring-2  dark:bg-gray-600"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {mounted && (
