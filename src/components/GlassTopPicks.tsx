@@ -6,6 +6,7 @@ import { topPicks } from "~/lib/constants";
 const GlassTopPicks = () => {
   return (
     <>
+
       <section id="main-content" className="mx-auto grid max-w-4xl p-2">
         <div className="grid items-center justify-center">
           <h2 className=" shadow-accent-1-xl p-1 text-5xl font-bold tracking-tight text-accent-1 brightness-125">
