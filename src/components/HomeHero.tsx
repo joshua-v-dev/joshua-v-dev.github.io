@@ -15,8 +15,8 @@ const HomeHero = () => {
             height={150}
           />
 
-          <h1 className="py-2 tracking-tightest shadow-accent-2-500/50 font-extrabold text-center text-accent-2 outline-1 text-sm brightness-190 lg:text-5xl md:text-4xl">
-            <span className=" text-sm font-extrabold tracking-wide lg:text-8xl xl:inline ">
+          <h1 className="py-2 tracking-tightest shadow-accent-2-500/50 font-extrabold text-center text-accent-2 outline-1 text-lg brightness-190 lg:text-5xl md:text-4xl xl:text-7xl">
+            <span className=" text-6xl font-extrabold tracking-wide lg:text-8xl xl:inline ">
               Joshua Vaughn
             </span>
           </h1>
