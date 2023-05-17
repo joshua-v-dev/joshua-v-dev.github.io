@@ -273,7 +273,6 @@ export const TimeLineData = [
   },
 ];
 
-
 export const options = {
   autoPlay: true,
   background: {

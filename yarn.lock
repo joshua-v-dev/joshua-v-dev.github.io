@@ -237,9 +237,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@motionone/dom@npm:^10.15.5":
-  version: 10.15.5
-  resolution: "@motionone/dom@npm:10.15.5"
+"@motionone/dom@npm:^10.16.2":
+  version: 10.16.2
+  resolution: "@motionone/dom@npm:10.16.2"
   dependencies:
     "@motionone/animation": ^10.15.1
     "@motionone/generators": ^10.15.1
@@ -247,7 +247,7 @@ __metadata:
     "@motionone/utils": ^10.15.1
     hey-listen: ^1.0.8
     tslib: ^2.3.1
-  checksum: 2453fe3df6a2b4b339d075bcd598bda1eee1926ba0ad881edfd154362b0992c91f31c08d83c469c7e8cb8bf8ebc0ed5530972673cf5c74d99e46e3772cf5f1cb
+  checksum: c75a7de62cd8af575634644bbc2c5abe606ff9000550e7b8d5a62ea691a0784bf18f57035bd1fad4b0148dbdc6db033f2565b6c8f80b87b40fbb232db8fe93aa
   languageName: node
   linkType: hard
 
@@ -272,13 +272,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@motionone/svelte@npm:^10.15.5":
-  version: 10.15.5
-  resolution: "@motionone/svelte@npm:10.15.5"
+"@motionone/svelte@npm:^10.16.2":
+  version: 10.16.2
+  resolution: "@motionone/svelte@npm:10.16.2"
   dependencies:
-    "@motionone/dom": ^10.15.5
+    "@motionone/dom": ^10.16.2
     tslib: ^2.3.1
-  checksum: 17c7cf75f9c2635b1f11204fc4944a62b6febe19d9ffca50b15b45019e98d74cb9c7b9c1a780d8dbd945d8f397ebc3ff97a765d16cad7aae99d1ec979c3aa5ad
+  checksum: 066570d991444f9b8e70189b488d563260cf7aadc2e4718e60b66e2871ad0d798e4a39282035c7f0d35a6b2118c36ee222446a8ae0919265860f0d808fcd2837
   languageName: node
   linkType: hard
 
@@ -300,13 +300,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@motionone/vue@npm:^10.15.5":
-  version: 10.15.5
-  resolution: "@motionone/vue@npm:10.15.5"
+"@motionone/vue@npm:^10.16.2":
+  version: 10.16.2
+  resolution: "@motionone/vue@npm:10.16.2"
   dependencies:
-    "@motionone/dom": ^10.15.5
+    "@motionone/dom": ^10.16.2
     tslib: ^2.3.1
-  checksum: c87c019edfa1224aed7f2edf3f0f764829eeebbc6efefeca2235a5cabbd1553b7516376c744a39e1f7e6b13a7699bceac02c7cb59091d4d1019d5e9dd11c8cf2
+  checksum: 37732f679bdf84debb36493e12fe2604ca3d1812ce8271e39dbe28bb4e59d71841d6821a5f5dd07ded918e260f8567842b835ea597572a38007e8a11106d1f0f
   languageName: node
   linkType: hard
 
@@ -713,10 +713,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.16.9":
-  version: 18.16.9
-  resolution: "@types/node@npm:18.16.9"
-  checksum: 7fe0ef372ba8b157bd646efe29b0ece92ccb9f455171a7ceb4c92d6b490789ff0f14411b1dc6ad203351a0efa2b435072dfab5566fb6eaaaa5cd549e1fb22afa
+"@types/node@npm:^18.16.12":
+  version: 18.16.12
+  resolution: "@types/node@npm:18.16.12"
+  checksum: 90b316c097a059534870bc8e358c7996d99e3bb4395c88a91b893b925ad34e32ff1177009ec6c16a6467266414dca64ec9613e9e6bb3f91b6de0ab629d3bb3b9
   languageName: node
   linkType: hard
 
@@ -2171,9 +2171,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^10.12.11":
-  version: 10.12.11
-  resolution: "framer-motion@npm:10.12.11"
+"framer-motion@npm:^10.12.12":
+  version: 10.12.12
+  resolution: "framer-motion@npm:10.12.12"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     tslib: ^2.4.0
@@ -2188,7 +2188,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: f1b435eb4d6792faffecd70e7659972f2160082f6dfb05393173463fa59c765c11fd998776284212606bcf486c631a0e8258c8c0e209a7e7bbbbed523cba063e
+  checksum: 28ff7202b79833c0aa2fc412e64055b34f6405dc5b025eceb6fa737725f4005a2b29bec31011dd5c1c4cd44af2430b3d622e4a77a11a032e7b08e1e108456430
   languageName: node
   linkType: hard
 
@@ -3025,7 +3025,7 @@ __metadata:
     "@tailwindcss/forms": ^0.5.3
     "@tailwindcss/line-clamp": ^0.4.4
     "@tailwindcss/typography": ^0.5.9
-    "@types/node": ^18.16.9
+    "@types/node": ^18.16.12
     "@types/react": ^18.2.6
     "@types/three": ^0.152.0
     "@vercel/analytics": ^1.0.1
@@ -3034,9 +3034,9 @@ __metadata:
     date-fns: ^2.30.0
     eslint: ^8.40.0
     eslint-config-next: ^13.4.2
-    framer-motion: ^10.12.11
+    framer-motion: ^10.12.12
     maath: ^0.5.3
-    motion: ^10.15.5
+    motion: ^10.16.2
     next: ^13.4.2
     next-auth: ^4.22.1
     next-themes: ^0.2.1
@@ -3456,17 +3456,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion@npm:^10.15.5":
-  version: 10.15.5
-  resolution: "motion@npm:10.15.5"
+"motion@npm:^10.16.2":
+  version: 10.16.2
+  resolution: "motion@npm:10.16.2"
   dependencies:
     "@motionone/animation": ^10.15.1
-    "@motionone/dom": ^10.15.5
-    "@motionone/svelte": ^10.15.5
+    "@motionone/dom": ^10.16.2
+    "@motionone/svelte": ^10.16.2
     "@motionone/types": ^10.15.1
     "@motionone/utils": ^10.15.1
-    "@motionone/vue": ^10.15.5
-  checksum: 43e7883d95da6e4949b2e5ca01732bce28214f4978bf940511a3fbd8e00943ab7c00fcb28f3f1ce1ed099a404016f784243330be161c4805958deaf60d1b0571
+    "@motionone/vue": ^10.16.2
+  checksum: 0b91256808c2374d8b7f4ac5e7ed513f2ca8df2b7d1be4fbc00ec5baece5162ada648aedaa5bc1d60be9ad2e6c9bc1d3bb160333051c20ab79e241b8e02e3c92
   languageName: node
   linkType: hard
 

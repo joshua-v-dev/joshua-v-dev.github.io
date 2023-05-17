@@ -9,10 +9,10 @@ const Home: React.FC = () => {
     <>
       <div className="bg-[url('/assets/images/herobg.png')]">
         <HomeHero />
-        <div className='h-10' />
+        <div className="h-10" />
 
         <GlassTopPicks />
-        <div className='h-10' />
+        <div className="h-10" />
         <HomeCta />
         <ParticlesContainer />
       </div>

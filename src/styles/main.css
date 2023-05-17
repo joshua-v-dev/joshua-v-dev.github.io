@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  @variants dark {
+  @layer utilities dark {
     html {
       @layer dark;
     }
   }
 }
-
-
 
 ::selection {
   background-color: #47a3f3;
@@ -80,7 +78,7 @@ html {
   content: "#";
 }
 
-.prose *:hover>.anchor {
+.prose *:hover > .anchor {
   @apply visible;
 }
 
@@ -102,7 +100,7 @@ html {
   @apply m-0;
 }
 
-.prose> :first-child {
+.prose > :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
@@ -183,7 +181,7 @@ pre {
   @layer rounded-t-lg border border-b-0 border-gray-200 bg-gray-200 px-5 py-3 font-mono text-sm font-bold text-gray-800 dark: border-gray-700 dark:bg-gray-800 dark:text-gray-200;
 }
 
-.rehype-code-title+pre {
+.rehype-code-title + pre {
   @apply mt-0 rounded-t-none;
 }
 
@@ -199,15 +197,15 @@ input[type="email"] {
   appearance: none;
 }
 
-.metric-card>a {
+.metric-card > a {
   @apply no-underline;
 }
 
-.metric-card>p {
+.metric-card > p {
   @apply my-2;
 }
 
-.step>h3 {
+.step > h3 {
   @apply my-0;
 }
 
@@ -223,6 +221,6 @@ table {
   white-space: nowrap;
 }
 
-.prose .callout>p {
+.prose .callout > p {
   margin: 0 !important;
 }

@@ -1,5 +1,3 @@
-
-
 // import { useCallback } from "react";
 import Particles from "react-tsparticles";
 // import { loadFull } from "tsparticles";
@@ -22,14 +20,7 @@ const ParticlesContainer = () => {
   //   console.log(container);
   // }, []);
 
-  return (
-    <Particles id='tsparticles' />
-
-
-  );
+  return <Particles id="tsparticles" />;
 };
-
-
-
 
 export default ParticlesContainer;

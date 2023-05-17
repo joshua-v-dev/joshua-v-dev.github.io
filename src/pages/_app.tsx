@@ -19,14 +19,10 @@ const MyApp: AppType<{ session: Session }> = ({
       <SessionProvider>
         <ThemeProvider attribute="class">
           <Container>
-
-
             <MobileMenu />
             <Nav />
 
             <Component {...pageProps} />
-
-
 
             {/* <Footer /> */}
           </Container>

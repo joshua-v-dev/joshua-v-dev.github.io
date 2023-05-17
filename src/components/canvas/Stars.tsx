@@ -6,10 +6,12 @@ import { Suspense, useRef, useState } from "react";
 
 const Stars = (props: any) => {
   const ref = useRef() as React.MutableRefObject<any>;
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const [sphere] = useState(() =>
+    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+  );
 
   useFrame((_state, delta) => {
-    ref.current.rotation.x -= delta / 10
+    ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });
 
@@ -18,7 +20,7 @@ const Stars = (props: any) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color='#f272c8'
+          color="#f272c8"
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
@@ -30,7 +32,7 @@ const Stars = (props: any) => {
 
 const StarsCanvas = () => {
   return (
-    <div className='w-full h-auto absolute inset-0 z-[-1]'>
+    <div className="absolute inset-0 z-[-1] h-auto w-full">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />

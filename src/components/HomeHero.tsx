@@ -3,7 +3,7 @@ import Image from "next/image";
 const HomeHero = () => {
   return (
     <>
-      <section className="pt-5 max-w-xs lg:max-w-6xl z-10 mx-auto flex min-h-screen flex-1 flex-col items-center justify-start bg-transparent overflow-hidden">
+      <section className="z-10 mx-auto flex min-h-screen max-w-xs flex-1 flex-col items-center justify-start overflow-hidden bg-transparent pt-5 lg:max-w-6xl">
         <div className="relative flex flex-col items-center justify-center">
           <div className="absolute inset-0 z-0 flex h-full w-full items-center justify-center bg-gradient-to-r from-accent-2 to-accent-7 opacity-50 mix-blend-multiply blur-3xl brightness-50 filter" />
 
@@ -15,7 +15,7 @@ const HomeHero = () => {
             height={150}
           />
 
-          <h1 className="py-2 tracking-tightest shadow-accent-2-500/50 font-extrabold text-center text-accent-2 outline-1 text-lg brightness-190 lg:text-5xl md:text-4xl xl:text-7xl">
+          <h1 className="tracking-tightest shadow-accent-2-500/50 py-2 text-center text-lg font-extrabold text-accent-2 outline-1 brightness-190 md:text-4xl lg:text-5xl xl:text-7xl">
             <span className=" text-6xl font-extrabold tracking-wide lg:text-8xl xl:inline ">
               Joshua Vaughn
             </span>
@@ -32,8 +32,6 @@ const HomeHero = () => {
               I build software solutions for the web.
             </span>
           </h3>
-
-
         </div>
       </section>
     </>

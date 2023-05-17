@@ -4,7 +4,6 @@ import FormBlock from "~/components/FormBlock";
 const ContractPage = () => {
   return (
     <>
-
       <ContractHero />
       <FormBlock />
     </>

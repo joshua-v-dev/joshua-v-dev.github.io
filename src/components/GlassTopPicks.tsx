@@ -6,9 +6,8 @@ import { topPicks } from "~/lib/constants";
 const GlassTopPicks = () => {
   return (
     <>
-
-      <section id="main-content" className="mx-auto grid max-w-4xl p-2">
-        <div className="grid items-center justify-center">
+      <section id="main-content" className="mx-auto grid max-w-4xl p-3">
+        <div className="grid items-center justify-center p-3">
           <h2 className=" shadow-accent-1-xl p-1 text-5xl font-bold tracking-tight text-accent-1 brightness-125">
             What brings you here?
           </h2>
@@ -19,30 +18,23 @@ const GlassTopPicks = () => {
           </p>
         </div>
 
-        <div className="grid items-center justify-center p-3">
-          <div className="lg:max-h-xs mx-auto grid max-w-4xl gap-x-8 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
+        <div className="mx-auto grid items-center justify-center p-4">
+          <div className="mx-auto grid max-w-4xl gap-x-8 bg-transparent p-1 shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
             {topPicks.map(
               (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
                 <div
                   key={i}
-                  className="border-b-1 relative grid items-center justify-evenly rounded-3xl border-4 border-t-4 border-double border-black border-indigo-600/90
-								 border-t-indigo-600 border-opacity-90 bg-black/30 p-4 shadow-md shadow-indigo-600 outline-2 
-								 outline-offset-2 outline-black brightness-125 backdrop-blur-sm hover:scale-105 sm:grid-flow-col md:grid-flow-row "
+                  className="border-b-1 relative grid items-center justify-evenly rounded-3xl border-4 border-t-4 border-double border-black border-indigo-600/90 border-t-indigo-600 border-opacity-90 bg-black/30 p-1 p-4 shadow-md shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm hover:scale-105 sm:grid-flow-col md:grid-flow-row "
                 >
                   <Link
-                    className=" mx-auto h-60 w-60 rounded-lg border-double outline-8
-									  outline-offset-2 
-									outline-black 
-									brightness-100"
+                    className="mx-auto h-60 w-60 rounded-lg border-double p-2 outline-8 outline-offset-2	outline-black	brightness-100"
                     href={topPicks.href}
                     passHref
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light "
                   >
                     <Image
-                      className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30
-                     object-cover shadow-indigo-600 outline-2 
-                    outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
+                      className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30 object-cover p-1 shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
                       src={topPicks.src}
                       alt={topPicks.imageAlt}
                       width={500}
@@ -53,7 +45,7 @@ const GlassTopPicks = () => {
                   <h5 className="shadow-accent-2-2xl grid justify-center p-1  text-xl font-bold leading-relaxed text-indigo-700 brightness-125">
                     {topPicks.name}
                   </h5>
-                  <p className="shadow-accent-4-xl grid justify-center p-1 text-sm font-bold  text-accent-1">
+                  <p className="shadow-accent-4-xl grid justify-center p-1 text-sm font-bold  text-accent-2">
                     {topPicks.description}
                   </p>
                   <div className="flex flex-wrap items-center justify-center p-1">
