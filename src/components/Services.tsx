@@ -1,74 +1,9 @@
 import { RadioGroup } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/20/solid";
 import { SetStateAction, useState } from "react";
-import { footerNavigation } from "~/lib/icons";
+import { classNames, pricing } from "~/lib/constants";
 
-const pricing = {
-  frequencies: [
-    { value: "monthly", label: "Monthly", priceSuffix: "/month" },
-    { value: "annually", label: "Annually", priceSuffix: "/year" },
-  ],
-  tiers: [
-    {
-      name: "E-Commerce",
-      id: "tier-freelancer",
-      href: "#",
-      price: { monthly: "$25", annually: "$250" },
-      description: "The essentials to provide your best work for customers.",
-      features: [
-        "Shopify integration",
-        "Custom Headless Storefront",
-        "Existing Storefront Integration/New Custom Storefront",
-        "Custom Product Pages",
-      ],
-      mostPopular: false,
-    },
-    {
-      name: "SPA/MPA",
-      id: "tier-startup",
-      href: "#",
-      price: { monthly: "$40", annually: "$400" },
-      description: "A plan that scales with your rapidly growing business.",
-      features: [
-        "Maintenance",
-        "Custom API",
-        "Advanced analytics",
-        "2-hour, dedicated support response time",
-        "Marketing automations",
-      ],
-      mostPopular: true,
-    },
-    {
-      name: "CMS",
-      id: "tier-enterprise",
-      href: "#",
-      price: { monthly: "$50", annually: "$500" },
-      description: "Dedicated support and infrastructure for your company.",
-      features: [
-        "Hosted Custom CMS",
-        "Long-term support",
-        "Custom reporting tools",
-        "5-hour, dedicated support response time",
-        "Custom integrations",
-        "Dedicated account manager",
-      ],
-      mostPopular: false,
-    },
-  ],
-};
-const faqs = [
-  {
-    id: 1,
-    question: "What can I do for you?",
-    answer:
-      "I can help you build a custom storefront for your business, or integrate with your existing storefront. I can also help you build a custom CMS for your business, or integrate with your existing CMS.",
-  },
-  // More questions...
-];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Services = () => {
   const [frequency, setFrequency] = useState(pricing.frequencies[0]);
@@ -77,14 +12,14 @@ const Services = () => {
   const handleTierSelect = (
     tier: SetStateAction<
       | {
-          name: string;
-          id: string;
-          href: string;
-          price: { monthly: string; annually: string };
-          description: string;
-          features: string[];
-          mostPopular: boolean;
-        }
+        name: string;
+        id: string;
+        href: string;
+        price: { monthly: string; annually: string };
+        description: string;
+        features: string[];
+        mostPopular: boolean;
+      }
       | undefined
     >
   ) => {
@@ -102,24 +37,24 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-transparent">
+    <div className="my-6 bg-transparent">
       <main>
         {/* Pricing section */}
-        <div className="max-w-7xl mx-auto mt-16 bg-transparent px-6 sm:mt-32 lg:px-8">
+        <div className="max-w-7xl mx-auto bg-transparent px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-base font-semibold leading-7 text-indigo-400">
-              Pricing
+            <h1 className="py-2 text-5xl font-extrabold leading-8 text-indigo-400 underline">
+              Subscription Plans
             </h1>
-            <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              Pricing plans of&nbsp;all&nbsp;sizes
+            <p className="pt-2 text-4xl font-semibold tracking-tight text-white">
+              Choose the plan that&apos;s right for your business
             </p>
           </div>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
-            Choose an affordable plan that&apos;s packed with the best features
-            for engaging your audience, creating customer loyalty, and driving
-            sales.
+          <p className="mx-auto pt-4  max-w-xl text-center font-base text-sm leading-5 text-gray-300">
+            This is a subscription based service. A turn key solution for your business to get started with a fully managed custom website or app and online presence.
+            Or if you already have a website/app, we can help you with the maintenance and updates.
+
           </p>
-          <div className="mt-16 flex justify-center">
+          <div className="pt-16 flex justify-center">
             <RadioGroup
               value={frequency}
               onChange={setFrequency}
@@ -222,7 +157,7 @@ const Services = () => {
         </div>
 
         {/* Testimonial section */}
-        <div className="max-w-7xl mx-auto mt-24 px-6 sm:mt-56 lg:px-8">
+        {/* <div className="max-w-7xl mx-auto mt-24 px-6 sm:mt-56 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
               <img
@@ -284,10 +219,10 @@ const Services = () => {
               </figure>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* FAQ section */}
-        <div className="max-w-7xl mx-auto mt-24 px-6 sm:mt-56 lg:px-8">
+        {/* <div className="max-w-7xl mx-auto mt-24 px-6 sm:mt-56 lg:px-8">
           <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
             Frequently asked questions
           </h2>
@@ -316,141 +251,10 @@ const Services = () => {
               ))}
             </dl>
           </div>
-        </div>
+        </div> */}
       </main>
 
-      {/* Footer */}
-      <footer className="mt-24 sm:mt-56" aria-labelledby="footer-heading">
-        <h2 id="footer-heading" className="sr-only">
-          Footer
-        </h2>
-        <div className="max-w-7xl mx-auto px-6 pb-8 lg:px-8">
-          <div className="border-t border-white/10 pt-16 sm:pt-24 xl:grid xl:grid-cols-3 xl:gap-8">
-            <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold leading-6 text-white">
-                    Solutions
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {footerNavigation.solutions.map((item) => (
-                      <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className="text-sm leading-6 text-gray-300 hover:text-white"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-white">
-                    Support
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {footerNavigation.support.map((item) => (
-                      <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className="text-sm leading-6 text-gray-300 hover:text-white"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold leading-6 text-white">
-                    Company
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {footerNavigation.company.map((item) => (
-                      <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className="text-sm leading-6 text-gray-300 hover:text-white"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-white">
-                    Legal
-                  </h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {footerNavigation.legal.map((item) => (
-                      <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className="text-sm leading-6 text-gray-300 hover:text-white"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="mt-10 xl:mt-0">
-              <h3 className="text-sm font-semibold leading-6 text-white">
-                Subscribe to our newsletter
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-300">
-                The latest news, articles, and resources, sent to your inbox
-                weekly.
-              </p>
-              <form className="mt-6 sm:flex sm:max-w-md">
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  name="email-address"
-                  id="email-address"
-                  autoComplete="email"
-                  required
-                  className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
-                  placeholder="Enter your email"
-                />
-                <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                  <button
-                    type="submit"
-                    className="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
-            <div className="flex space-x-6 md:order-2">
-              {footerNavigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-500 hover:text-gray-400"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-            <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-              &copy; 2020 Your Company, Inc. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+
     </div>
   );
 };

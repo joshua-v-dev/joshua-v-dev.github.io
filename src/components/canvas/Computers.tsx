@@ -57,7 +57,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <div className="canvas-container w-full">
+    <div className=" max-w-7xl">
       <Canvas
         frameloop="demand"
         shadows

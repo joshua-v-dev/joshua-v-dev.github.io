@@ -20,6 +20,7 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
+import { classNames } from "~/lib/constants";
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import { useState } from 'react'
 
@@ -137,9 +138,7 @@ const testimonials = [
   ],
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+
 
 const FutureMain = () => {
   return (
