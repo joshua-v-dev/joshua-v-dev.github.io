@@ -33,7 +33,7 @@ const Products = () => {
         <div className="p-1 lg:p-3 mx-auto lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <Image
             className="p-5 rounded-xl bg-transparent shadow-xl ring-1 ring-gray-500/10 object-fit"
-            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1684360175/Portfolio/1_h3jj3j.png"
+            src="https://res.cloudinary.com/dpytkhyme/image/upload/v1684392828/Portfolio/Purple_App_Phone_Mockup_Sales_Marketing_Presentation_cpdlep.png"
             alt=""
             width={1080}
             height={1920} />
@@ -99,6 +99,7 @@ const Products = () => {
         </div>
       </div>
     </div>
+
     </>
   );
 };

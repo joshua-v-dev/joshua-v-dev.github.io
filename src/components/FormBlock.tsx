@@ -1,18 +1,13 @@
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
 
 const FormBlock = () => {
   return (
     <div className="relative isolate bg-transparent">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+        <div className="relative px-6 pb-10 pt-14 lg:static lg:px-8 lg:py-38">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
+            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-indigo/5 lg:w-1/2">
               <svg
-                className="absolute inset-0 h-full w-full stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                className="absolute inset-0 h-full w-full stroke-indigo-600 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
               >
                 <defs>
@@ -46,7 +41,7 @@ const FormBlock = () => {
                 aria-hidden="true"
               >
                 <div
-                  className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#4f46e5] opacity-20"
+                  className="aspect-[1155/678] w-[72.1875rem] opacity-20"
                   style={{
                     clipPath:
                       "polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)",
@@ -54,61 +49,13 @@ const FormBlock = () => {
                 />
               </div>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">
+            <h2 className="mx-auto py-2 text-5xl font-bold tracking-tight text-indigo-600">
               Get in touch
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+            <p className="mx-auto py-2 max-w-fit z-1000 text-xl font-medium brightness-125 leading-6 text-accent-2">
+              Are you interested in working with me? Please fill out this form and I will get in touch with you shortly.
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a className="hover:text-white" href="tel:+1 (555) 234-5678">
-                    +1 (555) 234-5678
-                  </a>
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Email</span>
-                  <EnvelopeIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a
-                    className="hover:text-white"
-                    href="mailto:hello@example.com"
-                  >
-                    hello@example.com
-                  </a>
-                </dd>
-              </div>
-            </dl>
+
           </div>
         </div>
         <form
@@ -207,7 +154,7 @@ const FormBlock = () => {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Send message
               </button>
