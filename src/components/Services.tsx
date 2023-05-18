@@ -40,21 +40,21 @@ const Services = () => {
     <div className="my-6 bg-transparent">
       <main>
         {/* Pricing section */}
-        <div className="max-w-7xl mx-auto bg-transparent p-4 lg:p-6">
+        <div className="max-w-7xl mx-auto bg-transparent p-1">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="mx-auto pb-4 text-6xl font-bold leading-8 text-indigo-600 brightness-100 underline">
+            <h1 className="mx-auto pb-4 text-4xl font-bold leading-8 text-indigo-600 brightness-100 underline">
               Subscription Plans
             </h1>
-            <p className="mx-auto py-2 text-2xl font-medium tracking-tight text-white">
+            <p className="pt-4 mx-auto text-lg max-w-lg font-medium tracking-tight text-gray-100">
               Choose the plan that&apos;s right for your business
             </p>
           </div>
-          <p className="mx-auto max-w-md text-center font-normal text-xs leading-5 text-gray-300">
+          <p className="mx-auto max-w-sm text-center font-normal text-xs leading-5 text-gray-400">
             A turn key solution for your business to get started with a fully managed custom website or app and online presence.
 
 
           </p>
-          <div className="pt-16 flex justify-center">
+          <div className="pt-8 flex justify-center">
             <RadioGroup
               value={frequency}
               onChange={setFrequency}
