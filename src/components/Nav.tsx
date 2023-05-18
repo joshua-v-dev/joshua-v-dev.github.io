@@ -41,7 +41,7 @@ const Nav = () => {
               <li>
                 <NavItem href="/" text="Home" />
               </li>
-
+              <Dot />
               <li>
                 <NavItem href="/services" text="Services" />
               </li>

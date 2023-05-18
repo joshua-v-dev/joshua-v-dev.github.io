@@ -15,59 +15,64 @@ export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export const pricing = {
-  frequencies: [
-    { value: "monthly", label: "Monthly", priceSuffix: "/month" },
-    { value: "annually", label: "Annually", priceSuffix: "/year" },
-  ],
-  tiers: [
-    {
-      name: "E-Commerce",
-      id: "tier-freelancer",
-      href: "#",
-      price: { monthly: "$25", annually: "$250" },
-      description: "The essentials to provide your best work for customers.",
-      features: [
-        "Shopify integration",
-        "Custom Headless Storefront",
-        "Existing Storefront Integration/New Custom Storefront",
-        "Custom Product Pages",
-      ],
-      mostPopular: false,
-    },
-    {
-      name: "SPA/MPA",
-      id: "tier-startup",
-      href: "#",
-      price: { monthly: "$40", annually: "$400" },
-      description: "A plan that scales with your rapidly growing business.",
-      features: [
-        "Maintenance",
-        "Custom API",
-        "Advanced analytics",
-        "2-hour, dedicated support response time",
-        "Marketing automations",
-      ],
-      mostPopular: true,
-    },
-    {
-      name: "CMS",
-      id: "tier-enterprise",
-      href: "#",
-      price: { monthly: "$50", annually: "$500" },
-      description: "Dedicated support and infrastructure for your company.",
-      features: [
-        "Hosted Custom CMS",
-        "Long-term support",
-        "Custom reporting tools",
-        "5-hour, dedicated support response time",
-        "Custom integrations",
-        "Dedicated account manager",
-      ],
-      mostPopular: false,
-    },
-  ],
-};
+export const frequencies = [
+  { value: "monthly", label: "Monthly", priceSuffix: "/month" },
+  { value: "annually", label: "Annually", priceSuffix: "/year" },
+];
+
+export const tiers = [
+  {
+    name: "E-Commerce",
+    id: "tier-freelancer",
+    href: "#",
+    price: { monthly: "$25", annually: "$250" },
+    description: "The essentials to provide your best work for customers.",
+    features: [
+      "Shopify integration",
+      "Custom Headless Storefront",
+      "Existing Storefront Integration/New Custom Storefront",
+      "Custom Product Pages",
+    ],
+    mostPopular: false,
+
+    cta: "Buy plan",
+  },
+  {
+    name: "SPA/MPA",
+    id: "tier-startup",
+    href: "#",
+    price: { monthly: "$40", annually: "$400" },
+    description: "A plan that scales with your rapidly growing business.",
+    features: [
+      "Maintenance",
+      "Custom API",
+      "Advanced analytics",
+      "2-hour, dedicated support response time",
+      "Marketing automations",
+    ],
+    mostPopular: true,
+
+    cta: "Buy plan",
+  },
+  {
+    name: "CMS",
+    id: "tier-enterprise",
+    href: "#",
+    price: { monthly: "$50", annually: "$500" },
+    description: "Dedicated support and infrastructure for your company.",
+    features: [
+      "Hosted Custom CMS",
+      "Long-term support",
+      "Custom reporting tools",
+      "5-hour, dedicated support response time",
+      "Custom integrations",
+      "Dedicated account manager",
+    ],
+    mostPopular: false,
+
+    cta: "Contact sales",
+  },
+];
 
 export const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: false },
