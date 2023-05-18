@@ -38,6 +38,9 @@ const Nav = () => {
               <li>
                 <LightDarkMode />
               </li>
+              <li>
+                <NavItem href="/" text="Home" />
+              </li>
 
               <li>
                 <NavItem href="/services" text="Services" />
