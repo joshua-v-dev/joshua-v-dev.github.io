@@ -99,7 +99,6 @@ const MobileMenu = () => {
                 Future
               </Link>
             </li>
-
           </ul>
         )}
       </nav>

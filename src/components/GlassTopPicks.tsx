@@ -19,7 +19,7 @@ const GlassTopPicks = () => {
         </div>
 
         <div className="mx-auto grid items-center justify-center p-4">
-          <div className="mx-auto grid max-w-4xl gap-x-8 bg-transparent p-1 shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
+          <div className="mx-auto grid max-w-4xl gap-x-8 gap-y-4 bg-transparent p-1 shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
             {topPicks.map(
               (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
                 <div

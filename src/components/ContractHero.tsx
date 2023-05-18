@@ -1,13 +1,9 @@
 import Image from "next/image";
 
 const ContractHero = () => {
-
-
   return (
     <div className="bg-transparent">
-
-
-      <div className="bg-transparent relative isolate overflow-hidden">
+      <div className="relative isolate overflow-hidden bg-transparent">
         <Image
           src="https://res.cloudinary.com/dpytkhyme/image/upload/v1684165000/Portfolio/herobg_wpswd0.png"
           alt=""
@@ -28,13 +24,15 @@ const ContractHero = () => {
           />
         </div>
         <div className="mx-auto max-w-2xl py-36">
-
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
               <span className="block xl:inline"> Let&apos;s Work Together</span>{" "}
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              I am available for hire as a full-time employee or as a contractor. I am also available for freelance work. I am based in the United States and I am available to work remotely. I am also available to work on-site in the great
+              I am available for hire as a full-time employee or as a
+              contractor. I am also available for freelance work. I am based in
+              the United States and I am available to work remotely. I am also
+              available to work on-site in the great
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

@@ -138,8 +138,6 @@ const testimonials = [
   ],
 ];
 
-
-
 const FutureMain = () => {
   return (
     <div className="bg-transparent">

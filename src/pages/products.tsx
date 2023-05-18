@@ -6,9 +6,8 @@ const ProductsPage = () => {
     <>
       <Products />
       <ThemeTemplate />
-
     </>
-  )
+  );
 };
 
 export default ProductsPage;

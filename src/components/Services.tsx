@@ -3,8 +3,6 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 import { SetStateAction, useState } from "react";
 import { classNames, pricing } from "~/lib/constants";
 
-
-
 const Services = () => {
   const [frequency, setFrequency] = useState(pricing.frequencies[0]);
   const [selectedTier, setSelectedTier] = useState(pricing.tiers[1]);
@@ -12,14 +10,14 @@ const Services = () => {
   const handleTierSelect = (
     tier: SetStateAction<
       | {
-        name: string;
-        id: string;
-        href: string;
-        price: { monthly: string; annually: string };
-        description: string;
-        features: string[];
-        mostPopular: boolean;
-      }
+          name: string;
+          id: string;
+          href: string;
+          price: { monthly: string; annually: string };
+          description: string;
+          features: string[];
+          mostPopular: boolean;
+        }
       | undefined
     >
   ) => {
@@ -42,19 +40,18 @@ const Services = () => {
         {/* Pricing section */}
         <div className="max-w-7xl mx-auto bg-transparent p-1">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="mx-auto pb-4 text-4xl font-bold leading-8 text-indigo-600 brightness-100 underline">
+            <h1 className="mx-auto pb-4 text-4xl font-bold leading-8 text-indigo-600 underline brightness-100">
               Subscription Plans
             </h1>
-            <p className="pt-4 mx-auto text-lg max-w-lg font-medium tracking-tight text-gray-100">
+            <p className="mx-auto max-w-lg pt-4 text-lg font-medium tracking-tight text-gray-100">
               Choose the plan that&apos;s right for your business
             </p>
           </div>
-          <p className="mx-auto max-w-sm text-center font-normal text-xs leading-5 text-gray-400">
-            A turn key solution for your business to get started with a fully managed custom website or app and online presence.
-
-
+          <p className="mx-auto max-w-sm text-center text-xs font-normal leading-5 text-gray-400">
+            A turn key solution for your business to get started with a fully
+            managed custom website or app and online presence.
           </p>
-          <div className="pt-8 flex justify-center">
+          <div className="flex justify-center pt-8">
             <RadioGroup
               value={frequency}
               onChange={setFrequency}
@@ -155,11 +152,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-
-
       </main>
-
-
     </div>
   );
 };

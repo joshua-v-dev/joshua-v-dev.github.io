@@ -76,8 +76,11 @@ const Footer = () => {
 
 export default Footer;
 
-{/* Footer */ }
-{/* <footer className="mt-24 sm:mt-56" aria-labelledby="footer-heading">
+{
+  /* Footer */
+}
+{
+  /* <footer className="mt-24 sm:mt-56" aria-labelledby="footer-heading">
   <h2 id="footer-heading" className="sr-only">
     Footer
   </h2>
@@ -207,4 +210,5 @@ export default Footer;
       </p>
     </div>
   </div>
-</footer> */}
+</footer> */
+}

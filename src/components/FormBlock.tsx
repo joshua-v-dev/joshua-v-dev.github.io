@@ -1,11 +1,10 @@
-
 const FormBlock = () => {
   return (
     <div className="relative isolate bg-transparent">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-10 pt-14 lg:static lg:px-8 lg:py-38">
+        <div className="lg:py-38 relative px-6 pb-10 pt-14 lg:static lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-indigo/5 lg:w-1/2">
+            <div className="ring-indigo/5 absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 lg:w-1/2">
               <svg
                 className="absolute inset-0 h-full w-full stroke-indigo-600 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
@@ -52,10 +51,10 @@ const FormBlock = () => {
             <h2 className="mx-auto py-2 text-5xl font-bold tracking-tight text-indigo-600">
               Get in touch
             </h2>
-            <p className="mx-auto py-2 max-w-fit z-1000 text-xl font-medium brightness-125 leading-6 text-accent-2">
-              Are you interested in working with me? Please fill out this form and I will get in touch with you shortly.
+            <p className="max-w-fit z-1000 mx-auto py-2 text-xl font-medium leading-6 text-accent-2 brightness-125">
+              Are you interested in working with me? Please fill out this form
+              and I will get in touch with you shortly.
             </p>
-
           </div>
         </div>
         <form
