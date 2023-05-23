@@ -8,18 +8,18 @@ const GlassTopPicks = () => {
     <>
       <section id="main-content" className="mx-auto grid max-w-4xl p-3">
         <div className="grid items-center justify-center p-3">
-          <h2 className=" shadow-accent-1-xl p-1 text-5xl font-bold tracking-tight text-accent-1 brightness-125">
+          <h2 className=" shadow-accent-1-xl p-1 text-5xl font-bold tracking-tight text-accent-4 brightness-125">
             What brings you here?
           </h2>
-          <p className=" shadow-accent-2-xl grid p-2 text-2xl font-bold text-accent-2 brightness-150">
+          <p className=" shadow-accent-2-xl grid p-2 text-xl font-bold text-accent-2 brightness-150">
             Depending on who you are I&apos;ll show you the content accordingly
             in order to increase your user experience while browsing my
             portfolio.
           </p>
         </div>
 
-        <div className="mx-auto grid items-center justify-center p-4">
-          <div className="mx-auto grid max-w-4xl gap-x-8 gap-y-4 bg-transparent p-1 shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
+        <div className="mx-auto grid items-center justify-center p-8">
+          <div className="mx-auto grid max-w-4xl gap-x-8 gap-y-4 bg-transparent p-15 shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
             {topPicks.map(
               (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
                 <div
@@ -34,7 +34,7 @@ const GlassTopPicks = () => {
                     data-mdb-ripple-color="light "
                   >
                     <Image
-                      className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30 object-cover p-1 shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
+                      className="border-shadow-2 relative mx-auto grid items-center justify-center rounded-xl border border-indigo-600 border-opacity-90 bg-black/30 object-cover p-8 shadow-indigo-600 outline-2 outline-offset-2 outline-black brightness-125 backdrop-blur-sm"
                       src={topPicks.src}
                       alt={topPicks.imageAlt}
                       width={500}
@@ -42,13 +42,13 @@ const GlassTopPicks = () => {
                       priority
                     />
                   </Link>
-                  <h5 className="shadow-accent-2-2xl grid justify-center p-1  text-xl font-bold leading-relaxed text-indigo-700 brightness-125">
+                  <h5 className="shadow-accent-2-2xl grid justify-center p-1  text-xl font-bold leading-relaxed text-blue-400">
                     {topPicks.name}
                   </h5>
-                  <p className="shadow-accent-4-xl grid justify-center p-1 text-sm font-bold  text-accent-2">
+                  <p className="shadow-accent-4-xl grid justify-center p-1 text-sm font-bold  text-indigo-600">
                     {topPicks.description}
                   </p>
-                  <div className="flex flex-wrap items-center justify-center p-1">
+                  <div className="flex flex-wrap items-center justify-center p-2">
                     <Link
                       href={topPicks.href}
                       data-mdb-ripple="true"

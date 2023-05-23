@@ -15,6 +15,63 @@ export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
+export const people = [
+  {
+    name: "Emma Dorsey",
+    role: "Senior Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Emma Dorsey",
+    role: "Senior Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Emma Dorsey",
+    role: "Senior Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Emma Dorsey",
+    role: "Senior Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Emma Dorsey",
+    role: "Senior Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Emma Dorsey",
+    role: "Senior Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+];
+
 export const frequencies = [
   { value: "monthly", label: "Monthly", priceSuffix: "/month" },
   { value: "annually", label: "Annually", priceSuffix: "/year" },
@@ -160,56 +217,7 @@ export const features = [
   },
 ];
 
-export const projects = [
-  {
-    title: "MERN STACK",
-    description: "PROGRESSIVE WEB APP TEMPLATES",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
-    tags: ["Mongo", "Express", "React", "Node"],
 
-    i: 0,
-  },
-  {
-    title: "PLATFORMS",
-    description: "SHOPIFY APPS, STORES & THEMES",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
-    tags: ["React", "Liquid", "Next", "Polaris", "GraphQL"],
-
-    i: 1,
-  },
-  {
-    title: "UI/UX",
-    description: "GOOGLE UX CERTIFICATION COURSE",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
-    tags: ["Adobe Creative Cloud Products"],
-
-    i: 2,
-  },
-  {
-    title: "PASSION PROJECTS",
-    description: "INDIE GAME DESIGN AND DEVELOPMENT",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1644349589/gamedev_tt1isx.png",
-    tags: ["Three.js", "Unity", "Blender"],
-
-    i: 3,
-  },
-  {
-    title: "PORTFOLIO PROJECT",
-    description: "THIS PORTFOLIO PROJECT",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
-    tags: ["Next.js", "React.js", "Radix UI"],
-
-    i: 4,
-  },
-  {
-    title: "FREELANCE CLIENTS",
-    description: "THESE ARE SOME SMALL BUSINESS WEB APPS",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1643978167/PASSION_PROJECTS_eph1py.svg",
-    tags: ["Next.js", "TypeScript", "Tailwind.css"],
-
-    i: 5,
-  },
-];
 export const topSrc = [
   "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
   "https://res.cloudinary.com/dpytkhyme/image/upload/v1646886682/recruiter-card_tbnatw.png",
@@ -219,22 +227,22 @@ export const topPicks = [
   {
     name: "Recruiter",
     description: "I'm Ready to Work",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648967012/Recruiter_gx369v.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1684803126/Portfolio/Blue_Futurustic_Programmer_LinkedIn_Post_w5k8mb.png",
     imageAlt: "joshua vaughn portfolio",
     href: "/recruiter",
   },
   {
     name: "Freelance",
     description: "Let's build together!",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648966991/Freelance_fgje1v.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1684799178/Portfolio/1_iheznq.png",
 
     imageAlt: "contract me",
     href: "/contract",
   },
   {
-    name: "Personal",
+    name: "Coming Soon!",
     description: "See What I'm Up To...",
-    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1648967008/Personal_nxvarr.png",
+    src: "https://res.cloudinary.com/dpytkhyme/image/upload/v1684799179/Portfolio/3_ardvkq.png",
 
     imageAlt: "shopify",
     href: "/future",
@@ -335,6 +343,273 @@ export const TimeLineData = [
     text: "I hope to further my skills & learn Python to code my first neural network",
   },
 ];
+
+import {
+  backend,
+  carrent,
+  creator,
+  css,
+  docker,
+  figma,
+  git,
+  html,
+  javascript,
+  jobit,
+  meta,
+  mobile,
+  mongodb,
+  nodejs,
+  reactjs,
+  redux,
+  shopify,
+  starbucks,
+  tailwind,
+  tesla,
+  threejs,
+  tripguide,
+  typescript,
+  web,
+} from "../assets";
+
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const services = [
+  {
+    title: "Web Developer",
+    icon: web,
+  },
+  {
+    title: "React Native Developer",
+    icon: mobile,
+  },
+  {
+    title: "Backend Developer",
+    icon: backend,
+  },
+  {
+    title: "Content Creator",
+    icon: creator,
+  },
+];
+
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "docker",
+    icon: docker,
+  },
+];
+
+const experiences = [
+  {
+    title: "React.js Developer",
+    company_name: "Starbucks",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React Native Developer",
+    company_name: "Tesla",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    company_name: "Meta",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+];
+
+const projects = [
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+];
+
+export { experiences, projects, services, technologies, testimonials };
+
 
 export const options = {
   autoPlay: true,

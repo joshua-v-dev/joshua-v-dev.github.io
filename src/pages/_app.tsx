@@ -17,16 +17,16 @@ const MyApp: AppType<{ session: Session }> = ({
   return (
     <>
       <SessionProvider>
-        <ThemeProvider attribute="class">
-          <Container>
+        <Container>
+          <ThemeProvider attribute="class">
             <MobileMenu />
             <Nav />
 
             <Component {...pageProps} />
 
             {/* <Footer /> */}
-          </Container>
-        </ThemeProvider>
+          </ThemeProvider>
+        </Container>
       </SessionProvider>
       <Analytics />
     </>

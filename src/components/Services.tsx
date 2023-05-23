@@ -1,6 +1,6 @@
 import { RadioGroup } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/20/solid";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
 import { classNames, frequencies, tiers } from "~/lib/constants";
 
 const Services = () => {
@@ -38,6 +38,8 @@ const Services = () => {
                       "cursor-pointer rounded-full px-2.5 py-1"
                     )
                   }
+                  onClick={() => setFrequency(option) as MouseEventHandler<HTMLDivElement> | undefined}
+
                 >
                   <span>{option.label}</span>
                 </RadioGroup.Option>

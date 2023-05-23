@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const product = {
   name: "Digital Business Starter Kit",
   version: { name: "1.0", date: "May 13, 2023", datetime: "2023-05-13" },
@@ -53,7 +55,9 @@ const ThemeTemplate = () => {
           {/* Product image */}
           <div className="lg:col-span-4 lg:row-end-1">
             <div className="aspect-h-3 aspect-w-4 overflow-hidden rounded-lg bg-transparent">
-              <img
+              <Image
+                width={1000}
+                height={1200}
                 src={product.imageSrc}
                 alt={product.imageAlt}
                 className="object-cover object-center"

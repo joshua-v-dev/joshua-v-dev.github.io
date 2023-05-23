@@ -20,6 +20,7 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
+import Image from "next/image";
 import { classNames } from "~/lib/constants";
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import { useState } from 'react'
@@ -243,7 +244,9 @@ const FutureMain = () => {
                   transform="translate(24 24)"
                   clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 >
-                  <img
+                  <Image
+                    width={316}
+                    height={684}
                     src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png"
                     alt=""
                   />
@@ -256,35 +259,35 @@ const FutureMain = () => {
         {/* Logo cloud */}
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <img
+            <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-400.svg"
               alt="Transistor"
               width={158}
               height={48}
             />
-            <img
+            <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-400.svg"
               alt="Reform"
               width={158}
               height={48}
             />
-            <img
+            <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-400.svg"
               alt="Tuple"
               width={158}
               height={48}
             />
-            <img
+            <Image
               className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
               src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-400.svg"
               alt="SavvyCal"
               width={158}
               height={48}
             />
-            <img
+            <Image
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
               src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-400.svg"
               alt="Statamic"
@@ -310,7 +313,7 @@ const FutureMain = () => {
                   euismod vel sit maecenas.
                 </p>
               </div>
-              <img
+              <Image
                 src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
                 alt="Product screenshot"
                 className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
@@ -522,7 +525,7 @@ const FutureMain = () => {
                     <p>{`“${featuredTestimonial.body}”`}</p>
                   </blockquote>
                   <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-                    <img
+                    <Image
                       className="h-10 w-10 flex-none rounded-full bg-gray-50"
                       src={featuredTestimonial.author.imageUrl}
                       alt=""
@@ -533,7 +536,7 @@ const FutureMain = () => {
                       </div>
                       <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                     </div>
-                    <img
+                    <Image
                       className="h-10 w-auto flex-none"
                       src={featuredTestimonial.author.logoUrl}
                       alt=""
@@ -566,7 +569,7 @@ const FutureMain = () => {
                               <p>{`“${testimonial.body}”`}</p>
                             </blockquote>
                             <figcaption className="mt-6 flex items-center gap-x-4">
-                              <img
+                              <Image
                                 className="h-10 w-10 rounded-full bg-gray-50"
                                 src={testimonial.author.imageUrl}
                                 alt=""
@@ -597,7 +600,10 @@ const FutureMain = () => {
         </h2>
         <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-            <img
+            <Image
+            width={
+              
+            }
               className="h-7"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
               alt="Company name"
