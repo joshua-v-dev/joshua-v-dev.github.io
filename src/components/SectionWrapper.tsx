@@ -22,7 +22,7 @@ const StarWrapper = (Component: any, idName: string | undefined) => {
       </motion.section>
     );
   };
-}
+};
 // const StarWrapper = (Component: any, idName: string | undefined) =>
 //   function HOC() {
 //     return (

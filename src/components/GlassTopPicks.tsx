@@ -8,10 +8,10 @@ const GlassTopPicks = () => {
     <>
       <section id="main-content" className="mx-auto grid max-w-4xl p-3">
         <div className="grid items-center justify-center p-3">
-          <h2 className=" shadow-accent-1-xl p-1 text-5xl font-bold tracking-tight text-accent-4 brightness-125">
+          <h2 className=" shadow-accent-1-xl p-1 text-5xl font-bold tracking-tight text-blue-400">
             What brings you here?
           </h2>
-          <p className=" shadow-accent-2-xl grid p-2 text-xl font-bold text-accent-2 brightness-150">
+          <p className=" shadow-accent-2-xl grid p-2 text-xl font-bold text-indigo-600">
             Depending on who you are I&apos;ll show you the content accordingly
             in order to increase your user experience while browsing my
             portfolio.
@@ -19,7 +19,7 @@ const GlassTopPicks = () => {
         </div>
 
         <div className="mx-auto grid items-center justify-center p-8">
-          <div className="mx-auto grid max-w-4xl gap-x-8 gap-y-4 bg-transparent p-15 shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
+          <div className="p-15 mx-auto grid max-w-4xl gap-x-8 gap-y-4 bg-transparent shadow-indigo-600 sm:grid-flow-col lg:grid-cols-3">
             {topPicks.map(
               (topPicks, i): FunctionComponentElement<PageTransitionEvent> => (
                 <div

@@ -81,8 +81,8 @@ export const tiers = [
   {
     name: "E-Commerce",
     id: "tier-freelancer",
-    href: "#",
-    price: { monthly: "$25", annually: "$250" },
+    href: "/",
+    price: [{ monthly: "$25", annually: "$250" }],
     description: "The essentials to provide your best work for customers.",
     features: [
       "Shopify integration",
@@ -93,12 +93,13 @@ export const tiers = [
     mostPopular: false,
 
     cta: "Buy plan",
+    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
   },
   {
     name: "SPA/MPA",
     id: "tier-startup",
-    href: "#",
-    price: { monthly: "$40", annually: "$400" },
+    href: "/",
+    price: [{ monthly: "$40", annually: "$400" }],
     description: "A plan that scales with your rapidly growing business.",
     features: [
       "Maintenance",
@@ -110,12 +111,13 @@ export const tiers = [
     mostPopular: true,
 
     cta: "Buy plan",
+    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
   },
   {
     name: "CMS",
     id: "tier-enterprise",
-    href: "#",
-    price: { monthly: "$50", annually: "$500" },
+    href: "/",
+    price: [{ monthly: "$50", annually: "$500" }],
     description: "Dedicated support and infrastructure for your company.",
     features: [
       "Hosted Custom CMS",
@@ -128,6 +130,7 @@ export const tiers = [
     mostPopular: false,
 
     cta: "Contact sales",
+    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
   },
 ];
 
@@ -216,7 +219,6 @@ export const features = [
     icon: AnnotationIcon,
   },
 ];
-
 
 export const topSrc = [
   "https://res.cloudinary.com/dpytkhyme/image/upload/v1643954107/joshua_vaughn_o8nklp.svg",
@@ -609,7 +611,6 @@ const projects = [
 ];
 
 export { experiences, projects, services, technologies, testimonials };
-
 
 export const options = {
   autoPlay: true,
