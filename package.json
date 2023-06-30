@@ -1,7 +1,7 @@
 {
   "name": "joshuas_next_portfolio",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "version": "0.1.0",
   "private": true,
@@ -33,6 +33,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^2.9.3",
+    "sharp": "^0.32.1",
     "swr": "^2.1.5",
     "three": "^0.152.2",
     "tsparticles": "^2.9.3",
