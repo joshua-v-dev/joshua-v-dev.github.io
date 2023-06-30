@@ -1,4 +1,10 @@
 import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  LockClosedIcon,
+  ServerIcon,
+} from "@heroicons/react/20/solid";
+import {
   AnnotationIcon,
   CogIcon,
   FilterIcon,
@@ -14,6 +20,60 @@ import {
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
+
+export const primaryFeatures = [
+  {
+    name: "Push to deploy.",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: "SSL certificates.",
+    description:
+      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+    icon: LockClosedIcon,
+  },
+  {
+    name: "Database backups.",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
+    icon: ServerIcon,
+  },
+];
+export const secondaryFeatures = [
+  {
+    name: "Push to deploy",
+    description:
+      "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
+    href: "#",
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: "SSL certificates",
+    description:
+      "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
+    href: "#",
+    icon: LockClosedIcon,
+  },
+  {
+    name: "Simple queues",
+    description:
+      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+    href: "#",
+    icon: ArrowPathIcon,
+  },
+];
+export const featuredTestimonial = {
+  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  author: {
+    name: "Brenna Goyette",
+    handle: "brennagoyette",
+    imageUrl:
+      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
+    logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
+  },
+};
 
 export const people = [
   {
@@ -73,8 +133,8 @@ export const people = [
 ];
 
 export const frequencies = [
-  { value: "monthly", label: "Monthly", priceSuffix: "/month" },
-  { value: "annually", label: "Annually", priceSuffix: "/year" },
+  { value: "monthly", label: "Monthly", price: "$25", priceSuffix: "/month" },
+  { value: "annually", label: "Annually", price: "$250", priceSuffix: "/year" },
 ];
 
 export const tiers = [
@@ -93,7 +153,7 @@ export const tiers = [
     mostPopular: false,
 
     cta: "Buy plan",
-    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
+    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg",
   },
   {
     name: "SPA/MPA",
@@ -111,7 +171,7 @@ export const tiers = [
     mostPopular: true,
 
     cta: "Buy plan",
-    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
+    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg",
   },
   {
     name: "CMS",
@@ -130,7 +190,7 @@ export const tiers = [
     mostPopular: false,
 
     cta: "Contact sales",
-    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
+    icon: "https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg",
   },
 ];
 
