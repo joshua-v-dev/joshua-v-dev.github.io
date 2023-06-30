@@ -3,15 +3,14 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-  // experimental: {
-  //   fontLoaders: [
-  //     { loader: "@next/font/google", options: { subsets: ["latin"] } },
-  //   ],
-  // },
-  // experimental: { appDir: true, serverComponentsExternalPackages: ["react"] },
+
   images: {
-    domains: ["res.cloudinary.com", "localhost"],
+    domains: [
+      "res.cloudinary.com",
+      "localhost",
+      "images.unsplash.com",
+      "tailwindui.com",
+    ],
   },
-  swcMinify: true,
 };
 export default config;
