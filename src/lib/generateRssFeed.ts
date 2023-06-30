@@ -1,7 +1,6 @@
-import ReactDOMServer from "react-dom/server";
-import { MemoryRouterProvider } from "next-router-mock/MemoryRouterProvider";
 import { Feed } from "feed";
 import { mkdir, writeFile } from "fs/promises";
+import ReactDOMServer from "react-dom/server";
 
 import { getAllArticles } from "./getAllArticles";
 
@@ -17,7 +16,7 @@ export async function generateRssFeed() {
     title: author.name,
     description: "Your blog description",
     author,
-    id: siteUrl,
+    id: siteUrl + "/",
     link: siteUrl,
     image: `${siteUrl}/favicon.ico`,
     favicon: `${siteUrl}/favicon.ico`,
@@ -31,9 +30,9 @@ export async function generateRssFeed() {
   for (let article of articles) {
     let url = `${siteUrl}/articles/${article.slug}`;
     let html = ReactDOMServer.renderToStaticMarkup(
-      <MemoryRouterProvider>
-        <article.component isRssFeed />
-      </MemoryRouterProvider>
+      // <MemoryRouterProvider>
+      // <article.component isRssFeed />
+      // </MemoryRouterProvider>
     );
 
     feed.addItem({
