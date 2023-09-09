@@ -5,7 +5,7 @@ const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*/*.{js,jsx,ts,tsx, html, wasm}"],
-  darkMode: "media",
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
