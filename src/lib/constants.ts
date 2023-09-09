@@ -693,7 +693,8 @@ export const options = {
     opacity: 0.5,
 
     image:
-      "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1684165000/Portfolio/herobg_wpswd0.png')",
+      "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1694273929/Portfolio/4_vdmm3o.svg')",
+    // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1684165000/Portfolio/herobg_wpswd0.png')",
   },
   backgroundMask: {
     composite: "destination-out",
