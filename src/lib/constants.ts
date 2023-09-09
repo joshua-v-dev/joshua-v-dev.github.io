@@ -694,7 +694,6 @@ export const options = {
 
     image:
       "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1694288758/Portfolio/5_x4vibo.png')",
-    // "url('https://res.cloudinary.com/dpytkhyme/image/upload/v1684165000/Portfolio/herobg_wpswd0.png')",
   },
   backgroundMask: {
     composite: "destination-out",
