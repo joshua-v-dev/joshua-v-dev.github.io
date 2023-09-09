@@ -23,7 +23,7 @@ const HomeHero = () => {
 
           <h2 className="py-2 tracking-tight ">
             <span className="shadow-dark-4xl mx-auto text-5xl font-bold tracking-tight text-blue-800 xl:inline ">
-              Full-Stack Web Developer
+              Software Engineer
             </span>
           </h2>
 
