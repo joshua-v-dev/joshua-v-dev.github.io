@@ -3,7 +3,6 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
 import { classNames, frequencies, tiers } from "~/lib/constants";
 
-
 const Services = () => {
   const [frequency, setFrequency] = useState(frequencies[0]);
 
@@ -59,8 +58,6 @@ const Services = () => {
       </section> */}
       <section id="main-content" className="mx-auto grid max-w-4xl p-3">
         <div className="my-6 bg-transparent">
-
-
           {/* Pricing section */}
           <div className="max-w-7xl mx-auto bg-transparent p-1">
             <div className="mx-auto max-w-4xl text-center">
@@ -85,27 +82,30 @@ const Services = () => {
                     <RadioGroup.Option
                       key={option.value}
                       value={option}
-                      className={({ active, checked }) => classNames(
-                        `${active ? "ring-2 ring-offset-2 ring-offset-indigo-500 ring-white ring-opacity-60" : ""}`,
-                        `${checked ? "bg-indigo-600 text-white" : "text-gray-500"}`,
-                        "cursor-pointer rounded-full px-2.5 py-1"
-                      )}
+                      className={({ active, checked }) =>
+                        classNames(
+                          `${
+                            active
+                              ? "ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-indigo-500"
+                              : ""
+                          }`,
+                          `${
+                            checked
+                              ? "bg-indigo-600 text-white"
+                              : "text-gray-500"
+                          }`,
+                          "cursor-pointer rounded-full px-2.5 py-1"
+                        )
+                      }
 
-                    // onClick={setFrequency(option) }
-
-
+                      // onClick={setFrequency(option) }
                     >
                       <span>{option.label}</span>
                     </RadioGroup.Option>
-
-
                   ))}
-
-
                 </div>
               </RadioGroup>
             </div>
-
 
             <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               {tiers.map((tier) => (
@@ -136,7 +136,6 @@ const Services = () => {
                   </p>
                   <p className="mt-6 flex items-baseline gap-x-1">
                     <span className="text-4xl font-bold tracking-tight text-white">
-
                       {tier.price[frequency ? "monthly" : "yearly"]}
                     </span>
                     <span className="text-sm font-semibold leading-6 text-gray-300">
@@ -163,7 +162,8 @@ const Services = () => {
                       <li key={feature} className="flex gap-x-3">
                         <CheckIcon
                           className="h-6 w-5 flex-none text-white"
-                          aria-hidden="true" />
+                          aria-hidden="true"
+                        />
                         {feature}
                       </li>
                     ))}
