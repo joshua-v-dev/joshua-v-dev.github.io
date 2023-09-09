@@ -17,7 +17,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "@react-three/drei": "^9.83.4",
+    "@react-three/drei": "^9.83.5",
     "@react-three/fiber": "^8.14.1",
     "@sanity/client": "^6.4.11",
     "@vercel/analytics": "^1.0.2",
