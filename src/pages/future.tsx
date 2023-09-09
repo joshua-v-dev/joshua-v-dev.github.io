@@ -4,7 +4,6 @@ import FutureMain from "~/components/FutureMain";
 const FuturePage = () => {
   return (
     <>
-
       <FutureHero />
       <FutureMain />
     </>
