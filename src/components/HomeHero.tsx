@@ -16,22 +16,16 @@ const HomeHero = () => {
 
         <div className="relative mx-auto flex flex-col items-center justify-center">
           <h1 className="tracking-tightest shadow-accent-2-500/50 py-2 text-center text-lg font-extrabold text-accent-2 outline-1 brightness-190 md:text-4xl lg:text-5xl xl:text-7xl">
-            <span className=" text-6xl font-extrabold tracking-wide lg:text-8xl xl:inline ">
+            <span className=" text-6xl font-extrabold tracking-wide lg:text-8xl xl:inline brightness-125 ">
               Joshua Vaughn
             </span>
           </h1>
 
           <h2 className="py-2 tracking-tight ">
-            <span className="shadow-dark-4xl mx-auto text-5xl font-bold tracking-tight text-blue-800 xl:inline ">
+            <span className="shadow-dark-4xl mx-auto text-5xl font-bold tracking-tight text-accent-1 xl:inline brightness-110 ">
               Software Engineer
             </span>
           </h2>
-
-          <h3 className="py-2 tracking-tight ">
-            <span className=" shadow-dark-4xl inline text-2xl font-semibold tracking-tight text-blue-700 ">
-              I build software solutions for the web.
-            </span>
-          </h3>
         </div>
       </section>
     </>

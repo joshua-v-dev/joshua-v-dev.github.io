@@ -31,7 +31,7 @@ function NavItem({ href, text }: TNavItemProps) {
 const Nav = () => {
   return (
     <>
-      <nav className="relative mx-auto flex max-w-3xl items-center justify-evenly border-gray-200 bg-transparent text-gray-500 dark:border-gray-800 dark:text-gray-600 ">
+      <nav className="py-2 relative mx-auto flex max-w-3xl items-center justify-evenly border-gray-200 bg-transparent text-gray-500 dark:border-gray-800 dark:text-gray-600 ">
         <section className=" bg-transparent p-4 lg:p-6">
           <div className="hidden lg:absolute lg:left-1/2 lg:top-1/2 lg:inline-flex lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform lg:bg-transparent">
             <ul className="text-grey-500 flex items-center space-x-5 bg-transparent brightness-125">

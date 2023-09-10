@@ -1,5 +1,5 @@
-// import RecruiterHero from "~/components/RecruiterHero";
-// import RecruiterMain from "~/components/RecruiterMain";
+import RecruiterHero from "~/components/RecruiterHero";
+import RecruiterMain from "~/components/RecruiterMain";
 
 import Recruiter from "~/components/Recruiter";
 
@@ -7,8 +7,8 @@ const RecruiterPage = () => {
   return (
     <>
       <Recruiter />
-      {/* <RecruiterHero />
-      <RecruiterMain /> */}
+      <RecruiterHero />
+      <RecruiterMain />
     </>
   );
 };

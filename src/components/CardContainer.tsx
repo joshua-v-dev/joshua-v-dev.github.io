@@ -45,6 +45,3 @@ export const Container = forwardRef(function Container(
 Container.displayName = "Container";
 export const Outer = OuterContainer;
 export const Inner = InnerContainer;
-
-// Container.Outer = OuterContainer
-// Container.Inner = InnerContainer

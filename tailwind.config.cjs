@@ -312,7 +312,7 @@ module.exports = {
       "zoom-in": "zoom-in",
       "zoom-out": "zoom-out",
     },
-    // divideColor: ({ theme }) => theme('borderColor'),
+    divideColor: ({ theme }) => theme("borderColor"),
     divideOpacity: ({ theme }) => theme("borderOpacity"),
     divideWidth: ({ theme }) => theme("borderWidth"),
     dropShadow: {

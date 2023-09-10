@@ -1,4 +1,3 @@
-// import { animate } from "motion";
 import { animate } from "popmotion";
 import { useEffect } from "react";
 import fetcher from "~/lib/fetcher";
