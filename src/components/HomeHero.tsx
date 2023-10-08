@@ -6,7 +6,7 @@ const HomeHero = () => {
       <section className="z-100 mx-auto flex min-h-screen max-w-xs flex-col items-center justify-start overflow-hidden bg-transparent pt-5 lg:max-w-6xl lg:flex-1">
         <div className="relative mx-auto flex flex-col items-center justify-center">
           <Image
-            className="rounded-full object-contain"
+            className="rounded-full object-contain border-4 border-solid animate-neon"
             src="https://res.cloudinary.com/dpytkhyme/image/upload/v1648330190/JV_LOGO_BLUE_NEON_flabe5.png"
             alt=""
             width={150}
