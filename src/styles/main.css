@@ -224,3 +224,29 @@ table {
 .prose .callout > p {
   margin: 0 !important;
 }
+
+/* Add these styles to your Tailwind CSS file or style block */
+
+@keyframes neon {
+  0%,
+  100% {
+    border-color: #00f;
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+  }
+  25%,
+  75% {
+    border-color: #0f0;
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+  }
+  50% {
+    border-color: #f00;
+    box-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00;
+  }
+}
+
+/* Apply the animation to the 'animate-neon' class */
+@layer utilities {
+  .animate-neon {
+    animation: neon 1.5s infinite alternate-reverse;
+  }
+}
