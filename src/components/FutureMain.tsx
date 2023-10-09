@@ -4,7 +4,6 @@ import Link from "next/link";
 // import { Key } from "react"
 import {
   // classNames,
-
   primaryFeatures,
   secondaryFeatures,
 } from "~/lib/constants";
@@ -90,7 +89,7 @@ const FutureMain = () => {
                   <Image
                     width={316}
                     height={684}
-                    src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png"
+                    src="https://res.cloudinary.com/dpytkhyme/image/upload/v1696840261/Portfolio/1_ejz2ov.png"
                     alt=""
                   />
                 </foreignObject>
@@ -100,8 +99,8 @@ const FutureMain = () => {
         </div>
 
         {/* Feature section */}
-        <div className="max-w-7xl mx-auto mt-12 sm:mt-26 sm:px-6 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-transparent px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+        <div className="max-w-7xl mx-auto pt-12 sm:pt-26 sm:px-6 lg:px-8">
+          <div className="relative isolate overflow-hidden bg-transparent px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-32 xl:px-24">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
               <div className="lg:row-start-2 lg:max-w-md">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -109,27 +108,27 @@ const FutureMain = () => {
                   <br />
                   <span className="block text-indigo-600">is here.</span>
                 </h2>
-                <p className="mt-6 text-lg leading-8 text-gray-300">
+                <p className="pt-6 text-lg leading-8 text-gray-300">
                   Every day, we're pushing the boundaries of what's possible
                   with the latest technologies.
                 </p>
               </div>
               <Image
-                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1696840696/Portfolio/1_dzk8zf.png"
                 alt="Product screenshot"
                 className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
                 width={2432}
                 height={1442}
               />
-              <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
+              <div className="max-w-xl lg:row-start-3 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
                 <dl className="max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                   {primaryFeatures.map((feature) => (
                     <div key={feature.name} className="relative">
                       <dt className="ml-9 inline-block font-semibold text-white">
-                        {/* <feature.icon
+                        <feature.icon
                           className="absolute left-1 top-1 h-5 w-5 text-indigo-500"
                           aria-hidden="true"
-                        /> */}
+                        />
                         {feature.name}
                       </dt>{" "}
                       <dd className="inline">{feature.description}</dd>
@@ -154,7 +153,7 @@ const FutureMain = () => {
         </div>
 
         {/* Feature section */}
-        <div className="max-w-7xl mx-auto mt-12 px-6 sm:mt-26 lg:px-8">
+        <div className="max-w-7xl mx-auto py-12 px-6 sm:pt-26 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-indigo-200">
               Mixing the best of both worlds
@@ -167,7 +166,7 @@ const FutureMain = () => {
               anything.
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <div className="mx-auto pt-36 max-w-2xl lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {secondaryFeatures.map((feature) => (
                 <div key={feature.name} className="flex flex-col">
@@ -180,7 +179,7 @@ const FutureMain = () => {
                   </dt>
                   <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-200">
                     <p className="flex-auto">{feature.description}</p>
-                    <p className="mt-6">
+                    <p className="pt-6">
                       <a
                         href={feature.href}
                         className="text-sm font-semibold leading-6 text-indigo-200"
