@@ -6,10 +6,10 @@ const Collections = () => {
     <div className="bg-transparent py-24 md:py-32 lg:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
             Projects
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-300">
             I am a software engineer with a passion for building products that
             make a difference. I have experience in full-stack development,
             building scalable web applications, and creating intuitive user
@@ -29,18 +29,18 @@ const Collections = () => {
                 width={300}
                 height={300}
               />
-              <h3 className="mt-6 text-lg font-semibold leading-8 text-gray-900">
+              <h3 className="mt-6 text-lg font-semibold leading-8 text-gray-300">
                 {person.name}
               </h3>
-              <p className="text-base leading-7 text-gray-600">{person.role}</p>
-              <p className="mt-4 text-base leading-7 text-gray-600">
+              <p className="text-base leading-7 text-gray-200">{person.role}</p>
+              <p className="mt-4 text-base leading-7 text-gray-200">
                 {person.bio}
               </p>
               <ul role="list" className="mt-6 flex gap-x-6">
                 <li>
                   <a
                     href={person.twitterUrl}
-                    className="text-gray-400 hover:text-gray-500"
+                    className="text-gray-100 hover:text-gray-500"
                   >
                     <span className="sr-only">Twitter</span>
                     <svg
@@ -56,7 +56,7 @@ const Collections = () => {
                 <li>
                   <a
                     href={person.linkedinUrl}
-                    className="text-gray-400 hover:text-gray-500"
+                    className="text-gray-100 hover:text-gray-500"
                   >
                     <span className="sr-only">LinkedIn</span>
                     <svg

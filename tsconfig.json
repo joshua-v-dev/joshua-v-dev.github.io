@@ -41,8 +41,9 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
-    "**/*.mjs"
-  ],
+    "**/*.mjs",
+    "tailwind.config.js"
+, "next.config.mjs"  ],
   "exclude": ["node_modules"],
   "ct3a_metadata": {
     "init_version": "5.4.0"
