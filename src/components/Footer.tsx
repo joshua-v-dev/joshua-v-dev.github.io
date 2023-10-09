@@ -2,12 +2,12 @@ import { JSX, SVGProps } from "react";
 
 const navigation = {
   main: [
-    { name: "Home", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Products", href: "#" },
-    { name: "Contract", href: "#" },
-    { name: "Gallery", href: "#" },
-    { name: "Future", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Products", href: "/products" },
+    { name: "Contract", href: "/contract" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Future", href: "/future" },
   ],
   social: [
     {
@@ -77,7 +77,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-transparent">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-5 sm:py-4 lg:px-8">
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
           aria-label="Footer"

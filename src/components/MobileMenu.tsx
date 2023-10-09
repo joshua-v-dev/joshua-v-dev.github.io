@@ -55,7 +55,7 @@ const MobileMenu = () => {
               className="border-b border-gray-300 text-lg font-semibold text-gray-500 dark:border-gray-700 dark:text-gray-100"
               style={{ transitionDelay: "150ms" }}
             >
-              <Link href="/" className="flex w-auto pb-4">
+              <Link href="/" className="flex w-auto ">
                 Home
               </Link>
             </li>
@@ -63,7 +63,7 @@ const MobileMenu = () => {
               className="border-b border-gray-300 text-lg font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
               style={{ transitionDelay: "175ms" }}
             >
-              <Link href="/products" className="flex w-auto pb-4">
+              <Link href="/products" className="flex w-auto ">
                 Products
               </Link>
             </li>
@@ -71,7 +71,7 @@ const MobileMenu = () => {
               className="border-b border-gray-300 text-lg font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
               style={{ transitionDelay: "200ms" }}
             >
-              <Link href="/services" className="flex w-auto pb-4">
+              <Link href="/services" className="flex w-auto ">
                 Services
               </Link>
             </li>
@@ -79,7 +79,7 @@ const MobileMenu = () => {
               className="border-b border-gray-300 text-lg font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
               style={{ transitionDelay: "250ms" }}
             >
-              <Link href="/contract" className="flex w-auto pb-4">
+              <Link href="/contract" className="flex w-auto">
                 Contract
               </Link>
             </li>
@@ -87,7 +87,7 @@ const MobileMenu = () => {
               className="border-b border-gray-300 text-lg font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
               style={{ transitionDelay: "275ms" }}
             >
-              <Link href="/gallery" className="flex w-auto pb-4">
+              <Link href="/gallery" className="flex w-auto ">
                 Gallery
               </Link>
             </li>
@@ -95,7 +95,7 @@ const MobileMenu = () => {
               className="border-b border-gray-300 text-lg font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
               style={{ transitionDelay: "300ms" }}
             >
-              <Link href="/future" className="flex w-auto pb-4">
+              <Link href="/future" className="flex w-auto ">
                 Future
               </Link>
             </li>

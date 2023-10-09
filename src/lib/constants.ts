@@ -77,56 +77,56 @@ export const featuredTestimonial = {
 
 export const people = [
   {
-    name: "Emma Dorsey",
+    name: "Streetbeefs Scrapyard",
     role: "Senior Developer",
     imageUrl:
-      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1691381837/STREETBEEFS%20SCRAPYARD/scrapyardlogo_x4pegl.svg ",
+    bio: "Streetbeefs Scrapyard is a fight organization that I designed & developed ",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Emma Dorsey",
+    name: "Anuera",
     role: "Senior Developer",
     imageUrl:
-      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1680855996/ANUERA/hand_green_icon_boquet_la4gtv.png",
+    bio: "Anuera is a sustainable living company, whose application I designed & developed",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Emma Dorsey",
+    name: "Plant Life",
     role: "Senior Developer",
     imageUrl:
-      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1660758699/PlantLife/quiz/PlantLifeLogo-logo-white-bg_tnnxqr.svg",
+    bio: "Plant Life is a quiz application that I designed & developed",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Emma Dorsey",
-    role: "Senior Developer",
+    name: "JV Labs",
+    role: "Owner & Senior Developer",
     imageUrl:
-      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1682362542/JV-Labs/1_ekz3va.jpg",
+    bio: "JV Labs is a web development company that I own & operate",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Emma Dorsey",
+    name: "WreckedUI",
     role: "Senior Developer",
     imageUrl:
-      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1696799378/WreckedUI/1_h064lg.svg",
+    bio: "WreckedUI is an open source project that I designed & developed",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Emma Dorsey",
+    name: "JVflow",
     role: "Senior Developer",
     imageUrl:
-      "https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+      "https://res.cloudinary.com/dpytkhyme/image/upload/v1696799644/JVflow/1_kaofbj.png",
+    bio: "JVflow is an open source framework that I designed & developed",
     twitterUrl: "#",
     linkedinUrl: "#",
   },

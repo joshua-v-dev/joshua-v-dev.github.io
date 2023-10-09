@@ -1,5 +1,3 @@
-import React from "react";
-import Image from "next/image";
 import {
   BoltIcon,
   CalendarDaysIcon,
@@ -7,6 +5,7 @@ import {
   LockClosedIcon,
   UsersIcon,
 } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const primaryFeatures = [
   {
@@ -56,12 +55,12 @@ const stats = [
 
 const Recruiter = () => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-transparent">
       <main>
         {/* Hero section */}
         <div className="relative isolate overflow-hidden">
           <svg
-            className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+            className="absolute inset-0 -z-10 h-full w-full stroke-accent-1/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
             aria-hidden="true"
           >
             <defs>
@@ -76,7 +75,7 @@ const Recruiter = () => {
                 <path d="M.5 200V.5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+            <svg x="50%" y={-1} className="overflow-visible fill-accent-2/20">
               <path
                 d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                 strokeWidth={0}
@@ -94,7 +93,7 @@ const Recruiter = () => {
             aria-hidden="true"
           >
             <div
-              className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+              className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-accent-1 to-accent-2 opacity-20"
               style={{
                 clipPath:
                   "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
@@ -115,14 +114,55 @@ const Recruiter = () => {
         </div>
 
         {/* Logo cloud */}
-        <div className="max-w-7xl mx-auto mt-8 px-6 sm:mt-16 lg:px-8">
-          {/* Logo display for showcasing companies worked with */}
-        </div>
+        {/* <div className="max-w-7xl mx-auto mt-8 px-6 sm:mt-16 lg:px-8">
+       
+          <h2 className="text-center text-lg font-semibold leading-8 text-white">
+          Trust your next project to a proven professional.
+          </h2>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            <Image
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
+              alt="Transistor"
+              width={158}
+              height={48}
+            />
+            <Image
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
+              alt="Reform"
+              width={158}
+              height={48}
+            />
+            <Image
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
+              alt="Tuple"
+              width={158}
+              height={48}
+            />
+            <Image
+              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
+              alt="SavvyCal"
+              width={158}
+              height={48}
+            />
+            <Image
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
+              alt="Statamic"
+              width={158}
+              height={48}
+            />
+
+            </div>
+        </div> */}
 
         {/* Feature section */}
-        <div className="max-w-7xl mx-auto mt-2 px-6 sm:mt-26 lg:px-8">
+        <div className="max-w-7xl mx-auto mt-2 px-6 sm:mt-6 lg:px-8">
           {/* Feature section highlighting your skills and expertise */}
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <div className="mx-auto mt-6 max-w-2xl sm:mt-20 lg:mt-4 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {primaryFeatures.map((feature) => (
                 <div key={feature.name} className="flex flex-col">
@@ -153,7 +193,7 @@ const Recruiter = () => {
         </div>
         <div className="max-w-7xl mx-auto mt-16 px-6 sm:mt-20 md:mt-24 lg:px-8">
           {" "}
-          <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+          <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
             {secondaryFeatures.map((feature) => (
               <div key={feature.name} className="relative pl-9">
                 <dt className="inline font-semibold text-white">
@@ -172,11 +212,11 @@ const Recruiter = () => {
         {/* Stats */}
         <div className="max-w-7xl mx-auto mt-3 px-6 sm:mt-6 lg:px-8">
           {/* Stats section showcasing your achievements */}
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {stats.map((stat) => (
               <div
                 key={stat.id}
-                className="flex flex-col gap-y-3 border-l border-white/10 pl-6"
+                className="flex flex-col justify-center items-center gap-y-3 border-l border-white/10 pl-6"
               >
                 <dt className="text-sm leading-6">{stat.name}</dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight">
@@ -188,7 +228,7 @@ const Recruiter = () => {
         </div>
 
         {/* CTA section */}
-        <div className="relative isolate mt-2 px-6 py-3 sm:mt-56 sm:py-4 lg:px-8">
+        <div className="relative isolate mt-2 px-6 py-3 sm:mt-26 sm:py-4 lg:px-8">
           {/* Call-to-action section for job recruiters */}
           <div className="relative isolate mt-32 px-6 py-32 sm:mt-6 sm:py-20 lg:px-8">
             <svg
@@ -234,13 +274,15 @@ const Recruiter = () => {
             </div>
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Boost your productivity.
+                Ready to get started?
                 <br />
-                Start using our app today.
+                <span className="text-accent-1">Let's talk.</span>
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-                Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
-                anim id veniam aliqua proident excepteur commodo do ea.
+                I am currently seeking a new opportunity to join a team of
+                talented developers. If you are looking for a dedicated,
+                hard-working, and experienced developer, I would love to hear
+                from you.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
