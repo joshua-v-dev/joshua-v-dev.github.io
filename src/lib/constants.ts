@@ -6,15 +6,15 @@ import {
 } from "@heroicons/react/20/solid";
 import {
   AnnotationIcon,
-  CogIcon,
-  FilterIcon,
+  // CogIcon,
+  // FilterIcon,
   GlobeAltIcon,
-  HomeIcon,
+  // HomeIcon,
   LightningBoltIcon,
-  PhotographIcon,
-  ReceiptTaxIcon,
+  // PhotographIcon,
+  // ReceiptTaxIcon,
   ScaleIcon,
-  UserGroupIcon,
+  // UserGroupIcon,
 } from "./icons";
 
 export function classNames(...classes: string[]) {
@@ -23,57 +23,47 @@ export function classNames(...classes: string[]) {
 
 export const primaryFeatures = [
   {
-    name: "Push to deploy.",
+    name: "Early access to new products.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+      "Stay ahead of the curve by accessing new products as they become available.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "Exclusive access to upcoming features.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+      "Get access to our newest features before they're released to the public.",
     icon: LockClosedIcon,
   },
   {
-    name: "Database backups.",
+    name: "Be part of our community.",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
+      " Get exclusive access to our community of customers & partners.",
     icon: ServerIcon,
   },
 ];
 export const secondaryFeatures = [
   {
-    name: "Push to deploy",
+    name: "Developer API",
     description:
-      "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
+      "All projects come with a developer API that allows you to access your data in a secure manner.",
     href: "#",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Authentication",
     description:
-      "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
+      "All projects come with a secure authentication system that allows you to manage your users.",
     href: "#",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: "Database",
     description:
-      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+      "All projects come with a database that allows you to store your data in a secure manner.",
     href: "#",
     icon: ArrowPathIcon,
   },
 ];
-export const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
-  author: {
-    name: "Brenna Goyette",
-    handle: "brennagoyette",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
-  },
-};
 
 export const people = [
   {
@@ -194,14 +184,6 @@ export const tiers = [
   },
 ];
 
-export const navigation = [
-  { name: "Home", href: "#", icon: HomeIcon, current: false },
-  { name: "All Files", href: "#", icon: FilterIcon, current: false },
-  { name: "Photos", href: "#", icon: PhotographIcon, current: true },
-  { name: "Shared", href: "#", icon: UserGroupIcon, current: false },
-  { name: "Albums", href: "#", icon: ReceiptTaxIcon, current: false },
-  { name: "Settings", href: "#", icon: CogIcon, current: false },
-];
 export const userNavigation = [
   { name: "Your profile", href: "#" },
   { name: "Sign out", href: "#" },

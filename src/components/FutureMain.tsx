@@ -4,60 +4,31 @@ import Link from "next/link";
 // import { Key } from "react"
 import {
   // classNames,
-  featuredTestimonial,
+
   primaryFeatures,
   secondaryFeatures,
 } from "~/lib/constants";
 
 const FutureMain = () => {
   return (
-    <div className="bg-transparent">
+    <div className="-z-50 bg-[url('/images/heroBg5.svg')] lg:max-w-none">
       <main>
         {/* Hero section */}
-        <div className="relative isolate pt-14">
-          <svg
-            className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                width={200}
-                height={200}
-                x="50%"
-                y={-1}
-                patternUnits="userSpaceOnUse"
-              >
-                <path d="M100 200V.5M.5 .5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-              <path
-                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-                strokeWidth={0}
-              />
-            </svg>
-            <rect
-              width="100%"
-              height="100%"
-              strokeWidth={0}
-              fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
-            />
-          </svg>
-          <div className="max-w-7xl mx-auto px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+        <div className="relative isolate pt-4">
+          <div className="max-w-7xl mx-auto px-6 py-4 sm:py-12 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-10">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
               <div className="flex">
-                <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                  <span className="font-semibold text-indigo-600">
-                    We’re hiring
+                <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-300 ring-1 ring-gray-200/10 hover:ring-gray-50/20">
+                  <span className="font-semibold text-indigo-200">
+                    Coming soon
                   </span>
                   <span
-                    className="h-4 w-px bg-gray-900/10"
+                    className="h-4 w-px bg-transparent"
                     aria-hidden="true"
                   />
                   <a href="#" className="flex items-center gap-x-1">
                     <span className="absolute inset-0" aria-hidden="true" />
-                    See open positions
+                    <span>Learn more</span>
                     <ChevronRightIcon
                       className="-mr-2 h-5 w-5 text-gray-400"
                       aria-hidden="true"
@@ -65,13 +36,13 @@ const FutureMain = () => {
                   </a>
                 </div>
               </div>
-              <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                A better way to ship your projects
+              <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+                <span className="block">The future of work</span>
+                <span className="block text-indigo-600">is here.</span>
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Esse id magna consectetur fugiat non dolor in ad laboris magna
-                laborum ea consequat. Nisi irure aliquip nisi adipisicing veniam
-                voluptate id. In veniam incididunt ex veniam adipisicing sit.
+              <p className="mt-6 text-lg leading-8 text-gray-300">
+                Pushing the boundaries of what's possible with the latest
+                technologies.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <Link
@@ -82,7 +53,7 @@ const FutureMain = () => {
                 </Link>
                 <Link
                   href="/future"
-                  className="text-sm font-semibold leading-6 text-gray-900"
+                  className="text-sm font-semibold leading-6 text-gray-200"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </Link>
@@ -94,7 +65,9 @@ const FutureMain = () => {
                 role="img"
                 className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
               >
-                <title>App screenshot</title>
+                <title>
+                  A person using a computer to design responsive websites
+                </title>
                 <defs>
                   <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
                     <rect width={316} height={684} rx={36} />
@@ -126,61 +99,19 @@ const FutureMain = () => {
           </div>
         </div>
 
-        {/* Logo cloud */}
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-400.svg"
-              alt="Transistor"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-400.svg"
-              alt="Reform"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-400.svg"
-              alt="Tuple"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-400.svg"
-              alt="SavvyCal"
-              width={158}
-              height={48}
-            />
-            <Image
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-400.svg"
-              alt="Statamic"
-              width={158}
-              height={48}
-            />
-          </div>
-        </div>
-
         {/* Feature section */}
-        <div className="max-w-7xl mx-auto mt-32 sm:mt-56 sm:px-6 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+        <div className="max-w-7xl mx-auto mt-12 sm:mt-26 sm:px-6 lg:px-8">
+          <div className="relative isolate overflow-hidden bg-transparent px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
               <div className="lg:row-start-2 lg:max-w-md">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Boost your productivity.
+                  <span className="block">The future of work</span>
                   <br />
-                  Start using our app today.
+                  <span className="block text-indigo-600">is here.</span>
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
-                  Ac euismod vel sit maecenas id pellentesque eu sed
-                  consectetur. Malesuada adipiscing sagittis vel nulla. Ac
-                  euismod vel sit maecenas.
+                  Every day, we're pushing the boundaries of what's possible
+                  with the latest technologies.
                 </p>
               </div>
               <Image
@@ -223,37 +154,36 @@ const FutureMain = () => {
         </div>
 
         {/* Feature section */}
-        <div className="max-w-7xl mx-auto mt-32 px-6 sm:mt-56 lg:px-8">
+        <div className="max-w-7xl mx-auto mt-12 px-6 sm:mt-26 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">
-              Deploy faster
+            <h2 className="text-base font-semibold leading-7 text-indigo-200">
+              Mixing the best of both worlds
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Everything you need to deploy your app
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
+              All-in-one platform for your business needs.
             </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-              Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-              at. In mi viverra elit nunc.
+            <p className="mt-6 text-lg leading-8 text-gray-200">
+              We're building the future of work, where anyone can work on
+              anything.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {secondaryFeatures.map((feature) => (
                 <div key={feature.name} className="flex flex-col">
-                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-300">
                     {/* <feature.icon
                       className="h-5 w-5 flex-none text-indigo-600"
                       aria-hidden="true"
                     /> */}
                     {feature.name}
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-200">
                     <p className="flex-auto">{feature.description}</p>
                     <p className="mt-6">
                       <a
                         href={feature.href}
-                        className="text-sm font-semibold leading-6 text-indigo-600"
+                        className="text-sm font-semibold leading-6 text-indigo-200"
                       >
                         Learn more <span aria-hidden="true">→</span>
                       </a>
@@ -266,14 +196,16 @@ const FutureMain = () => {
         </div>
 
         {/* Newsletter section */}
-        <div className="max-w-7xl mx-auto mt-32 sm:mt-56 sm:px-6 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
+        <div className="max-w-7xl mx-auto mt-12 sm:mt-26 sm:px-6 lg:px-8">
+          <div className="relative isolate overflow-hidden bg-transparent px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
             <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Get notified when we’re launching.
+              Get notified when we're launching.
             </h2>
             <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-              Reprehenderit ad esse et non officia in nulla. Id proident tempor
-              incididunt nostrud nulla et culpa.
+              We're working hard to ship the first version of our product. If
+              you sign up now, you'll be one of the first to know when it's
+              ready. We'll also keep you up to date on progress behind the
+              scenes and early access.
             </p>
             <form className="mx-auto mt-10 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -323,263 +255,9 @@ const FutureMain = () => {
             </svg>
           </div>
         </div>
-
-        {/* Testimonials section */}
-        <div className="relative isolate mt-32 sm:mt-56 sm:pt-32">
-          <svg
-            className="absolute inset-0 -z-10 hidden h-full w-full stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)] sm:block"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="55d3d46d-692e-45f2-becd-d8bdc9344f45"
-                width={200}
-                height={200}
-                x="50%"
-                y={0}
-                patternUnits="userSpaceOnUse"
-              >
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y={0} className="overflow-visible fill-gray-50">
-              <path
-                d="M-200.5 0h201v201h-201Z M599.5 0h201v201h-201Z M399.5 400h201v201h-201Z M-400.5 600h201v201h-201Z"
-                strokeWidth={0}
-              />
-            </svg>
-            <rect
-              width="100%"
-              height="100%"
-              strokeWidth={0}
-              fill="url(#55d3d46d-692e-45f2-becd-d8bdc9344f45)"
-            />
-          </svg>
-          <div className="relative">
-            <div
-              className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
-              aria-hidden="true"
-            >
-              <div
-                className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
-                style={{
-                  clipPath:
-                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                }}
-              />
-            </div>
-            <div
-              className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-8 opacity-25 blur-3xl xl:justify-end"
-              aria-hidden="true"
-            >
-              <div
-                className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
-                style={{
-                  clipPath:
-                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                }}
-              />
-            </div>
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
-              <div className="mx-auto max-w-xl sm:text-center">
-                <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
-                  Testimonials
-                </h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  We have worked with thousands of amazing people
-                </p>
-              </div>
-              <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-                <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
-                  <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
-                    <p>{`“${featuredTestimonial.body}”`}</p>
-                  </blockquote>
-                  <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-                    <Image
-                      className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                      src={featuredTestimonial.author.imageUrl}
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                    <div className="flex-auto">
-                      <div className="font-semibold">
-                        {featuredTestimonial.author.name}
-                      </div>
-                      <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
-                    </div>
-                    <Image
-                      className="h-10 w-auto flex-none"
-                      src={featuredTestimonial.author.logoUrl}
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                  </figcaption>
-                </figure>
-                {/* { testimonials.map( ( columnGroup, columnGroupIdx ) => (
-                  <div
-                    key={ columnGroupIdx }
-                    className="space-y-8 xl:contents xl:space-y-0"
-                  >
-                    { columnGroup[ 0 ].map(
-                      ( column: any[], columnIdx: Key | null | undefined ) => (
-                        <div
-                          key={ columnIdx }
-                          className={ classNames(
-                            ( columnGroupIdx === 0 && columnIdx === 0 ) ||
-                              ( columnGroupIdx === testimonials.length - 1 &&
-                                columnIdx === columnGroup[ 0 ].length - 1 )
-                              ? "xl:row-span-2"
-                              : "xl:row-start-1",
-                            "space-y-8"
-                          ) }
-                        >
-                          { column.map( ( testimonial ) => (
-                            <figure
-                              key={ testimonial.author.handle }
-                              className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
-                            >
-                              <blockquote className="text-gray-900">
-                                <p>{ `“${ testimonial.body }”` }</p>
-                              </blockquote>
-                              <figcaption className="mt-6 flex items-center gap-x-4">
-                                <Image
-                                  className="h-10 w-10 rounded-full bg-gray-50"
-                                  src={ testimonial.author.imageUrl }
-                                  alt=""
-                                  width={ 40 }
-                                  height={ 40 }
-                                />
-                                <div>
-                                  <div className="font-semibold">
-                                    { testimonial.author.name }
-                                  </div>
-                                  <div className="text-gray-600">{ `@${ testimonial.author.handle }` }</div>
-                                </div>
-                              </figcaption>
-                            </figure>
-                          ) ) }
-                        </div>
-                      )
-                    ) }
-                  </div>
-                ) ) } */}
-              </div>
-            </div>
-          </div>
-        </div>
       </main>
     </div>
   );
 };
 
 export default FutureMain;
-
-// import Link from "next/link";
-
-// const FutureMain = () => {
-//   return (
-//     <>
-//       <section className="skewed-bottom-right rounded-md">
-//         <div className="radius-for-skewed bg-gray-900 pb-20 pt-12 lg:pt-12">
-//           <div className=" mx-auto px-4">
-//             <div className=" flex flex-wrap">
-//               <div className="mb-8 flex  items-center px-4 md:mb-20 lg:mb-0 lg:w-1/2">
-//                 <div className=" text-center lg:text-left">
-//                   <div className="mx-auto lg:mx-0">
-//                     <h2 className="mb-3 text-4xl font-bold text-gray-200 lg:text-5xl">
-//                       <span>Build &amp; Launch without</span>
-//                       <span className="text-purple-600">problems</span>
-//                     </h2>
-//                   </div>
-//                   <div className="mx-auto lg:mx-0">
-//                     <p className="mb-4 leading-loose text-gray-400">
-//                       Easter Egg: Everybody get up it&apos;s time to slam now We
-//                       got a real jam goin&apos; down Welcome to the Space Jam
-//                       Here&apos;s your chance, do your dance At the Space Jam
-//                       Alright Come on and slam, and welcome to the jam Come on
-//                       and slam, if you wanna jam! ... Bugs Bunny Rules!
-//                     </p>
-//                     <div>
-//                       <Link
-//                         className="mb-2 inline-block  rounded-r-xl rounded-t-xl bg-purple-600 px-6 py-2 font-semibold leading-loose text-gray-200 transition duration-200 hover:bg-purple-700 lg:mb-0 lg:mr-3 lg:w-auto"
-//                         href="#"
-//                       >
-//                         Get Started
-//                       </Link>
-//                       <Link
-//                         className="inline-block  rounded-r-xl rounded-t-xl border-2 border-gray-700 bg-gray-900 px-6 py-2 font-semibold leading-loose text-gray-200 transition duration-200 hover:border-gray-600 lg:w-auto"
-//                         href="#"
-//                       >
-//                         How it works
-//                       </Link>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="mr-for-radius">
-//           <svg
-//             className="bottom-3 h-6 w-12  text-gray-900 md:h-8 lg:h-12"
-//             viewBox="0 0 10 10"
-//             preserveAspectRatio="none"
-//           >
-//             <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
-//           </svg>
-//         </div>
-//       </section>
-//       <section className="lg:grid-col-2 lg:grid lg:grid-flow-col">
-//         <div className="bg-transparent bg-cover bg-no-repeat pt-20">
-//           <div className=" bg-transparent ">
-//             <div className="mx-auto text-center">
-//               <div className="flex items-center justify-center">
-//                 <div className="text-center ">
-//                   <h3 className="  font-extrabold leading-snug  text-indigo-800 brightness-150 lg:text-7xl ">
-//                     Joshua Vaughn
-//                   </h3>
-//                   <p className="text-xs font-bold leading-loose text-yellow-800 brightness-150 lg:text-5xl">
-//                     Full Stack Web Developer
-//                   </p>
-//                 </div>
-//               </div>
-//               <div className="flex items-center justify-center">
-//                 <h2 className=" text-5xl font-bold leading-loose  text-purple-800 decoration-from-font brightness-150 lg:text-5xl">
-//                   The future is now!
-//                 </h2>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className=" mx-auto px-4">
-//           <div className="mx-auto pb-12">
-//             <p className="mb-6 text-lg text-gray-500 lg:text-2xl">
-//               These are the things that I am doing in the future for my web
-//               development projects.
-//             </p>
-//             <p className="mb-6 text-lg text-gray-500 lg:text-2xl">
-//               Have you ever wondered where the internet is going? I have been
-//               working on this project for a while now and I am excited to see
-//               what the future holds. I believe we are at the pinnacle of what we
-//               can do with the internet. I am excited to see what the future
-//               holds.
-//             </p>
-//             <p className="mb-6 text-lg text-gray-500 lg:text-2xl">
-//               Everytime I see a new project I am excited to see what the future
-//               holds. I am excited to see what the future holds.
-//             </p>
-//             <p className="mb-6 text-lg text-gray-500 lg:text-2xl">
-//               With ever changing technology, I am excited to see what the future
-//               holds. I am excited to see what the future holds. Plus I am
-//               excited to see what the future holds.
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
-// export default FutureMain;

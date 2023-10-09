@@ -1,20 +1,21 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const FutureHero = () => {
   return (
-    <div className="bg-transparent">
-      <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
-        <div className="max-w-7xl mx-auto pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
+    <div className="-z-50 bg-[url('/images/heroBg6.svg')] lg:max-w-none">
+      <div className="relative isolate overflow-hidden ">
+        <div className="max-w-7xl mx-auto pb-14 pt-10 sm:pb-12 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
                 <div className="mt-24 sm:mt-32 lg:mt-16">
                   <a href="#" className="inline-flex space-x-6">
-                    <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">
-                      What's new
+                    <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-300 ring-1 ring-inset ring-indigo-600/10">
+                      New
                     </span>
-                    <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                      <span>Just shipped v0.1.0</span>
+                    <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-100">
+                      <span>Explore Documentation</span>
                       <ChevronRightIcon
                         className="h-5 w-5 text-gray-400"
                         aria-hidden="true"
@@ -22,13 +23,14 @@ const FutureHero = () => {
                     </span>
                   </a>
                 </div>
-                <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Supercharge your web applications
+                <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+                  Unlocking the Future of Web Development with Software
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                <p className="z-50 mt-6 text-lg leading-8 text-gray-50">
+                  Hey there! I'm on a mission to supercharge web applications
+                  using ReactJS and the latest modern practices. As a passionate
+                  ReactJS developer, I'm currently working on groundbreaking
+                  projects that push the boundaries of what's possible.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -39,7 +41,7 @@ const FutureHero = () => {
                   </a>
                   <a
                     href="#"
-                    className="text-sm font-semibold leading-6 text-gray-900"
+                    className="text-sm font-semibold leading-6 text-gray-100 hover:text-gray-200"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
@@ -72,7 +74,129 @@ const FutureHero = () => {
                         </div>
                       </div>
                       <div className="px-6 pb-14 pt-6">
-                        {/* Your code example */}
+                        <div className="mt-4 text-white">
+                          <p className="text-base font-semibold">
+                            <span className="text-indigo-400">import</span>{" "}
+                            NotificationSetting{" "}
+                            <span className="text-indigo-400">from</span>{" "}
+                            <span className="text-indigo-400">
+                              "@components/NotificationSetting"
+                            </span>
+                            ;
+                          </p>
+                          <p className="mt-2 text-sm text-gray-300">
+                            <span className="text-indigo-400">
+                              export default
+                            </span>{" "}
+                            function App() {"{"}
+                          </p>
+                          <p className="mt-2 text-sm text-gray-300">
+                            <span className="text-indigo-400">return</span>{" "}
+                            {"("}
+                          </p>
+                          <p className="mt-2 text-sm text-gray-300">
+                            <span className="text-indigo-400">{"<div>"}</span>
+                          </p>
+                          <p className="mt-2 text-sm text-gray-300">
+                            <span className="text-indigo-400">
+                              {"<NotificationSetting />"}
+                            </span>
+                          </p>
+                          <p className="mt-2 text-sm text-gray-300">
+                            <span className="text-indigo-400">{"</div>"}</span>
+                          </p>
+                          <p className="mt-2 text-sm text-gray-300">
+                            <span className="text-indigo-400">);</span>
+                          </p>
+                          <p className="mt-2 text-sm text-gray-300">{"}"}</p>
+                        </div>
+
+                        <div className="mt-10">
+                          <div className="flex items-center">
+                            <div className="flex-shrink-0">
+                              <Image
+                                className="h-10 w-10 rounded-full"
+                                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1696813654/STREETBEEFS%20SCRAPYARD/SCRAPYARD_GAMES_t388vv.png"
+                                alt=""
+                                width={40}
+                                height={40}
+                              />
+                            </div>
+                            <div className="ml-4">
+                              <div className="text-sm font-medium text-white">
+                                <a href="#" className="hover:underline">
+                                  <span className="sr-only">
+                                    View notifications settings
+                                  </span>
+                                  <span aria-hidden="true">
+                                    Notifications settings
+                                  </span>
+                                </a>
+                              </div>
+                              <div className="mt-2 text-sm text-gray-300">
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Quas cupiditate laboriosam
+                                  fugiat.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="mt-6 flex items-center">
+                            <div className="flex-shrink-0">
+                              <Image
+                                className="h-10 w-10 rounded-full"
+                                src="https://res.cloudinary.com/dpytkhyme/image/upload/v1696813654/STREETBEEFS%20SCRAPYARD/SCRAPYARD_GAMES_t388vv.png"
+                                alt=""
+                                width={40}
+                                height={40}
+                              />
+                            </div>
+                            <div className="ml-4">
+                              <div className="text-sm font-medium text-white">
+                                <a href="#" className="hover:underline">
+                                  <span className="sr-only">
+                                    View notifications settings
+                                  </span>
+                                  <span aria-hidden="true">
+                                    Notifications settings
+                                  </span>
+                                </a>
+                              </div>
+                              <div className="mt-2 text-sm text-gray-300">
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Quas cupiditate laboriosam
+                                  fugiat.
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="ml-auto">
+                              <button
+                                type="button"
+                                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-indigo-600 bg-white hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                              >
+                                View all
+                              </button>
+
+                              <button
+                                type="button"
+                                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                              >
+                                Mark all as read
+                              </button>
+
+                              <button
+                                type="button"
+                                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                              >
+                                Clear all
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -85,7 +209,7 @@ const FutureHero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-4 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
   );
