@@ -5,6 +5,7 @@ const config = {
   reactStrictMode: true,
 
   images: {
+    dangerouslyAllowSVG: true,
     domains: [
       "res.cloudinary.com",
       "localhost",

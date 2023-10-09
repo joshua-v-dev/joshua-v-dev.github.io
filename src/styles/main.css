@@ -247,6 +247,6 @@ table {
 /* Apply the animation to the 'animate-neon' class */
 @layer utilities {
   .animate-neon {
-    animation: neon 1.5s infinite alternate-reverse;
+    animation: neon 20s infinite alternate-reverse;
   }
 }
