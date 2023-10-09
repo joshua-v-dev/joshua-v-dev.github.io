@@ -41,7 +41,8 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
-    "**/*.mjs"
+    "**/*.mjs",
+    "tailwind.config.js"
   ],
   "exclude": ["node_modules"],
   "ct3a_metadata": {
