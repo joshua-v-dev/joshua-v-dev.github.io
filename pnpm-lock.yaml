@@ -1376,7 +1376,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001546
-      electron-to-chromium: 1.4.546
+      electron-to-chromium: 1.4.547
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: true
@@ -1792,10 +1792,10 @@ packages:
       }
     dev: false
 
-  /electron-to-chromium@1.4.546:
+  /electron-to-chromium@1.4.547:
     resolution:
       {
-        integrity: sha512-cz9bBM26ZqoEmGHkdHXU3LP7OofVyEzRoMqfALQ9Au9WlB4rogAHzqj/NkNvw2JJjy4xuxS1me+pP2lbCD5Mfw==,
+        integrity: sha512-QC99aDjzNir+D4c1jE7QWt3RybAxBWYXBdCoaUaAumkD7nDwPLgyt03qNgpVscn18UIGJIZZbFlzNaUSwhPLiA==,
       }
     dev: true
 
@@ -3615,10 +3615,10 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /node-abi@3.47.0:
+  /node-abi@3.48.0:
     resolution:
       {
-        integrity: sha512-2s6B2CWZM//kPgwnuI0KrYwNjfdByE25zvAaEpq9IH4zcNsarH8Ihu/UuX6XMPEogDAxkuUFeZn60pXNHAqn3A==,
+        integrity: sha512-uWR/uwQyVV2iN5+Wkf1/oQxOR9YjU7gBclJLg2qK7GDvVohcnY6LaBXKV89N79EQFyN4/e43O32yQYE5QdFYTA==,
       }
     engines: { node: ">=10" }
     dependencies:
@@ -4079,7 +4079,7 @@ packages:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.47.0
+      node-abi: 3.48.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1

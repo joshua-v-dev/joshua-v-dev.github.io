@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-
-import { styles } from "../styles/styles";
 import { staggerContainer } from "../utils/motion";
+import { classNames } from "~/lib/constants";
 
 const StarWrapper = (Component: any, idName: string | undefined) => {
   const HOC = () => {
@@ -12,7 +11,7 @@ const StarWrapper = (Component: any, idName: string | undefined) => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl relative z-0 mx-auto`}
+        className={classNames(` max-w-7xl relative z-0 mx-auto`, "padding")}
       >
         <span className="hash-span" id={idName}>
           &nbsp;

@@ -4,7 +4,8 @@ import type { JSX } from "react";
 export const MenuIcon = (props: JSX.IntrinsicElements["svg"]) => {
   return (
     <svg
-      className="absolute h-6 w-6 text-gray-900 dark:text-gray-100"
+      className="h-6 w-6 text-gray-900 dark:text-gray-100 transition-transform duration-300 ease-linear transform -translate-x-1/2 -translate-y-1/2 scale-100 opacity-100 absolute top-1/2 left-1/2"
+      xmlns="http://www.w3.org/2000/svg"
       width="30"
       height="30"
       viewBox="0 0 20 20"
@@ -39,7 +40,7 @@ export const MenuIcon = (props: JSX.IntrinsicElements["svg"]) => {
 export const CrossIcon = (props: JSX.IntrinsicElements["svg"]) => {
   return (
     <svg
-      className="absolute h-6 w-6 text-gray-900 dark:text-gray-100"
+      className="h-6 w-6 text-gray-900 dark:text-gray-100 transition-transform duration-300 ease-linear transform -translate-x-1/2 -translate-y-1/2 scale-100 opacity-100 absolute top-1/2 left-1/2"
       viewBox="0 0 24 24"
       width="30"
       height="30"
