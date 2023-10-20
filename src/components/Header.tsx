@@ -11,7 +11,7 @@ export const headerData: HeaderProps = {
   title: " Digital Solutions",
   subtitle: "Software Development & Consulting",
   description:
-    "I have partnered with UpWork to provide you with the best service.",
+    "I have partnered with the freelancers platform upwork to provide you with the best service.",
 };
 const Header = () => {
   return (
@@ -43,7 +43,7 @@ const Header = () => {
               <br />
               {headerData.subtitle}
             </h2>
-            <p className="mt-6 text-xl leading-8 text-emerald-500">
+            <p className="mt-6 text-xl leading-8 text-green-500">
               {headerData.description}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
@@ -64,7 +64,7 @@ const Header = () => {
           <div className="relative mt-16 lg:mt-8">
             <Image
               className="absolute left-0 top-0 max-w-none rounded-md bg-white/5 ring-1 ring-white/10 object-cover object-left-top sm:object-center lg:object-left-top"
-              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1696989128/Portfolio/freelance-vertical_1080_x_1824_px_1080_x_1824_px_gu8ouv.png"
+              src="https://res.cloudinary.com/dpytkhyme/image/upload/v1697772998/Portfolio/freelance-vertical_pepxdr.png"
               alt="App screenshot"
               width={400}
               height={1824}
