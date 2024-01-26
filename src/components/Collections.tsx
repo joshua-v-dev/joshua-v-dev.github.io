@@ -4,7 +4,7 @@ import { people } from "~/lib/constants";
 const Collections = () => {
   return (
     <div className="bg-transparent py-24 md:py-32 lg:py-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div className="z-100 max-w-7xl mx-auto grid grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
             Projects
@@ -18,7 +18,7 @@ const Collections = () => {
         </div>
         <ul
           role="list"
-          className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2"
+          className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 lg:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2"
         >
           {people.map((person) => (
             <li key={person.name}>
