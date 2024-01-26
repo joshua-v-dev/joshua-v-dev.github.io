@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
-    "@react-three/drei": "^9.96.5",
     "@react-three/fiber": "^8.15.15",
     "@vercel/analytics": "^1.1.2",
     "classnames": "^2.5.1",
