@@ -1,8 +1,5 @@
 {
   "name": "joshuas_next_portfolio",
-  "engines": {
-    "node": "18.x"
-  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
