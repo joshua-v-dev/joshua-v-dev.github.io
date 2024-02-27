@@ -1,32 +1,34 @@
+import {clsx} from "clsx";
 import React from "react";
-import clsx from "clsx";
-import Link from "next/link";
-import type { HTMLAttributes, JSX } from "react";
-import { ComponentType } from "react";
+// import Link from "next/link";
+import type {HTMLAttributes,JSX} from "react";
+import {ComponentType} from "react";
+// import type {SVGProps} from "react";
 
-const ChevronRightIcon = (
-  props
-) => {
-  return (
-    <svg
-      width={20}
-      height={20}
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      {...props}
-    >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M7.293 4.293a1 1 0 011.414 0L13 8.586V9a1 1 0 01-2 0V7.414l-4.293 4.293a1 1 0 01-1.414-1.414l4.293-4.293a1 1 0 010-1.414z"
-      />
-    </svg>
-  );
-}
+// const ChevronRightIcon = (
+//   props: JSX.IntrinsicAttributes&SVGProps<SVGSVGElement>
+// ) => {
+//   return (
+//     <svg
+//       width={20}
+//       height={20}
+//       viewBox="0 0 20 20"
+//       fill="currentColor"
+//       {...props}
+//     >
+//       <path
+//         fillRule="evenodd"
+//         clipRule="evenodd"
+//         d="M7.293 4.293a1 1 0 011.414 0L13 8.586V9a1 1 0 01-2 0V7.414l-4.293 4.293a1 1 0 01-1.414-1.414l4.293-4.293a1 1 0 010-1.414z"
+//       />
+//     </svg>
+//   );
+// }
 
 type CardProps = HTMLAttributes<HTMLElement> & {
   as?: ComponentType<string> | string;
-  children?: React.ReactNode;
+  children?: React.ReactNode | React.ReactNode[];
+  className?: string;
 };
 
 export function Card({
@@ -47,8 +49,8 @@ export function Card({
 }
 
 Card.Link = function CardLink({
-  children,
-  ...props
+  // children,
+  // ...props
 }: {
   children: React.ReactNode;
   href: string;
@@ -56,20 +58,20 @@ Card.Link = function CardLink({
   return (
     <>
       <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
-      <Link {...props}>
+      {/* <Link {...props}>
         {props.children}
      
       
         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
-      </Link>
+      </Link> */}
     </>
   );
 };
 
 Card.Title = function CardTitle({
   as: Component = "h2",
-  href,
+  // href,
   children,
 }: {
   as?: ComponentType<string> | string;
@@ -79,31 +81,32 @@ Card.Title = function CardTitle({
   const ComponentType = Component as string | ComponentType<any>;
   return (
     <ComponentType className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-      {href ? <Card.Link href={href}>{children}</Card.Link> : children}
+      {/* {href ? <Card.Link href={href}>{children}</Card.Link> : children} */}
+      {children}
     </ComponentType>
   );
 };
 
 Card.Description = function CardDescription({
-  children,
+  // children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-      {children}
+      {/* {children} */}
     </p>
   );
 };
 
-Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
+Card.Cta = function CardCta(/*{ children }: { children: React.ReactNode }*/) {
   return (
     <div
       aria-hidden="true"
       className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
     >
-      {children}
-      <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+      {/* {children} */}
+      {/* <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" /> */}
     </div>
   );
 };
