@@ -30,11 +30,11 @@ export async function generateRssFeed() {
   for (let article of articles) {
     let url = `${siteUrl}/articles/${article.slug}`;
     let html = ReactDOMServer
-      .renderToStaticMarkup
+      .renderToStaticMarkup(article.component({ isRssFeed: true }));
       // <MemoryRouterProvider>
       // <article.component isRssFeed />
       // </MemoryRouterProvider>
-      ();
+   
 
     feed.addItem({
       title: article.title,
